@@ -1,0 +1,51 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 95806333-6624-4515-8025-9f2f4573bcf7
+  title: Digital Solutions 2025
+  # description: Textbook for the QCAA Digital Solutions 2025 syllabus
+  keywords:
+    - Digital Solutions
+    - QCAA
+    - Queensland Curriculum and Assessment Authority
+    - Syllabus
+  authors: Damien Murtagh
+  github: https://github.com/DamoM73/digital-solutions-text-2025
+  toc:
+    - file: content/index.md
+    - title: Introduction
+      children:
+        - file: content/01_introduction/01_digital_solutions.md
+        - file: content/01_introduction/02_technologies_used.md
+    - title: Concepts
+      children:
+        - file: content/02_cocepts/01_coding/01_coding.md
+        - file: content/02_cocepts/01_coding/02_basic_features.md
+      - file: user_experience.md
+      - file: data.md
+      - file: data_transmission.md
+    - title: Skills
+      children:
+        - file: python.md
+        - file: sql.md
+        - file: db_browser.md
+    - title: Documentation
+      children:
+        - file: explore.md
+        - file: develop.md
+        - file: evaluate.md
+    - title: Asssesments
+      children:
+        - file: fia1.md
+        - file: fia2.md
+        - file: fia3.md
+        - file: fiae.md
+        - file: ia1.md
+        - file: ia2.md
+        - file: ia3.md
+        - file: iae.md
+site:
+  template: book-theme
+  options:
+    favicon: logo_favicon.ico
+    logo: logo_square.png
