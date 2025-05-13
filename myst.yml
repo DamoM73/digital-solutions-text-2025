@@ -17,33 +17,93 @@ project:
       children:
         - file: content/01_introduction/01_digital_solutions.md
         - file: content/01_introduction/02_technologies_used.md
-    - title: Concepts
+    - title: Coding
       children:
-        - file: content/02_cocepts/01_coding/01_coding.md
-        - file: content/02_cocepts/01_coding/02_basic_features.md
-      - file: user_experience.md
-      - file: data.md
-      - file: data_transmission.md
-    - title: Skills
+        - file: content/02_coding/01_intro.md
+        - file: content/02_coding/02_basic_features.md
+        - file: content/02_coding/03_good_practice.md
+        - file: content/02_coding/04_paradigms.md
+    - title: User Experience
       children:
-        - file: python.md
-        - file: sql.md
-        - file: db_browser.md
+        - file: content/03_user_experience/01_intro.md
+        - file: content/03_user_experience/02_usability_principles.md
+        - file: content/03_user_experience/03_visual_communication.md
+        - file: content/03_user_experience/04_impacts.md
+    - title: Data
+      children:
+        - file: content\04_data.md\01_intro.md
+        - file: content\04_data.md\02_data_principles.md
+        - file: content\04_data.md\03_structuring_data.md
+        - file: content\04_data.md\04_manipulating_data.md
+    - title: Data Transmission
+      children:
+        - file: content/05_data_transmission/01_intro.md
+        - file: content/05_data_transmission/02_privacy.md
+        - file: content/05_data_transmission/03_networking.md
+        - file: content/05_data_transmission/04_security_management.md
+        - file: content/05_data_transmission/05_security_threats.md
     - title: Documentation
       children:
-        - file: explore.md
-        - file: develop.md
-        - file: evaluate.md
-    - title: Asssesments
+        - file: content/06_documentation/01_intro.md
+        - file: content/06_documentation/02_mind_maps.md
+        - file: content/06_documentation/03_user_insight.md
+        - file: content/06_documentation/04_use_case_diagrams.md
+        - file: content/06_documentation/05_success_criteria.md
+        - file: content/06_documentation/06_wireframes.md
+        - file: content/06_documentation/07_mock-ups.md
+        - file: content/06_documentation/08_pseudocode.md
+        - file: content/06_documentation/09_desk_checking.md
+        - file: content/06_documentation/10_dfd.md
+        - file: content/06_documentation/11_erd_rs.md
+        - file: content/06_documentation/12_data_dictionaries.md
+        - file: content/06_documentation/13_data_exchange_diagrams.md
+        - file: content/06_documentation/14_testing.md
+        - file: content/06_documentation/15_user_feedback.md
+        - file: content/06_documentation/16_evaluation.md
+        - file: content/06_documentation/17_impacts.md
+    - title: Python Skills
       children:
-        - file: fia1.md
-        - file: fia2.md
-        - file: fia3.md
-        - file: fiae.md
-        - file: ia1.md
-        - file: ia2.md
-        - file: ia3.md
-        - file: iae.md
+        - file: content/07_python/01_intro.md
+    - title: SQL Skills
+      children:
+        - file: content/08_sql/01_intro.md
+    - title: Utiliities Skills
+      children:
+        - file: content/09_utilities/01_intro.md
+    - title: Assessments
+      children:
+        - file: content/10_assessments/01_intro.md
+        - file: content/10_assessments/02_fia1.md
+        - file: content/10_assessments/03_fia2.md
+        - file: content/10_assessments/04_fia3.md
+        - file: content/10_assessments/05_fiae.md
+        - file: content/10_assessments/06_ia1.md
+        - file: content/10_assessments/07_ia2.md
+        - file: content/10_assessments/08_ia3.md
+        - file: content/10_assessments/09_ea.md
+
+    #   - file: data.md
+    #   - file: data_transmission.md
+    # - title: Skills
+    #   children:
+    #     - file: python.md
+    #     - file: sql.md
+    #     - file: db_browser.md
+    # - title: Documentation
+    #   children:
+    #     - file: explore.md
+    #     - file: develop.md
+    #     - file: evaluate.md
+    # - title: Asssesments
+    #   children:
+    #     - file: fia1.md
+    #     - file: fia2.md
+    #     - file: fia3.md
+    #     - file: fiae.md
+    #     - file: ia1.md
+    #     - file: ia2.md
+    #     - file: ia3.md
+    #     - file: iae.md
 site:
   template: book-theme
   options:
