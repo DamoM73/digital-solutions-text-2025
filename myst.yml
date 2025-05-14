@@ -64,6 +64,14 @@ project:
     - title: Python Skills
       children:
         - file: content/07_python/01_intro.md
+        - file: content/07_python/02_pyqt.md
+        - file: content/07_python/03_csv.md
+        - file: content/07_python/04_queries.md
+        - file: content/07_python/05_creation.md
+        - file: content/07_python/06_populate.md
+        - file: content/07_python/07_json.md
+        - file: content/07_python/08_requests.md
+        - file: content/07_python/09_ciphers.md
     - title: SQL Skills
       children:
         - file: content/08_sql/01_intro.md
@@ -108,4 +116,4 @@ site:
   template: book-theme
   options:
     favicon: logo_favicon.ico
-    logo: logo_square.png
+    logo: logo.png
