@@ -72,9 +72,21 @@ project:
         - file: content/07_python/07_json.md
         - file: content/07_python/08_requests.md
         - file: content/07_python/09_ciphers.md
+        - file: content/07_python/10_hashing.md
+        - file: content/07_python/11_type_hints.md
     - title: SQL Skills
       children:
         - file: content/08_sql/01_intro.md
+        - file: content/08_sql/02_select.md
+        - file: content/08_sql/03_where.md
+        - file: content/08_sql/04_filters_and_aggregators.md
+        - file: content/08_sql/05_order_by.md
+        - file: content/08_sql/06_group_by_and_having.md
+        - file: content/08_sql/07_subqueries.md
+        - file: content/08_sql/08_join.md
+        - file: content/08_sql/09_insert.md
+        - file: content/08_sql/10_update.md
+        - file: content/08_sql/11_delete.md
     - title: Utiliities Skills
       children:
         - file: content/09_utilities/01_intro.md
