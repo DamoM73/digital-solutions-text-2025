@@ -1,7 +1,5 @@
 # Populating Databases
 
-<<<<<<< Updated upstream
-=======
 :::{dropdown} In this section you will...
 - Learn to read data from a csv file into a SQLite database
 :::
@@ -13,4 +11,3 @@
 :::
 
 In this section we will learn how to parse a csv file into a SQLite database. We will populate the use the data contained in the `F1Drivers_Dataset.csv` 
->>>>>>> Stashed changes
