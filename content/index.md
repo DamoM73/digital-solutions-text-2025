@@ -1,16 +1,16 @@
 # Digital Solutions 2025
 
-:::{note}
+:::{note} Resources needed
 :class: dropdown
 Try changing `tip` to `warning`!
 :::
 
-:::{important}Explanation of Code
+:::{important} Explanation of Code
 :class: dropdown
 Try changing `tip` to `warning`!
 :::
 
-:::{hint}Additional Information
+:::{hint} Additional Information
 :class: dropdown
 Try changing `tip` to `warning`!
 :::
@@ -51,7 +51,6 @@ Try changing `tip` to `warning`!
 :::
 
 :::{dropdown} Learning Goals
-:close:
 Dropdown content
 :::
 
