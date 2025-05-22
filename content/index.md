@@ -5,10 +5,7 @@
 Try changing `tip` to `warning`!
 :::
 
-:::{important} Explanation of Code
-:class: dropdown
-Try changing `tip` to `warning`!
-:::
+
 
 :::{hint} Additional Information
 :class: dropdown

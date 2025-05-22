@@ -45,6 +45,12 @@ Scrolling through the data we can make some observations about how we will need 
 
 ## Initial Processing
 
+:::{danger}Before your start
+You will need to make of copy of the **f1_driver.db** file. Databases do not allow for undos, so we will need a fresh version of **f1_driver.db**.
+
+Select the **f1_driver.db** file and then press **Ctrl/Cmd** + **C** to copy. Then press **Ctrl/Cmd** + **V** to paste it. You should now have a **f1_driver copy.db** file.
+:::
+
 A common problem with processing data into databases is not knowing the data that is being parsed. To address this, throughout coding the populate solution we will first extract the data from the CSV and print it to terminal. This way we can see the *actual* data we will write to the database. Once we are confident that the data is correct, we can then send it to the database.
 
 First we will do this for the entire CSV, so we can see what is returned when we read the CSV.
@@ -69,7 +75,7 @@ class Datastore:
         """
         self.database_file = database_file
         self.data_file = data_file
-        self.conn = sqlite3.connect("self.database_file")
+        self.conn = sqlite3.connect(self.database_file)
         self.cursor = self.conn.cursor()
 ```
 
@@ -91,7 +97,7 @@ import sqlite3
 import csv
 ```
 
-We will also modularise all the population code into a separate method. This method needs to be called at the end of the **__init__()** method.
+We will also modularise all the population code into a separate method. This method needs to be called at the end of the `__init__()` method.
 
 ```{code}python
 :linenos:
@@ -103,7 +109,7 @@ We will also modularise all the population code into a separate method. This met
         """
         self.database_file = database_file
         self.data_file = data_file
-        self.conn = sqlite3.connect("self.database_file")
+        self.conn = sqlite3.connect(self.database_file)
         self.cursor = self.conn.cursor()
 
         self.populate_database()
@@ -205,6 +211,7 @@ Looking at the [Data Structure ERD](#f1-database-structure), or viewing the **f1
 Here is the pseudocode for the process we will follow:
 
 ```{code}pseudocode
+:linenos:
 FOR record IN csv_reader
     name = record[Driver]
     nationality = record[Nationality]
@@ -232,7 +239,7 @@ Return to our **f1_datastore.py** file and replace the `print` statement on **li
 ```{code}python
 :linenos:
 :lineno-start: 28
-:emphasize-lines: 30, 31
+:emphasize-lines: 30-52
             # process the CSV data
             for record in csv_reader:
                 # process driver values
@@ -267,3 +274,174 @@ Return to our **f1_datastore.py** file and replace the `print` statement on **li
 - line 39 &rarr; taking the string from the record dictionary and converts it to a float. The points field actually contains information in the decimal value.
 - lines 42 - 52 &rarr; displays the processed driver data to the terminal.
 :::
+
+Save **f1_datastore.py**.
+
+### Test Driver Data
+
+Go back and run **main.py** to test our code.
+
+Your terminal should display all the data that is read from the CSV file and processed ready to write to the database. The last five lines should look like this:
+
+```{code}pseudocode
+:linenos:
+Emilio Zapico Spain 1 0 0 0 0 0 0.0
+Zhou Guanyu China 23 23 0 0 0 2 6.0
+Ricardo Zonta Brazil 37 36 0 0 0 0 3.0
+Renzo Zorzi Italy 7 7 0 0 0 0 1.0
+Ricardo Zunino Argentina 11 10 0 0 0 0 0.0
+```
+
+This step is really important, as it shows us the *actual* data we will send to the database. Check it to make sure there isn't a mistake.
+
+### Write Driver Data to Database
+
+Now we need to send the driver data to the database rather than the terminal.
+
+Back in **f1_datastore.py** we need to create a method that writes the data to the driver table. Add the following code under the `__init__()`:
+
+```{code}python
+:linenos:
+:lineno-start: 54
+    def add_driver(
+        self,
+        name: str,
+        nationality: str,
+        race_entries: int,
+        race_starts: int,
+        pole_positions: int,
+        race_wins: int,
+        podiums: int,
+        fastest_laps: int,
+        points: float,
+    ):
+        """
+        adds a driver to the database
+        """
+        self.cursor.execute(
+            """
+            INSERT INTO Driver (name, nationality, race_entries, race_starts, pole_positions, race_wins, podiums, fastest_laps, points)
+            VALUES (:name, :nationality, :race_entries, :race_starts, :pole_positions, :race_wins, :podiums, :fastest_laps, :points)
+            """,
+            {
+                "name": name,
+                "nationality": nationality,
+                "race_entries": race_entries,
+                "race_starts": race_starts,
+                "pole_positions": pole_positions,
+                "race_wins": race_wins,
+                "podiums": podiums,
+                "fastest_laps": fastest_laps,
+                "points": points,
+            },
+        )
+```
+:::{important} Explanation of Code
+:class: dropdown
+- lines 54 - 65 &rarr; define the method and list all the data that needs to be provided to the method.
+- lines 69 - 85 &rarr; are the parameterised SQL statement that will be run on the database.
+  - lines 70 - 73 &rarr; are the SQL statement template without the data.
+  - lines 74 - 84 &rarr; is a dictionary that contains the data to be plugged into the command template.
+:::
+
+:::{hint} Parameterized SQL statements
+:class: dropdown
+A way of safely and efficiently inserting values into SQL queries without building the query as a string. Instead of directly inserting values into a query (which can lead to errors or security issues), placeholders are used, and values are provided separately.
+
+Parameterized SQL statements are used to:
+- Prevent SQL Injection by separating code from data.
+- Improve performance by allowing databases to cache execution plans.
+- Reduce errors by helping to avoid syntax issues with strings, numbers, dates.
+:::
+
+Now we need to call the `add_driver` method from the `populate_database` method. Go up to the `populate_database` method and change the `print` in line 42, to a `add_driver` call.
+
+```{code}python
+:linenos:
+:lineno-start: 41
+:emphasize-lines: 42
+                # view the driver data
+                self.add_driver(
+                    name,
+                    nationality,
+                    race_entries,
+                    race_starts,
+                    pole_positions,
+                    race_wins,
+                    podiums,
+                    fastest_laps,
+                    points,
+                )
+```
+Finally we need to commit the changes we made to the database. We will do this in the `__init__`. Go to the `__init__` method and add the highlighted code to the bottom.
+
+```{code}python
+:linenos:
+:lineno-start: 10
+:emphasize-lines: 20
+    def __init__(self, database_file: str, data_file: str):
+        """
+        initialises the datastore
+        """
+        self.database_file = database_file
+        self.data_file = data_file
+        self.conn = sqlite3.connect(self.database_file)
+        self.cursor = self.conn.cursor()
+
+        self.populate_database()
+        self.conn.commit()
+```
+
+Save **f1_datastore.py**.
+
+### Test Writing Driver Data
+
+Go back to **main.py** and run it to test our code.
+
+To see if it worked we need to look into the data stored in the driver table. To do this, in the files panel, **right-click** on **f1_driver.db** and select Open Database.
+
+![open database](./assets/07/04_open_database.png)
+
+Then look to the bottom of the file panel then click:
+1. The dropdown arrow beside SQLITE EXPLORER
+2. The dropdown arrow beside f1_driver.db
+3. The dropdown arrow beside Driver
+4. The solid arrow to the right of Driver
+
+![view database](./assets/07/05_view_database.png)
+
+A panel should open to the right of your code showing the content of the Driver table.
+
+:::{danger} Refresh f1_driver.db
+If your code passes your test, we need to return the database file back to blank. To do this:
+1. select the **f1_driver.db** file and delete it.
+2. rename the **f1_driver copy.db** file to **f1_driver.db**
+3. then, with **f1_driver.db** still selected, press **Ctrl/Cmd** + **C** to copy. 
+4. press **Ctrl/Cmd** + **V** to paste it.
+5. you should once again have a **f1_driver copy.db** file and a **f1_driver.db** file
+:::
+
+## Writing to Seasons Table
+
+We will take the data for Seasons table from the **Championship Years** field. In the data this field contains strings that represent a list of integers, so there will need to be more converting of data types.
+
+We will go through the same process of first writing our results to the terminal and then writing them to the database. To prevent the need to continuously copying our database, we will deactivate the call to `add_driver` until we are finished.
+
+Go to the `populate_database` method then select lines 43 to 53. Then press **Ctrl/Cmd** + **/**. All those lines should now be comments, so Python will ignore them. They should look like:
+
+```{code}python
+:linenos:
+:lineno-start: 42
+                # view the driver data
+                # self.add_driver(
+                #     name,
+                #     nationality,
+                #     race_entries,
+                #     race_starts,
+                #     pole_positions,
+                #     race_wins,
+                #     podiums,
+                #     fastest_laps,
+                #     points,
+                # )
+```
