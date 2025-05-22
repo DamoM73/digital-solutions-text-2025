@@ -194,7 +194,7 @@ The next thing we can notice is that each value is a string, meaning that we nee
 
 Finally the `Seasons` value is a string representing a list. This will need to be converted and then iterated over. For example, processing Ricardo's seasons will require three entries into the database (one for each year).
 
-## Writing to Driver Table
+## Driver Data
 
 Looking at the [Data Structure ERD](#f1-database-structure), or viewing the **f1_driver.db** file, we can see that the Driver table requires the following fields:
 - driver_id
@@ -223,7 +223,7 @@ FOR record IN csv_reader
     fastest_laps = record[Fastest_Laps]
     points = record[Points]
     
-    INSERT driver data INTO driver table
+    INSERT INTO driver table (driver data) 
 NEXT record
 ENDFOR
 ```
@@ -421,27 +421,310 @@ If your code passes your test, we need to return the database file back to blank
 5. you should once again have a **f1_driver copy.db** file and a **f1_driver.db** file
 :::
 
-## Writing to Seasons Table
+## Seasons Data
 
 We will take the data for Seasons table from the **Championship Years** field. In the data this field contains strings that represent a list of integers, so there will need to be more converting of data types.
 
-We will go through the same process of first writing our results to the terminal and then writing them to the database. To prevent the need to continuously copying our database, we will deactivate the call to `add_driver` until we are finished.
+If we look at the data in the **Championship Years** column we see that:
 
-Go to the `populate_database` method then select lines 43 to 53. Then press **Ctrl/Cmd** + **/**. All those lines should now be comments, so Python will ignore them. They should look like:
+- it is most frequently blank &rarr; we need to check that the field is not blank before writing to the database
+- when there is data, it is a list &rarr; when there is data, we will need write to the database for each year in the field.
+
+The pseudocode for the processing the seasons data is as follows:
+
+```{code}pseudocode
+:linenos:
+:emphasize-lines: 5
+FOR record IN csv_reader
+    IF record[Championship Years] IS NOT NULL THEN
+        years = CONVERT record[Championship Years] INTO LIST
+        FOR year IN years
+            INSERT INTO seasons table (year, driver_id)
+        NEXT year
+        END FOR
+    END IF
+NEXT record
+END FOR
+```
+
+Notice the **driver_id** in line 5, this presents us with a problem. We need to use the **driver_id** for the current driver we just wrote to the **driver** table. Fortunately **sqlite3** provides a solution.
+
+### Get driver_id
+
+We will use a method where the cursor provides the row_id for the last row it wrote to the database. We can simply get **add_driver** to return that value and then store it in a variable for later use.
+
+Go to the very end of our `add_driver` method and add the highlighted line.
+
+```{code}python
+:linenos:
+:lineno-start: 75
+:emphasize-lines: 88
+                    {
+                "name": name,
+                "nationality": nationality,
+                "race_entries": race_entries,
+                "race_starts": race_starts,
+                "pole_positions": pole_positions,
+                "race_wins": race_wins,
+                "podiums": podiums,
+                "fastest_laps": fastest_laps,
+                "points": points,
+            },
+        )
+
+        return self.cursor.lastrowid 
+```
+
+We are now returning the **driver_id** now we need to store it somewhere. Go to where we call `add_driver` in the `populate_database` method. Then assign the return value to a variable:
 
 ```{code}python
 :linenos:
 :lineno-start: 42
+:emphasize-lines: 43
                 # view the driver data
-                # self.add_driver(
-                #     name,
-                #     nationality,
-                #     race_entries,
-                #     race_starts,
-                #     pole_positions,
-                #     race_wins,
-                #     podiums,
-                #     fastest_laps,
-                #     points,
-                # )
+                driver_id = self.add_driver(
+                    name,
+                    nationality,
+                    race_entries,
+                    race_starts,
+                    pole_positions,
+                    race_wins,
+                    podiums,
+                    fastest_laps,
+                    points,
+                )
 ```
+
+### Process Seasons Data
+
+Now we need extract the data for the Seasons table. Just like the driver data, we will first display this data to the terminal so we can check it.
+
+Go to the bottom of the `populate_database` method. Make sure that our indents place this code inside the `for record in csv_reader` loop. Add the highlighted code below:
+
+```{code}python
+:linenos:
+:lineno-start: 42
+:emphasize-lines: 55-60
+                # view the driver data
+                driver_id = self.add_driver(
+                    name,
+                    nationality,
+                    race_entries,
+                    race_starts,
+                    pole_positions,
+                    race_wins,
+                    podiums,
+                    fastest_laps,
+                    points,
+                )
+
+                # process only the championship years
+                if record["Championship Years"]:
+                    years = ast.literal_eval(record["Championship Years"])
+
+                    for year in years:
+                        print(year, driver_id)
+```
+
+:::{important} Explanation of Code
+:class: dropdown
+- line 56 &rarr; checks if there is a value in the **Championship Years** column
+- line 57 &rarr; converts the string the represents a list of integers into a list of integers and assigns it to `years`
+- line 59 &rarr; iterates through our new `years` list.
+- line 69 &rarr; prints the data that we will write to the Seasons table
+:::
+
+:::{warning} Import module
+We have used a method out of a new module `ast`, but we haven't imported it yet (that's why there is a red squiggly line under it). Import it at the top of your **f1_datastore.py** file
+
+```{code}python
+:linenos:
+:emphasize-lines: 3
+import sqlite3
+import csv
+import ast
+```
+:::
+
+Save **f1_datastore.py**
+
+### Testing Seasons Data
+
+Time to check if we are processing the data correctly. Run **main.py** and check the output by referencing both the csv file and the driver table in the database.
+
+:::{danger} Refresh f1_driver.db
+:class: dropdown
+If your code passes your test, we need to return the database file back to blank. To do this:
+1. select the **f1_driver.db** file and delete it.
+2. rename the **f1_driver copy.db** file to **f1_driver.db**
+3. then, with **f1_driver.db** still selected, press **Ctrl/Cmd** + **C** to copy. 
+4. press **Ctrl/Cmd** + **V** to paste it.
+5. you should once again have a **f1_driver copy.db** file and a **f1_driver.db** file
+:::
+
+### Write Seasons Data to Database
+
+Our data is correct, so we can write it to the Seasons table.
+
+Return to **f1_datastore.py** and then below the `add_driver` method create the `add_season` method.
+
+
+```{code}python
+:linenos:
+:lineno-start: 98
+    def add_season(self, year: int, champion: int):
+        """
+        adds a season to the database
+        """
+        self.cursor.execute(
+            """
+            INSERT INTO Seasons
+            VALUES (:year, :champion)
+            """,
+            {
+                "year": year, 
+                "champion": champion
+            },
+        )
+```
+
+:::{important} Explanation of Code
+:class: dropdown
+If you have a keen eye you may have noticed that line 7 looks different to our last INSERT statement &ndash; it doesn't have any field names. Why?
+
+If you look at the [Data Structure ERD] you will notice that the primary key (year) is a value that we are taking from the CSV file, therefore it is not auto-increment.
+
+In SQL, when you INSERT all the values into a table, you don't have to list the field names, they just get written in order. So the first VALUE item get written to the first field of the table, the second VALUE to the second field, and so-on.
+:::
+
+Then go up to the `populate_database` method and replace the print statement on line 61 with a call to the `add_season` method:
+
+```{code}python
+:linenos:
+:lineno-start:56
+:emphasize-lines:61
+                # process only the championship years
+                if record["Championship Years"]:
+                    years = ast.literal_eval(record["Championship Years"])
+
+                    for year in years:
+                        self.add_season(year, driver_id)
+```
+
+Save **f1_datastore.py**
+
+### Test Writing Seasons Data
+
+Run **main.py** then check that the data is written correctly into the database. 
+
+:::{danger} Refresh f1_driver.db
+:class: dropdown
+If your code passes your test, we need to return the database file back to blank. To do this:
+1. select the **f1_driver.db** file and delete it.
+2. rename the **f1_driver copy.db** file to **f1_driver.db**
+3. then, with **f1_driver.db** still selected, press **Ctrl/Cmd** + **C** to copy. 
+4. press **Ctrl/Cmd** + **V** to paste it.
+5. you should once again have a **f1_driver copy.db** file and a **f1_driver.db** file
+:::
+
+## Raced Data
+
+Onto our final table &ndash; Raced. 
+
+We will use the data from the **Seasons** column of the CSV. Looking at the data, it is a list and very similar to the **Championship Years** data. In fact it is a little simpler since there are no blank fields.
+
+The pseudocode for processing this data is:
+
+```{code}pseudocode
+:linenos:
+:emphasize-lines: 4
+FOR record IN csv_reader
+    seasons = CONVERT record[Seasons] INTO LIST
+    FOR season IN seasons
+        INSERT INTO raced table (driver_id, season)
+    NEXT season
+    END FOR
+NEXT record
+END FOR
+```
+
+Be careful with line 4, in this table **driver_id** comes first
+
+### Processing Raced Data
+
+Fortunately, we already have the driver_id data, so we only need to extract the Raced data from the Season column of the CSV. 
+
+At the bottom of the `populate_database` method in **f1_datastore.py** add the following code:
+
+```{code}python
+:linenos:
+:lineno-start:56
+:emphasize-lines: 63,64,65,66
+                # process only the championship years
+                if record["Championship Years"]:
+                    years = ast.literal_eval(record["Championship Years"])
+
+                    for year in years:
+                        self.add_season(year, driver_id)
+
+                # process driver seasons
+                seasons = ast.literal_eval(record["Seasons"])
+                for season in seasons:
+                    print(driver_id, season)
+```
+
+This code is virtually the same as processing Championship Years.
+
+Save **f1_datastore.py**
+
+### Testing Raced Data
+
+Run **main.py** and check the data in the terminal against the data in the CSV and database.
+
+:::{danger} Refresh f1_driver.db
+:class: dropdown
+If your code passes your test, we need to return the database file back to blank. To do this:
+1. select the **f1_driver.db** file and delete it.
+2. rename the **f1_driver copy.db** file to **f1_driver.db**
+3. then, with **f1_driver.db** still selected, press **Ctrl/Cmd** + **C** to copy. 
+4. press **Ctrl/Cmd** + **V** to paste it.
+5. you should once again have a **f1_driver copy.db** file and a **f1_driver.db** file
+:::
+
+### Writing Raced Data
+
+In **f1_datastore.py** create the `add_raced` method by add the code below:
+
+```{code}python
+:linenos:
+:lineno-start: 118
+    def add_raced(self, driver_id: int, year: int):
+        self.cursor.execute(
+            """
+            INSERT INTO Raced
+            VALUES (:driver_id, :year)
+            """,
+            {
+                "driver_id": driver_id, 
+                "year": year
+            },
+        )
+```
+
+Then we need to replace the `print` in the `populate_database` method with a call to the `add_raced` method.
+
+```{code}python
+:linenos:
+:lineno-start: 63
+:emphasize-lines: 66
+                # process driver seasons
+                seasons = ast.literal_eval(record["Seasons"])
+                for season in seasons:
+                    self.add_raced(driver_id, season)
+```
+
+Save **f1_datastore.py**.
+
+### Test Writing Raced Data
+
+Time to run our final test. Run **main.py** and then check that the data is correctly written to the database.
