@@ -66,14 +66,15 @@ project:
         - file: content/07_python/01_intro.md
         - file: content/07_python/02_pyqt.md
         - file: content/07_python/03_csv.md
-        - file: content/07_python/04_queries.md
-        - file: content/07_python/05_creation.md
-        - file: content/07_python/06_populate.md
-        - file: content/07_python/07_json.md
-        - file: content/07_python/08_requests.md
-        - file: content/07_python/09_ciphers.md
-        - file: content/07_python/10_hashing.md
-        - file: content/07_python/11_type_hints.md
+        - file: content/07_python/04_type_hints.md
+        - file: content/07_python/05_queries.md
+        - file: content/07_python/06_creation.md
+        - file: content/07_python/07_populate.md
+        - file: content/07_python/08_json.md
+        - file: content/07_python/09_requests.md
+        - file: content/07_python/10_ciphers.md
+        - file: content/07_python/11_hashing.md
+        
     - title: SQL Skills
       children:
         - file: content/08_sql/01_intro.md
