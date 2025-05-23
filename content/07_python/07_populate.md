@@ -728,3 +728,22 @@ Save **f1_datastore.py**.
 ### Test Writing Raced Data
 
 Time to run our final test. Run **main.py** and then check that the data is correctly written to the database.
+
+## Exercise
+
+Now that we have finished our F1 driver database, it's time to apply this knowledge to a new dataset.
+
+In your Unit 3 repo you will have the **netflix_titles.csv** and **netflix_shows.db** files. Below is the data structure ERD.
+
+![netflix ERD](./assets/07/06_erd_netflix.png)
+
+This is a much larger dataset and more complicated database. Never-the-less, the concepts and processes are the same as the F1 Drivers database. 
+
+Make sure that you follow the same process:
+
+1. View the dataset in CSV
+2. Connect and print CSV to terminal
+3. Identify the order of tables to populate (hint: check the numbers on the ERD)
+4. For each table:
+   - process the data to terminal and check
+   - write data to table and check
