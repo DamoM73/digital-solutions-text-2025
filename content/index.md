@@ -20,7 +20,7 @@ Try changing `tip` to `warning`!
 Try changing `tip` to `warning`!
 :::
 
-:::{tip}
+:::{tip} Tip
 :class: dropdown
 Try changing `tip` to `warning`!
 :::
