@@ -1,7 +1,10 @@
 # Populating Databases
 
 :::{dropdown} In this section you will...
-- Learn to read data from a CSV file into a SQLite database
+- Learn how to populate a database with a dataset in a CSV file
+- Assess a dataset in relation to a data structure and the data it contains
+- Process and display data to the terminal for checking purposes
+- Write checked data to the database
 :::
 
 :::{note} You will need...
