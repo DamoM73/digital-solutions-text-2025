@@ -1,3 +1,3 @@
 # Python Introduction
 
-![xkcd python](./assets/python.png)
+![xkcd python](./assets/01/python.png)

@@ -23,7 +23,7 @@ Windows users can install Python via the official Python website or via the Micr
 
 The Microsoft Store offers two advantages:
 
-1. Python will automatically be added to the **<a href="https://www.maketecheasier.com/what-is-the-windows-path/" target="_blank">PATH variable</a>**.
+1. Python will automatically be added to the **[PATH variable](https://www.maketecheasier.com/what-is-the-windows-path/)**.
 2. Windows will automatically update minor release of Python. For example
    - it will update 3.12.0 &rarr; 3.12.1
    - it **won't** update 3.12.0 &rarr; 3.13
@@ -36,31 +36,30 @@ To install via the Microsoft Store:
 
 #### Official website
 
-To install Python go to the **<a href="https://www.python.org/downloads/" target="_blank">downloads section of the Python website</a>** and choose the installer for your OS.
+To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
 
 :::{danger}Important step for Windows users
 <font color=red>**Really important for Windows users (hence the red):** You need to make sure that you check the box beside **Add Python 3.1X to PATH**. Failure to do this will hamper the use of Python on Windows, and when you have a problem, I will just tell you to reinstall it using the instructions that you should have used the first time.</font>
 
 <font color=red>Follow the steps below:</font>
 
-![python installer](./assets/01/pytyon_installer.png)
+![python installer](./assets/01/01_pytyon_installer.png)
 :::
 
 ### Mac Users
 
-To install Python go to the **<a href="https://www.python.org/downloads/" target="_blank">downloads section of the Python website</a>** and choose the installer for your OS.
+To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
 
 ## Python Packages
 
-Python comes installed with a range of packages. This is called **<a href="https://docs.python.org/3/library/" target="_blank">The Python Standard Library</a>**. Although these might seem like a huge number of packages, it is actually a very small selection of packages available. These cover Python's basic operations, and limiting the install to these packages reduces the size of Python.
+Python comes installed with a range of packages. This is called **[The Python Standard Library](https://docs.python.org/3/library/)**. Although these might seem like a huge number of packages, it is actually a very small selection of packages available. These cover Python's basic operations, and limiting the install to these packages reduces the size of Python.
 
-To extend the functionality of Python, you need to install additional packages. These packages can be found at the **<a href="https://pypi.org/" target="_blank">Python Package Index</a>**. Some of the packages we will use are:
+To extend the functionality of Python, you need to install additional packages. These packages can be found at the **[Python Package Index](https://pypi.org/)**. Some of the packages we will use are:
 
-- **<a href="https://pypi.org/project/PyQt6/" target="_blank">PyQt6</a>**
-- **<a href="https://pypi.org/project/requests/" target="_blank">Requests</a>**
+- **[PyQt6](https://pypi.org/project/PyQt6/)**
+- **[Requests](https://pypi.org/project/requests/)**
 
 To install the packages, we will be using Python's built-in package installer `pip`.
-
 
 ---
 
@@ -76,7 +75,7 @@ An IDE (or Integrated Development Environment) is a program dedicated to softwar
 
 In contrast, a dedicated code editor can be as simple as a text editor with syntax highlighting and code formatting capabilities. Most good code editors can execute code and control a debugger. The very best ones interact with source control systems as well. Compared to an IDE, a good dedicated code editor is usually smaller and quicker, but often less feature rich.
 
-We will be using Visual Studio Code (VS Code) (**<a href="https://code.visualstudio.com/" target="_blank">download from here</a>**) which is a code editor, although, we will use a range extensions to expand its capability so that is it equivalent to  an IDE.
+We will be using Visual Studio Code (VS Code) (**[download from here](https://code.visualstudio.com/)**) which is a code editor, although, we will use a range extensions to expand its capability so that is it equivalent to  an IDE.
 
 Importantly, the extended VS Code will allows us to:
 
@@ -145,19 +144,19 @@ To create a virtual environment for this project:
 2. Type **Python** at the top
 3. Choose **Python: Create Environment...**
 
-![Create venv 1](assets/01/create_venv_1.png)
+![Create venv 1](assets/01/02_create_venv_1.png)
 
 4. At the top choose the **Venv** option
 
-![Create venv 2](assets/01/create_venv_2.png)
+![Create venv 2](assets/01/03_create_venv_2.png)
 
 5. Then choose the latest version of Python that you just installed
 
-![Create venv 3](assets/01/create_venv_3.png)
+![Create venv 3](assets/01/04_create_venv_3.png)
 
 6. Tick the box beside **requirements.txt** and then **ok**
 
-![Create venv 4](assets/01/create_venv_4.png)
+![Create venv 4](assets/01/05_create_venv_4.png)
 
 VS Code will now:
 
@@ -168,8 +167,9 @@ VS Code will now:
 
 ### Check Virtual Environment
 
+To check that the virtual environment is active, look at the status bar at the bottom left for Python versions and virtual environment name (see below).
 
-
+![check virtual environment](./assets/01/06_check_venv.png)
 
 ## Version Control
 
@@ -177,15 +177,15 @@ Version control, also known as source control, is the practice of tracking and m
 
 ### Git
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is naturally incorporated into VS Code, but you will need to **<a href="https://git-scm.com/downloads" target="_blank">download and install the Git client</a>** for it to work properly.
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is naturally incorporated into VS Code, but you will need to **[download and install the Git client](https://git-scm.com/downloads)** for it to work properly.
 
 ### Github
 
-**<a href="https://github.com/" target="_blank">GitHub</a>** is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. It is commonly used to host open-source projects. As of November 2021, GitHub reports having over 73 million developers and more than 200 million repositories (including at least 28 million public repositories).
+**[GitHub](https://github.com/)** is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. It is commonly used to host open-source projects. As of November 2021, GitHub reports having over 73 million developers and more than 200 million repositories (including at least 28 million public repositories).
 
-We will be using GitHub to host your code for this course. If you don't already have an account, got to **<a href="https://github.com/" target="_blank">GitHub</a>** and register. Use your College email to register. You can change the email if you wish to use the account after school to access your code from this course.
+We will be using GitHub to host your code for this course. If you don't already have an account, got to **[GitHub](https://github.com/)** and register. Use your College email to register. You can change the email if you wish to use the account after school to access your code from this course.
 
-To make working with GitHub easier, we will also be using **<a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>** which is a GUI interface for working with GitHub. It makes using GitHub significantly easier.
+To make working with GitHub easier, we will also be using **[GitHub Desktop](https://desktop.github.com/)** which is a GUI interface for working with GitHub. It makes using GitHub significantly easier.
 
 ---
 
@@ -193,7 +193,7 @@ To make working with GitHub easier, we will also be using **<a href="https://des
 
 Database Management Systems (DBMS) are software systems used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update, and delete data in the database. 
 
-In Unit 2 we will working with databases using SQL (Structured Query Language), in particular a version caller SQLite. Ultimately in Unit 3 we will designing and developing our own DBMS, but for Unit 2 we will use a lightweight DBMS called **<a href="https://sqlitebrowser.org/" target="_blank">DB Browser for SQLite</a>**.
+In Unit 2 we will working with databases using SQL (Structured Query Language), in particular a version caller SQLite. Ultimately in Unit 3 we will designing and developing our own DBMS, but for Unit 2 we will use a lightweight DBMS called **[DB Browser for SQLite](https://sqlitebrowser.org/)**.
 
 ---
 
@@ -202,17 +202,17 @@ In Unit 2 we will working with databases using SQL (Structured Query Language), 
 (xmind_install)=
 ### XMind
 
-An important step in analysing and planning in Digital Solutions is using mind maps. There are many mind mapping tools available, both desktop and online, but I recommend that we use **<a href="https://xmind.app/" target="_blank">Xmind</a>**. The free version has all the features we need. **When it asks you to create an account, choose the skip option**.
+An important step in analysing and planning in Digital Solutions is using mind maps. There are many mind mapping tools available, both desktop and online, but I recommend that we use **[Xmind](https://xmind.app/)**. The free version has all the features we need. **When it asks you to create an account, choose the skip option**.
 
 ### Diagrams dot net
 
-Throughout the course you will need to create a range of diagrams. To do this we will use diagrams dot net. You can use the **<a href="https://www.diagrams.net/" target="_blank">online version</a>**, or you can download the **<a href="http://get.diagrams.net/" target="_blank">desktop version</a>**. I personally use the desktop version to save my diagrams straight to my project folders.
+Throughout the course you will need to create a range of diagrams. To do this we will use diagrams dot net. You can use the **[online version](https://www.diagrams.net/)**, or you can download the **[desktop version](http://get.diagrams.net/)**. I personally use the desktop version to save my diagrams straight to my project folders.
 
-### Adobe XD
+### Figma
 
-We will be using Adobe XD to create wireframes, mockups, prototypes, and application interface flowcharts. To install Adobe XD you need to **<a href="https://creativecloud.adobe.com/en/apps/download/creative-cloud" target="_blank">download and install Creative Cloud</a>**, log in using your school account and then choose to install Adobe XD.
+We will be using Figma to create wireframes, mockups, prototypes, and application interface flowcharts. To access Figma **[got to the website](https://www.figma.com/)**. Check with your teacher for your account details.
 
 (qt_designer)=
 ### Qt Designer
 
-**<a href="https://build-system.fman.io/qt-designer-download" target="_blank">Qt Designer</a>** is a tool for quickly building graphical user interfaces with widgets from the Qt GUI framework. It gives you a simple drag-and-drop interface for laying out components such as buttons, text fields, combo boxes and more. We will be using it throughout the course.
+**[Qt Designer](https://build-system.fman.io/qt-designer-download)** is a tool for quickly building graphical user interfaces with widgets from the Qt GUI framework. It gives you a simple drag-and-drop interface for laying out components such as buttons, text fields, combo boxes and more. We will be using it throughout the course.
