@@ -15,12 +15,12 @@ Try changing `tip` to `warning`!
 Try changing `tip` to `warning`!
 :::
 
-:::{seealso}
+:::{seealso} 
 :class: dropdown
 Try changing `tip` to `warning`!
 :::
 
-:::{tip} Tip
+:::{tip} Summary
 :class: dropdown
 Try changing `tip` to `warning`!
 :::

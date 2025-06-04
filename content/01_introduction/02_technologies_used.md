@@ -8,7 +8,7 @@ We will be using Python as our programming language for this course. Specificall
 
 :::{caution} I already have Python
 :class: dropdown
-You may laready have Python installed on your computer. This may be from a previous course, or macOS sometimes comes packaged with Python 2.7 (don't not use this or remove it, it is part of your operating system).
+You may already have Python installed on your computer. This may be from a previous course, or macOS sometimes comes packaged with Python 2.7 (don't not use this or remove it, it is part of your operating system).
 
 Irrespective, is it best that you install and use the latest version of Python. This will provide you with access to all the features described in this course and ensure that you are using the fastest and most secure version of the language.
 
@@ -107,14 +107,14 @@ You can also install various icon and colour themes. For this course I will be u
 
 The modular nature of Pythons means that different projects will require different packages. Over time this can lead to dependency conflicts and your Python install will become bloated. To prevent this we use **virtual environments**.
 
-:::{hint}Dependancy Conflict
+:::{hint} Dependency Conflict
 :class: dropdown
-Modules in Python are built using other modules, these are called **dependencies**. It is not unusual for two different modules share a dependancy, but this can present a problem when the two modules require different versions of the shared dependancy. Which version of the shared dependancy should be installed? This is called a dependancy conflict.
+Modules in Python are built using other modules, these are called **dependencies**. It is not unusual for two different modules share a dependency, but this can present a problem when the two modules require different versions of the shared dependency. Which version of the shared dependency should be installed? This is called a dependency conflict.
 :::
 
 At its core, the main purpose of Python virtual environments is to create an isolated version of Python for a specific project. This means that each project can have its own packages, regardless of what packages every other project has. The great thing about this is that there are no limits to the number of environments you can have since they're just directories containing a different scripts.
 
-:::{tip} requirements.txt
+:::{hint} requirements.txt
 :class: dropdown
 The `requirements.txt` file lists all the external libraries that we need to install for this project. 
 
@@ -128,11 +128,11 @@ You can add extra libraries to this file, but to install them you will need to r
 
 :::{danger} Windows Users
 :class: dropdown
-If you are a Windows user, you might need to run a Powershell command before you create a virtual environment for the first time.
+If you are a Windows user, you might need to run a PowerShell command before you create a virtual environment for the first time.
 
 To do this:
 
-1. Open Powershell **as Adminstrator**
+1. Open PowerShell **as Administrator**
 2. Type the following: `Set-ExecutionPolicy Unrestricted -Force` then Enter
 
 You shouldn't need to do this again, unless you get a new computer.
@@ -179,7 +179,7 @@ Version control, also known as source control, is the practice of tracking and m
 
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is naturally incorporated into VS Code, but you will need to **[download and install the Git client](https://git-scm.com/downloads)** for it to work properly.
 
-### Github
+### GitHub
 
 **[GitHub](https://github.com/)** is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. It is commonly used to host open-source projects. As of November 2021, GitHub reports having over 73 million developers and more than 200 million repositories (including at least 28 million public repositories).
 
@@ -210,7 +210,7 @@ Throughout the course you will need to create a range of diagrams. To do this we
 
 ### Figma
 
-We will be using Figma to create wireframes, mockups, prototypes, and application interface flowcharts. To access Figma **[got to the website](https://www.figma.com/)**. Check with your teacher for your account details.
+We will be using Figma to create wireframes, mock-ups, prototypes, and application interface flowcharts. To access Figma **[got to the website](https://www.figma.com/)**. Check with your teacher for your account details.
 
 (qt_designer)=
 ### Qt Designer
