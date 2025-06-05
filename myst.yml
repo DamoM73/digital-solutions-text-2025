@@ -74,6 +74,7 @@ project:
         - file: content/07_python/09_requests.md
         - file: content/07_python/10_ciphers.md
         - file: content/07_python/11_hashing.md
+        - file: content/07_python/12_checksums.md
         
     - title: SQL Skills
       children:
