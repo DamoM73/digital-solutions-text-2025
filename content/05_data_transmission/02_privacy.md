@@ -18,23 +18,23 @@ This video explains the critical importance of data privacy and ethics in today'
 
 Key issues and concerns highlighted include:
 
-1. **Data Collection and Consent:**
+- **Data Collection and Consent:**
    - **Issue:** Organizations often collect user data without users fully understanding what's being collected or how it will be used.
    - **Concern &ndash; Informed Consent:** Users frequently agree to terms without full comprehension, leading to potential unauthorized use of their information.
    - **Concern &ndash; Transparency:** Lack of transparency from companies about their data practices can make users feel their privacy is compromised.
-2. **Data Storage and Security:**
+- **Data Storage and Security:**
    - **Issue:** Large data repositories are attractive targets for cybercriminals.
    - **Concern &ndash; Data Breaches:** Inadequate security measures can expose personal information, leading to risks like identity theft.
-3. **Data Sharing and Third-Party Access:**
+- **Data Sharing and Third-Party Access:**
    - **Issue:** Sharing data with third-party vendors increases the risk of unauthorized access.
    - **Concern &ndash; Lack of User Control:** Once data is shared, users have little control over its subsequent use, potentially leading to unwanted targeting.
-4. **Data Profiling and Surveillance:**
+- **Data Profiling and Surveillance:**
    - **Issue:** Organizations use data profiling to make inferences about behaviour, which can impact decisions like credit scores or job prospects.
    - **Concern &ndash; Privacy Intrusion:** This practice can feel invasive as individual behaviours are tracked to build detailed profiles.
 
 The video then emphasizes Ethical Considerations in Data Use, stressing the need for responsible data handling and prioritizing individual rights. A key ethical practice is:
 
-5. **Transparency and Honesty:** Organizations should clearly communicate how data is collected, used, and shared.
+- **Transparency and Honesty:** Organizations should clearly communicate how data is collected, used, and shared.
     - **Importance &ndash; Building Trust:** Transparent data practices are crucial for building trust with users, reassuring them that their information is handled responsibly.
 :::
 
@@ -85,11 +85,12 @@ Organizations have an ethical obligation to protect collected data from unauthor
 
 High-profile breaches highlight the risks and the importance of robust security measures.
 
-Use these tools to find out what of your personal data is available in the internet:
+:::{seealso} How much of your data is available on the web?
+Check our how much of your data is exposed to the internet:
 - [See your identity pieced together from stolen data](https://www.abc.net.au/news/2023-05-18/data-breaches-your-identity-interactive/102175688)
 - [HaveIBeenPwned](https://haveibeenpwned.com/)
 - [Privacy Analyzer &ndash; See what data is exposed from your browser](https://privacy.net/analyzer/)
-
+:::
 
 ### Bias and Discrimination
 
@@ -117,17 +118,52 @@ Data can be used unethically for manipulative marketing, psychological profiling
 
 There are ongoing ethical debates about who owns personal data and who has the right to control its use, especially as data becomes a valuable asset.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XAPNMcgMTks?si=6Zk_lC5BoQD7fQp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
+
 ### Data Minimization and Purpose Limitation
 
 Ethically, organizations should collect only the data necessary for a specific purpose and not retain it longer than needed, balancing commercial interests with individual rights.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MKCrpruBH_Q?si=bLTMBsOdMIhCyrn-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
 
 ### Fairness in Use and Retention
 
 The use of data for purposes beyond the original intent without explicit consent is unethical, even if the organization believes it is beneficial.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/km8Q_xjGoKI?si=DJ-3DYx-XAaSStlf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
+
 ### Legal and Regulatory Compliance
 
 Navigating and adhering to diverse and evolving data protection laws is both an ethical and legal requirement, ensuring respect for individuals’ rights across jurisdictions.
+
+Here are some examples data privacy laws in force around the world:
+
+- **European Union: General Data Protection Regulation (GDPR)**
+   - **Scope:** Applies to all organizations processing personal data of EU residents, regardless of where the organization is based.
+   - **Key Features:** Requires explicit consent, data minimization, the right to access and delete data, data portability, and strict breach notification requirements. Imposes heavy penalties for non-compliance.
+   - **Influence:** Considered the global benchmark, inspiring similar laws in other countries.
+- **United States: State and Sectoral Laws**
+   - In the US, data privacy is governed by a mix of federal sectoral laws and a growing number of comprehensive state laws, each granting consumers rights over their personal information and imposing various obligations on businesses
+   - **Federal Sectoral Laws:** apply to particular industries or types of data, rather than providing a single, comprehensive framework for all personal information. Here are some examples:
+     - **HIPAA (Health Insurance Portability and Accountability Act):** Protects health information privacy.
+     - **GLBA (Gramm-Leach-Bliley Act):** Regulates financial institutions' handling of personal financial information.
+     - **COPPA (Children’s Online Privacy Protection Act):** Governs online collection of data from children under 13.
+     - **FERPA (Family Educational Rights and Privacy Act):** Protects the privacy of student education records.
+     - **FCRA (Fair Credit Reporting Act):** Regulates the collection and use of consumer credit information.
+   - **State Comprehensive Privacy Laws:** As of 2025, at least 16 US states have passed comprehensive privacy laws, each with unique requirements and enforcement mechanisms. For example:
+     - **California Consumer Privacy Act (CCPA):** Grants California residents rights to know, delete, and opt out of the sale of their personal data. Other states like Virginia, Colorado, and Texas have enacted similar laws.
+     - **Virginia Consumer Data Protection Act (CDPA):** Emphasizes user consent, transparency, and allows consumers to opt out of data collection and targeted advertising.
+     - **Colorado Privacy Act:** Focuses on data minimization, purpose limitation, and consumer rights to access, correct, delete, and opt out of data sales and targeted ads.
+- **China: Personal Information Protection Law (PIPL)**
+   - **Comprehensive Coverage:** Applies to any entity handling personal data of people in China, even if the entity is based overseas.
+   - **Key Features:** Consent, data minimization, cross-border data transfer restrictions, and severe penalties for non-compliance.
+- **Australia: Privacy Act 1988 and Australian Privacy Principles (APPs)**
+   - **Scope:** Governs how personal information is handled by government agencies and many private sector organizations.
+   - **Key Features:** Open and transparent management, data quality and security, access and correction rights, and restrictions on cross-border disclosure.
+
+Due to the international nature of the internet, the influence of these laws can spread far beyond their legal jurisdiction. For example:
+- The GDPR is the reason web sites ask you to accept cookies
+- COPPA is the reasons the Terms and Conditions of social media accounts exclude children under 13 years old.
 
 ## Australian Privacy Principles
 
@@ -149,7 +185,81 @@ The 13 Australian Privacy Principles:
 12. **Access to Personal Information** &ndash; Individuals have the right to access their personal information held by an organization, subject to some exceptions.
 13. **Correction of Personal Information** &ndash; Organizations must take reasonable steps to correct personal information to ensure it is accurate, up-to-date, complete, relevant, and not misleading.
 
-### Deidentification 
+## Open Data 
 
+Open data refers to data that is freely available for anyone to access, use, modify, and share, typically without restrictions or the need for special permissions. It is often published by governments, public institutions, or private organizations and is made available in accessible, machine-readable formats.
 
-## Intellectual Property
+Key Features of Open Data:
+- Freely accessible to all, regardless of user or purpose.
+- Usable, reusable, and redistributable without significant restrictions.
+- Often structured for easy analysis and integration with other datasets.
+
+### Importance of Open Data
+- **Promotes Transparency and Accountability**
+   - Open data allows citizens to scrutinize the actions and performance of governments and organizations, increasing transparency and enabling public oversight.
+   - For example, open data platforms can reveal school performance or government spending, empowering communities to advocate for improvements.
+
+- **Drives Innovation and Economic Growth**
+   - By making valuable datasets available, open data stimulates the creation of new products, services, and business models, fostering entrepreneurship and job creation.
+   - The economic impact is significant; for instance, the release of weather and GPS data in the US led to new industries and billions in added value.
+
+- **Enhances Public Services and Efficiency**
+   - Sharing data across government agencies and with the public leads to better decision-making, more efficient services, and reduced duplication of effort.
+   - Open data helps identify areas of unnecessary spending and improves overall service delivery.
+
+- **Supports Scientific Research and Collaboration**
+   - Open data accelerates scientific discovery by enabling researchers to validate findings, build upon each other’s work, and collaborate across disciplines and borders.
+
+- **Empowers Individuals and Communities**
+   - Accessible data gives people the information needed to make informed choices, participate in civic life, and advocate for themselves and their communities.
+
+- **Encourages Social Welfare and Participation**
+   - Open data initiatives can improve social outcomes by informing public debate, supporting evidence-based policy, and enabling social innovation.
+
+:::{seealso} The Trump Administration’s War on Measuring
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a64qxZGps2E?si=G6jFdhPS50QU7GtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Consider the short-term and long-term impact of these decisions.
+:::
+
+:::{hint} Australian Open Data Sources
+:class: dropdown
+Here are major open data sources in Australia, covering national, state, and sector-specific datasets:
+
+- National Open Data Portals:
+  - [Data.gov.au](data.gov.au)
+  - [Australian Bureau of Statistics (ABS)](abs.gov.au)
+  - [NationalMap](nationalmap.gov.au)
+- State and Territory Open Data Portals:
+  - [New South Wales: Data.NSW](data.nsw.gov.au)
+  - [Victoria: Data.VIC](data.vic.gov.au)
+  - [Queensland Government Open Data Portal](data.qld.gov.au)
+  - [South Australia: DataSA](data.sa.gov.au)
+  - [Western Australia: DataWA](data.wa.gov.au)
+  - [Tasmania: Land Information System Tasmania (LIST)](thelist.tas.gov.au)
+  - [Australian Capital Territory: DataACT](data.act.gov.au)
+  - [Northern Territory: NT Government Open Data Portal](data.nt.gov.au)
+- Councils Open Data Portals:
+  - [Brisbane City Council Open Data Portal](data.brisbane.qld.gov.au)
+  - [City of Gold Coast Open Data Portal](data-goldcoast.opendata.arcgis.com)
+  - [Logan City Council Open Data Portal](https://www.logan.qld.gov.au/open-data)
+  - [Redland City Council Open Data Portal](https://opendata.redland.qld.gov.au)
+:::
+
+### De-identification
+
+Open data can easily conflict with privacy. A solution to this problem is the de-identitication of data.
+
+**De-identification** is the process of removing or altering personal information from a dataset so that individuals cannot be readily identified. The goal is to protect privacy while still allowing the data to be used for analysis, research, or public release.
+
+**Key Steps in De-identification**
+1. **Removing Direct Identifiers:** This includes deleting or masking information such as names, addresses, phone numbers, email addresses, Medicare numbers, and other unique identifiers.
+2. **Modifying or Generalizing Indirect Identifiers:** Indirect identifiers (also called quasi-identifiers) are data points like date of birth, postcode, or gender that, when combined, could identify someone. These may be generalized (e.g., using age ranges instead of exact birth dates) or partially removed.
+3. **Data Masking and Perturbation:** Techniques such as data swapping, adding random noise, or aggregating data can further reduce the risk of re-identification.
+
+**Why is De-identification Important?**
+- **Privacy Protection:** It helps organizations comply with privacy laws (like the Australian Privacy Principles or GDPR) by reducing the risk that individuals can be identified from released data.
+- **Enabling Data Sharing:** De-identified data can often be shared more freely for research, policy-making, and innovation, unlocking value while minimizing privacy risks.
+
+**Limitations and Risks**
+- **Re-identification Risk:** De-identification is not foolproof. Advances in data analytics and the availability of other datasets mean that, in some cases, individuals can still be re-identified, especially if the data is rich or unique.
+- **Continuous Process:** De-identification should be regularly reviewed and updated as new risks, technologies, and datasets emerge.
