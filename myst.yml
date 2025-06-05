@@ -102,6 +102,7 @@ project:
         - file: content/10_assessments/07_ia2.md
         - file: content/10_assessments/08_ia3.md
         - file: content/10_assessments/09_ea.md
+    - file: content/bibliography.md
 
     #   - file: data.md
     #   - file: data_transmission.md
@@ -125,6 +126,9 @@ project:
     #     - file: ia2.md
     #     - file: ia3.md
     #     - file: iae.md
+# bibtex:
+#   bibliography: references.bib
+
 site:
   template: book-theme
   options:
