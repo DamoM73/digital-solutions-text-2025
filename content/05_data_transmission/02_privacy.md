@@ -175,6 +175,8 @@ Due to the international nature of the internet, the influence of these laws can
 
 The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference) are a set of 13 key rules under the Privacy Act 1988 that govern how Australian organizations and government agencies handle personal information. These principles are designed to ensure privacy, transparency, and accountability in the collection, use, storage, and disclosure of personal data.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eHtVG3Or2tg?si=raTY1ZRs4l8ZT9KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
+
 The 13 Australian Privacy Principles:
 
 1. **Open and Transparent Management of Personal Information** &ndash; Organizations must manage personal information in an open and transparent way, including having a clearly expressed and up-to-date privacy policy.
