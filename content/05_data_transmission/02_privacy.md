@@ -1,7 +1,13 @@
 # Data Privacy
 
 :::{dropdown} Learning Goals
-Dropdown content
+By the end of this section you will:
+- understand ethical issues around data and privacy
+- understand the value of data as a commodity
+- know the ethical issues in relation to handling personal data
+- understand the Australian Privacy Principles
+- know about Open Data and why it is important
+- understand the process of protecting privacy by de-identifying open data
 :::
 
 If you are a member of a modern society, your personal data has been collected. Sometimes it is collected by governments, but mostly it is collected by corporations. It is that extensive that an entire industry has developed collate and on-sell personal data ([data brokers](https://www.security.org/data-removal/data-broker/)) and sparking a counter industry aimed at removing personal data from these data brokers ([personal data removal services](https://au.pcmag.com/security/110363/personal-data-removal-services-how-they-work-and-why-you-need-one)).
@@ -42,7 +48,7 @@ So you can see that Data privacy is fundamental because it safeguards individual
 
 In this section we will explore what we need to take into consideration when handling data in Australia.
 
-## Information as a Commodity
+## Data as a Commodity
 
 Information as a commodity refers to the idea that information—like physical goods—can be bought, sold, and traded for economic value. In the digital age, information and data have become valuable resources, much like oil or gold, because they can be used to drive business decisions, predict consumer behaviour, and tailor products and services.
 
@@ -165,7 +171,7 @@ Due to the international nature of the internet, the influence of these laws can
 - The GDPR is the reason web sites ask you to accept cookies
 - COPPA is the reasons the Terms and Conditions of social media accounts exclude children under 13 years old.
 
-## Australian Privacy Principles
+## Australian Privacy Principles 📝
 
 The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference) are a set of 13 key rules under the Privacy Act 1988 that govern how Australian organizations and government agencies handle personal information. These principles are designed to ensure privacy, transparency, and accountability in the collection, use, storage, and disclosure of personal data.
 
