@@ -299,9 +299,98 @@ FTP is **not secure** by default:
 
 ### VPN
 
+A **VPN (Virtual Private Network)** keeps your internet connection private and secure. It uses **protocols** to create a safe tunnel for your data.
+
+Here are the most common VPN protocols:
+
+- **PPTP (Point-to-Point Tunneling Protocol)**
+  - Very old and fast
+  - Easy to set up
+  - Weak security — not recommended
+- **L2TP/IPsec**
+  - Combines two protocols for better security
+  - Safer than PPTP
+  - Slower, but more secure
+- **OpenVPN**
+  - Very secure and reliable
+  - Can work on most networks
+  - A bit slower but very safe
+- **IKEv2/IPsec**
+  - Fast and stable
+  - Great for phones and tablets
+  - Handles switching Wi-Fi and mobile data well
+- **WireGuard**
+  - New and very fast
+  - Uses strong, modern security
+  - Still being adopted by some platforms
+
+| Protocol    | Speed   | Security | Best For               |
+| ----------- | ------- | -------- | ---------------------- |
+| PPTP        | ✅ Fast  | ❌ Weak   | Old systems (not safe) |
+| L2TP/IPsec  | ⚠️ Okay | ✅ Good   | Better security        |
+| OpenVPN     | ⚠️ Okay | ✅ Great  | Most safe setups       |
+| IKEv2/IPsec | ✅ Fast  | ✅ Great  | Phones and mobile use  |
+| WireGuard   | ✅ Fast  | ✅ Great  | Modern, future VPNs    |
+
 ### Streaming
 
+**Streaming protocols** are rules that control how audio and video are sent over the internet so that people can watch or listen in **real time** without downloading the entire file first.
+
+There are two main types:
+- **Live streaming** – real-time content like live events or games
+- **On-demand streaming** – videos or music you can play anytime (e.g. YouTube, Netflix)
+
+**Common Streaming Protocols**
+- **HTTP Live Streaming (HLS)**
+  - Created by Apple
+  - Breaks video into small chunks and sends them one at a time
+  - Works well on phones, computers, and smart TVs
+  - Can change quality depending on your internet speed (adaptive streaming)
+- **Dynamic Adaptive Streaming over HTTP (MPEG-DASH)**
+  - Similar to HLS but not Apple-specific
+  - Also uses small chunks and adaptive quality
+  - Works across many devices and platforms
+- **Real-Time Messaging Protocol (RTMP)**
+  - Older protocol made by Adobe
+  - Used for low-latency (fast) live streaming
+  - Often used to send live video from streamers to platforms like Twitch or YouTube
+- **WebRTC (Web Real-Time Communication)**
+  - Used for real-time communication like video calls (e.g., Zoom or Google Meet)
+  - Very low latency (almost no delay)
+  - Doesn’t need extra plugins or apps—works in modern browsers
+
+| Protocol  | Best For         | Key Features                        |
+| --------- | ---------------- | ----------------------------------- |
+| HLS       | Live & on-demand | Widely supported, adaptive quality  |
+| MPEG-DASH | On-demand        | Open standard, flexible             |
+| RTMP      | Live streaming   | Low delay, used for uploading video |
+| WebRTC    | Video calls      | Real-time, works in browsers        |
+
 ### Broadcasting
+
+**Broadcast protocols** are ways of sending data from one device to **many devices at once** on a network. They are used when the same message needs to reach a group of devices without sending it separately to each one.
+
+**How Broadcasting Works**
+- In a broadcast, data is sent to **all devices** on a local network. Each device checks the message to see if it’s meant for them.
+- Broadcasting is usually only used in **Local Area Networks (LANs)**—not across the internet—because it creates a lot of traffic if overused.
+
+**Common Broadcast Protocols**
+- **ARP (Address Resolution Protocol)**
+  - Used to find the **MAC address** of a device when you only know its **IP address**
+  - Sends a broadcast message to the whole network asking, "Who has this IP?"
+- **DHCP (Dynamic Host Configuration Protocol)**
+  - Used to assign IP addresses to devices automatically
+  - When a new device connects to the network, it broadcasts a message asking for an IP address
+  - A **DHCP server** responds with an available address
+- **NetBIOS**
+  - Used in older Windows networks to share files and printers
+  - Broadcasts names of devices to find others on the local network
+
+| Type          | Description                              |
+| ------------- | ---------------------------------------- |
+| **Unicast**   | One-to-one (sent to a single device)     |
+| **Broadcast** | One-to-all (sent to every device on LAN) |
+| **Multicast** | One-to-many (sent to a specific group)   |
 
 ## Data Exchange Methods 📝
 
@@ -317,7 +406,6 @@ REST is an architectural style for designing networked applications. It relies o
 - **Stateless Communication:** The server does not store any state about the client session on its end, therefore each request from a client to a server must contain all the information the server needs to understand and process the request.
 - **Representation:** Resources are represented in different formats, usually JSON (JavaScript Object Notation) or XML (eXtensible Markup Language).
    - The client requests a resource and the server responds with the resource's current state in one of these formats.
-
 
 **Example of Data Exchange Using REST:**
 
