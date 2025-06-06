@@ -114,6 +114,121 @@ Traceroute on Mac
 - Some people support it to keep the internet fair and open. Others think ISPs should be allowed to manage their networks how they want.
 :::
 
+## Network Tranmission Protocols
+
+### TCP/IP
+**TCP/IP** stands for **Transmission Control Protocol / Internet Protocol**. It is the core set of communication rules (called a **protocol suite**) that computers use to send and receive data over networks, including the **internet**.
+
+Developed in the 1970s, TCP/IP is now the **standard for all internet communication**.
+
+**TCP/IP Protocol Layers**
+
+TCP/IP is made up of **four layers**. Each layer has its own job:
+
+1. **Application Layer**
+  - Deals with **applications and user services**
+  - This is the layer you interact with (e.g., web browsers, email clients)
+  - Protocols here:
+    - **HTTP/HTTPS** – web browsing
+    - **SMTP** – sending emails
+    - **IMAP/POP3** – receiving emails
+    - **FTP** – file transfer
+2. **Transport Layer**
+  - Manages the **delivery of data**
+  - Breaks data into chunks (called **segments**) and reassembles them
+  - Handles error checking and flow control
+  - Two main protocols:
+    - **TCP** – Reliable, ordered delivery (used for most things)
+    - **UDP** – Faster, no guarantee of delivery (used for games, video calls)
+
+3. **Internet Layer**
+   - Handles **routing** of data between devices across networks
+   - Breaks data into **packets** and labels them with IP addresses
+   - Protocols here:
+     - **IP** – Internet Protocol (IPv4 and IPv6)
+     - **ICMP** – for sending error and control messages (used by `ping`)
+
+4. **Network Access Layer** (Link Layer)
+   - Manages how data is sent **physically** over the network (wires, Wi-Fi, etc.)
+   - Converts packets into electrical signals or radio waves
+   - Protocols: Ethernet, Wi-Fi, ARP
+
+**How TCP/IP Works (Step-by-Step)**
+1. **User Action**: You enter `www.example.com` in your browser.
+2. **DNS Lookup**: Your computer gets the IP address for the website using DNS.
+3. **Data Preparation**: Your browser sends an HTTP request (application layer).
+4. **TCP Adds Reliability**: The data is split into segments with error checks.
+5. **IP Handles Routing**: Each segment is wrapped in an IP packet and given a destination IP.
+6. **Data Sent Over Network**: Packets travel through routers and switches.
+7. **Receiving End**: The server reassembles the segments and sends back a response.
+8. **Browser Displays Page**: You see the website once all the data is received.
+
+**TCP vs UDP Comparison**
+
+| Feature   | TCP                            | UDP                              |
+| --------- | ------------------------------ | -------------------------------- |
+| Delivery  | Reliable (resends lost data)   | Unreliable (no resending)        |
+| Order     | Keeps order                    | No guarantee of order            |
+| Speed     | Slower (due to checking)       | Faster                           |
+| Use cases | Web browsing, email, downloads | Video calls, games, live streams |
+
+### What is IP?
+
+**IP (Internet Protocol)** is a **network layer protocol** that handles **addressing and routing** of data between devices on a network. It ensures that packets of data are sent from the sender to the correct destination.
+
+Every device on a network — like your phone, laptop, or a website server — is assigned a unique **IP address**, which acts like a digital address so the internet knows where to send information.
+
+**IP is responsible for**
+1. **Addressing**
+   - Every device must have a unique **IP address**.
+   - IP addresses identify the **sender** and the **receiver** of data.
+2. **Packetization**
+   - IP splits data into small units called **packets**.
+   - Each packet includes:
+     - **Sender IP address**
+     - **Destination IP address**
+     - Other information (e.g. time to live)
+3. **Routing**
+   - Packets may travel through many routers across different networks.
+   - Each router checks the **destination IP** and forwards the packet toward its target.
+   - The path may not be the same for each packet — they can take different routes.
+4. **Delivery (Best-Effort)**
+   - IP does not guarantee delivery.
+   - Packets can be **lost**, **duplicated**, or **arrive out of order**.
+   - That’s why **TCP** is often used on top of IP to ensure reliable delivery.
+
+**Types of IP Addresses**
+
+- **IPv4** (Internet Protocol version 4)
+  - Most common version
+  - Written in **4 numbers separated by dots**
+  - Example: `192.168.1.1`
+  - Uses **32 bits**, allowing about **4.3 billion** addresses
+  - Running out of available addresses
+
+- **IPv6** (Internet Protocol version 6)
+  - Newer version designed to replace IPv4
+  - Written in **8 groups of hexadecimal numbers**
+  - Example: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+  - Uses **128 bits**, allowing **trillions of addresses**
+  - Supports more devices and improved security
+
+**Static vs Dynamic IP Addresses**
+
+| Type           | Description                                       |
+| -------------- | ------------------------------------------------- |
+| **Static IP**  | Does not change. Manually set. Used for servers.  |
+| **Dynamic IP** | Changes over time. Assigned by DHCP. Most common. |
+
+
+**IP Header**
+
+Every IP packet includes a **header** with important information:
+- **Version** (IPv4 or IPv6)
+-  **Source IP address**
+-   **Destination IP address**
+-    **Time to Live (TTL)** – how many hops (routers) the packet can go through before being dropped
+-     **Protocol** – tells what’s inside (e.g., TCP, UDP)
 
 ## Network Transmission Principles 📝
 
