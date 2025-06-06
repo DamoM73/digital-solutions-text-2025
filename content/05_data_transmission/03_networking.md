@@ -1,51 +1,66 @@
 # Networks
 
 :::{dropdown} Learning Goals
-Dropdown content
+By the end of this section you will:
+- understand the principles of transmitting data over a network
+- understand the signficance network transmission concepts including latency, jitter, quality of service guarantee, and timeliness of delivery
+- 
+
 :::
 
 Networks are the backbone of the modern world, but how do they work? Check the following videos to learn the fundamental about networking.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3QhU9jd03a0?si=c15Ia4djP9A9xi-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-:::{tip} Crash Course Computer Science #28 Summary
+:::{tip} Crash Course Computer Networks Summary
 :class: dropdown
-1.  **Early Networks & Motivation:**
+- **Early Networks & Motivation:**
     - Pre-1970s, most computers were standalone. The need to share data and resources (printers, storage) drove network development.
     - Early methods like "Sneakernet" (physically moving storage media) were inefficient.
     - The first **Local Area Networks (LANs)** appeared in the 1950s/60s, typically within a single organization. A LAN can range from two computers in a room to a university campus.
-2.  **Ethernet & Shared Media:**
+- **Ethernet & Shared Media:**
     - **Ethernet**, developed at Xerox PARC in the 1970s, became a dominant LAN technology, initially using a shared cable.
     - **MAC Addresses (Media Access Control Address):** Each networked device has a unique MAC address. Data sent over Ethernet includes a header with the destination MAC address, so only the intended recipient processes it.
     - **Carrier Sense Multiple Access (CSMA):** To avoid "collisions" (multiple devices transmitting simultaneously and garbling data), devices "sense" (listen to) the carrier (shared cable or airwaves for Wi-Fi). If it's busy, they wait.
-3.  **Collision Detection & Exponential Backoff:**
+- **Collision Detection & Exponential Backoff:**
     - If two devices sense silence and transmit at the same time, a collision still occurs.
     - Devices can detect this collision, stop transmitting, wait a random period, and then try again.
-    - To further manage this, they use **exponential backoff**: if another collision occurs, the wait time doubles (plus a random element) before retrying (e.g., 1s, then 2s, 4s, 8s). This helps alleviate network congestion.
+    - To further manage this, they use **exponential backoff:** if another collision occurs, the wait time doubles (plus a random element) before retrying (e.g., 1s, then 2s, 4s, 8s). This helps alleviate network congestion.
     - **Bandwidth** is the rate at which a carrier can transmit data.
-4.  **Scaling Networks: Switches & Collision Domains:**
+- **Scaling Networks: Switches & Collision Domains:**
     - Having too many devices on one shared carrier leads to frequent collisions.
     - The solution is to reduce the size of **collision domains** (the set of devices on a shared carrier).
     - **Network switches** connect multiple network segments. They learn which MAC addresses are on which segment and only forward data between segments if the destination is on a different segment. This allows multiple, non-interfering transmissions simultaneously on different parts of the network.
-5.  **The Internet & Routing:**
+- **The Internet & Routing:**
     - The **Internet** is a network of interconnected networks.
     - **Routing** is the process of getting data from a source to a destination across these networks.
     - **Circuit Switching:** An early method, like old telephone systems, where a dedicated, exclusive physical circuit is established between two points for the duration of the communication. It's reliable but inefficient (unused capacity) and expensive.
     - **Message Switching:** Similar to the postal system. Messages are passed from one intermediate "hop" (e.g., a mail hub, or a network router) to the next. Each hop knows where to send it next based on the destination. This is more fault-tolerant; if one route is blocked (e.g., a blizzard), an alternative route can be used.
         - **Hop Count:** The number of hops a message takes. A **Hop Limit** prevents messages from looping endlessly in case of routing errors.
-6.  **Packet Switching & IP Addresses:**
+- **Packet Switching & IP Addresses:**
     - A downside of message switching is that large messages can tie up links.
     - **Packet Switching** is the solution: large transmissions are chopped into small, fixed-size **packets**.
     - Each packet contains a destination address on the network. This format is defined by the **Internet Protocol (IP)**.
     - Every computer on a network gets an **IP Address** (e.g., 172.217.7.238 for a Google server), typically four 8-bit numbers separated by dots.
     - Routers forward packets, and different packets from the same message can take different routes. This is efficient and fault-tolerant.
-7.  **ARPANET & Decentralization:**
+- **ARPANET & Decentralization:**
     - The world's first packet-switched network and the ancestor of the modern internet was **ARPANET**, funded by the US Advanced Research Projects Agency (ARPA) during the Cold War.
     - Packet switching's decentralized nature made it robust against potential attacks on central points.
     - The ARPANET in 1974 connected a few dozen computers; today, the internet connects nearly 10 billion devices, including the **Internet of Things** (smart fridges, thermostats, etc.).
 :::
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AEaKrq3SpW8?si=gVh5_2f8jmQfuNen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AEaKrq3SpW8?si=gVh5_2f8jmQfuNen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+:::{tip} Crash Course The Internet Summary
+:class: dropdown
+- **Network Structure:** The internet is made up of many connected devices. Your device connects to a Local Area Network (LAN), like your home Wi-Fi. That LAN connects to a bigger network called a Wide Area Network (WAN), managed by your Internet Service Provider (ISP). Data moves through several routers and eventually passes through high-speed connections that make up the internet’s core.
+- **Data Transmission and Packets:** Information travels as small chunks called packets. When you request something online—like a video—your device sends a packet to the server. The server then responds by sending the data back in many small packets. You can view the path your packets take using a command like `traceroute`.
+- **Internet Protocol (IP):** Every packet follows a standard called the Internet Protocol. An IP packet contains a header (with details like the destination IP address) and a data section (the content being sent).
+- **User Datagram Protocol (UDP):** UDP is a fast and simple way to send data. It includes a port number to direct the packet to the correct program and a checksum to check for errors. UDP does not guarantee delivery or correct errors—it just drops any broken packets. It’s used for things where speed matters more than accuracy, like live video or voice chat.
+- **Transmission Control Protocol (TCP):** TCP is used when it’s important that all data arrives complete and in the right order, like for email or loading websites. It adds features like numbering packets and requiring the receiver to confirm they were received. If something goes missing, it’s resent.
+- **Domain Name System (DNS):** DNS translates website names (like google.com) into IP addresses that computers can use. When you enter a website address, your device contacts a DNS server to find out its IP address. DNS is organized into levels, starting with top-level domains like `.com`, then more specific domain names.
+- **OSI Model:** All of this fits into the OSI model, which breaks down how networks work into layers. This includes the Physical, Data Link, Network, Transport, and Session layers, each handling a specific part of the communication process.
+:::
 
 :::{seealso} Traceroute (Doobly Doo)
 :class: dropdown
@@ -65,6 +80,40 @@ Traceroute on Mac
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/guvsH5OFizE?si=-qBwz9LiQseDuxeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+:::{tip} Crash Course World Wide Web Summary
+:class: dropdown
+**The Internet vs. The Web**
+- **The Internet** is the global network that connects computers and devices around the world.
+- **The World Wide Web** is one of the services that runs on the Internet. It’s a huge system of connected websites and pages that let people share and access information.
+
+**Hypertext and Hyperlinks**
+- Websites are made of **hypertext documents**, which are just pages with text, images, and other content.
+- These pages are connected using **hyperlinks**, which let users click to move from one page to another.
+- The idea of linking information this way was first imagined back in 1945 by a scientist named Vannevar Bush.
+
+**How the Web Works (Protocols and Standards)**
+- **URL (Uniform Resource Locator):** This is the unique address of a webpage, like `http://www.example.com/page.html`.
+- **HTTP (Hypertext Transfer Protocol):** This is the system that web browsers and servers use to talk to each other. It includes commands like `GET` to request a page, and responses like `200 OK` (success) or `404 Not Found`.
+- **HTML (Hypertext Markup Language):** This is the code used to create webpages. It uses tags like `<h1>` for headings, `<a>` for links, and `<li>` for list items.
+
+**History and Key People**
+- **Tim Berners-Lee** created the World Wide Web in 1990 while working at CERN. He also created the first web browser, the first web server, and the first versions of URL, HTML, and HTTP.
+- The **Mosaic browser**, released in 1993, was the first to show images alongside text. It helped make the web more popular.
+
+**Search Engines**
+- As the Web got bigger, it became harder to find things. At first, there were human-made lists of sites, like early Yahoo!.
+- Then came **search engines**, which automatically searched the web.
+  - They use **web crawlers** to find pages by following links.
+  - They store what they find in an **index**.
+  - They use a **search algorithm** to show the most relevant results.
+  - **Google** improved search results by creating **PageRank**, a system that ranks pages higher if other important pages link to them.
+
+**Net Neutrality**
+- **Net neutrality** is the idea that Internet Service Providers (ISPs) must treat all internet data equally.
+- That means they can’t slow down, block, or speed up certain websites or services.
+- Some people support it to keep the internet fair and open. Others think ISPs should be allowed to manage their networks how they want.
+:::
+
 
 ## Network Transmission Principles 📝
 
@@ -74,7 +123,7 @@ Network transmission principles are fundamental concepts in networking that gove
 
 Latency refers to the delay or lag that occurs when data is transmitted from one point to another in a network. It can be caused by various factors:
 
-- **Serialization and deserialization:** 
+- **Serialization and deserialization:**
   - Serialization is the process of converting data into a format that can be transmitted over a network. 
   - Deserialization is the reverse process. 
   - The serialization and deserialization steps introduce overhead, contributing to latency. The more complex the data and the longer the serialization process takes.
@@ -106,23 +155,23 @@ In applications like Voice over IP (VoIP) and streaming media, jitter can lead t
 :class: dropdown
 In video streaming, jitter appears as irregular and unexpected variations in the timing of frame delivery. It's typically manifested as noticeable fluctuations in the smoothness of video playback. Here's what jitter looks like in video streaming:
 
-1. **Stuttering or Freezing**: One common symptom of jitter is when the video playback briefly stutters or freezes. You might see the video pause for a moment and then catch up suddenly.
-2. **Uneven Playback Speed**: Jitter can cause the video to play back at uneven speeds. It may briefly speed up or slow down, making the motion appear unnatural.
-3. **Frame Drops**: Jitter can result in frames being dropped during playback. This can lead to missing content or jerky movements in the video.
-4. **Audio-Video Desynchronization**: Jitter can also affect the synchronization between the audio and video components of a stream. You might notice that the audio lags behind or leads the video.
-5. **Pixelation and Artifacts**: In severe cases, jitter can cause pixelation or compression artifacts in the video, making the image quality deteriorate momentarily.
-6. **Buffering Delays**: To compensate for jitter, video streaming services may introduce buffering delays. This means you have to wait longer for the video to start playing, which can be frustrating for viewers.
+1. **Stuttering or Freezing:** One common symptom of jitter is when the video playback briefly stutters or freezes. You might see the video pause for a moment and then catch up suddenly.
+2. **Uneven Playback Speed:** Jitter can cause the video to play back at uneven speeds. It may briefly speed up or slow down, making the motion appear unnatural.
+3. **Frame Drops:** Jitter can result in frames being dropped during playback. This can lead to missing content or jerky movements in the video.
+4. **Audio-Video Desynchronization:** Jitter can also affect the synchronization between the audio and video components of a stream. You might notice that the audio lags behind or leads the video.
+5. **Pixelation and Artifacts:** In severe cases, jitter can cause pixelation or compression artifacts in the video, making the image quality deteriorate momentarily.
+6. **Buffering Delays:** To compensate for jitter, video streaming services may introduce buffering delays. This means you have to wait longer for the video to start playing, which can be frustrating for viewers.
 :::
 
 ### Quality of Service (QoS) Guarantee
 
-Network Quality of Service (QoS) guarantee refers to the assurance that a network can provide specific levels of service and performance to different types of traffic or applications. QoS is critical in ensuring that data, voice, video, and other applications receive the necessary bandwidth, low latency, and minimal packet loss to function effectively.
+Network **Quality of Service (QoS) guarantee** refers to the assurance that a network can provide specific levels of service and performance to different types of traffic or applications. QoS is critical in ensuring that data, voice, video, and other applications receive the necessary bandwidth, low latency, and minimal packet loss to function effectively.
 
 To guarantee QoS, networks often employ various mechanisms, such as traffic prioritization, bandwidth reservation, and congestion management. For example, in a VoIP (Voice over Internet Protocol) call, QoS guarantee ensures that voice packets are prioritized over less time-sensitive data packets, reducing the chances of voice call degradation due to network congestion.
 
 ### Timeliness of delivery
 
-The principle of timeliness of delivery in networking refers to the requirement that data should be delivered within a timeframe suitable for its intended use. This is crucial for ensuring that the information remains relevant and useful by the time it reaches its destination.
+The principle of **timeliness of delivery** in networking refers to the requirement that data should be delivered within a timeframe suitable for its intended use. This is crucial for ensuring that the information remains relevant and useful by the time it reaches its destination.
 
 ## Network Transmission Protocols 📝
 
@@ -143,12 +192,39 @@ The principle of timeliness of delivery in networking refers to the requirement 
 | Use Case                 | General browsing, non-sensitive data      | Sensitive data (logins, payments, personal)   |
 | SEO Benefit              | No boost                                  | Preferred by search engines                   |
 
+:::{hint} What is a Port?
+:class: dropdown
+A **computer port** is a number that helps computers know which program or service a piece of network data is meant for.
+
+When data comes into your device (like a web page or a message), it’s sent to a specific **IP address** and a specific **port number**. The IP address identifies the device, and the port number identifies the application or service.
+
+**Why Are Ports Needed?**
+A single computer can run many programs at the same time—like a web browser, email client, and video game.
+**Ports** help keep the traffic organized by assigning a number to each type of service.
+- Data coming into your computer must be directed to the correct software.
+- The operating system checks the **port number** and passes the data to the matching program.
+
+**Common Port Numbers**
+Some port numbers are **standardized**, meaning certain services always use the same ones:
+
+| Port Number | Protocol / Service           |
+| ----------- | ---------------------------- |
+| 20, 21      | FTP (File Transfer Protocol) |
+| 22          | SSH (Secure Shell)           |
+| 23          | Telnet                       |
+| 25          | SMTP (Sending email)         |
+| 53          | DNS (Domain Name System)     |
+| 80          | HTTP (Web pages)             |
+| 443         | HTTPS (Secure web pages)     |
+| 110         | POP3 (Receiving email)       |
+| 143         | IMAP (Receiving email)       |
+:::
+
 - **HTTP** is fast and suitable for non-sensitive information, but it is not secure—data can be intercepted or altered by third parties.
 - **HTTPS** is essential for protecting sensitive data, preventing "man-in-the-middle" attacks, and building user trust.
 - Modern browsers display a padlock icon for HTTPS sites, signalling a secure connection, and may warn users when a site is not secure.
 
 **Basic Workflow**
-
 1. **Connection Establishment:** The client initiates a TCP connection to the server. HTTP typically operates over TCP/IP and uses port 80 for standard HTTP connections.
 2. **Request-Response Cycle:**
    - **Request:** Once the TCP connection is established, the client sends an HTTP request to the server. This request includes:
@@ -163,24 +239,63 @@ The principle of timeliness of delivery in networking refers to the requirement 
 
 **HTTP Methods**
 
-- **GET**: Requests the specified resource. GET requests should only retrieve data and should have no other effect.
-- **POST**: Submits data to be processed (e.g., from a form). The server may create or update resources based on the data provided.
-- **PUT**: Replaces the current target resource with the request payload.
-- **DELETE**: Removes the specified resource.
-- **HEAD**: Similar to GET, but it retrieves only the status line and header section.
-- **OPTIONS**: Describes the communication options for the target resource.
-- **PATCH**: Applies partial modifications to a resource.
+- **GET:** Requests the specified resource. GET requests should only retrieve data and should have no other effect.
+- **POST:** Submits data to be processed (e.g., from a form). The server may create or update resources based on the data provided.
+- **PUT:** Replaces the current target resource with the request payload.
+- **DELETE:** Removes the specified resource.
+- **HEAD:** Similar to GET, but it retrieves only the status line and header section.
+- **OPTIONS:** Describes the communication options for the target resource.
+- **PATCH:** Applies partial modifications to a resource.
 
 **Status Codes**
 
 HTTP responses come with status codes that indicate the outcome of the request:
 
-- **2xx (Success)**: Indicates that the client's request was successfully received, understood, and accepted (e.g., 200 OK, 201 Created).
-- **3xx (Redirection)**: Indicates that further action needs to be taken by the client in order to complete the request (e.g., 301 Moved Permanently, 302 Found).
-- **4xx (Client Error)**: Indicates an error that seems to have been caused by the client (e.g., 404 Not Found, 403 Forbidden).
-- **5xx (Server Error)**: Indicates an error on the server side (e.g., 500 Internal Server Error, 503 Service Unavailable).
+- **2xx (Success):** Indicates that the client's request was successfully received, understood, and accepted (e.g., 200 OK, 201 Created).
+- **3xx (Redirection):** Indicates that further action needs to be taken by the client in order to complete the request (e.g., 301 Moved Permanently, 302 Found).
+- **4xx (Client Error):** Indicates an error that seems to have been caused by the client (e.g., 404 Not Found, 403 Forbidden).
+- **5xx (Server Error):** Indicates an error on the server side (e.g., 500 Internal Server Error, 503 Service Unavailable).
 
 ### FTP / FTPS
+
+**FTP**
+**FTP** stands for **File Transfer Protocol**. It's one of the oldest protocols used to transfer files between two computers over a **TCP/IP network** (like the internet).
+
+**How It Works:**
+- FTP uses a **client-server model**.
+  - The **FTP client** is the program you use to connect (e.g. FileZilla, Cyberduck, or even a terminal command).
+  - The **FTP server** hosts files and handles file transfer requests.
+- To connect, you provide:
+  - A **server address** (like `ftp.example.com`)
+  - A **username** and **password**
+- Once connected, you can:
+  - Browse directories
+  - Upload files from your computer to the server
+  - Download files from the server to your computer
+  - Rename, delete, or move files
+
+**Security**
+FTP is **not secure** by default:
+- Your username and password are sent **in plain text**.
+- Files are transferred **without encryption**.
+- Anyone using a network sniffer (like Wireshark) could intercept and read your data.
+
+**FTPS**
+
+**FTPS** stands for **FTP Secure** or **FTP over SSL/TLS**.
+
+- It adds **encryption** using **SSL (Secure Sockets Layer)** or **TLS (Transport Layer Security)**.
+- The encryption protects:
+  - Login credentials
+  - File data during transfer
+- FTPS supports both:
+  - **Implicit FTPS** (uses port 990; encryption starts immediately)
+  - **Explicit FTPS** (uses port 21; client asks for encryption after connecting)
+
+**Benefits of FTPS:**
+- Secure transmission of sensitive files (e.g. medical data, financial documents)
+- Authentication using **certificates** (optional, for extra security)
+- Often used by businesses and government systems that require encrypted file transfer
 
 ### VPN
 
@@ -192,9 +307,9 @@ HTTP responses come with status codes that indicate the outcome of the request:
 
 ### REST (Representational State Transfer)
 
-REST is an architectural style for designing networked applications. It relies on a **stateless**, **client-server**, **cacheable communications protocol** -- the HTTP (Hypertext Transfer Protocol). 
+REST is an architectural style for designing networked applications. It relies on a **stateless**, **client-server**, **cacheable communications protocol** &mdash; the HTTP (Hypertext Transfer Protocol). 
 
-RESTful systems use HTTP requests to perform CRUD (Create, Read, Update, Delete) operations on resources.
+**RESTful** systems use HTTP requests to perform CRUD (Create, Read, Update, Delete) operations on resources.
 
 **Key Concepts**
 - **Resources:** Resources are typically data objects or services and can be accessed using a unique URL.
@@ -206,7 +321,7 @@ RESTful systems use HTTP requests to perform CRUD (Create, Read, Update, Delete)
 
 **Example of Data Exchange Using REST:**
 
-- **GET Request**:
+- **GET Request:**
    - A client wants to retrieve information about a book with the ID 123.
    - The client sends a GET request to the server at the URL: `http://api.library.com/books/123`.
    - The server responds with the book's details in JSON format:
@@ -219,7 +334,7 @@ RESTful systems use HTTP requests to perform CRUD (Create, Read, Update, Delete)
      }
      ```
 
-- **POST Request**:
+- **POST Request:**
    - A client wants to add a new book to the library.
    - The client sends a POST request with the book's data to the URL: `http://api.library.com/books`.
    - The server processes the request and adds the book to the database, responding with the created book's details:
@@ -232,7 +347,7 @@ RESTful systems use HTTP requests to perform CRUD (Create, Read, Update, Delete)
      }
      ```
 
-- **PUT Request**:
+- **PUT Request:**
    - A client wants to update the information of an existing book with the ID 123.
    - The client sends a PUT request with the updated data to the URL: `http://api.library.com/books/123`.
    - The server updates the book information and responds with the updated details:
@@ -245,7 +360,7 @@ RESTful systems use HTTP requests to perform CRUD (Create, Read, Update, Delete)
      }
      ```
 
-- **DELETE Request**:
+- **DELETE Request:**
    - A client wants to delete a book with the ID 123.
    - The client sends a DELETE request to the URL: `http://api.library.com/books/123`.
    - The server deletes the book and confirms the deletion:
@@ -367,7 +482,7 @@ Here’s a complete example representing a student record:
 
 ### XML
 
-XML (eXtensible Markup Language) is a versatile and widely-used format for storing and transporting data. Unlike JSON, which is primarily used for data interchange, XML is more commonly used for document storage, configuration files, and data interchange in enterprise systems.
+**XML (eXtensible Markup Language)** is a versatile and widely-used format for storing and transporting data. Unlike JSON, which is primarily used for data interchange, XML is more commonly used for document storage, configuration files, and data interchange in enterprise systems.
 
 **Key Features of XML**
 
@@ -501,7 +616,7 @@ Charlie, 35, "San Francisco, CA"
 - Each subsequent row contains the corresponding data for each column.
 - The field "San Francisco, CA" is enclosed in double quotes to handle the comma within the data.
 
-**TSV Structure** 
+**TSV Structure**
 
 - **Header Row:** Often includes column names.
 - **Data Rows:** Each row contains data fields separated by tabs.
@@ -535,7 +650,7 @@ Charlie    35    San Francisco, CA
 
 **Disadvantages of CSV and TSV**
 - **Lack of Standardization:** There is no universal standard for CSV and TSV files, leading to inconsistencies in how different applications handle delimiters, line breaks, and special characters.
-- **Limited Data Types:**CSV and TSV files can only store plain text, which limits their ability to represent more complex data types such as binary data, hierarchical data, or objects.
+- **Limited Data Types:** CSV and TSV files can only store plain text, which limits their ability to represent more complex data types such as binary data, hierarchical data, or objects.
 - **Delimiter Conflicts:** For CSV files fields containing commas must be enclosed in quotes, which can complicate parsing and data entry. Additionally, if the data itself contains quotes or line breaks, it requires additional escaping. For TSV files, data that contains tabs can complicate parsing and require special handling.
 - **No Support for Metadata:** CSV files do not include metadata about the data, such as data types, schema information, or encoding, making it difficult to ensure data integrity and consistency.
 - **Scalability Issues:** For very large datasets, both CSV and TSV formats can become inefficient in terms of processing speed and memory usage, as they require reading the entire file into memory for manipulation.
