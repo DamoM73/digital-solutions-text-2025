@@ -51,6 +51,6 @@ Try changing `tip` to `warning`!
 :::
 
 :::{dropdown} Learning Goals
-Dropdown content
+By the end of this section you will:
 :::
 
