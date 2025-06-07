@@ -1,5 +1,16 @@
 # Data Security Management
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand the principles of cybersecurity and why it is important
+- understand the the basic principles of encryption and why it is important
+- understand the process steps of traditional ciphers and  be able to execute them
+- understand how modern symmetric encryption works
+- understand how modern asymmetric encryption works
+- understand the processes of hashing and when it should be used
+- understand the two types of compression ands why they are important
+:::
+
 > Data has never been more valuable. It is an increasingly important driver of growth in our modern economy. Whether it is data about individuals, businesses or government, data underpins how we communicate, conduct business, and receive services. At the same time it can be stolen, manipulated or used as a weapon by foreign adversaries and criminals {cite}`departmentofhomeaffairs_2023_data`.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bPVaOlJ6ln0?si=RS2uTwUpvKUA4RtR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -113,7 +124,7 @@ Data encryption is necessary for several important reasons:
 - **Symmetric Encryption:** The same key is used for both encryption and decryption. It's like having one key for a lock that both you and your friend have copies of.
 - **Asymmetric Encryption:** Uses two keys—a public key for encryption and a private key for decryption. It's like having a lock with two keys: one for locking (encrypting) that everyone can use, and one for unlocking (decrypting) that only you have.
 
-## Ciphers
+## Traditional Ciphers
 
 ### Caesar cipher
 
@@ -591,12 +602,12 @@ Hashing is the process of converting data into a fixed-size string of characters
 
 Data compression is the process of reducing the size of a file or data set. This means the data takes up less space on storage devices and can be transmitted more quickly over networks.
 
-**How Data Compression works**
+### How Data Compression works
 
 - **Lossless Compression:** This method reduces file size without losing any data. Think of it as packing your clothes tightly into a suitcase without leaving anything behind. When you unpack, everything is still there, just like it was before. Examples include ZIP files and PNG images.
 - **Lossy Compression:** This method reduces file size by removing some data that’s not crucial. It’s like packing your suitcase but deciding to leave behind some items you don't really need. When you unpack, you still have most of your stuff, but some of the less important items are missing. Examples include MP3 audio files and JPEG images.
 
-**Why Data Compression important**
+### Why Data Compression important
 
 - **Saves Storage Space:** Smaller files mean you can store more data on your devices.
 - **Faster Transfers:** Smaller files can be sent over the internet or other networks more quickly.
