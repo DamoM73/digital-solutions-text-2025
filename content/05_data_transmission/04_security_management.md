@@ -374,41 +374,95 @@ Some examples of where symmetric cryptography is used are:
 
 A block cipher takes a block of plaintext bits and generates a block of ciphertext bits, generally of same size. The size of block is fixed in the given scheme. The choice of block size does not directly affect to the strength of encryption scheme. The strength of cipher depends up on the key length.
 
-#### Feistel Block Cipher
+**Feistel Block Cipher**
 
 A Feistel block cipher is not an encryption method in itself. It is a model or process that is used by many block ciphers to encode the plain text into a cipher text. A Feistel cipher requires a key and a set length portion of the plain text and occurs over a designated number of rounds.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FGhj3CGxl8I?si=PV9yQn8CPMTkwhJ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### Data Encryption Standard (DES):
+:::{tip} Feistel Cipher Summary
+:class: dropdown
+**How a Feistel Cipher Works (Encryption):**
+
+A Feistel cipher is not a specific algorithm but a framework that operates on a block of data through multiple rounds.
+
+1.  **Split:** The data block is divided into two equal halves: a Left (L) and a Right (R) half.
+2.  **Round Function:** For each round of encryption, the Right half (R) is fed into a "round function" (F) along with a sub-key (K) for that specific round.
+3.  **XOR Operation:** The output of the round function, `F(R, K)`, is then combined with the Left half (L) using an XOR operation. The result of this operation becomes the new Right half for the next round.
+4.  **Swap:** The original, unchanged Right half (R) becomes the new Left half for the next round.
+
+This process is repeated for a predetermined number of rounds, with a different sub-key typically used for each round.
+
+**The "Magic" of Decryption:**
+
+The most elegant and brilliant feature of the Feistel cipher is its decryption process. To decrypt the ciphertext, you use the **exact same algorithm** as encryption. The only difference is that the sub-keys (K1, K2, K3, etc.) are applied in the **reverse order**.
+
+This works because the [XOR](https://www.geeksforgeeks.org/logic-gates/) operation is its own inverse. When you XOR a value with the same number twice, it cancels out and returns the original value. This allows the entire structure to be reversible, even if the round function (F) itself is a one-way, non-reversible function. This design significantly simplifies the implementation of block ciphers, as a separate decryption algorithm is not needed.
+:::
+
+**Data Encryption Standard (DES)**
 
 **DES** is a symmetric key algorithm developed in the 1970s by IBM and later adopted by the U.S. government as a standard. It uses a **56-bit key** to encrypt **64-bit blocks** of data. DES operates on data using **16 rounds** of Feistel network, which involves permutations, substitutions, and XOR operations.
 
 DES is now considered insecure for many applications due to its relatively short key length, which makes it vulnerable to brute-force attacks.
 
-#### Triple DES (3DES):
+**Triple DES (3DES)**
 
 **Triple DES** enhances the security of DES by applying the DES algorithm three times to each data block. It uses **three 56-bit keys**, effectively giving it a **168-bit key length**, though due to some weaknesses, its effective security is closer to 112 bits.
 
 Despite its increased security, 3DES is slower than other modern symmetric algorithms.
 
-![3DES](./assets/3DES.png)
+![3DES](./assests/04/3DES.png)
 
-#### Advanced Encryption Standard (AES):
+<p>&nbsp;</p>
+
+**Advanced Encryption Standard (AES)**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O4xNJsjtN6E?si=zBpv6D29654kyjDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+:::{tip} AES Explained Summary
+:class: dropdown
+This video explains the workings of the Advanced Encryption Standard (AES), a widely used symmetric block cipher. Here is a summary of the key points:
+
+**What is AES?**
+- AES is a **symmetric block cipher**, meaning the same key is used for both encryption and decryption.
+- It operates on fixed-size blocks of data: 128 bits (or 16 bytes).
+- It supports key sizes of **128, 192, or 256 bits**, with even the 128-bit version being extremely secure.
+- AES is a **substitution-permutation network (SPN)**, a design that repeatedly applies layers of substitution (for confusion) and permutation (for diffusion) to the data.
+
+**The State Array**
+- AES arranges the 16-byte input block into a 4x4 grid called the **state array**.
+- All encryption operations are performed on this state array.
+
+**The Encryption Process (Rounds)**
+- The encryption process consists of a series of rounds. The number of rounds depends on the key size:
+  - **10 rounds** for a 128-bit key.
+  - **12 rounds** for a 192-bit key.
+  - **14 rounds** for a 256-bit key.
+- Each round (except the last) consists of four distinct steps:
+  - **SubBytes:** A non-linear substitution step where each byte is replaced with another according to a fixed lookup table (the S-box). This adds confusion.
+  - **ShiftRows:** A permutation step where the bytes in each row of the state are cyclically shifted to the left by a certain offset. This helps spread the data across columns.
+  - **MixColumns:** A complex step that mixes the data within each column by multiplying it with a fixed matrix. This, along with ShiftRows, provides strong diffusion, meaning a small change in the input affects many bits of the output.
+  - **AddRoundKey:** The state is combined with a "round key" (derived from the main key) using an XOR operation.
+
+**Key Concepts:**
+- **Finite Field (Galois Field) Math:** The operations in AES (especially SubBytes and MixColumns) are based on arithmetic in a finite mathematical field called a Galois Field (GF(2⁸)). This provides the strong mathematical properties needed for security while being efficient to implement.
+- **Key Schedule:** The original key is expanded into a set of "round keys"—one for each round of encryption. This ensures that a different key is used at each stage of the process.
+
+Because of its well-designed, multi-round structure and strong mathematical foundation, AES is both highly secure and fast, especially on modern CPUs that have dedicated hardware instructions for performing its operations.
+:::
 
 AES is the current U.S. federal standard for encryption, replacing DES and 3DES. It supports key sizes of **128**, **192**, and **256** bits and operates on **128-bit blocks** of data. AES uses a substitution-permutation network with **10, 12, or 14 rounds** depending on the key size.
 
 AES is widely regarded as secure and is used globally in various applications.
 
-#### Blowfish
+**Blowfish**
 
 Blowfish is a symmetric key block cipher designed by Bruce Schneier in 1993. It has a variable key length from **32** bits to **448 bits**, making it highly flexible. Blowfish operates on **64-bit blocks** and is known for its speed and effectiveness in hardware applications. It uses a Feistel network with **16 rounds** of processing.
 
 While secure, Blowfish's 64-bit block size is now considered a limitation for certain applications.
 
-#### Twofish
+**Twofish**
 
 Twofish is a symmetric key block cipher, also designed by Bruce Schneier as a successor to Blowfish. It operates on **128-bit blocks** and supports key sizes up to **256 bits**. Twofish uses a Feistel network and is optimized for hardware and software performance.
 
@@ -419,6 +473,34 @@ Twofish is known for its flexibility, speed, and security, making it a strong co
 The biggest weakness of symmetric encryption is the need for key distribution. That is, there needs to be a secure way for all parties to agree upon the key that will be used for encryption and decryption. This is very effective, if you wish to encrypt data on your hard-drive, or in a database on your server. Unfortunately symmetric encryption is not practical when it comes to online communication, for this we need asymmetric encryption.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YEBfamv-_do?si=cdvcl_YkpOGGy3Co" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+:::{tip} Diffie-Hellman Key Exchange Summary
+:class: dropdown
+1.  **The Problem:** The video begins by tracing the need for secure communication back to the Cold War and the development of early computer networks like SAGE. As networks grew, a critical problem emerged: how can two people who have never met before agree on a secret key (like a password or a number) to encrypt their conversation, without an eavesdropper also learning that key?
+
+2.  **The One-Way Function Analogy (Mixing Paint):** The core of the Diffie-Hellman solution is explained using a simple analogy with mixing paint.
+    - **The Principle:** It is easy to mix two colours to create a new one, but it's very difficult to take that mixed colour and figure out the exact original colours used. This is called a "one-way function."
+    - **The Process:**
+      - Alice and Bob publicly agree on a common starting colour (e.g., yellow).
+      - Each secretly chooses their own private colour (Alice chooses red, Bob chooses blue).
+      - They each mix their private colour with the public yellow. Alice gets orange, and Bob gets green.
+      - They publicly exchange their mixed colours (orange and green). Eve sees these.
+      - Finally, they each mix the colour they received with their *own* private colour. Alice mixes green with her red, and Bob mixes orange with his blue.
+      - Both end up with the exact same secret colour (a brownish mix of yellow, red, and blue). Eve cannot create this colour because she lacks the secret red and blue.
+
+3.  **The Mathematical Implementation (Clock Arithmetic):** The same principle is applied using numbers in a process called **modular arithmetic**, or "clock arithmetic."
+    - **The One-Way Function:** The mathematical one-way function is **modular exponentiation**. It is easy to calculate `g^x mod p`, but extremely difficult to find the exponent `x` if you only know the result, `g`, and `p`. This is known as the **discrete logarithm problem**.
+    - **The Process:**
+      - Alice and Bob publicly agree on two numbers: a prime modulus `p` and a generator `g`.
+      - They each choose a secret private number (Alice chooses `a`, Bob chooses `b`).
+      - Alice calculates `g^a mod p` and sends the result to Bob.
+      - Bob calculates `g^b mod p` and sends the result to Alice.
+      - Alice takes Bob's result and raises it to the power of her secret number `a`.
+      - Bob takes Alice's result and raises it to the power of his secret number `b`.
+      - Both arrive at the same shared secret number, `g^(ab) mod p`.
+
+Because of the difficulty of the discrete logarithm problem, Eve cannot determine their final shared secret, allowing Alice and Bob to use it as a key for secure, encrypted communication.
+:::
 
 Asymmetric communication refers to a method of communication in which the parties involved use different keys for encryption and decryption processes. This is a key feature of asymmetric encryption, also known as public-key cryptography.
 
@@ -464,14 +546,14 @@ Work in threes and take the roles of Alice, Bob and Eve.
 2. Alice and Bob agree and publicly share a generator
 3. Alice and Bob both choose a private key
 4. Exchange of public keys
-     - Alice and Bob perform the following calculation (in Python) and share the results publicly:
+   - Alice and Bob perform the following calculation (in Python) and share the results publicly:
 
 ``` python
 public_key = generator ** private_key % prime_modulus
 ```
 
 5. Alice and Bob now work out the shared secret key
-     - Use the following calculations (in Python):
+   - Use the following calculations (in Python):
 
 ``` python
 # for Alice
