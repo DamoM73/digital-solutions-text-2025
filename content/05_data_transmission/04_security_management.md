@@ -11,7 +11,7 @@ By the end of this section you will:
 - understand the two types of compression ands why they are important
 :::
 
-> Data has never been more valuable. It is an increasingly important driver of growth in our modern economy. Whether it is data about individuals, businesses or government, data underpins how we communicate, conduct business, and receive services. At the same time it can be stolen, manipulated or used as a weapon by foreign adversaries and criminals {cite}`departmentofhomeaffairs_2023_data`.
+> Data has never been more valuable. It is an increasingly important driver of growth in our modern economy. Whether it is data about individuals, businesses or government, data underpins how we communicate, conduct business, and receive services. At the same time it can be stolen, manipulated or used as a weapon by foreign adversaries and criminals `departmentofhomeaffairs_2023_data`.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bPVaOlJ6ln0?si=RS2uTwUpvKUA4RtR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
