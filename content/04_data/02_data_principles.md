@@ -1,6 +1,12 @@
 # Data Principles
 
-Data principles are fundamental guidelines that ensure data is collected, stored, processed, and used in ways that maintain its quality, reliability, and security. These principles help developers and analysts manage data effectively, ensuring it remains accurate, consistent, and relevant over time. By following data principles, digital systems can support informed decision-making, protect user privacy, and maintain trust in the integrity of digital solutions.
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand the issues involved in managing data, including acquisition, integrity, anomalies and security.
+- understand data representation and how choices pertaining to it influence data.
+:::
+
+Data principles are fundamental guidelines that ensure data is collected, stored, processed, and used in ways that maintain its quality, reliability, and security. 
 
 ## Data Management
 

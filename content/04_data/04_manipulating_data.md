@@ -1,5 +1,13 @@
 # Managing and Manipulating Data
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand the different aspects of CRUD
+- know about SQL and its basic operations
+- know about SQLite
+:::
+
+
 The set of operations that allows you to manage data in a computer system is referred to by the acronym **CRUD**. CRUD stands for **Create**, **Read**, **Update**, and **Delete**. It is a fundamental concept in the world of databases and computer systems.
 
 - **Create:** This is where you make new entries or records. Think of it like writing a new post on a social media platform. You're creating new data.
@@ -13,7 +21,7 @@ The set of operations that allows you to manage data in a computer system is ref
 
 SQL is the the most popular language for working with databases despite being over 50 years old. It is everywhere and every major IT platform uses it. Why? Because it is powerful and effective.
 
-THe basic operations of SQL are:
+The basic operations of SQL are:
 
 - **SELECT:** performs queries on the database to extract tables of data
 - **CREATE DATABASE:** initially establishes a database

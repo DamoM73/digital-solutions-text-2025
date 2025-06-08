@@ -1,6 +1,11 @@
 # Data Introduction
 
-# Data Concepts
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand the nature of data-driven problems
+- understand the DIWK Pyramid and how the value of data comes from processing it
+- know the three layers of a data driven application.
+:::
 
 ## What are Data-Driven Problems?
 
@@ -40,7 +45,6 @@ Other considerations:
 :::
 
 In summary:
-
 - **data:** clear and definitive facts
 - **information:** data + the context that data is found in
 - **knowledge:** information + experience that relates to this kind of information

@@ -1,5 +1,11 @@
 # Technologies Used
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- installed all necessary software onto your computer
+- configured computer as required for our course
+:::
+
 The following technologies are used throughout this text.
 
 ## Python Programming Language
