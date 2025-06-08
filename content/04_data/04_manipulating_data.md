@@ -25,12 +25,6 @@ THe basic operations of SQL are:
 - **UPDATE:** modify the data in a row of an existing table
 - **DELETE:** remove a row from an existing table
 
-![SQL Read summary poster](assets/sql_read.png)
-
-![SQL Manipulate summary poster](assets/sql_manipulate.png)
-
-![SQL CUD summary poster](assets/sql_cud.png)
-
 ## SQLite
 
 There are many different flavours of SQL. Most of these work by setting up an SQL server separate from the computer running the program. Your program then has to connect to the SQL Server.
