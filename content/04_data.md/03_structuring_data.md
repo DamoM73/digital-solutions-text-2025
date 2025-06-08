@@ -16,6 +16,8 @@ Unlike more complex relational databases, flat file databases do not have multip
 
 Flat file databases are often used for relatively small-scale data storage needs, such as simple lists, address books, or basic inventory records. They are easy to create and understand but may not be suitable for more complex and data-intensive applications.
 
+---
+
 ## Relational Databases
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oN3jBRGnPO4?si=DIvn1x_PiI9s69Fd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -79,6 +81,8 @@ The key features of relational databases include:
     - Durability ensures data remains reliable and persistent over time.
 
 Relational databases are widely used in various applications, from business systems to web applications, due to their ability to handle structured data and complex relationships efficiently. Popular relational database management systems (RDBMS) include MySQL, PostgreSQL, Oracle, SQL Server, and SQLite.
+
+---
 
 (normalisation=)
 ## Normalisation
@@ -176,6 +180,8 @@ The tables below represent the same data in 1NF:
 
 ![1NF after](assets/03/1NF_after.png)
 
+---
+
 ### Second Normal Form (2NF)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R7UblSu4744" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -241,6 +247,8 @@ The table below is not in 2NF:
 The tables below represent the same data in 2NF
 
 ![2NF after](assets/03/2NF_after.png)
+
+---
 
 ### Third Normal Form
 

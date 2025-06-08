@@ -43,7 +43,7 @@ Data security measures, including encryption, access controls, and regular secur
 The following techniques used to manage data effectively, ensuring it can be stored and transferred securely and efficiently.
 
 ## The CIA Triad: Core Principles of Cybersecurity
-![CIA Triad](./assests/04/cia_triad.png)
+![CIA Triad](./assets/04/cia_triad.png)
 
 The **CIA Triad** stands for **Confidentiality**, **Integrity**, and **Availability**. It’s a model that helps us understand how to protect information and systems from threats. Every good security strategy aims to balance these three goals.
 
@@ -98,6 +98,8 @@ If **any** part of the CIA Triad is compromised, security is at risk:
 | Data tampering                      | Integrity       | A virus changes invoice numbers in a billing system   |
 | Denial of Service (DoS/DDoS) attack | Availability    | A website goes offline due to a flood of fake traffic |
 
+---
+
 ## Encryption
 
 Encryption is the process of converting data into a coded format to prevent unauthorized access. It ensures that only authorized parties can read the information.
@@ -123,6 +125,8 @@ Data encryption is necessary for several important reasons:
 
 - **Symmetric Encryption:** The same key is used for both encryption and decryption. It's like having one key for a lock that both you and your friend have copies of.
 - **Asymmetric Encryption:** Uses two keys—a public key for encryption and a private key for decryption. It's like having a lock with two keys: one for locking (encrypting) that everyone can use, and one for unlocking (decrypting) that only you have.
+
+---
 
 ## Traditional Ciphers
 
@@ -342,7 +346,7 @@ The **Gronsfeld cipher** is a variant of the Vigenère cipher that uses a numeri
 
 The **one-time pad (OTP)** encryption is a theoretically unbreakable encryption technique that involves a random key that is as long as the message being encrypted. It was first described by Frank Miller in 1882 and later formalized by Gilbert Vernam in 1917.
 
-![one time pad](./assests/04/one_time_pad.png)
+![one time pad](./assets/04/one_time_pad.png)
 
 **How OTP Encryption Works**
 
@@ -359,6 +363,8 @@ The **one-time pad (OTP)** encryption is a theoretically unbreakable encryption 
 - **No Patterns:** Since the key is random and as long as the message, there are no patterns that an attacker can exploit.
 - **Key Distribution:** The key must be distributed securely to both the sender and the receiver, which can be impractical for large-scale use.
 - **Scalability:** The need for a key that is as long as the message makes it impractical for large amounts of data.
+
+---
 
 ## Symmetric Encryption
 
@@ -423,7 +429,7 @@ DES is now considered insecure for many applications due to its relatively short
 
 Despite its increased security, 3DES is slower than other modern symmetric algorithms.
 
-![3DES](./assests/04/3DES.png)
+![3DES](./assets/04/3DES.png)
 
 <p>&nbsp;</p>
 
@@ -478,6 +484,8 @@ While secure, Blowfish's 64-bit block size is now considered a limitation for ce
 Twofish is a symmetric key block cipher, also designed by Bruce Schneier as a successor to Blowfish. It operates on **128-bit blocks** and supports key sizes up to **256 bits**. Twofish uses a Feistel network and is optimized for hardware and software performance.
 
 Twofish is known for its flexibility, speed, and security, making it a strong contender in the AES competition.
+
+---
 
 ## Asymmetric Encryption
 
@@ -584,6 +592,8 @@ RSA uses two keys a public key for encryption and a private key for decryption. 
 
 RSA is computationally intensive and slower compared to symmetric algorithms, making it less suitable for encrypting large amounts of data directly.
 
+---
+
 ## Hashing
 
 Hashing is the process of converting data into a fixed-size string of characters, which typically looks like a random sequence of letters and numbers. This is done using a specific algorithm.
@@ -597,6 +607,8 @@ Hashing is the process of converting data into a fixed-size string of characters
 
 - **Data Integrity:** Hashes are used to ensure data hasn't been altered. For example, when you download a file, a hash can be created for that file. After downloading, you can check the hash to make sure the file wasn't corrupted or tampered with during transfer.
 - **Password Storage:** Instead of storing actual passwords, systems store hashes of passwords. When you log in, your password is hashed and compared to the stored hash. This way, even if someone accesses the password database, they can't easily recover the actual passwords.
+
+---
 
 ## Data Compression
 

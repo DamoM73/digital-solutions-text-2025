@@ -50,6 +50,8 @@ To install Python go to the **[downloads section of the Python website](https://
 
 To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
 
+---
+
 ## Python Packages
 
 Python comes installed with a range of packages. This is called **[The Python Standard Library](https://docs.python.org/3/library/)**. Although these might seem like a huge number of packages, it is actually a very small selection of packages available. These cover Python's basic operations, and limiting the install to these packages reduces the size of Python.
@@ -170,6 +172,8 @@ VS Code will now:
 To check that the virtual environment is active, look at the status bar at the bottom left for Python versions and virtual environment name (see below).
 
 ![check virtual environment](./assets/01/06_check_venv.png)
+
+---
 
 ## Version Control
 

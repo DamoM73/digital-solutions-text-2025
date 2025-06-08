@@ -67,6 +67,8 @@ Information as a commodity refers to the idea that information—like physical g
 
 This value of data can lead to exploitation which raises ethical and legal concern around it's collection. 
 
+---
+
 ## Handling Personal Data
 
 The collecting of personal data raises a range of ethical concerns. 
@@ -171,6 +173,8 @@ Due to the international nature of the internet, the influence of these laws can
 - The GDPR is the reason web sites ask you to accept cookies
 - COPPA is the reasons the Terms and Conditions of social media accounts exclude children under 13 years old.
 
+---
+
 ## Australian Privacy Principles 📝
 
 The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference) are a set of 13 key rules under the Privacy Act 1988 that govern how Australian organizations and government agencies handle personal information. These principles are designed to ensure privacy, transparency, and accountability in the collection, use, storage, and disclosure of personal data.
@@ -192,6 +196,8 @@ The 13 Australian Privacy Principles:
 11. **Security of Personal Information** &ndash; Organizations must take reasonable steps to protect personal information from misuse, interference, loss, unauthorized access, modification, or disclosure.
 12. **Access to Personal Information** &ndash; Individuals have the right to access their personal information held by an organization, subject to some exceptions.
 13. **Correction of Personal Information** &ndash; Organizations must take reasonable steps to correct personal information to ensure it is accurate, up-to-date, complete, relevant, and not misleading.
+
+---
 
 ## Open Data 
 

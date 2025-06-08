@@ -58,6 +58,8 @@ A common problem with processing data into databases is not knowing the data tha
 
 First we will do this for the entire CSV, so we can see what is returned when we read the CSV.
 
+---
+
 ### Create datastore.py
 
 In your Unit 3 repo, create a new file called **f1_datastore.py**, then add the following code:
@@ -80,6 +82,8 @@ class Datastore:
         self.data_file = data_file
         self.conn = sqlite3.connect(self.database_file)
         self.cursor = self.conn.cursor()
+
+        self.populate_database()
 ```
 
 :::{important} Explanation of Code
@@ -339,6 +343,7 @@ Back in **f1_datastore.py** we need to create a method that writes the data to t
             },
         )
 ```
+
 :::{important} Explanation of Code
 :class: dropdown
 - lines 54 - 65 &rarr; define the method and list all the data that needs to be provided to the method.
@@ -376,6 +381,7 @@ Now we need to call the `add_driver` method from the `populate_database` method.
                     points,
                 )
 ```
+
 Finally we need to commit the changes we made to the database. We will do this in the `__init__`. Go to the `__init__` method and add the highlighted code to the bottom.
 
 ```{code}python
@@ -540,7 +546,7 @@ Go to the bottom of the `populate_database` method. Make sure that our indents p
 :::{warning} Import module
 We have used a method out of a new module `ast`, but we haven't imported it yet (that's why there is a red squiggly line under it). Import it at the top of your **f1_datastore.py** file
 
-```{code}python
+```{code}
 :linenos:
 :emphasize-lines: 3
 import sqlite3
@@ -663,13 +669,6 @@ At the bottom of the `populate_database` method in **f1_datastore.py** add the f
 :linenos:
 :lineno-start:56
 :emphasize-lines: 63,64,65,66
-                # process only the championship years
-                if record["Championship Years"]:
-                    years = ast.literal_eval(record["Championship Years"])
-
-                    for year in years:
-                        self.add_season(year, driver_id)
-
                 # process driver seasons
                 seasons = ast.literal_eval(record["Seasons"])
                 for season in seasons:
