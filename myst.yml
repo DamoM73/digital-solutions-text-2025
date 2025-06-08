@@ -31,10 +31,10 @@ project:
         - file: content/03_user_experience/04_impacts.md
     - title: Data
       children:
-        - file: content\04_data.md\01_intro.md
-        - file: content\04_data.md\02_data_principles.md
-        - file: content\04_data.md\03_structuring_data.md
-        - file: content\04_data.md\04_manipulating_data.md
+        - file: content/04_data/01_intro.md
+        - file: content/04_data/02_data_principles.md
+        - file: content/04_data/03_structuring_data.md
+        - file: content/04_data/04_manipulating_data.md
     - title: Data Transmission
       children:
         - file: content/05_data_transmission/01_intro.md
