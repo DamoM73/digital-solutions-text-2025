@@ -57,13 +57,46 @@ The video illustrates the process with a persona named Jill, who needs to order 
 
 Empathy map are essential in understanding your users, their experiences and their expectations. You should aim to have an empathy map for **each type of user** your digital solution is intended to serve. This helps ensure that different perspectives are considered during the design process, especially when users have diverse needs or goals.
 
+### Creating an Empathy Map
+
+To fill out an empathy map, consider:
+
+- **Says:** what the user says about the problem in an interview or some other usability study.
+- **Thinks:** what the user is thinking throughout the experience.
+  - What occupies the user’s thoughts?
+  - What matters to the user?
+  - It is possible to have the same content in both Says and Thinks. However, pay special attention to what users think, but may not be willing to vocalize.
+- **Does:** the actions the user takes.
+  - What does the user physically do?
+  - How does the user go about doing it?
+- **Feels:** the user’s emotional state, often represented as an adjective plus a short sentence for context.
+  - What worries the user?
+  - What does the user get excited about?
+  - How does the user feel about the experience?
+
+Synthesise the user’s needs based on the empathy map. This will help define the design challenge. To synthesise an empathy map, group similar recorded observations together in order to find themes. Then identify needs directly from the user traits noted.
+
+In doing this be aware that:
+
+- Needs are verbs and frame activities, actions and desires.
+- Refrain from using nouns as they will lead to defining solutions, and this is not the aim of the process.
+
+:::{warning} Teacher's marking considerations
+:class: dropdown
+**Checking the Empathy Maps**
+
+When marking the Empathy Maps teachers ask the following questions:
+
+- Are all the types of users represented?
+- Are there adequate observations in all four quadrants?
+:::
+
 (persona)=
 ## Personas
 
 **Personas** are fictional, detailed representations of typical users created based on research and data. They include information such as age, background, goals, challenges, and behaviours, helping teams understand who they are designing for. Personas are important because they keep the user's needs and preferences at the centre of the design process. 
 
 By referring to personas, designers and developers can make more informed decisions, ensure features are relevant, and create user experiences that feel personal and effective. This leads to digital solutions that are more engaging, accessible, and successful.
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u44pBnAn7cM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
@@ -110,3 +143,46 @@ Personas are fictional representations and generalisations of user clusters whic
 
 You should aim to have a person for **each type of user** your digital solution is intended to serve, and ensure that the personas represent the **diversity of your users**. If you do not have access to target users, then the personas can be developed using assumptions, competitor analysis and internal stakeholder interviews.
 
+### Creating Personas
+
+When interviewing for personas you need to consider:
+
+- personal life
+- technical background
+- employment
+- professional questions
+
+Personas need to be specific, rather than general, so create a fictitious person.
+
+Components of a persona:
+
+- image (of a real person)
+- name
+- demographics
+  - age
+  - gender
+  - location
+  - education
+  - occupation
+  - income
+- personal
+  - hobbies and interests
+  - goals (general or specific to the problem)
+- technology
+  - proficiency (can use fluently)
+  - devices
+  - o/s
+- solutions interactions
+  - tasks the user wants to complete with the solution
+  - challenges they have in completing tasks
+  - pain points &mdash; what makes things difficult
+- accessibility needs
+
+:::{warning} Teacher's marking considerations
+:class: dropdown
+When marking the Personas teachers ask the following questions:
+
+- Are all the types of users represented?
+- Have the provide proto-personas been used?
+- Do the personas cover include people with impairments?
+:::

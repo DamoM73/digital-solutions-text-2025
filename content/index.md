@@ -35,7 +35,7 @@ Try changing `tip` to `warning`!
 Try changing `tip` to `warning`!
 :::
 
-:::{warning}
+:::{warning} Teacher's marking considerations
 :class: dropdown
 Try changing `tip` to `warning`!
 :::
