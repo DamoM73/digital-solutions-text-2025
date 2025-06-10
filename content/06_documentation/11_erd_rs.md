@@ -227,3 +227,45 @@ Below are the sample tables for the **Student Subject Database**.
 ![Subject table](./assets/11/sample_table_3.png)<p>&nbsp;</p>
 
 ![Enrolments table](./assets/11/sample_table_4.png)<p>&nbsp;</p>
+
+:::{seealso} ERD & RS Activities
+:class: dropdown
+**Activity 1**
+
+A manufacturing company produces products. The following product information is stored: product name, product ID and quantity on hand. These products are made up of many components. Each component can be supplied by one or more suppliers. The following component information is kept: component ID, name, description, suppliers who supply them, and products in which they are used. Represent this information in a relational schema.
+
+**Acvitity 2**
+
+Create a relational schema for a school library that allows students to borrow books throughout the term. Each book has a title, a genre, and the year it was published. Students can borrow multiple books, and each borrowing event includes a borrow date and a return date. The library also keeps track of who wrote each book, including the author’s name and nationality. Authors may have written multiple books.
+
+**Activity 3**
+
+An online store allows customers to place orders through a website. Each customer provides a name, email, and phone number when registering. Orders include the date placed and the total cost. Each order contains multiple products. Every product has a name, a price, and an amount in stock. For each product in an order, the system tracks the quantity purchased and the selling price at the time of order. Create a relational schema representing this data.
+
+**Activity 4**
+
+A company keeps its order records in a spreadsheet where each row lists the customer name, their address, the items purchased, the unit price of the items, and the order date (see table below). The company wants to convert this into a structured database. Create a Relational Schema for this database, then create sample tables using the data from the original table.
+
+| Customer Name   | Address         | Item     |   Unit Price | Order Date   |
+|:----------------|:----------------|:---------|-------------:|:-------------|
+| Alice Johnson   | 123 Park Lane   | Keyboard |        49.99 | 2024-06-01   |
+| Alice Johnson   | 123 Park Lane   | Mouse    |        19.99 | 2024-06-01   |
+| Bob Smith       | 456 River Rd    | Monitor  |       149.99 | 2024-06-02   |
+| Bob Smith       | 456 River Rd    | Keyboard |        49.99 | 2024-06-02   |
+| Charlie Lee     | 789 Forest Ave  | Mouse    |        19.99 | 2024-06-03   |
+| Charlie Lee     | 789 Forest Ave  | Webcam   |        89.99 | 2024-06-03   |
+| Alice Johnson   | 123 Park Lane   | Webcam   |        89.99 | 2024-06-04   |
+| Diana Prince    | 321 Ocean Dr    | Monitor  |       149.99 | 2024-06-04   |
+| Diana Prince    | 321 Ocean Dr    | Mouse    |        19.99 | 2024-06-04   |
+| Evan Thomas     | 654 Mountain Rd | Keyboard |        49.99 | 2024-06-05   |
+| Evan Thomas     | 654 Mountain Rd | Webcam   |        89.99 | 2024-06-05   |
+| Fiona Chen      | 987 Valley St   | Mouse    |        19.99 | 2024-06-06   |
+| Fiona Chen      | 987 Valley St   | Keyboard |        49.99 | 2024-06-06   |
+| George Hill     | 147 Sunset Blvd | Monitor  |       149.99 | 2024-06-07   |
+| George Hill     | 147 Sunset Blvd | Mouse    |        19.99 | 2024-06-07   |
+| Hannah Black    | 369 Seaside Ln  | Webcam   |        89.99 | 2024-06-08   |
+| Hannah Black    | 369 Seaside Ln  | Keyboard |        49.99 | 2024-06-08   |
+| Ian White       | 753 Skyline Ave | Monitor  |       149.99 | 2024-06-09   |
+| Ian White       | 753 Skyline Ave | Webcam   |        89.99 | 2024-06-09   |
+| Jessica Green   | 159 Pine Way    | Mouse    |        19.99 | 2024-06-10   |
+:::
