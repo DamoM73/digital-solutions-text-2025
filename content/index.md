@@ -15,7 +15,7 @@ Try changing `tip` to `warning`!
 Try changing `tip` to `warning`!
 :::
 
-:::{seealso} Activity
+:::{seealso} Activities
 :class: dropdown
 Try changing `tip` to `warning`!
 :::
