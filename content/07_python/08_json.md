@@ -1,5 +1,13 @@
 # Working with JSON amd XML
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand how to convert JSON strings and files into Python dictionaries
+- understand how to convert Python dictionaries into JSON strings and files
+- understand how to extract data from an XML string and file using Python
+- understand how to save Python data to an XML file
+:::
+
 ## JSON
 
 **JSON** (JavaScript Object Notation) is a lightweight data format used to store and exchange data. It’s easy for humans to read and write, and easy for machines to parse and generate.
@@ -21,7 +29,24 @@ Python provides a built-in module called `json` to work with JSON data.
 
 **JSON to Python**
 
-JSON &rarr; Python (`json.loads()`)
+Convert a JSON-formatted string into a Python dictionary.
+
+:::{hint} What is a JSON-formatted string?
+:class: dropdown
+A **JSON-formatted string** is a text-based way to represent structured data using the **JavaScript Object Notation (JSON)** format. It uses **key–value pairs** and **arrays** to organize data, and it is commonly used for data exchange between systems, especially in web applications.
+
+**JSON Rules:**
+
+- Keys and string values must be in **double quotes** (`"`).
+- Values can be:
+
+  - Strings (`"text"`)
+  - Numbers (`123`)
+  - Booleans (`true`, `false`)
+  - `null`
+  - Arrays (`[ ]`)
+  - Nested objects (`{ }`)
+:::
 
 :::{code} python
 import json
@@ -34,7 +59,7 @@ print(python_dict['name'])
 
 **Python to JSON**
 
-Python &rarr; JSON (`json.dumps()`)
+Convert a Python dictionary into a JSON-formatted string.
 
 :::{code} python
 import json
@@ -48,6 +73,11 @@ print(json_string)
 
 **Reading from a JSON file**
 
+Open a JSON file, reads its JSON content, then convert it into a Python object, depending on the JSON file format:
+
+- key&ndash;value pair &rarr; dictionary
+- array &rarr; list
+
 :::{code} python
 import json
 
@@ -57,6 +87,8 @@ with open('data.json', 'r') as file:
 :::
 
 **Writing to a JSON file**
+
+Convert a Python dictionary into a JSON-formatted string and write it to a JSON file.
 
 :::{code} python
 import json
@@ -77,10 +109,10 @@ with open('output.json', 'w') as file:
 
 | Task             | Method         |
 | ---------------- | -------------- |
-| String ➡️ Python | `json.loads()` |
-| Python ➡️ String | `json.dumps()` |
-| File ➡️ Python   | `json.load()`  |
-| Python ➡️ File   | `json.dump()`  |
+| JSON String &nbsp;&rarr;&nbsp; Python Object | `json.loads()` |
+| Python Object &nbsp;&rarr;&nbsp; JSON String | `json.dumps()` |
+| JSON File &nbsp;&rarr;&nbsp; Python Object  | `json.load()`  |
+| Python Object &nbsp;&rarr;&nbsp; JSON File   | `json.dump()`  |
 
 :::{seealso} JSON Activities
 :class: dropdown
@@ -257,6 +289,8 @@ Expected Result (`movies.json` file):
 ```
 :::
 
+---
+
 ## XML
 
 **XML** (eXtensible Markup Language) is a markup language used to store and transport data. It’s similar to HTML but focuses on describing data rather than displaying it.
@@ -280,6 +314,13 @@ Python includes a built-in module called `xml.etree.ElementTree` (often shortene
 
 **Parsing XML from a String**
 
+This code parses an XML string into a **Python XML element**.
+
+:::{hint} What is an XML Element?
+:class: dropdown
+A Python **XML element** is an **object**—specifically, an instance of the `xml.etree.ElementTree.Element` class. It behaves like an object with methods (e.g., `.find()`, `.text`, `.attrib`) that allow you to navigate and manipulate XML data.
+:::
+
 :::{code} python
 import xml.etree.ElementTree as ET
 
@@ -298,7 +339,9 @@ print(root.find('age').text)   # Output: 25
 
 **Parsing XML from a File**
 
-**student.xml:**
+Create an XML element from a string and access its child elements.
+
+student.xml:
 
 :::{code} XML
 <student>
@@ -307,7 +350,7 @@ print(root.find('age').text)   # Output: 25
 </student>
 :::
 
-**Python code:**
+Python code:
 
 :::{code} python
 tree = ET.parse('student.xml')
@@ -318,6 +361,9 @@ print(root.find('age').text)   # Output: 22
 :::
 
 **Looping Through Elements**
+
+Parse an XML string containing multiple students, then loops through each `<student>` element to print their name and age in a formatted sentence.
+
 
 :::{code} python
 xml_data = """

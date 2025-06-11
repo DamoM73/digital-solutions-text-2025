@@ -1,5 +1,14 @@
 # Requests
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- know how to retrieve data from an API using a GET request
+- know how to send data to an API using a POST request
+- know how to update data via an API using PUT and PATCH requests
+- understand how headers and parameters work
+- understand how to handle errors and timeouts
+:::
+
 The `requests` library allows Python programs to send HTTP/HTTPS requests easily. It's commonly used for:
 
 - Accessing APIs
@@ -31,15 +40,15 @@ print(response.json())
 
 Write a Python script that:
 
-* Sends a GET request to `https://jsonplaceholder.typicode.com/users`
-* Prints the names and email addresses of all users
+- Sends a GET request to `https://jsonplaceholder.typicode.com/users`
+- Prints the names and email addresses of all users
 
 **Activity 2: Filter Posts by User**
 
 Write a Python script that:
 
-* Sends a GET request to `https://jsonplaceholder.typicode.com/posts` with the query parameter `userId=3`
-* Prints the titles of all posts made by user ID 3
+- Sends a GET request to `https://jsonplaceholder.typicode.com/posts` with the query parameter `userId=3`
+- Prints the titles of all posts made by user ID 3
 :::
 
 ---
@@ -71,17 +80,17 @@ print(response.json())
 **Activity 1: Submit a New Post**
 Write a Python script that:
 
-* Sends a POST request to `https://jsonplaceholder.typicode.com/posts`
-* Includes JSON data with a title, body, and userId
-* Prints the response JSON to confirm creation
+- Sends a POST request to `https://jsonplaceholder.typicode.com/posts`
+- Includes JSON data with a title, body, and userId
+- Prints the response JSON to confirm creation
 
 **Activity 2: Register a New Comment**
 
 Write a script that:
 
-* Sends a POST request to `https://jsonplaceholder.typicode.com/comments`
-* Includes a name, email, postId, and body in the JSON payload
-* Prints the new comment’s ID from the response
+- Sends a POST request to `https://jsonplaceholder.typicode.com/comments`
+- Includes a name, email, postId, and body in the JSON payload
+- Prints the new comment’s ID from the response
 :::
 
 ---
@@ -116,17 +125,17 @@ print(response.json())
 
 Write a script that:
 
-* Sends a PUT request to `https://jsonplaceholder.typicode.com/posts/1`
-* Replaces the entire post with new `title`, `body`, and `userId`
-* Prints the full updated record from the response
+- Sends a PUT request to `https://jsonplaceholder.typicode.com/posts/1`
+- Replaces the entire post with new `title`, `body`, and `userId`
+- Prints the full updated record from the response
 
 **Activity 2: Reset a User Profile**
 
 Write a script that:
 
-* Sends a PUT request to `https://jsonplaceholder.typicode.com/users/5`
-* Replaces all user fields (name, username, email, etc.) with new values
-* Prints confirmation that the user was updated
+- Sends a PUT request to `https://jsonplaceholder.typicode.com/users/5`
+- Replaces all user fields (name, username, email, etc.) with new values
+- Prints confirmation that the user was updated
 :::
 
 Use **PATCH** to update only **specific fields**.
@@ -152,17 +161,17 @@ print(response.json())
 
 Write a script that:
 
-* Sends a PATCH request to `https://jsonplaceholder.typicode.com/posts/2`
-* Changes only the `title` field
-* Prints the updated post
+- Sends a PATCH request to `https://jsonplaceholder.typicode.com/posts/2`
+- Changes only the `title` field
+- Prints the updated post
 
 **Activity 2: Update User Email Only**
 
 Write a script that:
 
-* Sends a PATCH request to `https://jsonplaceholder.typicode.com/users/3`
-* Changes only the `email` field
-* Prints the updated user data
+- Sends a PATCH request to `https://jsonplaceholder.typicode.com/users/3`
+- Changes only the `email` field
+- Prints the updated user data
 :::
 
 ---
@@ -217,15 +226,15 @@ print(response.status_code)
 
 Write a script that:
 
-* Sends a DELETE request to `https://jsonplaceholder.typicode.com/posts/10`
-* Prints the status code to confirm deletion
+- Sends a DELETE request to `https://jsonplaceholder.typicode.com/posts/10`
+- Prints the status code to confirm deletion
 
 **Activity 2: Remove a Comment**
 
 Write a script that:
 
-* Sends a DELETE request to `https://jsonplaceholder.typicode.com/comments/7`
-* Checks the status code to ensure the request was successful
+- Sends a DELETE request to `https://jsonplaceholder.typicode.com/comments/7`
+- Checks the status code to ensure the request was successful
 :::
 
 ---
@@ -252,25 +261,25 @@ print(response.json())
 **Use a Fake Authorization Header**
 
 Write a Python script that:
-* Sends a GET request to `https://httpbin.org/headers`
-* Adds a custom `Authorization` header:
+- Sends a GET request to `https://httpbin.org/headers`
+- Adds a custom `Authorization` header:
 
   ```python
   headers = {"Authorization": "Bearer abc123"}
   ```
-* Prints the response JSON to confirm the header was received by the server
+- Prints the response JSON to confirm the header was received by the server
 
 **Activity: Filter Posts by User ID**
 
 Write a Python script that:
 
-* Sends a GET request to `https://jsonplaceholder.typicode.com/posts`
-* Adds a query parameter:
+- Sends a GET request to `https://jsonplaceholder.typicode.com/posts`
+- Adds a query parameter:
 
   ```python
   params = {"userId": 5}
   ```
-* Prints the titles of all posts made by user ID 5
+- Prints the titles of all posts made by user ID 5
 :::
 
 ---
@@ -299,8 +308,8 @@ except requests.exceptions.RequestException as err:
 
 Write a Python script that:
 
-* Sends a GET request to `https://jsonplaceholder.typicode.com/posts/9999` (a post that doesn’t exist)
-* Uses `try`/`except` with `response.raise_for_status()` to detect and print a user-friendly message like:
+- Sends a GET request to `https://jsonplaceholder.typicode.com/posts/9999` (a post that doesn’t exist)
+- Uses `try`/`except` with `response.raise_for_status()` to detect and print a user-friendly message like:
 
   > "Error: The requested post was not found (404)."
 :::
@@ -328,23 +337,9 @@ except requests.exceptions.Timeout:
 
 Write a Python script that:
 
-* Sends a GET request to `https://httpbin.org/delay/5`
-* Sets a timeout of `2` seconds using the `timeout` argument
-* Catches the timeout exception and prints:
+- Sends a GET request to `https://httpbin.org/delay/5`
+- Sets a timeout of `2` seconds using the `timeout` argument
+- Catches the timeout exception and prints:
 
   > "Request timed out. Please try again later."
 :::
-
-Here are two targeted activities—one for **headers** and one for **query parameters**—to help students learn how to use them effectively in API requests.
-
----
-
-## 🧾 Header Activity
-
-
-
-🔍 **Learning Goal:** Learn how query parameters change the request URL and filter data server-side.
-
----
-
-Would you like these activities formatted as classroom worksheets or exported into Markdown for a student learning site?
