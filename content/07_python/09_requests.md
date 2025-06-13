@@ -22,7 +22,7 @@ Use **GET** to **retrieve data** from a server.
 ```python
 import requests
 
-response = requests.get("https://jsonplaceholder.typicode.com/posts/1")
+response = requests.get("https://jsonplaceholder.typicode.com/posts/1", verify=False)
 print(response.status_code)
 print(response.json())
 ```
@@ -64,7 +64,7 @@ data = {
     "userId": 1
 }
 
-response = requests.post("https://jsonplaceholder.typicode.com/posts", json=data)
+response = requests.post("https://jsonplaceholder.typicode.com/posts", json=data, verify=False)
 print(response.status_code)
 print(response.json())
 ```
@@ -107,7 +107,7 @@ put_data = {
     "userId": 1
 }
 
-response = requests.put("https://jsonplaceholder.typicode.com/posts/1", json=put_data)
+response = requests.put("https://jsonplaceholder.typicode.com/posts/1", json=put_data, verify=False)
 print(response.json())
 ```
 
@@ -143,7 +143,7 @@ Use **PATCH** to update only **specific fields**.
 ```python
 patch_data = {"title": "new title only"}
 
-response = requests.patch("https://jsonplaceholder.typicode.com/posts/1", json=patch_data)
+response = requests.patch("https://jsonplaceholder.typicode.com/posts/1", json=patch_data, verify=False)
 print(response.json())
 ```
 
@@ -181,7 +181,7 @@ Write a script that:
 Sends a **DELETE** request to **remove** a resource. Often used in admin interfaces or APIs with write access.
 
 ```python
-response = requests.delete("https://jsonplaceholder.typicode.com/posts/1")
+response = requests.delete("https://jsonplaceholder.typicode.com/posts/1", verify=False)
 print(response.status_code)
 ```
 
@@ -216,7 +216,7 @@ This shows how to send a `DELETE` request with an API token.
 headers = {
     "Authorization": "Bearer YOUR_TOKEN"
 }
-response = requests.delete("https://api.example.com/posts/42", headers=headers)
+response = requests.delete("https://api.example.com/posts/42", headers=headers, verify=False)
 print(response.status_code)
 ```
 
@@ -251,7 +251,7 @@ params = {
     "userId": 1
 }
 
-response = requests.get("https://jsonplaceholder.typicode.com/posts", headers=headers, params=params)
+response = requests.get("https://jsonplaceholder.typicode.com/posts", headers=headers, params=params, verify=False)
 print(response.url)
 print(response.json())
 ```
@@ -320,7 +320,7 @@ Write a Python script that:
 
 ```python
 try:
-    response = requests.get("https://httpbin.org/delay/3", timeout=2)
+    response = requests.get("https://httpbin.org/delay/3", timeout=2, verify=False)
 except requests.exceptions.Timeout:
     print("Request timed out.")
 ```
