@@ -1,4 +1,4 @@
-# Working with JSON amd XML
+# Working with JSON and XML
 
 :::{dropdown} Learning Goals
 By the end of this section you will:

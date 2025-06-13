@@ -343,3 +343,10 @@ Write a Python script that:
 
   > "Request timed out. Please try again later."
 :::
+
+:::{seealso} Extension Activities
+:class: dropdown
+Use your knowledge from this section and the [Working with JSON and XML](./08_json.md) to make an API requests, then process and print the returned JSON file.
+
+You can find a heap of APIs at [Free APIs](https://free-apis.github.io/#/). It is easiest to use API with **No authorization** 
+:::
