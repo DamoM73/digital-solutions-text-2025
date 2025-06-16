@@ -72,9 +72,10 @@ project:
         - file: content/07_python/07_populate.md
         - file: content/07_python/08_json.md
         - file: content/07_python/09_requests.md
-        - file: content/07_python/10_ciphers.md
-        - file: content/07_python/11_hashing.md
-        - file: content/07_python/12_checksums.md
+        - file: content/07_python/10_ourapi.md
+        - file: content/07_python/11_ciphers.md
+        - file: content/07_python/12_hashing.md
+        - file: content/07_python/13_checksums.md
         
     - title: SQL Skills
       children:
