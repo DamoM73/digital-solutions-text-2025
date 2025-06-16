@@ -1,2 +1,105 @@
 # OurAPI
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+ - install OurAPI on your computer
+:::
+
+OurAPI was originally created as an educational tool. It enables quick and easy development of a RESTful JSON API, with real-time request feedback displayed through its graphical interface. Built-in GET and POST clients allow for interface testing, although any HTTP client—including a web browser—can interact with the API. It was developed by Steven Tucker and his original 
+
+We will use OurAPI's built in database to practice using API GET and POST requests. We will then explore using our own databases and creating our own API functions.
+
+## Getting Started
+
+To get started you can download [OurAPI](https://sourceforge.net/projects/ourapi/) from SourceForge. OurAPI doesn't have an installer, rather extracting the zip file will provide access to the program, so make sure you remember it. Launch OurAPI by opening it's folder and starting the **main** file.
+
+:::{error} OurAPI is not working
+:class: dropdown
+If OurAPI doesn't work on your computer, this sometimes happens with macOS, then you can clone my [fork of OurAPI](https://github.com/DamoM73/myourapi.git). Create a virtual environment, ensuring you tick the **requirement.txt** option, then run **main.py**.
+:::
+
+Now you should have the following window displayed on your screen.
+
+![OurAPI GUI](./assets/10/01_ourapi.png)<p>&nbsp;</p>
+
+What you are seeing is the GUI of the application, in the background your computer is running a webserver. This webserver is hosting the API that we will be accessing. Let try it out with a simple GET request.
+
+## Function Calls
+
+### First call
+
+The APi has a range of functions that provide access to the database. To see these functions click on the **API Summary** button. You should have the following dialogue pop up:
+
+![API functions](./assets/10/02_functions.png)<p>&nbsp;</p>
+
+You can see there are currently 10 functions the API offers. Click on the **>** beside **list_countries** and you will see three more options. Click on all the **>** so you can see all the details of **list_countries** function.
+
+![list country function details](./assets/10/03_list_countries.png)<p>&nbsp;</p>
+
+Lets look at those details:
+- Args &rarr; there is no need to pass arguments
+- SQL &rarr; this is the SQL query that will be run on the database
+- Route &rarr; this is the address that executes the query
+  - `http://127.0.0.1:8000` &rarr; the address of the webserver on your computer
+  - `/api/list_countries` the route to the API function of that web server.
+
+Copy the route, paste it into address bar of a browser, then press return. Two things should have happened:
+
+1. Your browser should display a block of text &ndash; this is actual the JSON response from the web server.
+2. the OurAPI UI should now have a heap of new details.
+
+![list countries GET request](./assets/10/04_get_list_countries.png)<p>&nbsp;</p>
+
+**Test Client**
+
+Lets run that request a different way:
+
+1. Click **Reset Session**
+2. Click on **Test Client (GET)** then type **list_countries**
+3. Click **Run**
+
+The OurAPI GUI should display the same information as before, but lets look at the change in the **GET Client** dialogue.
+
+![GET client results](./assets/10/05_get_client_results.png)<p>&nbsp;</p>
+
+:::{seealso} List Countries Activity
+:class: dropdown
+1. Write a Python script that call the OurAPI list_counties function, processes and displays the returned JSON response.
+:::
+
+### Call with Argument
+
+RESTful operations also allow for the API to be provided with arguments. Lets try one:
+
+In the **GET Client**:
+
+1. Click on **Set Function** &rarr; enter **country_info**
+2. Click on **Add Variable**
+   - Name &rarr; **country**
+   - Value &rarr; **Brazil**
+3. Click **Run**
+
+![Country info results](./assets/10/06_country_info_results.png)<p>&nbsp;</p>
+
+You will notice:
+
+1. The argument name and the value are part of the URL
+2. Only one result has been returned
+
+Close the **GET Client** then open the **POST Client** and repeat the same process.
+
+![Post Client](./assets/10/07_post_client.png)<p>&nbsp;</p>
+
+Have a look at the POST URL. Notice that the argument name or value is not part of it? That's because the data is sent in the body of the request—not in the URL. This means users don’t see the data in the address bar, making it more private and allowing larger amounts of information to be sent, like form details, login credentials, or file uploads.
+
+:::{hint} When do I use POST
+:class: dropdown
+It’s better to use **POST** rather than **GET** when you are **sending data to a server to create or update something**, like submitting a form or logging in. POST is more secure for sensitive data (like passwords), doesn’t show information in the URL, and can handle larger amounts of data than GET. Use POST when the action **changes data on the server** or when the information being sent should not be visible or stored in browser history.
+:::
+
+:::{seealso} Requests Activities
+:class: dropdown
+1. Perform both GET requests and POST requests for all of the function in the **API Functions** list (via the **API Summary** button).
+2. Write Python scripts that also perform all the requests.
+:::
+
