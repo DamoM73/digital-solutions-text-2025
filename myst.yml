@@ -115,7 +115,4 @@ site:
     favicon: logo_favicon.ico
     logo: logo.png
 
-exclude_patterns:
-  - TODO.md
-  - README.md
-  - references.bib
+

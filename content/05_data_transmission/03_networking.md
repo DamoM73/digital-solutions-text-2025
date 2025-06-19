@@ -806,7 +806,7 @@ Here’s a complete example representing a student record in XML:
 
 **CSV Example**
 
-```{code}
+```{code} bash
 Name, Age, City
 Alice, 30, New York
 Bob, 25, Los Angeles
@@ -825,7 +825,7 @@ Charlie, 35, "San Francisco, CA"
 
 **TSV Example**
 
-```{code}
+```{code} bash
 Name    Age    City
 Alice    30    New York
 Bob    25    Los Angeles

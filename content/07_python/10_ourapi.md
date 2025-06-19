@@ -103,3 +103,111 @@ It’s better to use **POST** rather than **GET** when you are **sending data to
 2. Write Python scripts that also perform all the requests.
 :::
 
+## Customising OurAPI
+
+You can customise OurAPI to use different databases and create your own functions. What's even better is that it is super easy to do this.
+
+To udnerstand how to do this, we're going to look a bit closer at how OurAPI works.
+
+### Exploring OurAPI
+
+First, open the `api_db.sqlite` file using DB Browser. You will find that it just an ordinary SQLite database. You can see that there are many more tables in the database than we can access using the API functions. That is one of the security features of the REST framework. Users can only access the data you make available to them.
+
+Next open the `definitions.ini` with a text editor, or in VS Code. You will find the following:
+
+```{code}yaml
+[country_info_brief]
+args = country
+sql = SELECT name,population
+      FROM Country
+      WHERE name = :country
+
+[country_info]
+args = country
+sql = SELECT name, area, primary_language, population, currency, timezone
+      FROM Country
+      WHERE name = :country
+
+[list_countries]
+args = None
+sql = SELECT name, area, population, currency, timezone, capital, largest_city, primary_language
+      FROM Country
+      ORDER BY name ASC
+
+[country_continent]
+args = country 
+sql = SELECT c.name AS Country, ct.name AS Continent
+      FROM Country AS c
+      INNER JOIN Continent AS ct
+      ON c.continent_id = ct.id
+      WHERE c.name = :country
+
+[pop_greater]
+args = min_pop
+sql = SELECT name, population 
+      FROM Country 
+      WHERE population > :min_pop
+      ORDER BY population ASC
+
+[continent_countries]
+args = continent
+sql = SELECT c.name AS Country
+      FROM Country AS c
+      INNER JOIN Continent AS ct
+      ON c.continent_id = ct.id
+      WHERE ct.name = :continent
+
+[continent_countries_pop_greater]
+args = continent,min_pop
+sql = SELECT c.name, c.population
+      FROM Country AS c
+      INNER JOIN Continent AS ct
+      ON c.continent_id = ct.id
+      WHERE ct.name = :continent
+      AND c.population > :min_pop
+      ORDER BY c.population ASC
+
+[add_vet]
+args = first_name,last_name,phone,address,room,appointment_times,email
+sql = INSERT INTO Vet
+      (first_name, last_name, phone_no, address, room_no, appointment_times, email)
+      VALUES(:first_name, :last_name, :phone, :address, :room, :appointment_times, :email)
+
+[vets_list]
+args = None
+sql = SELECT first_name, last_name
+      FROM Vet
+
+[delete_vet]
+args = first_name,last_name
+sql = DELETE FROM Vet
+      WHERE first_name = :first_name
+      AND last_name = :last_name
+```
+
+Looking at this you should recognise three things:
+
+1. the text in the square brackets are the names of the API functions
+2. the **args** line lists the arguements that the function needs
+3. the **sql** is a Python parameterised SQL statement.
+
+With this information, you can start creating new API functions.
+
+:::{seealso} New Function Activities
+:class: dropdown
+Create the following functions, then call them from the OurAPI UI. Use DB Browser to confirm your results.
+
+1. Write a API function to return the names of all artists.
+2. Write a API function to return all tracks that cost less than $1.
+3. Write a API function to return all employees’ first and last names, ordered by last name.
+4. Write a API function to return all customers who do not have a company listed.
+5. Write a API function to return all customers with the last name provided.
+6. Write a API function to return all track names that start with the provided word.
+7. Write a API function to return the first and last names of customers who live in a provided city.
+8. Write a API function to return all album titles along with the artist's name.
+9. Write a API function to return the count of how many tracks exist in a provided genre.
+10. Write a API function to return the average invoice total for invoices from the provided country.
+:::
+
+### Making OurAPI yours
+
