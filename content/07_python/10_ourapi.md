@@ -3,6 +3,9 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
  - install OurAPI on your computer
+ - use OurAPI to host a webserver on your computer
+ - make RESTful requests to that webserver using the built-in API functions and database
+ - customise OurAPI by changing the database and making your own API functions
 :::
 
 OurAPI was originally created as an educational tool. It enables quick and easy development of a RESTful JSON API, with real-time request feedback displayed through its graphical interface. Built-in GET and POST clients allow for interface testing, although any HTTP client—including a web browser—can interact with the API. It was developed by Steven Tucker and his original 
