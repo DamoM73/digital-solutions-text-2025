@@ -106,28 +106,6 @@ project:
         - file: content/10_assessments/09_ea.md
     - file: content/bibliography.md
 
-    #   - file: data.md
-    #   - file: data_transmission.md
-    # - title: Skills
-    #   children:
-    #     - file: python.md
-    #     - file: sql.md
-    #     - file: db_browser.md
-    # - title: Documentation
-    #   children:
-    #     - file: explore.md
-    #     - file: develop.md
-    #     - file: evaluate.md
-    # - title: Asssesments
-    #   children:
-    #     - file: fia1.md
-    #     - file: fia2.md
-    #     - file: fia3.md
-    #     - file: fiae.md
-    #     - file: ia1.md
-    #     - file: ia2.md
-    #     - file: ia3.md
-    #     - file: iae.md
 # bibtex:
 #   bibliography: references.bib
 
@@ -136,3 +114,8 @@ site:
   options:
     favicon: logo_favicon.ico
     logo: logo.png
+
+exclude_patterns:
+  - TODO.md
+  - README.md
+  - references.bib

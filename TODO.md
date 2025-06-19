@@ -1,0 +1,84 @@
+# To Do
+
+- [ ] Home
+- [ ] Introduction
+  - [ ] Digital Solutions
+  - [x] Technologies
+- [ ] Coding
+  - [ ] Coding Introduction 
+  - [ ] Basic Features
+  - [ ] Good Practice
+  - [ ] Programming Paradigms
+- [ ] User Experience
+  - [ ] User Experience Introduction
+  - [ ] Usability
+  - [ ] Visual Communication
+  - [ ] Impacts
+- [x] Data
+  - [x] Data Introduction
+  - [x] Data Principles
+  - [x] Structuring Data
+  - [x] Managing and Manipulating Data
+- [ ] Data Transmission
+  - [x] Data Transmission Introduction
+  - [x] Data Privacy
+  - [x] Networks
+  - [x] Data Security Management
+  - [x] Data Security - Threats
+- [x] Documentation Introduction
+  - [x] Documentation Introduction
+  - [ ] Mind Maps
+  - [x] User Insights
+  - [x] Use Case Diagrams
+  - [ ] Success Criteria
+  - [ ] Wireframes
+  - [ ] Mock-ups
+  - [ ] Pseudocode
+  - [ ] Desk Checking
+  - [ ] Data Flow Diagrams
+  - [x] ERD and RS
+  - [x] Data Dictionaries
+  - [ ] Data Exchange Diagrams
+  - [ ] Testing
+  - [ ] User Feedback
+  - [ ] Evaluation Table
+  - [ ] Impacts Table
+- [ ] Python Skills
+  - [ ] Python Introduction
+  - [ ] PyQt
+  - [ ] Working with CSV
+  - [ ] Type Hints
+  - [ ] Querying Databases
+  - [ ] Creating Databases
+  - [x] Populating Databases
+  - [x] Working with JSON and XML
+  - [x] Requests
+  - [ ] OurAPI
+  - [ ] Ciphers
+  - [ ] Hashing
+  - [ ] Checksums
+- [ ] SQL Skills
+  - [ ] SQL Introduction
+  - [ ] SELECT Statement
+  - [ ] WHERE Clause
+  - [ ] Filters and Aggregators
+  - [ ] ORDER BY Clause
+  - [ ] GROUP BY and HAVING Clauses
+  - [ ] Subqueries
+  - [ ] JOIN Clause
+  - [ ] INSERT Statement
+  - [ ] UPDATE Statement
+  - [ ] DELETE Statement
+- [ ] Utilities Skills
+  - [ ] Utilities Introduction
+- [ ] Assessments
+  - [ ] Assessments Introduction
+  - [ ] FIA1 - Technical Proposal
+  - [ ] FIA2 - Digital Solution
+  - [ ] FIA3 - Digital Solution
+  - [ ] FIAE - Exam
+  - [ ] IA1 - Technical Proposal
+  - [ ] IA2 - Digital Solution
+  - [ ] IA3 - Digital Solution
+  - [ ] EA - Exam
+- [ ] Bibliography
