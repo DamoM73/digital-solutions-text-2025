@@ -188,7 +188,7 @@ sql = DELETE FROM Vet
 Looking at this you should recognise three things:
 
 1. the text in the square brackets are the names of the API functions
-2. the **args** line lists the arguements that the function needs
+2. the **args** line lists the arguments that the function needs
 3. the **sql** is a Python parameterised SQL statement.
 
 With this information, you can start creating new API functions.
@@ -210,4 +210,51 @@ Create the following functions, then call them from the OurAPI UI. Use DB Browse
 :::
 
 ### Making OurAPI yours
+
+We have now identified the two files that provide OurAPI with the relevant information:
+
+- **definitions.ini** provides the structure for the API functions
+- **api_db.sqlite** provides the data for the functions
+
+So to customise OurAPI replace these two files with your custom file:
+
+- your database needs to be called **api_db.sqlite**
+- your file containing your function details needs to be called **definitions.ini**
+
+:::{caution} Be Careful
+Make sure that you don't loose the original **api_db.sqlite** and **definitions.ini**. Make a copy of them and call them something else.
+:::
+
+Remember the API function structure when making your own **definitions.ini**:
+
+```{code}yaml
+[<function_name>]
+args = <argument names seperated by commas>
+sql = <parameterised SQL statement>
+```
+
+:::{seealso} Custom OurAPI Activities
+:class: dropdown
+To complete the following activities We will use the Chinook Database from [exercise databases we used to learn SQL](../08_sql/01_intro.md#exercise-databases). You will need to save it to your OurAPI folder.
+
+For each of the following activities, you will need to:
+
+- create the API function in the **definitions.ini**
+- write a Python script that calls the API function and displays the returned results
+
+**Activities**
+
+1. Write an API function that returns the count of how many tracks are stored in the database.
+2. Write an API function that returns the names and unit prices of the 5 most expensive tracks.
+3. Write an API function that returns each genre and the number of tracks in that genre, ordered from most to least.
+4. Write an API function that returns first and last names of employees whose title is "Sales Support Agent".
+5. Write an API function that returns the track which appears the most in invoice lines, showing its name and how many times it was sold.
+6. Write an API function that returns the first name, last name, and city of all customers who live in the provided country.
+7. Write an API function that returns the name and duration (in milliseconds) of tracks that are longer than the provided time (in seconds).
+8. Write an API function that returns the titles of albums created by the provided artist.
+9. Write an API function that returns invoice ID, customer name, and total for all customers located in the provided country.
+10. Write an API function that returns full name and the total amount spent by the customer with the provided customer ID.
+:::
+
+
 
