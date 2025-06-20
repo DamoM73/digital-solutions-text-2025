@@ -1,5 +1,12 @@
 # Visual Communication
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand and be able to identify the seven principles of visual communication.
+- understand and be able to identify the eight elements of visual communication.
+- know how to manipulate visual communication elements to achieve the visual communication principles.
+:::
+
 > Visual communication is the practice of using visual elements to convey a message, inspire change, or evoke emotion. `nediger_2020_how`
 
 We will consider two aspects of Visual Communication:
@@ -13,7 +20,14 @@ You use elements of visual communication to achieve the principles of visual com
 
 The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve. 
 
-To remeber the Visual Communication Principles use the mnemonic: **All Big Cats Have Really Hairy Paws** 
+To remember the Visual Communication Principles use the mnemonic: **All Big Cats Have Really Hairy Paws** 
+
+:::{seealso} Visual Communication Activities
+:class: dropdown
+The activity for this section will involve analysing a website and identifying where visual communication has been used.
+
+The website we will analyse is the [Official Lego website](https://www.lego.com/en-au)
+:::
 
 ### Alignment
 
@@ -30,6 +44,11 @@ The arrangement of elements along a common axis or edge to create a sense of ord
 | Align Icons | Aligning icons and buttons helps improves learnability. |
 | Align Charts and Graphs | Aligning labels, axes, and data points ensures clarity and accuracy. |
 | Text and Image Alignment | Aligning text with related images aids in comprehension and aesthetics. |
+
+:::{seealso} Alignment Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **alignment** has been used.
+:::
 
 ### Balance
 
@@ -49,6 +68,11 @@ Balance occurs when the combination of elements on one side of a design appears 
 | Whitespace | Use strategically to create balance by separating content. |
 | Visual Weight | Heavier, dominant elements counterbalance lighter, less prominent ones. |
 
+:::{seealso} Balance Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **balance** has been used.
+:::
+
 ### Contrast
 
 The juxtaposition of elements with differences in characteristics to create visual interest and emphasize distinctions.
@@ -66,6 +90,11 @@ Contrast is used to emphasise an element of the design by using a markedly diffe
 | Shape Contrast | Employ different shapes within your design. |
 | Spacing Contrast | Adjust the spacing between elements. |
 | Directional Contrast | Arrange elements in contrasting directions. |
+
+:::{seealso} Contrast Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **contrast** has been used.
+:::
 
 ### Harmony
 
@@ -85,6 +114,11 @@ Harmony is the pleasing effect of combining similar elements such as using simil
 | Visual Rhythm | Establish a visual rhythm by repeating design elements. |
 | Texture and Patterns | Use textures and patterns sparingly and consistently. |
 
+:::{seealso} Harmony Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **harmony** has been used.
+:::
+
 ### Repetition
 
 Involves the consistent use of visual elements, such as colours, fonts, or shapes, to create a cohesive and recognizable design.
@@ -102,6 +136,11 @@ Repetition of the same element throughout the design brings consistency, unity a
 | Recurring Shapes | Reuse specific shapes or forms consistently. |
 | Consistent Spacing | Maintain uniform spacing between text and objects. |
 | Standardized Iconography | Use a set of standardized icons or symbols to represent concepts. |
+
+:::{seealso} Repetition Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **repetition** has been used.
+:::
 
 ### Hierarchy
 
@@ -121,6 +160,11 @@ Hierarchy improves readability of the interface by emphasising more important el
 | Contrast | Make use of contrast in to distinguish between levels of importance. |
 | Visual Cues | Incorporate visual cues like arrows or pointers to direct attention. |
 
+:::{seealso} Repetition Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **repetition** has been used.
+:::
+
 ### Proximity
 
 Elements placed close together are perceived as related or part of the same group, promoting organization and visual clarity.
@@ -139,11 +183,16 @@ Proximity is the positioning of elements near other elements. Proximity is an im
 | Align Text and Graphics | Align text and images related to a specific topic. |
 | Organize Data Tables | Place data labels, columns, and rows to convey the associations in a table. |
 
+:::{seealso} Proximity Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **proximity** has been used.
+:::
+
 ## Visual Communication Elements
 
 The **elements** of visual communication are the building block of UI design. By manipulating visual communication elements to implement the principles of visual communication you achieve the desired effect on the UI and, subsequently the UX. In other words, the elements of visual communication are the **how** of what you want top achieve.
 
-To remeber the Visual Communication Elements use the mnemonic: **Curious Furry Lions Proudly Sit Sleeping Till Tuesday**
+To remember the Visual Communication Elements use the mnemonic: **Curious Furry Lions Proudly Sit Sleeping Till Tuesday**
 
 ### Colour
 
@@ -163,6 +212,11 @@ Colour can provide contrast or emphasis, unify a design, fill a shape or space a
 | Themes | Option to select from different colour themes to personalize experience. |
 | Emotion | Consider the psychological impact of colours. |
 
+:::{seealso} Colour Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **colour** has been used.
+:::
+
 ### Form
 
 The three-dimensional quality and structure of elements which helps users perceive them as tangible objects.
@@ -180,6 +234,11 @@ Form is the combination of other elements to create solid effects such as the us
 | Pop up boxes | Design with a shadow or overlay to indicate their temporary nature. |
 | Toggle Switches | Make toggle switches appear like physical switches that users can flip. |
 | Tabs | Use bevelled edges or colour variations to distinguish the active tab. |
+
+:::{seealso} Form Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **form** has been used.
+:::
 
 ### Line
 
@@ -199,6 +258,11 @@ Lines can direct the user to a focal point, divide different sections, form shap
 | Arrows | Employing lines in arrow shapes to indicate direction. |
 | Charts and Graphs | Creating various types of charts and graphs to represent data. |
 
+:::{seealso} Line Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **line** has been used.
+:::
+
 ### Proportion
 
 The balanced relationship between the sizes and spacing of elements, ensuring a harmonious and visually pleasing layout.
@@ -216,6 +280,11 @@ Proportion relates to the size or quantity of elements in the design in comparis
 | Grid Layouts | Use to proportionally align and size elements. |
 | Progress Bars | Proportional progress bars to indicate the completion of tasks. |
 | Navigation Menus | Allocate space in navigation menus based on importance. |
+
+:::{seealso} Proportion Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **proportion** has been used.
+:::
 
 ### Scale
 
@@ -235,6 +304,11 @@ Scale refers to the size of an element. It can be used consistently to provide o
 | Whitespace | Adjust whitespace scale of to control the spacing between elements. |
 | Typography Hierarchy | Different font sizes for headings, subheadings, and body text. |
 
+:::{seealso} Scale Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **scale** has been used.
+:::
+
 ### Shape
 
 The use of different shapes can convey meaning, hierarchy, and interactivity within the user interface.
@@ -252,6 +326,11 @@ Shapes can be natural, abstract or geometrical. They can be used to symbolically
 | Navigation Menus | Employ horizontal or vertical rectangular shapes for navigation menus. |
 | Callout Boxes | Use shapes with a distinct background to draw attention to specific content. |
 | Toggle Buttons | Circular shapes can be used for toggling options on and off. |
+
+:::{seealso} Shape Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **shape** has been used.
+:::
 
 ### Space
 
@@ -271,6 +350,11 @@ Space is the area you have to work with. It includes space that is empty and spa
 | Form Fields | Space form fields and labels appropriately to indicate association. |
 | Error Messages | Give error messages or notifications sufficient space to stand out. |
 
+:::{seealso} Space Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **space** has been used.
+:::
+
 ### Tone
 
 The consistent and coherent use of colour shades and gradients to convey depth, hierarchy, and visual harmony.
@@ -289,6 +373,11 @@ Tone is the lightness or the darkness of a colour and can be contrasted to provi
 | Background Gradients | Subtle tone transitions gradients create a visually pleasing background. |
 | Error Messages | Error Messages |
 
+:::{seealso} Tone Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **tone** has been used.
+:::
+
 ### Texture
 
 The visual surface quality of elements to evoke a tactile sensation and add depth and realism to the user interface.
@@ -306,3 +395,8 @@ Texture can be used to add interesting to a shape or space, attract attention or
 | Visual Hierarchy | Use different textures to differentiate between elements’ importance. |
 | Theme Consistency | Ensure textures align with the overall theme and branding. |
 | Content Separation | Use textures to separate content sections. |
+
+:::{seealso} Texture Activity
+:class: dropdown
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **texture** has been used.
+:::
