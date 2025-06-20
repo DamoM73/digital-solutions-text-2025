@@ -31,7 +31,6 @@
   - [x] User Insights
   - [x] Use Case Diagrams
   - [ ] Success Criteria
-  - [ ] Wireframes
   - [ ] Mock-ups
   - [ ] Pseudocode
   - [ ] Desk Checking

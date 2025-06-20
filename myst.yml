@@ -48,8 +48,8 @@ project:
         - file: content/06_documentation/02_mind_maps.md
         - file: content/06_documentation/03_user_insight.md
         - file: content/06_documentation/04_use_case_diagrams.md
-        - file: content/06_documentation/05_success_criteria.md
-        - file: content/06_documentation/06_wireframes.md
+        - file: content/06_documentation/05_existing_solutions.md
+        - file: content/06_documentation/06_success_criteria.md
         - file: content/06_documentation/07_mock-ups.md
         - file: content/06_documentation/08_pseudocode.md
         - file: content/06_documentation/09_desk_checking.md
