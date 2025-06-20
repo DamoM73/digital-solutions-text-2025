@@ -205,7 +205,7 @@ Create the following functions, then call them from the OurAPI UI. Use DB Browse
 3. Write a API function to return all employees’ first and last names, ordered by last name.
 4. Write a API function to return the first and last names of customers who do not have a company listed.
 5. Write a API function to return all customer IDs with the last name provided.
-6. Write a API function to return all track names that start with the provided word.
+6. Write a API function to return the names of all track performed by provided artist.
 7. Write a API function to return the first and last names of customers who live in a provided city.
 8. Write a API function to return all album titles along with the artist's name.
 9. Write a API function to return the count of how many tracks exist in the provided genre.

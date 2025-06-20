@@ -42,36 +42,18 @@ A **MoSCoW table** is a way to prioritise solution requirements by grouping them
 
 It helps you to focus on what’s truly necessary; allows you to manage time and resources effectively and supports clear communication with stakeholders (ie. your teacher).
 
-
-
 | Priority | Meaning | Source |
 | --- | --- | --- |
 | **Must** | Essential features that the client has requested | criteria sheet<br>stimulus<br>empathy maps<br> personas |
 | **Should** | Important features you think should be included | existing solutions<br>useability principles<br>good coding practice<br>data principles |
-| **Could** | Good features that you don't have the time, skills or resources to implement | Animated transitions |
-| **Won’t** | Features that are not being included now, but may be added later | AI chatbot support   |
+| **Could** | Good features that you don't have the time, skills or resources to implement. May be implmented in next version | existing solutions |
+| **Won’t** | Feature that you will never implement | existing solutions |
 
+**Layout**
 
+Structure your MuSCoW table with each priority horizontal. Then list the the requirments in the appropriate priority category.
 
-
-
-
-
-Through your user insights and use case diagram, you should now have a clear understanding of what your project needs to do to be successful. 
-
-
-You have now fully explored the problem and identified all the requirements. The next step is to prioritise the requirements and established exactly what your digital solution needs to do.
-
-You will use two tables to achieve this:
-
-- Requirements table
-- Criteria table &mdash; states how to measure the success of achieving the requirements
-
-## Requirements Table
-
-The Requirements table prioritises the requirements that you have identified through the Explore phase. The requirements should be sorted according to their potential impact on the success of the project. For that we use a **MuSCoW** table.
-
-![MuSCoW table](./assets/MuSCoW.png)
+![muscow example](./assets/06/muscow_table.png)
 
 ## Criteria Table
 
