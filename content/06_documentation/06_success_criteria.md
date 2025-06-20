@@ -51,30 +51,78 @@ It helps you to focus on what’s truly necessary; allows you to manage time and
 
 **Layout**
 
-Structure your MuSCoW table with each priority horizontal. Then list the the requirments in the appropriate priority category.
+Structure your MuSCoW table with each priority horizontal. Then list the the requirments in the appropriate priority category. See the example below.
 
-![muscow example](./assets/06/muscow_table.png)
+![muscow example](./assets/06/muscow_table.png)<p>&nbsp;</p>
 
-## Criteria Table
+## Success Criteria
 
-Criteria are the characteristics by which a project is evaluated or judged. They should be written in a way that states what actions will be taken to check that the requirement is met. For example, for a requirement of having accessible on-screen text, the criteria would be &mdash; passes AAA text contrast test. In Digital Solutions, there are two types of criteria, prescribed and self-determined.
+We now need to write out success criteria. Success criteria are important in digital solutions projects because they:
 
-### Prescribed Criteria
+- **Define what success looks like** — they give a clear target for the project to aim for.
+- **Guide development** — help developers make decisions that stay focused on user needs.
+- **Support testing and evaluation** — provide measurable goals to check if the solution works.
+- **Improve communication** — ensure everyone (students, teachers, stakeholders) understands what is expected.
+- **Enable reflection and refinement** — make it easier to identify what’s working and what needs fixing.
 
-Prescribed criteria are those criteria that are provided or placed on a project by the client. In an educational context like Digital Solutions, these can also be provided by the teacher or detailed in an assignment.
+You should write criteria for all the requirements with the **Must** and **Should** priorities.
 
-In our workflow, we have already identified our prescribed requirements in the **Must** column of the Requirements table. Create a Prescribed-criteria table (see below) and transfer **all** the requirements from the Must column into the Requirements column.
+### Writting Success Criteria
 
-![criteria table](./assets/criteria.png)
+To write a **success criteria** for a requirement, describe how you will know the requirement has been met. It should be **specific, measurable, and testable**.
 
+1. **Start with the requirement**
+   - e.g. “The solution must allow users to upload images.”
 
-### Self Determined Criteria
+2. **Decide how to measure success**
+   - What evidence proves it works?
+   - e.g. “User can upload an image file (JPG/PNG) and see a preview.”
 
-Self-determined criteria are any criteria that, rather than being prescribed, have been identified throughout the Explore phase.
+3. **Write the success criteria clearly**
+   - e.g. “Users can successfully upload a JPG or PNG image, which is displayed within 2 seconds.”
 
-In our workflow, we have also identified our self-determined requirements. They are in the **Should** column of the Requirements table. Create a Self-determined criteria table and transfer **all** the requirements from the Should column into the Requirements column.
+Good success criteria are:
 
-![criteria table](./assets/criteria.png)
+* **Clear**: Easy to understand
+* **Testable**: You can check if it's met
+* **Relevant**: Tied to the requirement
 
+**Layout**
 
-note: change MuSCoW to vertical
+Structure your Criteria table with each requirement having it's own row. Then write the corresponding criteria in the right-hand column. See the example table below:
+
+![criteria table](./assets/06/criteria_table.png)<p>&nbsp;</p>
+
+:::{seealso} Requirements and Success Criteria Activities
+:class: dropdown
+**Activity 1: Identifying Requirements**
+
+You are designing a mobile-friendly web app that helps students keep track of their homework tasks and deadlines. The app should allow students to:
+
+- Add and delete tasks
+- Set due dates and reminders
+- Mark tasks as completed
+- View a summary of tasks
+
+Instructions:
+
+1. Read the scenario above.
+2. List the following:
+
+   * 3 **functional requirements** (What the solution must do)
+   * 3 **non-functional requirements** (How the solution should perform)
+   * 2 **user experience requirements** (What the user needs or expects)
+   * 2 **constraints** (Limitations like time, tools, or platforms)
+
+**Activity 2: Prioritising with a MuSCoW Table**
+
+Instructions:
+
+1. Copy the requirements you created in Activity 1.
+2. Place each requirement into one of the four categories in the MuSCoW table below.
+
+**Activity 3: Creating Criteria**
+
+1. Transfer the requirements from the MuSCoW table in activity 2 into a Success Criteria Table.
+2. Create a success criteria for each requirement.
+:::

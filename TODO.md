@@ -30,7 +30,7 @@
   - [ ] Mind Maps
   - [x] User Insights
   - [x] Use Case Diagrams
-  - [ ] Success Criteria
+  - [x] Success Criteria
   - [ ] Mock-ups
   - [ ] Pseudocode
   - [ ] Desk Checking
