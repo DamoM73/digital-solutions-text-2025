@@ -10,8 +10,8 @@
   - [ ] Good Practice
   - [ ] Programming Paradigms
 - [ ] User Experience
-  - [ ] User Experience Introduction
-  - [ ] Usability
+  - [x] User Experience Introduction
+  - [x] Usability
   - [ ] Visual Communication
   - [ ] Impacts
 - [x] Data
