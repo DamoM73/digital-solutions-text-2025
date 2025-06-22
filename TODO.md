@@ -9,17 +9,17 @@
   - [ ] Basic Features
   - [ ] Good Practice
   - [ ] Programming Paradigms
-- [ ] User Experience
+- [x] User Experience
   - [x] User Experience Introduction
   - [x] Usability
-  - [ ] Visual Communication
-  - [ ] Impacts
+  - [x] Visual Communication
+  - [x] Impacts
 - [x] Data
   - [x] Data Introduction
   - [x] Data Principles
   - [x] Structuring Data
   - [x] Managing and Manipulating Data
-- [ ] Data Transmission
+- [x] Data Transmission
   - [x] Data Transmission Introduction
   - [x] Data Privacy
   - [x] Networks

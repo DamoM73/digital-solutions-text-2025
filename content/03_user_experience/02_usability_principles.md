@@ -183,7 +183,7 @@ Usability Issues:
 
 **Activity 2**
 
-Log into to Student Cafe and identify usabilities issues:
+Log into to Student Cafe and identify useability issues:
 
 For each one:
 

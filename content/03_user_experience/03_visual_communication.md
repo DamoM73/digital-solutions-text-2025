@@ -16,18 +16,18 @@ We will consider two aspects of Visual Communication:
 
 You use elements of visual communication to achieve the principles of visual communication.  An analogy, if the **principle** is the cake you want to make, then the **elements** are the ingredients you use to make it.
 
-## Visual Communication Principles
-
-The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve. 
-
-To remember the Visual Communication Principles use the mnemonic: **All Big Cats Have Really Hairy Paws** 
-
 :::{seealso} Visual Communication Activities
 :class: dropdown
 The activity for this section will involve analysing a website and identifying where visual communication has been used.
 
 The website we will analyse is the [Official Lego website](https://www.lego.com/en-au)
 :::
+
+## Visual Communication Principles
+
+The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve. 
+
+To remember the Visual Communication Principles use the mnemonic: **All Big Cats Have Really Hairy Paws** 
 
 ### Alignment
 
@@ -160,9 +160,9 @@ Hierarchy improves readability of the interface by emphasising more important el
 | Contrast | Make use of contrast in to distinguish between levels of importance. |
 | Visual Cues | Incorporate visual cues like arrows or pointers to direct attention. |
 
-:::{seealso} Repetition Activity
+:::{seealso} Hierarchy Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **repetition** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **hierarchy** has been used.
 :::
 
 ### Proximity
@@ -214,7 +214,7 @@ Colour can provide contrast or emphasis, unify a design, fill a shape or space a
 
 :::{seealso} Colour Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **colour** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **colour** has been used to implement visual communication principles.
 :::
 
 ### Form
@@ -237,7 +237,7 @@ Form is the combination of other elements to create solid effects such as the us
 
 :::{seealso} Form Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **form** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **form** has been used to implement visual communication principles.
 :::
 
 ### Line
@@ -260,7 +260,7 @@ Lines can direct the user to a focal point, divide different sections, form shap
 
 :::{seealso} Line Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **line** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **line** has been used to implement visual communication principles.
 :::
 
 ### Proportion
@@ -283,7 +283,7 @@ Proportion relates to the size or quantity of elements in the design in comparis
 
 :::{seealso} Proportion Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **proportion** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **proportion** has been used to implement visual communication principles.
 :::
 
 ### Scale
@@ -306,7 +306,7 @@ Scale refers to the size of an element. It can be used consistently to provide o
 
 :::{seealso} Scale Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **scale** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **scale** has been used to implement visual communication principles.
 :::
 
 ### Shape
@@ -329,7 +329,7 @@ Shapes can be natural, abstract or geometrical. They can be used to symbolically
 
 :::{seealso} Shape Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **shape** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **shape** has been used to implement visual communication principles.
 :::
 
 ### Space
@@ -352,7 +352,7 @@ Space is the area you have to work with. It includes space that is empty and spa
 
 :::{seealso} Space Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **space** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **space** has been used to implement visual communication principles.
 :::
 
 ### Tone
@@ -375,7 +375,7 @@ Tone is the lightness or the darkness of a colour and can be contrasted to provi
 
 :::{seealso} Tone Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **tone** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **tone** has been used to implement visual communication principles.
 :::
 
 ### Texture
@@ -398,5 +398,5 @@ Texture can be used to add interesting to a shape or space, attract attention or
 
 :::{seealso} Texture Activity
 :class: dropdown
-Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **texture** has been used.
+Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how **texture** has been used to implement visual communication principles.
 :::
