@@ -33,6 +33,8 @@ To remember the Visual Communication Principles use the mnemonic: **All Big Cats
 
 The arrangement of elements along a common axis or edge to create a sense of order, organization, and unity in a design. Alignment can be used to provide unity and proximity to the different elements used in the design. Good alignment aids readability and shows connections between different elements. Objects that are perfectly aligned provide a cleaner aesthetic and more professional appearance which inspires trust and confidence.
 
+![alignment](./assets/03/alignment.png)<p>&nbsp;</p>
+
 **Alignment Examples**
 
 | Type | Details |
@@ -55,6 +57,8 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 The distribution of visual elements within a design to create a sense of stability and equilibrium.
 
 Balance occurs when the combination of elements on one side of a design appears equal to the other side. The weight of the design on each side can be influenced by use of colour, space and shape. For example, adding a dark colour to a small empty space on one side can balance a large area of black type on a white background.
+
+![balance](./assets/03/balance.png)<p>&nbsp;</p>
 
 **Balance Examples**
 
@@ -79,6 +83,8 @@ The juxtaposition of elements with differences in characteristics to create visu
 
 Contrast is used to emphasise an element of the design by using a markedly different colour, size or other characteristic. Contrast is also an important factor for readability of text. It is important that there is high contrast between the colour used for typeface and its background colour.
 
+![contrast](./assets/03/contrast.png)<p>&nbsp;</p>
+
 **Contrast Examples**
 
 | Type | Details |
@@ -101,6 +107,8 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 The intentional use of design elements and principles to create a balanced, cohesive, and aesthetically pleasing composition.
 
 Harmony is the pleasing effect of combining similar elements such as using similar colours, typeface and shapes throughout the design.
+
+![harmony](./assets/03/harmony.png)<p>&nbsp;</p>
 
 **Harmony Examples**
 
@@ -125,6 +133,8 @@ Involves the consistent use of visual elements, such as colours, fonts, or shape
 
 Repetition of the same element throughout the design brings consistency, unity and cohesion. For example, repetition of the same icon or button shape can reduce cognitive load and improve learnability for the user. However, too much repetition can become monotonous. Small variations in line, tone or colour to a repeated element can restore interest in the design and helps to retain user attention.
 
+![repetition](./assets/03/repetition.png)<p>&nbsp;</p>
+
 **Repetition Examples**
 
 | Type | Details |
@@ -148,7 +158,9 @@ The organization and prioritization of elements in a design to guide attention a
 
 Hierarchy improves readability of the interface by emphasising more important elements with placement or size. Larger elements or those positioned towards the top of the design are considered more important.
 
-**Repetition Examples**
+![hierarchy](./assets/03/heirarchy.png)<p>&nbsp;</p>
+
+**Hierarchy Examples**
 
 | Type | Details |
 | --- | --- |
@@ -170,6 +182,8 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 Elements placed close together are perceived as related or part of the same group, promoting organization and visual clarity.
 
 Proximity is the positioning of elements near other elements. Proximity is an important factor in useability because it is easier to interact with a digital solution if similar functions are in close proximity to each other, such as the navigation links in a webpage.
+
+![proximity](./assets/03/proximity.png)<p>&nbsp;</p>
 
 **Proximity Examples**
 
@@ -200,6 +214,8 @@ Used to convey emotions, establish branding, guide user attention, and enhance u
 
 Colour can provide contrast or emphasis, unify a design, fill a shape or space and imply emotion. A colour scheme can be inspired by a logo or photograph. Colour theory defines rules that can be used to select aesthetically pleasing colour combinations.
 
+![colour](./assets/03/colour.png)<p>&nbsp;</p>
+
 **Colour Examples**
 
 | Type | Details |
@@ -222,6 +238,8 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how
 The three-dimensional quality and structure of elements which helps users perceive them as tangible objects.
 
 Form is the combination of other elements to create solid effects such as the use of tone and shape to create shadows, or the use of line, shape and colour to create a 3D perspective.
+
+![form](./assets/03/form.png)<p>&nbsp;</p>
 
 **Form Examples**
 
@@ -246,6 +264,8 @@ The use of strokes or marks to define shapes, create structure, convey direction
 
 Lines can direct the user to a focal point, divide different sections, form shapes and provide emphasis. They can be thick, thin, straight or wavy. They can create order or encourage creativity.
 
+![lines](./assets/03/lines.png)<p>&nbsp;</p>
+
 **Line Examples**
 
 | Type | Details |
@@ -268,6 +288,8 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how
 The balanced relationship between the sizes and spacing of elements, ensuring a harmonious and visually pleasing layout.
 
 Proportion relates to the size or quantity of elements in the design in comparison with other elements. Images with disproportionate height and width appear distorted. Unbalanced proportions are usually unattractive but can be used strategically to provide emphasis.
+
+![proportion](./assets/03/proportion.png)<p>&nbsp;</p>
 
 **Proportion Examples**
 
@@ -292,6 +314,8 @@ The relative size of elements and how they visually relate to each other.
 
 Scale refers to the size of an element. It can be used consistently to provide order and repetition to a design or contrasted to create a focal point or emphasis the importance of one element over another.
 
+![scale](./assets/03/scale.png)<p>&nbsp;</p>
+
 **Scale Examples**
 
 | Type | Details |
@@ -314,6 +338,8 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how
 The use of different shapes can convey meaning, hierarchy, and interactivity within the user interface.
 
 Shapes can be natural, abstract or geometrical. They can be used to symbolically represent an action or create proximity by grouping similar elements.
+
+![shape](./assets/03/shape.png)<p>&nbsp;</p>
 
 **Shape Examples**
 
@@ -338,6 +364,8 @@ The intentional arrangement of empty areas impacting the overall composition's b
 
 Space is the area you have to work with. It includes space that is empty and space that contains text, images and other design features. Different uses of space can create clutter or it can create simplicity.
 
+![space](./assets/03/space.png)<p>&nbsp;</p>
+
 **Space Examples**
 
 | Type | Details |
@@ -361,6 +389,8 @@ The consistent and coherent use of colour shades and gradients to convey depth, 
 
 Tone is the lightness or the darkness of a colour and can be contrasted to provide hierarchy, emphasis or separation of content.
 
+![tone](./assets/03/tone.png)<p>&nbsp;</p>
+
 **Tone Examples**
 
 | Type | Details |
@@ -383,6 +413,8 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how
 The visual surface quality of elements to evoke a tactile sensation and add depth and realism to the user interface.
 
 Texture can be used to add interesting to a shape or space, attract attention or unify a design by linking it to the a real world idea with a similar texture.
+
+![texture](./assets/03/texture.png)
 
 **Texture Examples**
 

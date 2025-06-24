@@ -1,6 +1,183 @@
 # Activity Solutions
 
+:::{attention}Suggested solutions
+Just like all things digital, there are many paths to a solution. The solutions provided below are **a** solution, but are **not the only** solution.
+
+They are provided not so you can check you answers, but so you can check the thinking that lead to your answers.
+:::
+
 ## Coding
+
+### Coding Introduction
+
+:::{seealso} IPO Solutions
+:class: dropdown
+**1. Budget Calculator**
+
+| Input | Process | Output |
+| --- | --- | --- |
+| Total weekly income | Add up all expenses | Total expenses |
+| List of expenses (e.g. food, transport, entertainment) | Subtract expenses from income | Remaining money |
+
+---
+
+**2. Step Counter App**
+
+| Input | Process | Output |
+| --- | --- | --- |
+| Step data from motion sensor | Count total steps walked<br><br>Calculate distance and calories using step count and user data | Total steps<br><br>Distance walked and calories burned |
+
+---
+
+**3. Quiz App**
+
+| Input | Process | Output |
+| --- | --- | --- |
+| User-selected answer | Compare answer to correct answer<br><br>Track score for each question | Show “Correct” or “Incorrect”<br><br>Final score after all questions |
+:::
+
+:::{seealso} Decomposition Solutions
+:class: dropdown
+**Activity 1**
+
+- Ask the user to enter homework details (subject, task, due date)
+- Store the homework tasks in a list or file
+- Display the list of tasks to the user
+- Allow the user to mark tasks as completed
+- Sort or filter tasks by due date or subject
+
+---
+
+**Activity 2**
+
+- Get team names and store them
+- Set the starting score for each team to zero
+- Create a way to add or subtract points during the game
+- Display the current score on screen
+- Show a final message with the winner when the game ends
+
+---
+
+**Activity 3**
+
+- Load a set of questions and multiple-choice answers
+- Display one question at a time to the user
+- Record the user’s selected answer
+- Check if the answer is correct and keep score
+- Show the final score after all questions are answered
+:::
+
+:::{seealso} Pattern Recognition Solutions
+:class: dropdown
+
+**Activity 1**
+
+Quiz Feedback Program:
+
+- Each question has a structure: question text, multiple options, one correct answer
+- The same process is repeated: show question → get answer → check answer → give feedback
+- Feedback messages follow a pattern (e.g. "Correct!" or "Incorrect, the right answer is...")
+
+---
+
+**Activity 2**
+
+Weather App:
+
+- Each day’s forecast uses the same data format: day name, icon, temperature, description
+- Icons represent weather types (e.g. sun, cloud, rain) and are reused across days
+- Patterns in temperature changes (e.g. hot in afternoon, cool at night) can be recognised
+
+---
+
+**Activity 3**
+
+Timetable Generator:
+
+- Class times follow regular patterns (e.g. Period 1 starts at 9:00 every day)
+- Subjects repeat on the same days each week
+- Breaks and lunch are placed in the same time slots across all timetables
+:::
+
+:::{seealso} Abstraction Solutions
+:class: dropdown
+**Activity 1: Water Intake App**
+
+- **Necessary information and features**: Date, amount of water consumed, daily goal, total intake so far, and a simple way to log each drink
+- **Unnecessary details to leave out**: Brand of water, exact time of each sip, detailed drink history beyond a few days
+- **Abstraction used**: Focus on tracking totals and goals; ignore details that don’t help the user meet their target
+
+---
+
+**Activity 2: Puzzle Game**
+
+- **Parts that stay the same**: Player controls, puzzle-solving mechanics, scoring system, level completion logic
+- **How to group/simplify**: Use a single function or module to handle shared game mechanics; only change artwork, sound, and puzzle layout per level
+- **Abstraction used**: Group repeated behaviour into reusable procedures or objects (e.g. movePlayer(), checkPuzzleComplete())
+
+---
+
+**Activity 3: Staff Profiles Website**
+
+- **Essential information**: Name, photo, job title, email address
+- **How to keep it consistent**: Use one profile template or function that fills in staff data for each person
+- **Abstraction used**: Create a reusable layout or function for all staff profiles instead of writing separate code for each one
+:::
+
+:::{seealso} System Thinking Solutions
+:class: dropdown
+**Activity 1: School Attendance App**
+
+Parts of the system:
+
+- Student data input (e.g. scanned ID or manual entry)
+- Database storing attendance records
+- Notification system for sending updates to teachers and parents
+- Reporting interface for staff
+
+Interactions:
+
+- When a student is marked present or absent, the database updates
+- The system sends notifications based on changes
+- Reports are generated from stored attendance data
+- If the input method fails, notifications and reports may be incorrect
+
+---
+
+**Activity 2: Online Food Delivery System**
+
+Parts of the system:
+
+- User app (for browsing and ordering)
+- Restaurant system (receives and confirms orders)
+- Payment gateway
+- Delivery tracking system
+
+Interactions:
+
+- The user order triggers updates across the system
+- Payment confirmation activates the restaurant system
+- Restaurant status affects delivery time
+- If one part fails (e.g. restaurant delay), it affects the whole order process
+
+---
+
+**Activity 3: Smart Home Lighting System**
+
+Parts of the system:
+
+- Light bulbs or smart switches
+- Sensors (e.g. motion or daylight sensors)
+- User interface (e.g. mobile app or voice assistant)
+- Automation rules
+
+Interactions:
+
+- Sensor input affects lighting behaviour
+- User settings control when and how lights change
+- Automation rules link actions together (e.g. turn off lights when no motion)
+- A change in settings or sensor failure can disrupt the whole system’s function
+:::
 
 ### Basic Features
 
@@ -12,22 +189,22 @@
 
 ### Useability
 
-:::{seealso} Useability Activities Solutions
+:::{seealso} Useability Solutions
 :class: dropdown
 **Activity 1**
 
 | Issue # | Usability Principle | Suggested Improvement |
 | :--- | :--- | :--- |
-| 1 | **Safety** | Move the 'Delete' button away from 'Save' and add a confirmation dialog before deletion. |
-| 2  | **Accessibility** | Use a high-contrast colour scheme (e.g. black text on white background) and test using the Colour Contrast Analyser. |
-| 3 | **Learnability** | Add an onboarding tutorial, tooltips, or a help screen with brief explanations. |
-| 4 | **Efficiency / Utility** | Add a dropdown list or autocomplete for common subjects to save time and reduce errors. |
-| 5 | **Effectiveness / Safety** | Prevent crashes by making due date optional or showing a clear error message before saving. |
-| 6 | **Effectiveness / Reliability** | Fix the reminder system to ensure it works consistently, even after the app is closed. |
-| 7 | **Learnability / Accessibility**  | Add text labels or tooltips to icons and use familiar symbols (e.g. trash can for delete). |
-| 8 | **Safety** | Include a confirmation step before deleting tasks to avoid accidental loss. |
-| 9 | **Accessibility / Effectiveness** | Increase button size and spacing for easier touch use, especially on mobile. |
-| 10 | **Safety / Utility** | Instead of deleting completed tasks, move them to a “Completed” tab with an option to restore. |
+| 1 | Safety | Move the 'Delete' button away from 'Save' and add a confirmation dialog before deletion. |
+| 2  | Accessibility | Use a high-contrast colour scheme (e.g. black text on white background) and test using the Colour Contrast Analyser. |
+| 3 | Learnability | Add an onboarding tutorial, tooltips, or a help screen with brief explanations. |
+| 4 | Efficiency / Utility | Add a dropdown list or autocomplete for common subjects to save time and reduce errors. |
+| 5 | Effectiveness / Safety | Prevent crashes by making due date optional or showing a clear error message before saving. |
+| 6 | Effectiveness / Reliability | Fix the reminder system to ensure it works consistently, even after the app is closed. |
+| 7 | Learnability / Accessibility  | Add text labels or tooltips to icons and use familiar symbols (e.g. trash can for delete). |
+| 8 | Safety | Include a confirmation step before deleting tasks to avoid accidental loss. |
+| 9 | Accessibility / Effectiveness | Increase button size and spacing for easier touch use, especially on mobile. |
+| 10 | Safety / Utility | Instead of deleting completed tasks, move them to a “Completed” tab with an option to restore. |
 :::
 
 ### Visual Communication 
@@ -357,7 +534,7 @@
 
 ### Impacts
 
-:::{seealso} Personal Impacts Activities Solution
+:::{seealso} Personal Impacts Solution
 :class: dropdown
 **Activity 1: Fitness Tracker**
 
@@ -421,7 +598,7 @@ Refinements:
 - Include features to track emotional well-being
 :::
 
-:::{seealso} Social Impacts Activities Solutions
+:::{seealso} Social Impacts Solutions
 :class: dropdown
 **Activity 1: Facial Recognition in Public Spaces**
 
@@ -504,7 +681,7 @@ Recommendations:
 - Design the app to function on low-bandwidth connections and older devices.
 :::
 
-:::{seealso} Economic Impacts Activities Solutions
+:::{seealso} Economic Impacts Solutions
 :class: dropdown
 **Activity 1: Digital Tax Filing System**
 
@@ -589,6 +766,41 @@ Public Revenue & Policy:
 - Public investment needed in training subsidies, social safety nets, and digital infrastructure.
 :::
 
+:::{seealso} Algorithm Solutions
+:class: dropdown
+**Activity 1: Sorting Student Names**
+
+1. Take a list of all student names
+2. Compare the first two names
+3. If they are out of order, swap them
+4. Repeat the comparison for the next pair
+5. Continue until the entire list is sorted
+6. Repeat the process if needed until no more swaps are made
+
+---
+
+**Activity 2: Vending Machine Simulation**
+
+1. Display available items and their prices
+2. Wait for the user to select an item
+3. Ask the user to insert money
+4. Check if the inserted amount is equal to or greater than the item price
+5. If not enough, ask for more money
+6. If enough, dispense the item
+7. Give change if needed
+
+---
+
+**Activity 3: Password Strength Checker**
+
+1. Get the password input from the user
+2. Check if the password is at least a minimum number of characters (e.g. 8)
+3. Check if it contains at least one uppercase letter
+4. Check if it contains at least one number
+5. Check if it contains at least one special character (e.g. !, @, #)
+6. If all rules are met, mark as "Strong"; otherwise, mark as "Weak"
+:::
+
 ## Data
 
 ### Data Principles
@@ -632,4 +844,56 @@ Public Revenue & Policy:
 ### Evaluation Table
 
 ### Impacts Table
+
+## Python Skills
+
+### PyQt
+
+### Working with CSV
+
+### Type Hints
+
+### Querying Databases
+
+### Creating Databases
+
+### Populating Databases
+
+### Working with JSON and XML
+
+### Requests
+
+### OurAPI
+
+### Ciphers
+
+### Hashing
+
+### Checksums
+
+## SQL Skills
+
+### SELECT Statement
+
+### WHERE Clause
+
+### Filters and Aggregators
+
+### ORDER BY Clause
+
+### GROUP BY and HAVING Clauses
+
+### Subqueries
+
+### JOIN Clauses
+
+### CREATE TABLE Statement
+
+### INSERT Statement
+
+### UPDATE Statement
+
+### DELETE Statement
+
+## Utilities
 

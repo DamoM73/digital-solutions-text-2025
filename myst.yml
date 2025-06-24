@@ -87,9 +87,10 @@ project:
         - file: content/08_sql/06_group_by_and_having.md
         - file: content/08_sql/07_subqueries.md
         - file: content/08_sql/08_join.md
-        - file: content/08_sql/09_insert.md
-        - file: content/08_sql/10_update.md
-        - file: content/08_sql/11_delete.md
+        - file: content/08_sql/09_create.md
+        - file: content/08_sql/10_insert.md
+        - file: content/08_sql/11_update.md
+        - file: content/08_sql/12_delete.md
     - title: Utiliities Skills
       children:
         - file: content/09_utilities/01_intro.md

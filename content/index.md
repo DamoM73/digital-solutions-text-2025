@@ -25,7 +25,7 @@ Try changing `tip` to `warning`!
 Try changing `tip` to `warning`!
 :::
 
-:::{attention}
+:::{attention} Stop and Think
 :class: dropdown
 Try changing `tip` to `warning`!
 :::
