@@ -4,11 +4,11 @@
 - [ ] Introduction
   - [ ] Digital Solutions
   - [x] Technologies
-- [ ] Coding
+- [x] Coding
   - [x] Coding Introduction 
   - [x] Basic Features
   - [x] Good Practice
-  - [ ] Programming Paradigms
+  - [x] Programming Paradigms
 - [x] User Experience
   - [x] User Experience Introduction
   - [x] Usability
