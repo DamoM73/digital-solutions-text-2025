@@ -9,7 +9,9 @@ By the end of this section you will:
 
 ## Introduction
 
-Establishing success criteria is essential for your digital solutions project because it gives clear goals and measurable benchmarks for evaluating the effectiveness and quality of your solution. Success criteria are used to:
+Establishing success criteria is essential for your digital solutions project because it gives clear goals and measurable benchmarks for evaluating the effectiveness and quality of your solution. 
+
+Success criteria are used to:
 
 - Guide decision-making throughout the **problem-solving process**, especially you are evaluating components and the overall solution.
 - Ensure solutions meet the **user needs** and **technical requirements** you identified during the exploration phase.
@@ -31,6 +33,8 @@ These requirements typically include:
 
 From the project's stimulus, empathy maps, personas and use case diagram, you should be able to identify these requirements. Before we develop success criteria, we need to prioritise these requirements. For that we will use a **MuSCoW** table.
 
+![requirements](./assets/06/tasks.png)<p>&nbsp;</p>
+
 ### MuSCoW table
 
 A **MoSCoW table** is a way to prioritise solution requirements by grouping them into four categories:
@@ -46,12 +50,12 @@ It helps you to focus on what’s truly necessary; allows you to manage time and
 | --- | --- | --- |
 | **Must** | Essential features that the client has requested | criteria sheet<br>stimulus<br>empathy maps<br> personas |
 | **Should** | Important features you think should be included | existing solutions<br>useability principles<br>good coding practice<br>data principles |
-| **Could** | Good features that you don't have the time, skills or resources to implement. May be implmented in next version | existing solutions |
+| **Could** | Good features that you don't have the time, skills or resources to implement. May be implemented in next version | existing solutions |
 | **Won’t** | Feature that you will never implement | existing solutions |
 
 **Layout**
 
-Structure your MuSCoW table with each priority horizontal. Then list the the requirments in the appropriate priority category. See the example below.
+Structure your MuSCoW table with each priority horizontal. Then list the the requirements in the appropriate priority category. See the example below.
 
 ![muscow example](./assets/06/muscow_table.png)<p>&nbsp;</p>
 

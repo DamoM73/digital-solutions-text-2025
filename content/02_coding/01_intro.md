@@ -30,6 +30,8 @@ In a digital system:
 
 People control the a digital system through the use of **algorithms**.
 
+![algorithms](./assets/01/here_to_help.png)<p>&nbsp;</p>
+
 For example, the input process and output (IPO) for logging on would be:
 
 | Input | Process | Output |

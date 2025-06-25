@@ -11,13 +11,11 @@ It is important to establish users' needs and wants because they establish the *
 
 Without this insight, solutions risk being confusing, inefficient, or irrelevant, which can lead to user frustration, low adoption, and project failure. Identifying needs and wants early ensures the final product aligns with user expectations and delivers real value.
 
-(empathy_map)=
 ## Empathy Maps
 
 To help identify user needs and wants, UX professionals use **empathy maps**. Empathy maps are visual tools used to gain a deeper understanding of a user's thoughts, feelings, needs, and behaviours. Empathy maps are important because they encourage a **user-centred mindset**, helping designers and developers avoid assumptions and focus on real user experiences. 
 
 By highlighting emotional and practical aspects of user interaction, empathy maps guide the creation of solutions that are more intuitive, relevant, and satisfying for the people who use them.
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QwF9a56WFWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

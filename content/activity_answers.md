@@ -183,7 +183,90 @@ Interactions:
 
 ### Good Practice
 
+:::{seealso} Good Programming Practice Solutions
+:class: dropdown
+Here are the answers to the scenario-based questions:
+
+1. **Make your code easy for a teammate to understand**
+
+   - Use meaningful variable and function names
+   - Follow a consistent style guide like PEP 8
+   - Write clear comments and docstrings
+   - Keep functions short and focused
+
+2. **Program crashes on unexpected input**
+
+   - Add input validation to check for bad data
+   - Use `try-except` blocks to handle errors gracefully
+   - Test edge cases to make sure your code is dependable
+
+3. **Long, hard-to-follow function**
+
+   - Break it into smaller, single-purpose functions
+   - Use descriptive names for each function
+   - Add comments to explain complex sections
+
+4. **Program is slow when processing many records**
+
+   - Choose efficient algorithms and data structures
+   - Avoid unnecessary loops or calculations
+   - Use early exits in loops and optimise repeated actions
+
+5. **Code breaks after a module update**
+
+   - Your code is part of a **dependency chain**
+   - You can manage this by:
+
+     - Locking versions in a `requirements.txt` file
+     - Testing after updates
+     - Keeping modules loosely coupled
+
+6. **Code gives wrong results in some cases**
+
+   - Likely a **logic error**
+   - Fix it by:
+
+     - Reviewing your algorithm
+     - Testing with different inputs, including edge cases
+     - Using desk checks and walkthroughs
+
+7. **Evaluating code effectiveness**
+
+   - Compare outputs to the expected results
+   - Use real and edge case data
+   - Ask for user feedback
+   - Use the success criteria you defined earlier
+
+8. **`IndexError: list index out of range`**
+
+   - This is a **runtime error**
+   - Prevent it by checking list length before accessing elements
+   - Add error handling to avoid crashes
+
+9. **Making a function easier to understand later**
+
+   - Add a **docstring** after the function definition
+   - Include descriptions of parameters, the process, and return values
+   - IDEs will use the docstring to show helpful hints
+
+10. **Running Python on different devices**
+
+   - This shows **code portability**
+   - Python is portable because it runs on many platforms (Windows, macOS, Linux, iOS, Android, web) without changes to the code
+:::
+
+
 ### Programming Paradigms
+
+:::{seealso} Programming Paradigms Solutions
+:class: dropdown
+1. **Inheritance** – it lets `Car` reuse the code from `Vehicle`, reducing repetition and improving structure.
+2. **MVC pattern** – separates data (Model) from display (View), making the app easier to manage and update.
+3. **Event-driven programming** – event handlers respond to user actions like clicks or key presses.
+4. One is working on the **View**, the other on the **Model** – MVC allows both to work independently without conflict.
+5. **Event handler** – triggered by the event loop when the key press is detected.
+6. **Object-Oriented Programming (OOP)** – allows the use of classes and objects to model shared and unique behaviours.
+:::
 
 ## User Experience
 

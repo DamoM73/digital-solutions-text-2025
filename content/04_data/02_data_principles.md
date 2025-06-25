@@ -118,6 +118,8 @@ Make sure you know which method you data uses.
 
 The storage of data needs to be consistent. That means the way that one data point is stored is the same from record to record. For example 100,000 and $10^5$ are the same number, but they are represented differently. Before designing a database and storing data, the accepted format of this data needs to be decided.
 
+![dates](./assets/02/historical_dates.png)<p>&nbsp;</p>
+
 Some common data formats that need to be established:
 
 - **Dates:**

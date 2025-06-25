@@ -260,8 +260,8 @@ A `Truck` class might share some features with `Car` but have differences. Both 
 
 Inside a class:
 
-* **attributes** store data, like `speed` or `size`
-* **methods** perform actions, like `drive()` or `turn_left()`
+- **attributes** store data, like `speed` or `size`
+- **methods** perform actions, like `drive()` or `turn_left()`
 
 To use a method, you create an object and call it like this:
 `ferrari.drive(distance)`
@@ -276,13 +276,13 @@ We covered classes and object-oriented programming in the [Deepest Dungeon cours
 
 Python includes several types of operators:
 
-* Arithmetic operators
-* Assignment operators
-* Comparison operators
-* Logical operators
-* Identity operators
-* Membership operators
-* Bitwise operators
+- Arithmetic operators
+- Assignment operators
+- Comparison operators
+- Logical operators
+- Identity operators
+- Membership operators
+- Bitwise operators
 
 [Python operations refresher](https://www.w3schools.com/python/python_operators.asp)
 
@@ -331,6 +331,8 @@ Used to compare values and return `True` or `False`.
 | `<=` | Less than or equal to | `x <= y` |
 
 ### Logical Operators
+
+![logic gates](./assets/02/logic_gates.png)<p>&nbsp;</p>
 
 Used to combine or modify condition results.
 

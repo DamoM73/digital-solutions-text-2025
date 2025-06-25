@@ -49,7 +49,7 @@ To install Python go to the **[downloads section of the Python website](https://
 
 <font color=red>Follow the steps below:</font>
 
-![python installer](./assets/01/01_pytyon_installer.png)
+![python installer](./assets/02/01_pytyon_installer.png)
 :::
 
 ### Mac Users
@@ -120,6 +120,8 @@ The modular nature of Pythons means that different projects will require differe
 Modules in Python are built using other modules, these are called **dependencies**. It is not unusual for two different modules share a dependency, but this can present a problem when the two modules require different versions of the shared dependency. Which version of the shared dependency should be installed? This is called a dependency conflict.
 :::
 
+![python environment](./assets/02/python_environment.png)<p>&nbsp;</p>
+
 At its core, the main purpose of Python virtual environments is to create an isolated version of Python for a specific project. This means that each project can have its own packages, regardless of what packages every other project has. The great thing about this is that there are no limits to the number of environments you can have since they're just directories containing a different scripts.
 
 :::{hint} requirements.txt
@@ -152,19 +154,19 @@ To create a virtual environment for this project:
 2. Type **Python** at the top
 3. Choose **Python: Create Environment...**
 
-![Create venv 1](assets/01/02_create_venv_1.png)
+![Create venv 1](assets/02/02_create_venv_1.png)
 
 4. At the top choose the **Venv** option
 
-![Create venv 2](assets/01/03_create_venv_2.png)
+![Create venv 2](assets/02/03_create_venv_2.png)
 
 5. Then choose the latest version of Python that you just installed
 
-![Create venv 3](assets/01/04_create_venv_3.png)
+![Create venv 3](assets/02/04_create_venv_3.png)
 
 6. Tick the box beside **requirements.txt** and then **ok**
 
-![Create venv 4](assets/01/05_create_venv_4.png)
+![Create venv 4](assets/02/05_create_venv_4.png)
 
 VS Code will now:
 
@@ -177,7 +179,7 @@ VS Code will now:
 
 To check that the virtual environment is active, look at the status bar at the bottom left for Python versions and virtual environment name (see below).
 
-![check virtual environment](./assets/01/06_check_venv.png)
+![check virtual environment](./assets/02/06_check_venv.png)
 
 ---
 

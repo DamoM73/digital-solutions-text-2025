@@ -12,6 +12,8 @@ By the end of this section you will:
 
 UX, or User Experience, refers to the overall experience that a person has when interacting with a product, service, or system, especially in the context of digital technology. It encompasses all aspects of a user's interaction, including how easy or difficult it is to use, the efficiency of the interaction, how enjoyable and satisfying the experience is, and whether it meets the user's needs and expectations. 
 
+![ux vs ui](./assets/01/ui_vs_ux.png)<p>&nbsp;</p>
+
 UX design involves creating products and services that are user-centric, intuitive, and effective, with the goal of enhancing user satisfaction and ensuring that users can achieve their goals with minimal frustration. UX designers consider factors like usability, accessibility, visual design, information architecture, and user feedback to create a positive and meaningful user experience.
 
 ## Why is UX important
