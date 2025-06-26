@@ -908,6 +908,97 @@ Public Revenue & Policy:
 
 ### User Insights
 
+:::{seealso} Empathy Map Solutions
+:class: dropdown
+**Empathy Map Activity 1: Liam – School Study Planner App**
+
+| Quadrant | Notes |
+| --- | --- |
+| **Says** | “I always feel behind.”<br>“I’d like reminders but don’t want notifications every five minutes.” |
+| **Thinks** | “I don’t want to miss deadlines again.”<br>“This shouldn’t be complicated.” |
+| **Does** | Writes homework in a notebook and loses it.<br>Studies late at night.<br>Uses phone often. |
+| **Feels** | Stressed, overwhelmed, forgetful, anxious about due dates. |
+
+Identified Needs (verbs):
+
+- Organise tasks
+- Receive reminders at useful times
+- View progress clearly
+
+Design Challenge: How might we help Liam stay organised and reminded without overwhelming him?
+
+---
+
+**Empathy Map Activity 2: Janet – Fitness Tracker for Older Adults**
+
+| Quadrant | Notes |
+| --- | --- |
+| **Says** | “I don’t like lots of buttons or confusing screens.”<br>“It makes me feel proud.” |
+| **Thinks** | “I might press the wrong thing.”<br>“I want to keep active safely.” |
+| **Does** | Walks daily.<br>Doesn’t use her smartwatch.<br>Tries to stay healthy. |
+| **Feels** | Proud, frustrated, intimidated by tech, concerned about making mistakes. |
+
+Identified Needs (verbs):
+
+- Track activity
+- Understand performance
+*-Use technology easily
+
+Core Insight: Janet needs a way to track her walks simply and clearly because complex interfaces make her feel overwhelmed and unsure.
+:::
+
+:::{seealso} Persona Solutions
+:class: dropdown
+**Persona Activity 1: Tyler – School Canteen Ordering App**
+
+| Category | Details |
+| --- | --- |
+| Image | ![tyler](./assets/tyler_nguyen.png) |
+| Name | Tyler Nguyen |
+| Age | 15 |
+| Gender | Male |
+| Location | Brisbane, QLD |
+| Education | Year 10 |
+| Occupation | Student |
+| Income | $120 per week |
+| Hobbies | Soccer, gaming, music |
+| Goals | Buy lunch quickly without waiting; know what’s available before arriving |
+| Technology Proficiency | High – uses phone daily, plays games, uses apps easily |
+| Devices | Android phone, Windows laptop (school) |
+| Operating System | Android |
+| Tasks with Solution | View daily menu, pre-order food, get alerts for limited items |
+| Challenges | Forgets to order early; gets frustrated when items are sold out |
+| Pain Points | Long queues, slow app loading, unclear menus |
+| Accessibility Needs | None |
+| Quote | “I just want to grab my food and go – not waste lunch lining up.” |
+
+---
+
+**Persona Activity 2: Amina – Library Booking Kiosk**
+
+| Category | Details |
+| --- | --- |
+| Image | ![amina](./assets/amina_rahman.png) |
+| Name | Amina Rahman |
+| Age | 71 |
+| Gender | Female |
+| Location | Logan, QLD |
+| Education | Former primary school teacher |
+| Occupation | Retired |
+| Income | Pension |
+| Hobbies | Reading, gardening, local history research |
+| Goals | Book study rooms, borrow eBooks, print documents independently |
+| Technology Proficiency | Low – uses desktop with help from library staff |
+| Devices | Android phone (son's old one), occasional use of library computer |
+| Operating System | Andoird, Windows (library desktop) |
+| Tasks with Solution | Book space, reserve books, print forms |
+| Challenges | Avoids digital forms, forgets instructions |
+| Pain Points | Touchscreen too sensitive, hard-to-read text, confusing menus |
+| Accessibility Needs | Large text, low dexterity (arthritis), avoids scrolling |
+| Quote | “If it’s simple and clear, I’ll give it a try. I just don’t want to feel lost.” |
+:::
+
+
 ### Existing Solutions
 
 ### Success Criteria

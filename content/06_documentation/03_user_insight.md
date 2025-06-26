@@ -34,10 +34,10 @@ Empathy mapping is a collaborative visualization tool used by product teams to g
 The process begins with conducting moderated sessions or "empathy interviews," which are one-on-one, open-ended conversations to uncover a user's feelings and motivations.
 
 The empathy map itself is structured into four quadrants, typically with a picture of the user persona in the centre:
-1.  **Says (Top-Left):** Captures direct quotes and explicit statements made by the user during the interview.
-2.  **Thinks (Top-Right):** Documents the user's implicit thoughts, which are inferred from their behaviour, expressions, and comments. This could include their underlying concerns or unspoken questions.
-3.  **Does (Bottom-Right):** Describes the explicit actions and behaviours observed during the session, such as clicking around a page or looking for something specific.
-4.  **Feels (Bottom-Left):** Records the user's emotional state, using adjectives to describe their feelings (e.g., frustrated, impatient, overwhelmed). This is also often inferred.
+1.  **Says (Top-Left):** What the stakeholder says out loud. Ideally, it contains verbatim and direct quotes from research.
+2.  **Thinks (Top-Right):** Documents what the stakeholder is thinking throughout the research. This is inferred from their behaviour, expressions, and comments. This could include their underlying concerns or unspoken questions.  Ask yourself: what occupies the stakeholder’s thoughts? What matters to the stakeholder?
+3.  **Does (Bottom-Left):** Describes the explicit actions and behaviours observed during the session, such as clicking around a page or looking for something specific.
+4.  **Feels (Bottom-Right):** Records the user's emotional state, using adjectives to describe their feelings (e.g., frustrated, impatient, overwhelmed). This is also often inferred. Ask yourself: what worries the stakeholder? What does the stakeholder get excited about? 
 
 **Practical Example:**
 The video illustrates the process with a persona named Jill, who needs to order coffee. Jill prefers her local coffee shop but goes to Starbucks because of the convenience of their mobile app. The empathy map for Jill would include:
@@ -89,7 +89,38 @@ When marking the Empathy Maps teachers ask the following questions:
 - Are there adequate observations in all four quadrants?
 :::
 
-(persona)=
+:::{seealso} Empathy Map Activities
+:class: dropdown
+**Empathy Map Activity 1: School Study Planner App**
+
+A school wants to develop a digital study planner app for students to manage homework, assignments, and revision. You are interviewing "Liam", a Year 11 student who struggles with time management and often forgets due dates.
+
+Liam’s Interview Summary:
+
+> "I always feel behind. I try to write homework in my notebook, but I lose it all the time. I’d like reminders but don’t want notifications every five minutes. I study best late at night. I use my phone a lot but hate clunky apps. I’m really stressed right now and don’t want anything too complicated."
+
+Instructions:
+- Fill in an empathy map for Liam.
+- Identify 3 needs (verbs).
+- Suggest one design challenge based on his needs.
+
+---
+
+**Empathy Map Activity 2: Fitness Tracker for Older Adults**
+
+A startup is creating a fitness tracker designed for older adults (60+). You are interviewing “Janet,” a 67-year-old retired nurse who wants to stay active but finds technology overwhelming.
+
+Janet’s Interview Summary:**
+
+> “I walk every day, but I don’t know how far or how fast. My daughter gave me a smartwatch, but I couldn’t work it out. I just want something simple. I don’t like lots of buttons or confusing screens. I do like seeing my progress, though—it makes me feel proud. I’m worried I’ll press the wrong thing and break it.”
+
+Instructions:
+- Create an empathy map for Janet.
+- Identify 3 action-oriented user needs (verbs).
+- Frame one core user insight in the format:
+  - Janet needs a way to… because…
+:::
+
 ## Personas
 
 **Personas** are fictional, detailed representations of typical users created based on research and data. They include information such as age, background, goals, challenges, and behaviours, helping teams understand who they are designing for. Personas are important because they keep the user's needs and preferences at the centre of the design process. 
@@ -184,3 +215,65 @@ When marking the Personas teachers ask the following questions:
 - Have the provide proto-personas been used?
 - Do the personas cover include people with impairments?
 :::
+
+:::{seealso} Persona Activities
+:class: dropdown
+**Persona Activity 1: School Canteen Ordering App**
+
+Your school is planning to replace long canteen lines with a mobile ordering app. You are designing a solution for students who buy food regularly but face delays or miss out due to sold-out items.
+
+Create a persona for one typical user.
+
+User Snapshot:
+
+- Name: Tyler
+- Year: 10
+- Lives 5 min walk from school
+- Buys lunch daily
+- Often skips lunch if lines are too long
+- Doesn’t like typing on small screens
+- Plays sport most afternoons
+
+Instructions:
+
+- Create a name and select a real-person photo
+- Fill in:
+
+  - Demographics: age, year level, location
+  - Goals: what do they want from the app?
+  - Behaviours: how do they currently interact with canteen services?
+  - Pain Points: what frustrates them?
+  - Accessibility: any impairments or preferences?
+  - Devices used and proficiency
+- Add a quote to represent their attitude
+
+---
+
+**Persona Activity 2: Library Booking Kiosk for Community Use**
+
+Your local council is upgrading its library system to include a touchscreen kiosk for booking study rooms, printing, and device loans. The solution must work for a range of users.
+
+Create a persona for a user who isn't tech-savvy.
+
+User Snapshot:
+
+- Name: Amina
+- Age: 71
+- Retired teacher
+- Goes to the library 3–4 times a week
+- Doesn’t own a smartphone
+- Prefers printed instructions
+- Wears glasses, mild arthritis in fingers
+
+Instructions:
+
+- Create a name and select a real-person photo
+- Fill in:
+
+  - Demographics: age, location, education, tech use
+  - Goals: why does she visit the library?
+  - Behaviours: how does she currently complete bookings or ask for help?
+  - Pain Points: what makes kiosk use difficult?
+  - Accessibility: physical and visual needs
+  - Devices used and proficiency
+- Add a quote that captures her experience using
