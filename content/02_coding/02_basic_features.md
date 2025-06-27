@@ -5,6 +5,8 @@ By the end of this section you will:
 - remembered the basics of Python that have been covered in previous courses.
 :::
 
+## Algorithms
+
 Algorithms are the commands that make up our programs.
 
 There are 6 basic building blocks that an algorithm consists of. Each of them serve a particular purpose.
@@ -20,6 +22,19 @@ In designing your algorithm, you will need to decide how to arrange these buildi
 
 :::{warning} Teacher's marking considerations
 In assessing your code and pseudocode, your teaching will look for examples of these six building blocks. Keep this in mind when selecting which code and pseudocode you will demonstrate in your assessment.
+:::
+
+:::{seealso} Algorithms Activities
+:class: dropdown
+1. What is the purpose of an algorithm in a program?
+2. What does the *sequence* building block do in an algorithm?
+3. How does *assignment* work in a program? What is the role of a variable?
+4. What is the difference between *condition* and *selection* in an algorithm?
+5. How is *iteration* different from *sequence*?
+6. Give an example of a simple algorithm that uses *selection* and *iteration*.
+7. Why is *modularisation* important when designing large programs?
+8. Which building block(s) would you use to design a quiz program that gives feedback after each question? Why?
+9. What could go wrong if you forget to use *modularisation* in a large project?
 :::
 
 ---
@@ -132,6 +147,37 @@ What would happen if you made a function called `print`?
 | Use variables from the enclosing function    | N/A            | N/A                        | Yes                    |
 | Change variables from the enclosing function | N/A            | N/A                        | No (unless `nonlocal`) |
 
+:::{seealso} Variable Activities
+:class: dropdown
+1. What is a variable used for in a computer program?
+2. What does the type of a variable indicate?
+3. What is the difference between dynamic and static variable types?
+4. Why is Python described as a dynamically typed language?
+5. How are string values written in Python?
+6. What type in Python is used for whole numbers?
+7. What Python type represents numbers with a decimal point?
+8. What are the two possible values of the Boolean type in Python?
+9. What does "truthy" and "falsy" mean in Python?
+10. Name three values in Python that evaluate to `False`.
+11. What will the following code output?
+
+    ```python
+    if []:
+        print("Truthy")
+    else:
+        print("Falsy")
+    ```
+
+12. What does scope mean in programming?
+13. What is the difference between a global and a local variable?
+14. How does Python use scope to help manage code?
+15. What does each letter in the LEGB rule stand for?
+16. In what order does Python look for a variable using the LEGB rule?
+17. What happens if you create a function with the same name as a built-in like `print`?
+18. Can you change a global variable inside a function without declaring it `global`?
+19. Can a nested function change a variable from its enclosing function without using `nonlocal`?
+20. What kind of variables are available everywhere in your program?
+:::
 
 ---
 
@@ -212,6 +258,37 @@ Python has two loop types
 In Python, an **iterable** is a container you can move through one item at a time, like going through pages in a book. Built-in iterables include **lists**, **tuples**, **strings**, **dictionaries**, and **sets**.
 :::
 
+:::{seealso} Control Structures Activities
+:class: dropdown
+1. What are the three basic types of control structures in programming?
+2. How does sequential code execute?
+3. What is a condition in programming?
+4. What kind of answer does a condition always give?
+5. What Python statements commonly use conditions?
+6. What pattern do Python conditions follow?
+7. What operator would you use to test if two values are not equal?
+8. Which operator checks if one value is greater than or equal to another?
+9. What is selection in programming?
+10. What is another name for selection?
+11. How does Python decide which path to follow in an `if ... elif ... else` block?
+12. Can you have more than one `elif` in a selection block?
+13. What happens if none of the `if` or `elif` conditions are true and there's no `else`?
+14. What does the `else` block do?
+15. What does the `match case` statement do in Python?
+16. Which version of Python introduced `match case`?
+17. What is iteration in programming?
+18. What is another word for iteration?
+19. What is the difference between definite and indefinite iteration?
+20. What kind of loop is used when you know how many times to repeat?
+21. What kind of loop is used when the number of repetitions is unknown?
+22. Which type of loop does Python not support?
+23. What type of loop is used for infinite loops in Python?
+24. What does a `for` loop do with items in a sequence?
+25. What is an iterable in Python?
+26. Name three built-in Python types that are iterables.
+Let me know if you'd like the answers as well.
+:::
+
 ---
 
 ## Data Structures
@@ -236,6 +313,30 @@ In Python, we commonly use these four data structures:
 **Syntax** is the set of rules a programming language follows to write commands properly. It decides which combinations of words, symbols, and punctuation are valid in that language.
 
 [Python syntax refresher](https://www.w3schools.com/python/python_syntax.asp)
+
+:::{seealso} Data Structures Activities
+:class: dropdown
+1. What is a data structure used for?
+2. How can data structures be understood in simple terms?
+3. What are the four common data structures in Python?
+4. What type of collection is a list?
+5. How is a list created in Python?
+6. What does it mean that lists are mutable?
+7. What index does Python start counting from in a list?
+8. What is one key difference between a list and a tuple?
+9. Why are tuples good for fixed data?
+10. How is a tuple created in Python?
+11. What is a set in Python?
+12. What makes sets different from lists and tuples?
+13. Can you add or remove items from a set?
+14. Why might you use a set instead of a list?
+15. What is stored in a dictionary in Python?
+16. How is a dictionary written in Python?
+17. What must be true about the keys in a dictionary?
+18. Can you update the values in a dictionary?
+19. What is syntax in programming?
+20. Why is syntax important in Python?
+:::
 
 ---
 
@@ -267,6 +368,25 @@ To use a method, you create an object and call it like this:
 `ferrari.drive(distance)`
 
 We covered classes and object-oriented programming in the [Deepest Dungeon course](https://damom73.github.io/python-oop-with-deepest-dungeon/).
+
+:::{seealso} Classes Activities
+:class: dropdown
+1. What is a class in object-oriented programming?
+2. What two things does a class define?
+3. What is an attribute in a class?
+4. What is a method in a class?
+5. Give two examples of attributes in a `Car` class.
+6. Give two examples of methods in a `Car` class.
+7. What is the purpose of using a class like `Car`?
+8. How do you create an object from a class?
+9. What does the line `ferrari = Car()` do?
+10. What is one benefit of having a `Truck` class inherit from a `Vehicle` class?
+11. What does inheritance help you avoid?
+12. What does the method call `ferrari.drive(distance)` do?
+13. Why might a `Truck` class share code with a `Car` class?
+14. How are objects related to classes?
+15. Where did we cover classes and object-oriented programming?
+:::
 
 ---
 
@@ -372,3 +492,30 @@ Used with binary numbers. Rarely needed in basic Python, but good to know they e
 | `~` | NOT | Flips all bits |
 | `<<` | Left shift | Moves bits left, adds 0s on the right |
 | `>>` | Right shift | Moves bits right, keeps leftmost bit |
+
+:::{seealso} Operations Activities
+:class: dropdown
+1. What is an operator in Python used for?
+2. Name three types of Python operators.
+3. What do arithmetic operators do?
+4. What does the `+` operator do?
+5. What is the result of `x // y`?
+6. What is the purpose of parentheses `()` in arithmetic expressions?
+7. What does the `**` operator do?
+8. What does an assignment operator do?
+9. What does `x += 3` mean?
+10. What is the difference between `=` and `+=`?
+11. What does a comparison operator return?
+12. What does the `!=` operator check for?
+13. What is the result of `x >= y` if x is 5 and y is 3?
+14. What is the `and` operator used for?
+15. What does `not(x < 5)` do?
+16. What will `x < 5 or x < 3` return if `x = 4`?
+17. What do identity operators check?
+18. What does `x is y` mean in Python?
+19. What is the result of `x is not y` if x and y point to different objects?
+20. What does the `in` operator check?
+21. What does `'a' in 'apple'` return?
+22. When would `not in` be used?
+23. What will `5 not in [1, 2, 3]` return?
+:::

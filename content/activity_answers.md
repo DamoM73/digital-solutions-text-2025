@@ -181,6 +181,144 @@ Interactions:
 
 ### Basic Features
 
+:::{seealso} Algorithms Solutions
+:class: dropdown
+Here are the **answers** to the algorithm learning questions:
+1. Algorithms are the set of commands or instructions that tell a computer what to do and how to solve a problem.
+2. It processes instructions one after the other in the order they appear.
+3. Assignment stores the result of an expression into a variable, which holds the value for later use in the program.
+4. A *condition* checks whether something is true or false; *selection* uses that condition to decide if a part of the code should run.
+5. *Iteration* repeats a set of instructions multiple times, while *sequence* runs instructions once, in order.
+6. Example: A guessing game where the computer checks if your guess is correct (*selection*), and keeps asking until it is (*iteration*).
+7. It makes programs easier to manage, test, reuse, and debug by breaking them into smaller, logical sections.
+8. *Sequence* (to go through questions), *selection* (to check answers), *assignment* (to store score), *iteration* (to go through multiple questions), and possibly *modularisation* (to separate the quiz logic into functions).
+9. The code could become hard to read, debug, test, and maintain. Errors in one part of the code may affect other parts.
+:::
+
+:::{seealso} Variable Solutions
+:class: dropdown
+1. To store values in computer memory for use in a program.
+2. The kind of data stored at that memory location.
+3. Dynamic types are checked at runtime and can change; static types are checked before running and cannot change.
+4. Because type checking happens at runtime and variables can change type.
+5. With single or double quotes.
+6. `int`
+7. `float`
+8. `True` and `False`
+9. Values that evaluate to `True` or `False` in a Boolean context.
+10. `None`, `0`, `''`
+11. `Falsy`
+12. Where in the program a variable can be used.
+13. Global is defined outside functions and used anywhere; local is defined inside functions and used only there.
+14. It limits variable access to reduce bugs and improve code organisation.
+15. Local, Enclosing, Global, Built-in
+16. Local → Enclosing → Global → Built-in
+17. It overrides the built-in function while the code runs.
+18. No
+19. No
+20. Global variables and built-in names
+:::
+
+:::{seealso} Control Structures Solutions
+:class: dropdown
+1. Sequential, selection, iteration
+2. Line by line from top to bottom
+3. A check to see if something is true or false
+4. `True` or `False`
+5. `if` and `while`
+6. value operator value
+7. `!=`
+8. `>=`
+9. Choosing a path in code based on a condition
+10. Branching
+11. It checks conditions in order and runs the first block that is true
+12. Yes
+13. Nothing runs unless there’s an `else` block
+14. Runs if all previous conditions are false
+15. Compares a variable against fixed values
+16. Python 3.10
+17. Repeating a block of code
+18. Loop
+19. Definite has a known number of repetitions; indefinite does not
+20. `for` loop
+21. `while` loop
+22. Post-test loop (`do...while`)
+23. `while` loop
+24. Uses each item one at a time
+25. A container you can move through one item at a time
+26. Lists, tuples, strings (also: dictionaries, sets)
+:::
+
+:::{seealso} Data Structures Solutions
+:class: dropdown
+1. To store data in an organized form.
+2. As collections of related data, like a shopping list or contact list.
+3. Lists, tuples, sets, dictionaries.
+4. An ordered collection of items.
+5. Using square brackets `[]` with items separated by commas.
+6. Items can be changed, added, or removed.
+7. Index 0.
+8. Tuples cannot be changed (immutable), lists can.
+9. They offer faster performance and are ideal for fixed data.
+10. Using parentheses `()` with items separated by commas.
+11. A collection of unique items with no specific order.
+12. Sets are unordered and only hold unique items.
+13. Yes.
+14. When you only care about whether an item exists, not order or duplicates.
+15. Key-value pairs.
+16. Using curly braces `{}`, with a colon `:` between each key and value.
+17. Keys must be unique.
+18. Yes.
+19. The rules a programming language follows to write commands properly.
+20. It ensures commands are written in a valid way that Python can understand.
+:::
+
+:::{seealso} Classes Activities
+:class: dropdown
+1. A class is a blueprint for creating objects.
+2. Attributes and methods.
+3. An attribute stores data in a class.
+4. A method performs an action in a class.
+5. `colour`, `wheels`
+6. `drive()`, `brake()`
+7. To define shared structure and behaviour for multiple car objects.
+8. By calling the class name with parentheses, e.g. `Car()`
+9. It creates a new object called `ferrari` from the `Car` class.
+10. It allows shared code to be reused without repetition.
+11. Repeating code.
+12. It calls the `drive()` method on the `ferrari` object, passing `distance` as a value.
+13. Because they have similar features but also differences.
+14. Objects are created from classes and follow their structure.
+15. In the Deepest Dungeon course.
+:::
+
+:::{seealso} Operations Activities
+:class: dropdown
+1. To perform actions on variables or values.
+2. Arithmetic, assignment, comparison (others: logical, identity, membership, bitwise).
+3. Perform basic maths with numbers.
+4. Addition.
+5. Whole number result of dividing x by y (floor division).
+6. Control the order of operations, like in maths.
+7. Exponentiation (power).
+8. Assign or update the value of a variable.
+9. Add 3 to the current value of `x`.
+10. `=` sets a value; `+=` increases the value by adding.
+11. `True` or `False`.
+12. Checks if two values are not equal.
+13. `True`
+14. Returns `True` if both conditions are `True`.
+15. Reverses the result of the condition `x < 5`.
+16. `True` (since `x < 5` is true).
+17. Whether two variables are the same object in memory.
+18. Returns `True` if `x` and `y` refer to the same object.
+19. `True`
+20. If a value exists in a sequence like a list or string.
+21. `True`
+22. When you want to check that a value is not in a sequence.
+23. `True`
+:::
+
 ### Good Practice
 
 :::{seealso} Good Programming Practice Solutions
@@ -254,7 +392,6 @@ Here are the answers to the scenario-based questions:
    - This shows **code portability**
    - Python is portable because it runs on many platforms (Windows, macOS, Linux, iOS, Android, web) without changes to the code
 :::
-
 
 ### Programming Paradigms
 
@@ -612,8 +749,6 @@ Here are the answers to the scenario-based questions:
 - **Contrast and Depth**:
   Textured visuals are used sparingly to contrast with flat design elements, helping key content stand out without overwhelming the user.
 :::
-
----
 
 ### Impacts
 
@@ -1029,6 +1164,44 @@ Core Insight: Janet needs a way to track her walks simply and clearly because co
 ### Existing Solutions
 
 ### Success Criteria
+
+:::{seealso} Requirements and Success Criteria Activities
+:class: dropdown
+**Activity 1: Identifying Requirements**
+
+| Type | Requirements |
+| --- | --- |
+| Functional Requirements | Users must be able to add new homework tasks with a title and description<br>Users must be able to set due dates and optional reminders for each task<br>Users must be able to mark tasks as completed and delete tasks |
+| Non-Functional Requirements | The app should load within 2 seconds on most devices<br>The app should store data securely using encrypted local storage or a cloud database<br>The app should be compatible with both Android and iOS mobile browsers |
+| User Experience Requirements | The app should have a simple, clean interface that is easy to navigate<br>The user should be able to view a task summary without scrolling excessively |
+| Constraints | Must be completed within 4 weeks<br>Must be developed using HTML, CSS, and JavaScript only (no backend server) |
+
+**Activity 2: Prioritising with a MuSCoW Table**
+
+| Category | Requirements |
+| --- | --- |
+| Must | Users can view class timetables<br>Website is mobile responsive<br>Users can sign up for a membership online<br>Pages load in under 3 seconds<br>Website matches gym’s official branding (colours, fonts)<br>Use strong colour contrast for accessibility |
+| Should | Staff can log in and edit timetable information<br>Users can search for classes by day or trainer<br>Allow users to cancel or reschedule bookings<br>Include testimonials from current members<br>Provide a live chat feature for talking to staff<br>Include a staff login portal |
+| Could | Include an animated logo on page load<br>Include video tours of the gym<br>Offer a blog with fitness tips<br>Sell gym merchandise through an online shop<br>Allow users to create workout plans<br>Include a downloadable PDF of the class schedule |
+| Won’t | Offer push notifications through the browser<br>Translate the site into five languages |
+
+**Activity 3: Creating Criteria**
+
+| Requirement | Success Criteria |
+| --- | --- |
+| Users can view class timetables | Users can access the timetable page and view weekly classes with correct times, locations, and trainers. |
+| Website is mobile responsive | Website layout adjusts to fit different screen sizes without horizontal scrolling or content overlap. |
+| Users can sign up for a membership online | Users can complete a membership form, submit payment, and receive confirmation within 1 minute. |
+| Pages load in under 3 seconds | All main pages (home, timetable, membership) load fully within 3 seconds on a 4G connection. |
+| Website matches gym’s official branding (colours, fonts) | All pages use the approved brand colours and fonts as shown in the provided style guide. |
+| Use strong colour contrast for accessibility | All text has at least 4.5:1 contrast ratio when tested with a colour contrast tool. |
+| Staff can log in and edit timetable information | Admin users can log in and update, add, or delete classes from the timetable interface successfully. |
+| Users can search for classes by day or trainer | The timetable page includes a working filter where users can choose a day or trainer and see only matching classes. |
+| Allow users to cancel or reschedule bookings | Logged-in users can cancel or change a booking, and changes are reflected in their account instantly. |
+| Include testimonials from current members | At least three testimonials are displayed on the homepage, with member name and photo. |
+| Provide a live chat feature for talking to staff | Users can send messages to staff during business hours, with replies within 2 minutes. |
+| Include a staff login portal | Staff members can access a secure login screen and be redirected to the admin dashboard after successful login. |
+:::
 
 ### Mock-ups
 

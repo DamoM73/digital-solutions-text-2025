@@ -2,7 +2,7 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- understand the importance of clearly establising your digital solution's success criteria.
+- understand the importance of clearly establishing your digital solution's success criteria.
 - know how to use the MuSCoW method to prioritise the solution's requirements.
 - know how to create criteria used to measure the whether a requirement has been met.
 :::
@@ -71,7 +71,7 @@ We now need to write out success criteria. Success criteria are important in dig
 
 You should write criteria for all the requirements with the **Must** and **Should** priorities.
 
-### Writting Success Criteria
+### Writing Success Criteria
 
 To write a **success criteria** for a requirement, describe how you will know the requirement has been met. It should be **specific, measurable, and testable**.
 
@@ -120,10 +120,30 @@ Instructions:
 
 **Activity 2: Prioritising with a MuSCoW Table**
 
-Instructions:
+You are developing a website for a local gym. The gym wants to attract new members, keep current members informed, and make communication easy. Below are 20 possible requirements. Sort them into the correct **MuSCoW** categories.
 
-1. Copy the requirements you created in Activity 1.
-2. Place each requirement into one of the four categories in the MuSCoW table below.
+Possible Requirements:
+
+- Users can view class timetables
+- Pages load in under 3 seconds
+- Staff can log in and edit timetable information
+- Users can sign up for a membership online
+- Website matches gym’s official branding (colours, fonts)
+- Website is mobile responsive
+- Users can search for classes by day or trainer
+- Include an animated logo on page load
+- Provide a live chat feature for talking to staff
+- Allow users to cancel or reschedule bookings
+- Offer a blog with fitness tips
+- Include video tours of the gym
+- Include testimonials from current members
+- Use strong colour contrast for accessibility
+- Include a staff login portal
+- Sell gym merchandise through an online shop
+- Allow users to create workout plans
+- Offer push notifications through the browser
+- Include a downloadable PDF of the class schedule
+- Translate the site into five languages
 
 **Activity 3: Creating Criteria**
 
