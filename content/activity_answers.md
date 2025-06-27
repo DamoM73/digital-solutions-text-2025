@@ -998,6 +998,33 @@ Core Insight: Janet needs a way to track her walks simply and clearly because co
 | Quote | “If it’s simple and clear, I’ll give it a try. I just don’t want to feel lost.” |
 :::
 
+### Use Case Diagrams
+
+:::{seealso} Use Case Diagram Soulitions
+:class: dropdown
+**Activity 1: Student Portal Login System**
+
+![use case 1](./assets/ucd_activity_1.png)<p>&nbsp;</p>
+
+---
+
+**Activity 2: Online Food Delivery App**
+
+![use case 2](./assets/ucd_activity_2.png)<p>&nbsp;</p>
+
+---
+
+**Activity 3: Library Management System**
+
+![use case 3](./assets/ucd_activity_3.png)<p>&nbsp;</p>
+
+---
+
+**Activity 4: School Event Booking Platform**
+
+![use case 4](./assets/ucd_activity_4.png)<p>&nbsp;</p>
+
+:::
 
 ### Existing Solutions
 

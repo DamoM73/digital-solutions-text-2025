@@ -72,4 +72,35 @@ These two are easy to confuse:
   - base use case is incomplete without the included use case
   - included use case is mandatory and not optional
 
+:::{seealso} Use Case Diagram Activities
+:class: dropdown
+**Activity 1: Student Portal Login System**
 
+A school is designing a new online student portal. Students should be able to log in, check their timetable, submit assignments, and view results. Teachers can upload resources, mark assignments, and send messages to students.
+
+Identify the system, actors (primary and secondary), and use cases. Develop a use case diagram showing the relationships and any potential `<<include>>` or `<<extend>>` connections.
+
+---
+
+**Activity 2: Online Food Delivery App**
+
+A start-up is building an app where users can browse restaurants, place orders, and make payments. Delivery drivers can accept delivery jobs and update order status. Admins monitor transactions and manage delivery listings.
+
+List the primary and secondary actors and their goals. Create a use case diagram representing their interactions with the app, including optional actions or repeated functions.
+
+---
+
+**Activity 3: Library Management System**
+
+A local library is upgrading its software. Patrons should be able to search for books, borrow and return items, and reserve books. Staff need to manage inventory, track loans, and send reminders for overdue books.
+
+Draw a use case diagram that shows actor interactions, system scope, and any use cases that are shared or conditionally triggered using `<<extend>>` and `<<include>>`.
+
+---
+
+**Activity 4: School Event Booking Platform**
+
+A digital platform allows students and teachers to book school facilities (like halls and courts) for events. Students can request bookings, view schedules, and receive confirmations. Staff approve requests and manage the calendar.
+
+Identify all actors and use cases. Create a use case diagram that includes mandatory and optional interactions, as well as generalised roles if applicable.
+:::
