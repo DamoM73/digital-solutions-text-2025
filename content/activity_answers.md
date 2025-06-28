@@ -321,76 +321,255 @@ Here are the **answers** to the algorithm learning questions:
 
 ### Good Practice
 
+:::{seealso} Dependability Solutions
+:class: dropdown
+1. Dependable code runs consistently under different conditions, handles errors gracefully, and avoids crashes, building user confidence and trust.
+2. It helps others (or your future self) quickly understand, fix, or improve the code without breaking other parts.
+3. Lower cognitive load makes the code easier to follow, reducing errors and making updates or collaboration simpler.
+4. A dependency chain is when one module relies on another. Changes in any linked module can cause unexpected bugs or break the program.
+5. Small functions are easier to test and debug. Good names and comments explain what code does, making it easier to work with.
+6. Consistent style improves readability and helps teams follow the same structure, reducing mistakes and confusion.
+7. It allows you to write code that handles invalid input or failures safely, preventing crashes and improving user experience.
+8. Testing finds errors before users do, making sure the program behaves correctly and consistently.
+9. Clear names show what variables or functions do, helping all team members quickly understand and use the code correctly.
+10. Handling edge cases avoids unexpected crashes or bugs, making the program more robust and user-friendly.
+:::
+
+:::{seealso} Efficiency Solutions
+:class: dropdown
+1. Efficiency means completing tasks using the least amount of time and processing power.
+2. The right data structure makes it faster to store and access data, improving speed.
+3. Unnecessary steps slow down programs and waste resources.
+4. Some algorithms use fewer steps to get to the solution, making them faster.
+5. Nested loops take more time because they run many times for each outer loop run.
+6. Small functions are easier to test, update, and reuse, making code faster and simpler.
+7. Your code should still perform well even as the data grows; it should use minimal time and memory.
+8. Code efficiency is about reducing resource use, which supports the speed and structure of algorithmic efficiency.
+9. A `for` loop avoids repetition and runs faster than many repeated `if-then-else` checks.
+10. Clear and simple code is easier to read and less likely to have mistakes that slow it down.
+11. Functions reduce repeated code, making updates easier and programs more efficient.
+12. Storing repeated results saves time by avoiding recalculating the same thing.
+13. A dictionary is faster than a list for lookups because it finds items using keys.
+14. Testing with different data sizes helps you find ways to make code faster and use fewer resources.
+:::
+
+:::{seealso} Effectiveness Solutions
+:class: dropdown
+1. Effectiveness measures how well an algorithm solves the intended problem.
+2. Understanding the problem clearly ensures the solution is accurate and relevant.
+3. Success criteria help you check if the solution works, like producing the correct output or meeting user needs.
+4. Breaking the problem into smaller steps makes it easier to design and manage the algorithm.
+5. Pseudocode or flowcharts help plan the logic before coding, reducing mistakes.
+6. Clear and structured logic makes code easier to follow and less likely to have errors.
+7. Testing with real, edge case, and invalid data ensures the algorithm handles all situations correctly.
+8. If the algorithm doesn't work as expected, refine or fix it based on what you learned from the results.
+9. User or tester feedback can show issues or improvements you didn’t notice, helping you make a better solution.
+10. A desk check can work for simple problems, but complex problems need real testing to see if they function in all conditions.
+:::
+
+:::{seealso} Testing Activities
+:class: dropdown
+1. The main purpose of testing is to check that code performs as expected.
+2. Testing helps ensure the solution solves the problem (effective), runs smoothly (efficient), and works reliably (dependable).
+3. Testing should occur throughout development to catch and fix issues early and improve quality over time.
+4. Exploratory testing is informal testing done by trying features without a set plan.
+5. Exploratory testing helps spot unexpected issues and ensures the solution feels usable and effective.
+6. Unit testing focuses on checking individual parts of code, such as functions or classes.
+7. Unit testing improves dependability by catching errors close to where they occur.
+8. Integrated testing checks how different components of the program work together.
+9. Integrated testing is important because some problems only appear when parts of the system interact.
+10. Using all three types of testing helps make the solution more reliable, accurate, and high-performing.
+:::
+
+:::{seealso} Debugging Solutions
+:class: dropdown
+1. Debugging is finding and fixing errors (bugs) in a program so it works correctly.
+2. Bugs can cause crashes, unexpected behaviour, or incorrect results.
+3. Python runs line-by-line, so one error can stop the whole program from continuing.
+4. VSCode provides breakpoints, step controls, variable and watch panels, and a call stack viewer.
+5. Click the "Run and Debug" tab, then select "Run and Debug" and choose "Python File."
+6. A breakpoint pauses the code on a specific line; set one by clicking next to the line number.
+7. The “Variables” panel shows the current values stored in variables while the program is paused.
+8. “Step Over” runs the current line and moves to the next line in the same function.
+9. “Step Into” enters a function call to let you debug inside that function.
+10. “Step Out” runs the rest of a function and returns to where it was called.
+11. Conditional breakpoints only pause when a set condition is true, helping catch specific errors.
+12. An example is `y == 0`, which pauses the code only when `y` equals zero.
+13. You can change variable values while paused to test scenarios or fix bugs on the fly.
+14. The watch panel lets you track expressions or values as the program runs.
+15. The call stack shows the order of function calls leading to the current line.
+16. Print-based debugging is helpful for quick checks or when you’re unsure where the bug is.
+17. Breakpoints pause the program, and the variables panel shows what’s happening at that moment.
+18. Install the Python and Python Debugger extensions in VSCode.
+19. Testing different values while paused helps understand bugs or test fixes without restarting.
+20. These tools help spot issues earlier, understand program behaviour, and fix bugs faster.
+:::
+
+:::{seealso} Error Correction Activities
+:class: dropdown
+1. Error correction is the process of finding and fixing mistakes in code so the program runs correctly.
+2. Developers get better at spotting and fixing errors through regular coding and experience.
+3. The three main types of errors are syntax errors, runtime errors, and logic errors.
+4. Syntax errors happen when the code doesn’t follow the rules of the Python language.
+5. Syntax errors must be fixed before running the program because they stop the program from starting.
+6. IDEs usually highlight syntax errors to help developers find and fix them quickly.
+7. Common syntax errors include misspelled commands, undeclared variables, and missing brackets.
+8. Runtime errors occur while the program is running, usually causing it to crash.
+9. Dividing by zero causes a runtime error and stops the program.
+10. Adding a number and a string causes a runtime error because they are incompatible types.
+11. A runtime error happens if you try to access an index in a list that doesn’t exist.
+12. Logic errors happen when the program runs but gives the wrong result or behaviour.
+13. A logic error doesn’t crash the program, but it causes incorrect output or actions.
+14. Using the wrong condition, like `< 5` instead of `<= 5`, can lead to incorrect program logic.
+15. Misplaced brackets or incorrect operations can cause logic errors in calculations.
+16. Reusing variable names incorrectly can cause unexpected results or overwrite important data.
+17. An unintended infinite loop causes the program to keep running without stopping.
+18. Using Boolean operators incorrectly can change the meaning of a condition and cause logic errors.
+19. Using a variable before it’s declared results in a syntax error.
+20. Poor program design can lead to logic errors because the structure of the code doesn’t match the intended logic.
+:::
+
+:::{seealso} Coding Conventions Activities
+:class: dropdown
+1. Code simplicity means writing code that is easy to read and understand.
+2. Clear logic and meaningful names make code easier for others (and your future self) to follow.
+3. Simple code is easier to work with, reducing mistakes and making it easier to improve.
+4. Python naming rules require names to use only letters, numbers, and underscores, with no spaces, and not start with a number.
+5. Variable names can’t start with a number because it breaks Python’s syntax rules.
+6. Case-sensitive means `name` and `Name` are treated as different variables in Python.
+7. Naming rules must be followed to run code, while naming conventions help others understand it.
+8. `temperature_celsius` clearly describes what the value represents, while `x` gives no context.
+9. `snake_case` uses lowercase letters and underscores, and it's used for variables and functions.
+10. Constants should be written in `UPPER_CASE` with underscores, like `MAX_SIZE`.
+11. `CamelCase` capitalises each word without underscores and is used for class names.
+12. Python keywords have special meanings, so using them as variable names causes errors.
+13. Comments are needed when code is complex or not immediately clear, even with good names.
+14. A docstring is placed right after a function definition and explains what the function does.
+15. A docstring should describe the function’s inputs, processes, and outputs.
+16. IDEs use docstrings to show help messages, hints, and tooltips while coding.
+17. Block comments explain specific sections of code that may be hard to understand at a glance.
+18. They help other readers understand why a certain piece of code works the way it does.
+19. Code portability means the same code works on different systems without changes.
+20. Python is portable because it runs on many platforms like Windows, macOS, Linux, iOS, Android, and the web.
+:::
+
 :::{seealso} Good Programming Practice Solutions
 :class: dropdown
-Here are the answers to the scenario-based questions:
+**Refactored booking_system.py**
 
-1. **Make your code easy for a teammate to understand**
+Refactored version of the **`booking_system.py`** file that follows good programming practices and addresses all activity tasks:
 
-   - Use meaningful variable and function names
-   - Follow a consistent style guide like PEP 8
-   - Write clear comments and docstrings
-   - Keep functions short and focused
+```python
+import os
 
-2. **Program crashes on unexpected input**
+def clear_screen():
+    """Clears the terminal screen in a cross-platform way."""
+    os.system("cls" if os.name == "nt" else "clear")
 
-   - Add input validation to check for bad data
-   - Use `try-except` blocks to handle errors gracefully
-   - Test edge cases to make sure your code is dependable
 
-3. **Long, hard-to-follow function**
+def is_valid_seat(seat_number):
+    """Returns True if seat number is between 0 and 50."""
+    try:
+        seat = int(seat_number)
+        return 0 <= seat <= 50
+    except ValueError:
+        return False
 
-   - Break it into smaller, single-purpose functions
-   - Use descriptive names for each function
-   - Add comments to explain complex sections
 
-4. **Program is slow when processing many records**
+def collect_bookings():
+    """
+    Collects booking information from users.
 
-   - Choose efficient algorithms and data structures
-   - Avoid unnecessary loops or calculations
-   - Use early exits in loops and optimise repeated actions
+    Returns:
+        list: A list of bookings in the format [(name, seat_number), ...]
+    """
+    bookings = []
 
-5. **Code breaks after a module update**
+    while True:
+        name = input("Enter your name: ").strip()
+        if not name:
+            print("Name cannot be empty.")
+            continue
 
-   - Your code is part of a **dependency chain**
-   - You can manage this by:
+        seat = input("Enter seat number (0–50): ").strip()
+        if not is_valid_seat(seat):
+            print("Invalid seat number.")
+            continue
 
-     - Locking versions in a `requirements.txt` file
-     - Testing after updates
-     - Keeping modules loosely coupled
+        bookings.append((name, seat))
+        more = input("Add another booking? (y/n): ").lower().strip()
+        if more == "n":
+            break
 
-6. **Code gives wrong results in some cases**
+    clear_screen()
+    return bookings
 
-   - Likely a **logic error**
-   - Fix it by:
 
-     - Reviewing your algorithm
-     - Testing with different inputs, including edge cases
-     - Using desk checks and walkthroughs
+def show_bookings(bookings):
+    """Prints all collected bookings to the screen."""
+    print("Your Bookings:")
+    for booking in bookings:
+        print(f"{booking[0]} - Seat {booking[1]}")
 
-7. **Evaluating code effectiveness**
 
-   - Compare outputs to the expected results
-   - Use real and edge case data
-   - Ask for user feedback
-   - Use the success criteria you defined earlier
+def main_menu():
+    """Displays the main menu and handles user choices."""
+    while True:
+        print("Cinema Booking System")
+        print("1. Book a Seat")
+        print("2. Exit")
+        choice = input("Enter choice: ").strip()
 
-8. **`IndexError: list index out of range`**
+        if choice == "1":
+            bookings = collect_bookings()
+            show_bookings(bookings)
+        elif choice == "2":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid option. Please try again.")
 
-   - This is a **runtime error**
-   - Prevent it by checking list length before accessing elements
-   - Add error handling to avoid crashes
 
-9. **Making a function easier to understand later**
+if __name__ == "__main__":
+    main_menu()
+```
 
-   - Add a **docstring** after the function definition
-   - Include descriptions of parameters, the process, and return values
-   - IDEs will use the docstring to show helpful hints
+---
 
-10. **Running Python on different devices**
+**Summary of Fixes**
 
-   - This shows **code portability**
-   - Python is portable because it runs on many platforms (Windows, macOS, Linux, iOS, Android, web) without changes to the code
+Style and Naming Issues:
+
+- Changed function and variable names to follow `snake_case`
+- Added clear, descriptive names
+- Followed [PEP 8](https://peps.python.org/pep-0008/) for formatting
+
+Maintainability Issues:
+
+- Broke up long and unclear code into small, single-purpose functions
+- Added `docstrings` and `block comments`
+- Removed hardcoded platform-specific logic from main functions
+
+Efficiency Problems:
+
+- Removed repeated input validation logic
+- Used return values and parameters to pass data cleanly between functions
+
+| Error Type | Correction |
+| --- | --- |
+| Syntax Errors | missing colons<br>bad assignment (`=` instead of `==`) |
+| Runtime Errors | unsafe `int()` conversions<br>use of `break` outside loops |
+| Logic Errors | incorrect seat validation<br>improper input handling |
+
+---
+
+**Testing Plan Example**
+
+| Test Type | Test |
+| --- | --- |
+| Exploratory Test | Input: blank name, out-of-range seat, enter "n" to exit loop<br>Result: All errors handled, loop exits properly |
+| Unit Tests | 1. `is_valid_seat("25")` returns `True`<br>2. `is_valid_seat("hello")` returns `False` |
+| Integrated Test | Run the full program, enter two valid bookings, then exit<br>Output: Prints both bookings accurately and confirms program flow |
 :::
 
 ### Programming Paradigms
@@ -406,6 +585,14 @@ Here are the answers to the scenario-based questions:
 :::
 
 ## User Experience
+
+### User Experience Introduction
+
+:::{seealso} User Experience Activities
+:class: dropdown
+1. User Experience (UX) refers to the overall experience a person has when interacting with a digital product, including how easy it is to use, how efficient and satisfying the experience is, and whether it meets the user's needs and expectations.
+2. User-first design is important because it ensures the solution meets the needs of the people using it, while developer-first or machine-first design can lead to frustration and poor usability.
+:::
 
 ### Useability
 
@@ -1021,9 +1208,348 @@ Public Revenue & Policy:
 
 ## Data
 
+### Data Introduction
+
+:::{seealso} Data Activities
+:class: dropdown
+1. Data-driven solutions collect or access quality data, query that data, and interpret it to provide insight.
+2. The DIKW Pyramid represents how raw data is transformed into wisdom through context, experience, and action.
+3. Information is data with added context such as who, what, when, and where.
+4. Applying action to knowledge transforms it into wisdom.
+5. Value increases up the DIKW Pyramid because each level adds more meaning and usefulness.
+6. 3000mm becomes wisdom when you realise it won’t fit in your car and decide to get it delivered.
+7. Data-driven programming involves filtering, transforming, and aggregating structured data.
+8. The three layers are external (UI), logical (data organisation), and internal (storage systems).
+9. The external layer shows the user interface and represents data in a meaningful way.
+10. The logical layer ensures data integrity, reliability, and validity.
+:::
+
 ### Data Principles
 
-### Structing Data
+:::{seealso} Data Management Activities
+:class: dropdown
+1. The two key factors are the timeliness of data acquisition and the ownership of the data.
+2. Personal ownership relates to individual data, corporate ownership to organisational data, and public ownership to government or shared public data.
+3. Data integrity means keeping data accurate, complete, consistent, and protected from unauthorized changes or damage.
+4. Data must be complete, accurate, up to date, consistent, secure, and relevant.
+5. A data anomaly is an error or inconsistency that can affect accuracy, completeness, or consistency in a database.
+6. Insertion anomalies prevent adding data without unnecessary information, deletion anomalies cause loss of important data, and update anomalies create inconsistencies during changes.
+7. Proper design, normalization, and data validation reduce anomalies and improve data reliability.
+8. Threats include malware (viruses, worms, Trojans, ransomware, spyware, adware, rootkits), data theft, identity theft, and invasion of privacy.
+9. User-level access control limits user access based on roles, enforces policies, and allows monitoring of activities to prevent unauthorized use.
+10. Encryption is a reversible process using a key to scramble and unscramble data, while hashing is a one-way process that cannot be reversed, used for secure password storage.
+:::
+
+:::{seealso} Data Representation Solutions
+:class: dropdown
+1. Representation refers to how different types of data, like text and numbers, are converted into a format (usually 0s and 1s) that computers can understand.
+2. ASCII represents each letter, number, or symbol as a specific number, like 'A' being 65.
+3. Unicode is preferred because it can represent characters from almost all languages, as well as emojis and special symbols.
+4. Unicode can represent non-English characters, emojis, and symbols from global languages that ASCII cannot.
+5. Knowing whether your data uses ASCII or Unicode ensures it is interpreted and displayed correctly.
+6. Consistent data formats ensure accuracy and reliability when storing and using data in a database.
+7. 100,000 can also be represented as \$10^5\$; both are the same value but different formats.
+8. A data format must be decided early to ensure consistency across all records in a database.
+9. The international standard for dates is `yyyy-mm-dd`, known as ISO 8601.
+10. In the 24-hour system, 1:15pm is written as 13:15; in the 12-hour system, it’s written as 1:15pm.
+11. Time formatting uses H/h for hours, m for minutes, s for seconds, and A for AM/PM.
+12. 0 represents a required digit, while 9 represents an optional digit between 0 and 9.
+13. A common mobile number format is 0000 000 000.
+14. Currency often uses two decimal places, such as \$90.00.
+:::
+
+### Structuring Data
+
+:::{seealso} Database Types Solutions
+:class: dropdown
+1. A flat file database stores data in a simple table with rows and columns, where each row is a record and each column is a field.
+2. Flat file databases can't handle complex relationships because they only use a single table with no links between data.
+3. Flat file databases use one table without relationships, while relational databases use multiple linked tables with predefined relationships.
+4. Data in a relational database is organized into tables with rows representing records and columns representing attributes.
+5. A primary key is a unique column in a table that identifies each row.
+6. A foreign key is a primary key from one table used in another table to create a relationship between them.
+7. SQL is used to add, update, delete, and retrieve data in relational databases.
+8. ACID stands for Atomicity, Consistency, Isolation, and Durability.
+9. Atomicity ensures that all steps in a transaction are completed or none are, preventing partial changes.
+10. Consistency ensures that a transaction moves the database from one valid state to another, following the rules of the schema.
+11. Isolation prevents interference between concurrent transactions so each behaves as if it's the only one running.
+12. Durability makes sure committed changes are permanent and survive system crashes.
+13. A data value is the actual piece of information in a cell of a table.
+14. Relational databases are good for business and web apps because they handle structured data and complex relationships efficiently.
+:::
+
+:::{seealso} Normalisation Solutions
+:class: dropdown
+1. The main goal of database normalisation is to minimise data redundancy and eliminate anomalies by organising data into smaller, related tables.
+2. Data redundancy is the unnecessary repetition of data, which increases database size and risks data integrity.
+3. An insertion anomaly happens when adding new data requires repeating existing data, leading to inefficiency and potential errors.
+4. A deletion anomaly occurs when removing one dataset unintentionally deletes related information that should have been kept.
+5. Update anomalies cause inconsistencies when a change isn't applied everywhere, resulting in conflicting data about the same entity.
+6. Normalisation reduces redundancy by breaking large tables into smaller ones and linking them through common fields.
+7. The “Divide and Rule” approach means splitting a large table into multiple smaller tables, each focused on one concept.
+8. The STUDENTS TABLE is split into a Student Table (`rollno`, `name`, `branch`) and a Branch Table (`branch`, `hod`, `office_tel`).
+9. Normalisation solves the insertion anomaly by allowing new student entries without repeating branch details, which are stored separately.
+10. After normalisation, updating the HOD requires a change in only one place—the Branch Table—ensuring consistency for all students.
+:::
+
+:::{seealso} First Normal Form Solutions
+:class: dropdown
+**Table 1**
+
+| SaleID | Region | ProductName | ProductPrice |
+| --- | --- | --- | --- |
+| 301 | East | Laptop | 999 |
+| 302 | West | Phone | 799 |
+| 303 | North | Tablet | 599 |
+| 304 | South | Monitor | 299 |
+| 305 | East | Mouse | 49 |
+
+**Table 2**
+
+| BookID | Title | Author | Available |
+| --- | --- | --- | --- |
+| 401 | Python Basics | John | TRUE |
+| 401 | Python Basics | Maria | TRUE |
+| 402 | Data Science Intro | Alice | TRUE |
+| 403 | SQL in Practice | Robert | FALSE |
+| 403 | SQL in Practice | Emma | FALSE |
+| 403 | SQL in Practice | Lee | FALSE |
+| 404 | Web Dev Essentials | Sophia | TRUE |
+| 405 | Coding with Kids | Chris | FALSE |
+| 405 | Coding with Kids | Dana | FALSE |
+
+**Table 3**
+
+| EmployeeID | Name | Phone | Email |
+| --- | --- | --- | --- |
+| 201 | Oliver White | 0400123456 | NULL |
+| 202 | Jack Smith | NULL | jack@example.com |
+| 203 | Emily Rose | 0499123456 | NULL |
+| 204 | Grace Blue | NULL | grace@email.com |
+| 205 | Harry Gray | 0420123456 | NULL |
+
+**Table 4**
+
+| OrderID | CustomerName | Item |
+| --- | --- | --- |
+| 101 | Emma Stone | Laptop |
+| 101 | Emma Stone | Mouse |
+| 102 | Liam Gray | Phone |
+| 103 | Ava Green | Tablet |
+| 103 | Ava Green | Stylus |
+| 104 | Noah Brown | Monitor |
+| 105 | Mia Black | Keyboard |
+| 105 | Mia Black | Mousepad |
+:::
+
+:::{seealso} Second Normal Form Solutions
+:class: dropdown
+**Table 1**
+
+Enrolments Table
+
+| student_id | course_id | grade |
+| --- | --- | --- |
+| 101 | C01 | B |
+| 102 | C02 | A |
+| 103 | C01 | C |
+| 104 | C03 | B |
+| 105 | C02 | B |
+
+Courses Table
+
+| course_id | course_title   |
+| --- | --- |
+| C01 | Web Design |
+| C02 | Data Structures |
+| C03 | Networking |
+
+**Table 2**
+
+Transactions Table
+
+| customer_id | product_id | quantity |
+| --- | --- | --- |
+| C01 | P01 | 2 |
+| C02 | P02 | 1 |
+| C03 | P01 | 1 |
+| C04 | P03 | 3 |
+| C05 | P02 | 1 |
+
+Products Table
+
+| product_id | product_name |
+| --- | --- |
+| P01 | Smartphone |
+| P02 | Laptop |
+| P03 | Headphones |
+
+**Table 3**
+
+Borrowings Table
+
+| member_id | book_id | borrow_date |
+| --- | --- | --- |
+| M01 | B01 | 2024-01-01 |
+| M02 | B02 | 2024-01-05 |
+| M03 | B01 | 2024-01-06 |
+| M04 | B03 | 2024-01-07 |
+| M05 | B02 | 2024-01-08 |
+
+Books Table
+
+| book_id | book_title      |
+| --- | --- |
+| B01 | Python Basics |
+| B02 | SQL Fundamentals |
+| B03 | Java Programming |
+
+**Table 4**
+
+Attendance Table
+
+| participant_id | session_id | attended |
+| --- | --- | --- |
+| P01 | S01 | Yes |
+| P02 | S02 | No |
+| P03 | S01 | Yes |
+| P04 | S03 | Yes |
+| P05 | S02 | Yes |
+
+Sessions Table
+
+| session_id | session_topic    |
+| ---| --- |
+| S01 | Cybersecurity |
+| S02 | Web Accessibility |
+| S03 | Cloud Computing |
+:::
+
+:::{seealso} Third Normal Form Solutions
+:class: dropdown
+**Table 1**
+
+Employee Table
+
+| employee_id | employee_name | department_id |
+| --- | --- | --- |
+| E01 | Alice | D01 |
+| E02 | Bob | D02 |
+| E03 | Charlie | D01 |
+| E04 | Dana | D03 |
+| E05 | Ethan | D02 |
+
+Department Table
+
+| department_id | department_name |
+| --- | --- |
+| D01 | Marketing |
+| D02 | IT |
+| D03 | HR |
+
+**Table 2**
+
+Book Table
+
+| book_id | title | publisher_id |
+| --- | --- | --- |
+| B01 | Learn SQL | P01 |
+| B02 | Python in Action | P02 |
+| B03 | Web Design Pro | P01 |
+| B04 | Java for Teens | P03 |
+| B05 | HTML Basics | P02 |
+
+Publisher Table
+
+| publisher_id | publisher_name |
+| --- | --- |
+| P01 | TechBooks |
+| P02 | CodeWorks |
+| P03 | DevPress |
+
+**Table 3**
+
+Customer Table
+
+| customer_id | name  | suburb_code |
+| --- | --- | --- |
+| C01 | Mia | S01 |
+| C02 | Jake | S02 |
+| C03 | Ruby | S01 |
+| C04 | Noah | S03 |
+| C05 | Chloe | S02 |
+
+Suburb Table
+
+| suburb_code | suburb_name |
+| --- | --- |
+| S01 | Southport |
+| S02 | Ashmore |
+| S03 | Burleigh |
+
+**Table 4**
+
+Product Table
+
+| product_id | product_name | category_id |
+| --- | --- | --- |
+| PR01 | Mouse | CAT01 |
+| PR02 | Keyboard | CAT01 |
+| PR03 | Monitor | CAT02 |
+| PR04 | Webcam | CAT03 |
+| PR05 | Headset | CAT03 |
+
+Category Table
+
+| category_id | category_name |
+| --- | --- |
+| CAT01 | Accessories |
+| CAT02 | Displays |
+| CAT03 | Peripherals |
+:::
+
+:::{seealso} Full Normalisation Solution
+:class: dropdown
+Student Table
+
+| student_id | student_name |
+| --- | --- |
+| S001 | Ali |
+| S002 | Bella |
+| S003 | Caleb |
+| S004 | Diana |
+| S005 | Ethan |
+
+Subject Table
+
+| subject_id | subject_name | teacher_name | department_id |
+| --- | --- | --- | --- |
+| SUB01 | Maths | Mr. Kay | D01 |
+| SUB02 | English | Ms. Smith | D02 |
+| SUB03 | History | Dr. Lee | D02 |
+
+Department Table
+
+| department_id | department_name |
+| --- | --- |
+| D01 | Science |
+| D02 | Humanities |
+
+Enrolment Table
+
+| student_id | subject_id |
+| --- | --- |
+| S001 | SUB01 |
+| S001 | SUB02 |
+| S002 | SUB02 |
+| S002 | SUB03 |
+| S003 | SUB01 |
+| S003 | SUB03 |
+| S004 | SUB01 |
+| S004 | SUB02 |
+| S004 | SUB03 |
+| S005 | SUB02 |
+:::
 
 ### Managing and Manipulating Data
 
@@ -1268,6 +1794,4 @@ Core Insight: Janet needs a way to track her walks simply and clearly because co
 ### UPDATE Statement
 
 ### DELETE Statement
-
-## Utilities
 

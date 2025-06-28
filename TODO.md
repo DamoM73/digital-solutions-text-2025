@@ -7,7 +7,7 @@
 - [x] Coding
   - [x] Coding Introduction 
   - [x] Basic Features
-  - [ ] Good Practice
+  - [x] Good Practice
   - [x] Programming Paradigms
 - [x] User Experience
   - [x] User Experience Introduction

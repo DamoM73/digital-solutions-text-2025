@@ -8,7 +8,9 @@ By the end of this section you will:
 - understand the process of normalisation through 1NF, 2NF and 3NF
 :::
 
-## Flat File Databases
+## Database Types
+
+### Flat File Databases
 
 A flat file database is a type of database that stores data in a simple, two-dimensional table or spreadsheet-like structure. In a flat file database, information is organized into **rows** and **columns**, where each row represents a single **record** or entry, and each column represents a specific attribute or **field** of that record.
 
@@ -18,7 +20,7 @@ Flat file databases are often used for relatively small-scale data storage needs
 
 ---
 
-## Relational Databases
+### Relational Databases
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oN3jBRGnPO4?si=DIvn1x_PiI9s69Fd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -82,9 +84,26 @@ The key features of relational databases include:
 
 Relational databases are widely used in various applications, from business systems to web applications, due to their ability to handle structured data and complex relationships efficiently. Popular relational database management systems (RDBMS) include MySQL, PostgreSQL, Oracle, SQL Server, and SQLite.
 
+:::{seealso} Database Types Activities
+:class: dropdown
+1. What is a flat file database and how is its data structured?
+2. Why might a flat file database be unsuitable for complex data relationships?
+3. What are the key differences between flat file databases and relational databases?
+4. How is data organized in a relational database?
+5. What is a primary key and what is its role in a relational database table?
+6. What is a foreign key and how does it create relationships between tables?
+7. What is the purpose of SQL in relational databases?
+8. What does ACID stand for in database transactions?
+9. How does atomicity ensure data reliability during a transaction?
+10. What is the role of consistency in a relational database transaction?
+11. How does isolation protect data during simultaneous transactions?
+12. Why is durability important after a transaction is committed?
+13. What is a data value and where is it located in a table?
+14. What are the benefits of using relational databases in business or web applications?
+:::
+
 ---
 
-(normalisation=)
 ## Normalisation
 
 > Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation ... is to eliminate `richardpeterson_2019_what`
@@ -140,6 +159,21 @@ These two tables are related by the common `branch` column, which acts as a link
 
 The process of **Normalisation** is the the most effective way of removing redundancy.
 
+:::{seealso} Normalisation Activities
+:class: dropdown
+1. What is the main goal of database normalisation?
+2. What is data redundancy and why is it considered a problem?
+3. What is an insertion anomaly and how does redundancy cause it?
+4. What is a deletion anomaly and how can it result in data loss?
+5. How can update anomalies affect data consistency in a database?
+6. How does normalisation reduce data redundancy?
+7. What does the “Divide and Rule” approach mean in the context of normalisation?
+8. In the example, what are the two tables created by normalising the STUDENTS TABLE?
+9. How does normalisation solve the insertion anomaly in the student example?
+10. How does updating the Head of Department become easier after normalisation?
+:::
+
+
 ### First Normal Form (1NF)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mUtAPbb1ECM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -179,6 +213,52 @@ The table below is not in 1NF:
 The tables below represent the same data in 1NF:
 
 ![1NF after](assets/03/1NF_after.png)
+
+:::{seealso} First Normal Form Activities
+:class: dropdown
+Convert the following tables into 1NF
+
+**Table 1**
+
+| SaleID | Region | Product | Product |
+| --- | --- | --- | --- |
+| 301 | East | Laptop | $999 |
+| 302 | West | Phone | $799 |
+| 303 | North | Tablet | $599 |
+| 304 | South | Monitor | $299 |
+| 305 | East | Mouse | $49 |
+
+
+**Table 2**
+
+| BookID | Title  | Authors | Available |
+| --- | --- | --- | --- |
+| 401 | Python Basics | John, Maria | yes |
+| 402 | Data Science Intro | Alice | 1 |
+| 403 | SQL in Practice | Robert, Emma, Lee | 0 |
+| 404 | Web Dev Essentials | Sophia | true |
+| 405 | Coding with Kids | Chris, Dana | false |
+
+**Table 3**
+
+| EmployeeID | Name | Contact |
+| --- | --- | --- |
+| 201 | Oliver White | 0400123456 |
+| 202 | Jack Smith | jack@example.com |
+| 203 | Emily Rose | 0499123456 |
+| 204 | Grace Blue | grace@email.com |
+| 205 | Harry Gray | 0420123456 |
+
+**Table 4**
+
+| OrderID | CustomerName | Items              |
+| ------- | ------------ | ------------------ |
+| 101     | Emma Stone   | Laptop, Mouse      |
+| 102     | Liam Gray    | Phone              |
+| 103     | Ava Green    | Tablet, Stylus     |
+| 104     | Noah Brown   | Monitor            |
+| 105     | Mia Black    | Keyboard, Mousepad |
+:::
 
 ---
 
@@ -248,6 +328,59 @@ The tables below represent the same data in 2NF
 
 ![2NF after](assets/03/2NF_after.png)
 
+:::{seealso} Second Normal Form Activities
+:class: dropdown
+Convert the following tables into 2NF
+
+**Table 1**
+
+Composite Key: (student_id, course_id)
+
+| student_id | course_id | student_name | course_title | grade |
+| --- | --- | --- | --- | --- |
+| 101 | C01 | Alice | Web Design | B |
+| 102 | C02 | Liam | Data Structures | A |
+| 103 | C01 | Ava | Web Design | C |
+| 104 | C03 | Noah | Networking | B |
+| 105 | C02 | Emma | Data Structures | B |
+
+**Table 2**
+
+Composite Key: (customer_id, product_id)
+
+| customer_id | product_id | customer_name | product_name | quantity |
+| --- | --- | --- | --- | --- |
+| C01 | P01 | John Smith | Smartphone | 2 |
+| C02 | P02 | Sarah White | Laptop | 1 |
+| C03 | P01 | Emma Brown | Smartphone | 1 |
+| C04 | P03 | Liam Black | Headphones | 3 |
+| C05 | P02 | Olivia Green | Laptop | 1 |
+
+**Table 3**
+
+Composite Key: (member_id, book_id)
+
+| member_id | book_id | member_name | book_title | borrow_date |
+| --- | --- | --- | --- | --- |
+| M01 | B01 | Lily | Python Basics | 2024-01-01 |
+| M02 | B02 | Max | SQL Fundamentals | 2024-01-05 |
+| M03 | B01 | Ava | Python Basics | 2024-01-06 |
+| M04 | B03 | Ethan | Java Programming | 2024-01-07 |
+| M05 | B02 | Mia | SQL Fundamentals | 2024-01-08 |
+
+**Table 4**
+
+Composite Key: (participant_id, session_id)
+
+| participant_id | session_id | participant_name | session_topic    | attended |
+| --- | --- | --- | --- | --- |
+| P01 | S01 | Tom Anderson | Cybersecurity | Yes |
+| P02 | S02 | Grace Lee | Web Accessibility | No |
+| P03 | S01 | Henry Carter | Cybersecurity | Yes |
+| P04 | S03 | Zoe Davis | Cloud Computing | Yes |
+| P05 | S02 | Leo Martin | Web Accessibility | Yes |
+:::
+
 ---
 
 ### Third Normal Form
@@ -291,3 +424,59 @@ The table below is not in 3NF:
 The tables below represent the same data in 3NF
 ![3NF after](assets/03/3NF_after.png)
 
+:::{seealso} Third Normal Form Activities
+:class: dropdown
+**Table 1**
+
+| employee_id | employee_name | department_id | department_name |
+| --- | --- | --- | --- |
+| E01 | Alice | D01 | Marketing |
+| E02 | Bob | D02 | IT |
+| E03 | Charlie | D01 | Marketing |
+| E04 | Dana | D03 | HR |
+| E05 | Ethan | D02 | IT |
+
+**Table 2**
+
+| book\id | title | publisher_id | publisher_name |
+| --- | --- | --- | ---- |
+| B01 | Learn SQL | P01 | TechBooks |
+| B02 | Python in Action | P02 | CodeWorks |
+| B03 | Web Design Pro | P01 | TechBooks |
+| B04 | Java for Teens | P03 | DevPress |
+| B05 | HTML Basics | P02 | CodeWorks |
+
+
+**Table 3**
+
+| customer_id | name  | suburb_code | suburb_name |
+| --- | --- | --- | --- |
+| C01 | Mia | S01 | Southport |
+| C02 | Jake | S02 | Ashmore |
+| C03 | Ruby | S01 | Southport |
+| C04 | Noah | S03 | Burleigh     |
+| C05 | Chloe | S02 | Ashmore |
+
+**Table 4**
+
+| product_id | product_name | category_id | category_name |
+| --- | --- | --- | --- |
+| PR01 | Mouse | CAT01 | Accessories |
+| PR02 | Keyboard | CAT01 | Accessories |
+| PR03 | Monitor | CAT02 | Displays |
+| PR04 | Webcam | CAT03 | Peripherals |
+| PR05 | Headset | CAT03 | Peripherals |
+:::
+
+:::{seealso} Full Normalisation Activity
+:class: dropdown
+Convert the following table so that it is in 3NF
+
+| student_id | student_name | enrolled_subjects | subject_id | subject_name | teacher_name | department_id | department_name |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S001 | Ali | Maths, English | SUB01 | Maths | Mr. Kay | D01 | Science |
+| S002 | Bella | English, History | SUB02 | English | Ms. Smith | D02 | Humanities |
+| S003 | Caleb | Maths, History | SUB03 | History | Dr. Lee | D02 | Humanities |
+| S004 | Diana | Maths, English, History | SUB01 | Maths | Mr. Kay | D01 | Science |
+| S005 | Ethan | English | SUB02 | English | Ms. Smith | D02 | Humanities |
+:::

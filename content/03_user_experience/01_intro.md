@@ -22,3 +22,8 @@ The user needs to be central to the development of the the User Experience (UX) 
 
 This might seem obvious, but the history of digital solutions is littered with examples of developer-first design, where the solution is based on the developer's needs. Even worst is machine-first design where the solution is based on the needs of the machine running it.
 
+:::{seealso} User Experience Activities
+:class: dropdown
+1. What does User Experience (UX) refer to in the context of digital technology?
+2. Why is it important to focus on user-first design instead of developer-first or machine-first design?
+:::

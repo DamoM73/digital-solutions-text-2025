@@ -78,3 +78,17 @@ A data driven application can be thought as having three different viewing layer
     - **data reliability:** the ability to trust that data accurately reflects the facts descriptions or actions it is representing
     - **data validity:** the data meets defined formats, rules and criteria or order to maintain integrity and reliability
   - usually symbolic or structured representations that show links between data
+
+:::{seealso} Data Solutions
+:class: dropdown
+1. What are the three key characteristics of data-driven solutions?
+2. What does the DIKW Pyramid represent in the context of data use?
+3. How does information differ from raw data in the DIKW Pyramid?
+4. What transforms knowledge into wisdom according to the DIKW Pyramid?
+5. Why does value increase as you move up the DIKW Pyramid?
+6. What is an example of how a measurement like 3000mm can become wisdom?
+7. What does data-driven programming involve in this course?
+8. What are the three layers of a data-driven application?
+9. What is the purpose of the external layer in a data-driven application?
+10. What does the logical layer ensure in terms of data quality?
+:::

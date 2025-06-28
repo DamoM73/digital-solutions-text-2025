@@ -100,7 +100,21 @@ Steps can be taken to minimise the risks presented by the potential threats. The
   - regularly backup the database so that it can be restored if it fails.
   - log data transactions so that committed data changes can be rolled back
 
-## Representation
+:::{seealso} Data Management Activities
+:class: dropdown
+1. What two key factors should be considered during data acquisition?
+2. What are the three types of data ownership and how do they differ?
+3. What does data integrity mean and why is it important for digital solutions?
+4. What six qualities must data have to maintain integrity?
+5. What is a data anomaly and how can it affect a database?
+6. What are insertion, deletion, and update anomalies?
+7. How can proper database design help reduce data anomalies?
+8. What are some threats to the security of a data-driven application?
+9. How does user-level access control help protect a database?
+10. What is the difference between encryption and hashing when protecting data?
+:::
+
+## Data Representation
 
 When we talk about **representation**, it's about how we turn different things, like numbers or text, into a language that computers understand, which usually involves using combinations of 0s and 1s for numbers and specific codes for letters and symbols. The way we do this is crucial because it affects how fast and accurately computers can work with data. 
 
@@ -156,3 +170,21 @@ Some common data formats that need to be established:
     - landline number:  (00) 0000 0000
     - postcode:         0000
     - currency:         $ 90.00
+
+:::{seealso} Data Representation Activities
+:class: dropdown
+1. What does representation mean in the context of computer systems?
+2. How does ASCII represent characters in a computer system?
+3. Why is Unicode preferred over ASCII for modern digital solutions?
+4. What kinds of characters can Unicode represent that ASCII cannot?
+5. Why is it important to know whether your data uses ASCII or Unicode?
+6. Why must data storage formats be consistent in a database?
+7. What are two different ways the number 100,000 can be represented?
+8. Why must a data format be decided before designing a database?
+9. What is the international standard format for writing dates and what is it called?
+10. How is time formatted differently in 12-hour and 24-hour systems?
+11. What symbols are used to represent hours, minutes, seconds, and AM/PM in time formatting?
+12. What is the difference between 0 and 9 in number formatting rules?
+13. What is a common format for an Australian mobile number?
+14. How are decimal places commonly used in currency formatting?
+:::

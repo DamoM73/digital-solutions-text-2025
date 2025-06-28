@@ -61,6 +61,7 @@ project:
         - file: content/06_documentation/15_user_feedback.md
         - file: content/06_documentation/16_evaluation.md
         - file: content/06_documentation/17_impacts.md
+        - file: content/06_documentation/18_appendices.md
     - title: Python Skills
       children:
         - file: content/07_python/01_intro.md
