@@ -1731,7 +1731,279 @@ Core Insight: Janet needs a way to track her walks simply and clearly because co
 
 ### Mock-ups
 
+:::{seealso} Mock-up Solutions
+:class: dropdown
+1. Sketches are quick, rough drawings used early to explore ideas; wireframes are simplified, structured layouts showing UI element placement; mock-ups are high-fidelity, static visuals that represent the final design but are not interactive.
+2. A mock-up shows the exact visual appearance of the UI, including colours, fonts, spacing, and branding. It does not include interactive elements like clickable buttons or animations.
+3. Design tools include Figma, Penpot, or PowerPoint for FIA1 and IA1. For FIA2, FIA3, IA2, and IA3, QTDesigner is used to create mock-ups that will be turned into code.
+4. Annotations show how useability and visual communication principles have been applied to the design. They demonstrate understanding and link design decisions to success criteria.
+5. An annotation must include a description of the applied useability principle, an arrow pointing to its example on the UI, focus on one principle and one example, and highlight keywords in bold (e.g. **useability principle**, **visual communication principle**, **visual communication element**).
+:::
+
 ### Pseudocode
+
+:::{seealso} Simple Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+```{code}pseudocode
+BEGIN
+    INPUT length
+    INPUT width
+    CALCULATE area = length * width
+    DISPLAY "The area is", area
+END
+```
+
+---
+
+**Activity 2**
+```{code}pseudocode
+BEGIN
+    INPUT hours_worked
+    INPUT hourly_rate
+    CALCULATE total_pay = hours_worked * hourly_rate
+    DISPLAY "Total pay is", total_pay
+END
+```
+
+---
+**Activity 3**
+```{code}pseudocode
+BEGIN
+    READ mark1, mark2, mark3 FROM marks.txt
+    CALCULATE total = mark1 + mark2 + mark3
+    CALCULATE average = total / 3
+    WRITE "Average mark is", average TO average.txt
+END
+```
+:::
+
+:::{seealso} Modularisation Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+```{code}pseudocode
+BEGIN
+    INPUT length
+    INPUT width
+    CALL calculate_perimeter
+    DISPLAY "The perimeter is", perimeter
+END
+
+BEGIN calculate_perimeter
+    CALCULATE perimeter = 2 * (length + width)
+    RETURN perimeter
+END
+```
+
+---
+
+**Activity 2**
+```{code}pseudocode
+BEGIN
+    READ student_name, student_score FROM input.txt
+    CALL generate_report(student_name, student_score)
+END
+
+BEGIN generate_report(student_name, student_score)
+    SET sentence = format_score(student_name, student_score)
+    WRITE sentence TO report.txt
+END
+
+BEGIN format_score(student_name, student_score)
+    CALCULATE sentence = student_name + " scored " + student_score
+    RETURN sentence
+END
+```
+:::
+
+:::{seealso} Iteration Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+```{code}pseudocode
+BEGIN
+    FOR i = 1 TO 10
+        DISPLAY i
+    NEXT i
+    ENDFOR
+END
+
+```
+
+---
+
+**Activity 2**
+```{code}pseudocode
+BEGIN
+    INPUT password
+    WHILE password != "admin123"
+        DISPLAY "Incorrect password. Try again."
+        INPUT password
+    ENDWHILE
+    DISPLAY "Access granted."
+END
+
+```
+
+---
+
+**Activity 3**
+```{code}pseudocode
+BEGIN
+    REPEAT
+        DISPLAY "Menu: Type 'play', 'settings', or 'exit'"
+        INPUT choice
+    UNTIL choice = "exit"
+    DISPLAY "Program exited."
+END
+
+```
+
+---
+
+**Activity 4**
+```{code}pseudocode
+BEGIN
+    CALCULATE total = 0
+    FOR i = 1 TO 5
+        INPUT number
+        CALCULATE total = total + number
+    NEXT i
+    ENDFOR
+    DISPLAY "The total is", total
+END
+
+```
+:::
+
+:::{seealso} Iteration Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+```{code}pseudocode
+BEGIN
+    INPUT number
+    IF number > 100 THEN
+        DISPLAY "Big number"
+    ENDIF
+END
+```
+
+---
+
+**Activity 2**
+```{code}pseudocode
+BEGIN
+    INPUT age
+    IF age >= 18 THEN
+        DISPLAY "Adult"
+    ELSE
+        DISPLAY "Minor"
+    ENDIF
+END
+
+```
+
+---
+
+**Activity 3**
+```{code}pseudocode
+BEGIN
+    INPUT score
+    IF score >= 80 THEN
+        DISPLAY "High"
+    ELSE IF score >= 50 THEN
+        DISPLAY "Medium"
+    ELSE
+        DISPLAY "Low"
+    ENDIF
+END
+
+```
+
+---
+
+**Activity 4**
+```{code}pseudocode
+BEGIN
+    INPUT day
+    SWITCH day
+        CASE "mon"
+            DISPLAY "Monday"
+        CASE "tue"
+            DISPLAY "Tuesday"
+        CASE "wed"
+            DISPLAY "Wednesday"
+        CASE "thu"
+            DISPLAY "Thursday"
+        CASE "fri"
+            DISPLAY "Friday"
+        CASE "sat"
+            DISPLAY "Saturday"
+        CASE "sun"
+            DISPLAY "Sunday"
+        CASE default
+            DISPLAY "Invalid day"
+    ENDSWITCH
+END
+```
+:::
+
+:::{seealso} Full Pseudocode Activities
+:class: dropdown
+**Activity 1**
+```{code}pseudocode
+BEGIN
+    FOR i = 1 TO 5
+        READ student_name, score FROM scores.txt
+        SET result = evaluate_result(score)
+        SET message = student_name + " scored " + score + ": " + result
+        WRITE message TO results.txt
+    NEXT i
+    ENDFOR
+END
+
+BEGIN evaluate_result(score)
+    IF score >= 50 THEN
+        RETURN "PASS"
+    ELSE
+        RETURN "FAIL"
+    ENDIF
+END
+
+```
+
+---
+**Activity 2**
+```{code}pseudocode
+BEGIN
+    INPUT total_cost
+    INPUT total_slices
+    CALCULATE total_collected = 0
+
+    WHILE NOT end of pizza_log.txt
+        READ person_name, slices_eaten FROM pizza_log.txt
+        SET share = calculate_share(slices_eaten, total_cost, total_slices)
+        CALCULATE total_collected = total_collected + share
+        WRITE person_name, "owes $", share TO pizza_bill.txt
+    ENDWHILE
+
+    DISPLAY "Total collected: $", total_collected
+END
+
+BEGIN calculate_share(slices_eaten, total_cost, total_slices)
+    CALCULATE share = (slices_eaten / total_slices) * total_cost
+    RETURN share
+END
+```
+:::
+
+:::{seealso} General Pseudocode Solutions
+:class: dropdown
+1. It helps plan before coding and spot errors more easily.
+2. To ensure consistency across schools that use different programming languages.
+3. Snake case (e.g. `file_name`)
+4. The pseudocode that best demonstrates your coding skill, such as the trickiest algorithms or ones that show your strengths.
+5. Sequence, assignment, conditions, selection, iteration, modularisation.
+:::
 
 ### Desk Checking
 

@@ -358,8 +358,6 @@ Examples include:
 
 Code simplicity means writing programs in a way that is easy to read and understand. It focuses on using clear logic, meaningful variable names, and avoiding unnecessary complexity. 
 
-![algorithms](./assets/03/algorithms.png)<p>&nbsp;</p>
-
 Simple code is easier to test, fix, and update, making it more efficient and less likely to contain errors.
 
 ### Naming Conventions in Python

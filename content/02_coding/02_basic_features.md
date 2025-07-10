@@ -7,6 +7,8 @@ By the end of this section you will:
 
 ## Algorithms
 
+![algorithms](./assets/02/algorithms.png)<p>&nbsp;</p>
+
 Algorithms are the commands that make up our programs.
 
 There are 6 basic building blocks that an algorithm consists of. Each of them serve a particular purpose.
