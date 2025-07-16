@@ -2053,19 +2053,19 @@ END
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\SELECT\Activity_2.sql
+```{literalinclude} 008_sql/assets/SELECT/Activity_2.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\SELECT\Activity_3.sql
+```{literalinclude} 08_sql/assets/SELECT/Activity_3.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\SELECT\Activity_4.sql
+```{literalinclude} 08_sql/assets/SELECT/Activity_4.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\SELECT\Activity_5.sql
+```{literalinclude} 08_sql/assets/SELECT/Activity_5.sql
 :language: sql
 ```
 :::
@@ -2075,45 +2075,45 @@ END
 :::{seealso} WHERE Activities
 :class: dropdown
 **Using the Movies database**
-```{literalinclude} 08_sql\assets\WHERE\Activity_1.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_1.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\WHERE\Activity_2.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_2.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\WHERE\Activity_3.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_3.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\WHERE\Activity_4.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_4.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\WHERE\Activity_5.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_5.sql
 :language: sql
 ```
 
 **Using the Repairs database**
-```{literalinclude} 08_sql\assets\WHERE\Activity_6.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_6.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\WHERE\Activity_7.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_7.sql
 :language: sql
 ```
 
 **Using the World database**
-```{literalinclude} 08_sql\assets\WHERE\Activity_8.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_8.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\WHERE\Activity_9.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_9.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\WHERE\Activity_10.sql
+```{literalinclude} 08_sql/assets/WHERE/Activity_10.sql
 :language: sql
 ```
 :::
