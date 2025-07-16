@@ -2,6 +2,11 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
+- know how to filter `SELECT` results using the `WHERE` clause
+- know how to combine conditions using the `AND` and `OR` operators
+- know how to search for simiiar values using the `LIKE` operator and wildcards
+- understand what `NULL` values are
+- know how to handle `NULL` values
 :::
 
 ## WHERE Clause
@@ -35,9 +40,9 @@ The video uses practical examples from a "Customers" table to illustrate how to 
 
 Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_where.asp) on the `WHERE` clause and complete their exercises.
 
-## AND Operator
+## AND and OR Operators
 
-The SQL `AND` operator is used to filter records by returning only rows where all specified conditions are true.
+The SQL `AND` operator is used to filter records by returning only rows where all specified conditions are true. While the SQL `OR` operator returns rows where at least one of the specified conditions is true.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r1V39Iia4j0?si=xls49MU7D0cKXz9X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

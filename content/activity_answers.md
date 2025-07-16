@@ -2049,23 +2049,23 @@ END
 
 :::{seealso} SELECT Solutions
 :class: dropdown
-```{literalinclude} 08_sql\assets\SELECT Activity 1.sql
+```{literalinclude} 08_sql\assets\SELECT\Activity_1.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\SELECT Activity 2.sql
+```{literalinclude} 08_sql\assets\SELECT\Activity_2.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\SELECT Activity 3.sql
+```{literalinclude} 08_sql\assets\SELECT\Activity_3.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\SELECT Activity 4.sql
+```{literalinclude} 08_sql\assets\SELECT\Activity_4.sql
 :language: sql
 ```
 
-```{literalinclude} 08_sql\assets\SELECT Activity 5.sql
+```{literalinclude} 08_sql\assets\SELECT\Activity_5.sql
 :language: sql
 ```
 :::
@@ -2119,6 +2119,9 @@ END
 :::
 
 ### Filters and Aggregators
+
+
+
 
 ### ORDER BY Clause
 
