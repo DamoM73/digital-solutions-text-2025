@@ -22,7 +22,7 @@ Try changing `tip` to `warning`!
 
 :::{tip} Summary
 :class: dropdown
-Try changing `tip` to `warning`!
+Add summary here
 :::
 
 :::{attention} Stop and Think

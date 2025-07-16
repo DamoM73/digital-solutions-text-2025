@@ -2072,6 +2072,52 @@ END
 
 ### WHERE Clause
 
+:::{seealso} WHERE Activities
+:class: dropdown
+**Using the Movies database**
+```{literalinclude} 08_sql\assets\WHERE Activity 1.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\WHERE Activity 2.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\WHERE Activity 3.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\WHERE Activity 4.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\WHERE Activity 5.sql
+:language: sql
+```
+
+**Using the Repairs database**
+```{literalinclude} 08_sql\assets\WHERE Activity 6.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\WHERE Activity 7.sql
+:language: sql
+```
+
+**Using the World database**
+```{literalinclude} 08_sql\assets\WHERE Activity 8.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\WHERE Activity 9.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\WHERE Activity 10.sql
+:language: sql
+```
+:::
+
 ### Filters and Aggregators
 
 ### ORDER BY Clause

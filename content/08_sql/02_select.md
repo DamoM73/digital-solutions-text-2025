@@ -1,11 +1,11 @@
-# SELECT Statement
+# SELECT
 
 :::{dropdown} Learning Goals
 - know how to execute simple SQL SELECT commands.
 - know how to execute simple SQL SELECT commands that only return the unique values.
 :::
 
-## SELECT
+## SELECT Statement
 
 The SQL `SELECT` statement is used to retrieve specific data from tables within a relational database. The data is return in the form of a table.
 
