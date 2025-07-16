@@ -2047,6 +2047,29 @@ END
 
 ### SELECT Statement
 
+:::{seealso} SELECT Solutions
+:class: dropdown
+```{literalinclude} 08_sql\assets\SELECT Activity 1.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\SELECT Activity 2.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\SELECT Activity 3.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\SELECT Activity 4.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql\assets\SELECT Activity 5.sql
+:language: sql
+```
+:::
+
 ### WHERE Clause
 
 ### Filters and Aggregators

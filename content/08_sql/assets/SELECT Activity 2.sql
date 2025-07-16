@@ -1,0 +1,2 @@
+SELECT memname
+FROM members

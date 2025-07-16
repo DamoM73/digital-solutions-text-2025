@@ -1,0 +1,2 @@
+SELECT dirname
+FROM director
