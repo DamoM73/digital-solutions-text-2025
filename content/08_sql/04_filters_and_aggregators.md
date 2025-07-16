@@ -31,20 +31,20 @@ The `COUNT` function returns the number of rows, `AVG` calculates the average of
 :class: dropdown
 **Using the Movies database**
 
-- How many directors are there from Australia?
-- How many directors have the name John?
-- What is the longest movie?
-- If I was to watch all the movies, back-to-back, how many minutes will I need (no pausing for toilet stops)
+1. How many directors are there from Australia?
+2. How many directors have the name John?
+3. What is the length of the longest movie?
+4. If I was to watch all the movies, back-to-back, how many minutes will I need (no pausing for toilet stops)
 
 **Using the Repairs database**
 
-- What is the average repair rate?
-- How many repairs are waiting to be picked up?
+5. What is the average repair rate?
+6. How many repairs are waiting to be picked up?
 
 **Using the Shares database**
 
-- How many companies are there in the high risk category?
-- Which company has the biggest difference between their highest and lowest price?
-- What is the cheapest, medium or low risk share on the New York Stock Exchange?
-- List all shares that are currently within 10% of their highest price?
+7. How many companies are there in the high risk category?
+8. Which company has the biggest difference between their highest and lowest price?
+9. What is the cheapest, medium or low risk share on the New York Stock Exchange (NYSE)?
+10. List all companies who shares are currently within 10% of their highest price this year?
 :::

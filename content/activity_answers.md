@@ -2053,7 +2053,7 @@ END
 :language: sql
 ```
 
-```{literalinclude} 008_sql/assets/SELECT/Activity_2.sql
+```{literalinclude} 08_sql/assets/SELECT/Activity_2.sql
 :language: sql
 ```
 
@@ -2120,6 +2120,49 @@ END
 
 ### Filters and Aggregators
 
+:::{seealso} Filters and Aggregators Solutions
+:class: dropdown
+**Using the Movies database**
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_1.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_2.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_3.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_4.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_5.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_6.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_7.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_8.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_9.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_10.sql
+:language: sql
+```
+:::
 
 
 
