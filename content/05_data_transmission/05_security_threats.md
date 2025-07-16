@@ -56,9 +56,7 @@ The ransomware encrypted users' files and demanded a ransom payment in Bitcoin t
 
 The National Health Service (NHS) in the United Kingdom was particularly hard hit, leading to the cancellation of appointments and surgeries. The attack highlighted the importance of timely software updates and robust cybersecurity measures to protect against such vulnerabilities​.
 
----
-
-## Phishing
+### Phishing
 
 A phishing attack is a type of cybercrime where attackers impersonate legitimate organizations or individuals to trick people into revealing sensitive information, such as passwords, credit card numbers, or login credentials. This is usually done through deceptive emails, messages, or websites that appear trustworthy but are designed to steal data or install malicious software. Phishing relies on social engineering techniques, exploiting human trust rather than technical vulnerabilities. These attacks can lead to identity theft, financial loss, and unauthorized access to personal or organizational systems.
 
@@ -70,9 +68,7 @@ Hackers sent a phishing email disguised as a security alert from Google, claimin
 
 This breach led to the exposure of thousands of emails, which were subsequently published by WikiLeaks, causing significant political and reputational damage during the 2016 U.S. presidential election.
 
----
-
-## Man-in-the-Middle (MitM) Attacks
+### Man-in-the-Middle (MitM) Attacks
 
 A man-in-the-middle (MITM) attack occurs when a malicious actor secretly intercepts and possibly alters the communication between two parties without their knowledge. This type of attack allows the attacker to eavesdrop on sensitive information such as login credentials, financial data, or personal messages. MITM attacks can happen on unsecured or poorly secured networks, like public Wi-Fi, where the attacker can position themselves between the user and a legitimate service (e.g., a website or app). By doing so, they can capture data being sent or inject malicious content into the communication stream, posing serious risks to data confidentiality and integrity.
 
@@ -84,9 +80,7 @@ Superfish was an adware program that intercepted users' web traffic to inject ad
 
 This compromised the security of encrypted connections, making users vulnerable to further attacks and data theft by malicious entities exploiting the same root certificate.
 
----
-
-## Denial of Service (DoS) and Distributed Denial of Service (DDoS) Attacks
+### Denial of Service (DoS) and Distributed Denial of Service (DDoS) Attacks
 
 A Distributed Denial-of-Service (DDoS) attack is a cyberattack in which multiple compromised computers or devices—often part of a botnet—are used to flood a target system, such as a website or server, with massive amounts of traffic. This overwhelming surge in requests exhausts the target’s resources, causing it to slow down significantly or crash completely, making it unavailable to legitimate users. DDoS attacks are often used to disrupt business operations, extort companies, or draw attention to political or social causes. Because the attack comes from many sources, it is difficult to block and can cause widespread disruption.
 
@@ -98,9 +92,7 @@ This attack involved a massive [botnet](https://en.wikipedia.org/wiki/Botnet) ca
 
 The attack highlighted the vulnerabilities of IoT devices and the significant impact DDoS attacks can have on internet infrastructure​ 
 
----
-
-## Insider Threats
+### Insider Threats
 
 Insider threats occur when individuals within an organization—such as employees, contractors, or business partners—intentionally or unintentionally compromise the security of the organization’s data or systems. These threats can involve stealing sensitive information, sabotaging systems, or accidentally exposing data through negligence or poor security practices. Unlike external attackers, insiders often have legitimate access to critical systems and data, making their actions harder to detect and defend against. Insider threats pose a significant risk because they exploit trust and access, and can result in data breaches, financial loss, and damage to an organization’s reputation.
 
@@ -112,9 +104,7 @@ In 2013, Snowden, a former contractor for the National Security Agency (NSA), le
 
 His actions had profound implications for national security and privacy, leading to significant legal and political repercussions​.
 
----
-
-## SQL Injections
+### SQL Injections
 
 SQL injection is a type of cyberattack where an attacker inserts malicious SQL (Structured Query Language) code into a web application's input fields to manipulate or access the underlying database. This can allow attackers to bypass authentication, view or modify sensitive data, delete records, or even gain full control over the database server. SQL injections typically occur when user inputs are not properly validated or sanitized, making the application vulnerable. These attacks are dangerous because they can compromise the confidentiality and integrity of stored data, and are often used to exploit poorly secured websites and applications.
 
@@ -126,9 +116,7 @@ Heartland, one of the largest payment processing companies in the United States,
 
 This breach led to significant financial losses and legal repercussions for the company and highlighted the critical importance of securing web applications against SQL injection attacks.
 
----
-
-## Cross-Site Scripting (XSS)
+### Cross-Site Scripting (XSS)
 
 Cross-Site Scripting (XSS) is a type of cyberattack where an attacker injects malicious scripts—usually JavaScript—into webpages that are then viewed by other users. When a user visits the affected page, the script runs in their browser, potentially allowing the attacker to steal cookies, session tokens, or other sensitive information, impersonate the user, or perform actions on their behalf. XSS vulnerabilities typically occur when web applications fail to properly validate or sanitize user input. This makes XSS a serious threat to both user privacy and web application security, especially in platforms that rely on dynamic content and user-generated input.
 
@@ -140,9 +128,7 @@ A user named Samy Kamkar created a worm that exploited an XSS vulnerability in M
 
 This incident highlighted the severe impact of XSS vulnerabilities and the importance of input validation and sanitization.
 
----
-
-## Advanced Persistent Threats (APTs)
+### Advanced Persistent Threats (APTs)
 
 Advanced Persistent Threats (APTs) are prolonged and targeted cyberattacks in which an intruder gains unauthorized access to a network and remains undetected for an extended period. Unlike typical attacks that aim for quick disruption or theft, APTs are often carried out by highly skilled attackers—such as state-sponsored groups—with the goal of stealing sensitive data, conducting espionage, or sabotaging operations. These attacks use sophisticated techniques like spear phishing, zero-day exploits, and custom malware to infiltrate systems and maintain access over time. Because of their stealthy nature and targeted approach, APTs are particularly dangerous to governments, corporations, and critical infrastructure.
 
@@ -154,9 +140,7 @@ Stuxnet is a sophisticated malware believed to have been developed jointly by th
 
 This attack highlighted the potential of cyber warfare and the risks posed by APTs to critical infrastructure.
 
----
-
-## Zero-Day Exploits
+### Zero-Day Exploits
 
 Zero-day exploits are cyberattacks that target previously unknown vulnerabilities in software or hardware—flaws that developers have had "zero days" to fix because they are not yet aware of them. These exploits are especially dangerous because they occur before a patch or update can be released, leaving systems defenceless. Attackers use zero-day vulnerabilities to gain unauthorized access, steal data, or compromise systems, often with highly targeted and stealthy methods. Because no existing security measures may detect or block them, zero-day exploits are highly prized by cybercriminals and nation-state hackers alike, posing significant risks to individuals, organizations, and governments.
 
@@ -174,9 +158,7 @@ Both the **Stuxnet** worm and the **WannaCry** ransomware used zero-day exploits
 
 **WannaCry** used the [EternalBlue](https://en.wikipedia.org/wiki/EternalBlue) to exploit a flaw in the SMBv1 (Server Message Block) protocol, allowing the malware to execute arbitrary code on the target machine without requiring user interaction. The exploit took advantage of the way SMB handled specially crafted packets, causing the system to execute the attacker's code.
 
----
-
-## Supply Chain Attacks
+### Supply Chain Attacks
 
 A supply chain attack is a cyberattack that targets the less secure elements of an organization's supply network, such as third-party vendors, contractors, or software providers, to compromise the primary target. Instead of attacking the main organization directly, hackers infiltrate trusted partners or software updates to insert malicious code or gain unauthorized access. Once the compromised component is integrated into the main system, the attacker can exploit it to steal data, disrupt operations, or move laterally within the network. These attacks are particularly dangerous because they exploit trusted relationships and can bypass traditional security defences, as seen in major incidents like the SolarWinds breach.
 
@@ -206,9 +188,7 @@ In this incident, sensitive personal information of approximately 147 million pe
 
 Despite being alerted to the vulnerability and the availability of a patch two months prior to the breach, Equifax's IT staff failed to update their systems, allowing attackers to exploit the flaw and gain access to sensitive data.
 
----
-
-## Hardware Failures
+### Hardware Failures
 
 Hardware failures pose a significant threat to data security and availability by causing sudden loss, corruption, or inaccessibility of important information. Failures can occur in hard drives, servers, storage devices, or networking equipment due to wear and tear, manufacturing defects, power surges, or environmental conditions like overheating. When hardware malfunctions, it can result in permanent data loss if proper backups and redundancy systems are not in place. Additionally, recovery from hardware failure can be time-consuming and costly, making it essential for organizations to implement robust disaster recovery plans, regular backups, and hardware monitoring to minimize the risk and impact of such failures.
 
@@ -220,9 +200,7 @@ In April 2011, a failure in AWS's Elastic Block Store (EBS) caused a cascading e
 
 Many businesses experienced prolonged outages, and some permanently lost data due to the disruption.
 
----
-
-## Software Bugs
+### Software Bugs
 
 Software bugs are flaws or errors in a program's code that can create vulnerabilities and pose serious threats to data security. These bugs may cause systems to behave unpredictably, expose sensitive information, or allow unauthorized access to data. For example, a coding error might disable authentication checks or mishandle user input, leading to issues like data corruption, privilege escalation, or security breaches. Because software is often complex and constantly updated, bugs can be difficult to detect and may remain unnoticed until exploited by attackers. To reduce these risks, developers must rigorously test code, apply updates and patches promptly, and follow secure coding practices.
 
@@ -234,9 +212,7 @@ The issue caused Blue Screen of Death (BSOD) errors on Windows systems, leading 
 
 This exemplifies how software bugs can lead to severe data loss and operational downtime, highlighting the necessity for rigorous testing and robust incident response protocols to mitigate such risks.
 
----
-
-## Power Outages
+### Power Outages
 
 Power outages can pose significant threats to data security by causing sudden system shutdowns that may lead to data loss, corruption, or hardware damage. When computers or servers lose power unexpectedly, open files may not be saved properly, databases can become inconsistent, and critical processes may be interrupted. Repeated power disruptions can also wear down hardware over time. Without proper backup power solutions, such as uninterruptible power supplies (UPS), and automated data-saving mechanisms, organizations risk losing important information and facing extended downtime. In sensitive environments, even a brief outage can disrupt business operations and compromise data integrity.
 
@@ -246,9 +222,7 @@ A notable example of data security being placed at risk due to power outages occ
 
 The facility experienced a series of power outages caused by electrical surges. These outages damaged critical infrastructure, including computers and cooling systems, leading to concerns over potential data loss and system reliability. The issues were attributed to electrical surges during equipment testing and installation phases, which caused significant delays in the facility's operational readiness and raised questions about the robustness of the NSA's data security measures during infrastructure failures.
 
----
-
-## Natural Disasters
+### Natural Disasters
 
 Natural disasters such as floods, earthquakes, fires, and hurricanes can cause severe damage to physical infrastructure, resulting in the loss or inaccessibility of critical data. These events can destroy servers, data centres, and networking equipment, leading to permanent data loss if proper backups and disaster recovery plans are not in place. In addition to physical destruction, natural disasters can also disrupt power and internet connectivity, hindering access to cloud-based systems and remote services. To mitigate these threats, organizations should implement off-site backups, cloud storage, redundant systems, and comprehensive disaster recovery strategies to ensure data resilience and business continuity in the face of unforeseen events.
 
@@ -260,9 +234,7 @@ The hurricane caused extensive power outages across the north-eastern United Sta
 
 Despite having backup generators, Datagram's fuel pumps were located in a basement that flooded, rendering the backup power systems ineffective and resulting in prolonged outages and potential data loss risks.
 
----
-
-## Network Failures
+### Network Failures
 
 Network failures occur when the communication links between systems break down, posing serious threats to data availability and business operations. These failures can be caused by hardware malfunctions, software misconfigurations, cyberattacks, or issues with internet service providers. When a network goes down, users may lose access to critical data, experience interruptions in data transfer, or face delays in real-time services. In some cases, data being transmitted during the failure may be lost or corrupted. Network failures can also expose systems to security risks if fallback mechanisms are not secure. To minimize these threats, organizations should implement redundant network paths, monitor systems continuously, and have failover plans in place.
 
@@ -274,9 +246,7 @@ This incident occurred when a routine software update to the bank's CA-7 batch p
 
 The network failure exposed vulnerabilities in the bank's IT infrastructure and highlighted the critical importance of robust network management and backup systems in safeguarding financial data and ensuring continuity of banking operations.
 
----
-
-## Data Synchronization Issues
+### Data Synchronization Issues
 
 Data synchronization issues arise when data stored in multiple locations—such as servers, databases, or devices—fails to update consistently and accurately across all systems. These inconsistencies can lead to outdated, conflicting, or incomplete information being used, which poses serious threats to data integrity and decision-making. Synchronization problems may occur due to network delays, software bugs, misconfigured sync settings, or interrupted processes. In critical systems, such issues can result in duplicated transactions, data loss, or system errors. To prevent these threats, organizations must use reliable synchronization protocols, ensure consistent time-stamping, and implement regular checks to detect and resolve discrepancies quickly.
 
@@ -288,9 +258,7 @@ The breach was attributed to issues in synchronizing customer data across differ
 
 The incident exposed vulnerabilities in how data was managed and synchronized, highlighting the risks associated with inconsistent data replication and integration in large-scale IT environments.
 
----
-
-## Lack of Proper Backups
+### Lack of Proper Backups
 
 A lack of proper backups poses a critical threat to data security, as it leaves organizations and individuals vulnerable to permanent data loss in the event of system failures, cyberattacks, accidental deletion, or natural disasters. Without reliable and up-to-date backups, it can be impossible to recover important files or restore operations after a disruption. This not only results in lost productivity and potential financial damage, but can also violate data protection regulations. Effective backup strategies—such as automated backups, off-site storage, and routine testing of recovery processes—are essential to ensure data can be restored quickly and accurately when needed.
 
@@ -302,9 +270,7 @@ In 2014, Code Spaces suffered a devastating attack when an attacker gained acces
 
 Code Spaces had not maintained offsite backups or a robust backup strategy, leading to the irreversible loss of customer data. The severity of the attack and the lack of adequate backups forced Code Spaces to shut down permanently.
 
----
-
-## Environmental Factors
+### Environmental Factors
 
 Environmental factors such as temperature extremes, humidity, dust, and electromagnetic interference can pose serious threats to data security by damaging hardware components and disrupting normal system operations. Overheating can lead to hard drive failures, data corruption, or complete system crashes, while high humidity or dust build-up can cause short circuits and physical degradation of devices. Even subtle environmental changes can affect the reliability and longevity of data storage systems. To protect against these risks, organizations should maintain controlled environments for their IT infrastructure, including proper ventilation, air filtration, and environmental monitoring systems to detect and respond to harmful conditions promptly.
 
