@@ -2,6 +2,8 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
+- know how use the GROUP BY clause to perform aggregation calculations on subgroup within the results.
+- know how to filter the grouped results using the HAVING clause.
 :::
 
 ## GROUP BY Clause

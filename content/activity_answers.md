@@ -2238,7 +2238,99 @@ END
 ```
 :::
 
-### Subqueries
+:::{seealso} JOIN Solutions
+:class: dropdown
+**Using the Schools database**
+```{literalinclude} 08_sql/assets/subqueries/Activity_1.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_2.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_3.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_4.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_5.sql
+:language: sql
+```
+
+**Repairs database**
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_6.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_7.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_8.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_9.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/subqueries/Activity_10.sql
+:language: sql
+```
+:::
+
+:::{seealso} Subqueries Solutions
+:class: dropdown
+**Using Repairs database**
+```{literalinclude} 08_sql/assets/JOIN/Activity_1.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_2.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_3.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_4.sql
+:language: sql
+```
+
+**Using the Chinook database**
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_5.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_6.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_7.sql
+:language: sql
+```
+
+**Using the Schools database**
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_8.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_9.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/JOIN/Activity_10.sql
+:language: sql
+```
+:::
 
 ### JOIN Clauses
 
