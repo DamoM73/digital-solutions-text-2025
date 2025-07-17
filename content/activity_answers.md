@@ -2045,8 +2045,6 @@ END
 
 ## SQL Skills
 
-### SELECT Statement
-
 :::{seealso} SELECT Solutions
 :class: dropdown
 ```{literalinclude} 08_sql/assets/SELECT/Activity_1.sql
@@ -2069,8 +2067,6 @@ END
 :language: sql
 ```
 :::
-
-### WHERE Clause
 
 :::{seealso} WHERE Activities
 :class: dropdown
@@ -2118,8 +2114,6 @@ END
 ```
 :::
 
-### Filters and Aggregators
-
 :::{seealso} Filters and Aggregators Solutions
 :class: dropdown
 **Using the Movies database**
@@ -2164,11 +2158,85 @@ END
 ```
 :::
 
+:::{seealso} ORDER BY Solutions
+:class: dropdown
+**Using the Movies database**
+```{literalinclude} 08_sql/assets/filters_and_aggregators/Activity_1.sql
+:language: sql
+```
 
+```{literalinclude} 08_sql/assets/ORDER_BY/Activity_2.sql
+:language: sql
+```
 
-### ORDER BY Clause
+```{literalinclude} 08_sql/assets/ORDER_BY/Activity_3.sql
+:language: sql
+```
 
-### GROUP BY and HAVING Clauses
+**Using the School Database**
+
+```{literalinclude} 08_sql/assets/ORDER_BY/Activity_4.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/ORDER_BY/Activity_5.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/ORDER_BY/Activity_6.sql
+:language: sql
+```
+:::
+
+:::{seealso} GROUP BY and HAVING Solutions
+:class: dropdown
+**Using the Movies database**
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_1.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_2.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_3.sql
+:language: sql
+```
+
+**Using the School database**
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_4.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_5.sql
+:language: sql
+```
+
+**Using the Shares database**
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_6.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_7.sql
+:language: sql
+```
+
+**Using the Chinook database**
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_8.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_9.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/GROUP_BY_and_HAVING/Activity_10.sql
+:language: sql
+```
+:::
 
 ### Subqueries
 
