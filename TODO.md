@@ -31,10 +31,10 @@
   - [x] User Insights
   - [x] Use Case Diagrams
   - [x] Success Criteria
-  - [ ] Mock-ups
-  - [ ] Pseudocode
+  - [x] Mock-ups
+  - [x] Pseudocode
   - [ ] Desk Checking
-  - [ ] Data Flow Diagrams
+  - [x] Data Flow Diagrams
   - [x] ERD and RS
   - [x] Data Dictionaries
   - [ ] Data Exchange Diagrams
@@ -57,14 +57,14 @@
   - [ ] Hashing
   - [ ] Checksums
 - [ ] SQL Skills
-  - [ ] SQL Introduction
-  - [ ] SELECT Statement
-  - [ ] WHERE Clause
-  - [ ] Filters and Aggregators
-  - [ ] ORDER BY Clause
-  - [ ] GROUP BY and HAVING Clauses
-  - [ ] Subqueries
-  - [ ] JOIN Clause
+  - [x] SQL Introduction
+  - [x] SELECT Statement
+  - [x] WHERE Clause
+  - [x] Filters and Aggregators
+  - [x] ORDER BY Clause
+  - [x] GROUP BY and HAVING Clauses
+  - [x] Subqueries
+  - [x] JOIN Clause
   - [ ] INSERT Statement
   - [ ] UPDATE Statement
   - [ ] DELETE Statement

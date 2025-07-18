@@ -2009,6 +2009,18 @@ END
 
 ### Data Flow Diagrams
 
+### ERD and RS
+
+### Data Dictionaries
+
+### Data Connection Diagrams
+
+:::{seealso} Data Connection Diagram Solutions
+:class: dropdown
+**Activity 1**
+![data connection 1](./assets/Data_Connection_1.png)
+:::
+
 ### Testing
 
 ### User Feedback
