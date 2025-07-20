@@ -2,6 +2,9 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
+- understand the different types of data connection diagrams and what they are used for
+- understand how networks can be represented using different data connection diagrams
+- know how to represent the data communicated between different nodes using a network diagram
 :::
 
 A **Data Connections Diagram** is a drawing that shows how different systems, databases, files, or tables are connected and how they share or move data between each other. It helps you understand where data comes from, where it goes, and how different parts of a system interact.
@@ -122,7 +125,7 @@ You are designing a simple weather dashboard for your school website. The system
 
 - A web app that students access from their laptops
 - The web app sends requests to an external weather API to get current conditions
-- The app stores daily weather history in a school-hosted cloud database
+- The app stores daily weather history in a local database hosted on a school server
 - An admin panel allows staff to view and export reports
 
 Create a network diagram that shows:

@@ -2018,7 +2018,12 @@ END
 :::{seealso} Data Connection Diagram Solutions
 :class: dropdown
 **Activity 1**
-![data connection 1](./assets/Data_Connection_1.png)
+![data connection 1](./assets/Data_Connection_1.png)<p>&nbsp;</p>
+
+---
+
+**Activity 2**
+![data connection 2](./assets/Data_Connection_2.png)<p>&nbsp;</p>
 :::
 
 ### Testing

@@ -37,11 +37,12 @@
   - [x] Data Flow Diagrams
   - [x] ERD and RS
   - [x] Data Dictionaries
-  - [ ] Data Exchange Diagrams
+  - [x] Data Connection Diagrams
   - [ ] Testing
   - [ ] User Feedback
   - [ ] Evaluation Table
   - [ ] Impacts Table
+  - [ ] Appendices
 - [ ] Python Skills
   - [ ] Python Introduction
   - [ ] PyQt
