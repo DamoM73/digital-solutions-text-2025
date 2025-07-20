@@ -189,14 +189,9 @@ To ensure your algorithm is effective, follow these steps:
 
 Testing is the process of systematically checking that your code performs as expected. It plays a key role in ensuring a solution is **effective** (solves the intended problem), **efficient** (runs smoothly and quickly), and **dependable** (works reliably under different conditions). Testing should happen throughout development and involves three main types:
 
-- **Exploratory testing**
-  Informal testing done without a set plan. It helps check overall behaviour by trying out features and experimenting. This is useful for spotting unexpected issues early and ensuring the solution feels effective and usable.
-
-- **Unit testing**
-  Focuses on testing individual parts of the code (like functions or classes) to make sure each component behaves correctly. This improves dependability by catching errors close to the source.
-
-- **Integrated testing**
-  Checks how different components work together. It helps identify issues that only appear when parts of the system interact, supporting both dependability and efficiency by ensuring smooth operation across the whole program.
+- **Exploratory testing**: Informal testing done without a set plan. It helps check overall behaviour by trying out features and experimenting. This is useful for spotting unexpected issues early and ensuring the solution feels effective and usable.
+- **Unit testing**: Focuses on testing individual parts of the code (like functions or classes) to make sure each component behaves correctly. This improves dependability by catching errors close to the source.
+- **Integrated testing**: Checks how different components work together. It helps identify issues that only appear when parts of the system interact, supporting both dependability and efficiency by ensuring smooth operation across the whole program.
 
 By combining all three types of testing, you can refine your solution to be more reliable, solve the problem accurately, and perform well.
 

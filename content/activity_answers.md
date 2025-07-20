@@ -2028,6 +2028,107 @@ END
 
 ### Testing
 
+:::{seealso} Unit Testing Solutions
+:class: dropdown
+**Activity 1**
+
+| Test Case | Input | Expected Output | Actual Output | Pass/Fail | Action |
+| --- | --- | --- | --- | --- | --- |
+| 1 | `0` | `32.0` | `32.0` | Pass | n/a |
+| 2 | `100` | `212.0` | `212.0` c| Pass | n/a |
+| 3 | `-40` | `-40.0` | `-40.0` | Pass | n/a |
+| 4 | `"cold"` | Error message | TypeError | Fail | added input validation |
+| 4 | `"cold"` | Error message | Error message | Pass | n/a |
+| 5 | `None` | Error | Error | Pass |
+
+Refactored code
+
+``` {code}python
+def celsius_to_fahrenheit(c):
+    try:
+        return (c * 9/5) + 32
+    except TypeError:
+        return "Invalid input: must be a number"
+```
+
+---
+
+**Activity 2**
+
+| Test Case | Input | Expected Output | Actual Output | Pass/Fail | Action |
+| --- | --- | --- | --- | --- | --- |
+| 1 | `3, 3, 3` | `3.0` | `8.0` | Fail | `()` around addition |
+| 1 | `3, 3, 3` | `3.0` | `3.0` | Pass | n/a |
+| 2 | `6, 3, 0` | `3.0` | `3.0` | Pass | n/a |
+| 3 | `0, 0, 0` | `0.0` | `0.0` | Pass | n/a |
+| 4 | `1000, 1000, 1000` | `1000.0` | `1000.0` | Pass | n/a |
+| 5 | `"a", 2, 3` | Error message | TypeError | Fail | added input validation |
+| 5 | `"a", 2, 3` | Error message | Error message | Pass | n/a |
+| 6 | `None, 2, 3` | Error message | Error message | Pass | n/a |
+
+Refactored code
+
+``` {code}python
+def average(a, b, c):
+    try:
+        return (a + b + c) / 3
+    except TypeError:
+        return "Invalid input: all inputs must be numbers"
+```
+:::
+
+:::{seealso} Integrated Testing Soluitions
+:class: dropdown
+**Activity 1**
+
+Integrated Components:
+
+- Web form (UI)
+- Validation logic
+- Database
+- Confirmation display
+
+Success Criteria:
+
+- Valid submissions are saved in the database
+- Error shown for missing/invalid input
+- Confirmation shown after success
+
+Test Design:
+
+| Test Scenario | Input | Expected Outcome |
+| --- | --- | --- |
+| 1. Valid entry | Name: "Alice", Grade: 10, Event: "STEM Expo" | Data saved to database, confirmation message shown |
+| 2. Missing field | Name: "", Grade: 11, Event: "Music Fest" | Error: "Name is required", data not saved |
+| 3. Special characters | Name: "O'Reilly", Grade: 12, Event: "Drama Night" | Data saved correctly, confirmation message shown, no display issues |
+
+---
+
+**Activity 2**
+
+Integrated Components:
+
+- Staff login
+- Weather API
+- Database
+- Report export (CSV)
+
+Success Criteria:
+
+- Login grants access
+- API fetches and stores correct data
+- Data appears on dashboard
+- Report downloads with complete data
+
+Test Design:
+
+| Test Scenario    | Input/Trigger                      | Expected Outcome                                                   |
+| ---------------- | ---------------------------------- | ------------------------------------------------------------------ |
+| 1. Normal use    | Staff logs in → sees dashboard     | Login succeeds, weather data displayed from latest API call        |
+| 2. Refresh data  | Click "Refresh" → API fetches data | New data stored in database and dashboard updates                  |
+| 3. Export report | Click "Download Report"            | CSV downloads with correct weather records (date, temp, condition) |
+:::
+
 ### User Feedback
 
 ### Evaluation Table
