@@ -1,4 +1,4 @@
-# Data Security - Threats
+# Data Security Threats
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
