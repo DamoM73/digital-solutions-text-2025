@@ -1,5 +1,11 @@
 # JOIN
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand that joins are used to extract data from multiple tables
+- know how to combine tables using inner joins and extract data from it
+:::
+
 Joins are used in SQL to combine rows from two or more tables based on a related column between them. Instead of writing multiple subqueries, joins let you pull data from different tables into a single result. This is helpful when related information is stored across separate tables, such as customers and their orders. By using joins, you can view and analyse all the connected data in one query result.
 
 Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_join.asp) on Joins and complete their exercises (we will only be worried about inner joins)

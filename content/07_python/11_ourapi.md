@@ -23,7 +23,7 @@ If OurAPI doesn't work on your computer, this sometimes happens with macOS, then
 
 Now you should have the following window displayed on your screen.
 
-![OurAPI GUI](./assets/10/01_ourapi.png)<p>&nbsp;</p>
+![OurAPI GUI](./assets/11/01_ourapi.png)<p>&nbsp;</p>
 
 What you are seeing is the GUI of the application, in the background your computer is running a webserver. This webserver is hosting the API that we will be accessing. Let try it out with a simple GET request.
 
@@ -33,11 +33,11 @@ What you are seeing is the GUI of the application, in the background your comput
 
 The APi has a range of functions that provide access to the database. To see these functions click on the **API Summary** button. You should have the following dialogue pop up:
 
-![API functions](./assets/10/02_functions.png)<p>&nbsp;</p>
+![API functions](./assets/11/02_functions.png)<p>&nbsp;</p>
 
 You can see there are currently 10 functions the API offers. Click on the **>** beside **list_countries** and you will see three more options. Click on all the **>** so you can see all the details of **list_countries** function.
 
-![list country function details](./assets/10/03_list_countries.png)<p>&nbsp;</p>
+![list country function details](./assets/11/03_list_countries.png)<p>&nbsp;</p>
 
 Lets look at those details:
 - Args &rarr; there is no need to pass arguments
@@ -51,7 +51,7 @@ Copy the route, paste it into address bar of a browser, then press return. Two t
 1. Your browser should display a block of text &ndash; this is actual the JSON response from the web server.
 2. the OurAPI UI should now have a heap of new details.
 
-![list countries GET request](./assets/10/04_get_list_countries.png)<p>&nbsp;</p>
+![list countries GET request](./assets/11/04_get_list_countries.png)<p>&nbsp;</p>
 
 **Test Client**
 
@@ -63,7 +63,7 @@ Lets run that request a different way:
 
 The OurAPI GUI should display the same information as before, but lets look at the change in the **GET Client** dialogue.
 
-![GET client results](./assets/10/05_get_client_results.png)<p>&nbsp;</p>
+![GET client results](./assets/11/05_get_client_results.png)<p>&nbsp;</p>
 
 :::{seealso} List Countries Activity
 :class: dropdown
@@ -82,7 +82,7 @@ In the **GET Client**:
    - Value &rarr; **Brazil**
 3. Click **Run**
 
-![Country info results](./assets/10/06_country_info_results.png)<p>&nbsp;</p>
+![Country info results](./assets/11/06_country_info_results.png)<p>&nbsp;</p>
 
 You will notice:
 
@@ -91,7 +91,7 @@ You will notice:
 
 Close the **GET Client** then open the **POST Client** and repeat the same process.
 
-![Post Client](./assets/10/07_post_client.png)<p>&nbsp;</p>
+![Post Client](./assets/11/07_post_client.png)<p>&nbsp;</p>
 
 Have a look at the POST URL. Notice that the argument name or value is not part of it? That's because the data is sent in the body of the request—not in the URL. This means users don’t see the data in the address bar, making it more private and allowing larger amounts of information to be sent, like form details, login credentials, or file uploads.
 

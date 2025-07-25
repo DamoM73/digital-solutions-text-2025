@@ -68,15 +68,16 @@ project:
         - file: content/07_python/02_pyqt.md
         - file: content/07_python/03_csv.md
         - file: content/07_python/04_type_hints.md
-        - file: content/07_python/05_queries.md
-        - file: content/07_python/06_creation.md
-        - file: content/07_python/07_populate.md
-        - file: content/07_python/08_json.md
-        - file: content/07_python/09_requests.md
-        - file: content/07_python/10_ourapi.md
-        - file: content/07_python/11_ciphers.md
-        - file: content/07_python/12_hashing.md
-        - file: content/07_python/13_checksums.md
+        - file: content/07_python/05_sql_and_python.md
+        - file: content/07_python/06_queries.md
+        - file: content/07_python/07_creation.md
+        - file: content/07_python/08_populate.md
+        - file: content/07_python/09_json.md
+        - file: content/07_python/10_requests.md
+        - file: content/07_python/11_ourapi.md
+        - file: content/07_python/12_ciphers.md
+        - file: content/07_python/13_hashing.md
+        - file: content/07_python/14_checksums.md
         
     - title: SQL Skills
       children:

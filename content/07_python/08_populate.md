@@ -21,7 +21,7 @@ In this section we will learn how to parse a CSV file into a SQLite database. We
 
 Before we populate a database, we would have already designed the data structure and created the tables that form our database. The **f1_drive.db** contains our database which uses the structure below.
 
-![f1_driver.bd ERD](./assets/07/03_erd_f1_drivers.png)
+![f1_driver.bd ERD](./assets/08/03_erd_f1_drivers.png)
 
 When populating a database, we need to be aware of foreign keys. We cannot write to a table if it contains foreign keys which link to an unpopulated table. Looking at the ERD above and we can observe the populate order should be:
 
@@ -34,11 +34,11 @@ Whenever you work with a dataset, it is important to explore it first. You need 
 
 Click on the **F1Drivers_Dataset.csv** to view it's content. You will see the raw data below.
 
-![f1_csv_raw](./assets/07/01_raw_csv.png)
+![f1_csv_raw](./assets/08/01_raw_csv.png)
 
 Although the colour helps, the columns are a bit hard to use, so press **Ctrl/Cmd** + **P** and then type **Convert to table from CSV**. This should present the data below.
 
-![f1_csv-table](./assets/07/02_table_csv.png)
+![f1_csv-table](./assets/08/02_table_csv.png)
 
 Scrolling through the data we can make some observations about how we will need to process the data:
 
@@ -409,7 +409,7 @@ Go back to **main.py** and run it to test our code.
 
 To see if it worked we need to look into the data stored in the driver table. To do this, in the files panel, **right-click** on **f1_driver.db** and select Open Database.
 
-![open database](./assets/07/04_open_database.png)
+![open database](./assets/08/04_open_database.png)
 
 Then look to the bottom of the file panel then click:
 1. The dropdown arrow beside SQLITE EXPLORER
@@ -417,7 +417,7 @@ Then look to the bottom of the file panel then click:
 3. The dropdown arrow beside Driver
 4. The solid arrow to the right of Driver
 
-![view database](./assets/07/05_view_database.png)
+![view database](./assets/08/05_view_database.png)
 
 A panel should open to the right of your code showing the content of the Driver table.
 
@@ -737,7 +737,7 @@ Now that we have finished our F1 driver database, it's time to apply this knowle
 
 In your Unit 3 repo you will have the **netflix_titles.csv** and **netflix_shows.db** files. Below is the data structure ERD.
 
-![netflix ERD](./assets/07/06_erd_netflix.png)
+![netflix ERD](./assets/08/06_erd_netflix.png)
 
 This is a much larger dataset and more complicated database. Never-the-less, the concepts and processes are the same as the F1 Drivers database. 
 

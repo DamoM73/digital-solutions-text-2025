@@ -177,7 +177,7 @@ Carol: 95
 
 **Activity 3: Read a Single Object from a JSON File**
 
-You are given a file named [car.json](./assets/08/car.json) that contains information about a vehicle. Your job is to load the file into Python and display the data.
+You are given a file named [car.json](./assets/09/car.json) that contains information about a vehicle. Your job is to load the file into Python and display the data.
 
 Instructions:
 
@@ -198,7 +198,7 @@ Electric: False
 
 **Activity 4: Read a List of Objects from a JSON File**
 
-You are given a file called [inventory.json](./assets/08/inventory.json) which contains a list of items in a school store. Convert the data to a Python list and display the stock level for each item.
+You are given a file called [inventory.json](./assets/09/inventory.json) which contains a list of items in a school store. Convert the data to a Python list and display the stock level for each item.
 
 Instructions:
 
@@ -449,7 +449,7 @@ Year: 1949
 
 **Activity 2: Read XML from a File and Loop Through Elements**
 
-You are working with an XML file named [students.xml](./assets/08/students.xml) that contains multiple student records. Load the file and display each student's name and age.
+You are working with an XML file named [students.xml](./assets/09/students.xml) that contains multiple student records. Load the file and display each student's name and age.
 
 Instructions:
 
