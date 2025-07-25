@@ -2356,7 +2356,7 @@ Test Design:
 ```
 :::
 
-:::{seealso} JOIN Solutions
+:::{seealso} Subqueries Solutions
 :class: dropdown
 **Using the Schools database**
 ```{literalinclude} 08_sql/assets/subqueries/Activity_1.sql
@@ -2402,7 +2402,7 @@ Test Design:
 ```
 :::
 
-:::{seealso} Subqueries Solutions
+:::{seealso} JOIN Solutions
 :class: dropdown
 **Using Repairs database**
 ```{literalinclude} 08_sql/assets/JOIN/Activity_1.sql
