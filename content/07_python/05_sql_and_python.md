@@ -2,6 +2,8 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
+- understand Python's SQLite3 connection and cursor commands.
+- know how to use SQLite3 to access an SQLite database.
 :::
 
 SQLite3 is a lightweight, easy-to-use database system that stores data in a single file on your computer. It's built into Python, which means you don’t need to install anything extra to start using it. SQLite3 lets you create tables to organise data, run SQL commands to add, search or delete data, and use that data in your apps. Because it’s fast and simple, it’s perfect for small projects and will be the tool we use to work with our databases.
@@ -126,3 +128,28 @@ When you want to write or edit a Word document, you first must open the document
 ### Close
 
 Finally, once you have finished with your Word document you will want to save and close it. That is exactly what `self.connection.close()` does. Because RAM is faster than driver, SQLite3 might cache information in RAM to prevent holding up the program. This information will get written to drive ASAP, but it is possible there is still some data in the cache when you end your program. `self.connection.close()` ensures that all cache data is written to the drive as part of Python's end of program proceedure.
+
+## Test file
+
+Now that we have a datastore, we need to create a `test.py` so we can check our code.
+
+In the same directory, create a `test.py` file, and add the code below.
+
+```{code}python
+:linenos:
+from datastore import Datastore
+
+database = Datastore()
+
+print(database.__sizeof__())
+```
+
+:::{important} Explanation of Code
+:class: dropdown
+This code creates an instance of our datastore, then prints the size of the instance, just to check that it has been created.
+:::
+
+:::{seealso} Activities
+:class: dropdown
+In your unit 2 repo, create datastores for each of the practice databases.
+:::
