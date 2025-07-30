@@ -1,1 +1,1 @@
-# SQLite3 - Creating Databases
+# SQLite3 - Creating, Updating, Deleting

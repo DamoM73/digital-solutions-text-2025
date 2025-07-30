@@ -151,5 +151,11 @@ This code creates an instance of our datastore, then prints the size of the inst
 
 :::{seealso} Activities
 :class: dropdown
-In your unit 2 repo, create datastores for each of the practice databases.
+In your unit 2 repo, create datastores for each of the practice databases. Call them:
+- `world_datastore.py`
+- `movies_datastore.py`
+- `school_datastore.py`
+- `repairs_datastore.py`
+- `shares_datastore.py`
+- `chinook_datastore.py`
 :::

@@ -153,7 +153,9 @@ Now we understand the threat of SQLi and how to use **parameterised queries** to
 
 ### Creating Parameterised Queries
 
-We will be using the dictionary `sqlite3` method of parameterising our queries. Add the code below to the bottom of the `Datastore` class.
+We will be using the dictionary `sqlite3` method of parameterising our queries.To do this `slqite3` uses additional arguements in the `execute` command. The first argument of the `execute` command is still a string with one minor change. Where we want to place a variable
+
+ Add the code below to the bottom of the `Datastore` class.
 
 ```{code} python
 :linenos:
@@ -181,5 +183,6 @@ We will be using the dictionary `sqlite3` method of parameterising our queries. 
 ```
 
 :::{important} Explanation of Code
-
+- **line 33** &rarr; note the addition of the `customer_id` arguement (or parameter)
+- **line **
 :::

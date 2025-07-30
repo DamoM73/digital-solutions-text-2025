@@ -1,0 +1,2 @@
+INSERT INTO results
+VALUES (2230, 17, 50);

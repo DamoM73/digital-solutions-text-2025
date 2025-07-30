@@ -2450,11 +2450,60 @@ Test Design:
 ```
 :::
 
-### JOIN Clauses
+CREATE TABLE Statement
 
-### CREATE TABLE Statement
+:::{seealso} INSERT INTO Activities
+:class: dropdown
+**Movies Database**
+```{literalinclude} 08_sql/assets/INSERT/Activity_1.sql
+:language: sql
+```
 
-### INSERT Statement
+```{literalinclude} 08_sql/assets/INSERT/Activity_2.sql
+:language: sql
+```
+
+**Schools Database**
+```{literalinclude} 08_sql/assets/INSERT/Activity_3.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/INSERT/Activity_4.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/INSERT/Activity_5.sql
+:language: sql
+```
+
+**Chinook Database**
+```{literalinclude} 08_sql/assets/INSERT/Activity_6.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/INSERT/Activity_7.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/INSERT/Activity_8.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/INSERT/Activity_9a.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/INSERT/Activity_9b.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/INSERT/Activity_10a.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/INSERT/Activity_10b.sql
+:language: sql
+:::
 
 ### UPDATE Statement
 
