@@ -2,7 +2,10 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-
+- understand that the INSERT INTO statement is used to add rows of data to an SQL table.
+- know how to add new data to an SQL table that does not have an autoincrement primary key
+- know how to add new data to an SQL table that does have an autoincrement primary key
+- know how to add data that spans mutiple tables
 :::
 
 ## INSERT INTO Statement
@@ -51,5 +54,5 @@ Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_insert.asp) on 
 7. Insert an album titled **Evolve** by Imagine Dragons. Assume their ArtistId is **276**.
 8. Insert a customer named **Zara Lee**, company **ZaraTech**, in **Brisbane**. Email is **zlee@example.com**. Assume SupportRepId is **3**.
 9. Create a playlist called **Study Beats**, then add the track with TrackId **3456** to the playlist.
-10. Insert a customer named **Leo Tran** who works from **TranTech** in **Melbourne**, with email of **leo.tran@example.com**. Then insert an invoice created by support rep **4** for that Leo costing **39.95**.
+10. Insert data about an invoice involving a new customer named **Leo Tran** who works from **TranTech** in **Melbourne**, with email of **leo.tran@example.com**. The invoice was created by support rep **4** for the amount costing **39.95**.
 :::
