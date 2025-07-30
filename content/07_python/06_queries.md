@@ -153,28 +153,22 @@ Now we understand the threat of SQLi and how to use **parameterised queries** to
 
 ### Creating Parameterised Queries
 
+We will be using the dictionary `sqlite3` method of parameterising our queries. Add the code below to the bottom of the `Datastore` class.
+
 ```{code} python
 :linenos:
-import sqlite3
-
-class Datastore:
-
-    def __init__(self):
-        self.connection = sqlite3.connect("data/chinook.db")
-        self.cursor = self.connection.cursor()
-
-    def close(self):
-        self.connection.close()
-
-    # --- GET METHODS
-
-    def get_customer_contact(self):
+:lineno-start: 33
+    def get_customer_contact(self, customer_id):
         # Execute SQL Statement
         self.cursor.execute(
             """
             SELECT FirstName, LastName, Email, Phone
             FROM customers
-            """
+            WHERE CustomerId = :customer_id
+            """,
+            {
+                "customer_id": customer_id
+            }
         )
 
         # Retrieve Results
@@ -185,3 +179,7 @@ class Datastore:
         # Return Results
         return results
 ```
+
+:::{important} Explanation of Code
+
+:::
