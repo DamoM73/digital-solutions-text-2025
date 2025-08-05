@@ -2503,9 +2503,49 @@ CREATE TABLE Statement
 
 ```{literalinclude} 08_sql/assets/INSERT/Activity_10b.sql
 :language: sql
+```
 :::
 
-### UPDATE Statement
+:::{seealso} UPDATE Statement Solutions
+:class: dropdown
+**World Database**
+
+```{literalinclude} 08_sql/assets/UPDATE/Activity_1.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/UPDATE/Activity_2.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/UPDATE/Activity_3.sql
+:language: sql
+```
+
+**Shares Database**
+
+```{literalinclude} 08_sql/assets/UPDATE/Activity_4.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/UPDATE/Activity_5.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/UPDATE/Activity_6.sql
+:language: sql
+```
+
+**Chinook Database**
+
+```{literalinclude} 08_sql/assets/UPDATE/Activity_7.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/UPDATE/Activity_8.sql
+:language: sql
+```
+:::
 
 ### DELETE Statement
 

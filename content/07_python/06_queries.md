@@ -1,8 +1,10 @@
-# SQLite3 - Querying
+# SQLite3 - Reading
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-
+- know how to execute SQL Query statements in Python using SQLite3
+- understand what SQL injection attacks are and how they occur
+- know how to use parameterised queries to prevent SQL injection attacks
 :::
 
 Once you have create a connection and cursor, there are two steps to running a query in using `sqlite3` and Python:

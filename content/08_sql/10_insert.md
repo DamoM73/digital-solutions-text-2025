@@ -33,7 +33,7 @@ The video also demonstrates the following:
 - **Inserting multiple records at once:** You can add multiple rows with a single `INSERT INTO` statement by separating each set of values with a comma. This is more efficient than writing individual `INSERT` statements for each record.
 :::
 
-Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_insert.asp) on the INSERT STATEMENT and complete their exercises.
+Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_insert.asp) on the INSERT Statement and complete their exercises.
 
 :::{seealso} INSERT INTO Activities
 :class: dropdown

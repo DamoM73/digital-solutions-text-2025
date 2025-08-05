@@ -48,8 +48,9 @@
   - [ ] PyQt
   - [ ] Working with CSV
   - [ ] Type Hints
-  - [ ] Querying Databases
-  - [ ] Creating Databases
+  - [ ] SQLite3
+  - [x] SQLite3 - Reading
+  - [ ] SQLite3 - Creating, Updating, Deleting
   - [x] Populating Databases
   - [x] Working with JSON and XML
   - [x] Requests
@@ -59,16 +60,17 @@
   - [ ] Checksums
 - [ ] SQL Skills
   - [x] SQL Introduction
-  - [x] SELECT Statement
-  - [x] WHERE Clause
+  - [x] SELECT 
+  - [x] WHERE 
   - [x] Filters and Aggregators
-  - [x] ORDER BY Clause
-  - [x] GROUP BY and HAVING Clauses
+  - [x] ORDER BY 
+  - [x] GROUP BY and HAVING 
   - [x] Subqueries
-  - [x] JOIN Clause
-  - [ ] INSERT Statement
-  - [ ] UPDATE Statement
-  - [ ] DELETE Statement
+  - [x] JOIN 
+  - [ ] CREATE TABLE
+  - [x] INSERT 
+  - [x] UPDATE 
+  - [ ] DELETE 
 - [ ] Utilities Skills
   - [ ] Utilities Introduction
 - [ ] Assessments
