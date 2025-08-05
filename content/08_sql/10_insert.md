@@ -39,14 +39,14 @@ Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_insert.asp) on 
 :class: dropdown
 **Movies Database**
 
-1. Insert a new movie **The Year of Living Dangerously** with movie number **1047**, run time of **115** and director number **135**.
+1. Insert a new movie **The Year of Living Dangerously** with movie number **1047**, run time of **115** and director number **135**, released in the year **1982**.
 2. Add a new member named **Emma Stone**, from **Scottsdale, Arizona**. The last membership number in the database is 5064.
 
 **School Database**
 
 3. Insert a new teacher named **Carter, N**, who teaches **Grade 9** in Room **B4**.
 4. Add a new result for student number **2230**, subject number **17**, **50** percent.
-5. Add a new subject (no. **19**) called **digital technologies**, taught by **Carter, M**
+5. Add a new subject (no. **19**) called **digital technologies**, taught by **Carter, N**
 
 **Chinook Database**
 
