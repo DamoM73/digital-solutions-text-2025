@@ -30,8 +30,8 @@ By the end of this section you will:
   - **What You Are:** Based on unique biological characteristics (biometrics), such as fingerprints, iris scans, or facial recognition.
 - **Access Control:** Once a user is authenticated, access control determines what they are allowed to see, modify, or use. This is often managed through permissions (read, write, execute) and models like the **Bell-LaPadula model** (no read up, no write down), which is used in military and government systems.
 - **Software Security:** Even with strong authentication and access control, security can be compromised by malware or bugs in the software itself. To combat this, security professionals use:
-    - **Isolation (Sandboxing):** Running applications in contained environments (sandboxes or virtual machines) so that if one is compromised, it doesn't affect the entire system.
-    - **Independent Verification & Validation:** Having external, security-minded developers audit code to find bugs, which is why much security software is open-source.
+  - **Isolation (Sandboxing):** Running applications in contained environments (sandboxes or virtual machines) so that if one is compromised, it doesn't affect the entire system.
+  - **Independent Verification & Validation:** Having external, security-minded developers audit code to find bugs, which is why much security software is open-source.
 :::
 
 Data security is crucial because it safeguards sensitive information from unauthorized access, ensuring that personal, financial, and confidential data remains private and protected. In today's digital age, where vast amounts of data are shared and stored online, the risk of data breaches and cyberattacks is significant. These breaches can result in identity theft, financial loss, reputational damage, and legal consequences.
@@ -43,6 +43,7 @@ Data security measures, including encryption, access controls, and regular secur
 The following techniques used to manage data effectively, ensuring it can be stored and transferred securely and efficiently.
 
 ## The CIA Triad: Core Principles of Cybersecurity
+
 ![CIA Triad](./assets/04/cia_triad.png)
 
 The **CIA Triad** stands for **Confidentiality**, **Integrity**, and **Availability**. It’s a model that helps us understand how to protect information and systems from threats. Every good security strategy aims to balance these three goals.
@@ -52,12 +53,14 @@ The **CIA Triad** stands for **Confidentiality**, **Integrity**, and **Availabil
 Confidentiality means only **authorized** people can access sensitive data. It prevents data from being read or stolen by people who shouldn’t see it.
 
 **Key Concepts:**
+
 - **Authentication**: Making sure the person accessing the data is who they say they are (e.g. login with username + password).
 - **Authorization**: Making sure the user has permission to access the specific data.
 - **Encryption**: Scrambling the data so that it’s unreadable without a decryption key.
 - **Access control lists (ACLs)** and **permissions**: Rules that say who can access or change files.
 
 **Examples:**
+
 - A teacher can access student marks, but students can’t access each other’s marks.
 - Messages sent through WhatsApp are encrypted so that no one (even WhatsApp) can read them.
 
@@ -66,11 +69,13 @@ Confidentiality means only **authorized** people can access sensitive data. It p
 Integrity means data should stay correct, complete, and unaltered unless changed in an authorized way. It protects against **tampering**, **accidental deletion**, or **corruption**.
 
 **Key Concepts:**
+
 - **Checksums** and **hashing**: Mathematical ways to check if data has been changed.
 - **Digital signatures**: Used to verify that a message or document is from a trusted sender and hasn’t been altered.
 - **Version control**: Tracking changes to files to avoid mistakes or rollback errors.
 
 **Examples:**
+
 - A medical record system must not allow patient information to be changed without proper approval.
 - Software updates are signed by developers so users know the file hasn’t been changed by hackers.
 
@@ -79,12 +84,14 @@ Integrity means data should stay correct, complete, and unaltered unless changed
 Availability ensures that systems and data are accessible **when** users need them. Attacks that stop people from using services (like websites or apps) are attacks on availability.
 
 **Key Concepts:**
+
 - **Backups**: Copies of important data stored in case something goes wrong.
 - **Redundancy**: Having extra hardware or network connections so systems keep working if one fails.
 - **DDoS protection**: Defending against attacks that flood systems with traffic to crash them.
 - **Uptime monitoring**: Tools to check that services are always online.
 
 **Examples:**
+
 - A bank website must be available 24/7 for customers to check their accounts.
 - During exams, students need reliable access to the school’s learning management system.
 
@@ -138,6 +145,7 @@ The Caesar cipher is one of the simplest and most well-known encryption techniqu
 
 :::{tip} The Caesar cipher Summary
 :class: dropdown
+
 - **How it Works:** The Caesar cipher encrypts a message by shifting each letter of the alphabet forward by a fixed number of places, known as the "key." For example, with a key of 3, 'A' becomes 'D', 'B' becomes 'E', and so on. To decrypt the message, the receiver simply shifts each letter back by the same number of places.
 - **Encryption Example:** The video shows "Alice" wanting to send the message "MEET ME AT ELEPHANT LAKE" to "Bob." They agree on a key of 3. Alice applies this shift to every letter, creating a scrambled, unreadable message which she can then send openly.
 - **Decryption Example:** Upon receiving the message, "Bob," who knows the key is 3, reverses the process by subtracting 3 from each letter's position to reveal the original message.
@@ -148,29 +156,34 @@ The Caesar cipher is one of the simplest and most well-known encryption techniqu
 **How the Caesar Cipher Works**
 
 1. **Choose a Shift Value:** Decide on the number of positions each letter will be shifted. For example, with a shift of 3:
+
    - A becomes D
    - B becomes E
    - C becomes F
    - ..., and so on.
+
 2. **Encrypt the Plaintext:** Replace each letter in the plaintext with the letter that appears a fixed number of positions down the alphabet.
+
    - For example, with a shift of 3, the word "HELLO" becomes "KHOOR".
+
 3. **Decrypt the Ciphertext:** To decrypt the message, shift the letters in the opposite direction by the same number of positions.
+
    - "KHOOR" with a shift of 3 back becomes "HELLO".
 
-**Caesar Example**
+   **Caesar Example**
 
 - **Encryption Process:**
-   - Plaintext: "ATTACK AT DAWN"
-   - Shift: 3
-   - Ciphertext: "DWWDFN DW GDZQ"
+  - Plaintext: "ATTACK AT DAWN"
+  - Shift: 3
+  - Ciphertext: "DWWDFN DW GDZQ"
 - **Decryption Process:**
-    - Ciphertext: "DWWDFN DW GDZQ"
-    - Shift: 3
-    - Plaintext: "ATTACK AT DAWN"
+  - Ciphertext: "DWWDFN DW GDZQ"
+  - Shift: 3
+  - Plaintext: "ATTACK AT DAWN"
 
 **Caesar Encryption Pseudocode**
 
-```
+```text
 FUNCTION encrypt_caesar(plaintext, shift):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     result = ""
@@ -186,9 +199,10 @@ FUNCTION encrypt_caesar(plaintext, shift):
 
     RETURN result
 ```
+
 **Caesar Decryption Pseudocode**
 
-```
+```text
 FUNCTION decrypt_caesar(ciphertext, shift):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     result = ""
@@ -206,6 +220,7 @@ FUNCTION decrypt_caesar(ciphertext, shift):
 ```
 
 **Caesar Characteristics and Security**
+
 - **Simplicity:** The Caesar cipher is very easy to understand and implement, making it an excellent introductory example of encryption.
 - **Weak Security:** It is vulnerable to brute force attacks since there are only 25 possible shifts (not counting the shift of 0, which leaves the text unchanged). Frequency analysis can also easily break the cipher because the letter frequencies in the ciphertext match those in the plaintext.
 - **Requires Agreed Upon Key:** Like all Symmetric Encryptions, Caesar Cipher requires the sender and receiver to agree upon a key prior to the message being sent.
@@ -218,39 +233,46 @@ The Vigenère cipher is a method of encrypting alphabetic text by using a simple
 
 :::{tip} Vigenere Cipher Explained Summary
 :class: dropdown
+
 - **History:** The Vigenère cipher was first described in 1553 and remained unbreakable for over 300 years. It is a type of **polyalphabetic cipher**, meaning a single letter in the plaintext (original message) can be encrypted into different letters in the ciphertext (encrypted message), unlike simpler monoalphabetic ciphers (e.g., the Caesar cipher) where a letter always maps to the same encrypted letter.
 
 - **How it Works (Encryption):**
-  1.  **Choose a keyword:** For example, "BANANA".
-  2.  **Align the keyword** with the plaintext, repeating the keyword as necessary. For the plaintext "ILOVEPEANUTS", the key would be "BANANABANANA".
-  3.  **Convert letters to numbers:** Each letter in the plaintext and the key is converted to a number based on its position in the alphabet (e.g., A=1, B=2,... or A=0, B=1,...).
-  4.  **Add the numbers:** For each position, the plaintext number is added to the corresponding key number.
-  5.  **Use Modulo 26:** The result of the addition is taken modulo 26 to ensure the number wraps around the alphabet.
-  6.  **Convert back to letters:** The final numbers are converted back to letters to form the ciphertext.
+
+  1. **Choose a keyword:** For example, "BANANA".
+  2. **Align the keyword** with the plaintext, repeating the keyword as necessary. For the plaintext "ILOVEPEANUTS", the key would be "BANANABANANA".
+  3. **Convert letters to numbers:** Each letter in the plaintext and the key is converted to a number based on its position in the alphabet (e.g., A=1, B=2,... or A=0, B=1,...).
+  4. **Add the numbers:** For each position, the plaintext number is added to the corresponding key number.
+  5. **Use Modulo 26:** The result of the addition is taken modulo 26 to ensure the number wraps around the alphabet.
+  6. **Convert back to letters:** The final numbers are converted back to letters to form the ciphertext.
 
 - **Decryption:** The process is reversed. Instead of adding the key's numerical value, you subtract it from the ciphertext's numerical value (again using modulo 26) to retrieve the original plaintext.
 
 - **Weakness:** The video explains that despite its historical strength, the Vigenère cipher is **easily broken** by modern standards. Its primary weakness is the **repeating keyword**. An attacker can use **frequency analysis** to:
-  1.  Identify repeated patterns in the ciphertext to determine the length of the keyword.
-  2.  Once the key length is known, the ciphertext can be broken into separate groups, each encrypted by the same letter of the key.
-  3.  Frequency analysis can then be applied to each of these simpler monoalphabetic ciphers to crack the entire message.
-:::
 
-**How the Vigenère Cipher Works**
+  1. Identify repeated patterns in the ciphertext to determine the length of the keyword.
+  2. Once the key length is known, the ciphertext can be broken into separate groups, each encrypted by the same letter of the key.
+  3. Frequency analysis can then be applied to each of these simpler monoalphabetic ciphers to crack the entire message.
+     :::
+
+     **How the Vigenère Cipher Works**
 
 1. **Choose a Keyword:** A keyword is selected, and each letter of the keyword is used to create a different Caesar cipher shift.
+
    - For example, if the keyword is "KEY", it corresponds to shifts of K=10, E=4, and Y=24.
-2. **Repeat the Keyword:** The keyword is repeated to match the length of the plaintext. 
+
+2. **Repeat the Keyword:** The keyword is repeated to match the length of the plaintext.  
+
    - For example, if the plaintext is "ATTACKATDAWN" and the keyword is "KEY", the repeated keyword is "KEYKEYKEYKEY".
+
 3. **Encrypt the Plaintext:** Each letter of the plaintext is shifted according to the corresponding letter of the keyword. The shift is determined by converting the keyword letter into a number (A=0, B=1, ..., Z=25).
 4. **Decrypt the Cyphertext:** To decrypt the message, the same keyword is used. Each letter of the ciphertext is shifted back according to the corresponding letter of the keyword.
 
-**Vigenère Example**
+   **Vigenère Example**
 
 - **Encryption process**
   - Plaintext: ATTACKATDAWN
   - Keyword:   KEYKEYKEYKEY
-  - Encryption: 
+  - Encryption:  
     - A (shift by K, 10 positions) -> K
     - T (shift by E, 4 positions) -> X
     - T (shift by Y, 24 positions) -> R
@@ -285,15 +307,15 @@ The Vigenère cipher is a method of encrypting alphabetic text by using a simple
 
 **Vigenère Encryption Pseudocode**
 
-```
+```text
 FUNCTION encrypt_vigenere(plaintext, keyword):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     result = ""
     keyword_length = LENGTH(keyword)
-    
+
     FOR i FROM 0 TO LENGTH(plaintext) - 1:
         char = plaintext[i]
-        
+
         IF char IS a letter:
             char = UPPERCASE(char)
             shift_char = UPPERCASE(keyword[i % keyword_length])
@@ -309,15 +331,15 @@ FUNCTION encrypt_vigenere(plaintext, keyword):
 
 **Vigenère Decryption Pseudocode**
 
-```
+```text
 FUNCTION decrypt_vigenere(ciphertext, keyword):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     result = ""
     keyword_length = LENGTH(keyword)
-    
+
     FOR i FROM 0 TO LENGTH(ciphertext) - 1:
         char = ciphertext[i]
-        
+
         IF char IS a letter:
             char = UPPERCASE(char)
             shift_char = UPPERCASE(keyword[i % keyword_length])
@@ -332,6 +354,7 @@ FUNCTION decrypt_vigenere(ciphertext, keyword):
 ```
 
 **Vigenère Characteristics and Security**
+
 - **Polyalphabetic Substitution**: The Vigenère cipher uses multiple Caesar ciphers, which makes frequency analysis attacks much more difficult compared to simple substitution ciphers.
 - **Simple to Implement**: The method is straightforward to implement and understand.
 - **Keyword Repetition**: If the keyword is significantly shorter than the plaintext, patterns may emerge, making the cipher vulnerable to Kasiski examination and other statistical attacks.
@@ -359,6 +382,7 @@ The **one-time pad (OTP)** encryption is a theoretically unbreakable encryption 
   - Perform bitwise XOR operation between the numerical representations of the ciphertext and the key to retrieve the original plaintext.
 
 **Characteristics and Security**
+
 - **Perfect Security:** If the key is truly random, kept secret, and never reused, the one-time pad is theoretically unbreakable. This is because every possible plaintext of the same length as the ciphertext is equally likely.
 - **No Patterns:** Since the key is random and as long as the message, there are no patterns that an attacker can exploit.
 - **Key Distribution:** The key must be distributed securely to both the sender and the receiver, which can be impractical for large-scale use.
@@ -374,14 +398,14 @@ By using symmetric encryption algorithms, data is converted to a form that canno
 
 There are two types of symmetric encryption algorithms:
 
-  1. **Block algorithms:** Set lengths of bits are encrypted in blocks of electronic data with the use of a specific secret key. As the data is being encrypted, the system holds the data in its memory as it waits for complete blocks.
-  2. **Stream algorithms:** Data is encrypted as it streams instead of being retained in the system’s memory.
+1. **Block algorithms:** Set lengths of bits are encrypted in blocks of electronic data with the use of a specific secret key. As the data is being encrypted, the system holds the data in its memory as it waits for complete blocks.
+2. **Stream algorithms:** Data is encrypted as it streams instead of being retained in the system’s memory.
 
-### Symmetric Encryption Uses
+   ### Symmetric Encryption Uses
 
-While symmetric encryption is an older method of encryption, it is **faster and more efficient** than asymmetric encryption. Symmetric cryptography is typically used for encrypting large amounts of data, e.g. for database encryption. In the case of a database, the secret key might only be available to the database itself to encrypt or decrypt.
+   While symmetric encryption is an older method of encryption, it is **faster and more efficient** than asymmetric encryption. Symmetric cryptography is typically used for encrypting large amounts of data, e.g. for database encryption. In the case of a database, the secret key might only be available to the database itself to encrypt or decrypt.
 
-Some examples of where symmetric cryptography is used are:
+   Some examples of where symmetric cryptography is used are:
 
 - **Payment applications**, such as card transactions where personal identifying information needs to be protected to prevent identity theft or fraudulent charges
 - **Validations** to confirm that the sender of a message is who they claim to be
@@ -403,55 +427,58 @@ A Feistel block cipher is not an encryption method in itself. It is a model or p
 
 A Feistel cipher is not a specific algorithm but a framework that operates on a block of data through multiple rounds.
 
-1.  **Split:** The data block is divided into two equal halves: a Left (L) and a Right (R) half.
-2.  **Round Function:** For each round of encryption, the Right half (R) is fed into a "round function" (F) along with a sub-key (K) for that specific round.
-3.  **XOR Operation:** The output of the round function, `F(R, K)`, is then combined with the Left half (L) using an XOR operation. The result of this operation becomes the new Right half for the next round.
-4.  **Swap:** The original, unchanged Right half (R) becomes the new Left half for the next round.
+1. **Split:** The data block is divided into two equal halves: a Left (L) and a Right (R) half.
+2. **Round Function:** For each round of encryption, the Right half (R) is fed into a "round function" (F) along with a sub-key (K) for that specific round.
+3. **XOR Operation:** The output of the round function, `F(R, K)`, is then combined with the Left half (L) using an XOR operation. The result of this operation becomes the new Right half for the next round.
+4. **Swap:** The original, unchanged Right half (R) becomes the new Left half for the next round.
 
-This process is repeated for a predetermined number of rounds, with a different sub-key typically used for each round.
+   This process is repeated for a predetermined number of rounds, with a different sub-key typically used for each round.
 
-**The "Magic" of Decryption:**
+   **The "Magic" of Decryption:**
 
-The most elegant and brilliant feature of the Feistel cipher is its decryption process. To decrypt the ciphertext, you use the **exact same algorithm** as encryption. The only difference is that the sub-keys (K1, K2, K3, etc.) are applied in the **reverse order**.
+   The most elegant and brilliant feature of the Feistel cipher is its decryption process. To decrypt the ciphertext, you use the **exact same algorithm** as encryption. The only difference is that the sub-keys (K1, K2, K3, etc.) are applied in the **reverse order**.
 
-This works because the [XOR](https://www.geeksforgeeks.org/logic-gates/) operation is its own inverse. When you XOR a value with the same number twice, it cancels out and returns the original value. This allows the entire structure to be reversible, even if the round function (F) itself is a one-way, non-reversible function. This design significantly simplifies the implementation of block ciphers, as a separate decryption algorithm is not needed.
-:::
+   This works because the [XOR](https://www.geeksforgeeks.org/logic-gates/) operation is its own inverse. When you XOR a value with the same number twice, it cancels out and returns the original value. This allows the entire structure to be reversible, even if the round function (F) itself is a one-way, non-reversible function. This design significantly simplifies the implementation of block ciphers, as a separate decryption algorithm is not needed.
+   :::
 
-**Data Encryption Standard (DES)**
+   **Data Encryption Standard (DES)**
 
-**DES** is a symmetric key algorithm developed in the 1970s by IBM and later adopted by the U.S. government as a standard. It uses a **56-bit key** to encrypt **64-bit blocks** of data. DES operates on data using **16 rounds** of Feistel network, which involves permutations, substitutions, and XOR operations.
+   **DES** is a symmetric key algorithm developed in the 1970s by IBM and later adopted by the U.S. government as a standard. It uses a **56-bit key** to encrypt **64-bit blocks** of data. DES operates on data using **16 rounds** of Feistel network, which involves permutations, substitutions, and XOR operations.
 
-DES is now considered insecure for many applications due to its relatively short key length, which makes it vulnerable to brute-force attacks.
+   DES is now considered insecure for many applications due to its relatively short key length, which makes it vulnerable to brute-force attacks.
 
-**Triple DES (3DES)**
+   **Triple DES (3DES)**
 
-**Triple DES** enhances the security of DES by applying the DES algorithm three times to each data block. It uses **three 56-bit keys**, effectively giving it a **168-bit key length**, though due to some weaknesses, its effective security is closer to 112 bits.
+   **Triple DES** enhances the security of DES by applying the DES algorithm three times to each data block. It uses **three 56-bit keys**, effectively giving it a **168-bit key length**, though due to some weaknesses, its effective security is closer to 112 bits.
 
-Despite its increased security, 3DES is slower than other modern symmetric algorithms.
+   Despite its increased security, 3DES is slower than other modern symmetric algorithms.
 
-![3DES](./assets/04/3DES.png)
+   ![3DES](./assets/04/3DES.png)
 
-<p>&nbsp;</p>
+   <p>&nbsp;</p>
 
-**Advanced Encryption Standard (AES)**
+   **Advanced Encryption Standard (AES)**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O4xNJsjtN6E?si=zBpv6D29654kyjDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O4xNJsjtN6E?si=zBpv6D29654kyjDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-:::{tip} AES Explained Summary
-:class: dropdown
-This video explains the workings of the Advanced Encryption Standard (AES), a widely used symmetric block cipher. Here is a summary of the key points:
+   :::{tip} AES Explained Summary
+   :class: dropdown
+   This video explains the workings of the Advanced Encryption Standard (AES), a widely used symmetric block cipher. Here is a summary of the key points:
 
-**What is AES?**
+   **What is AES?**
+
 - AES is a **symmetric block cipher**, meaning the same key is used for both encryption and decryption.
 - It operates on fixed-size blocks of data: 128 bits (or 16 bytes).
 - It supports key sizes of **128, 192, or 256 bits**, with even the 128-bit version being extremely secure.
 - AES is a **substitution-permutation network (SPN)**, a design that repeatedly applies layers of substitution (for confusion) and permutation (for diffusion) to the data.
 
 **The State Array**
+
 - AES arranges the 16-byte input block into a 4x4 grid called the **state array**.
 - All encryption operations are performed on this state array.
 
 **The Encryption Process (Rounds)**
+
 - The encryption process consists of a series of rounds. The number of rounds depends on the key size:
   - **10 rounds** for a 128-bit key.
   - **12 rounds** for a 192-bit key.
@@ -463,6 +490,7 @@ This video explains the workings of the Advanced Encryption Standard (AES), a wi
   - **AddRoundKey:** The state is combined with a "round key" (derived from the main key) using an XOR operation.
 
 **Key Concepts:**
+
 - **Finite Field (Galois Field) Math:** The operations in AES (especially SubBytes and MixColumns) are based on arithmetic in a finite mathematical field called a Galois Field (GF(2⁸)). This provides the strong mathematical properties needed for security while being efficient to implement.
 - **Key Schedule:** The original key is expanded into a set of "round keys"—one for each round of encryption. This ensures that a different key is used at each stage of the process.
 
@@ -495,63 +523,66 @@ The biggest weakness of symmetric encryption is the need for key distribution. T
 
 :::{tip} Diffie-Hellman Key Exchange Summary
 :class: dropdown
-1.  **The Problem:** The video begins by tracing the need for secure communication back to the Cold War and the development of early computer networks like SAGE. As networks grew, a critical problem emerged: how can two people who have never met before agree on a secret key (like a password or a number) to encrypt their conversation, without an eavesdropper also learning that key?
 
-2.  **The One-Way Function Analogy (Mixing Paint):** The core of the Diffie-Hellman solution is explained using a simple analogy with mixing paint.
-    - **The Principle:** It is easy to mix two colours to create a new one, but it's very difficult to take that mixed colour and figure out the exact original colours used. This is called a "one-way function."
-    - **The Process:**
-      - Alice and Bob publicly agree on a common starting colour (e.g., yellow).
-      - Each secretly chooses their own private colour (Alice chooses red, Bob chooses blue).
-      - They each mix their private colour with the public yellow. Alice gets orange, and Bob gets green.
-      - They publicly exchange their mixed colours (orange and green). Eve sees these.
-      - Finally, they each mix the colour they received with their *own* private colour. Alice mixes green with her red, and Bob mixes orange with his blue.
-      - Both end up with the exact same secret colour (a brownish mix of yellow, red, and blue). Eve cannot create this colour because she lacks the secret red and blue.
+1. **The Problem:** The video begins by tracing the need for secure communication back to the Cold War and the development of early computer networks like SAGE. As networks grew, a critical problem emerged: how can two people who have never met before agree on a secret key (like a password or a number) to encrypt their conversation, without an eavesdropper also learning that key?
 
-3.  **The Mathematical Implementation (Clock Arithmetic):** The same principle is applied using numbers in a process called **modular arithmetic**, or "clock arithmetic."
-    - **The One-Way Function:** The mathematical one-way function is **modular exponentiation**. It is easy to calculate `g^x mod p`, but extremely difficult to find the exponent `x` if you only know the result, `g`, and `p`. This is known as the **discrete logarithm problem**.
-    - **The Process:**
-      - Alice and Bob publicly agree on two numbers: a prime modulus `p` and a generator `g`.
-      - They each choose a secret private number (Alice chooses `a`, Bob chooses `b`).
-      - Alice calculates `g^a mod p` and sends the result to Bob.
-      - Bob calculates `g^b mod p` and sends the result to Alice.
-      - Alice takes Bob's result and raises it to the power of her secret number `a`.
-      - Bob takes Alice's result and raises it to the power of his secret number `b`.
-      - Both arrive at the same shared secret number, `g^(ab) mod p`.
+2. **The One-Way Function Analogy (Mixing Paint):** The core of the Diffie-Hellman solution is explained using a simple analogy with mixing paint.
 
-Because of the difficulty of the discrete logarithm problem, Eve cannot determine their final shared secret, allowing Alice and Bob to use it as a key for secure, encrypted communication.
-:::
+   - **The Principle:** It is easy to mix two colours to create a new one, but it's very difficult to take that mixed colour and figure out the exact original colours used. This is called a "one-way function."
+   - **The Process:**
+     - Alice and Bob publicly agree on a common starting colour (e.g., yellow).
+     - Each secretly chooses their own private colour (Alice chooses red, Bob chooses blue).
+     - They each mix their private colour with the public yellow. Alice gets orange, and Bob gets green.
+     - They publicly exchange their mixed colours (orange and green). Eve sees these.
+     - Finally, they each mix the colour they received with their *own* private colour. Alice mixes green with her red, and Bob mixes orange with his blue.
+     - Both end up with the exact same secret colour (a brownish mix of yellow, red, and blue). Eve cannot create this colour because she lacks the secret red and blue.
 
-Asymmetric communication refers to a method of communication in which the parties involved use different keys for encryption and decryption processes. This is a key feature of asymmetric encryption, also known as public-key cryptography.
+3. **The Mathematical Implementation (Clock Arithmetic):** The same principle is applied using numbers in a process called **modular arithmetic**, or "clock arithmetic."
 
-### Key Components of Asymmetric Communication
+   - **The One-Way Function:** The mathematical one-way function is **modular exponentiation**. It is easy to calculate `g^x mod p`, but extremely difficult to find the exponent `x` if you only know the result, `g`, and `p`. This is known as the **discrete logarithm problem**.
+   - **The Process:**
+     - Alice and Bob publicly agree on two numbers: a prime modulus `p` and a generator `g`.
+     - They each choose a secret private number (Alice chooses `a`, Bob chooses `b`).
+     - Alice calculates `g^a mod p` and sends the result to Bob.
+     - Bob calculates `g^b mod p` and sends the result to Alice.
+     - Alice takes Bob's result and raises it to the power of her secret number `a`.
+     - Bob takes Alice's result and raises it to the power of his secret number `b`.
+     - Both arrive at the same shared secret number, `g^(ab) mod p`.
 
-The **public key** is openly distributed and used to encrypt data. Anyone can use this key to encrypt a message intended for a specific recipient. For example, if Alice wants to send a secure message to Bob, she would use Bob's public key to encrypt the message.
+   Because of the difficulty of the discrete logarithm problem, Eve cannot determine their final shared secret, allowing Alice and Bob to use it as a key for secure, encrypted communication.
+   :::
 
-The **private key** is kept secret and is used to decrypt data that has been encrypted with the corresponding public key. Continuing the example, Bob would use his private key to decrypt the message sent by Alice.
+   Asymmetric communication refers to a method of communication in which the parties involved use different keys for encryption and decryption processes. This is a key feature of asymmetric encryption, also known as public-key cryptography.
 
-### How Asymmetric Communication Works
+   ### Key Components of Asymmetric Communication
 
-1. The sender (Alice) and the receiver (Bob) agree and communicate the **public parameters** (prime modulus and a generator). 
-2. Alice then chooses a **private key** and calculates a **public key**, which she share publicly with Bob.
-3. Bob selects his own **private key**, calculates a **public key**, and shares it publicly with Alice.
-4. Alice takes Bob’s **public key** and raises it to the power of her **private key** to compute a **shared key**.
-5. Bob does the same with Alice’s **public key** and his **private key** to also establish the **shared key**.
-6. Alice and Bob now have a **shared key** they can use for symmetrical encryption.
-7. Without knowing Alice's or Bob's **private keys** Eve cannot derive the **shared key**.
+   The **public key** is openly distributed and used to encrypt data. Anyone can use this key to encrypt a message intended for a specific recipient. For example, if Alice wants to send a secure message to Bob, she would use Bob's public key to encrypt the message.
 
-### Advantages of Asymmetric Communication
+   The **private key** is kept secret and is used to decrypt data that has been encrypted with the corresponding public key. Continuing the example, Bob would use his private key to decrypt the message sent by Alice.
 
-Asymmetric communication **enhances security** because the private key is never shared and remains secure with the owner. Even if the public key is widely distributed, only the intended recipient can decrypt the message.
+   ### How Asymmetric Communication Works
 
-Asymmetric encryption also **simplifies key distribution**. Unlike symmetric encryption, where the same key must be securely shared between parties, the public key can be freely distributed without compromising security.
+4. The sender (Alice) and the receiver (Bob) agree and communicate the **public parameters** (prime modulus and a generator).  
+5. Alice then chooses a **private key** and calculates a **public key**, which she share publicly with Bob.
+6. Bob selects his own **private key**, calculates a **public key**, and shares it publicly with Alice.
+7. Alice takes Bob’s **public key** and raises it to the power of her **private key** to compute a **shared key**.
+8. Bob does the same with Alice’s **public key** and his **private key** to also establish the **shared key**.
+9. Alice and Bob now have a **shared key** they can use for symmetrical encryption.
+10. Without knowing Alice's or Bob's **private keys** Eve cannot derive the **shared key**.
 
-### Disadvantages of Asymmetric Communication
+   ### Advantages of Asymmetric Communication
 
-Asymmetric encryption algorithms are generally **slower** than symmetric algorithms, making them less suitable for encrypting large amounts of data directly.
+   Asymmetric communication **enhances security** because the private key is never shared and remains secure with the owner. Even if the public key is widely distributed, only the intended recipient can decrypt the message.
 
-The process of managing public and private keys and ensuring their integrity also adds **complexity** to the system.
+   Asymmetric encryption also **simplifies key distribution**. Unlike symmetric encryption, where the same key must be securely shared between parties, the public key can be freely distributed without compromising security.
 
-### Applications of Asymmetric Communication
+   ### Disadvantages of Asymmetric Communication
+
+   Asymmetric encryption algorithms are generally **slower** than symmetric algorithms, making them less suitable for encrypting large amounts of data directly.
+
+   The process of managing public and private keys and ensuring their integrity also adds **complexity** to the system.
+
+   ### Applications of Asymmetric Communication
 
 - **Email encryption services** often use asymmetric encryption to ensure that only the intended recipient can read the email.
 - **Secure websites** use SSL/TLS protocols, which rely on asymmetric encryption to establish secure connections between a user's browser and the web server.
@@ -565,6 +596,7 @@ Work in threes and take the roles of Alice, Bob and Eve.
 2. Alice and Bob agree and publicly share a generator
 3. Alice and Bob both choose a private key
 4. Exchange of public keys
+
    - Alice and Bob perform the following calculation (in Python) and share the results publicly:
 
 ``` python
@@ -572,6 +604,7 @@ public_key = generator ** private_key % prime_modulus
 ```
 
 5. Alice and Bob now work out the shared secret key
+
    - Use the following calculations (in Python):
 
 ``` python
@@ -584,21 +617,21 @@ shared_key = alice_pub_key ** bob_private_key % prime_modulus
 
 6. Alice and Bob now use the shared key to send messages using Caesar cipher to each other, and Eve attempts to work out the message.
 
-### RSA
+   ### RSA
 
-RSA is one of the most widely used asymmetric encryption algorithms, developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It relies on the mathematical difficulty of factoring large prime numbers. 
+   RSA is one of the most widely used asymmetric encryption algorithms, developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It relies on the mathematical difficulty of factoring large prime numbers.  
 
-RSA uses two keys a public key for encryption and a private key for decryption. Key lengths typically range from **2048 to 4096 bits**, providing strong security. It is commonly used in secure data transmission, digital signatures, and key exchange protocols.
+   RSA uses two keys a public key for encryption and a private key for decryption. Key lengths typically range from **2048 to 4096 bits**, providing strong security. It is commonly used in secure data transmission, digital signatures, and key exchange protocols.
 
-RSA is computationally intensive and slower compared to symmetric algorithms, making it less suitable for encrypting large amounts of data directly.
+   RSA is computationally intensive and slower compared to symmetric algorithms, making it less suitable for encrypting large amounts of data directly.
 
----
+   ---
 
-## Hashing
+   ## Hashing
 
-Hashing is the process of converting data into a fixed-size string of characters, which typically looks like a random sequence of letters and numbers. This is done using a specific algorithm.
+   Hashing is the process of converting data into a fixed-size string of characters, which typically looks like a random sequence of letters and numbers. This is done using a specific algorithm.
 
-### How Hashing works
+   ### How Hashing works
 
 - Think of hashing as creating a unique fingerprint for a set of data. Just like no two people have the same fingerprint, no two sets of data will have the same hash (in theory).
 - Hash functions take an input (or 'message') and return a fixed-size string of bytes. The output is typically a "digest" that represents the input data.

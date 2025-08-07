@@ -28,6 +28,7 @@ In assessing your code and pseudocode, your teaching will look for examples of t
 
 :::{seealso} Algorithms Activities
 :class: dropdown
+
 1. What is the purpose of an algorithm in a program?
 2. What does the *sequence* building block do in an algorithm?
 3. How does *assignment* work in a program? What is the role of a variable?
@@ -37,21 +38,21 @@ In assessing your code and pseudocode, your teaching will look for examples of t
 7. Why is *modularisation* important when designing large programs?
 8. Which building block(s) would you use to design a quiz program that gives feedback after each question? Why?
 9. What could go wrong if you forget to use *modularisation* in a large project?
-:::
+   :::
 
----
+   ---
 
-## Variables
+   ## Variables
 
-Variables are the names you give to computer memory locations which are used to store values in a computer program. Variables can store data of different types, and different variable types can do different things.
+   Variables are the names you give to computer memory locations which are used to store values in a computer program. Variables can store data of different types, and different variable types can do different things.
 
-### Variable Types
+   ### Variable Types
 
-Variable can be of different **types**. The type of a variable indicates the what kind of data is stored at that memory location.
+   Variable can be of different **types**. The type of a variable indicates the what kind of data is stored at that memory location.
 
-:::{hint} Dynamic vs Static Variables
-:class: dropdown
-In programming languages, there are two different type variable systems:
+   :::{hint} Dynamic vs Static Variables
+   :class: dropdown
+   In programming languages, there are two different type variable systems:
 
 - **dynamic:** type checking only occurs as the code runs, and the type of a variable is allowed to change over its lifetime.
 - **static:** type checks are performed without running the program. In most statically typed languages this is done as your program is compiled. The type of a variable is not allowed to change over its lifetime.
@@ -61,7 +62,7 @@ Python is a **dynamically** typed language. This means that you can store any ty
 
 The Python data types that we will be using are:
 
-- **Strings:** 
+- **Strings:**  
   - strings are sequences of character data
   - the string type in Python is called `str`
   - string literals may be delimited using either single or double quotes
@@ -94,7 +95,7 @@ In Python, variables have an associated *truthiness* (evaluated as `True`) or *f
 
 | Evaluate to `False`  | Evaluate to `True`|
 | --- | --- |
-| `None`<br>`False`<br>`0` (all numeric types, e.g. `0`, `0.0`, `0j`)<br>`''` or `""` (empty string)<br>`[]` (empty list)<br>`{}` (empty dictionary)<br>`set()` (empty set)<br>`()` (empty tuple)<br>`range(0)` | Everything else including:<br>&nbsp;<br>Non-zero numbers: `1`, `-5`, `3.14`<br>Non-empty strings: `"hello"`<br>Non-empty lists `[1]`<br>Non-empty tuples `(0,)`<br>Non-empty sets `{1}`<br>Non-empty dicts `{'a': 1}` | 
+| `None`<br>`False`<br>`0` (all numeric types, e.g. `0`, `0.0`, `0j`)<br>`''` or `""` (empty string)<br>`[]` (empty list)<br>`{}` (empty dictionary)<br>`set()` (empty set)<br>`()` (empty tuple)<br>`range(0)` | Everything else including:<br>&nbsp;<br>Non-zero numbers: `1`, `-5`, `3.14`<br>Non-empty strings: `"hello"`<br>Non-empty lists `[1]`<br>Non-empty tuples `(0,)`<br>Non-empty sets `{1}`<br>Non-empty dicts `{'a': 1}` |  
 
 For example, the following code:
 
@@ -115,8 +116,8 @@ Flasy
 
 When writing code, **scope** means where in your program a variable can be used.
 
-* **Global variables** are made outside of functions and can be used anywhere in your code.
-* **Local variables** are made inside functions and can only be used inside those functions.
+- **Global variables** are made outside of functions and can be used anywhere in your code.
+- **Local variables** are made inside functions and can only be used inside those functions.
 
 Older languages like BASIC didn’t use local variables, so every part of the program could change any variable at any time. This made debugging hard.
 
@@ -127,10 +128,10 @@ Modern languages like Python use scope to avoid problems like this. In Python, y
 
 Python follows a rule called **LEGB** to figure out which variable to use when you refer to a name. LEGB stands for:
 
-* **Local** – Variables made *inside a function*. Only that function can use them. Each time the function runs, a new local scope is created.
-* **Enclosing** – Variables made *in outer functions*, when you have functions inside functions. The inner function can use these variables, but can’t change them unless declared `nonlocal`.
-* **Global** – Variables made *at the top of your program*. They can be used anywhere, but only changed inside a function if declared `global`.
-* **Built-in** – Variables and functions that come with Python, like `print()` or `len()`. These are always available.
+- **Local** – Variables made *inside a function*. Only that function can use them. Each time the function runs, a new local scope is created.
+- **Enclosing** – Variables made *in outer functions*, when you have functions inside functions. The inner function can use these variables, but can’t change them unless declared `nonlocal`.
+- **Global** – Variables made *at the top of your program*. They can be used anywhere, but only changed inside a function if declared `global`.
+- **Built-in** – Variables and functions that come with Python, like `print()` or `len()`. These are always available.
 
 Python checks for a name in this order: **Local → Enclosing → Global → Built-in**. If it finds the name, it stops there. If not, it gives an error.
 
@@ -151,6 +152,7 @@ What would happen if you made a function called `print`?
 
 :::{seealso} Variable Activities
 :class: dropdown
+
 1. What is a variable used for in a computer program?
 2. What does the type of a variable indicate?
 3. What is the difference between dynamic and static variable types?
@@ -179,73 +181,73 @@ What would happen if you made a function called `print`?
 18. Can you change a global variable inside a function without declaring it `global`?
 19. Can a nested function change a variable from its enclosing function without using `nonlocal`?
 20. What kind of variables are available everywhere in your program?
-:::
 
----
+   :::
 
-## Control Structures
+   ---
 
-Flow of control through any given function is implemented with three basic types of control structures:
+   ## Control Structures
 
-### Sequential
+   Flow of control through any given function is implemented with three basic types of control structures:
 
-Sequential code runs line by line from top to bottom. The program starts with the first line, then moves to the next, and keeps going in order until it finishes.
+   ### Sequential
 
-### Conditions
+   Sequential code runs line by line from top to bottom. The program starts with the first line, then moves to the next, and keeps going in order until it finishes.
 
-A **condition** is how a computer checks if something is true or false. It’s like asking a yes/no question. The answer will always be either `True` or `False`.
+   ### Conditions
 
-In Python, conditions are used in `if` and `while` statements. They follow this pattern: **value operator value**
+   A **condition** is how a computer checks if something is true or false. It’s like asking a yes/no question. The answer will always be either `True` or `False`.
 
-There are six main comparison operators in Python:
+   In Python, conditions are used in `if` and `while` statements. They follow this pattern: **value operator value**
 
-| Operator | Condition example |
-| --- | --- |
-| Equals | a == b |
-| Not Equals | a != b |
-| Less than | a < b |
-| Less than or equal to | a <= b |
-| Greater than | a > b |
-| Greater than or equal to | a >= b |
+   There are six main comparison operators in Python:
 
-### Selection
+   | Operator | Condition example |
+   | --- | --- |
+   | Equals | a == b |
+   | Not Equals | a != b |
+   | Less than | a < b |
+   | Less than or equal to | a <= b |
+   | Greater than | a > b |
+   | Greater than or equal to | a >= b |
 
-Selection is when a program makes a choice between different paths based on a condition. Only one path is taken &mdash; the others are skipped. After the selected path runs, the program continues with the next line after the selection block. This is also called **branching**, like how a tree or river splits into different directions.
+   ### Selection
 
-Python has two main types of branching:
+   Selection is when a program makes a choice between different paths based on a condition. Only one path is taken &mdash; the others are skipped. After the selected path runs, the program continues with the next line after the selection block. This is also called **branching**, like how a tree or river splits into different directions.
 
-**`if ... elif ... else` statements**
+   Python has two main types of branching:
 
-This type checks conditions in order and chooses one path to run.
+   **statements**
 
-| Component | Features |
-| --- | --- |
-| `if` | Must come first<br>Only one allowed<br>Always required |
-| `elif` | Comes after `if` and before `else`<br>Optional<br>Can have as many as needed<br>Runs only if all conditions above are `False` |
-| `else` | Must come last<br>Optional<br>Only one allowed<br>Runs only if all previous conditions are `False` |
+   This type checks conditions in order and chooses one path to run.
 
-[W3Schools: if...elif...else refresher](https://www.w3schools.com/python/python_conditions.asp)
+   | Component | Features |
+   | --- | --- |
+   | `if` | Must come first<br>Only one allowed<br>Always required |
+   | `elif` | Comes after `if` and before `else`<br>Optional<br>Can have as many as needed<br>Runs only if all conditions above are `False` |
+   | `else` | Must come last<br>Optional<br>Only one allowed<br>Runs only if all previous conditions are `False` |
 
-**`match case` statement**
+   [W3Schools: if...elif...else refresher](https://www.w3schools.com/python/python_conditions.asp)
 
-  * Checks a variable against different fixed values
-  * Similar to `switch` in other languages
-  * Added in Python 3.10
-  * [LearnPython: match case statement](https://learnpython.com/blog/python-match-case-statement/)
+   **statement**
 
+- Checks a variable against different fixed values
+- Similar to `switch` in other languages
+- Added in Python 3.10
+- [LearnPython: match case statement](https://learnpython.com/blog/python-match-case-statement/)
 
 ### Iteration
 
 **Iteration** means repeating a block of code. This is also called a **loop**. There are two main types:
 
-* **Indefinite iteration** – used when you don’t know how many times the loop will run
+- **Indefinite iteration** – used when you don’t know how many times the loop will run
 
-  * **Pre-test loop** (`while` loop): checks the condition *before* running the code
-  * **Post-test loop** (like `do...while` in other languages): runs the code *then* checks the condition &mdash; Python does **not** have this type
+  - **Pre-test loop** (`while` loop): checks the condition *before* running the code
+  - **Post-test loop** (like `do...while` in other languages): runs the code *then* checks the condition &mdash; Python does **not** have this type
 
-* **Definite iteration** – used when you know how many times to run
+- **Definite iteration** – used when you know how many times to run
 
-  * **Counted loop** (`for` loop): repeats for a fixed number of times or through each item in a sequence
+  - **Counted loop** (`for` loop): repeats for a fixed number of times or through each item in a sequence
 
 Python has two loop types
 
@@ -254,7 +256,6 @@ Python has two loop types
 | `while` loop | Checks the condition first<br>Repeats while the condition is `True`<br>Is used for infinite loops<br>[W3Schools: while loop refresher](https://www.w3schools.com/python/python_while_loops.asp) |
 | `for` loop | Loops through a sequence (like a list or range)<br>Uses each item one at a time<br>Stops when there are no more items<br>[W3Schools: for loop refresher](https://www.w3schools.com/python/python_for_loops.asp) |
 
-
 :::{hint} What is an iterable?
 :class: dropdown
 In Python, an **iterable** is a container you can move through one item at a time, like going through pages in a book. Built-in iterables include **lists**, **tuples**, **strings**, **dictionaries**, and **sets**.
@@ -262,6 +263,7 @@ In Python, an **iterable** is a container you can move through one item at a tim
 
 :::{seealso} Control Structures Activities
 :class: dropdown
+
 1. What are the three basic types of control structures in programming?
 2. How does sequential code execute?
 3. What is a condition in programming?
@@ -288,74 +290,77 @@ In Python, an **iterable** is a container you can move through one item at a tim
 24. What does a `for` loop do with items in a sequence?
 25. What is an iterable in Python?
 26. Name three built-in Python types that are iterables.
-Let me know if you'd like the answers as well.
-:::
 
----
+   Let me know if you'd like the answers as well.
+   :::
 
-## Data Structures
+   ---
 
-> Data structures are used to store data in an organized form. No matter what problem are you solving, in one way or another you have to deal with data &mdash; whether it's an employee's salary, stock prices, a grocery list, or even a simple telephone directory. {cite}`ulhaq_2018_the`
-> 
-The easiest way to understand **data structures** is to see them as collections of related data &mdash; like a list of shopping items or a group of contacts with phone numbers. In fact they are frequently referred to as collections.
+   ## Data Structures
 
-In Python, we commonly use these four data structures:
+   > Data structures are used to store data in an organized form. No matter what problem are you solving, in one way or another you have to deal with data &mdash; whether it's an employee's salary, stock prices, a grocery list, or even a simple telephone directory. {cite}`ulhaq_2018_the`
+   > 
+   The easiest way to understand **data structures** is to see them as collections of related data &mdash; like a list of shopping items or a group of contacts with phone numbers. In fact they are frequently referred to as collections.
 
-| Data structure | Features |
-| --- | --- |
-| Lists | Ordered collection of items<br>Created using square brackets `[]` with items separated by commas<br>Example: `[1, 2, 3, 4]`<br>Items can be changed, added, or removed (mutable)<br>Each item has an index, starting at 0<br>[Lists refresher](https://www.w3schools.com/python/python_lists.asp) |
-| Tuples | Ordered collection like lists, but **cannot be changed** (immutable)<br>Created using parentheses `()` with items separated by commas<br>Example: `(1, 2, 3, 4)`<br>Good for fixed data and faster performance<br>Indexing starts at 0<br>[Tuples refresher](https://www.w3schools.com/python/python_tuples.asp) |
-| Sets | Collection of **unique** items with **no specific order**<br>Created using curly braces `{}` with items separated by commas<br>Example: `{1, 2, 3, 4}`<br>Mutable &mdash; you can add or remove items<br>Useful when you care about presence, not order or duplicates<br>[Sets refresher](https://www.w3schools.com/python/python_sets.asp) |
-| Dictionaries | Collection of **key-value pairs**<br>Created using curly braces `{}`, with a colon `:` between each key and value<br>Example: `{"Doh": "Doherty", "Fly": "Flynn"}`Keys must be unique<br>Useful when each value has a unique label or ID<br>Mutable &mdash; values can be added, updated, or deleted<br>[Dictionary refresher](https://www.w3schools.com/python/python_dictionaries.asp) |
+   In Python, we commonly use these four data structures:
 
----
+   | Data structure | Features |
+   | --- | --- |
+   | Lists | Ordered collection of items<br>Created using square brackets `[]` with items separated by commas<br>Example: `[1, 2, 3, 4]`<br>Items can be changed, added, or removed (mutable)<br>Each item has an index, starting at 0<br>[Lists refresher](https://www.w3schools.com/python/python_lists.asp) |
+   | Tuples | Ordered collection like lists, but **cannot be changed** (immutable)<br>Created using parentheses `()` with items separated by commas<br>Example: `(1, 2, 3, 4)`<br>Good for fixed data and faster performance<br>Indexing starts at 0<br>[Tuples refresher](https://www.w3schools.com/python/python_tuples.asp) |
+   | Sets | Collection of **unique** items with **no specific order**<br>Created using curly braces `{}` with items separated by commas<br>Example: `{1, 2, 3, 4}`<br>Mutable &mdash; you can add or remove items<br>Useful when you care about presence, not order or duplicates<br>[Sets refresher](https://www.w3schools.com/python/python_sets.asp) |
+   | Dictionaries | Collection of **key-value pairs**<br>Created using curly braces `{}`, with a colon `:` between each key and value<br>Example: `{"Doh": "Doherty", "Fly": "Flynn"}`Keys must be unique<br>Useful when each value has a unique label or ID<br>Mutable &mdash; values can be added, updated, or deleted<br>[Dictionary refresher](https://www.w3schools.com/python/python_dictionaries.asp) |
 
-## Syntax
+   ---
 
-**Syntax** is the set of rules a programming language follows to write commands properly. It decides which combinations of words, symbols, and punctuation are valid in that language.
+   ## Syntax
 
-[Python syntax refresher](https://www.w3schools.com/python/python_syntax.asp)
+   **Syntax** is the set of rules a programming language follows to write commands properly. It decides which combinations of words, symbols, and punctuation are valid in that language.
+
+   [Python syntax refresher](https://www.w3schools.com/python/python_syntax.asp)
 
 :::{seealso} Data Structures Activities
-:class: dropdown
-1. What is a data structure used for?
-2. How can data structures be understood in simple terms?
-3. What are the four common data structures in Python?
-4. What type of collection is a list?
-5. How is a list created in Python?
-6. What does it mean that lists are mutable?
-7. What index does Python start counting from in a list?
-8. What is one key difference between a list and a tuple?
-9. Why are tuples good for fixed data?
-10. How is a tuple created in Python?
-11. What is a set in Python?
-12. What makes sets different from lists and tuples?
-13. Can you add or remove items from a set?
-14. Why might you use a set instead of a list?
-15. What is stored in a dictionary in Python?
-16. How is a dictionary written in Python?
-17. What must be true about the keys in a dictionary?
-18. Can you update the values in a dictionary?
-19. What is syntax in programming?
-20. Why is syntax important in Python?
-:::
+   :class: dropdown
+
+27. What is a data structure used for?
+28. How can data structures be understood in simple terms?
+29. What are the four common data structures in Python?
+30. What type of collection is a list?
+31. How is a list created in Python?
+32. What does it mean that lists are mutable?
+33. What index does Python start counting from in a list?
+34. What is one key difference between a list and a tuple?
+35. Why are tuples good for fixed data?
+36. How is a tuple created in Python?
+37. What is a set in Python?
+38. What makes sets different from lists and tuples?
+39. Can you add or remove items from a set?
+40. Why might you use a set instead of a list?
+41. What is stored in a dictionary in Python?
+42. How is a dictionary written in Python?
+43. What must be true about the keys in a dictionary?
+44. Can you update the values in a dictionary?
+45. What is syntax in programming?
+46. Why is syntax important in Python?
+
+   :::
 
 ---
 
-## Libraries
+   ## Libraries
 
-A **library** is a collection of code &mdash; like functions, modules, or scripts &mdash; that you can use in your own programs. Python includes a standard library with many useful tools. You can also install extra libraries using `pip`, or even create your own.
+   A **library** is a collection of code &mdash; like functions, modules, or scripts &mdash; that you can use in your own programs. Python includes a standard library with many useful tools. You can also install extra libraries using `pip`, or even create your own.
 
----
+   ---
 
-## Classes
+   ## Classes
 
-In object-oriented programming, a **class** is a blueprint for creating objects. It defines the attributes (data) and methods (actions) that all objects of that type share.
+   In object-oriented programming, a **class** is a blueprint for creating objects. It defines the attributes (data) and methods (actions) that all objects of that type share.
 
-For example, a `Car` class might include:
+   For example, a `Car` class might include:
 
-* attributes like `colour` and `wheels`
-* methods like `drive()` and `brake()`
+- attributes like `colour` and `wheels`
+- methods like `drive()` and `brake()`
 
 You can then create many car objects from that one class, like `ferrari = Car()`.
 
@@ -373,6 +378,7 @@ We covered classes and object-oriented programming in the [Deepest Dungeon cours
 
 :::{seealso} Classes Activities
 :class: dropdown
+
 1. What is a class in object-oriented programming?
 2. What two things does a class define?
 3. What is an attribute in a class?
@@ -388,15 +394,16 @@ We covered classes and object-oriented programming in the [Deepest Dungeon cours
 13. Why might a `Truck` class share code with a `Car` class?
 14. How are objects related to classes?
 15. Where did we cover classes and object-oriented programming?
-:::
 
----
+   :::
 
-## Operations
+   ---
 
-**Operators** are symbols used to perform actions on variables or values in Python. These actions can include math, comparisons, logic checks, and more.
+   ## Operations
 
-Python includes several types of operators:
+   **Operators** are symbols used to perform actions on variables or values in Python. These actions can include math, comparisons, logic checks, and more.
+
+   Python includes several types of operators:
 
 - Arithmetic operators
 - Assignment operators
@@ -497,6 +504,7 @@ Used with binary numbers. Rarely needed in basic Python, but good to know they e
 
 :::{seealso} Operations Activities
 :class: dropdown
+
 1. What is an operator in Python used for?
 2. Name three types of Python operators.
 3. What do arithmetic operators do?
@@ -520,4 +528,5 @@ Used with binary numbers. Rarely needed in basic Python, but good to know they e
 21. What does `'a' in 'apple'` return?
 22. When would `not in` be used?
 23. What will `5 not in [1, 2, 3]` return?
-:::
+
+   :::

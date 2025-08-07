@@ -10,7 +10,7 @@ By the end of this section you will:
 
 ## What is User Experience?
 
-UX, or User Experience, refers to the overall experience that a person has when interacting with a product, service, or system, especially in the context of digital technology. It encompasses all aspects of a user's interaction, including how easy or difficult it is to use, the efficiency of the interaction, how enjoyable and satisfying the experience is, and whether it meets the user's needs and expectations. 
+UX, or User Experience, refers to the overall experience that a person has when interacting with a product, service, or system, especially in the context of digital technology. It encompasses all aspects of a user's interaction, including how easy or difficult it is to use, the efficiency of the interaction, how enjoyable and satisfying the experience is, and whether it meets the user's needs and expectations.  
 
 ![ux vs ui](./assets/01/ui_vs_ux.png)<p>&nbsp;</p>
 
@@ -24,6 +24,7 @@ This might seem obvious, but the history of digital solutions is littered with e
 
 :::{seealso} User Experience Activities
 :class: dropdown
+
 1. What does User Experience (UX) refer to in the context of digital technology?
 2. Why is it important to focus on user-first design instead of developer-first or machine-first design?
 :::

@@ -15,6 +15,7 @@ By the end of this section you will:
 **Use case diagrams** are a type of Unified Modelling Language (UML) diagram used to visually represent the interactions between users (called *actors*) and a system. Each *use case* is a specific **goal or task** that a user wants to achieve using the system, such as "Log In," "Place Order," or "View Results."
 
 **How They Assist in the Design of a Digital Solution:**
+
 - **Clarify System Requirements**: Use case diagrams help identify what functions the system must perform by showing the goals of each user type.
 - **Identify Different User Roles**: By representing different actors, they make it easier to see who will interact with the system and how.
 - **Improve Communication**: Use case diagrams provide a clear and simple way to discuss system functionality with stakeholders, including non-technical users.
@@ -36,35 +37,38 @@ This tutorial, led by Chloe, explains how to create UML Use Case diagrams. These
 
 The tutorial breaks down Use Case diagrams into four key elements, using a **Banking App** as a running example:
 
-1.  **System:** The application or process being developed (e.g., the Banking App). It is represented by a large rectangle that defines the scope of the system.
-2.  **Actors:** External people, organizations, or other systems that interact with the system. They are shown as stick figures outside the system rectangle.
-    - **Primary Actors:** Initiate actions (e.g., a `Customer`). Placed on the left.
-    - **Secondary Actors:** React to the system or primary actor's actions (e.g., the `Bank`). Placed on the right.
-3.  **Use Cases:** Specific actions or goals an actor can achieve within the system (e.g., `Log In`, `Check Balance`). They are represented by ovals inside the system rectangle and are typically named with verb-led phrases.
-4.  **Relationships:** Lines that connect the elements and show interaction. There are four main types:
-    - **Association:** A simple solid line showing an actor interacts with a use case.
-    - **Include (`<<include>>`):** A mandatory relationship where a base use case *requires* another use case to function. This happens *every time*. The dashed arrow points to the required use case (e.g., `Log In` includes `Verify Password`).
-    - **Extend (`<<extend>>`):** An optional relationship where one use case *may* be triggered under certain conditions. This happens *sometimes*. The dashed arrow points back to the base use case (e.g., a failed `Log In` extends to `Display Login Error`).
-    - **Generalization:** A parent-child relationship where specialized "child" use cases (e.g., `Pay from Checking`) inherit the properties of a general "parent" use case (e.g., `Make Payment`). The arrow points from the child to the parent.
+1. **System:** The application or process being developed (e.g., the Banking App). It is represented by a large rectangle that defines the scope of the system.
+2. **Actors:** External people, organizations, or other systems that interact with the system. They are shown as stick figures outside the system rectangle.
+
+   - **Primary Actors:** Initiate actions (e.g., a `Customer`). Placed on the left.
+   - **Secondary Actors:** React to the system or primary actor's actions (e.g., the `Bank`). Placed on the right.
+
+3. **Use Cases:** Specific actions or goals an actor can achieve within the system (e.g., `Log In`, `Check Balance`). They are represented by ovals inside the system rectangle and are typically named with verb-led phrases.
+4. **Relationships:** Lines that connect the elements and show interaction. There are four main types:
+
+   - **Association:** A simple solid line showing an actor interacts with a use case.
+   - **Include (`<<include>>`):** A mandatory relationship where a base use case *requires* another use case to function. This happens *every time*. The dashed arrow points to the required use case (e.g., `Log In` includes `Verify Password`).
+   - **Extend (`<<extend>>`):** An optional relationship where one use case *may* be triggered under certain conditions. This happens *sometimes*. The dashed arrow points back to the base use case (e.g., a failed `Log In` extends to `Display Login Error`).
+   - **Generalization:** A parent-child relationship where specialized "child" use cases (e.g., `Pay from Checking`) inherit the properties of a general "parent" use case (e.g., `Make Payment`). The arrow points from the child to the parent.
 :::
 
-## Steps to create a Use Case Diagram
-1. What is the system being created?
-2. Who are the actors using the system? (People, Organisations, Other systems, External devices)
-3. Is each actor a primary actor or a secondary actor?
-4. What actions will the primary actors want to do with the system?
-5. How will each actor interact with the use cases?
-6. Are the any new actions automatically connected to current use cases?
-7. Are there any additional, optional actions connected to current use cases?
-8. Do any use cases or actors have sub categories?
+   ## Steps to create a Use Case Diagram
+5. What is the system being created?
+6. Who are the actors using the system? (People, Organisations, Other systems, External devices)
+7. Is each actor a primary actor or a secondary actor?
+8. What actions will the primary actors want to do with the system?
+9. How will each actor interact with the use cases?
+10. Are the any new actions automatically connected to current use cases?
+11. Are there any additional, optional actions connected to current use cases?
+12. Do any use cases or actors have sub categories?
 
-## Use Case Diagram Symbols
+   ## Use Case Diagram Symbols
 
-![Use Case Diagram Symbols](./assets/04/use_case_symbols.png)<p>&nbsp;</p>
+   ![Use Case Diagram Symbols](./assets/04/use_case_symbols.png)<p>&nbsp;</p>
 
-### Extend and Include
+   ### Extend and Include
 
-These two are easy to confuse:
+   These two are easy to confuse:
 - **Extend** &rarr; adds more functionality to the system
   - is dependent on the extended (base) use case
   - usually optional and can be triggered conditionally

@@ -9,7 +9,7 @@ By the end of this section you will:
 
 ## Introduction
 
-Establishing success criteria is essential for your digital solutions project because it gives clear goals and measurable benchmarks for evaluating the effectiveness and quality of your solution. 
+Establishing success criteria is essential for your digital solutions project because it gives clear goals and measurable benchmarks for evaluating the effectiveness and quality of your solution.  
 
 Success criteria are used to:
 
@@ -22,7 +22,7 @@ Using success criteria means you can determine whether their digital solution is
 
 ## Requirements table
 
-Solution requirements are the specific needs and constraints that must be addressed when creating a digital solution. 
+Solution requirements are the specific needs and constraints that must be addressed when creating a digital solution.  
 
 These requirements typically include:
 
@@ -76,20 +76,23 @@ You should write criteria for all the requirements with the **Must** and **Shoul
 To write a **success criteria** for a requirement, describe how you will know the requirement has been met. It should be **specific, measurable, and testable**.
 
 1. **Start with the requirement**
+
    - e.g. “The solution must allow users to upload images.”
 
 2. **Decide how to measure success**
+
    - What evidence proves it works?
    - e.g. “User can upload an image file (JPG/PNG) and see a preview.”
 
 3. **Write the success criteria clearly**
+
    - e.g. “Users can successfully upload a JPG or PNG image, which is displayed within 2 seconds.”
 
-Good success criteria are:
+   Good success criteria are:
 
-* **Clear**: Easy to understand
-* **Testable**: You can check if it's met
-* **Relevant**: Tied to the requirement
+- **Clear**: Easy to understand
+- **Testable**: You can check if it's met
+- **Relevant**: Tied to the requirement
 
 **Layout**
 
@@ -113,16 +116,16 @@ Instructions:
 1. Read the scenario above.
 2. List the following:
 
-   * 3 **functional requirements** (What the solution must do)
-   * 3 **non-functional requirements** (How the solution should perform)
-   * 2 **user experience requirements** (What the user needs or expects)
-   * 2 **constraints** (Limitations like time, tools, or platforms)
+   - 3 **functional requirements** (What the solution must do)
+   - 3 **non-functional requirements** (How the solution should perform)
+   - 2 **user experience requirements** (What the user needs or expects)
+   - 2 **constraints** (Limitations like time, tools, or platforms)
 
-**Activity 2: Prioritising with a MuSCoW Table**
+   **Activity 2: Prioritising with a MuSCoW Table**
 
-You are developing a website for a local gym. The gym wants to attract new members, keep current members informed, and make communication easy. Below are 20 possible requirements. Sort them into the correct **MuSCoW** categories.
+   You are developing a website for a local gym. The gym wants to attract new members, keep current members informed, and make communication easy. Below are 20 possible requirements. Sort them into the correct **MuSCoW** categories.
 
-Possible Requirements:
+   Possible Requirements:
 
 - Users can view class timetables
 - Pages load in under 3 seconds
@@ -149,4 +152,4 @@ Possible Requirements:
 
 1. Transfer the requirements from the MuSCoW table in activity 2 into a Success Criteria Table.
 2. Create a success criteria for each requirement.
-:::
+   :::

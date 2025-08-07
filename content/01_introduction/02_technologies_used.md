@@ -31,38 +31,39 @@ The Microsoft Store offers two advantages:
 
 1. Python will automatically be added to the **[PATH variable](https://www.maketecheasier.com/what-is-the-windows-path/)**.
 2. Windows will automatically update minor release of Python. For example
+
    - it will update 3.12.0 &rarr; 3.12.1
    - it **won't** update 3.12.0 &rarr; 3.13
 
-To install via the Microsoft Store:
+   To install via the Microsoft Store:
 
-1. Open the Microsoft Store on Windows
-2. Search for Python 3.12 and select it
-3. Click the **Get** button in the top right-hand corner
+3. Open the Microsoft Store on Windows
+4. Search for Python 3.12 and select it
+5. Click the **Get** button in the top right-hand corner
 
-#### Official website
+   #### Official website
 
-To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
+   To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
 
-:::{danger}Important step for Windows users
-<font color=red>**Really important for Windows users (hence the red):** You need to make sure that you check the box beside **Add Python 3.1X to PATH**. Failure to do this will hamper the use of Python on Windows, and when you have a problem, I will just tell you to reinstall it using the instructions that you should have used the first time.</font>
+   :::{danger}Important step for Windows users
+   <font color=red>**Really important for Windows users (hence the red):** You need to make sure that you check the box beside **Add Python 3.1X to PATH**. Failure to do this will hamper the use of Python on Windows, and when you have a problem, I will just tell you to reinstall it using the instructions that you should have used the first time.</font>
 
-<font color=red>Follow the steps below:</font>
+   <font color=red>Follow the steps below:</font>
 
-![python installer](./assets/02/01_pytyon_installer.png)
-:::
+   ![python installer](./assets/02/01_pytyon_installer.png)
+   :::
 
-### Mac Users
+   ### Mac Users
 
-To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
+   To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
 
----
+   ---
 
-## Python Packages
+   ## Python Packages
 
-Python comes installed with a range of packages. This is called **[The Python Standard Library](https://docs.python.org/3/library/)**. Although these might seem like a huge number of packages, it is actually a very small selection of packages available. These cover Python's basic operations, and limiting the install to these packages reduces the size of Python.
+   Python comes installed with a range of packages. This is called **[The Python Standard Library](https://docs.python.org/3/library/)**. Although these might seem like a huge number of packages, it is actually a very small selection of packages available. These cover Python's basic operations, and limiting the install to these packages reduces the size of Python.
 
-To extend the functionality of Python, you need to install additional packages. These packages can be found at the **[Python Package Index](https://pypi.org/)**. Some of the packages we will use are:
+   To extend the functionality of Python, you need to install additional packages. These packages can be found at the **[Python Package Index](https://pypi.org/)**. Some of the packages we will use are:
 
 - **[PyQt6](https://pypi.org/project/PyQt6/)**
 - **[Requests](https://pypi.org/project/requests/)**
@@ -99,7 +100,7 @@ We will be using the below extensions in VS Code to expand it's capabilities:
 
 - **[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)** - provides extra Python functionality
 - **[Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)** - provides code completion and error checking
-- **[Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)** - Formats your code to comply with recorgnised style guides 
+- **[Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)** - Formats your code to comply with recorgnised style guides  
 - **[SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)** - allows the viewing of SQLite databases
 - **[Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)** - colourfies CSV files to make the easier to read
 - **[CSV to Table](https://marketplace.visualstudio.com/items?itemName=phplasma.csv-to-table)** - converts CSV files into tables
@@ -126,7 +127,7 @@ At its core, the main purpose of Python virtual environments is to create an iso
 
 :::{hint} requirements.txt
 :class: dropdown
-The `requirements.txt` file lists all the external libraries that we need to install for this project. 
+The `requirements.txt` file lists all the external libraries that we need to install for this project.  
 
 You can add extra libraries to this file, but to install them you will need to run the command:
 
@@ -145,30 +146,30 @@ To do this:
 1. Open PowerShell **as Administrator**
 2. Type the following: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` then Enter
 
-You shouldn't need to do this again, unless you get a new computer.
-:::
+   You shouldn't need to do this again, unless you get a new computer.
+   :::
 
-To create a virtual environment for this project:
+   To create a virtual environment for this project:
 
-1. Press **Ctrl/Cmd** + **Shift** + **P**
-2. Type **Python** at the top
-3. Choose **Python: Create Environment...**
+3. Press **Ctrl/Cmd** + **Shift** + **P**
+4. Type **Python** at the top
+5. Choose **Python: Create Environment...**
 
-![Create venv 1](assets/02/02_create_venv_1.png)
+   ![Create venv 1](assets/02/02_create_venv_1.png)
 
-4. At the top choose the **Venv** option
+6. At the top choose the **Venv** option
 
-![Create venv 2](assets/02/03_create_venv_2.png)
+   ![Create venv 2](assets/02/03_create_venv_2.png)
 
-5. Then choose the latest version of Python that you just installed
+7. Then choose the latest version of Python that you just installed
 
-![Create venv 3](assets/02/04_create_venv_3.png)
+   ![Create venv 3](assets/02/04_create_venv_3.png)
 
 6. Tick the box beside **requirements.txt** and then **ok**
 
-![Create venv 4](assets/02/05_create_venv_4.png)
+   ![Create venv 4](assets/02/05_create_venv_4.png)
 
-VS Code will now:
+   VS Code will now:
 
 - create your virtual environment
 - perform any necessary updates
@@ -203,7 +204,7 @@ To make working with GitHub easier, we will also be using **[GitHub Desktop](htt
 
 ## Database Management System
 
-Database Management Systems (DBMS) are software systems used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update, and delete data in the database. 
+Database Management Systems (DBMS) are software systems used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update, and delete data in the database.  
 
 In Unit 2 we will working with databases using SQL (Structured Query Language), in particular a version caller SQLite. Ultimately in Unit 3 we will designing and developing our own DBMS, but for Unit 2 we will use a lightweight DBMS called **[DB Browser for SQLite](https://sqlitebrowser.org/)**.
 
@@ -212,6 +213,7 @@ In Unit 2 we will working with databases using SQL (Structured Query Language), 
 ## Other Tools
 
 (xmind_install)=
+
 ### XMind
 
 An important step in analysing and planning in Digital Solutions is using mind maps. There are many mind mapping tools available, both desktop and online, but I recommend that we use **[Xmind](https://xmind.app/)**. The free version has all the features we need. **When it asks you to create an account, choose the skip option**.
@@ -225,6 +227,7 @@ Throughout the course you will need to create a range of diagrams. To do this we
 We will be using Figma to create wireframes, mock-ups, prototypes, and application interface flowcharts. To access Figma **[got to the website](https://www.figma.com/)**. Check with your teacher for your account details.
 
 (qt_designer)=
+
 ### Qt Designer
 
 **[Qt Designer](https://build-system.fman.io/qt-designer-download)** is a tool for quickly building graphical user interfaces with widgets from the Qt GUI framework. It gives you a simple drag-and-drop interface for laying out components such as buttons, text fields, combo boxes and more. We will be using it throughout the course.

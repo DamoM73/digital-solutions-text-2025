@@ -49,7 +49,6 @@ When evaluating a digital solution, several personal impacts should be considere
 - **Social Connections:** Consider whether the solution fosters positive social interactions or contributes to isolation and loneliness.
 - **Ethical and Legal Compliance:** Ensure the solution aligns with ethical standards and legal requirements, such as avoiding defamation and ensuring inclusivity.
 
-
 ### Economic and Practical Factors
 
 - **Cost and Economic Impact:** Consider personal financial implications, such as purchase costs, subscription fees, or potential savings from increased efficiency.
@@ -98,38 +97,37 @@ When evaluating a digital solution, consider how it affects social equity, inclu
 | Economic Participation | Job creation or loss, access to education, skills development, and workforce changes |
 | Unintended Societal Effects | Surveillance, isolation, algorithmic bias, and systemic inequality |
 
-
 ### Equity & Inclusion
 
 Digital solutions should be accessible and usable by all people, regardless of socioeconomic status, ability, age, language, or location.
 
-* Does the solution enable fair access to technology and opportunities?
-* Is it usable by people with different abilities, incomes, languages, or digital literacy levels?
+- Does the solution enable fair access to technology and opportunities?
+- Is it usable by people with different abilities, incomes, languages, or digital literacy levels?
 
 ### Community & Culture
 
 Digital solutions influence how people communicate, form communities, and trust each other.
 
-* Does the solution strengthen social connections and community engagement?
-* Could it increase polarisation, mistrust, or social isolation?
+- Does the solution strengthen social connections and community engagement?
+- Could it increase polarisation, mistrust, or social isolation?
 
 ### Well-being & Safety
 
 Digital solutions must protect users from harm and promote healthy usage.
 
-* Are there risks of digital addiction, cyberbullying, or harm to mental health?
-* Does the solution protect user privacy and build trust through strong data practices?
+- Are there risks of digital addiction, cyberbullying, or harm to mental health?
+- Does the solution protect user privacy and build trust through strong data practices?
 
 ### Economic Participation
 
 Digital tools can support or disrupt employment, education, and economic opportunity.
 
-* Will the solution create or eliminate jobs?
-* Does it promote learning and digital skill development across all sectors of society?
+- Will the solution create or eliminate jobs?
+- Does it promote learning and digital skill development across all sectors of society?
 
 ### Unintended Societal Effects
 
-* Could the solution lead to negative systemic outcomes, such as surveillance, exclusion, or reinforcing social inequalities?
+- Could the solution lead to negative systemic outcomes, such as surveillance, exclusion, or reinforcing social inequalities?
 
 :::{seealso} Social Impacts Activities
 :class: dropdown
@@ -137,10 +135,10 @@ Digital tools can support or disrupt employment, education, and economic opportu
 
 A city council installs facial recognition cameras in public spaces to increase safety. The system tracks movement, identifies known criminals, and alerts authorities in real time.
 
-* Identify **equity and inclusion** concerns.
-* Assess impacts on **well-being and safety**.
-* Evaluate possible **unintended societal effects**.
-* Make recommendations to reduce negative impacts.
+- Identify **equity and inclusion** concerns.
+- Assess impacts on **well-being and safety**.
+- Evaluate possible **unintended societal effects**.
+- Make recommendations to reduce negative impacts.
 
 ---
 
@@ -148,10 +146,10 @@ A city council installs facial recognition cameras in public spaces to increase 
 
 A company uses AI to automatically screen job applications. The AI ranks candidates and filters out applicants based on patterns from past hires.
 
-* Assess how the solution affects **economic participation**.
-* Identify risks to **equity and inclusion**.
-* Discuss whether the tool promotes **social justice** or reinforces inequality.
-* Suggest refinements to improve fairness and transparency.
+- Assess how the solution affects **economic participation**.
+- Identify risks to **equity and inclusion**.
+- Discuss whether the tool promotes **social justice** or reinforces inequality.
+- Suggest refinements to improve fairness and transparency.
 
 ---
 
@@ -159,10 +157,10 @@ A company uses AI to automatically screen job applications. The AI ranks candida
 
 A school introduces a mobile app to update students and parents on homework, events, and attendance. However, some families don’t have smartphones or internet access at home.
 
-* Evaluate the solution's impact on **community and culture**.
-* Identify **equity and inclusion** issues.
-* Assess how the app might affect **education access and fairness**.
-* Propose changes to make the system more inclusive.
+- Evaluate the solution's impact on **community and culture**.
+- Identify **equity and inclusion** issues.
+- Assess how the app might affect **education access and fairness**.
+- Propose changes to make the system more inclusive.
 :::
 
 ## Economic Impacts
@@ -185,38 +183,38 @@ Digital solutions can reshape economies by influencing productivity, employment,
 
 ### Economic Productivity
 
-* Does the solution reduce costs and improve efficiency in key economic sectors?
-* Consider gains in automation, streamlined logistics, and more effective resource use that boost national productivity.
+- Does the solution reduce costs and improve efficiency in key economic sectors?
+- Consider gains in automation, streamlined logistics, and more effective resource use that boost national productivity.
 
 ### Employment & Workforce
 
-* Will it create new roles (e.g. in tech or services) or displace existing jobs through automation?
-* Evaluate the need for reskilling programs and the balance between job loss and creation.
+- Will it create new roles (e.g. in tech or services) or displace existing jobs through automation?
+- Evaluate the need for reskilling programs and the balance between job loss and creation.
 
 ### Market Growth & Trade
 
-* Can it enable local firms to access new markets or compete globally through digital trade?
-* Digital tools can lower barriers for small businesses and enhance export potential for services.
+- Can it enable local firms to access new markets or compete globally through digital trade?
+- Digital tools can lower barriers for small businesses and enhance export potential for services.
 
 ### Inclusion & Access
 
-* Does the solution expand access to essential services like banking, education, or government platforms?
-* Broader access boosts participation in the formal economy and reduces inequality.
+- Does the solution expand access to essential services like banking, education, or government platforms?
+- Broader access boosts participation in the formal economy and reduces inequality.
 
 ### Resilience & Innovation
 
-* Can the economy better withstand shocks (e.g. pandemics, supply chain failures) through this solution?
-* Does it foster entrepreneurship, new business models, or scalable innovations?
+- Can the economy better withstand shocks (e.g. pandemics, supply chain failures) through this solution?
+- Does it foster entrepreneurship, new business models, or scalable innovations?
 
 ### Public Revenue & Policy
 
-* How will digitalisation affect tax bases (e.g. e-commerce, gig economy)?
-* Consider the need for updated regulations to ensure fair taxation and economic oversight.
+- How will digitalisation affect tax bases (e.g. e-commerce, gig economy)?
+- Consider the need for updated regulations to ensure fair taxation and economic oversight.
 
 ### Return on Investment
 
-* Do the long-term benefits (e.g. efficiency, exports, job growth) outweigh the upfront investment?
-* Include costs of infrastructure, training, and system maintenance in the analysis.
+- Do the long-term benefits (e.g. efficiency, exports, job growth) outweigh the upfront investment?
+- Include costs of infrastructure, training, and system maintenance in the analysis.
 
 :::{seealso} Economic Impacts Activities
 :class: dropdown

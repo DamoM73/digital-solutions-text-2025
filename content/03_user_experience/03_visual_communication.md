@@ -25,9 +25,9 @@ The website we will analyse is the [Official Lego website](https://www.lego.com/
 
 ## Visual Communication Principles
 
-The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve. 
+The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve.  
 
-To remember the Visual Communication Principles use the mnemonic: **All Big Cats Have Really Hairy Paws** 
+To remember the Visual Communication Principles use the mnemonic: **All Big Cats Have Really Hairy Paws**  
 
 ### Alignment
 

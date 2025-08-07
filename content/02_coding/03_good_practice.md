@@ -87,6 +87,7 @@ Reliability is how likely a program is to run without errors or failures when pe
 
 :::{seealso} Dependability Activities
 :class: dropdown
+
 1. What makes code dependable, and how can this affect the user's trust in a digital solution?
 2. How does writing code that is easy to understand and update improve its maintainability?
 3. Why is it important to reduce cognitive load when writing code?
@@ -97,19 +98,20 @@ Reliability is how likely a program is to run without errors or failures when pe
 8. What is the connection between testing and a program's reliability?
 9. How can good naming conventions help reduce confusion in multi-person projects?
 10. Why is it important for a program to handle edge cases and unexpected inputs gracefully?
-:::
 
----
+   :::
 
-## Efficiency
+   ---
 
-Efficiency is when a system completes its tasks using the least possible time and processing power. There are two main types:
+   ## Efficiency
 
-### Algorithmic Efficiency
+   Efficiency is when a system completes its tasks using the least possible time and processing power. There are two main types:
 
-This refers to how reliably and quickly an algorithm solves a problem, using clear and structured programming techniques to keep solutions concise and effective.
+   ### Algorithmic Efficiency
 
-To achieve algorithmic efficiency in your programs, you can follow these simple practices:
+   This refers to how reliably and quickly an algorithm solves a problem, using clear and structured programming techniques to keep solutions concise and effective.
+
+   To achieve algorithmic efficiency in your programs, you can follow these simple practices:
 
 - **Pick the right data structure:** Use structures like lists, dictionaries or sets that help you store and access data quickly.
 - **Avoid unnecessary steps:** Don’t repeat the same actions if you don’t need to. Keep your code clean and direct.
@@ -135,6 +137,7 @@ To achieve code efficiency in your programs, you can follow these tips:
 
 :::{seealso} Efficiency Activities
 :class: dropdown
+
 1. What does it mean for a system to be efficient in terms of time and processing power?
 2. How does choosing the right data structure improve algorithmic efficiency?
 3. Why should unnecessary steps be avoided when writing code?
@@ -149,15 +152,16 @@ To achieve code efficiency in your programs, you can follow these tips:
 12. How can storing repeated calculations in a variable improve code performance?
 13. What is the benefit of using a dictionary instead of a list when looking up data?
 14. Why is testing your code with different data sizes important for improving efficiency?
-:::
 
----
+   :::
 
-## Effectiveness
+   ---
 
-Effectiveness measures how well an algorithm solves the intended problem. While simple problems can be tested with a desk check, most algorithms must be written, run, and tested in the correct context to determine if they work as expected.
+   ## Effectiveness
 
-To ensure your algorithm is effective, follow these steps:
+   Effectiveness measures how well an algorithm solves the intended problem. While simple problems can be tested with a desk check, most algorithms must be written, run, and tested in the correct context to determine if they work as expected.
+
+   To ensure your algorithm is effective, follow these steps:
 
 - **Understand the problem clearly:** Make sure you know what the problem is asking and what a correct solution looks like.
 - **Define success criteria:** Decide how you will measure whether the solution works — e.g. correct output, valid data, or user satisfaction.
@@ -169,6 +173,7 @@ To ensure your algorithm is effective, follow these steps:
 
 :::{seealso} Effectiveness Activities
 :class: dropdown
+
 1. What does effectiveness measure in relation to an algorithm?
 2. Why is it important to understand the problem clearly before designing an algorithm?
 3. What is the purpose of defining success criteria when creating a solution?
@@ -179,15 +184,16 @@ To ensure your algorithm is effective, follow these steps:
 8. What should you do if your algorithm does not work as expected after testing?
 9. How can user or tester feedback be used to improve an algorithm?
 10. Why might a desk check be enough for simple problems but not for more complex ones?
-:::
 
----
+   :::
 
-## Testing
+   ---
 
-![testing](./assets/03/software_testing_day.png)<p>&nbsp;</p>
+   ## Testing
 
-Testing is the process of systematically checking that your code performs as expected. It plays a key role in ensuring a solution is **effective** (solves the intended problem), **efficient** (runs smoothly and quickly), and **dependable** (works reliably under different conditions). Testing should happen throughout development and involves three main types:
+   ![testing](./assets/03/software_testing_day.png)<p>&nbsp;</p>
+
+   Testing is the process of systematically checking that your code performs as expected. It plays a key role in ensuring a solution is **effective** (solves the intended problem), **efficient** (runs smoothly and quickly), and **dependable** (works reliably under different conditions). Testing should happen throughout development and involves three main types:
 
 - **Exploratory testing**: Informal testing done without a set plan. It helps check overall behaviour by trying out features and experimenting. This is useful for spotting unexpected issues early and ensuring the solution feels effective and usable.
 - **Unit testing**: Focuses on testing individual parts of the code (like functions or classes) to make sure each component behaves correctly. This improves dependability by catching errors close to the source.
@@ -197,6 +203,7 @@ By combining all three types of testing, you can refine your solution to be more
 
 :::{seealso} Testing Activities
 :class: dropdown
+
 1. What is the main purpose of testing in software development?
 2. How does testing contribute to making a solution effective, efficient, and dependable?
 3. Why should testing occur throughout the development process?
@@ -207,24 +214,26 @@ By combining all three types of testing, you can refine your solution to be more
 8. What is integrated testing and what does it aim to check?
 9. Why is integrated testing important for checking interactions between components?
 10. How do the three types of testing work together to refine a digital solution?
-:::
 
----
+   :::
 
-## Debugging
+   ---
 
-![debugging](./assets/03/debugging.png)<p>&nbsp;</p>
+   ## Debugging
 
-Debugging is the process of identifying and fixing errors (called *bugs*) in a program that stop it from working correctly. These bugs might cause the program to crash, behave unexpectedly, or give incorrect output.
+   ![debugging](./assets/03/debugging.png)<p>&nbsp;</p>
 
-In **Python**, bugs can happen for many reasons &mdash; such as syntax mistakes, incorrect variable names, bad logic, or unexpected data types. Because Python runs line-by-line, a single error can stop the whole program. That’s why debugging is an important part of development.
+   Debugging is the process of identifying and fixing errors (called *bugs*) in a program that stop it from working correctly. These bugs might cause the program to crash, behave unexpectedly, or give incorrect output.
 
-If you're using **Visual Studio Code (VSCode)** to write Python, it has built-in tools that make debugging easier. 
+   In **Python**, bugs can happen for many reasons &mdash; such as syntax mistakes, incorrect variable names, bad logic, or unexpected data types. Because Python runs line-by-line, a single error can stop the whole program. That’s why debugging is an important part of development.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qe1oCJk-DYU?si=gS75xZhxPVo1fhK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   If you're using **Visual Studio Code (VSCode)** to write Python, it has built-in tools that make debugging easier.  
 
-:::{tip} Summary
-:class: dropdown
+   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qe1oCJk-DYU?si=gS75xZhxPVo1fhK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   :::{tip} Summary
+   :class: dropdown
+
 - **Setup**: To get started, you need to install the **Python** and **Python Debugger** extensions in VS Code.
 - **Starting the Debugger**: You can start a debug session by going to the "Run and Debug" tab and clicking "Run and Debug". VS Code will ask you to select a debug configuration; for a simple script, choosing "Python File" is sufficient.
 - **Breakpoints**:
@@ -242,11 +251,11 @@ If you're using **Visual Studio Code (VSCode)** to write Python, it has built-in
   - While the code is paused, you can directly edit the values of variables in the "Variables" panel. This allows you to test different scenarios or manually fix a problematic value to see if the rest of the code runs correctly.
 :::
 
-* **The Debug Panel** lets you run your Python code step by step, so you can see exactly what your program is doing.
-* You can set **breakpoints** (red dots beside the line numbers) to pause the program at certain points and inspect what’s happening.
-* The **variables panel** shows the current values stored in your variables while the code is paused.
-* The **watch panel** lets you keep track of specific expressions or values as the code runs.
-* You can use the **call stack** to see which functions were called and in what order.
+- **The Debug Panel** lets you run your Python code step by step, so you can see exactly what your program is doing.
+- You can set **breakpoints** (red dots beside the line numbers) to pause the program at certain points and inspect what’s happening.
+- The **variables panel** shows the current values stored in your variables while the code is paused.
+- The **watch panel** lets you keep track of specific expressions or values as the code runs.
+- You can use the **call stack** to see which functions were called and in what order.
 
 VSCode also supports **print-based debugging**, where you add `print()` statements to show what your code is doing at certain points. This is useful for quick checks or when you’re not sure where the bug is hiding.
 
@@ -254,6 +263,7 @@ By using these tools and strategies, you can quickly find and fix bugs to make y
 
 :::{seealso} Debugging Activities
 :class: dropdown
+
 1. What is debugging and why is it important in Python programming?
 2. What kinds of problems can bugs cause in a Python program?
 3. Why can a single error stop a Python program from running?
@@ -274,23 +284,24 @@ By using these tools and strategies, you can quickly find and fix bugs to make y
 18. What steps should you take to prepare VSCode for Python debugging?
 19. Why is it useful to test different values while paused using live editing?
 20. How do these debugging tools help make Python programs more reliable?
-:::
 
----
+   :::
 
-## Error Correction
+   ---
 
-Fixing errors is a normal and essential part of programming. Over time, experienced developers become skilled at identifying and correcting the mistakes they make. 
+   ## Error Correction
 
-![xkcd error fixing](./assets/03/fixing_problems.png)<p>&nbsp;</p>
+   Fixing errors is a normal and essential part of programming. Over time, experienced developers become skilled at identifying and correcting the mistakes they make.  
 
-During program development, three main types of errors can occur:
+   ![xkcd error fixing](./assets/03/fixing_problems.png)<p>&nbsp;</p>
 
-### Syntax Errors
+   During program development, three main types of errors can occur:
 
-Syntax errors happen when the code breaks the rules of the programming language. These errors prevent the program from running at all and must be fixed before execution. Most integrated development environments (IDEs) will highlight syntax errors automatically.
+   ### Syntax Errors
 
-Examples include:
+   Syntax errors happen when the code breaks the rules of the programming language. These errors prevent the program from running at all and must be fixed before execution. Most integrated development environments (IDEs) will highlight syntax errors automatically.
+
+   Examples include:
 
 - Misspelling a command (e.g. writing `pint` instead of `print`)
 - Using a variable before declaring it
@@ -321,6 +332,7 @@ Examples include:
 
 :::{seealso} Error Correction Activities
 :class: dropdown
+
 1. What is error correction in programming and why is it important?
 2. How do experienced developers improve their ability to fix errors?
 3. What are the three main types of errors that can occur during program development?
@@ -341,27 +353,28 @@ Examples include:
 18. How can Boolean operators lead to logic errors if misused?
 19. What type of error occurs if a variable is used before it’s declared?
 20. How can poor program design contribute to logic errors?
-:::
 
----
+   :::
 
-## Coding Conventions
+   ---
 
-![code conventions](./assets/03/donald_knuth.png)<p>&nbsp;</p>
+   ## Coding Conventions
 
-### Code Simplicity
+   ![code conventions](./assets/03/donald_knuth.png)<p>&nbsp;</p>
 
-Code simplicity means writing programs in a way that is easy to read and understand. It focuses on using clear logic, meaningful variable names, and avoiding unnecessary complexity. 
+   ### Code Simplicity
 
-Simple code is easier to test, fix, and update, making it more efficient and less likely to contain errors.
+   Code simplicity means writing programs in a way that is easy to read and understand. It focuses on using clear logic, meaningful variable names, and avoiding unnecessary complexity.  
 
-### Naming Conventions in Python
+   Simple code is easier to test, fix, and update, making it more efficient and less likely to contain errors.
 
-![naming conventions](./assets/03/x.png)<p>&nbsp;</p>
+   ### Naming Conventions in Python
 
-Python has **naming rules** (which must be followed or you'll get an error) and **naming conventions** (which help others understand your code better).
+   ![naming conventions](./assets/03/x.png)<p>&nbsp;</p>
 
-**Naming rules:**
+   Python has **naming rules** (which must be followed or you'll get an error) and **naming conventions** (which help others understand your code better).
+
+   **Naming rules:**
 
 - Only letters, numbers, and underscores (`_`) are allowed
 - No spaces
@@ -387,10 +400,9 @@ Python has **naming rules** (which must be followed or you'll get an error) and 
 - Avoid using Python keywords as names:
   - e.g. `print`, `for`, `if`, `while`
 
-
 ### Commenting
 
-If you use meaningful names following naming conventions, most of your code will be easy to understand without extra explanation. 
+If you use meaningful names following naming conventions, most of your code will be easy to understand without extra explanation.  
 
 ![commenting comic](./assets/03/future_self.png)<p>&nbsp;</p>
 
@@ -402,11 +414,11 @@ However, comments are still important in two key places:
 def calculate_area(width, height):
     """
     Calculates the area of a rectangle.
-    
+
     Parameters:
     width (float): The width of the rectangle.
     height (float): The height of the rectangle.
-    
+
     Returns:
     float: The area of the rectangle.
     """
@@ -430,6 +442,7 @@ Code portability means writing code that works across different platforms and sy
 
 :::{seealso} Coding Conventions Activities
 :class: dropdown
+
 1. What does code simplicity mean and why is it important?
 2. How does using clear logic and meaningful variable names improve code quality?
 3. Why is simple code easier to test, fix, and update?
@@ -450,31 +463,37 @@ Code portability means writing code that works across different platforms and sy
 18. How do block comments help explain unclear code sections?
 19. What does code portability mean?
 20. Why is Python considered a portable language?
-:::
 
-:::{seealso} Good Programming Practice Activity
-:class: dropdown
-You are part of a development team creating a simple Python console app for a cinema booking system. A former developer has left the code in poor condition: it’s buggy, hard to read, and doesn’t follow good programming practice. Your job is to apply your understanding of good programming practices to review, fix, and improve the code.
+   :::
 
-Instructions:
+   :::{seealso} Good Programming Practice Activity
+   :class: dropdown
+   You are part of a development team creating a simple Python console app for a cinema booking system. A former developer has left the code in poor condition: it’s buggy, hard to read, and doesn’t follow good programming practice. Your job is to apply your understanding of good programming practices to review, fix, and improve the code.
 
-1. Download and Review the Starter Code: [booking code](./assets/03/booking_system.py)
-2. Code Analysis:
+   Instructions:
+
+21. Download and Review the Starter Code: [booking code](./assets/03/booking_system.py)
+22. Code Analysis:
+
    - Identify and highlight examples of poor programming practice.
    - Categorise the problems into:
      - Style and naming issues
      - Maintainability issues (e.g. long functions, poor structure)\
      - Efficiency problems (e.g. repeated code)
      - Errors (syntax, runtime, or logic)
-  - Use the following questions:
-    - Where does this code break the [PEP 8 style guide](https://peps.python.org/pep-0008/)?
-    - Are there any unnecessary calculations or repeated code blocks?- Can you find any infinite loops or bugs from invalid input?
-    - What parts would be hard for a teammate to understand?
-3. Debugging Challenge:
+   - Use the following questions:
+     - Where does this code break the [PEP 8 style guide](https://peps.python.org/pep-0008/)?
+     - Are there any unnecessary calculations or repeated code blocks?- Can you find any infinite loops or bugs from invalid input?
+     - What parts would be hard for a teammate to understand?
+
+23. Debugging Challenge:
+
    - Set **breakpoints** at key lines (e.g. user input, booking confirmation)
    - Use **Step Into**, **Variables panel**, and **Live Variable Editing** to track a logic error (e.g. booking overwrites existing bookings)
    - Write a short summary of how the debugger helped you fix the issue
-4. Refactor the Code:
+
+24. Refactor the Code:
+
    - Apply good programming practices:
      - Rename variables using meaningful names and `snake_case`
      - Break long code into small functions
@@ -482,7 +501,9 @@ Instructions:
      - Catch and handle runtime errors using `try-except`
      - Replace inefficient logic (e.g. repeated ifs &rarr; loop or dictionary)
      - Test edge cases like no input, long names, or double bookings
-5. Testing Plan (15 mins)
+
+25. Testing Plan (15 mins)
+
    - Design and carry out:
      - One **exploratory test**: Try unexpected inputs or misuse
      - Two **unit tests**: Test individual functions you wrote/refactored
@@ -490,4 +511,5 @@ Instructions:
    - Document:
      - What worked and what didn’t?
      - What bugs did you find using each type of test?
-:::
+
+   :::

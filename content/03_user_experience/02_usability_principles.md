@@ -3,7 +3,7 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
 - Understand why useability is important
-- Understand 
+- Understand  
 :::
 
 > Usability is a measure of how well a specific user in a specific context can use a product/design to achieve a defined goal effectively, efficiently and satisfactorily. Designers usually measure a design's usability throughout the development process — from wireframes to the final deliverable. {cite}`interactiondesignfoundation_2014_what`
@@ -26,10 +26,10 @@ Utility depends on user needs and the purpose of the solution.
 
 Consider the following when evaluating utility:
 
-* **Relevance**: Include all and only the features that meet user needs.
-* **Completeness**: Make sure users can complete their tasks without needing other tools or workarounds.
-* **Availability**: Ensure the necessary features are available at the right time.
-* **Appropriateness**: Features should suit the task and context the user is working in.
+- **Relevance**: Include all and only the features that meet user needs.
+- **Completeness**: Make sure users can complete their tasks without needing other tools or workarounds.
+- **Availability**: Ensure the necessary features are available at the right time.
+- **Appropriateness**: Features should suit the task and context the user is working in.
 
 **Example of Utility in a Digital Solution:**
 
@@ -72,7 +72,6 @@ To improve safety:
 - Add a confirmation message before clearing all data.
 - Move the **clear all** button away from **submit**.
 - Allow users to recover deleted files or auto-save progress.
-
 
 ## Accessibility
 
@@ -120,6 +119,7 @@ To improve learnability:
 - Include a short tutorial on first use to guide new users through the interface.
 
 ## Effectiveness
+
 Effectiveness is about whether users can complete their tasks successfully using your digital solution.
 
 A solution is effective when it:
@@ -190,4 +190,3 @@ For each one:
 - Identify the usability principle it relates to
 - Suggest a specific improvement
 :::
-

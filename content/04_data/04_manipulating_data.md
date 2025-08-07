@@ -7,7 +7,6 @@ By the end of this section you will:
 - know about SQLite
 :::
 
-
 The set of operations that allows you to manage data in a computer system is referred to by the acronym **CRUD**. CRUD stands for **Create**, **Read**, **Update**, and **Delete**. It is a fundamental concept in the world of databases and computer systems.
 
 - **Create:** This is where you make new entries or records. Think of it like writing a new post on a social media platform. You're creating new data.

@@ -87,43 +87,50 @@ Problem: Create a program that calculates a student's average grade.
 Decomposition steps:
 
 1. Get input from the user
-   * Ask the user how many subjects they have
-   * Ask for the grade for each subject
+
+   - Ask the user how many subjects they have
+   - Ask for the grade for each subject
+
 2. Store the grades
-   * Save the grades in a list or array
+
+   - Save the grades in a list or array
+
 3. Calculate the average
-   * Add all the grades together
-   * Divide by the number of subjects
+
+   - Add all the grades together
+   - Divide by the number of subjects
+
 4. Show the result
-   * Display the average grade to the user
 
-:::{seealso} Decomposition Activities
-:class: dropdown
-**Activity 1**
+   - Display the average grade to the user
 
-Create a program that helps students manage their homework tasks. Students need to build a digital tool that allows users to enter, view, and organise their homework across subjects.
+   :::{seealso} Decomposition Activities
+   :class: dropdown
+   **Activity 1**
 
----
+   Create a program that helps students manage their homework tasks. Students need to build a digital tool that allows users to enter, view, and organise their homework across subjects.
 
-**Activity 2**
+   ---
 
-Design a digital scoreboard for a school sports event. The system should display team names, update scores during matches, and show the final result at the end.
+   **Activity 2**
 
----
+   Design a digital scoreboard for a school sports event. The system should display team names, update scores during matches, and show the final result at the end.
 
-**Activity 3**
-Develop a quiz app for science revision. The app should present questions, let users choose answers, and give feedback on how they did.
-:::
+   ---
 
-### Pattern Recognition
+   **Activity 3**
+   Develop a quiz app for science revision. The app should present questions, let users choose answers, and give feedback on how they did.
+   :::
 
-Pattern recognition means spotting things that are the same or similar. In Digital Solutions, you look for patterns when you break down a big problem into smaller parts.
+   ### Pattern Recognition
 
-By comparing the different parts, you can notice what repeats or what looks similar. This helps you understand the problem better and come up with a smarter solution. It's not just about patterns in numbers or letters—it can be patterns in how problems work or how information is structured.
+   Pattern recognition means spotting things that are the same or similar. In Digital Solutions, you look for patterns when you break down a big problem into smaller parts.
 
-![pattern_recognition](./assets/01/patter_recognition.png)<p>&nbsp;</p>
+   By comparing the different parts, you can notice what repeats or what looks similar. This helps you understand the problem better and come up with a smarter solution. It's not just about patterns in numbers or letters—it can be patterns in how problems work or how information is structured.
 
-When using pattern recognition, ask:
+   ![pattern_recognition](./assets/01/patter_recognition.png)<p>&nbsp;</p>
+
+   When using pattern recognition, ask:
 
 - What patterns do I see?
 - Have I solved something like this before?
@@ -209,7 +216,7 @@ Then creating algorithms, ask:
 :class: dropdown
 **Activity 1**
 
-A program needs to organise a list of student last names into alphabetical order. 
+A program needs to organise a list of student last names into alphabetical order.  
 
 What steps must be followed to arrange the last names correctly from A to Z?
 

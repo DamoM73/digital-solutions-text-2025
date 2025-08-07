@@ -81,6 +81,7 @@ A data driven application can be thought as having three different viewing layer
 
 :::{seealso} Data Solutions
 :class: dropdown
+
 1. What are the three key characteristics of data-driven solutions?
 2. What does the DIKW Pyramid represent in the context of data use?
 3. How does information differ from raw data in the DIKW Pyramid?

@@ -6,7 +6,7 @@ By the end of this section you will:
 - understand data representation and how choices pertaining to it influence data.
 :::
 
-Data principles are fundamental guidelines that ensure data is collected, stored, processed, and used in ways that maintain its quality, reliability, and security. 
+Data principles are fundamental guidelines that ensure data is collected, stored, processed, and used in ways that maintain its quality, reliability, and security.  
 
 ## Data Management
 
@@ -55,7 +55,6 @@ Data integrity depends on the data being:
 - **secure**: the data is protected from others who may intentionally corrupt it
 - **relevant**: the data has meaning and use in the context of your solution
 
-
 ### Anomalies & Redundancy
 
 Data anomalies refer to inconsistencies or errors that arise when storing or manipulating data in a database. These anomalies can occur in various forms, such as:
@@ -70,7 +69,7 @@ Proper database design, normalization techniques, and data validation processes 
 
 ### Security and Protection
 
-Security is essential to the success of any information system and the valuable data stored in it. 
+Security is essential to the success of any information system and the valuable data stored in it.  
 
 **Threats**
 The potential threats to your digital solution include:
@@ -102,6 +101,7 @@ Steps can be taken to minimise the risks presented by the potential threats. The
 
 :::{seealso} Data Management Activities
 :class: dropdown
+
 1. What two key factors should be considered during data acquisition?
 2. What are the three types of data ownership and how do they differ?
 3. What does data integrity mean and why is it important for digital solutions?
@@ -116,7 +116,7 @@ Steps can be taken to minimise the risks presented by the potential threats. The
 
 ## Data Representation
 
-When we talk about **representation**, it's about how we turn different things, like numbers or text, into a language that computers understand, which usually involves using combinations of 0s and 1s for numbers and specific codes for letters and symbols. The way we do this is crucial because it affects how fast and accurately computers can work with data. 
+When we talk about **representation**, it's about how we turn different things, like numbers or text, into a language that computers understand, which usually involves using combinations of 0s and 1s for numbers and specific codes for letters and symbols. The way we do this is crucial because it affects how fast and accurately computers can work with data.  
 
 ### Text representation
 
@@ -173,6 +173,7 @@ Some common data formats that need to be established:
 
 :::{seealso} Data Representation Activities
 :class: dropdown
+
 1. What does representation mean in the context of computer systems?
 2. How does ASCII represent characters in a computer system?
 3. Why is Unicode preferred over ASCII for modern digital solutions?

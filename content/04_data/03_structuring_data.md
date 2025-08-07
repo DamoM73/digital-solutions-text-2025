@@ -3,7 +3,7 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
 - understand the features and limitations of flat file databases
-- understand the features of relational databases 
+- understand the features of relational databases  
 - understand the impacts of redundancy
 - understand the process of normalisation through 1NF, 2NF and 3NF
 :::
@@ -14,7 +14,7 @@ By the end of this section you will:
 
 A flat file database is a type of database that stores data in a simple, two-dimensional table or spreadsheet-like structure. In a flat file database, information is organized into **rows** and **columns**, where each row represents a single **record** or entry, and each column represents a specific attribute or **field** of that record.
 
-Unlike more complex relational databases, flat file databases do not have multiple tables with predefined relationships between them. Instead, all data is stored in a single file, making it easy to create and manage but limited in terms of its ability to handle complex data relationships. 
+Unlike more complex relational databases, flat file databases do not have multiple tables with predefined relationships between them. Instead, all data is stored in a single file, making it easy to create and manage but limited in terms of its ability to handle complex data relationships.  
 
 Flat file databases are often used for relatively small-scale data storage needs, such as simple lists, address books, or basic inventory records. They are easy to create and understand but may not be suitable for more complex and data-intensive applications.
 
@@ -86,6 +86,7 @@ Relational databases are widely used in various applications, from business syst
 
 :::{seealso} Database Types Activities
 :class: dropdown
+
 1. What is a flat file database and how is its data structured?
 2. Why might a flat file database be unsuitable for complex data relationships?
 3. What are the key differences between flat file databases and relational databases?
@@ -100,23 +101,24 @@ Relational databases are widely used in various applications, from business syst
 12. Why is durability important after a transaction is committed?
 13. What is a data value and where is it located in a table?
 14. What are the benefits of using relational databases in business or web applications?
-:::
 
----
+   :::
 
-## Normalisation
+   ---
 
-> Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation ... is to eliminate `richardpeterson_2019_what`
+   ## Normalisation
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xoTyrdT9SZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   > Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation ... is to eliminate `richardpeterson_2019_what`
 
-:::{tip} Basic Concept of Database Normalization Summary
-:class: dropdown
-**What is Normalization?**
-Normalization is a database design technique used to organize data into multiple, smaller, related tables. Its primary goal is to **minimize data redundancy**.
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/xoTyrdT9SZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**The Problem: Data Redundancy**
-Data redundancy is the unnecessary repetition of data in a database. The video illustrates this with an example of a single **STUDENTS TABLE** with the following columns:
+   :::{tip} Basic Concept of Database Normalization Summary
+   :class: dropdown
+   **What is Normalization?**
+   Normalization is a database design technique used to organize data into multiple, smaller, related tables. Its primary goal is to **minimize data redundancy**.
+
+   **The Problem: Data Redundancy**
+   Data redundancy is the unnecessary repetition of data in a database. The video illustrates this with an example of a single **STUDENTS TABLE** with the following columns:
 - `rollno`
 - `name`
 - `branch`
@@ -134,17 +136,20 @@ Normalization solves these problems by following a "Divide and Rule" approach. I
 
 In the example, the single `STUDENTS TABLE` is split into two separate tables:
 
-1.  **New Student Table:**
-    - `rollno`, `name`, `branch`
-    - This table only stores information specific to each student.
+1. **New Student Table:**
+
+   - `rollno`, `name`, `branch`
+   - This table only stores information specific to each student.
 
 2. **New Branch Table:**
+
    - `branch`, `hod`, `office_tel`
    - This table stores information specific to each branch. The branch details (like for CSE) are now stored only **once**.
 
-These two tables are related by the common `branch` column, which acts as a link between them.
+   These two tables are related by the common `branch` column, which acts as a link between them.
 
-**How This Solves the Problems:**
+   **How This Solves the Problems:**
+
 - **Insertion Solved:** To add a new student, you only add a row to the `Student Table`. The branch information already exists in the `Branch Table` and does not need to be repeated.
 - **Deletion Solved:** You can delete all student records from the `Student Table` without losing the branch information, which is safely stored in the `Branch Table`.
 - **Updation Solved:** If the HOD changes, you only need to update it in **one single place**—the corresponding row in the `Branch Table`. This change is automatically reflected for all students in that branch because of the relationship between the tables.
@@ -161,6 +166,7 @@ The process of **Normalisation** is the the most effective way of removing redun
 
 :::{seealso} Normalisation Activities
 :class: dropdown
+
 1. What is the main goal of database normalisation?
 2. What is data redundancy and why is it considered a problem?
 3. What is an insertion anomaly and how does redundancy cause it?
@@ -171,21 +177,24 @@ The process of **Normalisation** is the the most effective way of removing redun
 8. In the example, what are the two tables created by normalising the STUDENTS TABLE?
 9. How does normalisation solve the insertion anomaly in the student example?
 10. How does updating the Head of Department become easier after normalisation?
-:::
 
+   :::
 
-### First Normal Form (1NF)
+   ### First Normal Form (1NF)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mUtAPbb1ECM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/mUtAPbb1ECM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-:::{tip} First Normal Form Summary
-:class: dropdown
+   :::{tip} First Normal Form Summary
+   :class: dropdown
+
 - **Introduction to 1NF:** The First Normal Form is the first and most fundamental step in the normalization process. A table that is not in 1NF is considered to have a poor database design. Achieving 1NF is a prerequisite for moving to higher normal forms like 2NF and 3NF.
 - **The Four Rules of 1NF:** To be in First Normal Form, a table must adhere to four basic rules:
-    1.  **Atomicity:** Each column must contain only atomic (single, indivisible) values. A single cell cannot hold multiple values.
-    2.  **Homogeneity:** All values within a single column must be of the same data type.
-    3.  **Unique Column Names:** Every column in the table must have a unique name.
-    4.  **Order Independence:** The order in which data (rows) is stored does not matter.
+
+  1. **Atomicity:** Each column must contain only atomic (single, indivisible) values. A single cell cannot hold multiple values.
+  2. **Homogeneity:** All values within a single column must be of the same data type.
+  3. **Unique Column Names:** Every column in the table must have a unique name.
+  4. **Order Independence:** The order in which data (rows) is stored does not matter.
+
 - **Example of 1NF Violation and Solution:** The video demonstrates these rules using a `STUDENTS TABLE` with columns for `rollno`, `name`, and `subject`:
   - **Violation:** The table initially violates 1NF because the `subject` column contains multiple subjects in a single cell (e.g., "OS, CN").
   - **Solution:** To bring the table into 1NF, the multi-valued `subject` column is broken down. This is done by creating a separate row for each subject a student has taken, which results in the student's `rollno` and `name` being repeated but ensures that every cell contains only a single value.
@@ -228,7 +237,6 @@ Convert the following tables into 1NF
 | 304 | South | Monitor | $299 |
 | 305 | East | Mouse | $49 |
 
-
 **Table 2**
 
 | BookID | Title  | Authors | Available |
@@ -244,9 +252,9 @@ Convert the following tables into 1NF
 | EmployeeID | Name | Contact |
 | --- | --- | --- |
 | 201 | Oliver White | 0400123456 |
-| 202 | Jack Smith | jack@example.com |
+| 202 | Jack Smith | <jack@example.com> |
 | 203 | Emily Rose | 0499123456 |
-| 204 | Grace Blue | grace@email.com |
+| 204 | Grace Blue | <grace@email.com> |
 | 205 | Harry Gray | 0420123456 |
 
 **Table 4**
@@ -258,6 +266,7 @@ Convert the following tables into 1NF
 | 103     | Ava Green    | Tablet, Stylus     |
 | 104     | Noah Brown   | Monitor            |
 | 105     | Mia Black    | Keyboard, Mousepad |
+
 :::
 
 ---
@@ -271,11 +280,11 @@ Convert the following tables into 1NF
 **Understanding the Rules of Second Normal Form (2NF)**
 
 For a table to be considered in Second Normal Form, it must satisfy two essential conditions:
-1.  **It must already be in First Normal Form (1NF).** This means the table has a primary key, and all columns contain atomic (indivisible) values, with no repeating groups.
-2.  **It must not have any Partial Dependencies.** This is the core rule of 2NF.
+1. **It must already be in First Normal Form (1NF).** This means the table has a primary key, and all columns contain atomic (indivisible) values, with no repeating groups.
+2. **It must not have any Partial Dependencies.** This is the core rule of 2NF.
 
-**Explaining Dependency and Primary Keys**
-To understand *partial* dependency, the video first explains the concept of **functional dependency** using a simple `STUDENTS` table.
+   **Explaining Dependency and Primary Keys**
+   To understand *partial* dependency, the video first explains the concept of **functional dependency** using a simple `STUDENTS` table.
 
 - **Example 1: The `STUDENTS` Table**
   - This table contains columns like `student_id`, `name`, `branch`, and `address`.
@@ -298,16 +307,17 @@ To illustrate this, the video introduces a more complex scenario with three tabl
 **How to Achieve 2NF by Removing Partial Dependency**
 A table with partial dependency is not in 2NF. To fix this, the dependency must be removed by decomposing the table.
 
-1.  **Identify the Partial Dependency:** Recognize that the `teacher` column depends on `subject_id` but not `student_id`.
-2.  **Decompose the Table:** The solution is to move the column causing the issue (`teacher`) along with the part of the key it depends on (`subject_id`) into a separate, more appropriate table.
-3.  **Create a New Structure:**
-    - The `SCORE` table is simplified to contain only `score_id`, `student_id`, `subject_id`, and `marks`. Its primary key remains (`student_id` + `subject_id`).
-    - The `teacher` information is moved to the `SUBJECT` table. The `SUBJECT` table now contains `subject_id`, `subject_name`, and `teacher`.
+1. **Identify the Partial Dependency:** Recognize that the `teacher` column depends on `subject_id` but not `student_id`.
+2. **Decompose the Table:** The solution is to move the column causing the issue (`teacher`) along with the part of the key it depends on (`subject_id`) into a separate, more appropriate table.
+3. **Create a New Structure:**
 
-After this change, the `SCORE` table has no more partial dependencies, and the entire database structure is now in **Second Normal Form**. The video also notes that an even better design would be to create a separate `TEACHER` table to avoid redundancy if one teacher teaches multiple subjects.
-:::
+   - The `SCORE` table is simplified to contain only `score_id`, `student_id`, `subject_id`, and `marks`. Its primary key remains (`student_id` + `subject_id`).
+   - The `teacher` information is moved to the `SUBJECT` table. The `SUBJECT` table now contains `subject_id`, `subject_name`, and `teacher`.
 
-A database is in **2nd Normal Form** when:
+   After this change, the `SCORE` table has no more partial dependencies, and the entire database structure is now in **Second Normal Form**. The video also notes that an even better design would be to create a separate `TEACHER` table to avoid redundancy if one teacher teaches multiple subjects.
+   :::
+
+   A database is in **2nd Normal Form** when:
 
 - It is in **1NF**
 - There are no **partial dependencies:**
@@ -379,6 +389,7 @@ Composite Key: (participant_id, session_id)
 | P03 | S01 | Henry Carter | Cybersecurity | Yes |
 | P04 | S03 | Zoe Davis | Cloud Computing | Yes |
 | P05 | S02 | Leo Martin | Web Accessibility | Yes |
+
 :::
 
 ---
@@ -389,11 +400,14 @@ Composite Key: (participant_id, session_id)
 
 :::{tip} Third Normal Form Summary
 :class: dropdown
+
 - **Recap of 2NF:** The video starts by recapping the 2NF state, where the database consists of three tables: `Student`, `Subject`, and `Score`. This was done to eliminate partial dependencies.
 - **Introducing a New Problem:** To demonstrate 3NF, two new columns, `exam_name` and `total_marks`, are added to the `Score` table.
 - **Defining 3NF:** A table is in 3rd Normal Form if:
-  1.  It is already in 2nd Normal Form (2NF).
-  2.  It has no **transitive dependencies**.
+
+  1. It is already in 2nd Normal Form (2NF).
+  2. It has no **transitive dependencies**.
+
 - **Explaining Transitive Dependency:**
   - A transitive dependency exists when a non-primary key attribute depends on another non-primary key attribute.
   - In the example, the primary key for the `Score` table is a composite key of (`student_id` + `subject_id`).
@@ -401,7 +415,7 @@ Composite Key: (participant_id, session_id)
   - Since `total_marks` depends on `exam_name` (a non-key attribute), this is a transitive dependency.
 - **The Solution for 3NF:**
   - To eliminate the transitive dependency, the problematic attributes (`exam_name` and `total_marks`) are moved out of the `Score` table.
-  - A new **`Exam` table** is created. This new table contains `exam_name` (as its primary key) and `total_marks`.
+  - A new **table** is created. This new table contains `exam_name` (as its primary key) and `total_marks`.
   - The `Score` table is then modified to simply hold a reference to the `exam_name`.
 
 By the end, the database is in 3NF, now consisting of four tables (`Student`, `Subject`, `Score`, and `Exam`), effectively removing the transitive dependency and making the database more robust and less redundant.
@@ -446,7 +460,6 @@ The tables below represent the same data in 3NF
 | B04 | Java for Teens | P03 | DevPress |
 | B05 | HTML Basics | P02 | CodeWorks |
 
-
 **Table 3**
 
 | customer_id | name  | suburb_code | suburb_name |
@@ -466,6 +479,7 @@ The tables below represent the same data in 3NF
 | PR03 | Monitor | CAT02 | Displays |
 | PR04 | Webcam | CAT03 | Peripherals |
 | PR05 | Headset | CAT03 | Peripherals |
+
 :::
 
 :::{seealso} Full Normalisation Activity
@@ -479,4 +493,5 @@ Convert the following table so that it is in 3NF
 | S003 | Caleb | Maths, History | SUB03 | History | Dr. Lee | D02 | Humanities |
 | S004 | Diana | Maths, English, History | SUB01 | Maths | Mr. Kay | D01 | Science |
 | S005 | Ethan | English | SUB02 | English | Ms. Smith | D02 | Humanities |
+
 :::

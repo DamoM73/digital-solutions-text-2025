@@ -50,9 +50,9 @@ Malware is malicious software designed to disrupt, damage, or gain unauthorized 
 
 **Malware Example**
 
-One of the most infamous malware attacks is the [WannaCry ransomware attack](https://en.wikipedia.org/wiki/WannaCry_ransomware_attack), which occurred in May 2017. WannaCry exploited a vulnerability in Microsoft Windows, known as EternalBlue, to spread rapidly across networks worldwide. 
+One of the most infamous malware attacks is the [WannaCry ransomware attack](https://en.wikipedia.org/wiki/WannaCry_ransomware_attack), which occurred in May 2017. WannaCry exploited a vulnerability in Microsoft Windows, known as EternalBlue, to spread rapidly across networks worldwide.  
 
-The ransomware encrypted users' files and demanded a ransom payment in Bitcoin to decrypt the data. WannaCry affected hundreds of thousands of computers in over 150 countries, impacting critical sectors such as healthcare, finance, and telecommunications. 
+The ransomware encrypted users' files and demanded a ransom payment in Bitcoin to decrypt the data. WannaCry affected hundreds of thousands of computers in over 150 countries, impacting critical sectors such as healthcare, finance, and telecommunications.  
 
 The National Health Service (NHS) in the United Kingdom was particularly hard hit, leading to the cancellation of appointments and surgeries. The attack highlighted the importance of timely software updates and robust cybersecurity measures to protect against such vulnerabilities​.
 
@@ -62,9 +62,9 @@ A phishing attack is a type of cybercrime where attackers impersonate legitimate
 
 **Phishing Example**
 
-A notable example of a phishing attack is the [2016 attack on John Podesta](https://en.wikipedia.org/wiki/Podesta_emails), chairman of Hillary Clinton's presidential campaign. 
+A notable example of a phishing attack is the [2016 attack on John Podesta](https://en.wikipedia.org/wiki/Podesta_emails), chairman of Hillary Clinton's presidential campaign.  
 
-Hackers sent a phishing email disguised as a security alert from Google, claiming that Podesta needed to change his password due to suspicious activity. The email contained a link to a fake login page that closely resembled the genuine Google login page. Podesta's aide, believing the email to be legitimate, forwarded it to the campaign's IT staff, who mistakenly identified the email as genuine and advised Podesta to change his password using the provided link. As a result, Podesta entered his credentials on the fake page, allowing hackers to gain access to his email account. 
+Hackers sent a phishing email disguised as a security alert from Google, claiming that Podesta needed to change his password due to suspicious activity. The email contained a link to a fake login page that closely resembled the genuine Google login page. Podesta's aide, believing the email to be legitimate, forwarded it to the campaign's IT staff, who mistakenly identified the email as genuine and advised Podesta to change his password using the provided link. As a result, Podesta entered his credentials on the fake page, allowing hackers to gain access to his email account.  
 
 This breach led to the exposure of thousands of emails, which were subsequently published by WikiLeaks, causing significant political and reputational damage during the 2016 U.S. presidential election.
 
@@ -76,7 +76,7 @@ A man-in-the-middle (MITM) attack occurs when a malicious actor secretly interce
 
 In 2015, Lenovo was found to have pre-installed a software called [Superfish](https://en.wikipedia.org/wiki/Superfish) on some of its laptops.
 
-Superfish was an adware program that intercepted users' web traffic to inject advertisements. It did this by installing its own self-signed root certificate authority, allowing it to intercept and decrypt HTTPS traffic between the user's browser and websites, essentially performing a Man-in-the-Middle attack. 
+Superfish was an adware program that intercepted users' web traffic to inject advertisements. It did this by installing its own self-signed root certificate authority, allowing it to intercept and decrypt HTTPS traffic between the user's browser and websites, essentially performing a Man-in-the-Middle attack.  
 
 This compromised the security of encrypted connections, making users vulnerable to further attacks and data theft by malicious entities exploiting the same root certificate.
 
@@ -86,11 +86,11 @@ A Distributed Denial-of-Service (DDoS) attack is a cyberattack in which multiple
 
 **DDoS example**
 
-A notable example of a Distributed Denial of Service (DDoS) attack is the [October 2016 attack on Dyn](https://en.wikipedia.org/wiki/DDoS_attacks_on_Dyn), a company that manages DNS (Domain Name System) services. 
+A notable example of a Distributed Denial of Service (DDoS) attack is the [October 2016 attack on Dyn](https://en.wikipedia.org/wiki/DDoS_attacks_on_Dyn), a company that manages DNS (Domain Name System) services.  
 
-This attack involved a massive [botnet](https://en.wikipedia.org/wiki/Botnet) called Mirai, which harnessed the power of numerous compromised IoT (Internet of Things) devices, including cameras and DVRs, to flood Dyn's servers with traffic. The overwhelming volume of traffic disrupted Dyn's DNS services, leading to widespread outages for major websites and online services such as Twitter, Reddit, Netflix, and Airbnb. 
+This attack involved a massive [botnet](https://en.wikipedia.org/wiki/Botnet) called Mirai, which harnessed the power of numerous compromised IoT (Internet of Things) devices, including cameras and DVRs, to flood Dyn's servers with traffic. The overwhelming volume of traffic disrupted Dyn's DNS services, leading to widespread outages for major websites and online services such as Twitter, Reddit, Netflix, and Airbnb.  
 
-The attack highlighted the vulnerabilities of IoT devices and the significant impact DDoS attacks can have on internet infrastructure​ 
+The attack highlighted the vulnerabilities of IoT devices and the significant impact DDoS attacks can have on internet infrastructure​  
 
 ### Insider Threats
 
@@ -98,9 +98,9 @@ Insider threats occur when individuals within an organization—such as employee
 
 **Insider Threat Example**
 
-One of the most infamous examples of an insider threat is the case of [Edward Snowden](https://en.wikipedia.org/wiki/Edward_Snowden). 
+One of the most infamous examples of an insider threat is the case of [Edward Snowden](https://en.wikipedia.org/wiki/Edward_Snowden).  
 
-In 2013, Snowden, a former contractor for the National Security Agency (NSA), leaked classified documents to journalists, revealing extensive global surveillance programs operated by the NSA and its international partners. Snowden's disclosures exposed the scale and scope of government surveillance on citizens and sparked a global debate about privacy and security. 
+In 2013, Snowden, a former contractor for the National Security Agency (NSA), leaked classified documents to journalists, revealing extensive global surveillance programs operated by the NSA and its international partners. Snowden's disclosures exposed the scale and scope of government surveillance on citizens and sparked a global debate about privacy and security.  
 
 His actions had profound implications for national security and privacy, leading to significant legal and political repercussions​.
 
@@ -110,9 +110,9 @@ SQL injection is a type of cyberattack where an attacker inserts malicious SQL (
 
 **SQL Injection Example**
 
-A famous example of an SQL injection attack is the 2008 breach of [Heartland Payment Systems](https://en.wikipedia.org/wiki/Heartland_Payment_Systems). 
+A famous example of an SQL injection attack is the 2008 breach of [Heartland Payment Systems](https://en.wikipedia.org/wiki/Heartland_Payment_Systems).  
 
-Heartland, one of the largest payment processing companies in the United States, suffered a massive data breach due to an SQL injection vulnerability. Attackers exploited this vulnerability to install malware on Heartland’s network, allowing them to capture and exfiltrate over 130 million credit card numbers. 
+Heartland, one of the largest payment processing companies in the United States, suffered a massive data breach due to an SQL injection vulnerability. Attackers exploited this vulnerability to install malware on Heartland’s network, allowing them to capture and exfiltrate over 130 million credit card numbers.  
 
 This breach led to significant financial losses and legal repercussions for the company and highlighted the critical importance of securing web applications against SQL injection attacks.
 
@@ -122,9 +122,9 @@ Cross-Site Scripting (XSS) is a type of cyberattack where an attacker injects ma
 
 **Cross-Site Scripting Example**
 
-One of the most notable examples of a Cross-Site Scripting (XSS) attack occurred on MySpace in 2005, known as the ["Samy worm" attack](https://en.wikipedia.org/wiki/Samy_(computer_worm)). 
+One of the most notable examples of a Cross-Site Scripting (XSS) attack occurred on MySpace in 2005, known as the ["Samy worm" attack](https://en.wikipedia.org/wiki/Samy_(computer_worm)).  
 
-A user named Samy Kamkar created a worm that exploited an XSS vulnerability in MySpace's site. The worm embedded a script in Samy's profile page that, when visited by other users, would automatically add Samy to their friend list and display the phrase "but most of all, Samy is my hero" on their profile. Moreover, the script replicated itself to their profiles, leading to rapid and widespread propagation. Within 20 hours, over one million MySpace users were affected, making it one of the fastest spreading XSS worms in history. 
+A user named Samy Kamkar created a worm that exploited an XSS vulnerability in MySpace's site. The worm embedded a script in Samy's profile page that, when visited by other users, would automatically add Samy to their friend list and display the phrase "but most of all, Samy is my hero" on their profile. Moreover, the script replicated itself to their profiles, leading to rapid and widespread propagation. Within 20 hours, over one million MySpace users were affected, making it one of the fastest spreading XSS worms in history.  
 
 This incident highlighted the severe impact of XSS vulnerabilities and the importance of input validation and sanitization.
 
@@ -134,9 +134,9 @@ Advanced Persistent Threats (APTs) are prolonged and targeted cyberattacks in wh
 
 **Advanced Persistent Threat Example**
 
-One of the most famous examples of an Advanced Persistent Threat (APT) is the [Stuxnet attack](https://en.wikipedia.org/wiki/Stuxnet), discovered in 2010. 
+One of the most famous examples of an Advanced Persistent Threat (APT) is the [Stuxnet attack](https://en.wikipedia.org/wiki/Stuxnet), discovered in 2010.  
 
-Stuxnet is a sophisticated malware believed to have been developed jointly by the United States and Israel to sabotage Iran's nuclear program. The malware targeted Siemens PLCs (Programmable Logic Controllers) used in Iran's Natanz uranium enrichment facility. It exploited multiple zero-day vulnerabilities and was capable of reprogramming the PLCs to cause the centrifuges to spin out of control while reporting normal operation to monitoring systems, effectively damaging the equipment and setting back Iran's nuclear efforts. 
+Stuxnet is a sophisticated malware believed to have been developed jointly by the United States and Israel to sabotage Iran's nuclear program. The malware targeted Siemens PLCs (Programmable Logic Controllers) used in Iran's Natanz uranium enrichment facility. It exploited multiple zero-day vulnerabilities and was capable of reprogramming the PLCs to cause the centrifuges to spin out of control while reporting normal operation to monitoring systems, effectively damaging the equipment and setting back Iran's nuclear efforts.  
 
 This attack highlighted the potential of cyber warfare and the risks posed by APTs to critical infrastructure.
 
@@ -146,7 +146,7 @@ Zero-day exploits are cyberattacks that target previously unknown vulnerabilitie
 
 **Zero-Day Exploits Example**
 
-Both the **Stuxnet** worm and the **WannaCry** ransomware used zero-day exploits. 
+Both the **Stuxnet** worm and the **WannaCry** ransomware used zero-day exploits.  
 
 **Stuxnet** used the following exploits:
 
@@ -164,9 +164,9 @@ A supply chain attack is a cyberattack that targets the less secure elements of 
 
 **Supply Chain Attack Example**
 
-One of the most notorious examples of a supply chain attack is the [2020 SolarWinds hack](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach). 
+One of the most notorious examples of a supply chain attack is the [2020 SolarWinds hack](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach).  
 
-In this attack, cybercriminals infiltrated the IT management company SolarWinds and inserted malicious code into their Orion software updates, which were then distributed to SolarWinds' customers. This compromised update created a backdoor into the systems of approximately 18,000 organizations, including numerous U.S. government agencies and Fortune 500 companies. The attackers, believed to be associated with the Russian state-sponsored group APT29 (also known as Cozy Bear), used this access to conduct extensive espionage, gathering sensitive information from high-profile targets. 
+In this attack, cybercriminals infiltrated the IT management company SolarWinds and inserted malicious code into their Orion software updates, which were then distributed to SolarWinds' customers. This compromised update created a backdoor into the systems of approximately 18,000 organizations, including numerous U.S. government agencies and Fortune 500 companies. The attackers, believed to be associated with the Russian state-sponsored group APT29 (also known as Cozy Bear), used this access to conduct extensive espionage, gathering sensitive information from high-profile targets.  
 
 This incident highlighted the vulnerabilities in software supply chains and the extensive impact such breaches can have on national security and corporate infrastructure
 
@@ -182,9 +182,9 @@ Human error is one of the most common causes of data security threats, often res
 
 **Human Error Example**
 
-A famous example of a data security risk caused by human error is the [2017 Equifax data breach](https://en.wikipedia.org/wiki/2017_Equifax_data_breach#:~:text=Private%20records%20of%20147.9%20million,the%20public%20until%20September%202017.). 
+A famous example of a data security risk caused by human error is the [2017 Equifax data breach](https://en.wikipedia.org/wiki/2017_Equifax_data_breach#:~:text=Private%20records%20of%20147.9%20million,the%20public%20until%20September%202017.).  
 
-In this incident, sensitive personal information of approximately 147 million people, including names, social security numbers, birth dates, addresses, and in some cases, driver's license numbers and credit card information, was exposed. The breach was primarily attributed to the failure of Equifax to apply a critical security patch for a known vulnerability in the Apache Struts web application framework. 
+In this incident, sensitive personal information of approximately 147 million people, including names, social security numbers, birth dates, addresses, and in some cases, driver's license numbers and credit card information, was exposed. The breach was primarily attributed to the failure of Equifax to apply a critical security patch for a known vulnerability in the Apache Struts web application framework.  
 
 Despite being alerted to the vulnerability and the availability of a patch two months prior to the breach, Equifax's IT staff failed to update their systems, allowing attackers to exploit the flaw and gain access to sensitive data.
 
@@ -194,9 +194,9 @@ Hardware failures pose a significant threat to data security and availability by
 
 **Hardware Failure Example**
 
-A significant example of hardware failure resulting in data loss is the [2011 outage experienced by the cloud service provider Amazon Web Services (AWS)](https://money.cnn.com/2011/04/21/technology/amazon_server_outage/index.htm). 
+A significant example of hardware failure resulting in data loss is the [2011 outage experienced by the cloud service provider Amazon Web Services (AWS)](https://money.cnn.com/2011/04/21/technology/amazon_server_outage/index.htm).  
 
-In April 2011, a failure in AWS's Elastic Block Store (EBS) caused a cascading effect that led to extended downtime and data loss for numerous websites and services that relied on AWS. The incident began with a network configuration error during a routine maintenance operation, which resulted in a large number of EBS nodes becoming unreachable. As AWS engineers attempted to fix the problem, they inadvertently caused further issues that led to data corruption and loss. 
+In April 2011, a failure in AWS's Elastic Block Store (EBS) caused a cascading effect that led to extended downtime and data loss for numerous websites and services that relied on AWS. The incident began with a network configuration error during a routine maintenance operation, which resulted in a large number of EBS nodes becoming unreachable. As AWS engineers attempted to fix the problem, they inadvertently caused further issues that led to data corruption and loss.  
 
 Many businesses experienced prolonged outages, and some permanently lost data due to the disruption.
 
@@ -206,7 +206,7 @@ Software bugs are flaws or errors in a program's code that can create vulnerabil
 
 **Software Bug Example**
 
-In July 2023, a [software update for the CrowdStrike Falcon sensor resulted in a widespread issue](https://www.wired.com/story/crowdstrike-outage-update-windows/). 
+In July 2023, a [software update for the CrowdStrike Falcon sensor resulted in a widespread issue](https://www.wired.com/story/crowdstrike-outage-update-windows/).  
 
 The issue caused Blue Screen of Death (BSOD) errors on Windows systems, leading to significant IT disruptions. The flawed update caused system crashes and data loss across thousands of devices by corrupting system files and interrupting critical operations. This incident is attributed to a logic error in the sensor's configuration file.
 
@@ -218,7 +218,7 @@ Power outages can pose significant threats to data security by causing sudden sy
 
 **Power Outages Example**
 
-A notable example of data security being placed at risk due to power outages occurred in 2013 at the [National Security Agency's (NSA) massive data centre in Bluffdale](https://www.bbc.com/news/technology-24443266), Utah. 
+A notable example of data security being placed at risk due to power outages occurred in 2013 at the [National Security Agency's (NSA) massive data centre in Bluffdale](https://www.bbc.com/news/technology-24443266), Utah.  
 
 The facility experienced a series of power outages caused by electrical surges. These outages damaged critical infrastructure, including computers and cooling systems, leading to concerns over potential data loss and system reliability. The issues were attributed to electrical surges during equipment testing and installation phases, which caused significant delays in the facility's operational readiness and raised questions about the robustness of the NSA's data security measures during infrastructure failures.
 
@@ -228,9 +228,9 @@ Natural disasters such as floods, earthquakes, fires, and hurricanes can cause s
 
 **Natural Disasters Example**
 
-A well-known example of data security being jeopardized due to natural disasters occurred during [Hurricane Sandy in 2012](https://abcnews.go.com/Technology/hurricane-sandy-takes-york-city-data-center-gawker/story?id=17601425). 
+A well-known example of data security being jeopardized due to natural disasters occurred during [Hurricane Sandy in 2012](https://abcnews.go.com/Technology/hurricane-sandy-takes-york-city-data-center-gawker/story?id=17601425).  
 
-The hurricane caused extensive power outages across the north-eastern United States, including in New York City. This led to significant disruptions at data centres, including those managed by Datagram, which hosted websites like Gawker, BuzzFeed, and the Huffington Post. The power outages caused by the hurricane resulted in a loss of connectivity and server downtime, highlighting vulnerabilities in data centre infrastructure. 
+The hurricane caused extensive power outages across the north-eastern United States, including in New York City. This led to significant disruptions at data centres, including those managed by Datagram, which hosted websites like Gawker, BuzzFeed, and the Huffington Post. The power outages caused by the hurricane resulted in a loss of connectivity and server downtime, highlighting vulnerabilities in data centre infrastructure.  
 
 Despite having backup generators, Datagram's fuel pumps were located in a basement that flooded, rendering the backup power systems ineffective and resulting in prolonged outages and potential data loss risks.
 
@@ -252,9 +252,9 @@ Data synchronization issues arise when data stored in multiple locations—such 
 
 **Data Synchronization Issues Example**
 
-Another example of data synchronization issues risking data security is the [T-Mobile data breach in 2020](https://www.cpomagazine.com/cyber-security/second-data-breach-in-2020-for-t-mobile-exposed-customer-and-call-related-information-of-200000-subscribers/). 
+Another example of data synchronization issues risking data security is the [T-Mobile data breach in 2020](https://www.cpomagazine.com/cyber-security/second-data-breach-in-2020-for-t-mobile-exposed-customer-and-call-related-information-of-200000-subscribers/).  
 
-The breach was attributed to issues in synchronizing customer data across different databases and systems. Attackers exploited these synchronization gaps, which resulted from complex data migration and integration processes within T-Mobile's infrastructure. This allowed unauthorized access to sensitive information, including personal data of over 200,000 customers. 
+The breach was attributed to issues in synchronizing customer data across different databases and systems. Attackers exploited these synchronization gaps, which resulted from complex data migration and integration processes within T-Mobile's infrastructure. This allowed unauthorized access to sensitive information, including personal data of over 200,000 customers.  
 
 The incident exposed vulnerabilities in how data was managed and synchronized, highlighting the risks associated with inconsistent data replication and integration in large-scale IT environments.
 
@@ -264,9 +264,9 @@ A lack of proper backups poses a critical threat to data security, as it leaves 
 
 **Lack of Proper Backups Example**
 
-A famous example of data loss due to a lack of proper backups occurred in [2014 with the cloud storage provider, Code Spaces](https://www.breaches.cloud/incidents/codespaces/). 
+A famous example of data loss due to a lack of proper backups occurred in [2014 with the cloud storage provider, Code Spaces](https://www.breaches.cloud/incidents/codespaces/).  
 
-In 2014, Code Spaces suffered a devastating attack when an attacker gained access to their Amazon Web Services (AWS) control panel. The attacker demanded a ransom, and when Code Spaces attempted to regain control, the attacker systematically deleted data and backups, effectively wiping out their entire infrastructure. 
+In 2014, Code Spaces suffered a devastating attack when an attacker gained access to their Amazon Web Services (AWS) control panel. The attacker demanded a ransom, and when Code Spaces attempted to regain control, the attacker systematically deleted data and backups, effectively wiping out their entire infrastructure.  
 
 Code Spaces had not maintained offsite backups or a robust backup strategy, leading to the irreversible loss of customer data. The severity of the attack and the lack of adequate backups forced Code Spaces to shut down permanently.
 
@@ -276,9 +276,9 @@ Environmental factors such as temperature extremes, humidity, dust, and electrom
 
 **Environmental Factors Example**
 
-A notable example of data loss due to environmental conditions is the [2011 fire at the OVH data centre in Strasbourg, France](https://www.reuters.com/article/world/millions-of-websites-offline-after-fire-at-french-cloud-services-firm-idUSKBN2B20NT/). 
+A notable example of data loss due to environmental conditions is the [2011 fire at the OVH data centre in Strasbourg, France](https://www.reuters.com/article/world/millions-of-websites-offline-after-fire-at-french-cloud-services-firm-idUSKBN2B20NT/).  
 
-The fire was triggered by high humidity and electrical issues, leading to significant damage to the facility and its infrastructure. The incident resulted in the loss of customer data and disrupted services for many clients relying on OVH for hosting and cloud services. 
+The fire was triggered by high humidity and electrical issues, leading to significant damage to the facility and its infrastructure. The incident resulted in the loss of customer data and disrupted services for many clients relying on OVH for hosting and cloud services.  
 
 This event highlighted the critical importance of maintaining proper environmental controls, such as humidity and temperature regulation, and having robust disaster recovery plans to mitigate the impact of such incidents.
 

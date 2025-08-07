@@ -2,6 +2,8 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
+- understand the use of the UPDATE statement to change the values of an existing record
+- know how to write an UPDATE statement
 :::
 
 The `UPDATE` statement is used to modify the existing records in a table.

@@ -4,7 +4,7 @@
 By the end of this section you will:
 - understand the principles of transmitting data over a network
 - understand the signficance network transmission concepts including latency, jitter, quality of service guarantee, and timeliness of delivery
-- understand the TCP/IP, HTTP/HTTPS, FTP/FTPS, VPN, streaming, and broadcasting network transmission protocols 
+- understand the TCP/IP, HTTP/HTTPS, FTP/FTPS, VPN, streaming, and broadcasting network transmission protocols  
 - understand the methods of exchanging data including REST, JSON, XML and CSV/TSV
 :::
 
@@ -14,45 +14,47 @@ Networks are the backbone of the modern world, but how do they work? Check the f
 
 :::{tip} Crash Course Computer Networks Summary
 :class: dropdown
+
 - **Early Networks & Motivation:**
-    - Pre-1970s, most computers were standalone. The need to share data and resources (printers, storage) drove network development.
-    - Early methods like "Sneakernet" (physically moving storage media) were inefficient.
-    - The first **Local Area Networks (LANs)** appeared in the 1950s/60s, typically within a single organization. A LAN can range from two computers in a room to a university campus.
+  - Pre-1970s, most computers were standalone. The need to share data and resources (printers, storage) drove network development.
+  - Early methods like "Sneakernet" (physically moving storage media) were inefficient.
+  - The first **Local Area Networks (LANs)** appeared in the 1950s/60s, typically within a single organization. A LAN can range from two computers in a room to a university campus.
 - **Ethernet & Shared Media:**
-    - **Ethernet**, developed at Xerox PARC in the 1970s, became a dominant LAN technology, initially using a shared cable.
-    - **MAC Addresses (Media Access Control Address):** Each networked device has a unique MAC address. Data sent over Ethernet includes a header with the destination MAC address, so only the intended recipient processes it.
-    - **Carrier Sense Multiple Access (CSMA):** To avoid "collisions" (multiple devices transmitting simultaneously and garbling data), devices "sense" (listen to) the carrier (shared cable or airwaves for Wi-Fi). If it's busy, they wait.
+  - **Ethernet**, developed at Xerox PARC in the 1970s, became a dominant LAN technology, initially using a shared cable.
+  - **MAC Addresses (Media Access Control Address):** Each networked device has a unique MAC address. Data sent over Ethernet includes a header with the destination MAC address, so only the intended recipient processes it.
+  - **Carrier Sense Multiple Access (CSMA):** To avoid "collisions" (multiple devices transmitting simultaneously and garbling data), devices "sense" (listen to) the carrier (shared cable or airwaves for Wi-Fi). If it's busy, they wait.
 - **Collision Detection & Exponential Backoff:**
-    - If two devices sense silence and transmit at the same time, a collision still occurs.
-    - Devices can detect this collision, stop transmitting, wait a random period, and then try again.
-    - To further manage this, they use **exponential backoff:** if another collision occurs, the wait time doubles (plus a random element) before retrying (e.g., 1s, then 2s, 4s, 8s). This helps alleviate network congestion.
-    - **Bandwidth** is the rate at which a carrier can transmit data.
+  - If two devices sense silence and transmit at the same time, a collision still occurs.
+  - Devices can detect this collision, stop transmitting, wait a random period, and then try again.
+  - To further manage this, they use **exponential backoff:** if another collision occurs, the wait time doubles (plus a random element) before retrying (e.g., 1s, then 2s, 4s, 8s). This helps alleviate network congestion.
+  - **Bandwidth** is the rate at which a carrier can transmit data.
 - **Scaling Networks: Switches & Collision Domains:**
-    - Having too many devices on one shared carrier leads to frequent collisions.
-    - The solution is to reduce the size of **collision domains** (the set of devices on a shared carrier).
-    - **Network switches** connect multiple network segments. They learn which MAC addresses are on which segment and only forward data between segments if the destination is on a different segment. This allows multiple, non-interfering transmissions simultaneously on different parts of the network.
+  - Having too many devices on one shared carrier leads to frequent collisions.
+  - The solution is to reduce the size of **collision domains** (the set of devices on a shared carrier).
+  - **Network switches** connect multiple network segments. They learn which MAC addresses are on which segment and only forward data between segments if the destination is on a different segment. This allows multiple, non-interfering transmissions simultaneously on different parts of the network.
 - **The Internet & Routing:**
-    - The **Internet** is a network of interconnected networks.
-    - **Routing** is the process of getting data from a source to a destination across these networks.
-    - **Circuit Switching:** An early method, like old telephone systems, where a dedicated, exclusive physical circuit is established between two points for the duration of the communication. It's reliable but inefficient (unused capacity) and expensive.
-    - **Message Switching:** Similar to the postal system. Messages are passed from one intermediate "hop" (e.g., a mail hub, or a network router) to the next. Each hop knows where to send it next based on the destination. This is more fault-tolerant; if one route is blocked (e.g., a blizzard), an alternative route can be used.
-        - **Hop Count:** The number of hops a message takes. A **Hop Limit** prevents messages from looping endlessly in case of routing errors.
+  - The **Internet** is a network of interconnected networks.
+  - **Routing** is the process of getting data from a source to a destination across these networks.
+  - **Circuit Switching:** An early method, like old telephone systems, where a dedicated, exclusive physical circuit is established between two points for the duration of the communication. It's reliable but inefficient (unused capacity) and expensive.
+  - **Message Switching:** Similar to the postal system. Messages are passed from one intermediate "hop" (e.g., a mail hub, or a network router) to the next. Each hop knows where to send it next based on the destination. This is more fault-tolerant; if one route is blocked (e.g., a blizzard), an alternative route can be used.
+    - **Hop Count:** The number of hops a message takes. A **Hop Limit** prevents messages from looping endlessly in case of routing errors.
 - **Packet Switching & IP Addresses:**
-    - A downside of message switching is that large messages can tie up links.
-    - **Packet Switching** is the solution: large transmissions are chopped into small, fixed-size **packets**.
-    - Each packet contains a destination address on the network. This format is defined by the **Internet Protocol (IP)**.
-    - Every computer on a network gets an **IP Address** (e.g., 172.217.7.238 for a Google server), typically four 8-bit numbers separated by dots.
-    - Routers forward packets, and different packets from the same message can take different routes. This is efficient and fault-tolerant.
+  - A downside of message switching is that large messages can tie up links.
+  - **Packet Switching** is the solution: large transmissions are chopped into small, fixed-size **packets**.
+  - Each packet contains a destination address on the network. This format is defined by the **Internet Protocol (IP)**.
+  - Every computer on a network gets an **IP Address** (e.g., 172.217.7.238 for a Google server), typically four 8-bit numbers separated by dots.
+  - Routers forward packets, and different packets from the same message can take different routes. This is efficient and fault-tolerant.
 - **ARPANET & Decentralization:**
-    - The world's first packet-switched network and the ancestor of the modern internet was **ARPANET**, funded by the US Advanced Research Projects Agency (ARPA) during the Cold War.
-    - Packet switching's decentralized nature made it robust against potential attacks on central points.
-    - The ARPANET in 1974 connected a few dozen computers; today, the internet connects nearly 10 billion devices, including the **Internet of Things** (smart fridges, thermostats, etc.).
+  - The world's first packet-switched network and the ancestor of the modern internet was **ARPANET**, funded by the US Advanced Research Projects Agency (ARPA) during the Cold War.
+  - Packet switching's decentralized nature made it robust against potential attacks on central points.
+  - The ARPANET in 1974 connected a few dozen computers; today, the internet connects nearly 10 billion devices, including the **Internet of Things** (smart fridges, thermostats, etc.).
 :::
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AEaKrq3SpW8?si=gVh5_2f8jmQfuNen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :::{tip} Crash Course The Internet Summary
 :class: dropdown
+
 - **Network Structure:** The internet is made up of many connected devices. Your device connects to a Local Area Network (LAN), like your home Wi-Fi. That LAN connects to a bigger network called a Wide Area Network (WAN), managed by your Internet Service Provider (ISP). Data moves through several routers and eventually passes through high-speed connections that make up the internet’s core.
 - **Data Transmission and Packets:** Information travels as small chunks called packets. When you request something online—like a video—your device sends a packet to the server. The server then responds by sending the data back in many small packets. You can view the path your packets take using a command like `traceroute`.
 - **Internet Protocol (IP):** Every packet follows a standard called the Internet Protocol. An IP packet contains a header (with details like the destination IP address) and a data section (the content being sent).
@@ -67,40 +69,46 @@ Networks are the backbone of the modern world, but how do they work? Check the f
 Want to run traceroute on your computer? See directions below. Remember you can replace "dftba.com" with whatever website you want!
 
 Traceroute on Windows
+
 1. Press the Start Button
 2. Type "CMD" and press "Enter"
 3. In the Command Prompt type "tracert dftba.com"
 
-Traceroute on Mac
-1. Click on the "Go" drop down menu
-2. Click on "Utilities"
-3. Open Terminal
-4. Type "traceroute dftba.com"
-:::
+   Traceroute on Mac
+4. Click on the "Go" drop down menu
+5. Click on "Utilities"
+6. Open Terminal
+7. Type "traceroute dftba.com"
+   :::
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/guvsH5OFizE?si=-qBwz9LiQseDuxeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/guvsH5OFizE?si=-qBwz9LiQseDuxeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-:::{tip} Crash Course World Wide Web Summary
-:class: dropdown
-**The Internet vs. The Web**
+   :::{tip} Crash Course World Wide Web Summary
+   :class: dropdown
+   **The Internet vs. The Web**
+
 - **The Internet** is the global network that connects computers and devices around the world.
 - **The World Wide Web** is one of the services that runs on the Internet. It’s a huge system of connected websites and pages that let people share and access information.
 
 **Hypertext and Hyperlinks**
+
 - Websites are made of **hypertext documents**, which are just pages with text, images, and other content.
 - These pages are connected using **hyperlinks**, which let users click to move from one page to another.
 - The idea of linking information this way was first imagined back in 1945 by a scientist named Vannevar Bush.
 
 **How the Web Works (Protocols and Standards)**
+
 - **URL (Uniform Resource Locator):** This is the unique address of a webpage, like `http://www.example.com/page.html`.
 - **HTTP (Hypertext Transfer Protocol):** This is the system that web browsers and servers use to talk to each other. It includes commands like `GET` to request a page, and responses like `200 OK` (success) or `404 Not Found`.
 - **HTML (Hypertext Markup Language):** This is the code used to create webpages. It uses tags like `<h1>` for headings, `<a>` for links, and `<li>` for list items.
 
 **History and Key People**
+
 - **Tim Berners-Lee** created the World Wide Web in 1990 while working at CERN. He also created the first web browser, the first web server, and the first versions of URL, HTML, and HTTP.
 - The **Mosaic browser**, released in 1993, was the first to show images alongside text. It helped make the web more popular.
 
 **Search Engines**
+
 - As the Web got bigger, it became harder to find things. At first, there were human-made lists of sites, like early Yahoo!.
 - Then came **search engines**, which automatically searched the web.
   - They use **web crawlers** to find pages by following links.
@@ -109,6 +117,7 @@ Traceroute on Mac
   - **Google** improved search results by creating **PageRank**, a system that ranks pages higher if other important pages link to them.
 
 **Net Neutrality**
+
 - **Net neutrality** is the idea that Internet Service Providers (ISPs) must treat all internet data equally.
 - That means they can’t slow down, block, or speed up certain websites or services.
 - Some people support it to keep the internet fair and open. Others think ISPs should be allowed to manage their networks how they want.
@@ -123,19 +132,19 @@ Network transmission principles are fundamental concepts in networking that gove
 Latency refers to the delay or lag that occurs when data is transmitted from one point to another in a network. It can be caused by various factors:
 
 - **Serialization and deserialization:**
-  - Serialization is the process of converting data into a format that can be transmitted over a network. 
-  - Deserialization is the reverse process. 
+  - Serialization is the process of converting data into a format that can be transmitted over a network.  
+  - Deserialization is the reverse process.  
   - The serialization and deserialization steps introduce overhead, contributing to latency. The more complex the data and the longer the serialization process takes.
 - **Propagation:**
-  - Propagation delay in networks refers to the time it takes for data to travel from its source to its destination over a physical medium, such as a network cable or a fibre optic line. 
+  - Propagation delay in networks refers to the time it takes for data to travel from its source to its destination over a physical medium, such as a network cable or a fibre optic line.  
   - In networks, this delay is influenced by the physical distance between devices and the speed at which signals can travel through the medium.
 - **Switching:**
-  - When data is sent across a network, it's broken into smaller packets, and these packets need to find their way to the right destination. 
-  - Switches make this happen efficiently. They determine the best path for each packet, helping them avoid traffic jams and collisions. 
+  - When data is sent across a network, it's broken into smaller packets, and these packets need to find their way to the right destination.  
+  - Switches make this happen efficiently. They determine the best path for each packet, helping them avoid traffic jams and collisions.  
   - To direct packets, switches need to inspect each packet. Each inspection accrues overhead, therefore latency is impacted by both the number of switches each packet passes through, and the speed of those switches.
 - **Queuing:**
-  - When lots of data packets arrive at a network device like a router, they might have to wait their turn before they can continue on their journey. This waiting time is called queuing delay. 
-  - Low queuing delay means faster data transmission, inversely, high queuing delay can slow down data delivery. 
+  - When lots of data packets arrive at a network device like a router, they might have to wait their turn before they can continue on their journey. This waiting time is called queuing delay.  
+  - Low queuing delay means faster data transmission, inversely, high queuing delay can slow down data delivery.  
 
 Low latency is crucial for real-time applications like video conferencing and online gaming, where delays can lead to a poor user experience.
 
@@ -160,58 +169,65 @@ In video streaming, jitter appears as irregular and unexpected variations in the
 4. **Audio-Video Desynchronization:** Jitter can also affect the synchronization between the audio and video components of a stream. You might notice that the audio lags behind or leads the video.
 5. **Pixelation and Artifacts:** In severe cases, jitter can cause pixelation or compression artifacts in the video, making the image quality deteriorate momentarily.
 6. **Buffering Delays:** To compensate for jitter, video streaming services may introduce buffering delays. This means you have to wait longer for the video to start playing, which can be frustrating for viewers.
-:::
+   :::
 
-### Quality of Service (QoS) Guarantee
+   ### Quality of Service (QoS) Guarantee
 
-Network **Quality of Service (QoS) guarantee** refers to the assurance that a network can provide specific levels of service and performance to different types of traffic or applications. QoS is critical in ensuring that data, voice, video, and other applications receive the necessary bandwidth, low latency, and minimal packet loss to function effectively.
+   Network **Quality of Service (QoS) guarantee** refers to the assurance that a network can provide specific levels of service and performance to different types of traffic or applications. QoS is critical in ensuring that data, voice, video, and other applications receive the necessary bandwidth, low latency, and minimal packet loss to function effectively.
 
-To guarantee QoS, networks often employ various mechanisms, such as traffic prioritization, bandwidth reservation, and congestion management. For example, in a VoIP (Voice over Internet Protocol) call, QoS guarantee ensures that voice packets are prioritized over less time-sensitive data packets, reducing the chances of voice call degradation due to network congestion.
+   To guarantee QoS, networks often employ various mechanisms, such as traffic prioritization, bandwidth reservation, and congestion management. For example, in a VoIP (Voice over Internet Protocol) call, QoS guarantee ensures that voice packets are prioritized over less time-sensitive data packets, reducing the chances of voice call degradation due to network congestion.
 
-### Timeliness of delivery
+   ### Timeliness of delivery
 
-The principle of **timeliness of delivery** in networking refers to the requirement that data should be delivered within a timeframe suitable for its intended use. This is crucial for ensuring that the information remains relevant and useful by the time it reaches its destination.
+   The principle of **timeliness of delivery** in networking refers to the requirement that data should be delivered within a timeframe suitable for its intended use. This is crucial for ensuring that the information remains relevant and useful by the time it reaches its destination.
 
-## Network Transmission Protocols 📝
+   ## Network Transmission Protocols 📝
 
-### TCP/IP
-**TCP/IP** stands for **Transmission Control Protocol / Internet Protocol**. It is the core set of communication rules (called a **protocol suite**) that computers use to send and receive data over networks, including the **internet**.
+   ### TCP/IP
 
-Developed in the 1970s, TCP/IP is now the **standard for all internet communication**.
+   **TCP/IP** stands for **Transmission Control Protocol / Internet Protocol**. It is the core set of communication rules (called a **protocol suite**) that computers use to send and receive data over networks, including the **internet**.
 
-**TCP/IP Protocol Layers**
+   Developed in the 1970s, TCP/IP is now the **standard for all internet communication**.
 
-TCP/IP is made up of **four layers**. Each layer has its own job:
+   **TCP/IP Protocol Layers**
 
-1. **Application Layer**
-  - Deals with **applications and user services**
-  - This is the layer you interact with (e.g., web browsers, email clients)
-  - Protocols here:
-    - **HTTP/HTTPS** – web browsing
-    - **SMTP** – sending emails
-    - **IMAP/POP3** – receiving emails
-    - **FTP** – file transfer
-2. **Transport Layer**
-  - Manages the **delivery of data**
-  - Breaks data into chunks (called **segments**) and reassembles them
-  - Handles error checking and flow control
-  - Two main protocols:
-    - **TCP** – Reliable, ordered delivery (used for most things)
-    - **UDP** – Faster, no guarantee of delivery (used for games, video calls)
+   TCP/IP is made up of **four layers**. Each layer has its own job:
 
-3. **Internet Layer**
-   - Handles **routing** of data between devices across networks
-   - Breaks data into **packets** and labels them with IP addresses
+7. **Application Layer**
+
+   - Deals with **applications and user services**
+   - This is the layer you interact with (e.g., web browsers, email clients)
    - Protocols here:
-     - **IP** – Internet Protocol (IPv4 and IPv6)
-     - **ICMP** – for sending error and control messages (used by `ping`)
+     - **HTTP/HTTPS** – web browsing
+     - **SMTP** – sending emails
+     - **IMAP/POP3** – receiving emails
+     - **FTP** – file transfer
 
-4. **Network Access Layer** (Link Layer)
-   - Manages how data is sent **physically** over the network (wires, Wi-Fi, etc.)
-   - Converts packets into electrical signals or radio waves
-   - Protocols: Ethernet, Wi-Fi, ARP
+8. **Transport Layer**
+
+   - Manages the **delivery of data**
+   - Breaks data into chunks (called **segments**) and reassembles them
+   - Handles error checking and flow control
+   - Two main protocols:
+     - **TCP** – Reliable, ordered delivery (used for most things)
+     - **UDP** – Faster, no guarantee of delivery (used for games, video calls)
+
+9. **Internet Layer**
+
+- Handles **routing** of data between devices across networks
+- Breaks data into **packets** and labels them with IP addresses
+- Protocols here:
+- **IP** – Internet Protocol (IPv4 and IPv6)
+- **ICMP** – for sending error and control messages (used by `ping`)
+
+1. **Network Access Layer** (Link Layer)
+
+- Manages how data is sent **physically** over the network (wires, Wi-Fi, etc.)
+- Converts packets into electrical signals or radio waves
+- Protocols: Ethernet, Wi-Fi, ARP
 
 **How TCP/IP Works (Step-by-Step)**
+
 1. **User Action**: You enter `www.example.com` in your browser.
 2. **DNS Lookup**: Your computer gets the IP address for the website using DNS.
 3. **Data Preparation**: Your browser sends an HTTP request (application layer).
@@ -221,41 +237,48 @@ TCP/IP is made up of **four layers**. Each layer has its own job:
 7. **Receiving End**: The server reassembles the segments and sends back a response.
 8. **Browser Displays Page**: You see the website once all the data is received.
 
-**TCP vs UDP Comparison**
+   **TCP vs UDP Comparison**
 
-| Feature   | TCP                            | UDP                              |
-| --------- | ------------------------------ | -------------------------------- |
-| Delivery  | Reliable (resends lost data)   | Unreliable (no resending)        |
-| Order     | Keeps order                    | No guarantee of order            |
-| Speed     | Slower (due to checking)       | Faster                           |
-| Use cases | Web browsing, email, downloads | Video calls, games, live streams |
+   | Feature   | TCP                            | UDP                              |
+   | --------- | ------------------------------ | -------------------------------- |
+   | Delivery  | Reliable (resends lost data)   | Unreliable (no resending)        |
+   | Order     | Keeps order                    | No guarantee of order            |
+   | Speed     | Slower (due to checking)       | Faster                           |
+   | Use cases | Web browsing, email, downloads | Video calls, games, live streams |
 
-### What is IP?
+   ### What is IP?
 
-**IP (Internet Protocol)** is a **network layer protocol** that handles **addressing and routing** of data between devices on a network. It ensures that packets of data are sent from the sender to the correct destination.
+   **IP (Internet Protocol)** is a **network layer protocol** that handles **addressing and routing** of data between devices on a network. It ensures that packets of data are sent from the sender to the correct destination.
 
-Every device on a network — like your phone, laptop, or a website server — is assigned a unique **IP address**, which acts like a digital address so the internet knows where to send information.
+   Every device on a network — like your phone, laptop, or a website server — is assigned a unique **IP address**, which acts like a digital address so the internet knows where to send information.
 
-**IP is responsible for**
-1. **Addressing**
+   **IP is responsible for**
+9. **Addressing**
+
    - Every device must have a unique **IP address**.
    - IP addresses identify the **sender** and the **receiver** of data.
+
 2. **Packetization**
+
    - IP splits data into small units called **packets**.
    - Each packet includes:
      - **Sender IP address**
      - **Destination IP address**
      - Other information (e.g. time to live)
-3. **Routing**
+
+10. **Routing**
+
    - Packets may travel through many routers across different networks.
    - Each router checks the **destination IP** and forwards the packet toward its target.
    - The path may not be the same for each packet — they can take different routes.
-4. **Delivery (Best-Effort)**
+
+11. **Delivery (Best-Effort)**
+
    - IP does not guarantee delivery.
    - Packets can be **lost**, **duplicated**, or **arrive out of order**.
    - That’s why **TCP** is often used on top of IP to ensure reliable delivery.
 
-**Types of IP Addresses**
+   **Types of IP Addresses**
 
 - **IPv4** (Internet Protocol version 4)
   - Most common version
@@ -278,15 +301,14 @@ Every device on a network — like your phone, laptop, or a website server — i
 | **Static IP**  | Does not change. Manually set. Used for servers.  |
 | **Dynamic IP** | Changes over time. Assigned by DHCP. Most common. |
 
-
 **IP Header**
 
 Every IP packet includes a **header** with important information:
 - **Version** (IPv4 or IPv6)
--  **Source IP address**
--   **Destination IP address**
--    **Time to Live (TTL)** – how many hops (routers) the packet can go through before being dropped
--     **Protocol** – tells what’s inside (e.g., TCP, UDP)
+- **Source IP address**
+- **Destination IP address**
+- **Time to Live (TTL)** – how many hops (routers) the packet can go through before being dropped
+- **Protocol** – tells what’s inside (e.g., TCP, UDP)
 
 ### HTTP / HTTPS
 
@@ -314,6 +336,7 @@ When data comes into your device (like a web page or a message), it’s sent to 
 **Why Are Ports Needed?**
 A single computer can run many programs at the same time—like a web browser, email client, and video game.
 **Ports** help keep the traffic organized by assigning a number to each type of service.
+
 - Data coming into your computer must be directed to the correct software.
 - The operating system checks the **port number** and passes the data to the matching program.
 
@@ -331,6 +354,7 @@ Some port numbers are **standardized**, meaning certain services always use the 
 | 443         | HTTPS (Secure web pages)     |
 | 110         | POP3 (Receiving email)       |
 | 143         | IMAP (Receiving email)       |
+
 :::
 
 - **HTTP** is fast and suitable for non-sensitive information, but it is not secure—data can be intercepted or altered by third parties.
@@ -338,8 +362,10 @@ Some port numbers are **standardized**, meaning certain services always use the 
 - Modern browsers display a padlock icon for HTTPS sites, signalling a secure connection, and may warn users when a site is not secure.
 
 **Basic Workflow**
+
 1. **Connection Establishment:** The client initiates a TCP connection to the server. HTTP typically operates over TCP/IP and uses port 80 for standard HTTP connections.
 2. **Request-Response Cycle:**
+
    - **Request:** Once the TCP connection is established, the client sends an HTTP request to the server. This request includes:
      - a request line (method, URL, HTTP version)
      - headers (host, user-agent, content-type, etc.)
@@ -348,9 +374,10 @@ Some port numbers are **standardized**, meaning certain services always use the 
      - a status line (HTTP version, status code, status message)
      - response headers (content-type, content-length, server, etc.)
      - often a body containing the requested resource or data
+
 3. **Connection Closure:** After the response is delivered, the connection can be closed, or kept open for further requests if the header Connection: keep-alive is used.
 
-**HTTP Methods**
+   **HTTP Methods**
 
 - **GET:** Requests the specified resource. GET requests should only retrieve data and should have no other effect.
 - **POST:** Submits data to be processed (e.g., from a form). The server may create or update resources based on the data provided.
@@ -375,6 +402,7 @@ HTTP responses come with status codes that indicate the outcome of the request:
 **FTP** stands for **File Transfer Protocol**. It's one of the oldest protocols used to transfer files between two computers over a **TCP/IP network** (like the internet).
 
 **How It Works:**
+
 - FTP uses a **client-server model**.
   - The **FTP client** is the program you use to connect (e.g. FileZilla, Cyberduck, or even a terminal command).
   - The **FTP server** hosts files and handles file transfer requests.
@@ -406,6 +434,7 @@ FTP is **not secure** by default:
   - **Explicit FTPS** (uses port 21; client asks for encryption after connecting)
 
 **Benefits of FTPS:**
+
 - Secure transmission of sensitive files (e.g. medical data, financial documents)
 - Authentication using **certificates** (optional, for extra security)
 - Often used by businesses and government systems that require encrypted file transfer
@@ -454,6 +483,7 @@ There are two main types:
 - **On-demand streaming** – videos or music you can play anytime (e.g. YouTube, Netflix)
 
 **Common Streaming Protocols**
+
 - **HTTP Live Streaming (HLS)**
   - Created by Apple
   - Breaks video into small chunks and sends them one at a time
@@ -484,10 +514,12 @@ There are two main types:
 **Broadcast protocols** are ways of sending data from one device to **many devices at once** on a network. They are used when the same message needs to reach a group of devices without sending it separately to each one.
 
 **How Broadcasting Works**
+
 - In a broadcast, data is sent to **all devices** on a local network. Each device checks the message to see if it’s meant for them.
 - Broadcasting is usually only used in **Local Area Networks (LANs)**—not across the internet—because it creates a lot of traffic if overused.
 
 **Common Broadcast Protocols**
+
 - **ARP (Address Resolution Protocol)**
   - Used to find the **MAC address** of a device when you only know its **IP address**
   - Sends a broadcast message to the whole network asking, "Who has this IP?"
@@ -509,23 +541,25 @@ There are two main types:
 
 ### REST (Representational State Transfer)
 
-REST is an architectural style for designing networked applications. It relies on a **stateless**, **client-server**, **cacheable communications protocol** &mdash; the HTTP (Hypertext Transfer Protocol). 
+REST is an architectural style for designing networked applications. It relies on a **stateless**, **client-server**, **cacheable communications protocol** &mdash; the HTTP (Hypertext Transfer Protocol).  
 
 **RESTful** systems use HTTP requests to perform CRUD (Create, Read, Update, Delete) operations on resources.
 
 **Key Concepts**
+
 - **Resources:** Resources are typically data objects or services and can be accessed using a unique URL.
 - **HTTP Methods:** REST uses standard HTTP methods to perform operations on resources.
 - **Stateless Communication:** The server does not store any state about the client session on its end, therefore each request from a client to a server must contain all the information the server needs to understand and process the request.
 - **Representation:** Resources are represented in different formats, usually JSON (JavaScript Object Notation) or XML (eXtensible Markup Language).
-   - The client requests a resource and the server responds with the resource's current state in one of these formats.
+  - The client requests a resource and the server responds with the resource's current state in one of these formats.
 
 **Example of Data Exchange Using REST:**
 
 - **GET Request:**
-   - A client wants to retrieve information about a book with the ID 123.
-   - The client sends a GET request to the server at the URL: `http://api.library.com/books/123`.
-   - The server responds with the book's details in JSON format:
+  - A client wants to retrieve information about a book with the ID 123.
+  - The client sends a GET request to the server at the URL: `http://api.library.com/books/123`.
+    - The server responds with the book's details in JSON format:
+
      ```{code} json
      {
        "id": 123,
@@ -536,9 +570,10 @@ REST is an architectural style for designing networked applications. It relies o
      ```
 
 - **POST Request:**
-   - A client wants to add a new book to the library.
-   - The client sends a POST request with the book's data to the URL: `http://api.library.com/books`.
-   - The server processes the request and adds the book to the database, responding with the created book's details:
+  - A client wants to add a new book to the library.
+  - The client sends a POST request with the book's data to the URL: `http://api.library.com/books`.
+  - The server processes the request and adds the book to the database, responding with the created book's details:
+
      ```{code} json
      {
        "id": 124,
@@ -549,9 +584,10 @@ REST is an architectural style for designing networked applications. It relies o
      ```
 
 - **PUT Request:**
-   - A client wants to update the information of an existing book with the ID 123.
-   - The client sends a PUT request with the updated data to the URL: `http://api.library.com/books/123`.
-   - The server updates the book information and responds with the updated details:
+  - A client wants to update the information of an existing book with the ID 123.
+  - The client sends a PUT request with the updated data to the URL: `http://api.library.com/books/123`.
+    - The server updates the book information and responds with the updated details:
+
      ```{code} json
      {
        "id": 123,
@@ -562,9 +598,10 @@ REST is an architectural style for designing networked applications. It relies o
      ```
 
 - **DELETE Request:**
-   - A client wants to delete a book with the ID 123.
-   - The client sends a DELETE request to the URL: `http://api.library.com/books/123`.
-   - The server deletes the book and confirms the deletion:
+  - A client wants to delete a book with the ID 123.
+  - The client sends a DELETE request to the URL: `http://api.library.com/books/123`.
+  - The server deletes the book and confirms the deletion:
+
      ```{code} json
      {
        "message": "Book with ID 123 has been deleted."
@@ -578,23 +615,24 @@ REST is an architectural style for designing networked applications. It relies o
 **Key Features of JSON**
 
 - **Simplicity:**
-   - JSON syntax is straightforward and easy to understand.
-   - It is text-based, making it readable for humans.
+  - JSON syntax is straightforward and easy to understand.
+  - It is text-based, making it readable for humans.
 - **Language Independence:**
-   - Although it originates from JavaScript, JSON is language-agnostic.
-   - It is supported by most programming languages, either natively or through libraries.
+  - Although it originates from JavaScript, JSON is language-agnostic.
+  - It is supported by most programming languages, either natively or through libraries.
 - **Lightweight:**
-   - JSON data is compact and can be easily transmitted over networks, making it efficient for data exchange.
+  - JSON data is compact and can be easily transmitted over networks, making it efficient for data exchange.
 
 **JSON Structure**
 
 JSON data is represented as key-value (called dictionaries in Python) pairs organized in a hierarchical structure. The basic building blocks of JSON are:
 
 - **Objects:**
-   - Enclosed in curly braces `{}`.
-   - Contain a set of key-value pairs.
-   - Keys are strings, and values can be strings, numbers, objects, arrays, `true`, `false`, or `null`.
-   - Example:
+  - Enclosed in curly braces `{}`.
+  - Contain a set of key-value pairs.
+  - Keys are strings, and values can be strings, numbers, objects, arrays, `true`, `false`, or `null`.
+    - Example:
+
      ```{code} json
      {
        "name": "John Doe",
@@ -602,21 +640,25 @@ JSON data is represented as key-value (called dictionaries in Python) pairs orga
        "isStudent": false
      }
      ```
+
 - **Arrays:**
-   - Enclosed in square brackets `[]`.
-   - Contain a list of values.
-   - Values can be of any JSON data type.
-   - Example:
+  - Enclosed in square brackets `[]`.
+  - Contain a list of values.
+    - Values can be of any JSON data type.
+    - Example:
+
      ```{code} json
      {
        "students": ["Alice", "Bob", "Charlie"]
      }
      ```
+
 - **Values:**
-   - Can be strings, numbers, objects, arrays, Booleans (`true` or `false`), or `null`.
-   - Strings are enclosed in double quotes.
-   - Numbers can be integers or floating-point.
-   - Example:
+  - Can be strings, numbers, objects, arrays, Booleans (`true` or `false`), or `null`.
+  - Strings are enclosed in double quotes.
+  - Numbers can be integers or floating-point.
+  - Example:
+
      ```{code} json
      {
        "name": "John Doe",
@@ -659,12 +701,14 @@ Here’s a complete example representing a student record:
 ```
 
 **JSON usage**
+
 - **APIs:** JSON is commonly used in RESTful APIs to exchange data between clients and servers.
 - **Configuration Files:** Many software applications use JSON for configuration due to its readability and ease of parsing.
 - **Data Storage:** JSON can be used to store data in databases, especially in NoSQL databases like MongoDB.
 - **Web Development:** Web applications use JSON to transmit data asynchronously between the server and the client, often with technologies like AJAX.
 
 **JSON advantages**
+
 - **Readability:** JSON is easy to read and write for humans, making it straightforward to debug and understand.
 - **Lightweight:** JSON's simple syntax results in smaller data sizes compared to XML, which reduces the bandwidth needed for data transfer.
 - **Language Independence:** JSON is language-agnostic and can be parsed and generated by many programming languages, including JavaScript, Python, Java, and many others.
@@ -674,6 +718,7 @@ Here’s a complete example representing a student record:
 - **Widespread Adoption:** JSON is widely supported by web services and APIs, making it a standard choice for data exchange in modern web development.
 
 **JSON disadvantages**
+
 - **Limited Data Types:** JSON supports only a few basic data types (strings, numbers, Booleans, arrays, and objects), which may not be sufficient for more complex data representations.
 - **No Schema Validation:** JSON lacks a built-in schema, which can lead to data consistency issues since there is no enforced structure, making it challenging to validate the data format.
 - **Verbose for Complex Structures:** While lightweight for simple data, JSON can become verbose and less efficient for very complex or deeply nested structures, leading to increased parsing and processing time.
@@ -688,24 +733,25 @@ Here’s a complete example representing a student record:
 **Key Features of XML**
 
 - **Self-Descriptive:**
-   - XML documents are self-descriptive, meaning they include metadata about the data they contain.
-   - Each element is identified by a tag, making it clear what data is being represented.
+  - XML documents are self-descriptive, meaning they include metadata about the data they contain.
+  - Each element is identified by a tag, making it clear what data is being represented.
 - **Hierarchical Structure:**
-   - XML documents have a tree-like structure with nested elements.
-   - This hierarchical nature makes it easy to represent complex data relationships.
+  - XML documents have a tree-like structure with nested elements.
+  - This hierarchical nature makes it easy to represent complex data relationships.
 - **Extensibility:**
-   - XML is extensible, allowing users to define their own tags.
-   - This flexibility makes XML suitable for a wide range of applications.
+  - XML is extensible, allowing users to define their own tags.
+  - This flexibility makes XML suitable for a wide range of applications.
 - **Human and Machine Readable:**
-   - XML documents are both human-readable and machine-readable.
-   - They use plain text, making it easy to view and edit with a simple text editor.
+  - XML documents are both human-readable and machine-readable.
+  - They use plain text, making it easy to view and edit with a simple text editor.
 
 **XML Structure**
 
 - **Elements:**
-   - Enclosed in opening and closing tags `<tag>` and `</tag>`.
-   - Can contain text, attributes, other elements, or a combination of these.
-   - Example:
+  - Enclosed in opening and closing tags `<tag>` and `</tag>`.
+  - Can contain text, attributes, other elements, or a combination of these.
+  - Example:
+
      ```{code} xml
      <book>
        <title>Introduction to Programming</title>
@@ -713,10 +759,12 @@ Here’s a complete example representing a student record:
        <year>2020</year>
      </book>
      ```
+
 - **Attributes:**
-   - Provide additional information about elements.
-   - Placed within the opening tag of an element.
-   - Example:
+  - Provide additional information about elements.
+  - Placed within the opening tag of an element.
+  - Example:
+
      ```{code} xml
      <book id="123">
        <title>Introduction to Programming</title>
@@ -724,10 +772,12 @@ Here’s a complete example representing a student record:
        <year>2020</year>
      </book>
      ```
+
 - **Prolog:**
-   - The prolog is an optional part of the XML document that can contain an XML declaration and processing instructions.
-   - The XML declaration specifies the version of XML and the character encoding used in the document.
-   - Example:
+  - The prolog is an optional part of the XML document that can contain an XML declaration and processing instructions.
+  - The XML declaration specifies the version of XML and the character encoding used in the document.
+  - Example:
+
      ```{code} xml
      <?xml version="1.0" encoding="UTF-8"?>
      ```
@@ -766,9 +816,9 @@ Here’s a complete example representing a student record in XML:
 
 - **Document Storage:** XML is often used to store configuration files and data files.
 - **Data Interchange:** XML is used to exchange data between different systems and platforms.
-   - Example: Web services often use XML-based protocols like SOAP (Simple Object Access Protocol) to communicate.
+  - Example: Web services often use XML-based protocols like SOAP (Simple Object Access Protocol) to communicate.
 - **RSS Feeds:** XML is used to create RSS feeds, which are used to distribute updated content from websites.
-   - Example: News websites and blogs often provide RSS feeds in XML format.
+  - Example: News websites and blogs often provide RSS feeds in XML format.
 - **Document Formats** XML serves as the basis for various document formats.
 
 **XML advantages**
@@ -789,17 +839,18 @@ Here’s a complete example representing a student record in XML:
 **CSV & TSV Key Features**
 
 - **Simplicity:**
-   - Easy to read and write by both humans and machines.
+  - Easy to read and write by both humans and machines.
 - **Compatibility:**
-   - Supported by most spreadsheet programs like Microsoft Excel, Google Sheets, and database management systems.
+  - Supported by most spreadsheet programs like Microsoft Excel, Google Sheets, and database management systems.
 - **Flexibility:**
-   - Can store data of various types, including text and numbers.
+  - Can store data of various types, including text and numbers.
 - **Plain Text:**
-   - Data is stored in a simple text format, making it easy to handle and manipulate.
+  - Data is stored in a simple text format, making it easy to handle and manipulate.
 - **Data Import/Export:**
-   - These formats are commonly used for importing and exporting data in and out of databases, spreadsheets, and other data management systems.
+  - These formats are commonly used for importing and exporting data in and out of databases, spreadsheets, and other data management systems.
 
 **CSV Structure**
+
 - **Header Row:** Often includes column names.
 - **Data Rows:** Each row contains data fields separated by commas.
 - **Optional Quotes:** Fields that contain commas, line breaks, or quotes are enclosed in double quotes
@@ -842,7 +893,8 @@ Charlie    35    San Francisco, CA
 - **Field Handling:** CSV may require quotes for fields with special characters; TSV generally does not.
 
 **Advantages of CSV and TSV**
-- **Simplicity and Readability:** Files are easy to read and write by both humans and machines. 
+
+- **Simplicity and Readability:** Files are easy to read and write by both humans and machines.  
 - **Wide Compatibility:** Files are supported by a vast array of software applications, including spreadsheet programs like Microsoft Excel and Google Sheets, database management systems, and various data analysis tools.
 - **Lightweight:** Files are typically smaller in size compared to other formats like XML or JSON, which makes them efficient for storage and transfer, particularly over networks.
 - **Ease of Use:** Creating, editing, and parsing CSV files requires minimal resources and can be done with basic text editors and programming languages.
@@ -850,6 +902,7 @@ Charlie    35    San Francisco, CA
 - **TSV Compatibility:** TSV files are not as universally supported as CSV, but are still compatible with many spreadsheet applications and text editors.
 
 **Disadvantages of CSV and TSV**
+
 - **Lack of Standardization:** There is no universal standard for CSV and TSV files, leading to inconsistencies in how different applications handle delimiters, line breaks, and special characters.
 - **Limited Data Types:** CSV and TSV files can only store plain text, which limits their ability to represent more complex data types such as binary data, hierarchical data, or objects.
 - **Delimiter Conflicts:** For CSV files fields containing commas must be enclosed in quotes, which can complicate parsing and data entry. Additionally, if the data itself contains quotes or line breaks, it requires additional escaping. For TSV files, data that contains tabs can complicate parsing and require special handling.

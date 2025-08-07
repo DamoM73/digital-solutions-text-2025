@@ -53,19 +53,19 @@ The **Model-View-Controller (MVC)** pattern is a design approach that makes comp
 
 Parts of the MVC are:
 
-- **Model (Data):**
-  - The model manages the application's data and rules. 
-  - It provides the data needed by the view and accepts changes through the controller.
-  - In our projects this will consist of a `.bd` SQLite database file and a `datastore.py` file that provides **getter** and **setter** functions.
-- **View (User Interface):**
-  - The view displays the data and defines how the interface looks to the user. 
-  - It updates when the model changes.
-  - In our projects this will be a `.ui` file created in QtDesigner which produces a Qt User Interface.
-- **Controller (Logic):**
-  - The controller handles user input and acts as the bridge between model and view. 
-  - It uses **getter** functions to fetch data from the model and update the view
-  - It uses **setter** functions to send user changes back to the model.
-  - In our projects this will be the `main.py` file.
+* **Model (Data):**
+  * The model manages the application's data and rules.  
+  * It provides the data needed by the view and accepts changes through the controller.
+  * In our projects this will consist of a `.bd` SQLite database file and a `datastore.py` file that provides **getter** and **setter** functions.
+* **View (User Interface):**
+  * The view displays the data and defines how the interface looks to the user.
+  * It updates when the model changes.
+  * In our projects this will be a `.ui` file created in QtDesigner which produces a Qt User Interface.
+* **Controller (Logic):**
+  * The controller handles user input and acts as the bridge between model and view.  
+  * It uses **getter** functions to fetch data from the model and update the view
+  * It uses **setter** functions to send user changes back to the model.
+  * In our projects this will be the `main.py` file.
 
 ### Why use MVC?
 
@@ -73,6 +73,7 @@ MVC supports **separation of concerns (SoC)** by keeping data, user interface, a
 
 :::{seealso} Programming Paradigms Activities
 :class: dropdown
+
 1. You’ve created a class called `Vehicle` and now want to create a `Car` class that shares its attributes and methods. Which OOP principle allows you to do this, and what are its benefits?
 
 2. A developer is working on a weather app. They want to keep the code for displaying weather separate from the code that fetches the weather data. What architecture pattern should they use, and how does it support this separation?

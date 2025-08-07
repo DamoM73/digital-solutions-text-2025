@@ -5,7 +5,7 @@
   - [ ] Digital Solutions
   - [x] Technologies
 - [x] Coding
-  - [x] Coding Introduction 
+  - [x] Coding Introduction  
   - [x] Basic Features
   - [x] Good Practice
   - [x] Programming Paradigms
@@ -30,6 +30,7 @@
   - [ ] Mind Maps
   - [x] User Insights
   - [x] Use Case Diagrams
+  - [ ] Existing Solutions
   - [x] Success Criteria
   - [x] Mock-ups
   - [x] Pseudocode
@@ -38,7 +39,7 @@
   - [x] ERD and RS
   - [x] Data Dictionaries
   - [x] Data Connection Diagrams
-  - [ ] Testing
+  - [x] Testing
   - [ ] User Feedback
   - [ ] Evaluation Table
   - [ ] Impacts Table
@@ -48,7 +49,7 @@
   - [ ] PyQt
   - [ ] Working with CSV
   - [ ] Type Hints
-  - [ ] SQLite3
+  - [x] SQLite3
   - [x] SQLite3 - Reading
   - [ ] SQLite3 - Creating, Updating, Deleting
   - [x] Populating Databases
@@ -60,17 +61,17 @@
   - [ ] Checksums
 - [ ] SQL Skills
   - [x] SQL Introduction
-  - [x] SELECT 
-  - [x] WHERE 
+  - [x] SELECT  
+  - [x] WHERE  
   - [x] Filters and Aggregators
-  - [x] ORDER BY 
-  - [x] GROUP BY and HAVING 
+  - [x] ORDER BY  
+  - [x] GROUP BY and HAVING  
   - [x] Subqueries
-  - [x] JOIN 
+  - [x] JOIN  
   - [ ] CREATE TABLE
-  - [x] INSERT 
-  - [x] UPDATE 
-  - [ ] DELETE 
+  - [x] INSERT  
+  - [x] UPDATE  
+  - [ ] DELETE  
 - [ ] Utilities Skills
   - [ ] Utilities Introduction
 - [ ] Assessments

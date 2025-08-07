@@ -25,26 +25,26 @@ This video explains the critical importance of data privacy and ethics in today'
 Key issues and concerns highlighted include:
 
 - **Data Collection and Consent:**
-   - **Issue:** Organizations often collect user data without users fully understanding what's being collected or how it will be used.
-   - **Concern &ndash; Informed Consent:** Users frequently agree to terms without full comprehension, leading to potential unauthorized use of their information.
-   - **Concern &ndash; Transparency:** Lack of transparency from companies about their data practices can make users feel their privacy is compromised.
+  - **Issue:** Organizations often collect user data without users fully understanding what's being collected or how it will be used.
+  - **Concern &ndash; Informed Consent:** Users frequently agree to terms without full comprehension, leading to potential unauthorized use of their information.
+  - **Concern &ndash; Transparency:** Lack of transparency from companies about their data practices can make users feel their privacy is compromised.
 - **Data Storage and Security:**
-   - **Issue:** Large data repositories are attractive targets for cybercriminals.
-   - **Concern &ndash; Data Breaches:** Inadequate security measures can expose personal information, leading to risks like identity theft.
+  - **Issue:** Large data repositories are attractive targets for cybercriminals.
+  - **Concern &ndash; Data Breaches:** Inadequate security measures can expose personal information, leading to risks like identity theft.
 - **Data Sharing and Third-Party Access:**
-   - **Issue:** Sharing data with third-party vendors increases the risk of unauthorized access.
-   - **Concern &ndash; Lack of User Control:** Once data is shared, users have little control over its subsequent use, potentially leading to unwanted targeting.
+  - **Issue:** Sharing data with third-party vendors increases the risk of unauthorized access.
+  - **Concern &ndash; Lack of User Control:** Once data is shared, users have little control over its subsequent use, potentially leading to unwanted targeting.
 - **Data Profiling and Surveillance:**
-   - **Issue:** Organizations use data profiling to make inferences about behaviour, which can impact decisions like credit scores or job prospects.
-   - **Concern &ndash; Privacy Intrusion:** This practice can feel invasive as individual behaviours are tracked to build detailed profiles.
+  - **Issue:** Organizations use data profiling to make inferences about behaviour, which can impact decisions like credit scores or job prospects.
+  - **Concern &ndash; Privacy Intrusion:** This practice can feel invasive as individual behaviours are tracked to build detailed profiles.
 
 The video then emphasizes Ethical Considerations in Data Use, stressing the need for responsible data handling and prioritizing individual rights. A key ethical practice is:
 
 - **Transparency and Honesty:** Organizations should clearly communicate how data is collected, used, and shared.
-    - **Importance &ndash; Building Trust:** Transparent data practices are crucial for building trust with users, reassuring them that their information is handled responsibly.
+  - **Importance &ndash; Building Trust:** Transparent data practices are crucial for building trust with users, reassuring them that their information is handled responsibly.
 :::
 
-So you can see that Data privacy is fundamental because it safeguards individuals from harms associated with the exposure or misuse of their personal information. Personal data can reveal sensitive details about a person’s identity, habits, health, finances, and more. Unauthorized access or disclosure can lead to identity theft, financial loss, reputational damage, and emotional distress. 
+So you can see that Data privacy is fundamental because it safeguards individuals from harms associated with the exposure or misuse of their personal information. Personal data can reveal sensitive details about a person’s identity, habits, health, finances, and more. Unauthorized access or disclosure can lead to identity theft, financial loss, reputational damage, and emotional distress.  
 
 In this section we will explore what we need to take into consideration when handling data in Australia.
 
@@ -65,13 +65,13 @@ Information as a commodity refers to the idea that information—like physical g
 - Market research reports, customer databases, software, e-books, and streaming media are all examples of information commodities.
 - Data brokers aggregate and sell personal data, turning individual digital footprints into tradable assets.
 
-This value of data can lead to exploitation which raises ethical and legal concern around it's collection. 
+This value of data can lead to exploitation which raises ethical and legal concern around it's collection.  
 
 ---
 
 ## Handling Personal Data
 
-The collecting of personal data raises a range of ethical concerns. 
+The collecting of personal data raises a range of ethical concerns.  
 
 ### Privacy Violations
 
@@ -79,7 +79,7 @@ Collecting data without proper authorization or consent can infringe on individu
 
 Even anonymized data can sometimes be re-identified, leading to unintended privacy breaches.
 
-###  Informed Consent
+### Informed Consent
 
 Ethical data collection requires clear, informed consent from individuals, ensuring they understand what data is being collected, how it will be used, and with whom it may be shared.
 
@@ -147,27 +147,27 @@ Navigating and adhering to diverse and evolving data protection laws is both an 
 Here are some examples data privacy laws in force around the world:
 
 - **European Union: General Data Protection Regulation (GDPR)**
-   - **Scope:** Applies to all organizations processing personal data of EU residents, regardless of where the organization is based.
-   - **Key Features:** Requires explicit consent, data minimization, the right to access and delete data, data portability, and strict breach notification requirements. Imposes heavy penalties for non-compliance.
-   - **Influence:** Considered the global benchmark, inspiring similar laws in other countries.
+  - **Scope:** Applies to all organizations processing personal data of EU residents, regardless of where the organization is based.
+  - **Key Features:** Requires explicit consent, data minimization, the right to access and delete data, data portability, and strict breach notification requirements. Imposes heavy penalties for non-compliance.
+  - **Influence:** Considered the global benchmark, inspiring similar laws in other countries.
 - **United States: State and Sectoral Laws**
-   - In the US, data privacy is governed by a mix of federal sectoral laws and a growing number of comprehensive state laws, each granting consumers rights over their personal information and imposing various obligations on businesses
-   - **Federal Sectoral Laws:** apply to particular industries or types of data, rather than providing a single, comprehensive framework for all personal information. Here are some examples:
-     - **HIPAA (Health Insurance Portability and Accountability Act):** Protects health information privacy.
-     - **GLBA (Gramm-Leach-Bliley Act):** Regulates financial institutions' handling of personal financial information.
-     - **COPPA (Children’s Online Privacy Protection Act):** Governs online collection of data from children under 13.
-     - **FERPA (Family Educational Rights and Privacy Act):** Protects the privacy of student education records.
-     - **FCRA (Fair Credit Reporting Act):** Regulates the collection and use of consumer credit information.
-   - **State Comprehensive Privacy Laws:** As of 2025, at least 16 US states have passed comprehensive privacy laws, each with unique requirements and enforcement mechanisms. For example:
-     - **California Consumer Privacy Act (CCPA):** Grants California residents rights to know, delete, and opt out of the sale of their personal data. Other states like Virginia, Colorado, and Texas have enacted similar laws.
-     - **Virginia Consumer Data Protection Act (CDPA):** Emphasizes user consent, transparency, and allows consumers to opt out of data collection and targeted advertising.
-     - **Colorado Privacy Act:** Focuses on data minimization, purpose limitation, and consumer rights to access, correct, delete, and opt out of data sales and targeted ads.
+  - In the US, data privacy is governed by a mix of federal sectoral laws and a growing number of comprehensive state laws, each granting consumers rights over their personal information and imposing various obligations on businesses
+  - **Federal Sectoral Laws:** apply to particular industries or types of data, rather than providing a single, comprehensive framework for all personal information. Here are some examples:
+    - **HIPAA (Health Insurance Portability and Accountability Act):** Protects health information privacy.
+    - **GLBA (Gramm-Leach-Bliley Act):** Regulates financial institutions' handling of personal financial information.
+    - **COPPA (Children’s Online Privacy Protection Act):** Governs online collection of data from children under 13.
+    - **FERPA (Family Educational Rights and Privacy Act):** Protects the privacy of student education records.
+    - **FCRA (Fair Credit Reporting Act):** Regulates the collection and use of consumer credit information.
+  - **State Comprehensive Privacy Laws:** As of 2025, at least 16 US states have passed comprehensive privacy laws, each with unique requirements and enforcement mechanisms. For example:
+    - **California Consumer Privacy Act (CCPA):** Grants California residents rights to know, delete, and opt out of the sale of their personal data. Other states like Virginia, Colorado, and Texas have enacted similar laws.
+    - **Virginia Consumer Data Protection Act (CDPA):** Emphasizes user consent, transparency, and allows consumers to opt out of data collection and targeted advertising.
+    - **Colorado Privacy Act:** Focuses on data minimization, purpose limitation, and consumer rights to access, correct, delete, and opt out of data sales and targeted ads.
 - **China: Personal Information Protection Law (PIPL)**
-   - **Comprehensive Coverage:** Applies to any entity handling personal data of people in China, even if the entity is based overseas.
-   - **Key Features:** Consent, data minimization, cross-border data transfer restrictions, and severe penalties for non-compliance.
+  - **Comprehensive Coverage:** Applies to any entity handling personal data of people in China, even if the entity is based overseas.
+  - **Key Features:** Consent, data minimization, cross-border data transfer restrictions, and severe penalties for non-compliance.
 - **Australia: Privacy Act 1988 and Australian Privacy Principles (APPs)**
-   - **Scope:** Governs how personal information is handled by government agencies and many private sector organizations.
-   - **Key Features:** Open and transparent management, data quality and security, access and correction rights, and restrictions on cross-border disclosure.
+  - **Scope:** Governs how personal information is handled by government agencies and many private sector organizations.
+  - **Key Features:** Open and transparent management, data quality and security, access and correction rights, and restrictions on cross-border disclosure.
 
 Due to the international nature of the internet, the influence of these laws can spread far beyond their legal jurisdiction. For example:
 - The GDPR is the reason web sites ask you to accept cookies
@@ -190,7 +190,7 @@ The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/austr
 5. **Notification of the Collection of Personal Information** &ndash; Individuals must be informed when their personal information is collected, including the purpose and any third parties it may be shared with.
 6. **Use or Disclosure of Personal Information** &ndash; Personal information can only be used or disclosed for the purpose it was collected, unless an exception applies.
 7. **Direct Marketing** &ndash; Personal information must not be used for direct marketing unless specific conditions are met, including providing a simple way to opt out.
-8. **Cross-border Disclosure of Personal Information** &ndash; Organizations must take reasonable steps to ensure that overseas recipients do not breach the APPs when personal information is disclosed internationally. 
+8. **Cross-border Disclosure of Personal Information** &ndash; Organizations must take reasonable steps to ensure that overseas recipients do not breach the APPs when personal information is disclosed internationally.  
 9. **Adoption, Use, or Disclosure of Government Identifiers** &ndash; Organizations must not adopt, use, or disclose government-related identifiers (like Medicare or passport numbers) except as permitted by law.
 10. **Quality of Personal Information** &ndash; Reasonable steps must be taken to ensure personal information collected is accurate, up-to-date, and complete.
 11. **Security of Personal Information** &ndash; Organizations must take reasonable steps to protect personal information from misuse, interference, loss, unauthorized access, modification, or disclosure.
@@ -199,7 +199,7 @@ The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/austr
 
 ---
 
-## Open Data 
+## Open Data  
 
 Open data refers to data that is freely available for anyone to access, use, modify, and share, typically without restrictions or the need for special permissions. It is often published by governments, public institutions, or private organizations and is made available in accessible, machine-readable formats.
 
@@ -210,25 +210,25 @@ Key Features of Open Data:
 
 ### Importance of Open Data
 - **Promotes Transparency and Accountability**
-   - Open data allows citizens to scrutinize the actions and performance of governments and organizations, increasing transparency and enabling public oversight.
-   - For example, open data platforms can reveal school performance or government spending, empowering communities to advocate for improvements.
+  - Open data allows citizens to scrutinize the actions and performance of governments and organizations, increasing transparency and enabling public oversight.
+  - For example, open data platforms can reveal school performance or government spending, empowering communities to advocate for improvements.
 
 - **Drives Innovation and Economic Growth**
-   - By making valuable datasets available, open data stimulates the creation of new products, services, and business models, fostering entrepreneurship and job creation.
-   - The economic impact is significant; for instance, the release of weather and GPS data in the US led to new industries and billions in added value.
+  - By making valuable datasets available, open data stimulates the creation of new products, services, and business models, fostering entrepreneurship and job creation.
+  - The economic impact is significant; for instance, the release of weather and GPS data in the US led to new industries and billions in added value.
 
 - **Enhances Public Services and Efficiency**
-   - Sharing data across government agencies and with the public leads to better decision-making, more efficient services, and reduced duplication of effort.
-   - Open data helps identify areas of unnecessary spending and improves overall service delivery.
+  - Sharing data across government agencies and with the public leads to better decision-making, more efficient services, and reduced duplication of effort.
+  - Open data helps identify areas of unnecessary spending and improves overall service delivery.
 
 - **Supports Scientific Research and Collaboration**
-   - Open data accelerates scientific discovery by enabling researchers to validate findings, build upon each other’s work, and collaborate across disciplines and borders.
+  - Open data accelerates scientific discovery by enabling researchers to validate findings, build upon each other’s work, and collaborate across disciplines and borders.
 
 - **Empowers Individuals and Communities**
-   - Accessible data gives people the information needed to make informed choices, participate in civic life, and advocate for themselves and their communities.
+  - Accessible data gives people the information needed to make informed choices, participate in civic life, and advocate for themselves and their communities.
 
 - **Encourages Social Welfare and Participation**
-   - Open data initiatives can improve social outcomes by informing public debate, supporting evidence-based policy, and enabling social innovation.
+  - Open data initiatives can improve social outcomes by informing public debate, supporting evidence-based policy, and enabling social innovation.
 
 :::{seealso} The Trump Administration’s War on Measuring
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/a64qxZGps2E?si=G6jFdhPS50QU7GtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -266,14 +266,17 @@ Open data can easily conflict with privacy. A solution to this problem is the de
 **De-identification** is the process of removing or altering personal information from a dataset so that individuals cannot be readily identified. The goal is to protect privacy while still allowing the data to be used for analysis, research, or public release.
 
 **Key Steps in De-identification**
+
 1. **Removing Direct Identifiers:** This includes deleting or masking information such as names, addresses, phone numbers, email addresses, Medicare numbers, and other unique identifiers.
 2. **Modifying or Generalizing Indirect Identifiers:** Indirect identifiers (also called quasi-identifiers) are data points like date of birth, postcode, or gender that, when combined, could identify someone. These may be generalized (e.g., using age ranges instead of exact birth dates) or partially removed.
 3. **Data Masking and Perturbation:** Techniques such as data swapping, adding random noise, or aggregating data can further reduce the risk of re-identification.
 
 **Why is De-identification Important?**
+
 - **Privacy Protection:** It helps organizations comply with privacy laws (like the Australian Privacy Principles or GDPR) by reducing the risk that individuals can be identified from released data.
 - **Enabling Data Sharing:** De-identified data can often be shared more freely for research, policy-making, and innovation, unlocking value while minimizing privacy risks.
 
 **Limitations and Risks**
+
 - **Re-identification Risk:** De-identification is not foolproof. Advances in data analytics and the availability of other datasets mean that, in some cases, individuals can still be re-identified, especially if the data is rich or unique.
 - **Continuous Process:** De-identification should be regularly reviewed and updated as new risks, technologies, and datasets emerge.
