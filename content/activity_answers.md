@@ -2547,5 +2547,25 @@ CREATE TABLE Statement
 ```
 :::
 
-### DELETE Statement
+:::{seealso} DELETE Solutions
+:class: dropdown
+**School Database**
 
+```{literalinclude} 08_sql/assets/DELETE/Activity_1.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_2.sql
+:language: sql
+```
+
+**Repairs Database**
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_3.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_4.sql
+:language: sql
+```
+:::

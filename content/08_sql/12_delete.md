@@ -1,4 +1,4 @@
-# DELETE Statement
+# DELETE
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -31,5 +31,15 @@ Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_delete.asp) on 
 
 :::{seealso} DELETE Activities
 :class: dropdown
-Add Activities here
+**School Database**
+
+1. Delete all results where percent is under 50
+2. Delete all results for students born before 2000
+
+**Repairs Database**
+
+3. Delete all repairs that are already ready on 2010‑06‑03
+4. Delete all repairs done by technicians with the grade apprentice
+
+
 :::
