@@ -252,9 +252,9 @@ The Vigenère cipher is a method of encrypting alphabetic text by using a simple
   1. Identify repeated patterns in the ciphertext to determine the length of the keyword.
   2. Once the key length is known, the ciphertext can be broken into separate groups, each encrypted by the same letter of the key.
   3. Frequency analysis can then be applied to each of these simpler monoalphabetic ciphers to crack the entire message.
-     :::
+:::
 
-     **How the Vigenère Cipher Works**
+**How the Vigenère Cipher Works**
 
 1. **Choose a Keyword:** A keyword is selected, and each letter of the keyword is used to create a different Caesar cipher shift.
 
