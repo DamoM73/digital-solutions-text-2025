@@ -71,7 +71,7 @@
   - [ ] CREATE TABLE
   - [x] INSERT  
   - [x] UPDATE  
-  - [ ] DELETE  
+  - [x] DELETE  
 - [ ] Utilities Skills
   - [ ] Utilities Introduction
 - [ ] Assessments

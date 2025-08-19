@@ -2011,6 +2011,31 @@ END
 
 ### ERD and RS
 
+:::{seealso} ERD & RS Solutions
+:class: dropdown
+**Activity 1**
+
+![activity 1](../content/06_documentation/assets/11/erd_activity_1.png)
+
+---
+
+**Activity 2**
+
+![activity 2](../content/06_documentation/assets/11/erd_activity_2.png)
+
+---
+
+**Activity 3**
+
+![activity 3](../content/06_documentation/assets/11/erd_activity_3.png)
+
+---
+
+**Activity 4**
+
+![activity 4](../content/06_documentation/assets/11/erd_activity_4.png)
+:::
+
 ### Data Dictionaries
 
 ### Data Connection Diagrams
@@ -2450,9 +2475,95 @@ Test Design:
 ```
 :::
 
-CREATE TABLE Statement
+:::{seealso} CREATE TABLE Solutions
+:class: dropdown
+**Activity 1**
+```{literalinclude} 08_sql/assets/CREATE/Activity_1a.sql
+:language: sql
+```
 
-:::{seealso} INSERT INTO Activities
+```{literalinclude} 08_sql/assets/CREATE/Activity_1b.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_1c.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_1d.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_1e.sql
+:language: sql
+```
+
+---
+
+**Activity 2**
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_2a.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_2b.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_2c.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_2d.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_2e.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_2f.sql
+:language: sql
+```
+
+---
+
+**Activity 3**
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_3a.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_3b.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_3c.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_3d.sql
+:language: sql
+```
+
+---
+
+**Activity 4**
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_4a.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_4b.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/CREATE/Activity_4c.sql
+:language: sql
+```
+:::
+
+:::{seealso} INSERT INTO Solutions
 :class: dropdown
 **Movies Database**
 ```{literalinclude} 08_sql/assets/INSERT/Activity_1.sql
@@ -2566,6 +2677,40 @@ CREATE TABLE Statement
 ```
 
 ```{literalinclude} 08_sql/assets/DELETE/Activity_4.sql
+:language: sql
+```
+
+**Chinook Database**
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_5a.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_5b.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_5c.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_6a.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_6b.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_6c.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_6d.sql
+:language: sql
+```
+
+```{literalinclude} 08_sql/assets/DELETE/Activity_6e.sql
 :language: sql
 ```
 :::
