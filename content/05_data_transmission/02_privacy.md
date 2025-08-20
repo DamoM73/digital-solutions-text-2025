@@ -48,6 +48,13 @@ So you can see that Data privacy is fundamental because it safeguards individual
 
 In this section we will explore what we need to take into consideration when handling data in Australia.
 
+:::{seealso} GeneralPrivacy Activities
+:class: dropdown
+1. How does the collection and sale of personal data by corporations and data brokers raise ethical concerns about transparency and consent?
+2. What risks can arise from poor data storage and security, and how might these impact individuals?
+3. In what ways can responsible data handling practices, such as transparency and honesty, build trust between organisations and users?
+:::
+
 ## Data as a Commodity
 
 Information as a commodity refers to the idea that information—like physical goods—can be bought, sold, and traded for economic value. In the digital age, information and data have become valuable resources, much like oil or gold, because they can be used to drive business decisions, predict consumer behaviour, and tailor products and services.
@@ -66,6 +73,13 @@ Information as a commodity refers to the idea that information—like physical g
 - Data brokers aggregate and sell personal data, turning individual digital footprints into tradable assets.
 
 This value of data can lead to exploitation which raises ethical and legal concern around it's collection.  
+
+:::{seealso} Data as a Commodity Activities
+:class: dropdown
+1. How is information similar to and different from traditional physical commodities like oil or gold?
+2. What characteristics make data valuable as an economic resource in the digital age?
+3. What ethical and legal concerns can arise from treating personal data as a tradable commodity?
+:::
 
 ---
 
@@ -173,6 +187,20 @@ Due to the international nature of the internet, the influence of these laws can
 - The GDPR is the reason web sites ask you to accept cookies
 - COPPA is the reasons the Terms and Conditions of social media accounts exclude children under 13 years old.
 
+:::{seealso} Handling Personal Data Activities
+:class: dropdown
+1. How can re-identification of anonymized data occur, and what does this reveal about data security challenges?
+2. What role do high-profile data breaches play in shaping public awareness and organizational accountability?
+3. How might algorithms unintentionally reinforce stereotypes or systemic inequalities when handling personal data?
+4. Why is accountability just as important as transparency in ethical data collection?
+5. How can psychological profiling using personal data threaten democratic processes?
+6. What ethical dilemmas arise when organizations use data for purposes beyond the original reason it was collected?
+7. How does the concept of data as a valuable asset complicate debates over ownership and control?
+8. What risks emerge when organizations retain personal data longer than necessary?
+9. How do global differences in data protection laws create challenges for multinational organizations?
+10. In what ways do privacy laws like COPPA or FERPA directly shape the design of digital services for young people and students?
+:::
+
 ---
 
 ## Australian Privacy Principles 📝
@@ -196,6 +224,27 @@ The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/austr
 11. **Security of Personal Information** &ndash; Organizations must take reasonable steps to protect personal information from misuse, interference, loss, unauthorized access, modification, or disclosure.
 12. **Access to Personal Information** &ndash; Individuals have the right to access their personal information held by an organization, subject to some exceptions.
 13. **Correction of Personal Information** &ndash; Organizations must take reasonable steps to correct personal information to ensure it is accurate, up-to-date, complete, relevant, and not misleading.
+
+:::{seealso} APP Activities
+:class: dropdown
+1. Why do the Australian Privacy Principles exist, and what overall purpose do they serve?
+2. How do the APPs balance individual rights with the needs of organizations and government agencies?
+3. What might happen to public trust if organizations consistently fail to follow the APPs?
+4. How do the APPs connect with global privacy frameworks, such as the GDPR?
+5. What kinds of measures should organizations implement to protect personal information, and which APP does this relate to?
+6. In what situations might an individual reasonably choose to deal with an organization anonymously or under a pseudonym, and which APP covers this?
+7. What steps must organizations take before sending personal information overseas, and which APP sets this requirement?
+8. Under what conditions can an organization use or disclose personal information for purposes other than the original collection, and which APP applies?
+9. What steps must organizations take to ensure the personal information they collect is accurate and complete, and which APP governs this?
+10. What limits are placed on organizations when collecting personal information, and which APP is relevant?
+11. What obligations do organizations have if they use personal information for direct marketing, and which APP sets these rules?
+12. Why is it important for organizations to maintain a clear and up-to-date privacy policy, and which APP requires this?
+13. What rights do individuals have to access their personal information, what are the exceptions, and which APP applies?
+14. What information must an organization provide to an individual when collecting their personal information, and which APP outlines this?
+15. How should an organization handle personal information it receives that it did not ask for, and which APP addresses this?
+16. Why are organizations restricted in their use of government-related identifiers such as Medicare numbers, and which APP applies?
+17. How should organizations handle requests to correct inaccurate or misleading personal information, and which APP governs this?
+:::
 
 ---
 
@@ -280,3 +329,22 @@ Open data can easily conflict with privacy. A solution to this problem is the de
 
 - **Re-identification Risk:** De-identification is not foolproof. Advances in data analytics and the availability of other datasets mean that, in some cases, individuals can still be re-identified, especially if the data is rich or unique.
 - **Continuous Process:** De-identification should be regularly reviewed and updated as new risks, technologies, and datasets emerge.
+
+:::{seealso} Open Data Activities
+:class: dropdown
+1. What is open data, and how is it typically made available?
+2. What are the key features that make data truly "open"?
+3. How does open data promote transparency and accountability in governments and organizations?
+4. In what ways can open data drive innovation and contribute to economic growth?
+5. How does open data improve public services and government efficiency?
+6. Why is open data important for scientific research and collaboration?
+7. How can open data empower individuals and communities to make informed decisions?
+8. What role does open data play in encouraging social welfare and civic participation?
+9. What are some major open data sources available in Australia at national, state, and local government levels?
+10. What is de-identification, and why is it important when publishing open data?
+11. What are the key steps involved in de-identifying data before it is released?
+12. How does de-identification help organizations comply with privacy laws such as the APPs or GDPR?
+13. What are the limitations and risks associated with de-identification of open data?
+14. Why must de-identification be treated as a continuous process rather than a one-time action?
+
+:::

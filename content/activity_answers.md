@@ -1498,14 +1498,6 @@ Product Table
 | PR03 | Monitor | CAT02 |
 | PR04 | Webcam | CAT03 |
 | PR05 | Headset | CAT03 |
-
-Category Table
-
-| category_id | category_name |
-| --- | --- |
-| CAT01 | Accessories |
-| CAT02 | Displays |
-| CAT03 | Peripherals |
 :::
 
 :::{seealso} Full Normalisation Solution
@@ -1557,608 +1549,306 @@ Enrolment Table
 
 ### Data Privacy
 
-### Networks
-
-### Data Security Management
-
-### Data Security - Threats
-
-## Documentation
-
-### Mind Maps
-
-### User Insights
-
-:::{seealso} Empathy Map Solutions
+:::{seealso} General Privacy Solutions
 :class: dropdown
-**Empathy Map Activity 1: Liam – School Study Planner App**
-
-| Quadrant | Notes |
-| --- | --- |
-| **Says** | “I always feel behind.”<br>“I’d like reminders but don’t want notifications every five minutes.” |
-| **Thinks** | “I don’t want to miss deadlines again.”<br>“This shouldn’t be complicated.” |
-| **Does** | Writes homework in a notebook and loses it.<br>Studies late at night.<br>Uses phone often. |
-| **Feels** | Stressed, overwhelmed, forgetful, anxious about due dates. |
-
-Identified Needs (verbs):
-
-- Organise tasks
-- Receive reminders at useful times
-- View progress clearly
-
-Design Challenge: How might we help Liam stay organised and reminded without overwhelming him?
-
----
-
-**Empathy Map Activity 2: Janet – Fitness Tracker for Older Adults**
-
-| Quadrant | Notes |
-| --- | --- |
-| **Says** | “I don’t like lots of buttons or confusing screens.”<br>“It makes me feel proud.” |
-| **Thinks** | “I might press the wrong thing.”<br>“I want to keep active safely.” |
-| **Does** | Walks daily.<br>Doesn’t use her smartwatch.<br>Tries to stay healthy. |
-| **Feels** | Proud, frustrated, intimidated by tech, concerned about making mistakes. |
-
-Identified Needs (verbs):
-
-- Track activity
-- Understand performance
-*-Use technology easily
-
-Core Insight: Janet needs a way to track her walks simply and clearly because complex interfaces make her feel overwhelmed and unsure.
+1. Collection and sale of personal data, should address:
+  - Lack of informed consent
+  - Limited user understanding of terms and conditions
+  - Transparency issues with companies
+  - Ethical concerns of data being used or sold without clear permission
+2. Risks from poor data storage and security should address:
+  - Data breaches as targets for hackers
+  - Identity theft
+  - Financial loss
+  - Reputational damage and emotional distress
+3. Responsible data handling practices should address:
+  - Transparency about data use and sharing
+  - Clear communication with users
+  - Building trust through honesty
+  - User confidence and stronger relationships
 :::
 
-:::{seealso} Persona Solutions
+:::{seealso} Data as a Commodity Solutions
 :class: dropdown
-**Persona Activity 1: Tyler – School Canteen Ordering App**
+1. How is information similar to and different from traditional physical commodities like oil or gold?
 
-| Category | Details |
-| --- | --- |
-| Image | ![tyler](./assets/tyler_nguyen.png) |
-| Name | Tyler Nguyen |
-| Age | 15 |
-| Gender | Male |
-| Location | Brisbane, QLD |
-| Education | Year 10 |
-| Occupation | Student |
-| Income | $120 per week |
-| Hobbies | Soccer, gaming, music |
-| Goals | Buy lunch quickly without waiting; know what’s available before arriving |
-| Technology Proficiency | High – uses phone daily, plays games, uses apps easily |
-| Devices | Android phone, Windows laptop (school) |
-| Operating System | Android |
-| Tasks with Solution | View daily menu, pre-order food, get alerts for limited items |
-| Challenges | Forgets to order early; gets frustrated when items are sold out |
-| Pain Points | Long queues, slow app loading, unclear menus |
-| Accessibility Needs | None |
-| Quote | “I just want to grab my food and go – not waste lunch lining up.” |
+   - Similarities: has economic value, can be traded, drives industries
+   - Differences: intangible, can be copied/shared infinitely, low marginal cost
 
----
+2. What characteristics make data valuable as an economic resource in the digital age?
 
-**Persona Activity 2: Amina – Library Booking Kiosk**
+   - Intangibility
+   - Tradability (databases, reports, software, media)
+   - Value creation (informs decisions, competitive advantage)
+   - Market dynamics (supply, demand, private/public goods)
+   - Low marginal cost of reproduction
 
-| Category | Details |
-| --- | --- |
-| Image | ![amina](./assets/amina_rahman.png) |
-| Name | Amina Rahman |
-| Age | 71 |
-| Gender | Female |
-| Location | Logan, QLD |
-| Education | Former primary school teacher |
-| Occupation | Retired |
-| Income | Pension |
-| Hobbies | Reading, gardening, local history research |
-| Goals | Book study rooms, borrow eBooks, print documents independently |
-| Technology Proficiency | Low – uses desktop with help from library staff |
-| Devices | Android phone (son's old one), occasional use of library computer |
-| Operating System | Andoird, Windows (library desktop) |
-| Tasks with Solution | Book space, reserve books, print forms |
-| Challenges | Avoids digital forms, forgets instructions |
-| Pain Points | Touchscreen too sensitive, hard-to-read text, confusing menus |
-| Accessibility Needs | Large text, low dexterity (arthritis), avoids scrolling |
-| Quote | “If it’s simple and clear, I’ll give it a try. I just don’t want to feel lost.” |
+3. What ethical and legal concerns can arise from treating personal data as a tradable commodity?
+
+   - Exploitation of individuals’ digital footprints
+   - Lack of informed consent in data collection
+   - Privacy violations and surveillance
+   - Risk of data misuse by third parties
+   - Regulatory and legal compliance issues
 :::
 
-### Use Case Diagrams
-
-:::{seealso} Use Case Diagram Soulitions
+:::{seealso} Handling Personal Data Solutions
 :class: dropdown
-**Activity 1: Student Portal Login System**
+1. **Privacy Violations – How can collecting data without proper consent infringe on privacy?**
 
-![use case 1](./assets/ucd_activity_1.png)<p>&nbsp;</p>
+   - Collecting without authorization or consent exposes sensitive information
+   - Breaches confidentiality
+   - Even anonymized data can sometimes be re-identified, leading to privacy breaches
 
----
+2. **Informed Consent – What makes informed consent critical for ethical data collection?**
 
-**Activity 2: Online Food Delivery App**
+   - Individuals must clearly understand what is being collected
+   - They need to know how the data will be used
+   - They should be told with whom the data may be shared
+   - Many consent processes are inadequate because terms are too complex or unclear
 
-![use case 2](./assets/ucd_activity_2.png)<p>&nbsp;</p>
+3. **Data Security – Why is data security an ethical obligation for organizations?**
 
----
+   - Prevents unauthorized access to data
+   - Reduces risks of breaches or leaks
+   - Protects individuals from identity theft
+   - Prevents financial harm
+   - Reduces reputational damage to individuals and organizations
+   - High-profile breaches highlight the importance of robust security
 
-**Activity 3: Library Management System**
+4. **Bias and Discrimination – How can poor data handling reinforce bias?**
 
-![use case 3](./assets/ucd_activity_3.png)<p>&nbsp;</p>
+   - Datasets can be unrepresentative
+   - Algorithms may perpetuate or amplify bias if not carefully managed
+   - Leads to unfair or discriminatory outcomes
+   - Facial recognition has been criticised for racial bias and inaccuracies
 
----
+5. **Transparency and Accountability – Why are both needed in ethical data collection?**
 
-**Activity 4: School Event Booking Platform**
+   - Organizations must clearly state what data is collected
+   - Must explain why it is collected
+   - Must explain how it will be used
+   - Transparency enables informed choices by individuals
+   - Lack of transparency erodes trust and can lead to misuse or abuse
 
-![use case 4](./assets/ucd_activity_4.png)<p>&nbsp;</p>
+6. **Manipulative and Exploitative Practices – How can data be misused unethically?**
 
+   - Used for manipulative marketing
+   - Enables psychological profiling
+   - Can drive social manipulation
+   - Undermines individual autonomy
+   - Can threaten democratic processes
+
+7. **Data Ownership and Control – What are the debates about who owns personal data?**
+
+   - Ongoing debate over whether individuals or organizations own data
+   - Issues of who has the right to control its use
+   - Increasingly important as data becomes a valuable asset
+
+8. **Data Minimization and Purpose Limitation – Why should organizations limit what data they collect?**
+
+   - Only collect data necessary for a specific purpose
+   - Do not retain data longer than needed
+   - Helps balance commercial interests with protecting individual rights
+
+9. **Fairness in Use and Retention – Why is using data beyond original intent unethical?**
+
+   - Using data for other purposes breaches fairness principles
+   - Lack of explicit consent for new uses is unethical
+   - Even if thought beneficial, it erodes user trust
+
+10. **Legal and Regulatory Compliance – How do global laws influence ethical handling of personal data?**
+
+    - GDPR (EU): explicit consent, minimization, rights to access/delete, data portability, breach notification, heavy penalties
+    - US: mix of federal sectoral laws (HIPAA, GLBA, COPPA, FERPA, FCRA) and state laws (CCPA, CDPA, Colorado Privacy Act)
+    - China: PIPL with strict consent, minimization, cross-border restrictions, severe penalties
+    - Australia: Privacy Act & APPs requiring transparency, data quality/security, access/correction rights, cross-border limits
+    - International influence: GDPR drives cookie consent popups, COPPA shapes age restrictions on social media
 :::
 
-### Existing Solutions
-
-### Success Criteria
-
-:::{seealso} Requirements and Success Criteria Activities
+:::{seealso} APP Solutions
 :class: dropdown
-**Activity 1: Identifying Requirements**
+1. Why do the Australian Privacy Principles exist, and what overall purpose do they serve?
+   - Govern how organizations and government agencies handle personal information
+   - Ensure privacy, transparency, and accountability
+   - Protect individual rights in collection, use, storage, and disclosure
 
-| Type | Requirements |
-| --- | --- |
-| Functional Requirements | Users must be able to add new homework tasks with a title and description<br>Users must be able to set due dates and optional reminders for each task<br>Users must be able to mark tasks as completed and delete tasks |
-| Non-Functional Requirements | The app should load within 2 seconds on most devices<br>The app should store data securely using encrypted local storage or a cloud database<br>The app should be compatible with both Android and iOS mobile browsers |
-| User Experience Requirements | The app should have a simple, clean interface that is easy to navigate<br>The user should be able to view a task summary without scrolling excessively |
-| Constraints | Must be completed within 4 weeks<br>Must be developed using HTML, CSS, and JavaScript only (no backend server) |
+2. How do the APPs balance individual rights with the needs of organizations and government agencies?
 
-**Activity 2: Prioritising with a MuSCoW Table**
+   - Give individuals rights to access, correction, and privacy
+   - Allow organizations to collect and use data where necessary for functions
+   - Impose safeguards such as consent, limitation, and accountability
 
-| Category | Requirements |
-| --- | --- |
-| Must | Users can view class timetables<br>Website is mobile responsive<br>Users can sign up for a membership online<br>Pages load in under 3 seconds<br>Website matches gym’s official branding (colours, fonts)<br>Use strong colour contrast for accessibility |
-| Should | Staff can log in and edit timetable information<br>Users can search for classes by day or trainer<br>Allow users to cancel or reschedule bookings<br>Include testimonials from current members<br>Provide a live chat feature for talking to staff<br>Include a staff login portal |
-| Could | Include an animated logo on page load<br>Include video tours of the gym<br>Offer a blog with fitness tips<br>Sell gym merchandise through an online shop<br>Allow users to create workout plans<br>Include a downloadable PDF of the class schedule |
-| Won’t | Offer push notifications through the browser<br>Translate the site into five languages |
+3. What might happen to public trust if organizations consistently fail to follow the APPs?
 
-**Activity 3: Creating Criteria**
+   - Erosion of user confidence
+   - Increased concern about privacy and misuse of information
+   - Potential withdrawal from services or complaints to regulators
 
-| Requirement | Success Criteria |
-| --- | --- |
-| Users can view class timetables | Users can access the timetable page and view weekly classes with correct times, locations, and trainers. |
-| Website is mobile responsive | Website layout adjusts to fit different screen sizes without horizontal scrolling or content overlap. |
-| Users can sign up for a membership online | Users can complete a membership form, submit payment, and receive confirmation within 1 minute. |
-| Pages load in under 3 seconds | All main pages (home, timetable, membership) load fully within 3 seconds on a 4G connection. |
-| Website matches gym’s official branding (colours, fonts) | All pages use the approved brand colours and fonts as shown in the provided style guide. |
-| Use strong colour contrast for accessibility | All text has at least 4.5:1 contrast ratio when tested with a colour contrast tool. |
-| Staff can log in and edit timetable information | Admin users can log in and update, add, or delete classes from the timetable interface successfully. |
-| Users can search for classes by day or trainer | The timetable page includes a working filter where users can choose a day or trainer and see only matching classes. |
-| Allow users to cancel or reschedule bookings | Logged-in users can cancel or change a booking, and changes are reflected in their account instantly. |
-| Include testimonials from current members | At least three testimonials are displayed on the homepage, with member name and photo. |
-| Provide a live chat feature for talking to staff | Users can send messages to staff during business hours, with replies within 2 minutes. |
-| Include a staff login portal | Staff members can access a secure login screen and be redirected to the admin dashboard after successful login. |
+4. How do the APPs connect with global privacy frameworks, such as the GDPR?
+
+   - Share common principles: consent, minimization, access, correction, security
+   - Influence of GDPR on international data protection practices
+   - Help Australian organizations align with global standards
+
+5. Why is it important for organizations to maintain a clear and up-to-date privacy policy?
+
+   - Open and transparent management of personal information
+   - Requirement for clearly expressed and current privacy policy
+
+6. In what situations might an individual reasonably choose to deal with an organization anonymously or under a pseudonym?
+
+   - APP requires option of anonymity or pseudonymity
+   - Exceptions: impracticable or unlawful to do so
+
+7. What limits are placed on organizations when collecting personal information?
+
+   - Collect only information necessary for functions
+   - Must be collected by lawful and fair means
+
+8. How should an organization handle personal information it receives that it did not ask for?
+
+   - Assess whether it could have been collected under APP 3
+   - If not, must destroy or de-identify it
+
+9. What information must an organization provide to an individual when collecting their personal information?
+
+   - Notify individual at time of collection
+   - Purpose of collection
+   - Any third parties with whom data may be shared
+
+10. Under what conditions can an organization use or disclose personal information for purposes other than the original collection?
+
+   - Use or disclose only for the collected purpose
+   - Exceptions apply in specific lawful cases
+
+11. What obligations do organizations have if they use personal information for direct marketing?
+
+   - Only use under certain conditions
+   - Must provide simple opt-out option
+
+12. What steps must organizations take before sending personal information overseas?
+
+   - Take reasonable steps to ensure overseas recipients comply with APPs
+
+13. Why are organizations restricted in their use of government-related identifiers such as Medicare numbers?
+
+   - Cannot adopt, use, or disclose government identifiers
+   - Limited exceptions where permitted by law
+
+14. What steps must organizations take to ensure the personal information they collect is accurate and complete?
+
+    - Take reasonable steps to ensure accuracy
+    - Ensure information is up-to-date
+    - Ensure information is complete
+
+15. What kinds of measures should organizations implement to protect personal information?
+
+    - Protect against misuse and interference
+    - Prevent loss of information
+    - Guard against unauthorized access, modification, or disclosure
+
+16. What rights do individuals have to access their personal information, and what are the exceptions?
+   - Right to access personal information held by organization
+   - Subject to lawful exceptions
+
+17. How should organizations handle requests to correct inaccurate or misleading personal information?
+
+   - Take reasonable steps to correct information
+   - Ensure it is accurate, up-to-date, complete, relevant, not misleading
 :::
 
-### Mock-ups
-
-:::{seealso} Mock-up Solutions
+:::{seealso} Open Data Solutions
 :class: dropdown
-1. Sketches are quick, rough drawings used early to explore ideas; wireframes are simplified, structured layouts showing UI element placement; mock-ups are high-fidelity, static visuals that represent the final design but are not interactive.
-2. A mock-up shows the exact visual appearance of the UI, including colours, fonts, spacing, and branding. It does not include interactive elements like clickable buttons or animations.
-3. Design tools include Figma, Penpot, or PowerPoint for FIA1 and IA1. For FIA2, FIA3, IA2, and IA3, QTDesigner is used to create mock-ups that will be turned into code.
-4. Annotations show how useability and visual communication principles have been applied to the design. They demonstrate understanding and link design decisions to success criteria.
-5. An annotation must include a description of the applied useability principle, an arrow pointing to its example on the UI, focus on one principle and one example, and highlight keywords in bold (e.g. **useability principle**, **visual communication principle**, **visual communication element**).
+1. What is open data, and how is it typically made available?
+
+   - Freely available for anyone to access, use, modify, and share
+   - Published by governments, public institutions, or private organizations
+   - Provided in accessible, machine-readable formats
+
+2. What are the key features that make data truly "open"?
+
+   - Freely accessible to all, regardless of user or purpose
+   - Usable, reusable, and redistributable without restrictions
+   - Structured for easy analysis and integration with other datasets
+
+3. How does open data promote transparency and accountability in governments and organizations?
+
+   - Enables citizens to scrutinize actions and performance
+   - Increases transparency and allows public oversight
+   - Example: showing school performance or government spending to empower communities
+
+4. In what ways can open data drive innovation and contribute to economic growth?
+
+   - Stimulates creation of new products, services, and business models
+  
+   - Fosters entrepreneurship and job creation
+   - Example: release of weather and GPS data created new industries and billions in value
+
+5. How does open data improve public services and government efficiency?
+
+   - Sharing data across agencies improves decision-making
+   - Reduces duplication of effort
+   - Identifies unnecessary spending
+   - Improves overall service delivery
+
+6. Why is open data important for scientific research and collaboration?
+
+   - Accelerates discovery by enabling validation of findings
+   - Allows researchers to build upon existing work
+   - Encourages collaboration across disciplines and borders
+
+7. How can open data empower individuals and communities to make informed decisions?
+
+   - Provides access to relevant information
+   - Enables informed choices
+   - Supports participation in civic life
+   - Helps advocate for community needs
+
+8. What role does open data play in encouraging social welfare and civic participation?
+
+   - Informs public debate
+   - Supports evidence-based policy
+   - Enables social innovation
+   - Improves social outcomes
+
+9. What are some major open data sources available in Australia at national, state, and local government levels?
+
+   - National: Data.gov.au, ABS, NationalMap
+   - State/Territory: Data.NSW, Data.VIC, Data.Qld, DataSA, DataWA, LIST (Tasmania), DataACT, NT Open Data Portal
+   - Council: Brisbane, Gold Coast, Logan, Redland open data portals
+
+10. What is de-identification, and why is it important when publishing open data?
+
+    - Removing or altering personal information so individuals cannot be identified
+    - Protects privacy while allowing analysis and research
+    - Helps organizations comply with laws like APPs or GDPR
+    - Enables freer data sharing for research, policy, and innovation
+
+11. What are the key steps involved in de-identifying data before it is released?
+
+    - Removing direct identifiers (names, addresses, phone numbers, emails, Medicare numbers)
+    - Modifying or generalizing indirect identifiers (e.g., age ranges instead of birth dates, partial removal of postcodes)
+    - Applying data masking or perturbation (e.g., swapping data, adding noise, aggregating)
+
+12. How does de-identification help organizations comply with privacy laws such as the APPs or GDPR?
+
+    - Reduces the risk that individuals can be identified
+    - Meets requirements of privacy laws regarding personal data handling
+    - Allows safe sharing of data for research, policy-making, and innovation
+
+13. What are the limitations and risks associated with de-identification of open data?
+
+    - Not foolproof—re-identification still possible
+    - Advances in analytics and other datasets can expose identities
+    - Greater risk when datasets are rich or unique
+
+14. Why must de-identification be treated as a continuous process rather than a one-time action?
+
+    - New technologies create new re-identification risks
+    - Additional datasets may combine to reveal identities
+    - Requires regular review and updating to stay effective
 :::
-
-### Pseudocode
-
-:::{seealso} Simple Pseudocode Solutions
-:class: dropdown
-**Activity 1**
-```{code}pseudocode
-BEGIN
-    INPUT length
-    INPUT width
-    CALCULATE area = length * width
-    DISPLAY "The area is", area
-END
-```
-
----
-
-**Activity 2**
-```{code}pseudocode
-BEGIN
-    INPUT hours_worked
-    INPUT hourly_rate
-    CALCULATE total_pay = hours_worked * hourly_rate
-    DISPLAY "Total pay is", total_pay
-END
-```
-
----
-**Activity 3**
-```{code}pseudocode
-BEGIN
-    READ mark1, mark2, mark3 FROM marks.txt
-    CALCULATE total = mark1 + mark2 + mark3
-    CALCULATE average = total / 3
-    WRITE "Average mark is", average TO average.txt
-END
-```
-:::
-
-:::{seealso} Modularisation Pseudocode Solutions
-:class: dropdown
-**Activity 1**
-```{code}pseudocode
-BEGIN
-    INPUT length
-    INPUT width
-    CALL calculate_perimeter
-    DISPLAY "The perimeter is", perimeter
-END
-
-BEGIN calculate_perimeter
-    CALCULATE perimeter = 2 * (length + width)
-    RETURN perimeter
-END
-```
-
----
-
-**Activity 2**
-```{code}pseudocode
-BEGIN
-    READ student_name, student_score FROM input.txt
-    CALL generate_report(student_name, student_score)
-END
-
-BEGIN generate_report(student_name, student_score)
-    SET sentence = format_score(student_name, student_score)
-    WRITE sentence TO report.txt
-END
-
-BEGIN format_score(student_name, student_score)
-    CALCULATE sentence = student_name + " scored " + student_score
-    RETURN sentence
-END
-```
-:::
-
-:::{seealso} Iteration Pseudocode Solutions
-:class: dropdown
-**Activity 1**
-```{code}pseudocode
-BEGIN
-    FOR i = 1 TO 10
-        DISPLAY i
-    NEXT i
-    ENDFOR
-END
-
-```
-
----
-
-**Activity 2**
-```{code}pseudocode
-BEGIN
-    INPUT password
-    WHILE password != "admin123"
-        DISPLAY "Incorrect password. Try again."
-        INPUT password
-    ENDWHILE
-    DISPLAY "Access granted."
-END
-
-```
-
----
-
-**Activity 3**
-```{code}pseudocode
-BEGIN
-    REPEAT
-        DISPLAY "Menu: Type 'play', 'settings', or 'exit'"
-        INPUT choice
-    UNTIL choice = "exit"
-    DISPLAY "Program exited."
-END
-
-```
-
----
-
-**Activity 4**
-```{code}pseudocode
-BEGIN
-    CALCULATE total = 0
-    FOR i = 1 TO 5
-        INPUT number
-        CALCULATE total = total + number
-    NEXT i
-    ENDFOR
-    DISPLAY "The total is", total
-END
-
-```
-:::
-
-:::{seealso} Iteration Pseudocode Solutions
-:class: dropdown
-**Activity 1**
-```{code}pseudocode
-BEGIN
-    INPUT number
-    IF number > 100 THEN
-        DISPLAY "Big number"
-    ENDIF
-END
-```
-
----
-
-**Activity 2**
-```{code}pseudocode
-BEGIN
-    INPUT age
-    IF age >= 18 THEN
-        DISPLAY "Adult"
-    ELSE
-        DISPLAY "Minor"
-    ENDIF
-END
-
-```
-
----
-
-**Activity 3**
-```{code}pseudocode
-BEGIN
-    INPUT score
-    IF score >= 80 THEN
-        DISPLAY "High"
-    ELSE IF score >= 50 THEN
-        DISPLAY "Medium"
-    ELSE
-        DISPLAY "Low"
-    ENDIF
-END
-
-```
-
----
-
-**Activity 4**
-```{code}pseudocode
-BEGIN
-    INPUT day
-    SWITCH day
-        CASE "mon"
-            DISPLAY "Monday"
-        CASE "tue"
-            DISPLAY "Tuesday"
-        CASE "wed"
-            DISPLAY "Wednesday"
-        CASE "thu"
-            DISPLAY "Thursday"
-        CASE "fri"
-            DISPLAY "Friday"
-        CASE "sat"
-            DISPLAY "Saturday"
-        CASE "sun"
-            DISPLAY "Sunday"
-        CASE default
-            DISPLAY "Invalid day"
-    ENDSWITCH
-END
-```
-:::
-
-:::{seealso} Full Pseudocode Activities
-:class: dropdown
-**Activity 1**
-```{code}pseudocode
-BEGIN
-    FOR i = 1 TO 5
-        READ student_name, score FROM scores.txt
-        SET result = evaluate_result(score)
-        SET message = student_name + " scored " + score + ": " + result
-        WRITE message TO results.txt
-    NEXT i
-    ENDFOR
-END
-
-BEGIN evaluate_result(score)
-    IF score >= 50 THEN
-        RETURN "PASS"
-    ELSE
-        RETURN "FAIL"
-    ENDIF
-END
-
-```
-
----
-**Activity 2**
-```{code}pseudocode
-BEGIN
-    INPUT total_cost
-    INPUT total_slices
-    CALCULATE total_collected = 0
-
-    WHILE NOT end of pizza_log.txt
-        READ person_name, slices_eaten FROM pizza_log.txt
-        SET share = calculate_share(slices_eaten, total_cost, total_slices)
-        CALCULATE total_collected = total_collected + share
-        WRITE person_name, "owes $", share TO pizza_bill.txt
-    ENDWHILE
-
-    DISPLAY "Total collected: $", total_collected
-END
-
-BEGIN calculate_share(slices_eaten, total_cost, total_slices)
-    CALCULATE share = (slices_eaten / total_slices) * total_cost
-    RETURN share
-END
-```
-:::
-
-:::{seealso} General Pseudocode Solutions
-:class: dropdown
-1. It helps plan before coding and spot errors more easily.
-2. To ensure consistency across schools that use different programming languages.
-3. Snake case (e.g. `file_name`)
-4. The pseudocode that best demonstrates your coding skill, such as the trickiest algorithms or ones that show your strengths.
-5. Sequence, assignment, conditions, selection, iteration, modularisation.
-:::
-
-### Desk Checking
-
-### Data Flow Diagrams
-
-### ERD and RS
-
-:::{seealso} ERD & RS Solutions
-:class: dropdown
-**Activity 1**
-
-![activity 1](../content/06_documentation/assets/11/erd_activity_1.png)
-
----
-
-**Activity 2**
-
-![activity 2](../content/06_documentation/assets/11/erd_activity_2.png)
-
----
-
-**Activity 3**
-
-![activity 3](../content/06_documentation/assets/11/erd_activity_3.png)
-
----
-
-**Activity 4**
-
-![activity 4](../content/06_documentation/assets/11/erd_activity_4.png)
-:::
-
-### Data Dictionaries
-
-### Data Connection Diagrams
-
-:::{seealso} Data Connection Diagram Solutions
-:class: dropdown
-**Activity 1**
-![data connection 1](./assets/Data_Connection_1.png)<p>&nbsp;</p>
-
----
-
-**Activity 2**
-![data connection 2](./assets/Data_Connection_2.png)<p>&nbsp;</p>
-:::
-
-### Testing
-
-:::{seealso} Unit Testing Solutions
-:class: dropdown
-**Activity 1**
-
-| Test Case | Input | Expected Output | Actual Output | Pass/Fail | Action |
-| --- | --- | --- | --- | --- | --- |
-| 1 | `0` | `32.0` | `32.0` | Pass | n/a |
-| 2 | `100` | `212.0` | `212.0` c| Pass | n/a |
-| 3 | `-40` | `-40.0` | `-40.0` | Pass | n/a |
-| 4 | `"cold"` | Error message | TypeError | Fail | added input validation |
-| 4 | `"cold"` | Error message | Error message | Pass | n/a |
-| 5 | `None` | Error | Error | Pass |
-
-Refactored code
-
-``` {code}python
-def celsius_to_fahrenheit(c):
-    try:
-        return (c * 9/5) + 32
-    except TypeError:
-        return "Invalid input: must be a number"
-```
-
----
-
-**Activity 2**
-
-| Test Case | Input | Expected Output | Actual Output | Pass/Fail | Action |
-| --- | --- | --- | --- | --- | --- |
-| 1 | `3, 3, 3` | `3.0` | `8.0` | Fail | `()` around addition |
-| 1 | `3, 3, 3` | `3.0` | `3.0` | Pass | n/a |
-| 2 | `6, 3, 0` | `3.0` | `3.0` | Pass | n/a |
-| 3 | `0, 0, 0` | `0.0` | `0.0` | Pass | n/a |
-| 4 | `1000, 1000, 1000` | `1000.0` | `1000.0` | Pass | n/a |
-| 5 | `"a", 2, 3` | Error message | TypeError | Fail | added input validation |
-| 5 | `"a", 2, 3` | Error message | Error message | Pass | n/a |
-| 6 | `None, 2, 3` | Error message | Error message | Pass | n/a |
-
-Refactored code
-
-``` {code}python
-def average(a, b, c):
-    try:
-        return (a + b + c) / 3
-    except TypeError:
-        return "Invalid input: all inputs must be numbers"
-```
-:::
-
-:::{seealso} Integrated Testing Soluitions
-:class: dropdown
-**Activity 1**
-
-Integrated Components:
-
-- Web form (UI)
-- Validation logic
-- Database
-- Confirmation display
-
-Success Criteria:
-
-- Valid submissions are saved in the database
-- Error shown for missing/invalid input
-- Confirmation shown after success
-
-Test Design:
-
-| Test Scenario | Input | Expected Outcome |
-| --- | --- | --- |
-| 1. Valid entry | Name: "Alice", Grade: 10, Event: "STEM Expo" | Data saved to database, confirmation message shown |
-| 2. Missing field | Name: "", Grade: 11, Event: "Music Fest" | Error: "Name is required", data not saved |
-| 3. Special characters | Name: "O'Reilly", Grade: 12, Event: "Drama Night" | Data saved correctly, confirmation message shown, no display issues |
-
----
-
-**Activity 2**
-
-Integrated Components:
-
-- Staff login
-- Weather API
-- Database
-- Report export (CSV)
-
-Success Criteria:
-
-- Login grants access
-- API fetches and stores correct data
-- Data appears on dashboard
-- Report downloads with complete data
-
-Test Design:
-
-| Test Scenario    | Input/Trigger                      | Expected Outcome                                                   |
-| ---------------- | ---------------------------------- | ------------------------------------------------------------------ |
-| 1. Normal use    | Staff logs in → sees dashboard     | Login succeeds, weather data displayed from latest API call        |
-| 2. Refresh data  | Click "Refresh" → API fetches data | New data stored in database and dashboard updates                  |
-| 3. Export report | Click "Download Report"            | CSV downloads with correct weather records (date, temp, condition) |
-:::
-
-### User Feedback
-
-### Evaluation Table
-
-### Impacts Table
 
 ## Python Skills
 
