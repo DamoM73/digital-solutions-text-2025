@@ -1,4 +1,4 @@
-# Data Security Threats
+# Data Security Threats 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -16,11 +16,11 @@ Data security threats fall under two main categories:
 
 ---
 
-## Malicious Threats
+## Malicious Threats 📝
 
 Malicious data security threats are intentional attacks designed to compromise the confidentiality, integrity, or availability of data. There are numerous malicious threats to data security that organizations and individuals need to be aware of. Here are some of the most common threats:
 
-### Malware
+### Malware 📝
 
 Malware is malicious software designed to disrupt, damage, or gain unauthorized access to computer systems. This includes:
 
@@ -56,7 +56,7 @@ The ransomware encrypted users' files and demanded a ransom payment in Bitcoin t
 
 The National Health Service (NHS) in the United Kingdom was particularly hard hit, leading to the cancellation of appointments and surgeries. The attack highlighted the importance of timely software updates and robust cybersecurity measures to protect against such vulnerabilities​.
 
-### Phishing
+### Phishing 📝
 
 A phishing attack is a type of cybercrime where attackers impersonate legitimate organizations or individuals to trick people into revealing sensitive information, such as passwords, credit card numbers, or login credentials. This is usually done through deceptive emails, messages, or websites that appear trustworthy but are designed to steal data or install malicious software. Phishing relies on social engineering techniques, exploiting human trust rather than technical vulnerabilities. These attacks can lead to identity theft, financial loss, and unauthorized access to personal or organizational systems.
 
@@ -68,7 +68,7 @@ Hackers sent a phishing email disguised as a security alert from Google, claimin
 
 This breach led to the exposure of thousands of emails, which were subsequently published by WikiLeaks, causing significant political and reputational damage during the 2016 U.S. presidential election.
 
-### Man-in-the-Middle (MitM) Attacks
+### Man-in-the-Middle (MitM) Attacks 📝
 
 A man-in-the-middle (MITM) attack occurs when a malicious actor secretly intercepts and possibly alters the communication between two parties without their knowledge. This type of attack allows the attacker to eavesdrop on sensitive information such as login credentials, financial data, or personal messages. MITM attacks can happen on unsecured or poorly secured networks, like public Wi-Fi, where the attacker can position themselves between the user and a legitimate service (e.g., a website or app). By doing so, they can capture data being sent or inject malicious content into the communication stream, posing serious risks to data confidentiality and integrity.
 
@@ -80,7 +80,7 @@ Superfish was an adware program that intercepted users' web traffic to inject ad
 
 This compromised the security of encrypted connections, making users vulnerable to further attacks and data theft by malicious entities exploiting the same root certificate.
 
-### Denial of Service (DoS) and Distributed Denial of Service (DDoS) Attacks
+### Denial of Service (DoS) and Distributed Denial of Service (DDoS) Attacks 📝
 
 A Distributed Denial-of-Service (DDoS) attack is a cyberattack in which multiple compromised computers or devices—often part of a botnet—are used to flood a target system, such as a website or server, with massive amounts of traffic. This overwhelming surge in requests exhausts the target’s resources, causing it to slow down significantly or crash completely, making it unavailable to legitimate users. DDoS attacks are often used to disrupt business operations, extort companies, or draw attention to political or social causes. Because the attack comes from many sources, it is difficult to block and can cause widespread disruption.
 
@@ -92,7 +92,7 @@ This attack involved a massive [botnet](https://en.wikipedia.org/wiki/Botnet) ca
 
 The attack highlighted the vulnerabilities of IoT devices and the significant impact DDoS attacks can have on internet infrastructure​  
 
-### Insider Threats
+### Insider Threats 📝
 
 Insider threats occur when individuals within an organization—such as employees, contractors, or business partners—intentionally or unintentionally compromise the security of the organization’s data or systems. These threats can involve stealing sensitive information, sabotaging systems, or accidentally exposing data through negligence or poor security practices. Unlike external attackers, insiders often have legitimate access to critical systems and data, making their actions harder to detect and defend against. Insider threats pose a significant risk because they exploit trust and access, and can result in data breaches, financial loss, and damage to an organization’s reputation.
 
@@ -104,7 +104,7 @@ In 2013, Snowden, a former contractor for the National Security Agency (NSA), le
 
 His actions had profound implications for national security and privacy, leading to significant legal and political repercussions​.
 
-### SQL Injections
+### SQL Injections 📝
 
 SQL injection is a type of cyberattack where an attacker inserts malicious SQL (Structured Query Language) code into a web application's input fields to manipulate or access the underlying database. This can allow attackers to bypass authentication, view or modify sensitive data, delete records, or even gain full control over the database server. SQL injections typically occur when user inputs are not properly validated or sanitized, making the application vulnerable. These attacks are dangerous because they can compromise the confidentiality and integrity of stored data, and are often used to exploit poorly secured websites and applications.
 
@@ -172,11 +172,11 @@ This incident highlighted the vulnerabilities in software supply chains and the 
 
 ---
 
-## Non-malicious Threats
+## Non-malicious Threats 📝
 
 Non-malicious threats to data security are risks that arise from unintentional actions, accidents, or natural events, rather than deliberate attacks. Here are some common non-malicious threats:
 
-### Human Error
+### Human Error 📝
 
 Human error is one of the most common causes of data security threats, often resulting from mistakes made by employees or users that unintentionally compromise systems or sensitive information. Examples include misconfiguring security settings, accidentally deleting critical files, clicking on phishing links, or using weak or reused passwords. Unlike malicious attacks, these threats stem from carelessness, lack of training, or poor understanding of security protocols. Despite being unintentional, the consequences can be severe—leading to data breaches, system outages, or exposure of personal and financial data. Addressing human error requires ongoing user education, strong policies, and automated safeguards to reduce risk.
 
@@ -284,11 +284,11 @@ This event highlighted the critical importance of maintaining proper environment
 
 ---
 
-## Protecting Against Data Security Threats
+## Protecting Against Data Security Threats 📝
 
 Protecting against both malicious and non-malicious attacks involves a multi-layered approach that combines preventive measures, user education, and robust security practices:
 
-### Software Measures
+### Software Measures 📝
 
 - **Install and Maintain Antivirus Software**: Use reputable antivirus and anti-malware programs to detect and remove malicious software. Ensure these programs are updated regularly to protect against the latest threats.
 - **Regular Software Updates**: Keep all software, including operating systems, browsers, and plugins, up to date to patch vulnerabilities that malware could exploit.
@@ -307,7 +307,7 @@ Protecting against both malicious and non-malicious attacks involves a multi-lay
 - **Synchronous Replication**: Use synchronous replication to ensure that data is written to multiple locations simultaneously, reducing the risk of discrepancies.
 - **Automation Tools**: Use automated data synchronization tools and processes to reduce the risk of human error and ensure consistent data updates across systems.
 
-### Hardware measures
+### Hardware Measures 📝
 
 - **Disconnect Infected Devices**: If a device is suspected to be infected with malware, disconnect it from the network immediately to prevent the spread to other systems.
 - **RAID Configurations**: Use RAID (Redundant Array of Independent Disks) to create copies of data across multiple disks, so if one disk fails, data remains accessible.
@@ -317,7 +317,7 @@ Protecting against both malicious and non-malicious attacks involves a multi-lay
 - **Proactive Monitoring**: Implement environmental monitoring systems to detect and alert for power issues, temperature fluctuations, and other environmental factors that could lead to hardware failure.
 - **Scheduled Maintenance**: Perform regular network maintenance and updates to prevent failures due to outdated hardware or software. Ensure all network components are updated with the latest security patches.
 
-### Networking measures
+### Networking Measures 📝
 
 - **Email Authentication Protocols**: Use email authentication protocols to prevent email spoofing and ensure the integrity of email communications​.
 - **Cloud-based DDoS Protection**: Services like Cloudflare, Akamai, and AWS Shield can absorb and mitigate DDoS traffic before it reaches your network.
@@ -330,7 +330,7 @@ Protecting against both malicious and non-malicious attacks involves a multi-lay
 - **Cloud Integration**: Utilize cloud services for data storage and critical applications, leveraging the redundancy and high availability provided by major cloud providers.
 - **Implement Redundancy**: Ensure critical network components have backups. Use multiple ISPs, redundant routers, and switches to provide alternative paths for data if one fails.
 
-### Policy measures
+### Policy Measures 📝
 
 - **Educate Users**: Train employees and users to recognize phishing attempts, suspicious links, and unsafe downloads. Encourage the practice of not clicking on unknown or untrusted links and attachments.
 - **Implement Strong Passwords and Multi-Factor Authentication (MFA): Use complex passwords and enable MFA to add an extra layer of security to accounts, making it harder for attackers to gain access.

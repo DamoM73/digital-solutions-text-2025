@@ -1,4 +1,4 @@
-# Data Privacy
+# Data Privacy 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -83,7 +83,7 @@ This value of data can lead to exploitation which raises ethical and legal conce
 
 ---
 
-## Handling Personal Data
+## Handling Personal Data 📝
 
 The collecting of personal data raises a range of ethical concerns.  
 
@@ -201,50 +201,6 @@ Due to the international nature of the internet, the influence of these laws can
 10. In what ways do privacy laws like COPPA or FERPA directly shape the design of digital services for young people and students?
 :::
 
----
-
-## Australian Privacy Principles 📝
-
-The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference) are a set of 13 key rules under the Privacy Act 1988 that govern how Australian organizations and government agencies handle personal information. These principles are designed to ensure privacy, transparency, and accountability in the collection, use, storage, and disclosure of personal data.
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eHtVG3Or2tg?si=raTY1ZRs4l8ZT9KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
-
-### The 13 Australian Privacy Principles:
-
-1. **Open and Transparent Management of Personal Information** &ndash; Organizations must manage personal information in an open and transparent way, including having a clearly expressed and up-to-date privacy policy.
-2. **Anonymity and Pseudonymity** &mdash; Individuals must have the option to deal with organizations anonymously or using a pseudonym, unless it is impracticable or contrary to law.
-3. **Collection of Solicited Personal Information** &ndash; Organizations should only collect personal information that is necessary for their functions and do so by lawful and fair means
-4. **Dealing with Unsolicited Personal Information** &ndash; If unsolicited personal information is received, organizations must determine if it could have been collected under APP 3 and, if not, destroy or de-identify it.
-5. **Notification of the Collection of Personal Information** &ndash; Individuals must be informed when their personal information is collected, including the purpose and any third parties it may be shared with.
-6. **Use or Disclosure of Personal Information** &ndash; Personal information can only be used or disclosed for the purpose it was collected, unless an exception applies.
-7. **Direct Marketing** &ndash; Personal information must not be used for direct marketing unless specific conditions are met, including providing a simple way to opt out.
-8. **Cross-border Disclosure of Personal Information** &ndash; Organizations must take reasonable steps to ensure that overseas recipients do not breach the APPs when personal information is disclosed internationally.  
-9. **Adoption, Use, or Disclosure of Government Identifiers** &ndash; Organizations must not adopt, use, or disclose government-related identifiers (like Medicare or passport numbers) except as permitted by law.
-10. **Quality of Personal Information** &ndash; Reasonable steps must be taken to ensure personal information collected is accurate, up-to-date, and complete.
-11. **Security of Personal Information** &ndash; Organizations must take reasonable steps to protect personal information from misuse, interference, loss, unauthorized access, modification, or disclosure.
-12. **Access to Personal Information** &ndash; Individuals have the right to access their personal information held by an organization, subject to some exceptions.
-13. **Correction of Personal Information** &ndash; Organizations must take reasonable steps to correct personal information to ensure it is accurate, up-to-date, complete, relevant, and not misleading.
-
-:::{seealso} APP Activities
-:class: dropdown
-1. Why do the Australian Privacy Principles exist, and what overall purpose do they serve?
-2. How do the APPs balance individual rights with the needs of organizations and government agencies?
-3. What might happen to public trust if organizations consistently fail to follow the APPs?
-4. How do the APPs connect with global privacy frameworks, such as the GDPR?
-5. What kinds of measures should organizations implement to protect personal information, and which APP does this relate to?
-6. In what situations might an individual reasonably choose to deal with an organization anonymously or under a pseudonym, and which APP covers this?
-7. What steps must organizations take before sending personal information overseas, and which APP sets this requirement?
-8. Under what conditions can an organization use or disclose personal information for purposes other than the original collection, and which APP applies?
-9. What steps must organizations take to ensure the personal information they collect is accurate and complete, and which APP governs this?
-10. What limits are placed on organizations when collecting personal information, and which APP is relevant?
-11. What obligations do organizations have if they use personal information for direct marketing, and which APP sets these rules?
-12. Why is it important for organizations to maintain a clear and up-to-date privacy policy, and which APP requires this?
-13. What rights do individuals have to access their personal information, what are the exceptions, and which APP applies?
-14. What information must an organization provide to an individual when collecting their personal information, and which APP outlines this?
-15. How should an organization handle personal information it receives that it did not ask for, and which APP addresses this?
-16. Why are organizations restricted in their use of government-related identifiers such as Medicare numbers, and which APP applies?
-17. How should organizations handle requests to correct inaccurate or misleading personal information, and which APP governs this?
-:::
 
 ---
 
@@ -346,5 +302,49 @@ Open data can easily conflict with privacy. A solution to this problem is the de
 12. How does de-identification help organizations comply with privacy laws such as the APPs or GDPR?
 13. What are the limitations and risks associated with de-identification of open data?
 14. Why must de-identification be treated as a continuous process rather than a one-time action?
+:::
 
+---
+
+## Australian Privacy Principles 📝
+
+The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference) are a set of 13 key rules under the Privacy Act 1988 that govern how Australian organizations and government agencies handle personal information. These principles are designed to ensure privacy, transparency, and accountability in the collection, use, storage, and disclosure of personal data.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eHtVG3Or2tg?si=raTY1ZRs4l8ZT9KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
+
+### The 13 Australian Privacy Principles:
+
+1. **Open and Transparent Management of Personal Information** &ndash; Organizations must manage personal information in an open and transparent way, including having a clearly expressed and up-to-date privacy policy.
+2. **Anonymity and Pseudonymity** &mdash; Individuals must have the option to deal with organizations anonymously or using a pseudonym, unless it is impracticable or contrary to law.
+3. **Collection of Solicited Personal Information** &ndash; Organizations should only collect personal information that is necessary for their functions and do so by lawful and fair means
+4. **Dealing with Unsolicited Personal Information** &ndash; If unsolicited personal information is received, organizations must determine if it could have been collected under APP 3 and, if not, destroy or de-identify it.
+5. **Notification of the Collection of Personal Information** &ndash; Individuals must be informed when their personal information is collected, including the purpose and any third parties it may be shared with.
+6. **Use or Disclosure of Personal Information** &ndash; Personal information can only be used or disclosed for the purpose it was collected, unless an exception applies.
+7. **Direct Marketing** &ndash; Personal information must not be used for direct marketing unless specific conditions are met, including providing a simple way to opt out.
+8. **Cross-border Disclosure of Personal Information** &ndash; Organizations must take reasonable steps to ensure that overseas recipients do not breach the APPs when personal information is disclosed internationally.  
+9. **Adoption, Use, or Disclosure of Government Identifiers** &ndash; Organizations must not adopt, use, or disclose government-related identifiers (like Medicare or passport numbers) except as permitted by law.
+10. **Quality of Personal Information** &ndash; Reasonable steps must be taken to ensure personal information collected is accurate, up-to-date, and complete.
+11. **Security of Personal Information** &ndash; Organizations must take reasonable steps to protect personal information from misuse, interference, loss, unauthorized access, modification, or disclosure.
+12. **Access to Personal Information** &ndash; Individuals have the right to access their personal information held by an organization, subject to some exceptions.
+13. **Correction of Personal Information** &ndash; Organizations must take reasonable steps to correct personal information to ensure it is accurate, up-to-date, complete, relevant, and not misleading.
+
+:::{seealso} APP Activities
+:class: dropdown
+1. Why do the Australian Privacy Principles exist, and what overall purpose do they serve?
+2. How do the APPs balance individual rights with the needs of organizations and government agencies?
+3. What might happen to public trust if organizations consistently fail to follow the APPs?
+4. How do the APPs connect with global privacy frameworks, such as the GDPR?
+5. What kinds of measures should organizations implement to protect personal information, and which APP does this relate to?
+6. In what situations might an individual reasonably choose to deal with an organization anonymously or under a pseudonym, and which APP covers this?
+7. What steps must organizations take before sending personal information overseas, and which APP sets this requirement?
+8. Under what conditions can an organization use or disclose personal information for purposes other than the original collection, and which APP applies?
+9. What steps must organizations take to ensure the personal information they collect is accurate and complete, and which APP governs this?
+10. What limits are placed on organizations when collecting personal information, and which APP is relevant?
+11. What obligations do organizations have if they use personal information for direct marketing, and which APP sets these rules?
+12. Why is it important for organizations to maintain a clear and up-to-date privacy policy, and which APP requires this?
+13. What rights do individuals have to access their personal information, what are the exceptions, and which APP applies?
+14. What information must an organization provide to an individual when collecting their personal information, and which APP outlines this?
+15. How should an organization handle personal information it receives that it did not ask for, and which APP addresses this?
+16. Why are organizations restricted in their use of government-related identifiers such as Medicare numbers, and which APP applies?
+17. How should organizations handle requests to correct inaccurate or misleading personal information, and which APP governs this?
 :::

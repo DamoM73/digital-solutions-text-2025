@@ -59,7 +59,7 @@
   - [ ] Ciphers
   - [ ] Hashing
   - [ ] Checksums
-- [ ] SQL Skills
+- [x] SQL Skills
   - [x] SQL Introduction
   - [x] SELECT  
   - [x] WHERE  
@@ -68,7 +68,7 @@
   - [x] GROUP BY and HAVING  
   - [x] Subqueries
   - [x] JOIN  
-  - [ ] CREATE TABLE
+  - [x] CREATE TABLE
   - [x] INSERT  
   - [x] UPDATE  
   - [x] DELETE  

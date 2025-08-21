@@ -1,4 +1,4 @@
-# Data Security Management
+# Data Security Management 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -42,7 +42,7 @@ Data security measures, including encryption, access controls, and regular secur
 
 The following techniques used to manage data effectively, ensuring it can be stored and transferred securely and efficiently.
 
-## The CIA Triad: Core Principles of Cybersecurity
+## The CIA Triad: Core Principles of Cybersecurity 📝
 
 ![CIA Triad](./assets/04/cia_triad.png)
 
@@ -107,7 +107,7 @@ If **any** part of the CIA Triad is compromised, security is at risk:
 
 ---
 
-## Encryption
+## Encryption 📝
 
 Encryption is the process of converting data into a coded format to prevent unauthorized access. It ensures that only authorized parties can read the information.
 
@@ -135,9 +135,9 @@ Data encryption is necessary for several important reasons:
 
 ---
 
-## Traditional Ciphers
+## Traditional Ciphers 📝
 
-### Caesar cipher
+### Caesar cipher 📝
 
 The Caesar cipher is one of the simplest and most well-known encryption techniques. It is a type of substitution cipher where each letter in the plaintext is shifted a fixed number of places down or up the alphabet. It is named after Julius Caesar, who reportedly used it to protect his private correspondence.
 
@@ -225,7 +225,7 @@ FUNCTION decrypt_caesar(ciphertext, shift):
 - **Weak Security:** It is vulnerable to brute force attacks since there are only 25 possible shifts (not counting the shift of 0, which leaves the text unchanged). Frequency analysis can also easily break the cipher because the letter frequencies in the ciphertext match those in the plaintext.
 - **Requires Agreed Upon Key:** Like all Symmetric Encryptions, Caesar Cipher requires the sender and receiver to agree upon a key prior to the message being sent.
 
-### Vigenère Cipher
+### Vigenère Cipher 📝
 
 The Vigenère cipher is a method of encrypting alphabetic text by using a simple form of polyalphabetic substitution. It employs a keyword to determine the shift applied to each letter of the plaintext, making it more secure than the Caesar cipher.
 
@@ -365,7 +365,7 @@ FUNCTION decrypt_vigenere(ciphertext, keyword):
 
 The **Gronsfeld cipher** is a variant of the Vigenère cipher that uses a numeric key instead of a keyword to shift the letters of the plaintext. It shares many similarities with the Vigenère cipher but simplifies the key by restricting it to numeric digits, making it somewhat easier to use and remember.
 
-### One-time Pad Encryption
+### One-time Pad Encryption 📝
 
 The **one-time pad (OTP)** encryption is a theoretically unbreakable encryption technique that involves a random key that is as long as the message being encrypted. It was first described by Frank Miller in 1882 and later formalized by Gilbert Vernam in 1917.
 
@@ -388,9 +388,76 @@ The **one-time pad (OTP)** encryption is a theoretically unbreakable encryption 
 - **Key Distribution:** The key must be distributed securely to both the sender and the receiver, which can be impractical for large-scale use.
 - **Scalability:** The need for a key that is as long as the message makes it impractical for large amounts of data.
 
+**One-Time-Pad Encryption**
+
+```text
+FUNCTION one_time_pad_encrypt(plain_text, key)
+    SET alphabet TO "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    SET cipher_text TO ""
+
+    SET cleaned_plain_text TO UPPER(plain_text)
+    SET cleaned_key TO UPPER(key)
+
+    IF LENGTH(cleaned_key) < LENGTH(cleaned_plain_text) THEN
+        OUTPUT "error: key is shorter than plaintext."
+        RETURN ""
+    END IF
+
+    FOR position FROM 0 TO LENGTH(cleaned_plain_text) - 1
+        SET plain_position TO INDEX(alphabet, cleaned_plain_text[position])
+        SET key_position TO INDEX(alphabet, cleaned_key[position])
+        SET cipher_position TO (plain_position + key_position) MOD 26
+        SET cipher_text TO cipher_text & alphabet[cipher_position]
+    ENDFOR
+
+    RETURN cipher_text
+END FUNCTION
+
+// Main program
+INPUT "Enter plaintext: " plain_text
+INPUT "Enter key (at least as long as plaintext): " key
+SET encrypted_text TO one_time_pad_encrypt(plain_text, key)
+OUTPUT "Ciphertext: " & encrypted_text
+
+```
+
+**One-Time-Pad Encryption**
+
+```text
+FUNCTION one_time_pad_decrypt(cipher_text, key)
+    SET alphabet TO "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    SET plain_text TO ""
+
+    SET cleaned_cipher_text TO UPPER(cipher_text)
+    SET cleaned_key TO UPPER(key)
+
+    IF LENGTH(cleaned_key) < LENGTH(cleaned_cipher_text) THEN
+        OUTPUT "error: key is shorter than ciphertext."
+        RETURN ""
+    END IF
+
+    FOR position FROM 0 TO LENGTH(cleaned_cipher_text) - 1
+        SET cipher_position TO INDEX(alphabet, cleaned_cipher_text[position])
+        SET key_position TO INDEX(alphabet, cleaned_key[position])
+        SET plain_position TO (cipher_position - key_position + 26) MOD 26
+        SET plain_text TO plain_text & alphabet[plain_position]
+    ENDFOR
+
+    RETURN plain_text
+END FUNCTION
+
+
+// Main program
+INPUT "Enter ciphertext: " cipher_text
+INPUT "Enter key (at least as long as ciphertext): " key
+
+SET decrypted_text TO one_time_pad_decrypt(cipher_text, key)
+OUTPUT "Decrypted text: " & decrypted_text
+```
+
 ---
 
-## Symmetric Encryption
+## Symmetric Encryption 📝
 
 Symmetric encryption is a type of encryption where only one key (a secret key) is used to both encrypt and decrypt electronic information. The entities communicating via symmetric encryption must exchange the key so that it can be used in the decryption process.
 
@@ -401,11 +468,11 @@ There are two types of symmetric encryption algorithms:
 1. **Block algorithms:** Set lengths of bits are encrypted in blocks of electronic data with the use of a specific secret key. As the data is being encrypted, the system holds the data in its memory as it waits for complete blocks.
 2. **Stream algorithms:** Data is encrypted as it streams instead of being retained in the system’s memory.
 
-   ### Symmetric Encryption Uses
+### Symmetric Encryption Uses
 
-   While symmetric encryption is an older method of encryption, it is **faster and more efficient** than asymmetric encryption. Symmetric cryptography is typically used for encrypting large amounts of data, e.g. for database encryption. In the case of a database, the secret key might only be available to the database itself to encrypt or decrypt.
+While symmetric encryption is an older method of encryption, it is **faster and more efficient** than asymmetric encryption. Symmetric cryptography is typically used for encrypting large amounts of data, e.g. for database encryption. In the case of a database, the secret key might only be available to the database itself to encrypt or decrypt.
 
-   Some examples of where symmetric cryptography is used are:
+Some examples of where symmetric cryptography is used are:
 
 - **Payment applications**, such as card transactions where personal identifying information needs to be protected to prevent identity theft or fraudulent charges
 - **Validations** to confirm that the sender of a message is who they claim to be
@@ -432,40 +499,38 @@ A Feistel cipher is not a specific algorithm but a framework that operates on a 
 3. **XOR Operation:** The output of the round function, `F(R, K)`, is then combined with the Left half (L) using an XOR operation. The result of this operation becomes the new Right half for the next round.
 4. **Swap:** The original, unchanged Right half (R) becomes the new Left half for the next round.
 
-   This process is repeated for a predetermined number of rounds, with a different sub-key typically used for each round.
+This process is repeated for a predetermined number of rounds, with a different sub-key typically used for each round.
 
-   **The "Magic" of Decryption:**
+**The "Magic" of Decryption:**
 
-   The most elegant and brilliant feature of the Feistel cipher is its decryption process. To decrypt the ciphertext, you use the **exact same algorithm** as encryption. The only difference is that the sub-keys (K1, K2, K3, etc.) are applied in the **reverse order**.
+The most elegant and brilliant feature of the Feistel cipher is its decryption process. To decrypt the ciphertext, you use the **exact same algorithm** as encryption. The only difference is that the sub-keys (K1, K2, K3, etc.) are applied in the **reverse order**.
 
-   This works because the [XOR](https://www.geeksforgeeks.org/logic-gates/) operation is its own inverse. When you XOR a value with the same number twice, it cancels out and returns the original value. This allows the entire structure to be reversible, even if the round function (F) itself is a one-way, non-reversible function. This design significantly simplifies the implementation of block ciphers, as a separate decryption algorithm is not needed.
-   :::
+This works because the [XOR](https://www.geeksforgeeks.org/logic-gates/) operation is its own inverse. When you XOR a value with the same number twice, it cancels out and returns the original value. This allows the entire structure to be reversible, even if the round function (F) itself is a one-way, non-reversible function. This design significantly simplifies the implementation of block ciphers, as a separate decryption algorithm is not needed.
+:::
 
-   **Data Encryption Standard (DES)**
+**Data Encryption Standard (DES)**
 
-   **DES** is a symmetric key algorithm developed in the 1970s by IBM and later adopted by the U.S. government as a standard. It uses a **56-bit key** to encrypt **64-bit blocks** of data. DES operates on data using **16 rounds** of Feistel network, which involves permutations, substitutions, and XOR operations.
+**DES** is a symmetric key algorithm developed in the 1970s by IBM and later adopted by the U.S. government as a standard. It uses a **56-bit key** to encrypt **64-bit blocks** of data. DES operates on data using **16 rounds** of Feistel network, which involves permutations, substitutions, and XOR operations.
 
-   DES is now considered insecure for many applications due to its relatively short key length, which makes it vulnerable to brute-force attacks.
+DES is now considered insecure for many applications due to its relatively short key length, which makes it vulnerable to brute-force attacks.
 
-   **Triple DES (3DES)**
+**Triple DES (3DES)**
 
-   **Triple DES** enhances the security of DES by applying the DES algorithm three times to each data block. It uses **three 56-bit keys**, effectively giving it a **168-bit key length**, though due to some weaknesses, its effective security is closer to 112 bits.
+**Triple DES** enhances the security of DES by applying the DES algorithm three times to each data block. It uses **three 56-bit keys**, effectively giving it a **168-bit key length**, though due to some weaknesses, its effective security is closer to 112 bits.
 
-   Despite its increased security, 3DES is slower than other modern symmetric algorithms.
+Despite its increased security, 3DES is slower than other modern symmetric algorithms.
 
-   ![3DES](./assets/04/3DES.png)
+![3DES](./assets/04/3DES.png)<p>&nbsp;</p>
 
-   <p>&nbsp;</p>
+**Advanced Encryption Standard (AES)**
 
-   **Advanced Encryption Standard (AES)**
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O4xNJsjtN6E?si=zBpv6D29654kyjDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O4xNJsjtN6E?si=zBpv6D29654kyjDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::{tip} AES Explained Summary
+:class: dropdown
+This video explains the workings of the Advanced Encryption Standard (AES), a widely used symmetric block cipher. Here is a summary of the key points:
 
-   :::{tip} AES Explained Summary
-   :class: dropdown
-   This video explains the workings of the Advanced Encryption Standard (AES), a widely used symmetric block cipher. Here is a summary of the key points:
-
-   **What is AES?**
+**What is AES?**
 
 - AES is a **symmetric block cipher**, meaning the same key is used for both encryption and decryption.
 - It operates on fixed-size blocks of data: 128 bits (or 16 bytes).
@@ -515,7 +580,7 @@ Twofish is known for its flexibility, speed, and security, making it a strong co
 
 ---
 
-## Asymmetric Encryption
+## Asymmetric Encryption 📝
 
 The biggest weakness of symmetric encryption is the need for key distribution. That is, there needs to be a secure way for all parties to agree upon the key that will be used for encryption and decryption. This is very effective, if you wish to encrypt data on your hard-drive, or in a database on your server. Unfortunately symmetric encryption is not practical when it comes to online communication, for this we need asymmetric encryption.
 
@@ -523,7 +588,6 @@ The biggest weakness of symmetric encryption is the need for key distribution. T
 
 :::{tip} Diffie-Hellman Key Exchange Summary
 :class: dropdown
-
 1. **The Problem:** The video begins by tracing the need for secure communication back to the Cold War and the development of early computer networks like SAGE. As networks grew, a critical problem emerged: how can two people who have never met before agree on a secret key (like a password or a number) to encrypt their conversation, without an eavesdropper also learning that key?
 
 2. **The One-Way Function Analogy (Mixing Paint):** The core of the Diffie-Hellman solution is explained using a simple analogy with mixing paint.
@@ -539,51 +603,50 @@ The biggest weakness of symmetric encryption is the need for key distribution. T
 
 3. **The Mathematical Implementation (Clock Arithmetic):** The same principle is applied using numbers in a process called **modular arithmetic**, or "clock arithmetic."
 
-   - **The One-Way Function:** The mathematical one-way function is **modular exponentiation**. It is easy to calculate `g^x mod p`, but extremely difficult to find the exponent `x` if you only know the result, `g`, and `p`. This is known as the **discrete logarithm problem**.
-   - **The Process:**
-     - Alice and Bob publicly agree on two numbers: a prime modulus `p` and a generator `g`.
-     - They each choose a secret private number (Alice chooses `a`, Bob chooses `b`).
-     - Alice calculates `g^a mod p` and sends the result to Bob.
-     - Bob calculates `g^b mod p` and sends the result to Alice.
-     - Alice takes Bob's result and raises it to the power of her secret number `a`.
-     - Bob takes Alice's result and raises it to the power of his secret number `b`.
-     - Both arrive at the same shared secret number, `g^(ab) mod p`.
+- **The One-Way Function:** The mathematical one-way function is **modular exponentiation**. It is easy to calculate `g^x mod p`, but extremely difficult to find the exponent `x` if you only know the result, `g`, and `p`. This is known as the **discrete logarithm problem**.
+- **The Process:**
+  - Alice and Bob publicly agree on two numbers: a prime modulus `p` and a generator `g`.
+  - They each choose a secret private number (Alice chooses `a`, Bob chooses `b`).
+  - Alice calculates `g^a mod p` and sends the result to Bob.
+  - Bob calculates `g^b mod p` and sends the result to Alice.
+  - Alice takes Bob's result and raises it to the power of her secret number `a`.
+  - Bob takes Alice's result and raises it to the power of his secret number `b`.
+  - Both arrive at the same shared secret number, `g^(ab) mod p`.
 
-   Because of the difficulty of the discrete logarithm problem, Eve cannot determine their final shared secret, allowing Alice and Bob to use it as a key for secure, encrypted communication.
-   :::
+Because of the difficulty of the discrete logarithm problem, Eve cannot determine their final shared secret, allowing Alice and Bob to use it as a key for secure, encrypted communication.
+:::
 
-   Asymmetric communication refers to a method of communication in which the parties involved use different keys for encryption and decryption processes. This is a key feature of asymmetric encryption, also known as public-key cryptography.
+Asymmetric communication refers to a method of communication in which the parties involved use different keys for encryption and decryption processes. This is a key feature of asymmetric encryption, also known as public-key cryptography.
 
-   ### Key Components of Asymmetric Communication
+### Key Components of Asymmetric Communication
 
-   The **public key** is openly distributed and used to encrypt data. Anyone can use this key to encrypt a message intended for a specific recipient. For example, if Alice wants to send a secure message to Bob, she would use Bob's public key to encrypt the message.
+The **public key** is openly distributed and used to encrypt data. Anyone can use this key to encrypt a message intended for a specific recipient. For example, if Alice wants to send a secure message to Bob, she would use Bob's public key to encrypt the message.
 
-   The **private key** is kept secret and is used to decrypt data that has been encrypted with the corresponding public key. Continuing the example, Bob would use his private key to decrypt the message sent by Alice.
+The **private key** is kept secret and is used to decrypt data that has been encrypted with the corresponding public key. Continuing the example, Bob would use his private key to decrypt the message sent by Alice.
 
-   ### How Asymmetric Communication Works
+### How Asymmetric Communication Works
 
-4. The sender (Alice) and the receiver (Bob) agree and communicate the **public parameters** (prime modulus and a generator).  
-5. Alice then chooses a **private key** and calculates a **public key**, which she share publicly with Bob.
-6. Bob selects his own **private key**, calculates a **public key**, and shares it publicly with Alice.
-7. Alice takes Bob’s **public key** and raises it to the power of her **private key** to compute a **shared key**.
-8. Bob does the same with Alice’s **public key** and his **private key** to also establish the **shared key**.
-9. Alice and Bob now have a **shared key** they can use for symmetrical encryption.
-10. Without knowing Alice's or Bob's **private keys** Eve cannot derive the **shared key**.
+1. The sender (Alice) and the receiver (Bob) agree and communicate the **public parameters** (prime modulus and a generator).  
+2. Alice then chooses a **private key** and calculates a **public key**, which she share publicly with Bob.
+3. Bob selects his own **private key**, calculates a **public key**, and shares it publicly with Alice.
+4. Alice takes Bob’s **public key** and raises it to the power of her **private key** to compute a **shared key**.
+5. Bob does the same with Alice’s **public key** and his **private key** to also establish the **shared key**.
+6. Alice and Bob now have a **shared key** they can use for symmetrical encryption.
+7.  Without knowing Alice's or Bob's **private keys** Eve cannot derive the **shared key**.
 
-   ### Advantages of Asymmetric Communication
+### Advantages of Asymmetric Communication
 
-   Asymmetric communication **enhances security** because the private key is never shared and remains secure with the owner. Even if the public key is widely distributed, only the intended recipient can decrypt the message.
+Asymmetric communication **enhances security** because the private key is never shared and remains secure with the owner. Even if the public key is widely distributed, only the intended recipient can decrypt the message.
 
-   Asymmetric encryption also **simplifies key distribution**. Unlike symmetric encryption, where the same key must be securely shared between parties, the public key can be freely distributed without compromising security.
+Asymmetric encryption also **simplifies key distribution**. Unlike symmetric encryption, where the same key must be securely shared between parties, the public key can be freely distributed without compromising security.
 
-   ### Disadvantages of Asymmetric Communication
+### Disadvantages of Asymmetric Communication
 
-   Asymmetric encryption algorithms are generally **slower** than symmetric algorithms, making them less suitable for encrypting large amounts of data directly.
+Asymmetric encryption algorithms are generally **slower** than symmetric algorithms, making them less suitable for encrypting large amounts of data directly.
 
-   The process of managing public and private keys and ensuring their integrity also adds **complexity** to the system.
+The process of managing public and private keys and ensuring their integrity also adds **complexity** to the system.
 
-   ### Applications of Asymmetric Communication
-
+### Applications of Asymmetric Communication
 - **Email encryption services** often use asymmetric encryption to ensure that only the intended recipient can read the email.
 - **Secure websites** use SSL/TLS protocols, which rely on asymmetric encryption to establish secure connections between a user's browser and the web server.
 - **Digital Signatures** used in software distribution, digital contracts, and other scenarios where verifying the sender's identity and ensuring the message's integrity is crucial.
@@ -592,10 +655,10 @@ The biggest weakness of symmetric encryption is the need for key distribution. T
 
 Work in threes and take the roles of Alice, Bob and Eve.
 
-1. Alice and Bob agree and publicly share a prime modulus
-2. Alice and Bob agree and publicly share a generator
-3. Alice and Bob both choose a private key
-4. Exchange of public keys
+1. Alice and Bob agree and publicly share a **prime modulus**
+2. Alice and Bob agree and publicly share a **generator**
+3. Alice and Bob both choose a **private key** and keep this to themselves.
+4. Exchange of public keys:
 
    - Alice and Bob perform the following calculation (in Python) and share the results publicly:
 
@@ -603,7 +666,7 @@ Work in threes and take the roles of Alice, Bob and Eve.
 public_key = generator ** private_key % prime_modulus
 ```
 
-5. Alice and Bob now work out the shared secret key
+5. Alice and Bob now work out the **shared secret key**
 
    - Use the following calculations (in Python):
 
@@ -615,23 +678,23 @@ shared_key = bob_pub_key ** alice_private_key % prime_modulus
 shared_key = alice_pub_key ** bob_private_key % prime_modulus
 ```
 
-6. Alice and Bob now use the shared key to send messages using Caesar cipher to each other, and Eve attempts to work out the message.
+6. Alice and Bob now use the shared key to send messages using symmetric encryption to each other, and Eve attempts to work out the message.
 
-   ### RSA
+### RSA
 
-   RSA is one of the most widely used asymmetric encryption algorithms, developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It relies on the mathematical difficulty of factoring large prime numbers.  
+RSA is one of the most widely used asymmetric encryption algorithms, developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It relies on the mathematical difficulty of factoring large prime numbers.  
 
-   RSA uses two keys a public key for encryption and a private key for decryption. Key lengths typically range from **2048 to 4096 bits**, providing strong security. It is commonly used in secure data transmission, digital signatures, and key exchange protocols.
+RSA uses two keys a public key for encryption and a private key for decryption. Key lengths typically range from **2048 to 4096 bits**, providing strong security. It is commonly used in secure data transmission, digital signatures, and key exchange protocols.
 
-   RSA is computationally intensive and slower compared to symmetric algorithms, making it less suitable for encrypting large amounts of data directly.
+RSA is computationally intensive and slower compared to symmetric algorithms, making it less suitable for encrypting large amounts of data directly.
 
-   ---
+---
 
-   ## Hashing
+## Hashing 📝
 
-   Hashing is the process of converting data into a fixed-size string of characters, which typically looks like a random sequence of letters and numbers. This is done using a specific algorithm.
+Hashing is the process of converting data into a fixed-size string of characters, which typically looks like a random sequence of letters and numbers. This is done using a specific algorithm.
 
-   ### How Hashing works
+### How Hashing works
 
 - Think of hashing as creating a unique fingerprint for a set of data. Just like no two people have the same fingerprint, no two sets of data will have the same hash (in theory).
 - Hash functions take an input (or 'message') and return a fixed-size string of bytes. The output is typically a "digest" that represents the input data.
@@ -643,7 +706,7 @@ shared_key = alice_pub_key ** bob_private_key % prime_modulus
 
 ---
 
-## Data Compression
+## Data Compression 📝
 
 Data compression is the process of reducing the size of a file or data set. This means the data takes up less space on storage devices and can be transmitted more quickly over networks.
 
@@ -656,3 +719,7 @@ Data compression is the process of reducing the size of a file or data set. This
 
 - **Saves Storage Space:** Smaller files mean you can store more data on your devices.
 - **Faster Transfers:** Smaller files can be sent over the internet or other networks more quickly.
+
+---
+
+## Check Sums 📝

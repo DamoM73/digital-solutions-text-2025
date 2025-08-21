@@ -1,4 +1,4 @@
-# SELECT
+# SELECT 📝
 
 :::{dropdown} Learning Goals
 - know how to execute simple SQL SELECT commands.

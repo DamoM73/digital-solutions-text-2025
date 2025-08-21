@@ -1,4 +1,4 @@
-# GROUP BY and HAVING
+# GROUP BY and HAVING 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -6,7 +6,7 @@ By the end of this section you will:
 - know how to filter the grouped results using the HAVING clause.
 :::
 
-## GROUP BY Clause
+## GROUP BY Clause 📝
 
 The SQL `GROUP BY` statement is used to group rows that have the same values in specified columns into summary rows, often in conjunction with aggregate functions to perform calculations on each group. While the SQL HAVING statement is used to filter groups of rows created by the `GROUP BY` clause based on specified conditions, typically involving aggregate functions.
 

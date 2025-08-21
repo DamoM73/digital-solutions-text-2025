@@ -1,4 +1,4 @@
-# Programming Paradigms
+# Programming Paradigms 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -45,7 +45,7 @@ Event-driven programming is widely used in GUIs, web development, games, and any
 
 ---
 
-## MVC Architecture Pattern
+## MVC Architecture Pattern 📝
 
 The **Model-View-Controller (MVC)** pattern is a design approach that makes complex applications easier to manage by breaking them into modular parts. It is an example of modularisation and decomposition.
 

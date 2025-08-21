@@ -1,4 +1,4 @@
-# Networks
+# Networks 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -79,13 +79,13 @@ Traceroute on Windows
 5. Click on "Utilities"
 6. Open Terminal
 7. Type "traceroute dftba.com"
-   :::
+:::
 
-   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/guvsH5OFizE?si=-qBwz9LiQseDuxeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/guvsH5OFizE?si=-qBwz9LiQseDuxeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-   :::{tip} Crash Course World Wide Web Summary
-   :class: dropdown
-   **The Internet vs. The Web**
+:::{tip} Crash Course World Wide Web Summary
+:class: dropdown
+**The Internet vs. The Web**
 
 - **The Internet** is the global network that connects computers and devices around the world.
 - **The World Wide Web** is one of the services that runs on the Internet. It’s a huge system of connected websites and pages that let people share and access information.
@@ -169,31 +169,31 @@ In video streaming, jitter appears as irregular and unexpected variations in the
 4. **Audio-Video Desynchronization:** Jitter can also affect the synchronization between the audio and video components of a stream. You might notice that the audio lags behind or leads the video.
 5. **Pixelation and Artifacts:** In severe cases, jitter can cause pixelation or compression artifacts in the video, making the image quality deteriorate momentarily.
 6. **Buffering Delays:** To compensate for jitter, video streaming services may introduce buffering delays. This means you have to wait longer for the video to start playing, which can be frustrating for viewers.
-   :::
+:::
 
-   ### Quality of Service (QoS) Guarantee
+### Quality of Service (QoS) Guarantee
 
-   Network **Quality of Service (QoS) guarantee** refers to the assurance that a network can provide specific levels of service and performance to different types of traffic or applications. QoS is critical in ensuring that data, voice, video, and other applications receive the necessary bandwidth, low latency, and minimal packet loss to function effectively.
+Network **Quality of Service (QoS) guarantee** refers to the assurance that a network can provide specific levels of service and performance to different types of traffic or applications. QoS is critical in ensuring that data, voice, video, and other applications receive the necessary bandwidth, low latency, and minimal packet loss to function effectively.
 
-   To guarantee QoS, networks often employ various mechanisms, such as traffic prioritization, bandwidth reservation, and congestion management. For example, in a VoIP (Voice over Internet Protocol) call, QoS guarantee ensures that voice packets are prioritized over less time-sensitive data packets, reducing the chances of voice call degradation due to network congestion.
+To guarantee QoS, networks often employ various mechanisms, such as traffic prioritization, bandwidth reservation, and congestion management. For example, in a VoIP (Voice over Internet Protocol) call, QoS guarantee ensures that voice packets are prioritized over less time-sensitive data packets, reducing the chances of voice call degradation due to network congestion.
 
-   ### Timeliness of delivery
+### Timeliness of delivery
 
-   The principle of **timeliness of delivery** in networking refers to the requirement that data should be delivered within a timeframe suitable for its intended use. This is crucial for ensuring that the information remains relevant and useful by the time it reaches its destination.
+The principle of **timeliness of delivery** in networking refers to the requirement that data should be delivered within a timeframe suitable for its intended use. This is crucial for ensuring that the information remains relevant and useful by the time it reaches its destination.
 
-   ## Network Transmission Protocols 📝
+## Network Transmission Protocols 📝
 
-   ### TCP/IP
+### TCP/IP 📝
 
-   **TCP/IP** stands for **Transmission Control Protocol / Internet Protocol**. It is the core set of communication rules (called a **protocol suite**) that computers use to send and receive data over networks, including the **internet**.
+**TCP/IP** stands for **Transmission Control Protocol / Internet Protocol**. It is the core set of communication rules (called a **protocol suite**) that computers use to send and receive data over networks, including the **internet**.
 
-   Developed in the 1970s, TCP/IP is now the **standard for all internet communication**.
+Developed in the 1970s, TCP/IP is now the **standard for all internet communication**.
 
-   **TCP/IP Protocol Layers**
+**TCP/IP Protocol Layers**
 
-   TCP/IP is made up of **four layers**. Each layer has its own job:
+TCP/IP is made up of **four layers**. Each layer has its own job:
 
-7. **Application Layer**
+1. **Application Layer**
 
    - Deals with **applications and user services**
    - This is the layer you interact with (e.g., web browsers, email clients)
@@ -203,7 +203,7 @@ In video streaming, jitter appears as irregular and unexpected variations in the
      - **IMAP/POP3** – receiving emails
      - **FTP** – file transfer
 
-8. **Transport Layer**
+2. **Transport Layer**
 
    - Manages the **delivery of data**
    - Breaks data into chunks (called **segments**) and reassembles them
@@ -212,19 +212,19 @@ In video streaming, jitter appears as irregular and unexpected variations in the
      - **TCP** – Reliable, ordered delivery (used for most things)
      - **UDP** – Faster, no guarantee of delivery (used for games, video calls)
 
-9. **Internet Layer**
+3. **Internet Layer**
 
-- Handles **routing** of data between devices across networks
-- Breaks data into **packets** and labels them with IP addresses
-- Protocols here:
-- **IP** – Internet Protocol (IPv4 and IPv6)
-- **ICMP** – for sending error and control messages (used by `ping`)
+   - Handles **routing** of data between devices across networks
+   - Breaks data into **packets** and labels them with IP addresses
+   - Protocols here:
+   - **IP** – Internet Protocol (IPv4 and IPv6)
+   - **ICMP** – for sending error and control messages (used by `ping`)
 
-1. **Network Access Layer** (Link Layer)
+4. **Network Access Layer** (Link Layer)
 
-- Manages how data is sent **physically** over the network (wires, Wi-Fi, etc.)
-- Converts packets into electrical signals or radio waves
-- Protocols: Ethernet, Wi-Fi, ARP
+   - Manages how data is sent **physically** over the network (wires, Wi-Fi, etc.)
+   - Converts packets into electrical signals or radio waves
+   - Protocols: Ethernet, Wi-Fi, ARP
 
 **How TCP/IP Works (Step-by-Step)**
 
@@ -237,23 +237,23 @@ In video streaming, jitter appears as irregular and unexpected variations in the
 7. **Receiving End**: The server reassembles the segments and sends back a response.
 8. **Browser Displays Page**: You see the website once all the data is received.
 
-   **TCP vs UDP Comparison**
+**TCP vs UDP Comparison**
 
-   | Feature   | TCP                            | UDP                              |
-   | --------- | ------------------------------ | -------------------------------- |
-   | Delivery  | Reliable (resends lost data)   | Unreliable (no resending)        |
-   | Order     | Keeps order                    | No guarantee of order            |
-   | Speed     | Slower (due to checking)       | Faster                           |
-   | Use cases | Web browsing, email, downloads | Video calls, games, live streams |
+| Feature   | TCP                            | UDP                              |
+| --------- | ------------------------------ | -------------------------------- |
+| Delivery  | Reliable (resends lost data)   | Unreliable (no resending)        |
+| Order     | Keeps order                    | No guarantee of order            |
+| Speed     | Slower (due to checking)       | Faster                           |
+| Use cases | Web browsing, email, downloads | Video calls, games, live streams |
 
-   ### What is IP?
+### What is IP?
 
-   **IP (Internet Protocol)** is a **network layer protocol** that handles **addressing and routing** of data between devices on a network. It ensures that packets of data are sent from the sender to the correct destination.
+**IP (Internet Protocol)** is a **network layer protocol** that handles **addressing and routing** of data between devices on a network. It ensures that packets of data are sent from the sender to the correct destination.
 
-   Every device on a network — like your phone, laptop, or a website server — is assigned a unique **IP address**, which acts like a digital address so the internet knows where to send information.
+Every device on a network — like your phone, laptop, or a website server — is assigned a unique **IP address**, which acts like a digital address so the internet knows where to send information.
 
-   **IP is responsible for**
-9. **Addressing**
+**IP is responsible for**
+1. **Addressing**
 
    - Every device must have a unique **IP address**.
    - IP addresses identify the **sender** and the **receiver** of data.
@@ -266,19 +266,19 @@ In video streaming, jitter appears as irregular and unexpected variations in the
      - **Destination IP address**
      - Other information (e.g. time to live)
 
-10. **Routing**
+3.  **Routing**
 
    - Packets may travel through many routers across different networks.
    - Each router checks the **destination IP** and forwards the packet toward its target.
    - The path may not be the same for each packet — they can take different routes.
 
-11. **Delivery (Best-Effort)**
+4.  **Delivery (Best-Effort)**
 
    - IP does not guarantee delivery.
    - Packets can be **lost**, **duplicated**, or **arrive out of order**.
    - That’s why **TCP** is often used on top of IP to ensure reliable delivery.
 
-   **Types of IP Addresses**
+**Types of IP Addresses**
 
 - **IPv4** (Internet Protocol version 4)
   - Most common version
@@ -310,22 +310,22 @@ Every IP packet includes a **header** with important information:
 - **Time to Live (TTL)** – how many hops (routers) the packet can go through before being dropped
 - **Protocol** – tells what’s inside (e.g., TCP, UDP)
 
-### HTTP / HTTPS
+### HTTP / HTTPS 📝
 
 **HTTP (Hypertext Transfer Protocol)** and **HTTPS (Hypertext Transfer Protocol Secure)** are both protocols used for transferring data between a web browser (client) and a web server. The primary difference lies in security and data protection.
 
 **Key Differences**
 
-| Feature                  | HTTP                                      | HTTPS                                         |
-|--------------------------|-------------------------------------------|-----------------------------------------------|
-| Full Name                | Hypertext Transfer Protocol               | Hypertext Transfer Protocol Secure            |
-| Security                 | No encryption; data sent in plain text    | Data encrypted using SSL/TLS                  |
-| Default Port             | 80                                        | 443                                           |
-| Data Protection          | Vulnerable to interception and tampering  | Protects against eavesdropping and tampering  |
-| Server Authentication    | No verification of server identity        | Uses digital certificates to verify server    |
-| URL Prefix               | http://                                   | https://                                      |
-| Use Case                 | General browsing, non-sensitive data      | Sensitive data (logins, payments, personal)   |
-| SEO Benefit              | No boost                                  | Preferred by search engines                   |
+| Feature | HTTP | HTTPS |
+|--- |--- |--- |
+| Full Name | Hypertext Transfer Protocol | Hypertext Transfer Protocol Secure |
+| Security | No encryption; data sent in plain text | Data encrypted using SSL/TLS |
+| Default Port | 80 | 443 |
+| Data Protection | Vulnerable to interception and tampering | Protects against eavesdropping and tampering |
+| Server Authentication | No verification of server identity | Uses digital certificates to verify server |
+| URL Prefix | http:// | https:// |
+| Use Case | General browsing, non-sensitive data | Sensitive data (logins, payments, personal) |
+| SEO Benefit | No boost | Preferred by search engines |
 
 :::{hint} What is a Port?
 :class: dropdown
@@ -343,18 +343,17 @@ A single computer can run many programs at the same time—like a web browser, e
 **Common Port Numbers**
 Some port numbers are **standardized**, meaning certain services always use the same ones:
 
-| Port Number | Protocol / Service           |
-| ----------- | ---------------------------- |
-| 20, 21      | FTP (File Transfer Protocol) |
-| 22          | SSH (Secure Shell)           |
-| 23          | Telnet                       |
-| 25          | SMTP (Sending email)         |
-| 53          | DNS (Domain Name System)     |
-| 80          | HTTP (Web pages)             |
-| 443         | HTTPS (Secure web pages)     |
-| 110         | POP3 (Receiving email)       |
-| 143         | IMAP (Receiving email)       |
-
+| Port Number | Protocol / Service |
+| --- | --- |
+| 20, 21 | FTP (File Transfer Protocol) |
+| 22 | SSH (Secure Shell) |
+| 23 | Telnet |
+| 25 | SMTP (Sending email) |
+| 53 | DNS (Domain Name System) |
+| 80 | HTTP (Web pages) |
+| 443 | HTTPS (Secure web pages) |
+| 110 | POP3 (Receiving email) |
+| 143 | IMAP (Receiving email) |
 :::
 
 - **HTTP** is fast and suitable for non-sensitive information, but it is not secure—data can be intercepted or altered by third parties.
@@ -396,9 +395,10 @@ HTTP responses come with status codes that indicate the outcome of the request:
 - **4xx (Client Error):** Indicates an error that seems to have been caused by the client (e.g., 404 Not Found, 403 Forbidden).
 - **5xx (Server Error):** Indicates an error on the server side (e.g., 500 Internal Server Error, 503 Service Unavailable).
 
-### FTP / FTPS
+### FTP / FTPS 📝
 
 **FTP**
+
 **FTP** stands for **File Transfer Protocol**. It's one of the oldest protocols used to transfer files between two computers over a **TCP/IP network** (like the internet).
 
 **How It Works:**
@@ -466,15 +466,15 @@ Here are the most common VPN protocols:
   - Uses strong, modern security
   - Still being adopted by some platforms
 
-| Protocol    | Speed   | Security | Best For               |
-| ----------- | ------- | -------- | ---------------------- |
-| PPTP        | ✅ Fast  | ❌ Weak   | Old systems (not safe) |
-| L2TP/IPsec  | ⚠️ Okay | ✅ Good   | Better security        |
-| OpenVPN     | ⚠️ Okay | ✅ Great  | Most safe setups       |
-| IKEv2/IPsec | ✅ Fast  | ✅ Great  | Phones and mobile use  |
-| WireGuard   | ✅ Fast  | ✅ Great  | Modern, future VPNs    |
+| Protocol | Speed | Security | Best For |
+| --- | --- | --- | --- |
+| PPTP | ✅ Fast | ❌ Weak | Old systems (not safe) |
+| L2TP/IPsec | ⚠️ Okay | ✅ Good | Better security |
+| OpenVPN | ⚠️ Okay | ✅ Great | Most safe setups |
+| IKEv2/IPsec | ✅ Fast | ✅ Great | Phones and mobile use |
+| WireGuard | ✅ Fast | ✅ Great | Modern, future VPNs |
 
-### Streaming
+### Streaming 📝
 
 **Streaming protocols** are rules that control how audio and video are sent over the internet so that people can watch or listen in **real time** without downloading the entire file first.
 
@@ -502,14 +502,14 @@ There are two main types:
   - Very low latency (almost no delay)
   - Doesn’t need extra plugins or apps—works in modern browsers
 
-| Protocol  | Best For         | Key Features                        |
-| --------- | ---------------- | ----------------------------------- |
-| HLS       | Live & on-demand | Widely supported, adaptive quality  |
-| MPEG-DASH | On-demand        | Open standard, flexible             |
-| RTMP      | Live streaming   | Low delay, used for uploading video |
-| WebRTC    | Video calls      | Real-time, works in browsers        |
+| Protocol  | Best For | Key Features |
+| --- | --- | --- |
+| HLS | Live & on-demand | Widely supported, adaptive quality |
+| MPEG-DASH | On-demand | Open standard, flexible |
+| RTMP | Live streaming | Low delay, used for uploading video |
+| WebRTC | Video calls | Real-time, works in browsers |
 
-### Broadcasting
+### Broadcasting 📝
 
 **Broadcast protocols** are ways of sending data from one device to **many devices at once** on a network. They are used when the same message needs to reach a group of devices without sending it separately to each one.
 
@@ -531,15 +531,15 @@ There are two main types:
   - Used in older Windows networks to share files and printers
   - Broadcasts names of devices to find others on the local network
 
-| Type          | Description                              |
-| ------------- | ---------------------------------------- |
-| **Unicast**   | One-to-one (sent to a single device)     |
+| Type | Description |
+| --- | --- |
+| **Unicast** | One-to-one (sent to a single device) |
 | **Broadcast** | One-to-all (sent to every device on LAN) |
-| **Multicast** | One-to-many (sent to a specific group)   |
+| **Multicast** | One-to-many (sent to a specific group) |
 
 ## Data Exchange Methods 📝
 
-### REST (Representational State Transfer)
+### REST (Representational State Transfer) 📝
 
 REST is an architectural style for designing networked applications. It relies on a **stateless**, **client-server**, **cacheable communications protocol** &mdash; the HTTP (Hypertext Transfer Protocol).  
 
@@ -608,7 +608,7 @@ REST is an architectural style for designing networked applications. It relies o
      }
      ```
 
-### JSON
+### JSON 📝
 
 **JSON (JavaScript Object Notation)** is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It's widely used in web applications to send and receive data between a server and a client.
 
@@ -726,7 +726,7 @@ Here’s a complete example representing a student record:
 - **Binary Data Handling:** JSON is not suitable for directly handling binary data, often requiring encoding (like Base64) which increases the size of the data.
 - **Lack of Comments:** JSON does not support comments, making it harder to document or annotate data within the JSON itself for future reference or understanding.
 
-### XML
+### XML 📝
 
 **XML (eXtensible Markup Language)** is a versatile and widely-used format for storing and transporting data. Unlike JSON, which is primarily used for data interchange, XML is more commonly used for document storage, configuration files, and data interchange in enterprise systems.
 

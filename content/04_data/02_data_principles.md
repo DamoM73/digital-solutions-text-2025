@@ -1,4 +1,4 @@
-# Data Principles
+# Data Principles 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -8,7 +8,7 @@ By the end of this section you will:
 
 Data principles are fundamental guidelines that ensure data is collected, stored, processed, and used in ways that maintain its quality, reliability, and security.  
 
-## Data Management
+## Data Management 📝
 
 Delivering a data-driven digital solution requires a detailed understanding of the data involved. Therefore it is vital to consider the data that underpins the application and issues related to managing that data.
 
@@ -19,7 +19,7 @@ These issues fall under four main categories:
 - Data anomalies
 - Security and protection
 
-### Acquisition
+### Acquisition 📝
 
 Data acquisition is the process of collecting and capturing data from various sources and converting it into a usable digital format for further analysis and processing. In acquiring the your data you need to consider both the timeliness of the data acquisition and the ownership of the data.
 
@@ -40,7 +40,7 @@ There are three types of data ownership:
 
 It is possible for the data in a database to contain a mix of ownerships. Each type of data ownership has different handling requirements. It is important to identify the ownership of the data we are working with.
 
-### Integrity
+### Integrity 📝
 
 Data integrity means keeping data **accurate**, **complete**, and **consistent** at every stage&mdash;from creation and storage to processing and sharing. It ensures that the data remains **trustworthy** and **protected** from unauthorized changes, loss, or damage. This is especially important in fields like healthcare, finance, and research, where reliable data is essential.
 

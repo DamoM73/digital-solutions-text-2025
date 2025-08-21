@@ -1,4 +1,4 @@
-# Visual Communication
+# Visual Communication📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -23,7 +23,7 @@ The activity for this section will involve analysing a website and identifying w
 The website we will analyse is the [Official Lego website](https://www.lego.com/en-au)
 :::
 
-## Visual Communication Principles
+## Visual Communication Principles📝
 
 The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve.  
 
@@ -202,7 +202,7 @@ Proximity is the positioning of elements near other elements. Proximity is an im
 Analyse the [Official Lego website](https://www.lego.com/en-au) and identify where **proximity** has been used.
 :::
 
-## Visual Communication Elements
+## Visual Communication Elements📝
 
 The **elements** of visual communication are the building block of UI design. By manipulating visual communication elements to implement the principles of visual communication you achieve the desired effect on the UI and, subsequently the UX. In other words, the elements of visual communication are the **how** of what you want top achieve.
 

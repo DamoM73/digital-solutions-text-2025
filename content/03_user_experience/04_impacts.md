@@ -1,4 +1,4 @@
-# Impacts
+# Impacts 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -15,7 +15,7 @@ We will consider three categories of impact:
 - social impact
 - economic impact
 
-## Personal Impacts
+## Personal Impacts 📝
 
 When evaluating a digital solution, several personal impacts should be considered to ensure the solution enhances individual well-being and does not introduce unintended negative consequences. The table below provides a summary.
 
@@ -85,7 +85,7 @@ Taylor uses a VR headset to meet friends in a virtual social space. They feel mo
 - Propose strategies to support a healthier balance of virtual and real-life engagement.
 :::
 
-## Social Impacts
+## Social Impacts 📝
 
 When evaluating a digital solution, consider how it affects social equity, inclusion, well-being, and the broader structure of society. The goal is to ensure technology supports a fair, connected, and healthy community.
 
@@ -163,21 +163,21 @@ A school introduces a mobile app to update students and parents on homework, eve
 - Propose changes to make the system more inclusive.
 :::
 
-## Economic Impacts
+## Economic Impacts 📝
 
 Digital solutions can reshape economies by influencing productivity, employment, trade, and long-term economic resilience. Evaluating these impacts helps ensure solutions support sustainable growth, competitiveness, and inclusive development.
 
 ### Key Economic Impact Areas
 
-| Impact Area             | What to Consider                                                               |
-| ----------------------- | ------------------------------------------------------------------------------ |
-| Economic Productivity   | Efficiency gains, automation, resource optimisation across industries          |
-| Employment & Workforce  | Job creation, displacement, digital skill demand, workforce transformation     |
-| Market Growth & Trade   | Domestic and international expansion, digital trade, competitiveness           |
-| Inclusion & Access      | Access to financial and digital services, support for underserved populations  |
+| Impact Area | What to Consider |
+| --- | --- |
+| Economic Productivity | Efficiency gains, automation, resource optimisation across industries |
+| Employment & Workforce | Job creation, displacement, digital skill demand, workforce transformation |
+| Market Growth & Trade | Domestic and international expansion, digital trade, competitiveness |
+| Inclusion & Access | Access to financial and digital services, support for underserved populations |
 | Resilience & Innovation | Ability to adapt to disruptions, encourage entrepreneurship and new industries |
-| Public Revenue & Policy | Taxation models, regulatory needs, economic policy alignment                   |
-| Return on Investment    | Cost-benefit analysis, sustainability of implementation and maintenance        |
+| Public Revenue & Policy | Taxation models, regulatory needs, economic policy alignment |
+| Return on Investment | Cost-benefit analysis, sustainability of implementation and maintenance |
 
 ---
 

@@ -1,4 +1,4 @@
-# Good Programming Practice
+# Good Programming Practice 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -20,7 +20,7 @@ Good programming practice is important because it makes code easier to read and 
 
 There are many good programming practices that should be followed. These need to be applied from the very beginning, starting with algorithm development.
 
-## Dependability
+## Dependability 📝
 
 Code dependability refers to how reliable and consistent a program is when it runs. Dependable code performs as expected under different conditions, handles errors gracefully, and does not crash or behave unpredictably. It includes writing code that is well-tested, handles edge cases, and can recover from unexpected inputs or failures. Dependable code is essential for building trust in the digital solution and ensuring a good user experience.
 
@@ -99,19 +99,19 @@ Reliability is how likely a program is to run without errors or failures when pe
 9. How can good naming conventions help reduce confusion in multi-person projects?
 10. Why is it important for a program to handle edge cases and unexpected inputs gracefully?
 
-   :::
+:::
 
-   ---
+---
 
-   ## Efficiency
+## Efficiency 📝
 
-   Efficiency is when a system completes its tasks using the least possible time and processing power. There are two main types:
+Efficiency is when a system completes its tasks using the least possible time and processing power. There are two main types:
 
-   ### Algorithmic Efficiency
+### Algorithmic Efficiency
 
-   This refers to how reliably and quickly an algorithm solves a problem, using clear and structured programming techniques to keep solutions concise and effective.
+This refers to how reliably and quickly an algorithm solves a problem, using clear and structured programming techniques to keep solutions concise and effective.
 
-   To achieve algorithmic efficiency in your programs, you can follow these simple practices:
+To achieve algorithmic efficiency in your programs, you can follow these simple practices:
 
 - **Pick the right data structure:** Use structures like lists, dictionaries or sets that help you store and access data quickly.
 - **Avoid unnecessary steps:** Don’t repeat the same actions if you don’t need to. Keep your code clean and direct.

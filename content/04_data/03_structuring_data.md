@@ -1,4 +1,4 @@
-# Structuring Data
+# Structuring Data 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -101,24 +101,23 @@ Relational databases are widely used in various applications, from business syst
 12. Why is durability important after a transaction is committed?
 13. What is a data value and where is it located in a table?
 14. What are the benefits of using relational databases in business or web applications?
+:::
 
-   :::
+---
 
-   ---
+## Normalisation 📝
 
-   ## Normalisation
+> Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation ... is to eliminate `richardpeterson_2019_what`
 
-   > Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation ... is to eliminate `richardpeterson_2019_what`
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xoTyrdT9SZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/xoTyrdT9SZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::{tip} Basic Concept of Database Normalization Summary
+:class: dropdown
+**What is Normalization?**
+Normalization is a database design technique used to organize data into multiple, smaller, related tables. Its primary goal is to **minimize data redundancy**.
 
-   :::{tip} Basic Concept of Database Normalization Summary
-   :class: dropdown
-   **What is Normalization?**
-   Normalization is a database design technique used to organize data into multiple, smaller, related tables. Its primary goal is to **minimize data redundancy**.
-
-   **The Problem: Data Redundancy**
-   Data redundancy is the unnecessary repetition of data in a database. The video illustrates this with an example of a single **STUDENTS TABLE** with the following columns:
+**The Problem: Data Redundancy**
+Data redundancy is the unnecessary repetition of data in a database. The video illustrates this with an example of a single **STUDENTS TABLE** with the following columns:
 - `rollno`
 - `name`
 - `branch`
@@ -177,15 +176,14 @@ The process of **Normalisation** is the the most effective way of removing redun
 8. In the example, what are the two tables created by normalising the STUDENTS TABLE?
 9. How does normalisation solve the insertion anomaly in the student example?
 10. How does updating the Head of Department become easier after normalisation?
+:::
 
-   :::
+### First Normal Form (1NF)
 
-   ### First Normal Form (1NF)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mUtAPbb1ECM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/mUtAPbb1ECM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-   :::{tip} First Normal Form Summary
-   :class: dropdown
+:::{tip} First Normal Form Summary
+:class: dropdown
 
 - **Introduction to 1NF:** The First Normal Form is the first and most fundamental step in the normalization process. A table that is not in 1NF is considered to have a poor database design. Achieving 1NF is a prerequisite for moving to higher normal forms like 2NF and 3NF.
 - **The Four Rules of 1NF:** To be in First Normal Form, a table must adhere to four basic rules:

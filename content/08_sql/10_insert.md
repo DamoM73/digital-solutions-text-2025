@@ -1,4 +1,4 @@
-# INSERT
+# INSERT 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:

@@ -1,9 +1,9 @@
-# Usability
+# Usability 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- Understand why useability is important
-- Understand  
+- understand why useability is important
+- know the five elements of usability
 :::
 
 > Usability is a measure of how well a specific user in a specific context can use a product/design to achieve a defined goal effectively, efficiently and satisfactorily. Designers usually measure a design's usability throughout the development process — from wireframes to the final deliverable. {cite}`interactiondesignfoundation_2014_what`
@@ -18,7 +18,7 @@ In Digital Solutions we will focus on five usability principles (use the mnemoni
 - learnability
 - effectiveness
 
-## Utility
+## Utility 📝
 
 Utility is about whether the digital solution includes all the features users need to complete their tasks. It doesn’t matter how easy something is to use if it doesn’t do what the user actually needs.
 
@@ -35,7 +35,7 @@ Consider the following when evaluating utility:
 
 A school app lets students check their timetable, but it doesn’t include a way to view assessment due dates. Even if the app is easy to use, it fails the utility principle because it lacks a key function students need to manage their workload. To improve utility, the app should include an assessment calendar or integration with task reminders.
 
-## Safety
+## Safety 📝
 
 Safety means designing digital solutions that help prevent serious user errors and allow easy recovery if something goes wrong. It protects users from losing data, making dangerous choices, or damaging the system.
 
@@ -73,7 +73,7 @@ To improve safety:
 - Move the **clear all** button away from **submit**.
 - Allow users to recover deleted files or auto-save progress.
 
-## Accessibility
+## Accessibility 📝
 
 Accessibility means making sure your digital solution can be used by as many people as possible, including people with diverse abilities, including those with visual, auditory, motor, and cognitive impairments.
 
@@ -88,7 +88,7 @@ We use the **POUR** principles to guide accessibility:
 
 A university website uses a navigation menu that only works with a mouse hover. Students using keyboard navigation or screen readers can’t access these links. This fails the **Operable** principle. To improve accessibility, the site should allow keyboard tabbing through the menu and include clear focus indicators. In addition, if the site uses light grey text on a white background, it may fail the **Perceivable** principle. Using the Colour Contrast Analyser can help ensure text is readable for users with vision impairments.
 
-## Learnability
+## Learnability 📝
 
 Learnability is about how easy it is for a user to learn how to use your digital solution. A learnable interface feels familiar, matches user expectations, and helps new users become confident quickly.
 
@@ -118,7 +118,7 @@ To improve learnability:
 - Place key tools in visible, consistent locations
 - Include a short tutorial on first use to guide new users through the interface.
 
-## Effectiveness
+## Effectiveness 📝
 
 Effectiveness is about whether users can complete their tasks successfully using your digital solution.
 

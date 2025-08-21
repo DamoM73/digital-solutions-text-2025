@@ -1,4 +1,4 @@
-# Filters and Aggregators
+# Filters and Aggregators 📝
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -21,7 +21,7 @@ The `MAX` function returns the highest value in a column, while the `MIN` functi
 
 Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_min_max.asp) on the `MIN()` and `MAX()` functions and complete their exercises.
 
-## COUNT, AVG and SUM Functions
+## COUNT, AVG and SUM Functions 📝
 
 The `COUNT` function returns the number of rows, `AVG` calculates the average of numeric values, and `SUM` adds up all the numeric values in a column.
 
