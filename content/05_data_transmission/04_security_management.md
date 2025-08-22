@@ -723,3 +723,34 @@ Data compression is the process of reducing the size of a file or data set. This
 ---
 
 ## Check Sums 📝
+
+A checksum is a value used to check whether data has been altered during storage or transmission.
+
+* It is created by applying a mathematical algorithm (like addition, XOR, or hashing) to a block of data.
+* The result is a short, fixed-size value (the checksum) sent or stored with the data.
+* When the data is received or retrieved, the same calculation is performed again.
+* If the new checksum matches the original, the data is assumed to be correct.
+* If the checksums differ, it means errors or tampering have occurred.
+
+Checksums are commonly used in file downloads, networking, and data storage to ensure **integrity** of data.
+
+Here’s a very simple checksum example with numbers:
+
+| Step | Data |
+|:-----|:------------|
+| Sending block of data  | `12, 7, 5, 20` |
+| Add the numbers together | `12 + 7 + 5 + 20 = 44` |
+| Take the last digit only (mod 10): | `44 → checksum = 4` |
+| Send data with checksum: | `Data = [12, 7, 5, 20], Checksum = 4` |
+| Receiver adds the numbers again: | `12 + 7 + 5 + 20 = 44 → checksum = 4` |
+| Compare with the sent checksum: | If both are 4 → data is correct<br>If not → data is corrupted |
+
+Here’s the same process, but with an error:
+
+| Step | Data |
+|:-----|:------------|
+| Original data: | `12, 7, 5, 20` |
+| Sender’s checksum: | `12 + 7 + 5 + 20 = 44 → checksum = 4` |
+| Data is transmitted, but one number changes (error): | `12, 7, 6, 20` |
+| Receiver calculates checksum: | `12 + 7 + 6 + 20 = 45 → checksum = 5` |
+| Compare checksums: | Sent checksum = 4<br>Received checksum = 5 |
