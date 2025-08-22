@@ -181,6 +181,18 @@ To guarantee QoS, networks often employ various mechanisms, such as traffic prio
 
 The principle of **timeliness of delivery** in networking refers to the requirement that data should be delivered within a timeframe suitable for its intended use. This is crucial for ensuring that the information remains relevant and useful by the time it reaches its destination.
 
+:::{seealso} Network Transmission Principles Activities
+:class: dropdown
+1. What is latency in networking and why is it important for online gaming?
+2. Identify two causes of latency and explain them.
+3. Define jitter and describe how it affects video streaming.
+4. Give one network condition that increases jitter.
+5. What does a Quality of Service (QoS) guarantee mean in networking?
+6. Explain why QoS is important for a VoIP call.
+7. What is meant by timeliness of delivery in networks?
+8. Give an example of when timeliness of delivery is critical.
+:::
+
 ## Network Transmission Protocols 📝
 
 ### TCP/IP 📝
@@ -536,6 +548,28 @@ There are two main types:
 | **Unicast** | One-to-one (sent to a single device) |
 | **Broadcast** | One-to-all (sent to every device on LAN) |
 | **Multicast** | One-to-many (sent to a specific group) |
+
+:::{seealso} Network Transmission Protocols Activities
+:class: dropdown
+1. What does TCP/IP stand for and why is it important?
+2. Name the four TCP/IP layers and briefly describe one.
+3. Compare TCP and UDP with one use case for each.
+4. What is the main role of the Internet Protocol (IP)?
+5. Explain the difference between IPv4 and IPv6.
+6. Why is TCP often used together with IP?
+7. State one key difference between HTTP and HTTPS.
+8. Give an example of when HTTPS is essential and explain why.
+9. What does a browser’s padlock icon mean?
+10. What is the main function of FTP?
+11. Why is FTPS more secure than FTP?
+12. What does a VPN do?
+13. Name one VPN protocol suitable for mobile devices and explain why.
+14. What is the main difference between live streaming and on-demand streaming?
+15. Which streaming protocol is best for video calls and why?
+16. What is the difference between unicast, broadcast, and multicast?
+17. Which broadcast protocol is used to automatically assign IP addresses to new devices on a network?
+18. What is the purpose of ARP?
+:::
 
 ## Data Exchange Methods 📝
 
@@ -910,3 +944,19 @@ Charlie    35    San Francisco, CA
 - **Scalability Issues:** For very large datasets, both CSV and TSV formats can become inefficient in terms of processing speed and memory usage, as they require reading the entire file into memory for manipulation.
 - **Lack of Data Validation:** Both formats lack built-in mechanisms for data validation, which can lead to inconsistencies and errors if the data is not carefully managed and validated externally.
 - **No Support for Hierarchical Data:** Both CSV and TSV are flat-file formats and do not support hierarchical or nested data structures, limiting their use for complex data representations.
+
+:::{seealso} Data Exchange Methods Activities
+:class: dropdown
+1. What does REST stand for and what is it used for?
+2. What does it mean that REST communication is “stateless”?
+3. Which HTTP methods in REST are used for Create and Delete operations?
+4. What is JSON commonly used for in web applications?
+5. Give one advantage and one disadvantage of JSON.
+6. In JSON, how are arrays represented? Provide an example.
+7. How is data structured in XML?
+8. Give one advantage and one disadvantage of XML compared to JSON.
+9. Name one real-world use of XML.
+10. What is the main difference between CSV and TSV?
+11. Why are CSV and TSV considered “lightweight” formats?
+12. Give one disadvantage of CSV or TSV.
+:::

@@ -1850,6 +1850,245 @@ Enrolment Table
     - Requires regular review and updating to stay effective
 :::
 
+### Networks
+
+:::{seealso} Network Transmission Principles Solutions
+:class: dropdown
+**Question 1**
+
+Latency is the delay when data travels from source to destination. It is important for gaming because high latency makes actions respond slowly, creating lag and reducing gameplay quality.
+
+**Question 2**
+
+* **Propagation**: delay caused by the time signals take to travel through cables or fibre.
+* **Queuing**: delay caused when packets wait in line at routers or switches before being sent.
+
+**Question 3**
+
+Jitter is the variation in packet arrival times. In video streaming it can cause:
+- Stuttering or freezing: video pauses briefly, then suddenly resumes.
+- Uneven playback speed: video may speed up or slow down, making motion appear unnatural.
+- Frame drops: some frames never display, leading to jerky or jumpy playback.
+- Audio-video desynchronisation: sound may lag behind or run ahead of the video.
+- Pixelation or visual artifacts: inconsistent delivery can cause blocks or distortions in the image.
+- Buffering delays: the video stops to load more data, interrupting smooth viewing.
+
+**Question 4**
+
+One of:
+- Network congestion, where too many packets compete for bandwidth, increases jitter.
+- Different routing paths: packets may take different routes across the network, arriving at different times.
+- Processing delays: routers and switches may take longer to inspect and forward some packets than others.
+- Wireless interference: signals can be disrupted by obstacles or competing devices, causing irregular delivery times.
+- Insufficient bandwidth: when too many users or applications compete for the same bandwidth, packet delivery becomes inconsistent.
+- Buffering in devices: network devices sometimes hold packets briefly in buffers, releasing them unevenly.
+
+**Question 5**
+
+QoS guarantee is assurance that certain traffic (e.g. voice or video) will receive priority and required performance, with low latency and minimal packet loss.
+
+**Question 6**
+
+QoS prioritises voice packets so they are not delayed or dropped, ensuring clear, uninterrupted calls.
+
+**Question 7**
+
+Timeliness of delivery means data arrives within a timeframe that keeps it relevant and useful, such as real-time updates.
+
+**Question 8**
+
+Possible answers: 
+- Video conferencing: delays cause people to talk over each other, breaking the flow of conversation.
+- Online gaming: if actions (like moving or shooting) arrive late, players lose accuracy and fairness.
+- Stock trading systems: late delivery of market data can cause financial loss if trades are made on outdated prices.
+- Emergency services communication: delayed data (like location tracking or medical telemetry) can risk lives.
+- Autonomous vehicles: late sensor data could cause unsafe driving decisions.
+- Live sports streaming: late delivery results in lag behind the actual event, ruining the real-time experience.
+:::
+
+:::{seealso} Network Transmission Protocols Solutions
+:class: dropdown
+**Question 1**
+
+Transmission Control Protocol / Internet Protocol; it is the standard suite of rules that allows computers to communicate over the internet.
+
+**Question 2**
+
+| Layer | Description | Example Protocols / Use |
+| --- | --- | --- |
+| Application Layer | Provides services for applications such as web browsing, email, and file transfer. | HTTP/HTTPS, SMTP, IMAP, POP3, FTP |
+| Transport Layer | Manages delivery of data: breaks data into segments, checks for errors, ensures correct order. | TCP (reliable), UDP (fast) |
+| Internet Layer | Handles addressing and routing: puts data into packets with source and destination IP addresses. | IP (IPv4/IPv6), ICMP |
+| Network Access Layer | Manages physical transmission: converts packets into signals over cables or Wi-Fi. | Ethernet, Wi-Fi, ARP |
+
+**Question 3**
+
+| Feature | TCP | UDP |
+| --- | --- | --- |
+| Delivery | Reliable – resends lost packets to ensure data arrives | Unreliable – does not resend lost packets |
+| Order | Maintains packet order, reassembles data correctly | No guarantee of order – packets may arrive out of sequence |
+| Error Checking | Performs error detection and correction | Performs error detection only, no correction |
+| Speed | Slower because of overhead from checking and resending | Faster because there is no overhead for reliability |
+| Best Use Cases | Web browsing, emails, file downloads, banking transactions | Online gaming, video calls, live streams, real-time communication |
+
+**Question 4**
+
+IP handles addressing and routing so data packets can move between devices on different networks.
+
+**Question 5**
+
+IPv4 uses 32-bit addresses written as four dotted numbers (e.g., 192.168.1.1), while IPv6 uses 128-bit hexadecimal addresses (e.g., 2001\:db8::1) to allow many more unique addresses.
+
+**Question 6**
+
+IP only delivers packets on a best-effort basis, so TCP adds reliability by resending lost packets and reordering them.
+
+**Question 7**
+
+One of:
+| Feature | HTTP | HTTPS |
+| --- | --- | --- |
+| Full Name | Hypertext Transfer Protocol | Hypertext Transfer Protocol Secure |
+| Security | No encryption; data sent in plain text | Encrypted using SSL/TLS, protects against interception and tampering |
+| Port Number | Uses port 80 by default | Uses port 443 by default |
+| Server Authentication | No verification of server identity | Uses digital certificates to verify the server |
+| URL Prefix | `http://` | `https://` |
+| Use Cases | General browsing of non-sensitive data | Sensitive data like logins, payments, personal info |
+| Browser Indicator | No padlock icon; modern browsers may warn “Not Secure” | Shows a padlock icon indicating a secure connection |
+| SEO Benefit | No ranking boost | Preferred by search engines for higher ranking |
+
+**Question 8**
+
+One of:
+| Example Situation | Why HTTPS is Essential |
+| --- | --- |
+| Online shopping checkout | Encrypts payment details so credit card numbers and addresses cannot be stolen. |
+| Online banking | Protects account logins and transactions from interception or tampering. |
+| Social media login | Secures usernames and passwords from hackers on public Wi-Fi. |
+| Healthcare portals | Keeps medical records private and prevents unauthorised access. |
+| Government services | Ensures confidentiality of personal details like tax or ID information. |
+| School or workplace logins | Protects staff/student accounts and sensitive organisational data. |
+
+**Question 9**
+
+It indicates that the site is using HTTPS with a valid security certificate.
+
+**Question 10**
+
+To transfer files between a client and a server over a network.
+
+**Question 11**
+
+FTPS encrypts login credentials and file transfers using SSL/TLS, preventing interception.
+
+**Question 12**
+
+It creates a secure, private tunnel for internet traffic, protecting data from eavesdropping.
+
+**Question 13**
+
+IKEv2/IPsec; it is fast, secure, and handles switching between Wi-Fi and mobile data smoothly.
+
+**Question 14**
+
+Live streaming delivers content in real-time, while on-demand lets users watch pre-recorded content at any time.
+
+**Question 15**
+
+WebRTC, because it provides real-time, low-latency communication directly in browsers.
+
+**Question 16**
+
+Unicast is one-to-one, broadcast is one-to-all, multicast is one-to-many (a specific group).
+
+**Question 17**
+
+DHCP.
+
+**Question 18**
+
+To map an IP address to a device’s MAC address by broadcasting a request on the local network.
+:::
+
+:::{seealso} Data Exchange Methods Activities
+:class: dropdown
+**Question 1**
+
+REST stands for Representational State Transfer. It is an architectural style for designing networked applications that use HTTP to perform CRUD operations on resources.
+
+**Question 2**
+
+Stateless means the server does not keep track of client sessions. Each request must contain all the information the server needs to process it.
+
+**Question 3**
+
+Create uses POST, and Delete uses DELETE.
+
+**Question 4**
+JSON is used to exchange data between clients and servers in web applications, often through APIs.
+
+**Question 5**
+
+
+One of:
+| Advantages of JSON | Disadvantages of JSON |
+| --- | --- |
+| Lightweight and compact, so it uses less bandwidth than XML. | Limited data types (no direct support for dates, binary data, or complex objects). |
+| Easy for humans to read and write. | No schema validation, which can cause inconsistent data structures. |
+| Supported across most programming languages. | Can become verbose and harder to manage with very complex or deeply nested structures. |
+| Native to JavaScript, making it ideal for web applications. | Security risks such as injection attacks if input is not properly sanitised. |
+| Works well for APIs and configuration files. | No support for comments, which makes it harder to document data inside the file. |
+
+**Question 6**
+
+Arrays are enclosed in square brackets `[ ]` and contain a list of values. Example: `"students": ["Alice", "Bob", "Charlie"]`.
+
+**Question 7**
+
+Data is organised in a hierarchical, tree-like structure using nested tags.
+
+Q8. Give one advantage and one disadvantage of XML compared to JSON.
+
+One of:
+| Advantages of XML compared to JSON | Disadvantages of XML compared to JSON |
+| --- | --- |
+| Extensible – users can define custom tags to describe any data. | Verbose – larger file sizes due to opening/closing tags. |
+| Self-descriptive – tags clearly label the meaning of each element. | Slower to parse, requiring more processing power. |
+| Standardised by W3C, ensuring interoperability across systems. | More complex to write and read than JSON. |
+| Suitable for hierarchical and document-style data. | Less efficient for web APIs where lightweight data is preferred. |
+| Widely used in enterprise systems (e.g., SOAP, configuration). | Declining adoption compared to JSON in modern web development. |
+
+**Question 9**
+
+XML is used for RSS feeds to distribute website updates.
+
+**Question 10**
+
+CSV uses commas to separate values, while TSV uses tabs.
+
+**Question 11**
+
+They store data as plain text and have smaller file sizes, making them efficient for storage and transfer.
+
+**Question 12**
+
+One of:
+
+| Disadvantages of CSV/TSV | Explanation |
+| --- | --- |
+| Lack of standardisation | Different programs may treat delimiters, quotes, or line breaks differently. |
+| Limited data types | Only supports plain text, not complex data like objects or binary. |
+| Delimiter conflicts | CSV struggles when data contains commas; TSV struggles with tab characters. |
+| No support for metadata | Does not store information about data types, schema, or encoding. |
+| Scalability issues | Large files are slow to process because they must be read line by line. |
+| No hierarchical data | Cannot represent nested or relational data structures. |
+| Data validation missing | Errors and inconsistencies can occur without external validation. |
+:::
+
+### Data Security Management
+
+### Data Security Threats
+
 ## Python Skills
 
 ### PyQt

@@ -23,8 +23,8 @@
   - [x] Data Transmission Introduction
   - [x] Data Privacy
   - [x] Networks
-  - [x] Data Security Management
-  - [x] Data Security - Threats
+  - [ ] Data Security Management
+  - [ ] Data Security - Threats
 - [x] Documentation Introduction
   - [x] Documentation Introduction
   - [ ] Mind Maps
@@ -34,7 +34,7 @@
   - [x] Success Criteria
   - [x] Mock-ups
   - [x] Pseudocode
-  - [ ] Desk Checking
+  - [x] Desk Checking
   - [x] Data Flow Diagrams
   - [x] ERD and RS
   - [x] Data Dictionaries
