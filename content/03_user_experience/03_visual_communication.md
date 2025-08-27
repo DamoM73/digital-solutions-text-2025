@@ -27,7 +27,12 @@ The website we will analyse is the [Official Lego website](https://www.lego.com/
 
 The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve.  
 
-To remember the Visual Communication Principles use the mnemonic: **All Big Cats Have Really Hairy Paws**  
+:::{hint} BACHPRaH Mnemonic
+:class: dropdown
+A mnemonic to remember the Visual Communication Principles is **BACHPRaH**. That’s pronounceable as **“Bach-Prah”**.
+
+It stands for: Balance – Alignment – Contrast – Hierarchy – Proximity – Repetition – Harmony
+:::
 
 ### Alignment
 
@@ -206,7 +211,12 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 
 The **elements** of visual communication are the building block of UI design. By manipulating visual communication elements to implement the principles of visual communication you achieve the desired effect on the UI and, subsequently the UX. In other words, the elements of visual communication are the **how** of what you want top achieve.
 
-To remember the Visual Communication Elements use the mnemonic: **Curious Furry Lions Proudly Sit Sleeping Till Tuesday**
+:::{hint} SoFT CLaSSPT Mnemonic
+:class: dropdown
+A mnemonic to remember the Visual Communication Elements is **SoFT CLaSSPT**. That’s pronounceable as **"Soft-clasped"**.
+
+It stands for: Shape - Form - Tone - Colour - Line - Scale - Space - Proportion - Texture
+:::
 
 ### Colour
 
