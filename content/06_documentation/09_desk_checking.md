@@ -63,11 +63,29 @@ Since it has branching logic, you will need to run a test for each of the branch
 
 Inputs: price = \$200  
 Correct results: price = \$170
-![desk check 1](./assets/09/desk_check_1.png)
+
+| Line # | discount | price | Conditions | Input/Output |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | | | | |
+| 2 |  | `200` |  | `price ? 200` |
+| 3 |  | `200` | `price > 100 ? T `|  |
+| 4 | `200 * 15 / 100 = 30` | `200` |  |  |
+| 5 | `30` | `200 - 30 = 170` |  |  |
+| 6 | `30` | `170` |  |  |
+| 7 | `30` | `170` |  | `price = 170` |
+| 8 | `30` | `170` |  |  |
 
 Inputs: price = \$50  
 Correct results: price = \$50.
-![desk check 2](./assets/09/desk_check_2.png)
+  
+| Line # | discount | price | Conditions | Input/Output |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | | | | |
+| 2 | | `50` | | `price ? 50` |
+| 3 | | `50` | `price > 100 ? F` | |
+| 6 | | `50` | | |
+| 7 | | `50` | | `price = 50` |
+| 8 | | `50` | | |
 
 ## Iteration Example
 
@@ -85,4 +103,22 @@ Consider the following pseudocode:
 9 END
 ```
 
-![desk check 3](./assets/09/desk_check_3.png)
+| Line # | x | xSquared | Conditions | Input/Output |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | | | | |
+| 2 | | | | `X, X Squared` |
+| 3 | `1` | | `1 <= 3 ? T` | |
+| 4 | `1` | `1 * 1 = 1` | | |
+| 5 | `1` | | | `x = 1`, `xSquared = 1` |
+| 6 | `1 + 1 = 2` | | | |
+| 3 | `2` | | `2 <= 3 ? T` | |
+| 4 | `2` | `2 * 2 = 4` | | |
+| 5 | `2` | | | `x = 2`, `xSquared = 4` |
+| 6 | `2 + 1 = 3` | | | |
+| 3 | `3` | | `3 <= 3 ? T` | |
+| 4 | `3` | `3 * 3 = 9` | | |
+| 5 | `3` | | | `x = 3`, `xSquared = 9` |
+| 6 | `3 + 1 = 4` | | | |
+| 4 | | | `3 <= 3 ? F` | |
+| 8 | | | | `DISPLAY "-----------"` |
+| 9 | | | | |
