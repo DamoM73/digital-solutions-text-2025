@@ -421,7 +421,7 @@ OUTPUT "Ciphertext: " & encrypted_text
 
 ```
 
-**One-Time-Pad Encryption**
+**One-Time-Pad Decryption**
 
 ```text
 FUNCTION one_time_pad_decrypt(cipher_text, key)
