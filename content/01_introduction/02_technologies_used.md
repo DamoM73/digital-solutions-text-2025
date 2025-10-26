@@ -212,11 +212,13 @@ In Unit 2 we will working with databases using SQL (Structured Query Language), 
 
 ## Other Tools
 
-(xmind_install)=
+### Mind Mapping Software
 
-### XMind
+There are many free mind mapping tools available online and for download. They all do the same basic job, so use whatever you like. Here are two suggestions:
 
-An important step in analysing and planning in Digital Solutions is using mind maps. There are many mind mapping tools available, both desktop and online, but I recommend that we use **[Xmind](https://xmind.app/)**. The free version has all the features we need. **When it asks you to create an account, choose the skip option**.
+- Windows [Textized MindMap](https://apps.microsoft.com/detail/9nblggh64t9g?hl=en-US&gl=US)
+- macOS [SimpleMind](https://apps.apple.com/au/app/simplemind-mind-mapping/id439654198?mt=12)
+
 
 ### Diagrams dot net
 

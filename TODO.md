@@ -23,11 +23,11 @@
   - [x] Data Transmission Introduction
   - [x] Data Privacy
   - [x] Networks
-  - [ ] Data Security Management
-  - [ ] Data Security - Threats
+  - [x] Data Security Management
+  - [x] Data Security - Threats
 - [x] Documentation Introduction
   - [x] Documentation Introduction
-  - [ ] Mind Maps
+  - [x] Mind Maps
   - [x] User Insights
   - [x] Use Case Diagrams
   - [ ] Existing Solutions
