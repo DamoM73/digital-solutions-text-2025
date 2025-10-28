@@ -53,14 +53,14 @@ The tutorial breaks down Use Case diagrams into four key elements, using a **Ban
 :::
 
    ## Steps to create a Use Case Diagram
-5. What is the system being created?
-6. Who are the actors using the system? (People, Organisations, Other systems, External devices)
-7. Is each actor a primary actor or a secondary actor?
-8. What actions will the primary actors want to do with the system?
-9. How will each actor interact with the use cases?
-10. Are the any new actions automatically connected to current use cases?
-11. Are there any additional, optional actions connected to current use cases?
-12. Do any use cases or actors have sub categories?
+1. What is the system being created?
+2. Who are the actors using the system? (People, Organisations, Other systems, External devices)
+3. Is each actor a primary actor or a secondary actor?
+4. What actions will the primary actors want to do with the system?
+5. How will each actor interact with the use cases?
+6. Are the any new actions automatically connected to current use cases?
+7. Are there any additional, optional actions connected to current use cases?
+8. Do any use cases or actors have sub categories?
 
    ## Use Case Diagram Symbols
 
