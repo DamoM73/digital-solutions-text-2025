@@ -2,7 +2,9 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-
+- understand what a mind map is
+- understand how to create a mind map
+- understand with mind map terminology
 :::
 
 Mind maps will not be part of the submitted documentation. However, they are a valuable tool for understanding the scope of a project and planning your approach.
