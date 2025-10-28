@@ -2,8 +2,9 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-
-
+- understand why analysing existing solutions is important
+- understand the process for analysing existing solutions
+- know how to complete an Existing Solutions Analysis Table
 :::
 
 ## Why Analyse Existing Solutions?
