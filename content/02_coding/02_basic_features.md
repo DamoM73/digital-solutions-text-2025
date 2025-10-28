@@ -290,74 +290,72 @@ In Python, an **iterable** is a container you can move through one item at a tim
 24. What does a `for` loop do with items in a sequence?
 25. What is an iterable in Python?
 26. Name three built-in Python types that are iterables.
-
-   Let me know if you'd like the answers as well.
-   :::
-
-   ---
-
-   ## Data Structures
-
-   > Data structures are used to store data in an organized form. No matter what problem are you solving, in one way or another you have to deal with data &mdash; whether it's an employee's salary, stock prices, a grocery list, or even a simple telephone directory. {cite}`ulhaq_2018_the`
-   > 
-   The easiest way to understand **data structures** is to see them as collections of related data &mdash; like a list of shopping items or a group of contacts with phone numbers. In fact they are frequently referred to as collections.
-
-   In Python, we commonly use these four data structures:
-
-   | Data structure | Features |
-   | --- | --- |
-   | Lists | Ordered collection of items<br>Created using square brackets `[]` with items separated by commas<br>Example: `[1, 2, 3, 4]`<br>Items can be changed, added, or removed (mutable)<br>Each item has an index, starting at 0<br>[Lists refresher](https://www.w3schools.com/python/python_lists.asp) |
-   | Tuples | Ordered collection like lists, but **cannot be changed** (immutable)<br>Created using parentheses `()` with items separated by commas<br>Example: `(1, 2, 3, 4)`<br>Good for fixed data and faster performance<br>Indexing starts at 0<br>[Tuples refresher](https://www.w3schools.com/python/python_tuples.asp) |
-   | Sets | Collection of **unique** items with **no specific order**<br>Created using curly braces `{}` with items separated by commas<br>Example: `{1, 2, 3, 4}`<br>Mutable &mdash; you can add or remove items<br>Useful when you care about presence, not order or duplicates<br>[Sets refresher](https://www.w3schools.com/python/python_sets.asp) |
-   | Dictionaries | Collection of **key-value pairs**<br>Created using curly braces `{}`, with a colon `:` between each key and value<br>Example: `{"Doh": "Doherty", "Fly": "Flynn"}`Keys must be unique<br>Useful when each value has a unique label or ID<br>Mutable &mdash; values can be added, updated, or deleted<br>[Dictionary refresher](https://www.w3schools.com/python/python_dictionaries.asp) |
-
-   ---
-
-   ## Syntax
-
-   **Syntax** is the set of rules a programming language follows to write commands properly. It decides which combinations of words, symbols, and punctuation are valid in that language.
-
-   [Python syntax refresher](https://www.w3schools.com/python/python_syntax.asp)
-
-:::{seealso} Data Structures Activities
-   :class: dropdown
-
-27. What is a data structure used for?
-28. How can data structures be understood in simple terms?
-29. What are the four common data structures in Python?
-30. What type of collection is a list?
-31. How is a list created in Python?
-32. What does it mean that lists are mutable?
-33. What index does Python start counting from in a list?
-34. What is one key difference between a list and a tuple?
-35. Why are tuples good for fixed data?
-36. How is a tuple created in Python?
-37. What is a set in Python?
-38. What makes sets different from lists and tuples?
-39. Can you add or remove items from a set?
-40. Why might you use a set instead of a list?
-41. What is stored in a dictionary in Python?
-42. How is a dictionary written in Python?
-43. What must be true about the keys in a dictionary?
-44. Can you update the values in a dictionary?
-45. What is syntax in programming?
-46. Why is syntax important in Python?
-
-   :::
+:::
 
 ---
 
-   ## Libraries
+## Data Structures
 
-   A **library** is a collection of code &mdash; like functions, modules, or scripts &mdash; that you can use in your own programs. Python includes a standard library with many useful tools. You can also install extra libraries using `pip`, or even create your own.
+> Data structures are used to store data in an organized form. No matter what problem are you solving, in one way or another you have to deal with data &mdash; whether it's an employee's salary, stock prices, a grocery list, or even a simple telephone directory. {cite}`ulhaq_2018_the`
+> 
+The easiest way to understand **data structures** is to see them as collections of related data &mdash; like a list of shopping items or a group of contacts with phone numbers. In fact they are frequently referred to as collections.
 
-   ---
+In Python, we commonly use these four data structures:
 
-   ## Classes
+| Data structure | Features |
+| --- | --- |
+| Lists | Ordered collection of items<br>Created using square brackets `[]` with items separated by commas<br>Example: `[1, 2, 3, 4]`<br>Items can be changed, added, or removed (mutable)<br>Each item has an index, starting at 0<br>[Lists refresher](https://www.w3schools.com/python/python_lists.asp) |
+| Tuples | Ordered collection like lists, but **cannot be changed** (immutable)<br>Created using parentheses `()` with items separated by commas<br>Example: `(1, 2, 3, 4)`<br>Good for fixed data and faster performance<br>Indexing starts at 0<br>[Tuples refresher](https://www.w3schools.com/python/python_tuples.asp) |
+| Sets | Collection of **unique** items with **no specific order**<br>Created using curly braces `{}` with items separated by commas<br>Example: `{1, 2, 3, 4}`<br>Mutable &mdash; you can add or remove items<br>Useful when you care about presence, not order or duplicates<br>[Sets refresher](https://www.w3schools.com/python/python_sets.asp) |
+| Dictionaries | Collection of **key-value pairs**<br>Created using curly braces `{}`, with a colon `:` between each key and value<br>Example: `{"Doh": "Doherty", "Fly": "Flynn"}`Keys must be unique<br>Useful when each value has a unique label or ID<br>Mutable &mdash; values can be added, updated, or deleted<br>[Dictionary refresher](https://www.w3schools.com/python/python_dictionaries.asp) |
 
-   In object-oriented programming, a **class** is a blueprint for creating objects. It defines the attributes (data) and methods (actions) that all objects of that type share.
+:::{seealso} Data Structures Activities
+:class: dropdown
 
-   For example, a `Car` class might include:
+1.  What is a data structure used for?
+2.  How can data structures be understood in simple terms?
+3.  What are the four common data structures in Python?
+4.  What type of collection is a list?
+5.  How is a list created in Python?
+6.  What does it mean that lists are mutable?
+7.  What index does Python start counting from in a list?
+8.  What is one key difference between a list and a tuple?
+9.  Why are tuples good for fixed data?
+10. How is a tuple created in Python?
+11. What is a set in Python?
+12. What makes sets different from lists and tuples?
+13. Can you add or remove items from a set?
+14. Why might you use a set instead of a list?
+15. What is stored in a dictionary in Python?
+16. How is a dictionary written in Python?
+17. What must be true about the keys in a dictionary?
+18. Can you update the values in a dictionary?
+19. What is syntax in programming?
+20. Why is syntax important in Python?
+:::
+
+---
+
+## Syntax
+
+**Syntax** is the set of rules a programming language follows to write commands properly. It decides which combinations of words, symbols, and punctuation are valid in that language.
+
+[Python syntax refresher](https://www.w3schools.com/python/python_syntax.asp)
+
+
+---
+
+## Libraries
+
+A **library** is a collection of code &mdash; like functions, modules, or scripts &mdash; that you can use in your own programs. Python includes a standard library with many useful tools. You can also install extra libraries using `pip`, or even create your own.
+
+---
+
+## Classes
+
+In object-oriented programming, a **class** is a blueprint for creating objects. It defines the attributes (data) and methods (actions) that all objects of that type share.
+
+For example, a `Car` class might include:
 
 - attributes like `colour` and `wheels`
 - methods like `drive()` and `brake()`
