@@ -93,9 +93,13 @@ project:
         - file: content/08_sql/10_insert.md
         - file: content/08_sql/11_update.md
         - file: content/08_sql/12_delete.md
-    - title: Utiliities Skills
+    - title: Tools Skills
       children:
-        - file: content/09_utilities/01_intro.md
+        - file: content/09_tools/01_intro.md
+        - file: content/09_tools/02_db_browser.md
+        - file: content/09_tools/03_figma.md
+        - file: content/09_tools/04_drawio.md
+        - file: content/09_tools/05_word.md
     - title: Assessments
       children:
         - file: content/10_assessments/01_intro.md
