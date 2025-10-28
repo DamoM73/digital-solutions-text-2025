@@ -1,1 +1,1 @@
-## Prototypes in Figma
+# Prototypes in Figma
