@@ -192,7 +192,6 @@ Our **Student Subject Database** example at the end of step 5:
 
 ---
 
-(rs)=
 ## Relational Schema
 
 To convert your final ERD to a **Relational Schema (RS)** you will need to identify the datatype of each field.
@@ -268,4 +267,116 @@ A company keeps its order records in a spreadsheet where each row lists the cust
 | Ian White       | 753 Skyline Ave | Monitor  |       149.99 | 2024-06-09   |
 | Ian White       | 753 Skyline Ave | Webcam   |        89.99 | 2024-06-09   |
 | Jessica Green   | 159 Pine Way    | Mouse    |        19.99 | 2024-06-10   |
+:::
+
+---
+
+
+## ERD from Data Files
+
+For Unit 3 you will need to analyse data files to create a relational schema. We will now look at how to analyse a data file and create a relational schema from it.
+
+We will be using cvs files as our datafile. It is importnat to note that csv file can only represnet flat files, while we will be working with relational databases. Therefore, we will need to decompose the data in the csv file into multiple tables.
+
+Before we do this it will be useful to remember the rules of [Normalization](../04_data/03_structuring_data.md).
+
+A table is in 3NF if:
+1. Each column contains atomic values
+2. Each column contains the same type of data
+3. Each column and row has a unique identifier
+4. The order in which the data is saved does not matter
+5. There are no partial dependencies
+6. There are no transitive dependencies
+
+:::{note} You will need...
+:class: dropdown
+- [F1Drivers_Dataset.csv](./assets/11/F1Drivers_Dataset.csv)
+- [netflix_titles.csv](./assets/11/netflix_titles.csv)
+:::
+
+While we can look at the raw csv file as a datafile, it is easier to analyse if we open it in Excel or similar software. 
+
+### View csv file in Excel
+
+Navigate to the `data` folder in the unit repository and open the file `F1Driver_Dataset.csv` in Excel.
+
+The first thing Excel will want to do is convert the data in the file. Do want to see the data as it is, so select **Don't Convert**, then get rid of the yellow banner warning of dataloss, by click on the x on the right.
+
+Since the table is almost 900 records long, we want a way to easily look over all the data. Fortunately Excel has a feature called **Filters** that will help us with this.
+
+To turn filters on:
+
+1. Go to the **Data** tab in the ribbon
+2. Click on **Filter**
+
+You should now see little arrows next to each column header. Clicking on these will allow you to see all the unique values in that column, and filter the data based on these values.
+
+### Non-atomic values
+
+The first thing we will do is to check that each column only contains **atomic values**.
+
+You will notice that both the **Seasons** and the **Champioship Years** columns contain multiple values in a single cell, therefore non-atomic values.
+
+![non-atomic values](./assets/11/non-atomic_columns.png)<p>&nbsp;</p>
+
+When you find non-atomic values in a column, this means that this column will need to be split into a separate table. Note, that once you have found one non-atomic value in a column, you don't need to check the rest of that column.
+
+So we can see that we will need to create two  tables in addition to the main table, one for Seasons and one for Championship Years.
+
+Open Draw.io and use the Entity Relation symbols to create these three tables.
+
+![f1_driver_1](./assets/11/f1_drivers_1.png)<p>&nbsp;</p>
+&nbsp;
+
+### Relationships and Cardinalities
+
+Now add the relationships and cardinalities between the tables.
+
+- One driver must have at least one season, but can have many seasons
+- Each season must have at least one driver, but can have many drivers
+- One driver can be zero or many champions
+- Each champion has to be one and only one driver
+- Each season has to have one and only one champion
+- Each champion can be in one and only one year
+
+![f1_driver_2](./assets/11/f1_drivers_2.png)<p>&nbsp;</p>
+
+Remove the many-to-many relationship by a bridging entity.
+
+![f1_driver_3](./assets/11/f1_drivers_3.png)<p>&nbsp;</p>
+
+Notice the one-to-one relationship between Seasons and Champions. This means that we can merge these two tables into one. 
+
+![f1_driver_4](./assets/11/f1_drivers_4.png)<p>&nbsp;</p>
+
+
+### Partial Dependencies
+
+Next we need to check for partial dependencies. Particial dependencies can only occur in tables with composite primary keys. We only have one table with a composite primary key, the Raced table. Since there are no columns in this table that are not part of the primary key, there are no partial dependencies.
+
+If there were partial dependencies, we would need to create new tables to remove them.
+
+### Transitive Dependencies
+
+Finally we need to check for transitive dependencies. A transitive dependency occurs when a non-key attribute depends on another non-key attribute.
+
+If we look back at our csv files we will see many columns that can be inferred from other columns. For example, the **Pole Rate** can be inferred from the Pole_Positions column and the Race_Entries column. This means that the Pole Rate column depends on the Pole_Positions and Race_Entries columns. Therefore it is transitive.
+
+There are many other columns that are also transitive, so we will not include them in our schema.
+
+![transitive_dependencies](./assets/11/transitive_dependencies.png)<p>&nbsp;</p>
+
+### Final ERD
+
+We will now include the remaining columns in our schema and end up with the final ERD below.
+
+![final_schema](./assets/11/f1_drivers_5.png)<p>&nbsp;</p>
+
+From here, you need to follow the Relational Schema and Sample Tables as above.
+
+![final_rs](./assets/11/f1_drivers_rs.png)<p>&nbsp;</p>
+
+:::{seealso} ERD from datafiles activities
+:class: dropdown
+Use the [netflix_titles.csv](./assets/11/netflix_titles.csv) file to create an ERD and Relational Schema.
 :::

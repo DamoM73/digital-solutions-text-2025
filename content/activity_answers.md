@@ -2029,7 +2029,6 @@ JSON is used to exchange data between clients and servers in web applications, o
 
 **Question 5**
 
-
 One of:
 | Advantages of JSON | Disadvantages of JSON |
 | --- | --- |
@@ -2088,6 +2087,45 @@ One of:
 ### Data Security Management
 
 ### Data Security Threats
+
+## Documentation
+
+### Mind Maps
+
+### User Insights
+
+### Use Case Diagrams
+
+### Existing Soluitions
+
+### Success Criteria
+
+### Mock-Ups
+
+### Psuedocode
+
+### Desk Checking
+
+### Data Flow Diagrams
+
+### ERDs and RS
+
+:::{seealso} ERD from datafiles activities
+:class: dropdown
+![ERD RS Netflix](./assets/erd_rs_netflix.png)
+:::
+
+### Data Dictionaries
+
+### Data Connection Diagrams
+
+### Testing
+
+### User Feedback
+
+### Evaluation Table
+
+### Impacts Table
 
 ## Python Skills
 
