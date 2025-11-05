@@ -9,10 +9,11 @@
 
 :::{note} You will need...
 :class: dropdown
-- [Digital Solutions Unit 3 repository](https://github.com/DamoM73/DS-2025-Unit-3)
 - [Rainbow CSV Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 - [CSV to Table Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=phplasma.csv-to-table)
 - [SQLite Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
+- [F1Drivers_Dataset.csv](./assets/08/F1Drivers_Dataset.csv)
+- [netflix_titles.csv](./assets/08/netflix_titles.csv)
 :::
 
 In this section we will learn how to parse a CSV file into a SQLite database. We will populate the **f1_driver.db** with the data contained in the **F1Drivers_Dataset.csv** file. We will continue to use the MVC architecture, meaning this code will be placed in the **Datastore** class and be called from the **main.py** file.
@@ -97,7 +98,7 @@ class Datastore:
 
 Now that we have connected to the database, we need to start reading data from the CSV file. To do this we need to import the csv module.
 
-```
+```{code}python
 :linenos:
 :emphasize-lines:2
 import sqlite3
@@ -106,7 +107,7 @@ import csv
 
 We will also modularise all the population code into a separate method. This method needs to be called at the end of the `__init__()` method.
 
-```
+```{code}python
 :linenos:
 :lineno-start: 10
 :emphasize-lines:19
@@ -124,7 +125,7 @@ We will also modularise all the population code into a separate method. This met
 
 Next we will open and read the CSV file, with each row being converted into a dictionary. This will produce an iterable object (something that can be processed using a `for` loop) of dictionaries. We'll then iterate over this object, printing out all the dictionaries.
 
-```
+```{code}python
 :linenos:
 :lineno-start: 21
     def populate_database(self):
@@ -155,7 +156,7 @@ Next we will open and read the CSV file, with each row being converted into a di
 
 In order to test our code, we now need to create a **main.py** file. In this file we need to create an instance of our Datastore object. We use the following code to do this.
 
-```
+```{code}python
 :linenos:
 from f1_datastore import Datastore
 
@@ -168,7 +169,7 @@ Now we can test the initial processing by running **main.py**
 
 Your terminal should stream a list of dictionaries (868 of the to be exact). This is the data that is being read from the CSV file. Lets have a look at one of these dictionaries. I have formatted the last dictionary to make it easier to read.
 
-```
+```{code}python
 {
     'Driver': 'Ricardo Zunino', 
     'Nationality': 'Argentina', 
@@ -217,7 +218,7 @@ Looking at the [Data Structure ERD](#f1-database-structure), or viewing the **f1
 
 Here is the pseudocode for the process we will follow:
 
-```
+```{code}python
 :linenos:
 FOR record IN csv_reader
     name = record[Driver]
@@ -243,7 +244,7 @@ We will do this in two stages:
 
 Return to our **f1_datastore.py** file and replace the `print` statement on **line 30** with the code below:
 
-```
+```{code}python
 :linenos:
 :lineno-start: 28
 :emphasize-lines: 30-52
@@ -307,7 +308,7 @@ Now we need to send the driver data to the database rather than the terminal.
 
 Back in **f1_datastore.py** we need to create a method that writes the data to the driver table. Add the following code under the `__init__()`:
 
-```
+```{code}python
 :linenos:
 :lineno-start: 54
     def add_driver(
@@ -364,7 +365,7 @@ Parameterized SQL statements are used to:
 
 Now we need to call the `add_driver` method from the `populate_database` method. Go up to the `populate_database` method and change the `print` in line 42, to a `add_driver` call.
 
-```
+```{code}python
 :linenos:
 :lineno-start: 41
 :emphasize-lines: 42
@@ -384,7 +385,7 @@ Now we need to call the `add_driver` method from the `populate_database` method.
 
 Finally we need to commit the changes we made to the database. We will do this in the `__init__`. Go to the `__init__` method and add the highlighted code to the bottom.
 
-```
+```{code}python
 :linenos:
 :lineno-start: 10
 :emphasize-lines: 20
@@ -441,7 +442,7 @@ If we look at the data in the **Championship Years** column we see that:
 
 The pseudocode for the processing the seasons data is as follows:
 
-```
+```{code}python
 :linenos:
 :emphasize-lines: 5
 FOR record IN csv_reader
@@ -464,7 +465,7 @@ We will use a method where the cursor provides the row_id for the last row it wr
 
 Go to the very end of our `add_driver` method and add the highlighted line.
 
-```
+```{code}python
 :linenos:
 :lineno-start: 75
 :emphasize-lines: 88
@@ -644,7 +645,7 @@ We will use the data from the **Seasons** column of the CSV. Looking at the data
 
 The pseudocode for processing this data is:
 
-```
+```{code}python
 :linenos:
 :emphasize-lines: 4
 FOR record IN csv_reader
