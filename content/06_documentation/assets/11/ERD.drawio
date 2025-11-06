@@ -807,8 +807,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="f1_dirvers_5" id="cYfFtzjkxbzjZe0cQiSr">
-    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram name="f1_drivers_5" id="cYfFtzjkxbzjZe0cQiSr">
+    <mxGraphModel dx="983" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="Sz667wpo9ITPqq4zf6wP-0" />
         <mxCell id="Sz667wpo9ITPqq4zf6wP-1" parent="Sz667wpo9ITPqq4zf6wP-0" />
@@ -1018,6 +1018,15 @@
               <mxPoint x="40" y="125" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="l_CRd__QVlKSSW7NUGcv-0" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#d5e8d4;strokeColor=#82b366;sketchStyle=comic;fontSize=16;" vertex="1" parent="Sz667wpo9ITPqq4zf6wP-1">
+          <mxGeometry x="260" y="70" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l_CRd__QVlKSSW7NUGcv-1" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#d5e8d4;strokeColor=#82b366;sketchStyle=comic;fontSize=16;" vertex="1" parent="Sz667wpo9ITPqq4zf6wP-1">
+          <mxGeometry x="540" y="70" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l_CRd__QVlKSSW7NUGcv-2" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#d5e8d4;strokeColor=#82b366;sketchStyle=comic;fontSize=16;" vertex="1" parent="Sz667wpo9ITPqq4zf6wP-1">
+          <mxGeometry x="540" y="190" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
