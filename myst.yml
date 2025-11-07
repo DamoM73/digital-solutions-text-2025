@@ -93,7 +93,7 @@ project:
         - file: content/08_sql/10_insert.md
         - file: content/08_sql/11_update.md
         - file: content/08_sql/12_delete.md
-    - title: Tools Skills
+    - title: Utilities Skills
       children:
         - file: content/09_tools/01_intro.md
         - file: content/09_tools/02_db_browser.md

@@ -1,4 +1,4 @@
-# SQLite3 - Creating, Updating, Deleting
+# SQLite3 - Creating
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
