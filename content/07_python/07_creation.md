@@ -98,7 +98,7 @@ class Datastore:
     Datastore for the f1 driver database
     """
 
-    def __init__(self, data_file: str):
+    def __init__(self):
         """
         initialises the datastore
         """
