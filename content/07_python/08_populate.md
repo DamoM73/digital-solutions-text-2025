@@ -1,4 +1,4 @@
-# Populating Databases
+# SQLite3 - Populating
 
 :::{dropdown} In this section you will...
 - Learn how to populate a database with a dataset in a CSV file
@@ -20,7 +20,11 @@ In this section we will learn how to parse a CSV file into a SQLite database. We
 
 ## F1 Database Structure
 
-Before we populate a database, we would have already designed the data structure and created the tables that form our database. The **f1_drive.db** contains our database which uses the structure below.
+Before we can start populating our database, you would have needed to both design the database and then created the database by completing:
+
+- [ERD from Data Files](../06_documentation/11_erd_rs.md#erd-from-data-files)
+- [DB Browser](../09_tools/02_db_browser.md)
+- [SQLite3 - Creating](./07_creation.md)
 
 ![f1_driver.bd ERD](./assets/08/03_erd_f1_drivers.png)
 
