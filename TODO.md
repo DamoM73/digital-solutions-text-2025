@@ -74,6 +74,10 @@
   - [x] DELETE  
 - [ ] Utilities Skills
   - [ ] Utilities Introduction
+  - [x] DB Browser
+  - [x] Figma
+  - [ ] Draw.io
+  - [ ] Word
 - [ ] Assessments
   - [ ] Assessments Introduction
   - [ ] FIA1 - Technical Proposal
