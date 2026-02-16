@@ -48,7 +48,7 @@ In assessing your code and pseudocode, your teaching will look for examples of t
 
    ### Variable Types
 
-   Variable can be of different **types**. The type of a variable indicates the what kind of data is stored at that memory location.
+   Variable can be of different **types**. The type of a variable indicates what kind of data is stored at that memory location.
 
    :::{hint} Dynamic vs Static Variables
    :class: dropdown
