@@ -109,7 +109,7 @@ else:
 outputs:
 
 ``` bash
-Flasy
+Falsy
 ```
 
 ### Scope: Local and Global Variables

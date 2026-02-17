@@ -153,7 +153,7 @@ There are three main types of loops — each has a clear start and end, with the
 ``` pseudocode
 REPEAT
     statements
-UNTIL
+UNTIL condition
 ```
 
 :::{caution} No post- test loops in Python
@@ -163,7 +163,7 @@ Python does not have a Post-test loop, so we will not be using this for units 1-
 **Pre-test loop**
 
 ``` pseudocode
-WHILE
+WHILE condition
     statements
 ENDWHILE
 ```

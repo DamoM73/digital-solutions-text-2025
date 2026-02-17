@@ -1,8 +1,8 @@
 # To Do
 
 - [ ] Home
-- [ ] Introduction
-  - [ ] Digital Solutions
+- [x] Introduction
+  - [x] Digital Solutions
   - [x] Technologies
 - [x] Coding
   - [x] Coding Introduction  
