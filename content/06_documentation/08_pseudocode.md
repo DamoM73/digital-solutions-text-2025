@@ -243,11 +243,12 @@ SWITCH test_variable
         statements
     CASE option
         statements
-    CASE statements
+    CASE option
+        statements
 ENDSWITCH
 ```
 
-:::{seealso} Iteration Pseudocode Activities
+:::{seealso} Selection Pseudocode Activities
 :class: dropdown
 **Activity 1**
 
