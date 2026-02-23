@@ -122,3 +122,95 @@ Consider the following pseudocode:
 | 4 | | | `3 <= 3 ? F` | |
 | 8 | | | | `DISPLAY "-----------"` |
 | 9 | | | | |
+
+:::{seealso} Desk Check Activities
+:class: dropdown
+Use desk checking to identify the logic errors in the following pseudocode algorithms. The correct results are given for each algorithm. You should be able to identify the line(s) of code that cause the incorrect results and explain why the error occurs.
+
+## Activity 1
+```
+BEGIN check_pass
+    INPUT mark
+    IF mark > 50 THEN
+        OUTPUT "Pass"
+    ELSE
+        OUTPUT "Fail"
+    ENDIF
+END
+```
+
+## Activity 2
+```
+BEGIN sum_five_numbers
+    DECLARE count AS INTEGER
+    FOR count = 1 TO 5
+        INPUT num
+        total = total + num
+    NEXT count
+    OUTPUT total
+END
+```
+
+## Activity 3
+```
+BEGIN countdown
+    INPUT n
+    WHILE n > 0
+        OUTPUT n
+        n = n + 1
+    ENDWHILE
+    OUTPUT "Done"
+END
+```
+
+## Activity 4
+```
+BEGIN user_login
+    DECLARE login_attempts AS INTEGER = 3
+
+    WHILE login_attempts < 0
+        INPUT user_name
+        INPUT user_password
+
+        IF is_valid(user_name, user_password) THEN
+            OUTPUT "Login successful"
+            RETURN
+        ENDIF
+
+        login_attempts = login_attempts + 1
+        OUTPUT "Invalid. " + login_attempts + " attempts left."
+    ENDWHILE
+
+    OUTPUT "Try again later"
+END
+```
+
+## Activity 5
+```
+BEGIN grade_score
+    INPUT mark
+
+    IF mark >= 50 THEN
+        OUTPUT "C"
+    ELSE IF mark >= 70 THEN
+        OUTPUT "B"
+    ELSE IF mark >= 85 THEN
+        OUTPUT "A"
+    ELSE
+        OUTPUT "D"
+    ENDIF
+END
+```
+
+## Activity 6
+```
+BEGIN check_pass
+    INPUT mark
+    IF mark > 50 THEN
+        OUTPUT "Pass"
+    ELSE
+        OUTPUT "Fail"
+    ENDIF
+END
+```
+:::
