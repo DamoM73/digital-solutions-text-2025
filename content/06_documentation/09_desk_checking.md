@@ -127,8 +127,9 @@ Consider the following pseudocode:
 :class: dropdown
 Use desk checking to identify the logic errors in the following pseudocode algorithms. The correct results are given for each algorithm. You should be able to identify the line(s) of code that cause the incorrect results and explain why the error occurs.
 
-## Activity 1
-```
+**Activity 1**
+```{code}
+:linenos:
 BEGIN check_pass
     INPUT mark
     IF mark > 50 THEN
@@ -139,8 +140,9 @@ BEGIN check_pass
 END
 ```
 
-## Activity 2
-```
+**Activity 2**
+```{code}
+:linenos:
 BEGIN sum_five_numbers
     DECLARE count AS INTEGER
     FOR count = 1 TO 5
@@ -151,8 +153,9 @@ BEGIN sum_five_numbers
 END
 ```
 
-## Activity 3
-```
+**Activity 3**
+```{code}
+:linenos:
 BEGIN countdown
     INPUT n
     WHILE n > 0
@@ -163,8 +166,9 @@ BEGIN countdown
 END
 ```
 
-## Activity 4
-```
+**Activity 4**
+```{code}
+:linenos:
 BEGIN user_login
     DECLARE login_attempts AS INTEGER = 3
 
@@ -185,8 +189,9 @@ BEGIN user_login
 END
 ```
 
-## Activity 5
-```
+**Activity 5**
+```{code}
+:linenos:
 BEGIN grade_score
     INPUT mark
 
@@ -202,8 +207,9 @@ BEGIN grade_score
 END
 ```
 
-## Activity 6
-```
+**Activity 6**
+```{code}
+:linenos:
 BEGIN check_pass
     INPUT mark
     IF mark > 50 THEN
