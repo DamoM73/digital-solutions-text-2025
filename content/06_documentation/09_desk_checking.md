@@ -123,6 +123,137 @@ Consider the following pseudocode:
 | 8 | | | | `DISPLAY "-----------"` |
 | 9 | | | | |
 
+## Choosing Test Values for Desk Checks (Pseudocode)
+
+Desk checking pseudocode is about proving that the **algorithmic logic** works in all meaningful scenarios. To do this, you need to choose test values that will allow you to check the logic of the algorithm. The following are some guidelines for choosing test values:
+
+Focus on testing:
+
+* Conditions
+* Loop behaviour
+* Variable changes
+* Algorithm branches
+* Input → process → output flow
+
+### 1. Test Each Branch of a Selection
+
+For every `IF` / `ELSE` / `ELSE IF`:
+
+* One value that makes the condition `TRUE`
+* One value that makes the condition `FALSE`
+
+Example
+`IF mark >= 50 THEN`
+
+Test with:
+
+* 75 → `TRUE` branch
+* 40 → `FALSE` branch
+* 50 → boundary case
+
+Purpose
+
+* Ensures both branches execute correctly
+* Detects incorrect comparison operators
+
+### 2. Test Boundary Conditions in Comparisons
+
+If a condition uses:
+
+* `<`
+* `<=`
+* `>`
+* `>=`
+* `=`
+
+Test values:
+
+* Exactly equal to the boundary
+* Just below
+* Just above
+
+Purpose
+
+* Detects off-by-one logic errors
+* Ensures conditions match the intended rule
+
+### 3. Test Loop Entry and Exit Conditions
+
+For `WHILE` or `FOR` loops:
+
+Test values that cause:
+
+* 0 iterations
+* 1 iteration
+* Multiple iterations
+
+Example
+`WHILE counter < 5`
+
+Test with counter starting at:
+
+* 5 → loop never runs
+* 4 → runs once
+* 0 → runs multiple times
+
+Purpose
+
+* Confirms loop control logic
+* Detects infinite loops
+* Confirms correct termination
+
+### 4. Test Variable Initialisation
+
+If variables are initialised before use:
+
+Test values that confirm:
+
+* Initial values are used correctly
+* Variables update correctly each step
+
+Purpose
+
+* Detects failure to initialise
+* Detects incorrect assignment statements
+
+### 5. Test Accumulation or Totals
+
+For algorithms that:
+
+* Add values
+* Count items
+* Track maximum or minimum
+
+Test:
+
+* Single value
+* Multiple values
+* All values equal
+* Values in increasing order
+* Values in decreasing order
+
+Purpose
+
+* Confirms correct updating logic
+* Detects incorrect reset of variables
+
+### 6. Test Special Logical Cases
+
+For algorithms involving:
+
+* `AND`
+* `OR`
+* `NOT`
+
+Test combinations that make the overall condition:
+
+* `TRUE`
+* `FALSE`
+
+Purpose
+
+* Confirms compound logic behaves as intended
+
 :::{seealso} Desk Check Activities
 :class: dropdown
 Use desk checking to identify the logic errors in the following pseudocode algorithms. The correct results are given for each algorithm. You should be able to identify the line(s) of code that cause the incorrect results and explain why the error occurs.
