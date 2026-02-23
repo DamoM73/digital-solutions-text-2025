@@ -341,12 +341,13 @@ END
 **Activity 6**
 ```{code}
 :linenos:
-BEGIN check_pass
-    INPUT mark
-    IF mark > 50 THEN
-        OUTPUT "Pass"
+BEGIN validate_age
+    INPUT age
+
+    IF age < 0 AND age > 120 THEN
+        OUTPUT "Invalid age"
     ELSE
-        OUTPUT "Fail"
+        OUTPUT "Age accepted"
     ENDIF
 END
 ```

@@ -2106,6 +2106,120 @@ One of:
 
 ### Desk Checking
 
+:::{seealso} Desk Check Activities
+:class: dropdown
+1. Simple selection (Pass/Fail)
+
+* Error: boundary error (uses `>` instead of `>=`, so 50 fails)
+
+```text
+BEGIN check_pass
+    INPUT mark
+    IF mark >= 50 THEN
+        OUTPUT "Pass"
+    ELSE
+        OUTPUT "Fail"
+    ENDIF
+END
+```
+
+2. Counted loop + accumulator (sum 5 numbers)
+
+* Error: accumulator not initialised (`total` starts undefined)
+
+```text
+BEGIN sum_five_numbers
+    DECLARE count AS INTEGER
+    DECLARE total AS INTEGER = 0
+
+    FOR count = 1 TO 5
+        INPUT num
+        total = total + num
+    NEXT count
+    ENDFOR
+
+    OUTPUT total
+END
+```
+
+3. Pre-test loop (countdown)
+
+* Error: infinite loop (counter moves the wrong way)
+
+```text
+BEGIN countdown
+    INPUT n
+    WHILE n > 0
+        OUTPUT n
+        n = n - 1
+    ENDWHILE
+    OUTPUT "Done"
+END
+```
+
+4. Login attempts
+
+* Error 1: loop condition impossible (`login_attempts < 0` will be false when starting at 3)
+* Error 2: attempts go up instead of down
+
+```text
+BEGIN user_login
+    DECLARE login_attempts AS INTEGER = 3
+
+    WHILE login_attempts > 0
+        INPUT user_name
+        INPUT user_password
+
+        IF is_valid(user_name, user_password) THEN
+            OUTPUT "Login successful"
+            login_attempts = 0
+        ELSE
+            login_attempts = login_attempts - 1
+            OUTPUT "Invalid. " + login_attempts + " attempts left."
+        ENDIF
+    ENDWHILE
+
+    OUTPUT "Try again later"
+END
+```
+
+5. Nested selection (grading)
+
+* Error: unreachable branches (the first test `mark >= 50` catches 70 and 85 before later checks)
+
+```text
+BEGIN grade_score
+    INPUT mark
+
+    IF mark >= 85 THEN
+        OUTPUT "A"
+    ELSE IF mark >= 70 THEN
+        OUTPUT "B"
+    ELSE IF mark >= 50 THEN
+        OUTPUT "C"
+    ELSE
+        OUTPUT "D"
+    ENDIF
+END
+```
+
+6. Data validation (age range)
+
+* Error: impossible condition (cannot be `< 0` AND `> 120` at the same time)
+
+```text
+BEGIN validate_age
+    INPUT age
+
+    IF age < 0 OR age > 120 THEN
+        OUTPUT "Invalid age"
+    ELSE
+        OUTPUT "Age accepted"
+    ENDIF
+END
+```
+:::
+
 ### Data Flow Diagrams
 
 ### ERDs and RS
