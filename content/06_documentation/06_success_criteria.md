@@ -53,6 +53,11 @@ It helps you to focus on what’s truly necessary; allows you to manage time and
 | **Could** | Good features that you don't have the time, skills or resources to implement. May be implemented in next version | existing solutions |
 | **Won’t** | Feature that you will never implement | existing solutions |
 
+:::{hint} The difference between Must and Should
+:class: dropdown
+The difference between **Must** and **Should** is that **Must** requirements are essential and non-negotiable, while **Should** requirements are important but not critical. In other words, if a **Must** requirement is not met, the solution will fail to meet its core objectives. If a **Should** requirement is not met, the solution may still function but may not provide the best user experience or meet all stakeholder expectations.
+:::
+
 **Layout**
 
 Structure your MuSCoW table with each priority horizontal. Then list the the requirements in the appropriate priority category. See the example below.
