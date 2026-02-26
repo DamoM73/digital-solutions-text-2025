@@ -60,6 +60,76 @@ Follow these steps to run your unit tests:
 | 3 | add("a", 2) | Error | Crash | Fail | used `try except` block |
 | 3 | add("a", 2) | Error | Error | Pass | n/a |
 
+:::{hint} Choosing test cases
+:class: dropdown
+* Use **normal values**
+
+  * Typical, expected inputs that represent standard use.
+  * Confirms the module works under normal conditions.
+  * Example: age = 16, price = 24.95, name = "Damo".
+
+* Use **boundary values**
+
+  * Test the minimum and maximum allowed values.
+  * Then test just below and just above each boundary.
+  * Example (range 0–100):
+
+    * -1 (below minimum)
+    * 0 (minimum)
+    * 1 (just above minimum)
+    * 99 (just below maximum)
+    * 100 (maximum)
+    * 101 (above maximum)
+
+* Use **edge cases**
+
+  * Values that are technically valid but uncommon.
+  * Empty string ""
+  * Zero 0
+  * One item in a list
+  * Very large number
+  * Very long string
+
+* Use **invalid values**
+
+  * Wrong type (string instead of integer)
+  * Incorrect format (31/02/2026 as a date)
+  * Special characters if not allowed
+  * Null / None where input is required
+  * Confirms validation and error handling work correctly.
+
+* Use **control flow values**
+
+  * For selection (if/elif/else):
+
+    * One test for each branch.
+  * For iteration (loops):
+
+    * 0 iterations
+    * 1 iteration
+    * Many iterations
+    * Confirms loop stops correctly.
+
+* Use **data structure values**
+
+  * Empty list []
+  * Single-element list
+  * Multiple elements
+  * Duplicate values
+  * Confirms correct add/remove/update behaviour.
+
+* Use **repeatability tests**
+
+  * Same input multiple times.
+  * Confirms consistent output (reliability).
+
+* Use **state-based tests**
+
+  * Test before change.
+  * Test after change.
+  * Confirms internal data updates correctly.
+:::
+
 :::{seealso} Unit Testing Activities
 :class: dropdown
 **Activity 1**
