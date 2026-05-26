@@ -226,3 +226,9 @@ Include in your design:
 - Test inputs and expected outcomes
 - How to record if the system passed or failed each step
 :::
+
+## Documentation
+
+Due to the word and page limits imposed by the QCAA 2025 Syllabus, you will need to place the documentation of your testing in an appendix. You should refer to this documentation in the main body of your response when you are discussing the testing and its results.
+
+The the main body of your response you should focus on the key outcomes of your testing, and how these outcomes informed your refinements and recommendations. You can refer to specific test result to support your claims.
