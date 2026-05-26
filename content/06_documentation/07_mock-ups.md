@@ -26,7 +26,7 @@ In UI Design it is most important to demonstrate how the user will interact with
   - Look like the final product but aren't interactive
   - Used for client presentation or UI testing
 
-**Key features of mock-ups**:
+## Key features of mock-ups
 - Visual accuracy:
   - Display exact colours, fonts, spacing, icons, images, and branding
   - Represent the final visual style of the UI
@@ -39,13 +39,13 @@ In UI Design it is most important to demonstrate how the user will interact with
 - Created with design tools:
   - Common tools include Figma, Adobe XD, Sketch, or Canva
 
-**Purpose in UI design**:
+## Purpose in UI design
 - Communicate detailed visual design choices
 - Support decision-making about colours, typography, and layout
 - Identify visual issues before coding
 - Bridge the gap between wireframes and prototypes
 
-**For Digital Solutions**:
+## For Digital Solutions
 - an essential way of demonstrating how the success criteria have informed your design decisions
 - demonstrate your understanding of [usability principles](../03_user_experience/02_usability_principles.md) and [visual communication](../03_user_experience/03_visual_communication.md)
 
@@ -70,7 +70,7 @@ A weak annotation says: *"Navigation bar at the top."*
 A strong annotation says: *"Navigation bar fixed at top of screen — users can access all sections from any page, supporting learnability (SC3)."*
 :::
 
-## Annotations in assessments
+### Annotations in assessments
 
 Annotations on mock-ups contribute to marks across all three internal assessments. The evidence they provide is distinct from the visual design itself — the mock-up shows what, the annotation demonstrates understanding of *why*.
 
