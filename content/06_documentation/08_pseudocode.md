@@ -310,7 +310,18 @@ The program should:
 5. Accumulate the total collected and display it at the end.
 :::
 
-## What Pseudocode to Include
+:::{seealso} General Pseudocode Activities
+:class: dropdown
+1. What are two key advantages of writing pseudocode before coding?
+2. Why does the QCAA use pseudocode instead of specific programming languages?
+3. What naming convention should be used for variables and functions in pseudocode?
+4. What pseudocode should you include in your assignments?
+5. What are the six basic building blocks that should be demonstrated in your pseudocode?
+:::
+
+## Pseudocode in Your Assignment
+
+### What to Include
 
 Your assignment have limited space, so you will not be able include all your algorithms as pseudocode. That presents the question, what code should you include?
 
@@ -324,11 +335,69 @@ Also keep in find that you should be demonstrating all six of the algorithm basi
 - iteration
 - modularisation
 
-:::{seealso} General Pseudocode Activities
-:class: dropdown
-1. What are two key advantages of writing pseudocode before coding?
-2. Why does the QCAA use pseudocode instead of specific programming languages?
-3. What naming convention should be used for variables and functions in pseudocode?
-4. What pseudocode should you include in your assignments?
-5. What are the six basic building blocks that should be demonstrated in your pseudocode?
+### Annotating Pseudocode
+
+Pseudocode in your assessments should not stand alone. Annotations — short explanatory notes attached to your pseudocode — provide evidence across multiple criteria, not just Communicating.
+
+### What criteria do annotations evidence?
+
+**IA1**
+
+- **Comprehending** — annotations that explain the interrelationships between proposed data structures and user experiences, and that contextualise your pseudocode to the identified problem rather than leaving it generic, contribute to this criterion.
+- **Synthesising** — annotations that connect algorithms to specific programming requirements, user-experience requirements, and success criteria demonstrate synthesis at the upper performance level.
+- **Communicating** — annotations are identified in the syllabus as a specific language feature for communicating. Well-placed, concise annotations that aid clarity contribute here.
+
+**IA2 and IA3**
+
+- **Determining and Synthesising** — annotations that link pseudocode explicitly to success criteria, and that demonstrate how programmed components address the identified problem, support evidence of synthesis at the upper performance level.
+- **Generating** — annotations that indicate the functionality, useability, and efficiency of coded components provide evidence that the generated solution is purposeful and meets the determined success criteria.
+- **Evaluating** — annotations that connect code behaviour to success criteria, and that explain how components interact to address the problem, support critical evaluation judgments.
+- **Communicating** — concise, well-organised annotations that use technical language accurately contribute here.
+
+### What annotations should say
+
+The focus of annotations differs slightly across each assessment.
+
+**IA1 — Technical Proposal**
+
+In IA1, pseudocode represents proposed algorithms that do not yet exist as working code. Annotations should:
+
+- link algorithms explicitly to success criteria — explain *how* the algorithm addresses a specific criterion
+- explain design decisions, particularly where you have chosen one approach over another
+- clarify how the algorithm connects user experience to data behaviour
+
+**IA2 — Digital Solution**
+
+In IA2, pseudocode and annotated code represent programmed components of your working prototype. Annotations should:
+
+- link code or pseudocode explicitly to the success criteria it addresses
+- demonstrate knowledge and understanding of programming features relevant to the task
+- explain the functionality, useability, and efficiency of coded components to support your evaluation
+
+**IA3 — Digital Solution (Data Exchange)**
+
+IA3 has a strong focus on data exchange and security. Annotations should:
+
+- explain how programmed components address the identified security strategy
+- connect algorithms to success criteria relating to data confidentiality, integrity, or availability
+- support your evaluation of the functionality, useability, and efficiency of the solution
+
+### How to format annotations
+
+Annotations can be added:
+
+- as callout boxes or text boxes in a multimodal response, with arrows pointing to specific lines
+- as inline comments in code (`# comment`) when submitting code pages
+- as margin notes or labels beside a pseudocode block
+
+Keep annotations concise and specific. An annotation that says *"this loop iterates through the records"* adds nothing — the pseudocode already shows that. A useful annotation explains *why*, or links to a criterion:
+
+| Weak annotation | Strong annotation |
+|---|---|
+| This loop reads each record | Reads each student record to validate the score against the pass threshold — addresses SC3: data validation |
+| This function validates input | Prevents empty strings being written to the database, supporting data integrity (SC2) |
+
+:::{tip}
+Before submitting, check that each block of pseudocode or code has at least one annotation that explicitly names the success criterion it addresses. This single habit provides evidence across Synthesising, Generating, Evaluating, and Communicating simultaneously.
 :::
+
