@@ -103,7 +103,10 @@ To write a **success criteria** for a requirement, describe how you will know th
 
 Structure your Criteria table with each requirement having it's own row. Then write the corresponding criteria in the right-hand column. See the example table below:
 
-![criteria table](./assets/06/criteria_table.png)<p>&nbsp;</p>
+| Requirement | Code | Success Criteria |
+| --- | --- | --- |
+| Users can upload images | SC1 | Users can successfully upload a JPG or PNG image |
+| Pages load in under 3 seconds | SC2 | All pages load within 3 seconds on a standard internet connection |
 
 :::{seealso} Requirements and Success Criteria Activities
 :class: dropdown
