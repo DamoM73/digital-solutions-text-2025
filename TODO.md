@@ -42,7 +42,7 @@
   - [x] Testing
   - [ ] User Feedback
   - [ ] Evaluation Table
-  - [ ] Impacts Table
+  - [x] Impacts Table
   - [ ] Appendices
 - [ ] Python Skills
   - [ ] Python Introduction
