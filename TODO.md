@@ -30,7 +30,7 @@
   - [x] Mind Maps
   - [x] User Insights
   - [x] Use Case Diagrams
-  - [ ] Existing Solutions
+  - [x] Existing Solutions
   - [x] Success Criteria
   - [x] Mock-ups
   - [x] Pseudocode
@@ -40,8 +40,8 @@
   - [x] Data Dictionaries
   - [x] Data Connection Diagrams
   - [x] Testing
-  - [ ] User Feedback
-  - [ ] Evaluation Table
+  - [x] User Feedback
+  - [x] Evaluation Table
   - [x] Impacts Table
   - [ ] Appendices
 - [ ] Python Skills
