@@ -4,7 +4,7 @@ Documentation is the evidence of your problem-solving process. In Digital Soluti
 
 Each assessment is marked against a set of criteria that reflect the stages of that process: comprehending the problem, analysing it, synthesising and generating a solution, evaluating the outcome, and communicating clearly to a technical audience. Your documentation must make your thinking visible at each of these stages — markers can only award marks for what they can see in your response.
 
-Good documentation also helps you. Planning your user interface, data structures, and programmed components on paper before you build forces you to think through problems early, before they become expensive to fix.
+Good documentation also helps you. Planning your user interface, data structures, and programmed components on paper before you build forces you to think through problems early, before they become difficult to fix.
 
 :::{warning} What markers are looking for
 :class: dropdown
