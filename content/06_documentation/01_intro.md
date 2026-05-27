@@ -1,21 +1,27 @@
 # Documentation Introduction
 
-Documentation is a vital part of both Digital Solutions and the software development in general. For software development, documentation helps you develop a clear roadmap for your application. It clearly maps from the users' needs and wants, through possible designs, to the evaluation of your product. Documentation helps you anticipate many problems before they arise.
+Documentation is the evidence of your problem-solving process. In Digital Solutions, your response to each internal assessment is a document — a record of how you moved from a real-world problem through design decisions to a working solution. The quality of that documentation directly determines your marks.
 
-The documentation is vital in demonstrating many of skills that are assessed in Digital Solutions. Throughout an assessment, you will analyse the scenario to identify the users' needs and wants, synthesize these needs to develop success criteria, user interfaces, data stores, and controlling code, and evaluate the solution to refine the it and provide recommendations for future improvements. Importantly, the documentation provides evidence of all this problem-solving. This effects your results.
+Across IA1, IA2 and IA3, your documentation must demonstrate that you can retrieve and comprehend information, analyse a problem, synthesise and evaluate a solution, and communicate clearly to a technical audience. These are not just tasks you complete — they are the four criteria your teacher uses to mark your work.
 
-:::{warning} Teacher's marking considerations
+Good documentation also makes your thinking visible. A solution that works but is poorly documented provides little evidence of the decision-making behind it. Markers can only award marks for what they can see.
+
+:::{warning} What markers are looking for
 :class: dropdown
-QCAA has frequently provided teachers with feedback stating that documents should be easy to read, clear, relevant and easy to understand. This needs to be taken into account in the **Communcating** criteria, specifically **visual, spoken and/or written features to communicate about a solution**.
+QCAA has consistently advised that documentation should be easy to read, clear, relevant and easy to understand. This is assessed under the **Communicating** criterion, specifically your use of **visual, written and spoken features to communicate about a solution**.
 
-Follow these rules to ensure your documentation is eacy to understand:
+Follow these rules to give yourself the best chance of meeting that standard.
 
-- Document:
-  - Minimum font size is 11pt.
-  - Be aware of page breaks, eg. don't have a heading by itself on one page, and the rest of that section on a following page.
-  - Be aware of blank space, especially in tables&mdash;you only have 10 A4 pages, so reduce the amount of wasted space.
-- Digrams:
-  - Do not screen capture your diagrams, export then as an image (png preferable).
-  - Ensure you scale diagrams to an adequate size.
-  - Diagram text should appear no smaller than the 11pt font in the rest of the document.
+**Document layout**
+- Use a minimum font size of 11pt throughout.
+- Avoid orphaned headings — if a heading falls at the bottom of a page with the content on the next, adjust your layout.
+- Minimise blank space, particularly in tables. You have a fixed page or word limit, so every space counts.
+
+**Diagrams**
+- Export diagrams as images (PNG is preferred) — do not take screenshots of them.
+- Scale diagrams so they are clearly readable at the size they appear in your document.
+- Text within diagrams should be no smaller than the 11pt minimum used in the rest of your document.
+
+**Response limits**
+Each assessment has specific word or page limits set in your assessment instrument. Check your instrument carefully — exceeding the limit can affect how your teacher applies the marking strategy to your response.
 :::
