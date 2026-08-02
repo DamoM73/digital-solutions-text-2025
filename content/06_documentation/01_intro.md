@@ -6,6 +6,27 @@ Each assessment is marked against a set of criteria that reflect the stages of t
 
 Good documentation also helps you. Planning your user interface, data structures, and programmed components on paper before you build forces you to think through problems early, before they become difficult to fix.
 
+In this section we will cover:
+- mind maps
+- empathy maps
+- personas
+- usecase diagrams
+- exiting solution analysis
+- requirements table
+- success criteiria table
+- mock-ups
+- pseudocode
+- desk-checking
+- data flow diagrams
+- entity relationship diagrams and relational schemas
+- data dictionaries
+- testing
+- user feedback
+- evaluation tables
+- impact tables
+- appendices
+
+
 :::{warning} What markers are looking for
 :class: dropdown
 QCAA has consistently advised that documentation should be easy to read, clear, relevant and easy to understand. This is assessed under the **Communicating** criterion, specifically your decision-making about and use of **visual, written and spoken features to communicate about a solution**.
