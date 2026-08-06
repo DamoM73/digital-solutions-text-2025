@@ -48,7 +48,7 @@ So you can see that Data privacy is fundamental because it safeguards individual
 
 In this section we will explore what we need to take into consideration when handling data in Australia.
 
-:::{seealso} GeneralPrivacy Activities
+:::{seealso} General Privacy Activities
 :class: dropdown
 1. How does the collection and sale of personal data by corporations and data brokers raise ethical concerns about transparency and consent?
 2. What risks can arise from poor data storage and security, and how might these impact individuals?
