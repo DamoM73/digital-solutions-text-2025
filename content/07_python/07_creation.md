@@ -155,3 +155,8 @@ class Datastore:
             """
         )
 ```
+
+:::{seealso} Activities
+:class: dropdown
+Go back over your creating table Activites from the SQL sections and write up the SQL statements using Python and `sqlite3`
+:::

@@ -186,5 +186,10 @@ We will be using the dictionary `sqlite3` method of parameterising our queries.T
 
 :::{important} Explanation of Code
 - **line 33** &rarr; note the addition of the `customer_id` arguement (or parameter)
-- **line **
+- **line 34** &rarr; the `WHERE` clause uses a named placeholder `:customer_id` which is replaced by the value from the dictionary
+:::
+
+:::{seealso} Activities
+:class: dropdown
+Lok back over your Python code from the previous activites. Choose four queries that you can make gerneric by adding parameters. Write the new methods and test them.
 :::
