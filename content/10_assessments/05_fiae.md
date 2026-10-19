@@ -6,7 +6,7 @@
   - Perusal: 10 minutes
 - Format:
   - Section 1: 10 multiple choice questions
-  - Section 2: 6 short response questions
+  - Section 2: 5 short response questions
   - Section 3: 1 extended response question with 4 parts
 :::
 
@@ -31,3 +31,15 @@
 - [SQL INSERT](../08_sql/10_insert.md)
 - [SQL UPDATE](../08_sql/11_update.md)
 - [SQL DELETE](../08_sql/12_delete.md)
+
+## Practice Exams
+
+### Practice Exam 1
+
+- [Practice Exam 1](./assets/fia4/FIA4_Practice_Exam_1.docx)
+- [Practice Exam 1 Marking Schema](./assets/fia4/FIA4_Practice_Exam_1_Marking_Schema.docx)
+
+### Practice Exam 2
+
+- [Practice Exam 2](./assets/fia4/FIA4_Practice_Exam_2.docx)
+- [Practice Exam 2 Marking Schema](./assets/fia4/FIA4_Practice_Exam_2_Marking_Schema.docx)
