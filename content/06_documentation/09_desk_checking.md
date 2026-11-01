@@ -259,7 +259,7 @@ Purpose
 Use desk checking to identify the logic errors in the following pseudocode algorithms. The correct results are given for each algorithm. You should be able to identify the line(s) of code that cause the incorrect results and explain why the error occurs.
 
 **Activity 1**
-```{code}
+```{code} text
 :linenos:
 BEGIN check_pass
     INPUT mark
@@ -272,7 +272,7 @@ END
 ```
 
 **Activity 2**
-```{code}
+```{code} text
 :linenos:
 BEGIN sum_five_numbers
     DECLARE count AS INTEGER
@@ -285,7 +285,7 @@ END
 ```
 
 **Activity 3**
-```{code}
+```{code} text
 :linenos:
 BEGIN countdown
     INPUT n
@@ -298,7 +298,7 @@ END
 ```
 
 **Activity 4**
-```{code}
+```{code} text
 :linenos:
 BEGIN user_login
     DECLARE login_attempts AS INTEGER = 3
@@ -321,7 +321,7 @@ END
 ```
 
 **Activity 5**
-```{code}
+```{code} text
 :linenos:
 BEGIN grade_score
     INPUT mark
@@ -339,7 +339,7 @@ END
 ```
 
 **Activity 6**
-```{code}
+```{code} text
 :linenos:
 BEGIN validate_age
     INPUT age

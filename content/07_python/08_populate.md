@@ -18,6 +18,7 @@
 
 In this section we will learn how to parse a CSV file into a SQLite database. We will populate the **f1_driver.db** with the data contained in the **F1Drivers_Dataset.csv** file. We will continue to use the MVC architecture, meaning this code will be placed in the **Datastore** class and be called from the **main.py** file.
 
+(f1-database-structure)=
 ## F1 Database Structure
 
 Before we can start populating our database, you would have needed to both design the database and then created the database by completing:

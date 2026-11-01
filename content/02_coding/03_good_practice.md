@@ -368,6 +368,7 @@ Examples include:
 
    Simple code is easier to test, fix, and update, making it more efficient and less likely to contain errors.
 
+   (naming-conventions)=
    ### Naming Conventions in Python
 
    ![naming conventions](./assets/03/x.png)<p>&nbsp;</p>

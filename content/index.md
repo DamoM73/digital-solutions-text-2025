@@ -17,7 +17,7 @@ Our assessments follow the same process. In each one we show our thinking at eve
 
 ## How to use this text
 
-The text is organised into chapters. We can work through them in order, or jump to the chapter we need for the task we're working on. Use the menu on the left to move between pages.
+The text is organised into chapters. We can work through them in order, or jump to the chapter we need for the task we're working on. We use the menu on the left to move between pages.
 
 - **Introduction** → what digital solutions are, and the software we need to install
 - **Coding** → computational thinking, programming features, good coding practice and programming paradigms
