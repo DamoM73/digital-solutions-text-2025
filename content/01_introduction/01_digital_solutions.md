@@ -37,10 +37,10 @@ This process is refered to as the EDGE problem-solving framework.
 
 Each unit of the course has its own GitHub repository (repo). The repo contains the files we need for that unit.
 
-- [Unit 1 repo](https://github.com/DamoM73/digital-solutions-2025-unit-1)
-- [Unit 2 repo](https://github.com/DamoM73/digital-solutions-2025-unit-2)
-- [Unit 3 repo](https://github.com/DamoM73/digital-solutions-2025-unit-3)
-- [Unit 4 repo](https://github.com/DamoM73/digital-solutions-2025-unit-4)
+- [Unit 1: Creating with code](https://github.com/DamoM73/digital-solutions-2025-unit-1)
+- [Unit 2: Application and data solutions](https://github.com/DamoM73/digital-solutions-2025-unit-2)
+- [Unit 3: Digital innovation](https://github.com/DamoM73/digital-solutions-2025-unit-3)
+- [Unit 4: Digital impacts](https://github.com/DamoM73/digital-solutions-2025-unit-4)
 
 :::{danger} Fork the repo before we start
 :class: dropdown
