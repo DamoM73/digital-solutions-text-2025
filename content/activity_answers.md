@@ -2247,6 +2247,46 @@ END
 
 ### Working with CSV
 
+:::{seealso} CSV Solutions
+:class: dropdown
+
+**Activity 1**
+
+```{literalinclude} 07_python/assets/03/Activity_1.py
+:language: python
+```
+
+**Activity 2**
+
+```{literalinclude} 07_python/assets/03/Activity_2.py
+:language: python
+```
+
+**Activity 3**
+
+```{literalinclude} 07_python/assets/03/Activity_3.py
+:language: python
+```
+
+**Activity 4**
+
+```{literalinclude} 07_python/assets/03/Activity_4.py
+:language: python
+```
+
+**Activity 5**
+
+```{literalinclude} 07_python/assets/03/Activity_5.py
+:language: python
+```
+
+**Activity 6**
+
+```{literalinclude} 07_python/assets/03/Activity_6.py
+:language: python
+```
+:::
+
 ### Type Hints
 
 ### Querying Databases
