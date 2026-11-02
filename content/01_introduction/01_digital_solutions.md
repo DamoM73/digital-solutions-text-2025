@@ -33,3 +33,20 @@ This process is refered to as the EDGE problem-solving framework.
 
 ![The EDGE Problem-Solving Framework](./assets/01/EDGE.png)
 
+## Unit Repositories
+
+Each unit of the course has its own GitHub repository (repo). The repo contains the files we need for that unit.
+
+- [Unit 1 repo](https://github.com/DamoM73/digital-solutions-2025-unit-1)
+- [Unit 2 repo](https://github.com/DamoM73/digital-solutions-2025-unit-2)
+- [Unit 3 repo](https://github.com/DamoM73/digital-solutions-2025-unit-3)
+- [Unit 4 repo](https://github.com/DamoM73/digital-solutions-2025-unit-4)
+
+:::{danger} Fork the repo before we start
+:class: dropdown
+These repos belong to our teacher, so we can't save our changes to them. Before we start a unit, we need to make a **fork** of that unit's repo. A fork is our own copy of the repo, stored in our GitHub account. We can then clone the fork to our computer with GitHub Desktop and commit and push our work to it.
+
+To make a fork, open the unit's repo on GitHub, click the **Fork** button in the top-right corner, then click **Create fork**.
+
+If we don't have a GitHub account or GitHub Desktop yet, see [Technologies Used](./02_technologies_used.md#github).
+:::

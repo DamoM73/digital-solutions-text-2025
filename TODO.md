@@ -49,9 +49,9 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
   - [x] Impacts Table
   - [x] Appendices
 - [ ] Python Skills
-  - [ ] Python Introduction
+  - [x] Python Introduction
   - [ ] PyQt
-  - [ ] Working with CSV
+  - [x] Working with CSV
   - [ ] Type Hints
   - [x] SQLite3
   - [x] SQLite3 - Reading
@@ -98,12 +98,12 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 
 ## Outstanding content
 
-- [ ] Write the Python introduction and the PyQt, CSV, Type Hints, Ciphers, Hashing and Checksums pages in `content/07_python/`. These currently contain only headings, with an image on the introduction page.
+- [ ] Write the PyQt, Type Hints, Ciphers, Hashing and Checksums pages in `content/07_python/`. These currently contain only headings.
 - [ ] Add Python SQLite UPDATE and DELETE instruction, worked examples and activities. `content/07_python/07_creation.md` currently covers CREATE only; add any new pages to `myst.yml`.
 - [ ] Write Utilities Introduction, Draw.io and Word Power-use in `content/09_tools/`; these are heading-only pages.
 - [ ] Write Assessments Introduction, FIA1, FIA2, FIA3, IA1 and IA2 in `content/10_assessments/`; these are heading-only pages.
 - [ ] Review the scope of `content/10_assessments/08_ia3.md`: its guidance refers to a specific healthcare dashboard stimulus, including practice manager, clinical staff and administration staff. Identify that task clearly or adapt the guidance for general use.
-- [ ] Complete `content/activity_answers.md` for the existing activities whose answer sections are empty: Data Security Management, Data Security Threats, relevant Documentation topics and all currently listed Python topics. Match answers to actual activities; remove unused headings or identify open-ended tasks rather than imply an answer is supplied.
+- [ ] Complete `content/activity_answers.md` for the existing activities whose answer sections are empty: Data Security Management, Data Security Threats, relevant Documentation topics and the listed Python topics (Working with CSV is done). Match answers to actual activities; remove unused headings or identify open-ended tasks rather than imply an answer is supplied.
 - [ ] Add solutions for activities introduced when the placeholder chapters are written.
 
 ## Corrections and consistency
@@ -122,11 +122,22 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 
 ## References and publication checks
 
-- [ ] Verify bibliography integration in a fresh build: `references.bib` exists, but the bibliography configuration in `myst.yml` is commented out. Check that both inline citations and the bibliography resolve before marking Bibliography complete.
+- [ ] Fix the Bibliography page. In the 2 November 2026 build, inline `{cite}` citations resolve and show their references on each page, but `content/bibliography.md` renders empty: the `{bibliography}` directive lists no entries. The bibliography configuration in `myst.yml` is still commented out.
 - [ ] Convert bare citation keys in `content/04_data/01_intro.md`, including `nldigibeter_2019_problem` and `dataliteracy_2020_11`, to the project's working citation syntax.
 - [ ] Check assessment rules and response-limit claims against the applicable syllabus and school assessment instruments, especially `content/06_documentation/18_appendices.md` and the IA3 guidance. Record the source/version used.
-- [ ] Run a fresh book build and inspect the rendered navigation, callouts, code blocks, citations, images and downloadable resources. The existing `_build/logs/myst.build.json` is not evidence of a successful HTML publication build.
+- [ ] Inspect the rendered navigation, callouts, code blocks, citations, images and downloadable resources across all pages. A fresh HTML build with Jupyter Book 2.1.7 (mystmd 1.11.0) on 2 November 2026 built all 80 pages with no errors or warnings; only the Home, Python Introduction and Working with CSV pages have been inspected in a browser.
 - [ ] Check external links, embedded videos and practice-question downloads for availability and usefulness. This review checked local file targets; it did not test remote resources or inspect the contents of linked PDF/DOCX files.
+
+## Completed 2 November 2026
+
+- Wrote the Home page welcome content (`content/index.md`).
+- Wrote the Python Introduction (`content/07_python/01_intro.md`).
+- Wrote Working with CSV (`content/07_python/03_csv.md`) using `data/student_data.csv`, with activity solutions in `content/07_python/assets/03/` included in `content/activity_answers.md`.
+- Updated `requirements.txt` to `jupyter-book>=2.1.7,<3`.
+- Escaped `$` in the Clearview AI entry in `references.bib` so the file parses.
+- Added the missing `ulhaq_2018_the` and `interactiondesignfoundation_2014_what` entries to `references.bib`. Their years come from the citation keys and need confirming.
+- Set the language to `text` for the six pseudocode blocks in `content/06_documentation/09_desk_checking.md`.
+- Added explicit `(naming-conventions)=` and `(f1-database-structure)=` labels in `content/02_coding/03_good_practice.md` and `content/07_python/08_populate.md`.
 
 ## Review coverage
 
