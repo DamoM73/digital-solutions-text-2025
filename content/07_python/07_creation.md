@@ -20,7 +20,7 @@ First we need to look at our RS from [ERD from Data Files](../06_documentation/1
 
 ### Table Creation Order
 
-When creating a database, we need to be aware of foreign keys. Since foreign keys are places constraints on fields, we cannot create a table if it contains foreign keys which link to an non-existing table. Looking at the ERD above and we can observe our creation order should be:
+When creating a database, we need to be aware of foreign keys. Since foreign keys place constraints on fields, we cannot create a table if it contains foreign keys which link to a non-existent table. Looking at the ERD above, we can observe our creation order should be:
 
 1. **Driver table** - there are no foreign keys.
 2. **Season table** - the only foreign key is Champion, which is linked to the created Driver_ID field.
@@ -158,5 +158,5 @@ class Datastore:
 
 :::{seealso} Activities
 :class: dropdown
-Go back over your creating table Activites from the SQL sections and write up the SQL statements using Python and `sqlite3`
+Go back over your table creation activities from the SQL sections and write up the SQL statements using Python and `sqlite3`
 :::

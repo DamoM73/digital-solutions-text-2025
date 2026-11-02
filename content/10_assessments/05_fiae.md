@@ -2,7 +2,7 @@
 
 :::{tip} Exam Details
 - Details:
-  - Durations: 120 minutes
+  - Duration: 120 minutes
   - Perusal: 10 minutes
 - Format:
   - Section 1: 10 multiple choice questions
@@ -13,7 +13,7 @@
 ## Topics Covered
 
 - [Data Introduction](../04_data/01_intro.md)
-- [Structing Data](../04_data/03_structuring_data.md)
+- [Structuring Data](../04_data/03_structuring_data.md)
 - [Managing and Manipulating Data](../04_data/04_manipulating_data.md)
 - [Usability](../03_user_experience/02_usability_principles.md)
 - [Data Flow Diagrams](../06_documentation/10_dfd.md)

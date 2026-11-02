@@ -4,11 +4,11 @@
 By the end of this section you will:
 - understand the computational thinking concept of decomposition
 - know how to decompose a digital problem
-- understand the computational thinking of concept pattern recognition
-- know how to recognise patterns a digital problem
-- understand the computational thinking of concept abstraction
+- understand the computational thinking concept of pattern recognition
+- know how to recognise patterns in a digital problem
+- understand the computational thinking concept of abstraction
 - know how to apply abstraction to a digital problem
-- understand the computational thinking of concept algorithmic thinking
+- understand the computational thinking concept of algorithmic thinking
 - know how to apply algorithmic thinking to a digital problem
 - understand systems thinking
 - know how to apply systems thinking to a digital problem
@@ -28,11 +28,11 @@ In a digital system:
 - data is manipulated (process)
 - data is sent out (output)
 
-People control the a digital system through the use of **algorithms**.
+People control a digital system through the use of **algorithms**.
 
 ![algorithms](./assets/01/here_to_help.png)<p>&nbsp;</p>
 
-For example, the input process and output (IPO) for logging on would be:
+For example, the input, process and output (IPO) for logging on would be:
 
 | Input | Process | Output |
 |:---|:---|:---|
@@ -206,7 +206,7 @@ In Digital Solutions, algorithmic thinking is used to design instructions for pr
 
 ![algorithm](./assets/01/algorithm.png)<p>&nbsp;</p>
 
-Then creating algorithms, ask:
+When creating algorithms, ask:
 
 - What’s the first thing I need to do?
 - What steps do I need to follow?

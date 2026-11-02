@@ -31,7 +31,7 @@ print(response.json())
 :class: dropdown
 - `requests.get(URL)`: Sends a GET request to the URL.
 - `status_code`: Returns the HTTP status code (e.g., 200 means OK, 404 means Not Found).
-- `json()`: Converts the response from JSON string to Python dictionary.
+- `json()`: Converts the response from a JSON string to a Python object.
 :::
 
 :::{seealso} GET Requests Activities
@@ -155,7 +155,7 @@ print(response.json())
 - `response.json()`: The server responds with the updated record.
 :::
 
-:::{seealso} PATCH Requst Activities
+:::{seealso} PATCH Request Activities
 :class: dropdown
 **Activity 1: Update a Post Title**
 
@@ -258,7 +258,7 @@ print(response.json())
 
 :::{seealso} Header and Parameters Activities
 :class: dropdown
-**Use a Fake Authorization Header**
+**Use a Fake Authorisation Header**
 
 Write a Python script that:
 - Sends a GET request to `https://httpbin.org/headers`
@@ -346,7 +346,7 @@ Write a Python script that:
 
 :::{seealso} Extension Activities
 :class: dropdown
-Use your knowledge from this section and the [Working with JSON and XML](./08_json.md) to make an API requests, then process and print the returned JSON file.
+Use your knowledge from this section and [Working with JSON and XML](./08_json.md) to make an API request, then process and print the returned JSON file.
 
-You can find a heap of APIs at [Free APIs](https://free-apis.github.io/#/). It is easiest to use API with **No authorization** 
+You can find a heap of APIs at [Free APIs](https://free-apis.github.io/#/). It is easiest to use APIs with **No authorisation**
 :::

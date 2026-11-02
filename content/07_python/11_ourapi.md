@@ -8,13 +8,13 @@ By the end of this section you will:
  - customise OurAPI by changing the database and making your own API functions
 :::
 
-OurAPI was originally created as an educational tool. It enables quick and easy development of a RESTful JSON API, with real-time request feedback displayed through its graphical interface. Built-in GET and POST clients allow for interface testing, although any HTTP client—including a web browser—can interact with the API. It was developed by Steven Tucker and his original 
+OurAPI was originally created as an educational tool. It enables quick and easy development of a RESTful JSON API, with real-time request feedback displayed through its graphical interface. Built-in GET and POST clients allow for interface testing, although any HTTP client—including a web browser—can interact with the API. It was developed by Steven Tucker.
 
-We will use OurAPI's built in database to practice using API GET and POST requests. We will then explore using our own databases and creating our own API functions.
+We will use OurAPI's built-in database to practise using API GET and POST requests. We will then explore using our own databases and creating our own API functions.
 
 ## Getting Started
 
-To get started you can download [OurAPI](https://sourceforge.net/projects/ourapi/) from SourceForge. OurAPI doesn't have an installer, rather extracting the zip file will provide access to the program, so make sure you remember it. Launch OurAPI by opening it's folder and starting the **main** file.
+To get started you can download [OurAPI](https://sourceforge.net/projects/ourapi/) from SourceForge. OurAPI doesn't have an installer. Extracting the zip file will provide access to the program, so make sure you remember where you extract it. Launch OurAPI by opening its folder and starting the **main** file.
 
 :::{error} OurAPI is not working
 :class: dropdown
@@ -25,13 +25,13 @@ Now you should have the following window displayed on your screen.
 
 ![OurAPI GUI](./assets/11/01_ourapi.png)<p>&nbsp;</p>
 
-What you are seeing is the GUI of the application, in the background your computer is running a webserver. This webserver is hosting the API that we will be accessing. Let try it out with a simple GET request.
+What you are seeing is the GUI of the application. In the background your computer is running a webserver. This webserver is hosting the API that we will be accessing. Let’s try it out with a simple GET request.
 
 ## Function Calls
 
 ### First call
 
-The APi has a range of functions that provide access to the database. To see these functions click on the **API Summary** button. You should have the following dialogue pop up:
+The API has a range of functions that provide access to the database. To see these functions click on the **API Summary** button. You should have the following dialogue pop up:
 
 ![API functions](./assets/11/02_functions.png)<p>&nbsp;</p>
 
@@ -39,7 +39,7 @@ You can see there are currently 10 functions the API offers. Click on the **>** 
 
 ![list country function details](./assets/11/03_list_countries.png)<p>&nbsp;</p>
 
-Lets look at those details:
+Let’s look at those details:
 - Args &rarr; there is no need to pass arguments
 - SQL &rarr; this is the SQL query that will be run on the database
 - Route &rarr; this is the address that executes the query
@@ -55,13 +55,13 @@ Copy the route, paste it into address bar of a browser, then press return. Two t
 
 **Test Client**
 
-Lets run that request a different way:
+Let’s run that request a different way:
 
 1. Click **Reset Session**
 2. Click on **Test Client (GET)** then type **list_countries**
 3. Click **Run**
 
-The OurAPI GUI should display the same information as before, but lets look at the change in the **GET Client** dialogue.
+The OurAPI GUI should display the same information as before, but let’s look at the change in the **GET Client** dialogue.
 
 ![GET client results](./assets/11/05_get_client_results.png)<p>&nbsp;</p>
 
@@ -72,7 +72,7 @@ The OurAPI GUI should display the same information as before, but lets look at t
 
 ### Call with Argument
 
-RESTful operations also allow for the API to be provided with arguments. Lets try one:
+RESTful operations also allow for the API to be provided with arguments. Let’s try one:
 
 In the **GET Client**:
 
@@ -102,7 +102,7 @@ It’s better to use **POST** rather than **GET** when you are **sending data to
 
 :::{seealso} Requests Activities
 :class: dropdown
-1. Perform both GET requests and POST requests for all of the function in the **API Functions** list (via the **API Summary** button).
+1. Perform both GET requests and POST requests for all of the functions in the **API Functions** list (via the **API Summary** button).
 2. Write Python scripts that also perform all the requests.
 :::
 
@@ -110,11 +110,11 @@ It’s better to use **POST** rather than **GET** when you are **sending data to
 
 You can customise OurAPI to use different databases and create your own functions. What's even better is that it is super easy to do this.
 
-To udnerstand how to do this, we're going to look a bit closer at how OurAPI works.
+To understand how to do this, we're going to look a bit closer at how OurAPI works.
 
 ### Exploring OurAPI
 
-First, open the `api_db.sqlite` file using DB Browser. You will find that it just an ordinary SQLite database. You can see that there are many more tables in the database than we can access using the API functions. That is one of the security features of the REST framework. Users can only access the data you make available to them.
+First, open the `api_db.sqlite` file using DB Browser. You will find that it is just an ordinary SQLite database. You can see that there are many more tables in the database than we can access using the API functions. That is one of the security features of the REST framework. Users can only access the data you make available to them.
 
 Next open the `definitions.ini` with a text editor, or in VS Code. You will find the following:
 
@@ -190,7 +190,7 @@ sql = DELETE FROM Vet
 
 Looking at this you should recognise three things:
 
-1. the text in the square brackets are the names of the API functions
+1. the text in the square brackets gives the names of the API functions
 2. the **args** line lists the arguments that the function needs
 3. the **sql** is a Python parameterised SQL statement.
 
@@ -219,26 +219,26 @@ We have now identified the two files that provide OurAPI with the relevant infor
 - **definitions.ini** provides the structure for the API functions
 - **api_db.sqlite** provides the data for the functions
 
-So to customise OurAPI replace these two files with your custom file:
+So to customise OurAPI replace these two files with your custom files:
 
 - your database needs to be called **api_db.sqlite**
 - your file containing your function details needs to be called **definitions.ini**
 
 :::{caution} Be Careful
-Make sure that you don't loose the original **api_db.sqlite** and **definitions.ini**. Make a copy of them and call them something else.
+Make sure that you don't lose the original **api_db.sqlite** and **definitions.ini**. Make a copy of them and call them something else.
 :::
 
 Remember the API function structure when making your own **definitions.ini**:
 
 ```{code}yaml
 [<function_name>]
-args = <argument names seperated by commas>
+args = <argument names separated by commas>
 sql = <parameterised SQL statement>
 ```
 
 :::{seealso} Custom OurAPI Activities
 :class: dropdown
-To complete the following activities We will use the Chinook Database from [exercise databases we used to learn SQL](../08_sql/01_intro.md#exercise-databases). You will need to save it to your OurAPI folder.
+To complete the following activities we will use the Chinook Database from [exercise databases we used to learn SQL](../08_sql/01_intro.md#exercise-databases). You will need to save it to your OurAPI folder.
 
 For each of the following activities, you will need to:
 

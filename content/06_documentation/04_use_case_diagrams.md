@@ -2,7 +2,7 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- understand how a use case diagram identifies how a digital solution meets users goals and needs
+- understand how a use case diagram identifies how a digital solution meets users’ goals and needs
 - understand how a use case diagram helps define the scope of a project
 - know the different elements that make up a use case diagram
 - understand the process of developing a use case diagram
@@ -23,7 +23,7 @@ By the end of this section you will:
 - **Detect Gaps Early**: They make it easier to spot missing features or unnecessary complexity before detailed development begins.
 
 An effective use case diagram can help you represent:
-- Scenarios in which your system or application interacts with people, organizations, or external systems
+- Scenarios in which your system or application interacts with people, organisations, or external systems
 - Goals that your system or application helps those entities (known as actors) achieve
 - The scope of your system
 
@@ -38,7 +38,7 @@ This tutorial, led by Chloe, explains how to create UML Use Case diagrams. These
 The tutorial breaks down Use Case diagrams into four key elements, using a **Banking App** as a running example:
 
 1. **System:** The application or process being developed (e.g., the Banking App). It is represented by a large rectangle that defines the scope of the system.
-2. **Actors:** External people, organizations, or other systems that interact with the system. They are shown as stick figures outside the system rectangle.
+2. **Actors:** External people, organisations, or other systems that interact with the system. They are shown as stick figures outside the system rectangle.
 
    - **Primary Actors:** Initiate actions (e.g., a `Customer`). Placed on the left.
    - **Secondary Actors:** React to the system or primary actor's actions (e.g., the `Bank`). Placed on the right.
@@ -49,7 +49,7 @@ The tutorial breaks down Use Case diagrams into four key elements, using a **Ban
    - **Association:** A simple solid line showing an actor interacts with a use case.
    - **Include (`<<include>>`):** A mandatory relationship where a base use case *requires* another use case to function. This happens *every time*. The dashed arrow points to the required use case (e.g., `Log In` includes `Verify Password`).
    - **Extend (`<<extend>>`):** An optional relationship where one use case *may* be triggered under certain conditions. This happens *sometimes*. The dashed arrow points back to the base use case (e.g., a failed `Log In` extends to `Display Login Error`).
-   - **Generalization:** A parent-child relationship where specialized "child" use cases (e.g., `Pay from Checking`) inherit the properties of a general "parent" use case (e.g., `Make Payment`). The arrow points from the child to the parent.
+   - **Generalisation:** A parent-child relationship where specialised "child" use cases (e.g., `Pay from Checking`) inherit the properties of a general "parent" use case (e.g., `Make Payment`). The arrow points from the child to the parent.
 :::
 
    ## Steps to create a Use Case Diagram

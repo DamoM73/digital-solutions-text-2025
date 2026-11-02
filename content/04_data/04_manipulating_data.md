@@ -18,22 +18,22 @@ The set of operations that allows you to manage data in a computer system is ref
 
 > SQL is a standard language for storing, manipulating and retrieving data in databases`w3schools_2019_sql`.
 
-SQL is the the most popular language for working with databases despite being over 50 years old. It is everywhere and every major IT platform uses it. Why? Because it is powerful and effective.
+SQL is the most popular language for working with databases despite being over 50 years old. It is everywhere and every major IT platform uses it. Why? Because it is powerful and effective.
 
 The basic operations of SQL are:
 
 - **SELECT:** performs queries on the database to extract tables of data
 - **CREATE DATABASE:** initially establishes a database
 - **CREATE TABLE:** makes a table in an existing database, including establishing relationships between tables
-- **DROP DATABASE:** completely delete an existing database, resulting in the loss of all data stored in the database
-- **DROP TABLE:** completely delete an existing table, resulting in the loss of all data stored in the table
+- **DROP DATABASE:** completely deletes an existing database, resulting in the loss of all data stored in the database
+- **DROP TABLE:** completely deletes an existing table, resulting in the loss of all data stored in the table
 - **ALTER TABLE:** changes the structure of an existing table, including adding, deleting or modifying columns and modifying relationships
-- **INSERT:** add a row to an existing table
-- **UPDATE:** modify the data in a row of an existing table
-- **DELETE:** remove a row from an existing table
+- **INSERT:** adds a row to an existing table
+- **UPDATE:** modifies the data in a row of an existing table
+- **DELETE:** removes a row from an existing table
 
 ## SQLite
 
 There are many different flavours of SQL. Most of these work by setting up an SQL server separate from the computer running the program. Your program then has to connect to the SQL Server.
 
-To avoid this hassle, we will be using SQLite as our SQL database. It is a lightweight and fast database management system, which can run off a file stored on your local machine. For example, both Android and iOS use SQLite databases extensive to store app data on phones.
+To avoid this hassle, we will be using SQLite as our SQL database. It is a lightweight and fast database management system, which can run off a file stored on your local machine. For example, both Android and iOS use SQLite databases extensively to store app data on phones.

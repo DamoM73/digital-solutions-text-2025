@@ -7,7 +7,7 @@ By the end of this section you will:
 - know how to aggregate values of a column using `COUNT`, `AVG` and `SUM`
 :::
 
-SQL filter clauses are used to restrict the number of rows returned by a query based on specified conditions, enabling more precise data retrieval and manipulation. While SQL aggregators are functions used to perform calculations on multiple rows of a table's column and return a single value.
+SQL filter clauses are used to restrict the number of rows returned by a query based on specified conditions, enabling more precise data retrieval and manipulation. SQL aggregators are functions used to perform calculations on multiple rows of a table's column and return a single value.
 
 ## LIMIT Clause
 
@@ -25,7 +25,7 @@ Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_min_max.asp) on
 
 The `COUNT` function returns the number of rows, `AVG` calculates the average of numeric values, and `SUM` adds up all the numeric values in a column.
 
-[W3schools Tutorial](https://www.w3schools.com/sql/sql_count_avg_sum.asp) on the `COUNT`, `AVG` and `SUM` Functions and complete their exercises.
+Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_count_avg_sum.asp) on the `COUNT`, `AVG` and `SUM` Functions and complete their exercises.
 
 :::{seealso} Filters and Aggregators Activities
 :class: dropdown

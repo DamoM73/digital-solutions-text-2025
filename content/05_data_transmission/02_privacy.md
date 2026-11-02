@@ -10,7 +10,7 @@ By the end of this section you will:
 - understand the process of protecting privacy by de-identifying open data
 :::
 
-If you are a member of a modern society, your personal data has been collected. Sometimes it is collected by governments, but mostly it is collected by corporations. It is that extensive that an entire industry has developed collate and on-sell personal data ([data brokers](https://www.security.org/data-removal/data-broker/)) and sparking a counter industry aimed at removing personal data from these data brokers ([personal data removal services](https://au.pcmag.com/security/110363/personal-data-removal-services-how-they-work-and-why-you-need-one)).
+If you are a member of a modern society, your personal data has been collected. Sometimes it is collected by governments, but mostly it is collected by corporations. This collection is so extensive that an entire industry has developed to collate and on-sell personal data ([data brokers](https://www.security.org/data-removal/data-broker/)) and sparked a counter-industry aimed at removing personal data from these data brokers ([personal data removal services](https://au.pcmag.com/security/110363/personal-data-removal-services-how-they-work-and-why-you-need-one)).
 
 But many of our day-to-day services run on this data, so why is it a concern? Check the video below for an explanation.
 
@@ -25,22 +25,22 @@ This video explains the critical importance of data privacy and ethics in today'
 Key issues and concerns highlighted include:
 
 - **Data Collection and Consent:**
-  - **Issue:** Organizations often collect user data without users fully understanding what's being collected or how it will be used.
-  - **Concern &ndash; Informed Consent:** Users frequently agree to terms without full comprehension, leading to potential unauthorized use of their information.
+  - **Issue:** Organisations often collect user data without users fully understanding what's being collected or how it will be used.
+  - **Concern &ndash; Informed Consent:** Users frequently agree to terms without full comprehension, leading to potential unauthorised use of their information.
   - **Concern &ndash; Transparency:** Lack of transparency from companies about their data practices can make users feel their privacy is compromised.
 - **Data Storage and Security:**
   - **Issue:** Large data repositories are attractive targets for cybercriminals.
   - **Concern &ndash; Data Breaches:** Inadequate security measures can expose personal information, leading to risks like identity theft.
 - **Data Sharing and Third-Party Access:**
-  - **Issue:** Sharing data with third-party vendors increases the risk of unauthorized access.
+  - **Issue:** Sharing data with third-party vendors increases the risk of unauthorised access.
   - **Concern &ndash; Lack of User Control:** Once data is shared, users have little control over its subsequent use, potentially leading to unwanted targeting.
 - **Data Profiling and Surveillance:**
-  - **Issue:** Organizations use data profiling to make inferences about behaviour, which can impact decisions like credit scores or job prospects.
+  - **Issue:** Organisations use data profiling to make inferences about behaviour, which can impact decisions like credit scores or job prospects.
   - **Concern &ndash; Privacy Intrusion:** This practice can feel invasive as individual behaviours are tracked to build detailed profiles.
 
-The video then emphasizes Ethical Considerations in Data Use, stressing the need for responsible data handling and prioritizing individual rights. A key ethical practice is:
+The video then emphasises Ethical Considerations in Data Use, stressing the need for responsible data handling and prioritising individual rights. A key ethical practice is:
 
-- **Transparency and Honesty:** Organizations should clearly communicate how data is collected, used, and shared.
+- **Transparency and Honesty:** Organisations should clearly communicate how data is collected, used, and shared.
   - **Importance &ndash; Building Trust:** Transparent data practices are crucial for building trust with users, reassuring them that their information is handled responsibly.
 :::
 
@@ -72,7 +72,7 @@ Information as a commodity refers to the idea that information—like physical g
 - Market research reports, customer databases, software, e-books, and streaming media are all examples of information commodities.
 - Data brokers aggregate and sell personal data, turning individual digital footprints into tradable assets.
 
-This value of data can lead to exploitation which raises ethical and legal concern around it's collection.  
+This value of data can lead to exploitation which raises ethical and legal concerns around its collection.  
 
 :::{seealso} Data as a Commodity Activities
 :class: dropdown
@@ -89,9 +89,9 @@ The collecting of personal data raises a range of ethical concerns.
 
 ### Privacy Violations
 
-Collecting data without proper authorization or consent can infringe on individuals’ privacy, exposing sensitive personal information and breaching confidentiality.
+Collecting data without proper authorisation or consent can infringe on individuals’ privacy, exposing sensitive personal information and breaching confidentiality.
 
-Even anonymized data can sometimes be re-identified, leading to unintended privacy breaches.
+Even anonymised data can sometimes be re-identified, leading to unintended privacy breaches.
 
 ### Informed Consent
 
@@ -103,12 +103,12 @@ Many consent processes are inadequate, with users often agreeing to terms they d
 
 ### Data Security
 
-Organizations have an ethical obligation to protect collected data from unauthorized access, breaches, or leaks, which could result in identity theft, financial harm, or reputational damage.
+Organisations have an ethical obligation to protect collected data from unauthorised access, breaches, or leaks, which could result in identity theft, financial harm, or reputational damage.
 
 High-profile breaches highlight the risks and the importance of robust security measures.
 
 :::{seealso} How much of your data is available on the web?
-Check our how much of your data is exposed to the internet:
+Check out how much of your data is exposed to the internet:
 - [See your identity pieced together from stolen data](https://www.abc.net.au/news/2023-05-18/data-breaches-your-identity-interactive/102175688)
 - [HaveIBeenPwned](https://haveibeenpwned.com/)
 - [Privacy Analyzer &ndash; See what data is exposed from your browser](https://privacy.net/analyzer/)
@@ -142,15 +142,15 @@ There are ongoing ethical debates about who owns personal data and who has the r
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XAPNMcgMTks?si=6Zk_lC5BoQD7fQp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
 
-### Data Minimization and Purpose Limitation
+### Data Minimisation and Purpose Limitation
 
-Ethically, organizations should collect only the data necessary for a specific purpose and not retain it longer than needed, balancing commercial interests with individual rights.
+Ethically, organisations should collect only the data necessary for a specific purpose and not retain it longer than needed, balancing commercial interests with individual rights.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MKCrpruBH_Q?si=bLTMBsOdMIhCyrn-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
 
 ### Fairness in Use and Retention
 
-The use of data for purposes beyond the original intent without explicit consent is unethical, even if the organization believes it is beneficial.
+The use of data for purposes beyond the original intent without explicit consent is unethical, even if the organisation believes it is beneficial.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/km8Q_xjGoKI?si=DJ-3DYx-XAaSStlf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
 
@@ -158,11 +158,11 @@ The use of data for purposes beyond the original intent without explicit consent
 
 Navigating and adhering to diverse and evolving data protection laws is both an ethical and legal requirement, ensuring respect for individuals’ rights across jurisdictions.
 
-Here are some examples data privacy laws in force around the world:
+Here are some examples of data privacy laws in force around the world:
 
 - **European Union: General Data Protection Regulation (GDPR)**
-  - **Scope:** Applies to all organizations processing personal data of EU residents, regardless of where the organization is based.
-  - **Key Features:** Requires explicit consent, data minimization, the right to access and delete data, data portability, and strict breach notification requirements. Imposes heavy penalties for non-compliance.
+  - **Scope:** Applies to all organisations processing personal data of EU residents, regardless of where the organisation is based.
+  - **Key Features:** Requires explicit consent, data minimisation, the right to access and delete data, data portability, and strict breach notification requirements. Imposes heavy penalties for non-compliance.
   - **Influence:** Considered the global benchmark, inspiring similar laws in other countries.
 - **United States: State and Sectoral Laws**
   - In the US, data privacy is governed by a mix of federal sectoral laws and a growing number of comprehensive state laws, each granting consumers rights over their personal information and imposing various obligations on businesses
@@ -175,29 +175,29 @@ Here are some examples data privacy laws in force around the world:
   - **State Comprehensive Privacy Laws:** As of 2025, at least 16 US states have passed comprehensive privacy laws, each with unique requirements and enforcement mechanisms. For example:
     - **California Consumer Privacy Act (CCPA):** Grants California residents rights to know, delete, and opt out of the sale of their personal data. Other states like Virginia, Colorado, and Texas have enacted similar laws.
     - **Virginia Consumer Data Protection Act (CDPA):** Emphasizes user consent, transparency, and allows consumers to opt out of data collection and targeted advertising.
-    - **Colorado Privacy Act:** Focuses on data minimization, purpose limitation, and consumer rights to access, correct, delete, and opt out of data sales and targeted ads.
+    - **Colorado Privacy Act:** Focuses on data minimisation, purpose limitation, and consumer rights to access, correct, delete, and opt out of data sales and targeted ads.
 - **China: Personal Information Protection Law (PIPL)**
   - **Comprehensive Coverage:** Applies to any entity handling personal data of people in China, even if the entity is based overseas.
-  - **Key Features:** Consent, data minimization, cross-border data transfer restrictions, and severe penalties for non-compliance.
+  - **Key Features:** Consent, data minimisation, cross-border data transfer restrictions, and severe penalties for non-compliance.
 - **Australia: Privacy Act 1988 and Australian Privacy Principles (APPs)**
-  - **Scope:** Governs how personal information is handled by government agencies and many private sector organizations.
+  - **Scope:** Governs how personal information is handled by government agencies and many private sector organisations.
   - **Key Features:** Open and transparent management, data quality and security, access and correction rights, and restrictions on cross-border disclosure.
 
 Due to the international nature of the internet, the influence of these laws can spread far beyond their legal jurisdiction. For example:
 - The GDPR is the reason web sites ask you to accept cookies
-- COPPA is the reasons the Terms and Conditions of social media accounts exclude children under 13 years old.
+- COPPA is the reason the Terms and Conditions of social media accounts exclude children under 13 years old.
 
 :::{seealso} Handling Personal Data Activities
 :class: dropdown
-1. How can re-identification of anonymized data occur, and what does this reveal about data security challenges?
-2. What role do high-profile data breaches play in shaping public awareness and organizational accountability?
+1. How can re-identification of anonymised data occur, and what does this reveal about data security challenges?
+2. What role do high-profile data breaches play in shaping public awareness and organisational accountability?
 3. How might algorithms unintentionally reinforce stereotypes or systemic inequalities when handling personal data?
 4. Why is accountability just as important as transparency in ethical data collection?
 5. How can psychological profiling using personal data threaten democratic processes?
-6. What ethical dilemmas arise when organizations use data for purposes beyond the original reason it was collected?
+6. What ethical dilemmas arise when organisations use data for purposes beyond the original reason it was collected?
 7. How does the concept of data as a valuable asset complicate debates over ownership and control?
-8. What risks emerge when organizations retain personal data longer than necessary?
-9. How do global differences in data protection laws create challenges for multinational organizations?
+8. What risks emerge when organisations retain personal data longer than necessary?
+9. How do global differences in data protection laws create challenges for multinational organisations?
 10. In what ways do privacy laws like COPPA or FERPA directly shape the design of digital services for young people and students?
 :::
 
@@ -206,7 +206,7 @@ Due to the international nature of the internet, the influence of these laws can
 
 ## Open Data  
 
-Open data refers to data that is freely available for anyone to access, use, modify, and share, typically without restrictions or the need for special permissions. It is often published by governments, public institutions, or private organizations and is made available in accessible, machine-readable formats.
+Open data refers to data that is freely available for anyone to access, use, modify, and share, typically without restrictions or the need for special permissions. It is often published by governments, public institutions, or private organisations and is made available in accessible, machine-readable formats.
 
 Key Features of Open Data:
 - Freely accessible to all, regardless of user or purpose.
@@ -215,7 +215,7 @@ Key Features of Open Data:
 
 ### Importance of Open Data
 - **Promotes Transparency and Accountability**
-  - Open data allows citizens to scrutinize the actions and performance of governments and organizations, increasing transparency and enabling public oversight.
+  - Open data allows citizens to scrutinize the actions and performance of governments and organisations, increasing transparency and enabling public oversight.
   - For example, open data platforms can reveal school performance or government spending, empowering communities to advocate for improvements.
 
 - **Drives Innovation and Economic Growth**
@@ -278,8 +278,8 @@ Open data can easily conflict with privacy. A solution to this problem is the de
 
 **Why is De-identification Important?**
 
-- **Privacy Protection:** It helps organizations comply with privacy laws (like the Australian Privacy Principles or GDPR) by reducing the risk that individuals can be identified from released data.
-- **Enabling Data Sharing:** De-identified data can often be shared more freely for research, policy-making, and innovation, unlocking value while minimizing privacy risks.
+- **Privacy Protection:** It helps organisations comply with privacy laws (like the Australian Privacy Principles or GDPR) by reducing the risk that individuals can be identified from released data.
+- **Enabling Data Sharing:** De-identified data can often be shared more freely for research, policy-making, and innovation, unlocking value while minimising privacy risks.
 
 **Limitations and Risks**
 
@@ -290,7 +290,7 @@ Open data can easily conflict with privacy. A solution to this problem is the de
 :class: dropdown
 1. What is open data, and how is it typically made available?
 2. What are the key features that make data truly "open"?
-3. How does open data promote transparency and accountability in governments and organizations?
+3. How does open data promote transparency and accountability in governments and organisations?
 4. In what ways can open data drive innovation and contribute to economic growth?
 5. How does open data improve public services and government efficiency?
 6. Why is open data important for scientific research and collaboration?
@@ -299,7 +299,7 @@ Open data can easily conflict with privacy. A solution to this problem is the de
 9. What are some major open data sources available in Australia at national, state, and local government levels?
 10. What is de-identification, and why is it important when publishing open data?
 11. What are the key steps involved in de-identifying data before it is released?
-12. How does de-identification help organizations comply with privacy laws such as the APPs or GDPR?
+12. How does de-identification help organisations comply with privacy laws such as the APPs or GDPR?
 13. What are the limitations and risks associated with de-identification of open data?
 14. Why must de-identification be treated as a continuous process rather than a one-time action?
 :::
@@ -308,43 +308,43 @@ Open data can easily conflict with privacy. A solution to this problem is the de
 
 ## Australian Privacy Principles 📝
 
-The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference) are a set of 13 key rules under the Privacy Act 1988 that govern how Australian organizations and government agencies handle personal information. These principles are designed to ensure privacy, transparency, and accountability in the collection, use, storage, and disclosure of personal data.
+The [Australian Privacy Principles (APPs)](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference) are a set of 13 key rules under the Privacy Act 1988 that govern how Australian organisations and government agencies handle personal information. These principles are designed to ensure privacy, transparency, and accountability in the collection, use, storage, and disclosure of personal data.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eHtVG3Or2tg?si=raTY1ZRs4l8ZT9KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>
 
 ### The 13 Australian Privacy Principles:
 
-1. **Open and Transparent Management of Personal Information** &ndash; Organizations must manage personal information in an open and transparent way, including having a clearly expressed and up-to-date privacy policy.
-2. **Anonymity and Pseudonymity** &mdash; Individuals must have the option to deal with organizations anonymously or using a pseudonym, unless it is impracticable or contrary to law.
-3. **Collection of Solicited Personal Information** &ndash; Organizations should only collect personal information that is necessary for their functions and do so by lawful and fair means
-4. **Dealing with Unsolicited Personal Information** &ndash; If unsolicited personal information is received, organizations must determine if it could have been collected under APP 3 and, if not, destroy or de-identify it.
+1. **Open and Transparent Management of Personal Information** &ndash; Organisations must manage personal information in an open and transparent way, including having a clearly expressed and up-to-date privacy policy.
+2. **Anonymity and Pseudonymity** &mdash; Individuals must have the option to deal with organisations anonymously or using a pseudonym, unless it is impracticable or contrary to law.
+3. **Collection of Solicited Personal Information** &ndash; Organisations should only collect personal information that is necessary for their functions and do so by lawful and fair means
+4. **Dealing with Unsolicited Personal Information** &ndash; If unsolicited personal information is received, organisations must determine if it could have been collected under APP 3 and, if not, destroy or de-identify it.
 5. **Notification of the Collection of Personal Information** &ndash; Individuals must be informed when their personal information is collected, including the purpose and any third parties it may be shared with.
 6. **Use or Disclosure of Personal Information** &ndash; Personal information can only be used or disclosed for the purpose it was collected, unless an exception applies.
 7. **Direct Marketing** &ndash; Personal information must not be used for direct marketing unless specific conditions are met, including providing a simple way to opt out.
-8. **Cross-border Disclosure of Personal Information** &ndash; Organizations must take reasonable steps to ensure that overseas recipients do not breach the APPs when personal information is disclosed internationally.  
-9. **Adoption, Use, or Disclosure of Government Identifiers** &ndash; Organizations must not adopt, use, or disclose government-related identifiers (like Medicare or passport numbers) except as permitted by law.
+8. **Cross-border Disclosure of Personal Information** &ndash; Organisations must take reasonable steps to ensure that overseas recipients do not breach the APPs when personal information is disclosed internationally.  
+9. **Adoption, Use, or Disclosure of Government Identifiers** &ndash; Organisations must not adopt, use, or disclose government-related identifiers (like Medicare or passport numbers) except as permitted by law.
 10. **Quality of Personal Information** &ndash; Reasonable steps must be taken to ensure personal information collected is accurate, up-to-date, and complete.
-11. **Security of Personal Information** &ndash; Organizations must take reasonable steps to protect personal information from misuse, interference, loss, unauthorized access, modification, or disclosure.
-12. **Access to Personal Information** &ndash; Individuals have the right to access their personal information held by an organization, subject to some exceptions.
-13. **Correction of Personal Information** &ndash; Organizations must take reasonable steps to correct personal information to ensure it is accurate, up-to-date, complete, relevant, and not misleading.
+11. **Security of Personal Information** &ndash; Organisations must take reasonable steps to protect personal information from misuse, interference, loss, unauthorised access, modification, or disclosure.
+12. **Access to Personal Information** &ndash; Individuals have the right to access their personal information held by an organisation, subject to some exceptions.
+13. **Correction of Personal Information** &ndash; Organisations must take reasonable steps to correct personal information to ensure it is accurate, up-to-date, complete, relevant, and not misleading.
 
 :::{seealso} APP Activities
 :class: dropdown
 1. Why do the Australian Privacy Principles exist, and what overall purpose do they serve?
-2. How do the APPs balance individual rights with the needs of organizations and government agencies?
-3. What might happen to public trust if organizations consistently fail to follow the APPs?
+2. How do the APPs balance individual rights with the needs of organisations and government agencies?
+3. What might happen to public trust if organisations consistently fail to follow the APPs?
 4. How do the APPs connect with global privacy frameworks, such as the GDPR?
-5. What kinds of measures should organizations implement to protect personal information, and which APP does this relate to?
-6. In what situations might an individual reasonably choose to deal with an organization anonymously or under a pseudonym, and which APP covers this?
-7. What steps must organizations take before sending personal information overseas, and which APP sets this requirement?
-8. Under what conditions can an organization use or disclose personal information for purposes other than the original collection, and which APP applies?
-9. What steps must organizations take to ensure the personal information they collect is accurate and complete, and which APP governs this?
-10. What limits are placed on organizations when collecting personal information, and which APP is relevant?
-11. What obligations do organizations have if they use personal information for direct marketing, and which APP sets these rules?
-12. Why is it important for organizations to maintain a clear and up-to-date privacy policy, and which APP requires this?
+5. What kinds of measures should organisations implement to protect personal information, and which APP does this relate to?
+6. In what situations might an individual reasonably choose to deal with an organisation anonymously or under a pseudonym, and which APP covers this?
+7. What steps must organisations take before sending personal information overseas, and which APP sets this requirement?
+8. Under what conditions can an organisation use or disclose personal information for purposes other than the original collection, and which APP applies?
+9. What steps must organisations take to ensure the personal information they collect is accurate and complete, and which APP governs this?
+10. What limits are placed on organisations when collecting personal information, and which APP is relevant?
+11. What obligations do organisations have if they use personal information for direct marketing, and which APP sets these rules?
+12. Why is it important for organisations to maintain a clear and up-to-date privacy policy, and which APP requires this?
 13. What rights do individuals have to access their personal information, what are the exceptions, and which APP applies?
-14. What information must an organization provide to an individual when collecting their personal information, and which APP outlines this?
-15. How should an organization handle personal information it receives that it did not ask for, and which APP addresses this?
-16. Why are organizations restricted in their use of government-related identifiers such as Medicare numbers, and which APP applies?
-17. How should organizations handle requests to correct inaccurate or misleading personal information, and which APP governs this?
+14. What information must an organisation provide to an individual when collecting their personal information, and which APP outlines this?
+15. How should an organisation handle personal information it receives that it did not ask for, and which APP addresses this?
+16. Why are organisations restricted in their use of government-related identifiers such as Medicare numbers, and which APP applies?
+17. How should organisations handle requests to correct inaccurate or misleading personal information, and which APP governs this?
 :::

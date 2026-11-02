@@ -4,7 +4,7 @@
 By the end of this section you will:
 - understand the importance of testing and documenting this testing
 - know how to perform and document unit tests
-- know how to perform and document integrated test
+- know how to perform and document integrated tests
 :::
 
 In the [Good Programming Practice section](../02_coding/03_good_practice.md) we have already mentioned the three different types of testing:
@@ -13,11 +13,11 @@ In the [Good Programming Practice section](../02_coding/03_good_practice.md) we 
 - Unit testing
 - Integrated testing
 
-Unit testing and integrated testing are excellent evidence of problem solving, refinement and justification for evaluation. In such, it is important to document this testing.
+Unit testing and integrated testing are excellent evidence of problem solving, refinement and justification for evaluation. As such, it is important to document this testing.
 
 :::{warning} Teacher's marking considerations
 :class: dropdown
-No one always gets their code right the first time. Your testing should show both your successful and unsuccessful tests. The unsuccessful test and the subsequent resolution of the problem significantly contributes to the **effective refinements and recommendations** part of the **Evaluating Criteria** in FIA2, FIA3, IA2 and IA3.
+No one always gets their code right the first time. Your testing should show both your successful and unsuccessful tests. The unsuccessful test and the subsequent resolution of the problem significantly contribute to the **effective refinements and recommendations** part of the **Evaluating Criteria** in FIA2, FIA3, IA2 and IA3.
 :::
 
 ## Unit testing
@@ -26,7 +26,7 @@ Unit testing is a method where individual parts of a program, called units, are 
 
 Imagine a program as a complex machine made of smaller parts, like gears. Each gear needs to work perfectly for the whole machine to function. In unit testing, developers write tests for these 'gears' &ndash; which could be functions or methods &ndash; to check if they perform as expected when given certain inputs. 
 
-If a test fails, it means there's a problem with that part of the code, and it needs fixing before it can be used with other parts of the program. If unit passes all the tests, then the programmer can be confident that any future errors are not caused by this unit, therefore will not need to test it again unless its code is changed.
+If a test fails, it means there's a problem with that part of the code, and it needs fixing before it can be used with other parts of the program. If a unit passes all the tests, then the programmer can be confident that any future errors are not caused by this unit, therefore will not need to test it again unless its code is changed.
 
 This approach helps catch errors early and simplifies debugging, making the development process more efficient and the final program more reliable.
 
@@ -44,7 +44,7 @@ Follow these steps to run your unit tests:
      - Invalid input
 3. **Run the function manually**:
    - Use print statements to run your function with your test cases.
-   - You make create a sperate Python file for testing
+   - You may create a separate Python file for testing
 4. **Compare actual vs expected output**
    - Check if what the function returned matches what you expected. 
    - If not, investigate the error.
@@ -231,4 +231,4 @@ Include in your design:
 
 Due to the word and page limits imposed by the QCAA 2025 Syllabus, you will need to place the documentation of your testing in an appendix. You should refer to this documentation in the main body of your response when you are discussing the testing and its results.
 
-The the main body of your response you should focus on the key outcomes of your testing, and how these outcomes informed your refinements and recommendations. You can refer to specific test result to support your claims.
+In the main body of your response you should focus on the key outcomes of your testing, and how these outcomes informed your refinements and recommendations. You can refer to specific test results to support your claims.

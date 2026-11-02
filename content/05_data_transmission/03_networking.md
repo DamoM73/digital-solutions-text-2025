@@ -3,12 +3,12 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
 - understand the principles of transmitting data over a network
-- understand the signficance network transmission concepts including latency, jitter, quality of service guarantee, and timeliness of delivery
+- understand the significance of network transmission concepts including latency, jitter, quality of service guarantee, and timeliness of delivery
 - understand the TCP/IP, HTTP/HTTPS, FTP/FTPS, VPN, streaming, and broadcasting network transmission protocols  
 - understand the methods of exchanging data including REST, JSON, XML and CSV/TSV
 :::
 
-Networks are the backbone of the modern world, but how do they work? Check the following videos to learn the fundamental about networking.
+Networks are the backbone of the modern world, but how do they work? Check the following videos to learn the fundamentals of networking.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3QhU9jd03a0?si=c15Ia4djP9A9xi-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -18,7 +18,7 @@ Networks are the backbone of the modern world, but how do they work? Check the f
 - **Early Networks & Motivation:**
   - Pre-1970s, most computers were standalone. The need to share data and resources (printers, storage) drove network development.
   - Early methods like "Sneakernet" (physically moving storage media) were inefficient.
-  - The first **Local Area Networks (LANs)** appeared in the 1950s/60s, typically within a single organization. A LAN can range from two computers in a room to a university campus.
+  - The first **Local Area Networks (LANs)** appeared in the 1950s/60s, typically within a single organisation. A LAN can range from two computers in a room to a university campus.
 - **Ethernet & Shared Media:**
   - **Ethernet**, developed at Xerox PARC in the 1970s, became a dominant LAN technology, initially using a shared cable.
   - **MAC Addresses (Media Access Control Address):** Each networked device has a unique MAC address. Data sent over Ethernet includes a header with the destination MAC address, so only the intended recipient processes it.
@@ -60,7 +60,7 @@ Networks are the backbone of the modern world, but how do they work? Check the f
 - **Internet Protocol (IP):** Every packet follows a standard called the Internet Protocol. An IP packet contains a header (with details like the destination IP address) and a data section (the content being sent).
 - **User Datagram Protocol (UDP):** UDP is a fast and simple way to send data. It includes a port number to direct the packet to the correct program and a checksum to check for errors. UDP does not guarantee delivery or correct errors—it just drops any broken packets. It’s used for things where speed matters more than accuracy, like live video or voice chat.
 - **Transmission Control Protocol (TCP):** TCP is used when it’s important that all data arrives complete and in the right order, like for email or loading websites. It adds features like numbering packets and requiring the receiver to confirm they were received. If something goes missing, it’s resent.
-- **Domain Name System (DNS):** DNS translates website names (like google.com) into IP addresses that computers can use. When you enter a website address, your device contacts a DNS server to find out its IP address. DNS is organized into levels, starting with top-level domains like `.com`, then more specific domain names.
+- **Domain Name System (DNS):** DNS translates website names (like google.com) into IP addresses that computers can use. When you enter a website address, your device contacts a DNS server to find out its IP address. DNS is organised into levels, starting with top-level domains like `.com`, then more specific domain names.
 - **OSI Model:** All of this fits into the OSI model, which breaks down how networks work into layers. This includes the Physical, Data Link, Network, Transport, and Session layers, each handling a specific part of the communication process.
 :::
 
@@ -74,11 +74,12 @@ Traceroute on Windows
 2. Type "CMD" and press "Enter"
 3. In the Command Prompt type "tracert dftba.com"
 
-   Traceroute on Mac
-4. Click on the "Go" drop down menu
-5. Click on "Utilities"
-6. Open Terminal
-7. Type "traceroute dftba.com"
+Traceroute on Mac
+
+1. Click on the "Go" drop down menu
+2. Click on "Utilities"
+3. Open Terminal
+4. Type "traceroute dftba.com"
 :::
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/guvsH5OFizE?si=-qBwz9LiQseDuxeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -134,7 +135,7 @@ Latency refers to the delay or lag that occurs when data is transmitted from one
 - **Serialization and deserialization:**
   - Serialization is the process of converting data into a format that can be transmitted over a network.  
   - Deserialization is the reverse process.  
-  - The serialization and deserialization steps introduce overhead, contributing to latency. The more complex the data and the longer the serialization process takes.
+  - The serialization and deserialization steps introduce overhead, contributing to latency. The more complex the data, the longer the serialization process takes.
 - **Propagation:**
   - Propagation delay in networks refers to the time it takes for data to travel from its source to its destination over a physical medium, such as a network cable or a fibre optic line.  
   - In networks, this delay is influenced by the physical distance between devices and the speed at which signals can travel through the medium.
@@ -157,7 +158,7 @@ Gaming ping is directly affected by latency. Ping is a measurement of the round-
 
 Jitter is the variation in the delay of received packets in a network. It represents the inconsistency in the timing of packet arrivals. It can result from network congestion, varying path lengths for different packets, or differences in the processing time at network devices.
 
-In applications like Voice over IP (VoIP) and streaming media, jitter can lead to disruptions and poor audio or video quality. Minimizing jitter is essential for smooth communication.
+In applications like Voice over IP (VoIP) and streaming media, jitter can lead to disruptions and poor audio or video quality. Minimising jitter is essential for smooth communication.
 
 :::{hint} Jitter in video streaming
 :class: dropdown
@@ -175,7 +176,7 @@ In video streaming, jitter appears as irregular and unexpected variations in the
 
 Network **Quality of Service (QoS) guarantee** refers to the assurance that a network can provide specific levels of service and performance to different types of traffic or applications. QoS is critical in ensuring that data, voice, video, and other applications receive the necessary bandwidth, low latency, and minimal packet loss to function effectively.
 
-To guarantee QoS, networks often employ various mechanisms, such as traffic prioritization, bandwidth reservation, and congestion management. For example, in a VoIP (Voice over Internet Protocol) call, QoS guarantee ensures that voice packets are prioritized over less time-sensitive data packets, reducing the chances of voice call degradation due to network congestion.
+To guarantee QoS, networks often employ various mechanisms, such as traffic prioritisation, bandwidth reservation, and congestion management. For example, in a VoIP (Voice over Internet Protocol) call, QoS guarantee ensures that voice packets are prioritised over less time-sensitive data packets, reducing the chances of voice call degradation due to network congestion.
 
 ### Timeliness of delivery
 
@@ -347,13 +348,13 @@ When data comes into your device (like a web page or a message), it’s sent to 
 
 **Why Are Ports Needed?**
 A single computer can run many programs at the same time—like a web browser, email client, and video game.
-**Ports** help keep the traffic organized by assigning a number to each type of service.
+**Ports** help keep the traffic organised by assigning a number to each type of service.
 
 - Data coming into your computer must be directed to the correct software.
 - The operating system checks the **port number** and passes the data to the matching program.
 
 **Common Port Numbers**
-Some port numbers are **standardized**, meaning certain services always use the same ones:
+Some port numbers are **standardised**, meaning certain services always use the same ones:
 
 | Port Number | Protocol / Service |
 | --- | --- |
@@ -659,7 +660,7 @@ REST is an architectural style for designing networked applications. It relies o
 
 **JSON Structure**
 
-JSON data is represented as key-value (called dictionaries in Python) pairs organized in a hierarchical structure. The basic building blocks of JSON are:
+JSON data is represented as key-value pairs (grouped into dictionaries in Python) organised in a hierarchical structure. The basic building blocks of JSON are:
 
 - **Objects:**
   - Enclosed in curly braces `{}`.
@@ -756,7 +757,7 @@ Here’s a complete example representing a student record:
 - **Limited Data Types:** JSON supports only a few basic data types (strings, numbers, Booleans, arrays, and objects), which may not be sufficient for more complex data representations.
 - **No Schema Validation:** JSON lacks a built-in schema, which can lead to data consistency issues since there is no enforced structure, making it challenging to validate the data format.
 - **Verbose for Complex Structures:** While lightweight for simple data, JSON can become verbose and less efficient for very complex or deeply nested structures, leading to increased parsing and processing time.
-- **Security Vulnerabilities:** JSON parsing, especially in JavaScript, can be susceptible to security risks such as injection attacks if not properly sanitized and validated.
+- **Security Vulnerabilities:** JSON parsing, especially in JavaScript, can be susceptible to security risks such as injection attacks if not properly sanitised and validated.
 - **Binary Data Handling:** JSON is not suitable for directly handling binary data, often requiring encoding (like Base64) which increases the size of the data.
 - **Lack of Comments:** JSON does not support comments, making it harder to document or annotate data within the JSON itself for future reference or understanding.
 
@@ -858,7 +859,7 @@ Here’s a complete example representing a student record in XML:
 **XML advantages**
 
 - **Versatility:** XML can represent complex data structures and is suitable for a wide range of applications.
-- **Standardization:** XML is a W3C standard, ensuring consistency and interoperability across different systems.
+- **Standardisation:** XML is a W3C standard, ensuring consistency and interoperability across different systems.
 - **Self-Descriptive:** XML documents are self-descriptive, making them easy to understand and maintain.
 
 **XML Disadvantages**
@@ -937,7 +938,7 @@ Charlie    35    San Francisco, CA
 
 **Disadvantages of CSV and TSV**
 
-- **Lack of Standardization:** There is no universal standard for CSV and TSV files, leading to inconsistencies in how different applications handle delimiters, line breaks, and special characters.
+- **Lack of Standardisation:** There is no universal standard for CSV and TSV files, leading to inconsistencies in how different applications handle delimiters, line breaks, and special characters.
 - **Limited Data Types:** CSV and TSV files can only store plain text, which limits their ability to represent more complex data types such as binary data, hierarchical data, or objects.
 - **Delimiter Conflicts:** For CSV files fields containing commas must be enclosed in quotes, which can complicate parsing and data entry. Additionally, if the data itself contains quotes or line breaks, it requires additional escaping. For TSV files, data that contains tabs can complicate parsing and require special handling.
 - **No Support for Metadata:** CSV files do not include metadata about the data, such as data types, schema information, or encoding, making it difficult to ensure data integrity and consistency.

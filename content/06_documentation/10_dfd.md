@@ -2,7 +2,7 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- understand how a data flow diagrams track the movement of data through your system
+- understand how data flow diagrams track the movement of data through your system
 - understand the difference between data flow diagrams, use case diagrams, entity relationship diagrams and relational schemas
 - know how to create a data flow diagram
 :::
@@ -18,16 +18,16 @@ The first step in designing a database is developing an understanding of the sce
 
 Student Subject Database
 
-- Students can log into to access:
+- Students can log in to access:
   - their current enrolment
   - subject grades when entered
-- Teachers can log into to:
+- Teachers can log in to:
   - Enter student grades
 - Each subject is only offered once, with one teacher
 - Each student can enrol in each subject only once.
 :::
 
-A Data Flow Diagram is made up from four components:
+A Data Flow Diagram is made up of four components:
 
 - external entities
 - process
@@ -46,7 +46,7 @@ External entities are:
 
 - an outside system that sends or receives data, communicating with the system being diagrammed
 - the sources and destinations of information entering or leaving the system
-- may be an outside organization or person, a computer system or a business system
+- may be an outside organisation or person, a computer system or a business system
 - should be labelled using a noun.
 
 To design your DFD, consider the scenario you are addressing. What are the external sources and the destinations of data? That is, from outside of the application you are developing, who or what provides data or receives data?
@@ -63,7 +63,7 @@ Data can be received in various ways:
 - displayed on a screen
 - printed to paper
 - sent a file
-- lights and metre readings
+- lights and meter readings
 
 When considering the **Student Subject Database** all data is sourced from and destined for two external entities:
 
@@ -77,9 +77,9 @@ Processes are:
 - may perform computations, or sort data based on logic, or direct the data flow based on business rules
 - a short label is used to describe the process, such as “Submit payment”, and should be a verb or verb phrase
 
-Once again consider the scenario you are designing a database for. What things within the systems do some kind of work on the data passing through it. Referring back to your Use Case Diagram, can help in identifying these.
+Once again consider the scenario you are designing a database for. What things within the system do some kind of work on the data passing through it? Referring back to your Use Case Diagram can help in identifying these.
 
-In our **Student Subject Database** there are three processes can occur:
+In our **Student Subject Database** there are three processes that can occur:
 
 ![DFD Step 2](./assets/10/dfd_step_2.png)<p>&nbsp;</p>
 
@@ -119,9 +119,9 @@ To keep DFDs to a manageable size, each process can be decomposed into more deta
 
 The top level DFD is called **Level 0** and should only involve around seven processes. If you have more than seven, then you need to combine processes that logically fit together.
 
-Once the Level 0 DFD is created identify any processes that require more detail. Each of these processes are then decomposed into another DFD. The first deposition is called **Level 1** and subsequent decompositions, Level 2, Level 3 etc.
+Once the Level 0 DFD is created identify any processes that require more detail. Each of these processes is then decomposed into another DFD. The first decomposition is called **Level 1** and subsequent decompositions, Level 2, Level 3 etc.
 
-The processes in the subsequent decompositions inherent their numbering from their parent process.
+The processes in the subsequent decompositions inherit their numbering from their parent process.
 
 We will decompose the Log in process in the **Student Subject Database** example.
 

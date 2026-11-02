@@ -3,7 +3,7 @@
 :::{attention}Suggested solutions
 Just like all things digital, there are many paths to a solution. The solutions provided below are **a** solution, but are **not the only** solution.
 
-They are provided not so you can check you answers, but so you can check the thinking that lead to your answers.
+They are provided not so you can check your answers, but so you can check the thinking that led to your answers.
 :::
 
 ## Coding
@@ -251,7 +251,7 @@ Here are the **answers** to the algorithm learning questions:
 
 :::{seealso} Data Structures Solutions
 :class: dropdown
-1. To store data in an organized form.
+1. To store data in an organised form.
 2. As collections of related data, like a shopping list or contact list.
 3. Lists, tuples, sets, dictionaries.
 4. An ordered collection of items.
@@ -386,7 +386,7 @@ Here are the **answers** to the algorithm learning questions:
 1. Debugging is finding and fixing errors (bugs) in a program so it works correctly.
 2. Bugs can cause crashes, unexpected behaviour, or incorrect results.
 3. Python runs line-by-line, so one error can stop the whole program from continuing.
-4. VSCode provides breakpoints, step controls, variable and watch panels, and a call stack viewer.
+4. VS Code provides breakpoints, step controls, variable and watch panels, and a call stack viewer.
 5. Click the "Run and Debug" tab, then select "Run and Debug" and choose "Python File."
 6. A breakpoint pauses the code on a specific line; set one by clicking next to the line number.
 7. The “Variables” panel shows the current values stored in variables while the program is paused.
@@ -400,7 +400,7 @@ Here are the **answers** to the algorithm learning questions:
 15. The call stack shows the order of function calls leading to the current line.
 16. Print-based debugging is helpful for quick checks or when you’re unsure where the bug is.
 17. Breakpoints pause the program, and the variables panel shows what’s happening at that moment.
-18. Install the Python and Python Debugger extensions in VSCode.
+18. Install the Python and Python Debugger extensions in VS Code.
 19. Testing different values while paused helps understand bugs or test fixes without restarting.
 20. These tools help spot issues earlier, understand program behaviour, and fix bugs faster.
 :::
@@ -594,9 +594,9 @@ Efficiency Problems:
 2. User-first design is important because it ensures the solution meets the needs of the people using it, while developer-first or machine-first design can lead to frustration and poor usability.
 :::
 
-### Useability
+### Usability
 
-:::{seealso} Useability Solutions
+:::{seealso} Usability Solutions
 :class: dropdown
 **Activity 1**
 
@@ -621,7 +621,7 @@ Efficiency Problems:
 **Examples of Alignment on the LEGO Website:**
 
 - **Top Navigation Bar**:
-  Menu items like “Shop,” “Discover,” “Help,” and the search and cart icons are horizontally aligned, creating a clean and organized header.
+  Menu items like “Shop,” “Discover,” “Help,” and the search and cart icons are horizontally aligned, creating a clean and organised header.
 
 - **Product Grid Layout**:
   On category pages, products are aligned vertically in columns and horizontally in rows, making it easy to scan and compare items.
@@ -1230,13 +1230,13 @@ Public Revenue & Policy:
 :class: dropdown
 1. The two key factors are the timeliness of data acquisition and the ownership of the data.
 2. Personal ownership relates to individual data, corporate ownership to organisational data, and public ownership to government or shared public data.
-3. Data integrity means keeping data accurate, complete, consistent, and protected from unauthorized changes or damage.
+3. Data integrity means keeping data accurate, complete, consistent, and protected from unauthorised changes or damage.
 4. Data must be complete, accurate, up to date, consistent, secure, and relevant.
 5. A data anomaly is an error or inconsistency that can affect accuracy, completeness, or consistency in a database.
 6. Insertion anomalies prevent adding data without unnecessary information, deletion anomalies cause loss of important data, and update anomalies create inconsistencies during changes.
-7. Proper design, normalization, and data validation reduce anomalies and improve data reliability.
+7. Proper design, normalisation, and data validation reduce anomalies and improve data reliability.
 8. Threats include malware (viruses, worms, Trojans, ransomware, spyware, adware, rootkits), data theft, identity theft, and invasion of privacy.
-9. User-level access control limits user access based on roles, enforces policies, and allows monitoring of activities to prevent unauthorized use.
+9. User-level access control limits user access based on roles, enforces policies, and allows monitoring of activities to prevent unauthorised use.
 10. Encryption is a reversible process using a key to scramble and unscramble data, while hashing is a one-way process that cannot be reversed, used for secure password storage.
 :::
 
@@ -1265,7 +1265,7 @@ Public Revenue & Policy:
 1. A flat file database stores data in a simple table with rows and columns, where each row is a record and each column is a field.
 2. Flat file databases can't handle complex relationships because they only use a single table with no links between data.
 3. Flat file databases use one table without relationships, while relational databases use multiple linked tables with predefined relationships.
-4. Data in a relational database is organized into tables with rows representing records and columns representing attributes.
+4. Data in a relational database is organised into tables with rows representing records and columns representing attributes.
 5. A primary key is a unique column in a table that identifies each row.
 6. A foreign key is a primary key from one table used in another table to create a relationship between them.
 7. SQL is used to add, update, delete, and retrieve data in relational databases.
@@ -1596,9 +1596,9 @@ Enrolment Table
 :class: dropdown
 1. **Privacy Violations – How can collecting data without proper consent infringe on privacy?**
 
-   - Collecting without authorization or consent exposes sensitive information
+   - Collecting without authorisation or consent exposes sensitive information
    - Breaches confidentiality
-   - Even anonymized data can sometimes be re-identified, leading to privacy breaches
+   - Even anonymised data can sometimes be re-identified, leading to privacy breaches
 
 2. **Informed Consent – What makes informed consent critical for ethical data collection?**
 
@@ -1607,13 +1607,13 @@ Enrolment Table
    - They should be told with whom the data may be shared
    - Many consent processes are inadequate because terms are too complex or unclear
 
-3. **Data Security – Why is data security an ethical obligation for organizations?**
+3. **Data Security – Why is data security an ethical obligation for organisations?**
 
-   - Prevents unauthorized access to data
+   - Prevents unauthorised access to data
    - Reduces risks of breaches or leaks
    - Protects individuals from identity theft
    - Prevents financial harm
-   - Reduces reputational damage to individuals and organizations
+   - Reduces reputational damage to individuals and organisations
    - High-profile breaches highlight the importance of robust security
 
 4. **Bias and Discrimination – How can poor data handling reinforce bias?**
@@ -1625,7 +1625,7 @@ Enrolment Table
 
 5. **Transparency and Accountability – Why are both needed in ethical data collection?**
 
-   - Organizations must clearly state what data is collected
+   - Organisations must clearly state what data is collected
    - Must explain why it is collected
    - Must explain how it will be used
    - Transparency enables informed choices by individuals
@@ -1641,11 +1641,11 @@ Enrolment Table
 
 7. **Data Ownership and Control – What are the debates about who owns personal data?**
 
-   - Ongoing debate over whether individuals or organizations own data
+   - Ongoing debate over whether individuals or organisations own data
    - Issues of who has the right to control its use
    - Increasingly important as data becomes a valuable asset
 
-8. **Data Minimization and Purpose Limitation – Why should organizations limit what data they collect?**
+8. **Data Minimisation and Purpose Limitation – Why should organisations limit what data they collect?**
 
    - Only collect data necessary for a specific purpose
    - Do not retain data longer than needed
@@ -1659,9 +1659,9 @@ Enrolment Table
 
 10. **Legal and Regulatory Compliance – How do global laws influence ethical handling of personal data?**
 
-    - GDPR (EU): explicit consent, minimization, rights to access/delete, data portability, breach notification, heavy penalties
+    - GDPR (EU): explicit consent, minimisation, rights to access/delete, data portability, breach notification, heavy penalties
     - US: mix of federal sectoral laws (HIPAA, GLBA, COPPA, FERPA, FCRA) and state laws (CCPA, CDPA, Colorado Privacy Act)
-    - China: PIPL with strict consent, minimization, cross-border restrictions, severe penalties
+    - China: PIPL with strict consent, minimisation, cross-border restrictions, severe penalties
     - Australia: Privacy Act & APPs requiring transparency, data quality/security, access/correction rights, cross-border limits
     - International influence: GDPR drives cookie consent popups, COPPA shapes age restrictions on social media
 :::
@@ -1669,17 +1669,17 @@ Enrolment Table
 :::{seealso} APP Solutions
 :class: dropdown
 1. Why do the Australian Privacy Principles exist, and what overall purpose do they serve?
-   - Govern how organizations and government agencies handle personal information
+   - Govern how organisations and government agencies handle personal information
    - Ensure privacy, transparency, and accountability
    - Protect individual rights in collection, use, storage, and disclosure
 
-2. How do the APPs balance individual rights with the needs of organizations and government agencies?
+2. How do the APPs balance individual rights with the needs of organisations and government agencies?
 
    - Give individuals rights to access, correction, and privacy
-   - Allow organizations to collect and use data where necessary for functions
+   - Allow organisations to collect and use data where necessary for functions
    - Impose safeguards such as consent, limitation, and accountability
 
-3. What might happen to public trust if organizations consistently fail to follow the APPs?
+3. What might happen to public trust if organisations consistently fail to follow the APPs?
 
    - Erosion of user confidence
    - Increased concern about privacy and misuse of information
@@ -1687,72 +1687,72 @@ Enrolment Table
 
 4. How do the APPs connect with global privacy frameworks, such as the GDPR?
 
-   - Share common principles: consent, minimization, access, correction, security
+   - Share common principles: consent, minimisation, access, correction, security
    - Influence of GDPR on international data protection practices
-   - Help Australian organizations align with global standards
+   - Help Australian organisations align with global standards
 
-5. Why is it important for organizations to maintain a clear and up-to-date privacy policy?
+5. Why is it important for organisations to maintain a clear and up-to-date privacy policy?
 
    - Open and transparent management of personal information
    - Requirement for clearly expressed and current privacy policy
 
-6. In what situations might an individual reasonably choose to deal with an organization anonymously or under a pseudonym?
+6. In what situations might an individual reasonably choose to deal with an organisation anonymously or under a pseudonym?
 
    - APP requires option of anonymity or pseudonymity
    - Exceptions: impracticable or unlawful to do so
 
-7. What limits are placed on organizations when collecting personal information?
+7. What limits are placed on organisations when collecting personal information?
 
    - Collect only information necessary for functions
    - Must be collected by lawful and fair means
 
-8. How should an organization handle personal information it receives that it did not ask for?
+8. How should an organisation handle personal information it receives that it did not ask for?
 
    - Assess whether it could have been collected under APP 3
    - If not, must destroy or de-identify it
 
-9. What information must an organization provide to an individual when collecting their personal information?
+9. What information must an organisation provide to an individual when collecting their personal information?
 
    - Notify individual at time of collection
    - Purpose of collection
    - Any third parties with whom data may be shared
 
-10. Under what conditions can an organization use or disclose personal information for purposes other than the original collection?
+10. Under what conditions can an organisation use or disclose personal information for purposes other than the original collection?
 
    - Use or disclose only for the collected purpose
    - Exceptions apply in specific lawful cases
 
-11. What obligations do organizations have if they use personal information for direct marketing?
+11. What obligations do organisations have if they use personal information for direct marketing?
 
    - Only use under certain conditions
    - Must provide simple opt-out option
 
-12. What steps must organizations take before sending personal information overseas?
+12. What steps must organisations take before sending personal information overseas?
 
    - Take reasonable steps to ensure overseas recipients comply with APPs
 
-13. Why are organizations restricted in their use of government-related identifiers such as Medicare numbers?
+13. Why are organisations restricted in their use of government-related identifiers such as Medicare numbers?
 
    - Cannot adopt, use, or disclose government identifiers
    - Limited exceptions where permitted by law
 
-14. What steps must organizations take to ensure the personal information they collect is accurate and complete?
+14. What steps must organisations take to ensure the personal information they collect is accurate and complete?
 
     - Take reasonable steps to ensure accuracy
     - Ensure information is up-to-date
     - Ensure information is complete
 
-15. What kinds of measures should organizations implement to protect personal information?
+15. What kinds of measures should organisations implement to protect personal information?
 
     - Protect against misuse and interference
     - Prevent loss of information
-    - Guard against unauthorized access, modification, or disclosure
+    - Guard against unauthorised access, modification, or disclosure
 
 16. What rights do individuals have to access their personal information, and what are the exceptions?
-   - Right to access personal information held by organization
+   - Right to access personal information held by organisation
    - Subject to lawful exceptions
 
-17. How should organizations handle requests to correct inaccurate or misleading personal information?
+17. How should organisations handle requests to correct inaccurate or misleading personal information?
 
    - Take reasonable steps to correct information
    - Ensure it is accurate, up-to-date, complete, relevant, not misleading
@@ -1763,7 +1763,7 @@ Enrolment Table
 1. What is open data, and how is it typically made available?
 
    - Freely available for anyone to access, use, modify, and share
-   - Published by governments, public institutions, or private organizations
+   - Published by governments, public institutions, or private organisations
    - Provided in accessible, machine-readable formats
 
 2. What are the key features that make data truly "open"?
@@ -1772,7 +1772,7 @@ Enrolment Table
    - Usable, reusable, and redistributable without restrictions
    - Structured for easy analysis and integration with other datasets
 
-3. How does open data promote transparency and accountability in governments and organizations?
+3. How does open data promote transparency and accountability in governments and organisations?
 
    - Enables citizens to scrutinize actions and performance
    - Increases transparency and allows public oversight
@@ -1822,16 +1822,16 @@ Enrolment Table
 
     - Removing or altering personal information so individuals cannot be identified
     - Protects privacy while allowing analysis and research
-    - Helps organizations comply with laws like APPs or GDPR
+    - Helps organisations comply with laws like APPs or GDPR
     - Enables freer data sharing for research, policy, and innovation
 
 11. What are the key steps involved in de-identifying data before it is released?
 
     - Removing direct identifiers (names, addresses, phone numbers, emails, Medicare numbers)
-    - Modifying or generalizing indirect identifiers (e.g., age ranges instead of birth dates, partial removal of postcodes)
+    - Modifying or generalising indirect identifiers (e.g., age ranges instead of birth dates, partial removal of postcodes)
     - Applying data masking or perturbation (e.g., swapping data, adding noise, aggregating)
 
-12. How does de-identification help organizations comply with privacy laws such as the APPs or GDPR?
+12. How does de-identification help organisations comply with privacy laws such as the APPs or GDPR?
 
     - Reduces the risk that individuals can be identified
     - Meets requirements of privacy laws regarding personal data handling
@@ -2096,13 +2096,13 @@ One of:
 
 ### Use Case Diagrams
 
-### Existing Soluitions
+### Existing Solutions
 
 ### Success Criteria
 
 ### Mock-Ups
 
-### Psuedocode
+### Pseudocode
 
 ### Desk Checking
 

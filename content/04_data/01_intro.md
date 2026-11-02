@@ -3,19 +3,19 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
 - understand the nature of data-driven problems
-- understand the DIWK Pyramid and how the value of data comes from processing it
-- know the three layers of a data driven application.
+- understand the DIKW Pyramid and how the value of data comes from processing it
+- know the three layers of a data-driven application.
 :::
 
 ## What are Data-Driven Problems?
 
 > Data can be enormously helpful with formulating policies, providing services and performing government tasks. This is something that we will tackle systematically. Taking a data-driven approach refers to the systematic collection, management, analysis, interpretation and application of data. `nldigibeter_2019_problem`
 
-Data driven solutions have the following characteristics:
+Data-driven solutions have the following characteristics:
 
 - They access data that has been collected:
-  - This data may be collect by the solution or retrieved from a third-party
-  - Quality of the data is important than the quantity
+  - This data may be collected by the solution or retrieved from a third-party
+  - Quality of the data is more important than the quantity
 - They query that data:
   - The storage of the data must enable the querying of the data
 - They interpret the data:
@@ -23,11 +23,11 @@ Data driven solutions have the following characteristics:
 
 ### The DIKW Pyramid
 
-> The DIKW Pyramid is introduced is use to understand the way data is converted to wisdom, which is the one overall goal of data. `dataliteracy_2020_11`
+> The DIKW Pyramid is used to understand the way data is converted to wisdom, which is the one overall goal of data. `dataliteracy_2020_11`
 
 Data needs to be transformed to become meaningful and meet the needs of the user. This process is represented by the **DIKW Pyramid**.
 
-![DIWK Pyramid](./assets/01/DIKWPyramid.png)<p>&nbsp;</p>
+![DIKW Pyramid](./assets/01/DIKWPyramid.png)<p>&nbsp;</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u9DoQ9gY4z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -50,7 +50,7 @@ In summary:
 - **knowledge:** information + experience that relates to this kind of information
 - **wisdom:** knowledge + action in response to the new knowledge
 
-Consider this example for the DIWK Pyramid in action
+Consider this example for the DIKW Pyramid in action
 
 - **data:** 3000mm
 - **information:** 3000mm is the length of a timber board I am buying
@@ -63,20 +63,20 @@ For the purposes of this course, data-driven programming is programming that fil
 
 ## Working with data
 
-A data driven application can be thought as having three different viewing layers:
+A data-driven application can be thought of as having three different viewing layers:
 
 - **External layer:**
   - what the end user will see (UI)
   - ensure the data is represented in a way that enhances understanding
 - **Internal layer:**
-  - relates to the underlying operational and physical storage such a file systems, management systems etc.
+  - relates to the underlying operational and physical storage such as file systems, management systems etc.
   - modern computer technologies automate this process.
 - **Logical layer:**
   - conceptually sits between external layer and internal layer
   - relates to how data is stored that ensures:
-    - **data integrity:** data is maintained to to continue to have meaning and value
-    - **data reliability:** the ability to trust that data accurately reflects the facts descriptions or actions it is representing
-    - **data validity:** the data meets defined formats, rules and criteria or order to maintain integrity and reliability
+    - **data integrity:** data is maintained so that it continues to have meaning and value
+    - **data reliability:** the ability to trust that data accurately reflects the facts, descriptions or actions it is representing
+    - **data validity:** the data meets defined formats, rules and criteria in order to maintain integrity and reliability
   - usually symbolic or structured representations that show links between data
 
 :::{seealso} Data Solutions

@@ -7,7 +7,7 @@
 
 ## SELECT Statement
 
-The SQL `SELECT` statement is used to retrieve specific data from tables within a relational database. The data is return in the form of a table.
+The SQL `SELECT` statement is used to retrieve specific data from tables within a relational database. The data is returned in the form of a table.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/af4LckivJT8?si=s2x0uVst8VPKIzGn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -36,7 +36,7 @@ The `SELECT DISTINCT` statement is used in SQL to return only unique (non-duplic
 
 :::{tip} Summary
 :class: dropdown
-- **Purpose of `SELECT DISTINCT`**: The statement is used to filter out duplicate rows from a query result, returning only a unique set of values. The video uses the analogy of picking out only the unique crayon colors from a large, mixed box.
+- **Purpose of `SELECT DISTINCT`**: The statement is used to filter out duplicate rows from a query result, returning only a unique set of values. The video uses the analogy of picking out only the unique crayon colours from a large, mixed box.
 
 - **Syntax**: The basic syntax is `SELECT DISTINCT column_name FROM table_name;`. This query will return a list of all unique values from the specified column in the given table.
 
@@ -54,8 +54,8 @@ Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_distinct.asp) o
 :class: dropdown
 Using the **Movies** database:
 
-1. Display the name of all the directors
-2. Display the name of all the members
+1. Display the names of all the directors
+2. Display the names of all the members
 3. Display all the details in the movie table
 4. Display all the years of release with no duplications
 5. Display the number of all movies on hire and when they are due back

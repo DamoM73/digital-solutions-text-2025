@@ -19,7 +19,7 @@ Mind maps are not a list of things to do. They are a thinking tool. You use them
 Start by reading the stimulus carefully. Your mind map should capture and connect the key elements of the problem domain, including:
 
 - the **user and developer problem** — who needs this solution and why
-- **user interface requirements** — useability principles, visual communication needs, and interface components
+- **user interface requirements** — usability principles, visual communication needs, and interface components
 - **data requirements** — what data is needed, where it comes from, and how it is structured
 - **programmed components** — the functions, algorithms, and logic the solution will need
 - **constraints and limitations** — technical, environmental, or scope boundaries

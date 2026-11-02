@@ -7,9 +7,9 @@ By the end of this section you will:
 - know how to use parameterised queries to prevent SQL injection attacks
 :::
 
-Once you have create a connection and cursor, there are two steps to running a query in using `sqlite3` and Python:
+Once you have created a connection and cursor, there are two steps to running a query using `sqlite3` and Python:
 
-1. Excute the SQL query statement
+1. Execute the SQL query statement
 2. Fetch the results
 
 ## Queries without variables
@@ -45,7 +45,7 @@ cursor.execute(
     """
 )
 
-reults = cursor.fetchall()
+results = cursor.fetchall()
 ```
 
 ### Full example
@@ -89,7 +89,7 @@ class Datastore:
 
 **Test**
 
-Here is the code for `test.py`. When you run it, notice the stucture of the returned values.
+Here is the code for `test.py`. When you run it, notice the structure of the returned values.
 
 ```{code} python
 :linenos:
@@ -103,17 +103,17 @@ pprint(database.get_customers_contact())
 
 :::{important} Explanation of Code
 :class: dropdown
-`pprint` is short for pretty print. It's Python's module for printing datastructures in a more human readable way.
+`pprint` is short for pretty print. It's Python's module for printing data structures in a more human-readable way.
 :::
 
 :::{seealso} Activities
 :class: dropdown
-Go back over your queries from the Activites from the SQL sections and write up the SQL statements using Python and `sqlite3`
+Go back over your queries from the Activities from the SQL sections and write up the SQL statements using Python and `sqlite3`
 :::
 
 ## Queries with variables
 
-SQL queries with hardcoded variable provide a limited function. They may be useful for retrieving lists, but any filtering becomes a nightmare. If you want the details of each specific customer, you would have write a method for every single customer. Therefore we need functions that accept variables, but methods incorporate variables into SQL statements are open to malicious attacks called SQL injections.
+SQL queries with hardcoded variables provide a limited function. They may be useful for retrieving lists, but any filtering becomes a nightmare. If you want the details of each specific customer, you would have to write a method for every single customer. Therefore we need functions that accept variables, but methods that incorporate variables into SQL statements are open to malicious attacks called SQL injections.
 
 ### SQL Injections
 
@@ -130,7 +130,7 @@ The following Computerphile videos explain SQLi and provide an example of an SQL
 The video explains SQL injection, a common and dangerous method for hacking websites. Here are the main points covered:
 
 - **What is SQL?** SQL (Structured Query Language), sometimes pronounced "sequel," is a simple, English-like programming language used to communicate with and manage databases. It's used to perform actions like selecting, inserting, updating, or deleting data.
-- **The Vulnerability:** The vulnerability arises when a website takes user input (like a username from a login form) and directly inserts it into an SQL command without properly sanitizing it first.
+- **The Vulnerability:** The vulnerability arises when a website takes user input (like a username from a login form) and directly inserts it into an SQL command without properly sanitising it first.
 - **How the Hack Works:** An attacker can "inject" their own SQL commands into the input field. For example, by including a quotation mark (') or a semicolon (;), they can end the website's intended command and add their own, such as `DROP ALL DATABASES`, which would delete everything.
 - **Why it Happens:** This is often a problem with languages like PHP, which are easy to learn and widely used (e.g., WordPress, early Facebook). The low barrier to entry means many developers might not be aware of this security risk and fail to implement proper safeguards.
 - **Prevention:** The correct way to prevent SQL injection is by using **prepared statements**. Instead of building a single command string with user input, the developer first sends a template of the command to the database (with placeholders like a question mark `?`) and then sends the user data separately. This ensures the database treats the user input strictly as data, not as executable commands, effectively neutralizing the threat.
@@ -147,15 +147,15 @@ This video explains and demonstrates how SQL injections work. Here's a summary o
     - **Normal Search:** Searching for "hammer" correctly returns items with "hammer" in their name.
     - **The Attack:** By entering a single quote (') into the search bar, he triggers a server error. This indicates the site is vulnerable because the quote is being interpreted as part of the code rather than just text.
     - **Extracting Data:** Dr. Pound then uses more advanced SQL commands to trick the database into revealing all the data it holds, including a complete list of usernames and their hashed passwords. He does this by "unioning" the product search results with the data from the user table.
-- **Why It's Dangerous:** The video emphasizes how this type of attack can expose confidential user data like usernames, passwords, and other personal information. This can lead to privacy breaches, financial loss, and legal issues for the company that has been hacked.
-- **How to Prevent It:** The speaker mentions that proper security measures, like "parameterized queries" and "sanitizing inputs," can prevent these attacks by ensuring user input is treated as text and not as executable code.
+- **Why It's Dangerous:** The video emphasises how this type of attack can expose confidential user data like usernames, passwords, and other personal information. This can lead to privacy breaches, financial loss, and legal issues for the company that has been hacked.
+- **How to Prevent It:** The speaker mentions that proper security measures, like "parameterised queries" and "sanitising inputs," can prevent these attacks by ensuring user input is treated as text and not as executable code.
 :::
 
 Now we understand the threat of SQLi and how to use **parameterised queries** to prevent them, it is time to learn how to do this in Python.
 
 ### Creating Parameterised Queries
 
-We will be using the dictionary `sqlite3` method of parameterising our queries.To do this `slqite3` uses additional arguements in the `execute` command. The first argument of the `execute` command is still a string with one minor change. Where we want to place a variable
+We will be using the dictionary `sqlite3` method of parameterising our queries. To do this, `sqlite3` uses additional arguments in the `execute` command. The first argument of the `execute` command is still a string with one minor change. Where we want to place a variable, we use a named placeholder, such as `:customer_id`.
 
  Add the code below to the bottom of the `Datastore` class.
 
@@ -185,11 +185,11 @@ We will be using the dictionary `sqlite3` method of parameterising our queries.T
 ```
 
 :::{important} Explanation of Code
-- **line 33** &rarr; note the addition of the `customer_id` arguement (or parameter)
+- **line 33** &rarr; note the addition of the `customer_id` argument (or parameter)
 - **line 34** &rarr; the `WHERE` clause uses a named placeholder `:customer_id` which is replaced by the value from the dictionary
 :::
 
 :::{seealso} Activities
 :class: dropdown
-Lok back over your Python code from the previous activites. Choose four queries that you can make gerneric by adding parameters. Write the new methods and test them.
+Look back over your Python code from the previous activities. Choose four queries that you can make generic by adding parameters. Write the new methods and test them.
 :::

@@ -4,10 +4,10 @@
 By the end of this section you will:
 - understand malicious threats to data security
 - understand non-malicious threats to data security
-- know a range measure that be undertaken to protect against data threats
+- know a range of measures that can be undertaken to protect against data threats
 :::
 
-Data security threats are risks that compromise the confidentiality, integrity, or availability of digital information. These threats can originate from malicious actors such as hackers, cybercriminals, or insiders, as well as from unintentional sources like software bugs or human error. Common threats include malware, phishing attacks, ransomware, data breaches, and denial-of-service (DoS) attacks. As digital systems become more interconnected, the potential for exploitation grows, making it essential for individuals and organizations to implement robust security measures to protect sensitive data and ensure system reliability.
+Data security threats are risks that compromise the confidentiality, integrity, or availability of digital information. These threats can originate from malicious actors such as hackers, cybercriminals, or insiders, as well as from unintentional sources like software bugs or human error. Common threats include malware, phishing attacks, ransomware, data breaches, and denial-of-service (DoS) attacks. As digital systems become more interconnected, the potential for exploitation grows, making it essential for individuals and organisations to implement robust security measures to protect sensitive data and ensure system reliability.
 
 Data security threats fall under two main categories:
 
@@ -18,32 +18,32 @@ Data security threats fall under two main categories:
 
 ## Malicious Threats 📝
 
-Malicious data security threats are intentional attacks designed to compromise the confidentiality, integrity, or availability of data. There are numerous malicious threats to data security that organizations and individuals need to be aware of. Here are some of the most common threats:
+Malicious data security threats are intentional attacks designed to compromise the confidentiality, integrity, or availability of data. There are numerous malicious threats to data security that organisations and individuals need to be aware of. Here are some of the most common threats:
 
 ### Malware 📝
 
-Malware is malicious software designed to disrupt, damage, or gain unauthorized access to computer systems. This includes:
+Malware is malicious software designed to disrupt, damage, or gain unauthorised access to computer systems. This includes:
 
 - **Viruses**
   - designed to replicate themselves and spread from one computer to another
   - often disrupting operations, corrupting or deleting data, and potentially causing significant damage to systems and networks
-  - spread by attaching itself to executable files or documents
+  - spread by attaching themselves to executable files or documents
 - **Worms**
   - self-replicating malware
   - spreads autonomously across networks, exploiting vulnerabilities without needing to attach itself to an existing program
   - causes harm by consuming bandwidth, overloading systems, or delivering additional payloads such as ransomware.
 - **Trojans**
-  - disguises itself as a legitimate or benign application to deceive users into installing it
-  - allows attackers to gain unauthorized access to the user's system to steal data, create backdoors, or perform other harmful actions once it is executed.
+  - disguise themselves as legitimate or benign applications to deceive users into installing it
+  - allow attackers to gain unauthorised access to the user's system to steal data, create backdoors, or perform other harmful actions once it is executed.
 - **Ransomware**
   - designed to block access to a computer system or data
   - typically encrypts files until a ransom is paid to the attacker to restore access
   - often spreads through phishing emails, malicious downloads, or exploit kits
-  - can cause significant disruption to individuals and organizations by locking them out of their own data or systems
+  - can cause significant disruption to individuals and organisations by locking them out of their own data or systems
 - **Spyware**
   - designed to secretly monitor and collect information about a user's activities without their knowledge or consent
   - data can include browsing habits, keystrokes, login credentials, and other sensitive information
-  - data is sent to the attacker for malicious purposes such as identity theft, financial fraud, or unauthorized access to systems and accounts.
+  - data is sent to the attacker for malicious purposes such as identity theft, financial fraud, or unauthorised access to systems and accounts.
 - **Adware**
   - automatically displays or downloads advertising content, such as banners or pop-ups, on a user's computer or mobile device, often without their consent or knowledge.
   - while not always malicious, it can invade privacy by tracking user behaviour and gathering personal information for targeted advertising, and in some cases, it can serve as a conduit for more harmful malware.
@@ -58,7 +58,7 @@ The National Health Service (NHS) in the United Kingdom was particularly hard hi
 
 ### Phishing 📝
 
-A phishing attack is a type of cybercrime where attackers impersonate legitimate organizations or individuals to trick people into revealing sensitive information, such as passwords, credit card numbers, or login credentials. This is usually done through deceptive emails, messages, or websites that appear trustworthy but are designed to steal data or install malicious software. Phishing relies on social engineering techniques, exploiting human trust rather than technical vulnerabilities. These attacks can lead to identity theft, financial loss, and unauthorized access to personal or organizational systems.
+A phishing attack is a type of cybercrime where attackers impersonate legitimate organisations or individuals to trick people into revealing sensitive information, such as passwords, credit card numbers, or login credentials. This is usually done through deceptive emails, messages, or websites that appear trustworthy but are designed to steal data or install malicious software. Phishing relies on social engineering techniques, exploiting human trust rather than technical vulnerabilities. These attacks can lead to identity theft, financial loss, and unauthorised access to personal or organisational systems.
 
 **Phishing Example**
 
@@ -74,7 +74,7 @@ A man-in-the-middle (MITM) attack occurs when a malicious actor secretly interce
 
 **Man-in-the-Middle Attack Example**
 
-In 2015, Lenovo was found to have pre-installed a software called [Superfish](https://en.wikipedia.org/wiki/Superfish) on some of its laptops.
+In 2015, Lenovo was found to have pre-installed software called [Superfish](https://en.wikipedia.org/wiki/Superfish) on some of its laptops.
 
 Superfish was an adware program that intercepted users' web traffic to inject advertisements. It did this by installing its own self-signed root certificate authority, allowing it to intercept and decrypt HTTPS traffic between the user's browser and websites, essentially performing a Man-in-the-Middle attack.  
 
@@ -94,7 +94,7 @@ The attack highlighted the vulnerabilities of IoT devices and the significant im
 
 ### Insider Threats 📝
 
-Insider threats occur when individuals within an organization—such as employees, contractors, or business partners—intentionally or unintentionally compromise the security of the organization’s data or systems. These threats can involve stealing sensitive information, sabotaging systems, or accidentally exposing data through negligence or poor security practices. Unlike external attackers, insiders often have legitimate access to critical systems and data, making their actions harder to detect and defend against. Insider threats pose a significant risk because they exploit trust and access, and can result in data breaches, financial loss, and damage to an organization’s reputation.
+Insider threats occur when individuals within an organisation—such as employees, contractors, or business partners—intentionally or unintentionally compromise the security of the organisation’s data or systems. These threats can involve stealing sensitive information, sabotaging systems, or accidentally exposing data through negligence or poor security practices. Unlike external attackers, insiders often have legitimate access to critical systems and data, making their actions harder to detect and defend against. Insider threats pose a significant risk because they exploit trust and access, and can result in data breaches, financial loss, and damage to an organisation’s reputation.
 
 **Insider Threat Example**
 
@@ -106,7 +106,7 @@ His actions had profound implications for national security and privacy, leading
 
 ### SQL Injections 📝
 
-SQL injection is a type of cyberattack where an attacker inserts malicious SQL (Structured Query Language) code into a web application's input fields to manipulate or access the underlying database. This can allow attackers to bypass authentication, view or modify sensitive data, delete records, or even gain full control over the database server. SQL injections typically occur when user inputs are not properly validated or sanitized, making the application vulnerable. These attacks are dangerous because they can compromise the confidentiality and integrity of stored data, and are often used to exploit poorly secured websites and applications.
+SQL injection is a type of cyberattack where an attacker inserts malicious SQL (Structured Query Language) code into a web application's input fields to manipulate or access the underlying database. This can allow attackers to bypass authentication, view or modify sensitive data, delete records, or even gain full control over the database server. SQL injections typically occur when user inputs are not properly validated or sanitised, making the application vulnerable. These attacks are dangerous because they can compromise the confidentiality and integrity of stored data, and are often used to exploit poorly secured websites and applications.
 
 **SQL Injection Example**
 
@@ -130,7 +130,7 @@ This incident highlighted the severe impact of XSS vulnerabilities and the impor
 
 ### Advanced Persistent Threats (APTs)
 
-Advanced Persistent Threats (APTs) are prolonged and targeted cyberattacks in which an intruder gains unauthorized access to a network and remains undetected for an extended period. Unlike typical attacks that aim for quick disruption or theft, APTs are often carried out by highly skilled attackers—such as state-sponsored groups—with the goal of stealing sensitive data, conducting espionage, or sabotaging operations. These attacks use sophisticated techniques like spear phishing, zero-day exploits, and custom malware to infiltrate systems and maintain access over time. Because of their stealthy nature and targeted approach, APTs are particularly dangerous to governments, corporations, and critical infrastructure.
+Advanced Persistent Threats (APTs) are prolonged and targeted cyberattacks in which an intruder gains unauthorised access to a network and remains undetected for an extended period. Unlike typical attacks that aim for quick disruption or theft, APTs are often carried out by highly skilled attackers—such as state-sponsored groups—with the goal of stealing sensitive data, conducting espionage, or sabotaging operations. These attacks use sophisticated techniques like spear phishing, zero-day exploits, and custom malware to infiltrate systems and maintain access over time. Because of their stealthy nature and targeted approach, APTs are particularly dangerous to governments, corporations, and critical infrastructure.
 
 **Advanced Persistent Threat Example**
 
@@ -142,7 +142,7 @@ This attack highlighted the potential of cyber warfare and the risks posed by AP
 
 ### Zero-Day Exploits
 
-Zero-day exploits are cyberattacks that target previously unknown vulnerabilities in software or hardware—flaws that developers have had "zero days" to fix because they are not yet aware of them. These exploits are especially dangerous because they occur before a patch or update can be released, leaving systems defenceless. Attackers use zero-day vulnerabilities to gain unauthorized access, steal data, or compromise systems, often with highly targeted and stealthy methods. Because no existing security measures may detect or block them, zero-day exploits are highly prized by cybercriminals and nation-state hackers alike, posing significant risks to individuals, organizations, and governments.
+Zero-day exploits are cyberattacks that target previously unknown vulnerabilities in software or hardware—flaws that developers have had "zero days" to fix because they are not yet aware of them. These exploits are especially dangerous because they occur before a patch or update can be released, leaving systems defenceless. Attackers use zero-day vulnerabilities to gain unauthorised access, steal data, or compromise systems, often with highly targeted and stealthy methods. Because no existing security measures may detect or block them, zero-day exploits are highly prized by cybercriminals and nation-state hackers alike, posing significant risks to individuals, organisations, and governments.
 
 **Zero-Day Exploits Example**
 
@@ -150,23 +150,23 @@ Both the **Stuxnet** worm and the **WannaCry** ransomware used zero-day exploits
 
 **Stuxnet** used the following exploits:
 
-- **LNK Vulnerability (CVE-2010-2568): Stuxnet exploited a vulnerability in how Windows processes shortcut files (.LNK). Simply viewing an infected USB drive in Windows Explorer would trigger the execution of the malware.
-- **Windows Print Spooler Vulnerability (CVE-2010-2729): This vulnerability allowed remote code execution through the Windows Print Spooler service, enabling the malware to spread across networks.
-- **Windows Task Scheduler Vulnerability (CVE-2010-3888): Stuxnet exploited a vulnerability in the Windows Task Scheduler to elevate privileges and gain administrative rights on infected systems.
-- **MS08-067 (CVE-2008-4250): Although not a zero-day at the time of the Stuxnet attack, this older vulnerability was used to propagate across networked systems by exploiting a flaw in the Windows Server Service.
-- **Win32k.sys Vulnerability (CVE-2010-2743): This vulnerability in the Windows kernel allowed Stuxnet to execute arbitrary code with kernel-mode privileges, providing extensive control over the infected system.
+- **LNK Vulnerability (CVE-2010-2568)**: Stuxnet exploited a vulnerability in how Windows processes shortcut files (.LNK). Simply viewing an infected USB drive in Windows Explorer would trigger the execution of the malware.
+- **Windows Print Spooler Vulnerability (CVE-2010-2729)**: This vulnerability allowed remote code execution through the Windows Print Spooler service, enabling the malware to spread across networks.
+- **Windows Task Scheduler Vulnerability (CVE-2010-3888)**: Stuxnet exploited a vulnerability in the Windows Task Scheduler to elevate privileges and gain administrative rights on infected systems.
+- **MS08-067 (CVE-2008-4250)**: Although not a zero-day at the time of the Stuxnet attack, this older vulnerability was used to propagate across networked systems by exploiting a flaw in the Windows Server Service.
+- **Win32k.sys Vulnerability (CVE-2010-2743)**: This vulnerability in the Windows kernel allowed Stuxnet to execute arbitrary code with kernel-mode privileges, providing extensive control over the infected system.
 
 **WannaCry** used the [EternalBlue](https://en.wikipedia.org/wiki/EternalBlue) to exploit a flaw in the SMBv1 (Server Message Block) protocol, allowing the malware to execute arbitrary code on the target machine without requiring user interaction. The exploit took advantage of the way SMB handled specially crafted packets, causing the system to execute the attacker's code.
 
 ### Supply Chain Attacks
 
-A supply chain attack is a cyberattack that targets the less secure elements of an organization's supply network, such as third-party vendors, contractors, or software providers, to compromise the primary target. Instead of attacking the main organization directly, hackers infiltrate trusted partners or software updates to insert malicious code or gain unauthorized access. Once the compromised component is integrated into the main system, the attacker can exploit it to steal data, disrupt operations, or move laterally within the network. These attacks are particularly dangerous because they exploit trusted relationships and can bypass traditional security defences, as seen in major incidents like the SolarWinds breach.
+A supply chain attack is a cyberattack that targets the less secure elements of an organisation's supply network, such as third-party vendors, contractors, or software providers, to compromise the primary target. Instead of attacking the main organisation directly, hackers infiltrate trusted partners or software updates to insert malicious code or gain unauthorised access. Once the compromised component is integrated into the main system, the attacker can exploit it to steal data, disrupt operations, or move laterally within the network. These attacks are particularly dangerous because they exploit trusted relationships and can bypass traditional security defences, as seen in major incidents like the SolarWinds breach.
 
 **Supply Chain Attack Example**
 
 One of the most notorious examples of a supply chain attack is the [2020 SolarWinds hack](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach).  
 
-In this attack, cybercriminals infiltrated the IT management company SolarWinds and inserted malicious code into their Orion software updates, which were then distributed to SolarWinds' customers. This compromised update created a backdoor into the systems of approximately 18,000 organizations, including numerous U.S. government agencies and Fortune 500 companies. The attackers, believed to be associated with the Russian state-sponsored group APT29 (also known as Cozy Bear), used this access to conduct extensive espionage, gathering sensitive information from high-profile targets.  
+In this attack, cybercriminals infiltrated the IT management company SolarWinds and inserted malicious code into their Orion software updates, which were then distributed to SolarWinds' customers. This compromised update created a backdoor into the systems of approximately 18,000 organisations, including numerous U.S. government agencies and Fortune 500 companies. The attackers, believed to be associated with the Russian state-sponsored group APT29 (also known as Cozy Bear), used this access to conduct extensive espionage, gathering sensitive information from high-profile targets.  
 
 This incident highlighted the vulnerabilities in software supply chains and the extensive impact such breaches can have on national security and corporate infrastructure
 
@@ -190,7 +190,7 @@ Despite being alerted to the vulnerability and the availability of a patch two m
 
 ### Hardware Failures
 
-Hardware failures pose a significant threat to data security and availability by causing sudden loss, corruption, or inaccessibility of important information. Failures can occur in hard drives, servers, storage devices, or networking equipment due to wear and tear, manufacturing defects, power surges, or environmental conditions like overheating. When hardware malfunctions, it can result in permanent data loss if proper backups and redundancy systems are not in place. Additionally, recovery from hardware failure can be time-consuming and costly, making it essential for organizations to implement robust disaster recovery plans, regular backups, and hardware monitoring to minimize the risk and impact of such failures.
+Hardware failures pose a significant threat to data security and availability by causing sudden loss, corruption, or inaccessibility of important information. Failures can occur in hard drives, servers, storage devices, or networking equipment due to wear and tear, manufacturing defects, power surges, or environmental conditions like overheating. When hardware malfunctions, it can result in permanent data loss if proper backups and redundancy systems are not in place. Additionally, recovery from hardware failure can be time-consuming and costly, making it essential for organisations to implement robust disaster recovery plans, regular backups, and hardware monitoring to minimise the risk and impact of such failures.
 
 **Hardware Failure Example**
 
@@ -202,7 +202,7 @@ Many businesses experienced prolonged outages, and some permanently lost data du
 
 ### Software Bugs
 
-Software bugs are flaws or errors in a program's code that can create vulnerabilities and pose serious threats to data security. These bugs may cause systems to behave unpredictably, expose sensitive information, or allow unauthorized access to data. For example, a coding error might disable authentication checks or mishandle user input, leading to issues like data corruption, privilege escalation, or security breaches. Because software is often complex and constantly updated, bugs can be difficult to detect and may remain unnoticed until exploited by attackers. To reduce these risks, developers must rigorously test code, apply updates and patches promptly, and follow secure coding practices.
+Software bugs are flaws or errors in a program's code that can create vulnerabilities and pose serious threats to data security. These bugs may cause systems to behave unpredictably, expose sensitive information, or allow unauthorised access to data. For example, a coding error might disable authentication checks or mishandle user input, leading to issues like data corruption, privilege escalation, or security breaches. Because software is often complex and constantly updated, bugs can be difficult to detect and may remain unnoticed until exploited by attackers. To reduce these risks, developers must rigorously test code, apply updates and patches promptly, and follow secure coding practices.
 
 **Software Bug Example**
 
@@ -214,7 +214,7 @@ This exemplifies how software bugs can lead to severe data loss and operational 
 
 ### Power Outages
 
-Power outages can pose significant threats to data security by causing sudden system shutdowns that may lead to data loss, corruption, or hardware damage. When computers or servers lose power unexpectedly, open files may not be saved properly, databases can become inconsistent, and critical processes may be interrupted. Repeated power disruptions can also wear down hardware over time. Without proper backup power solutions, such as uninterruptible power supplies (UPS), and automated data-saving mechanisms, organizations risk losing important information and facing extended downtime. In sensitive environments, even a brief outage can disrupt business operations and compromise data integrity.
+Power outages can pose significant threats to data security by causing sudden system shutdowns that may lead to data loss, corruption, or hardware damage. When computers or servers lose power unexpectedly, open files may not be saved properly, databases can become inconsistent, and critical processes may be interrupted. Repeated power disruptions can also wear down hardware over time. Without proper backup power solutions, such as uninterruptible power supplies (UPS), and automated data-saving mechanisms, organisations risk losing important information and facing extended downtime. In sensitive environments, even a brief outage can disrupt business operations and compromise data integrity.
 
 **Power Outages Example**
 
@@ -224,11 +224,11 @@ The facility experienced a series of power outages caused by electrical surges. 
 
 ### Natural Disasters
 
-Natural disasters such as floods, earthquakes, fires, and hurricanes can cause severe damage to physical infrastructure, resulting in the loss or inaccessibility of critical data. These events can destroy servers, data centres, and networking equipment, leading to permanent data loss if proper backups and disaster recovery plans are not in place. In addition to physical destruction, natural disasters can also disrupt power and internet connectivity, hindering access to cloud-based systems and remote services. To mitigate these threats, organizations should implement off-site backups, cloud storage, redundant systems, and comprehensive disaster recovery strategies to ensure data resilience and business continuity in the face of unforeseen events.
+Natural disasters such as floods, earthquakes, fires, and hurricanes can cause severe damage to physical infrastructure, resulting in the loss or inaccessibility of critical data. These events can destroy servers, data centres, and networking equipment, leading to permanent data loss if proper backups and disaster recovery plans are not in place. In addition to physical destruction, natural disasters can also disrupt power and internet connectivity, hindering access to cloud-based systems and remote services. To mitigate these threats, organisations should implement off-site backups, cloud storage, redundant systems, and comprehensive disaster recovery strategies to ensure data resilience and business continuity in the face of unforeseen events.
 
 **Natural Disasters Example**
 
-A well-known example of data security being jeopardized due to natural disasters occurred during [Hurricane Sandy in 2012](https://abcnews.go.com/Technology/hurricane-sandy-takes-york-city-data-center-gawker/story?id=17601425).  
+A well-known example of data security being jeopardised due to natural disasters occurred during [Hurricane Sandy in 2012](https://abcnews.go.com/Technology/hurricane-sandy-takes-york-city-data-center-gawker/story?id=17601425).  
 
 The hurricane caused extensive power outages across the north-eastern United States, including in New York City. This led to significant disruptions at data centres, including those managed by Datagram, which hosted websites like Gawker, BuzzFeed, and the Huffington Post. The power outages caused by the hurricane resulted in a loss of connectivity and server downtime, highlighting vulnerabilities in data centre infrastructure.  
 
@@ -236,7 +236,7 @@ Despite having backup generators, Datagram's fuel pumps were located in a baseme
 
 ### Network Failures
 
-Network failures occur when the communication links between systems break down, posing serious threats to data availability and business operations. These failures can be caused by hardware malfunctions, software misconfigurations, cyberattacks, or issues with internet service providers. When a network goes down, users may lose access to critical data, experience interruptions in data transfer, or face delays in real-time services. In some cases, data being transmitted during the failure may be lost or corrupted. Network failures can also expose systems to security risks if fallback mechanisms are not secure. To minimize these threats, organizations should implement redundant network paths, monitor systems continuously, and have failover plans in place.
+Network failures occur when the communication links between systems break down, posing serious threats to data availability and business operations. These failures can be caused by hardware malfunctions, software misconfigurations, cyberattacks, or issues with internet service providers. When a network goes down, users may lose access to critical data, experience interruptions in data transfer, or face delays in real-time services. In some cases, data being transmitted during the failure may be lost or corrupted. Network failures can also expose systems to security risks if fallback mechanisms are not secure. To minimise these threats, organisations should implement redundant network paths, monitor systems continuously, and have failover plans in place.
 
 **Network Failures Example**
 
@@ -248,19 +248,19 @@ The network failure exposed vulnerabilities in the bank's IT infrastructure and 
 
 ### Data Synchronization Issues
 
-Data synchronization issues arise when data stored in multiple locations—such as servers, databases, or devices—fails to update consistently and accurately across all systems. These inconsistencies can lead to outdated, conflicting, or incomplete information being used, which poses serious threats to data integrity and decision-making. Synchronization problems may occur due to network delays, software bugs, misconfigured sync settings, or interrupted processes. In critical systems, such issues can result in duplicated transactions, data loss, or system errors. To prevent these threats, organizations must use reliable synchronization protocols, ensure consistent time-stamping, and implement regular checks to detect and resolve discrepancies quickly.
+Data synchronization issues arise when data stored in multiple locations—such as servers, databases, or devices—fails to update consistently and accurately across all systems. These inconsistencies can lead to outdated, conflicting, or incomplete information being used, which poses serious threats to data integrity and decision-making. Synchronization problems may occur due to network delays, software bugs, misconfigured sync settings, or interrupted processes. In critical systems, such issues can result in duplicated transactions, data loss, or system errors. To prevent these threats, organisations must use reliable synchronization protocols, ensure consistent time-stamping, and implement regular checks to detect and resolve discrepancies quickly.
 
 **Data Synchronization Issues Example**
 
 Another example of data synchronization issues risking data security is the [T-Mobile data breach in 2020](https://www.cpomagazine.com/cyber-security/second-data-breach-in-2020-for-t-mobile-exposed-customer-and-call-related-information-of-200000-subscribers/).  
 
-The breach was attributed to issues in synchronizing customer data across different databases and systems. Attackers exploited these synchronization gaps, which resulted from complex data migration and integration processes within T-Mobile's infrastructure. This allowed unauthorized access to sensitive information, including personal data of over 200,000 customers.  
+The breach was attributed to issues in synchronizing customer data across different databases and systems. Attackers exploited these synchronization gaps, which resulted from complex data migration and integration processes within T-Mobile's infrastructure. This allowed unauthorised access to sensitive information, including personal data of over 200,000 customers.  
 
 The incident exposed vulnerabilities in how data was managed and synchronized, highlighting the risks associated with inconsistent data replication and integration in large-scale IT environments.
 
 ### Lack of Proper Backups
 
-A lack of proper backups poses a critical threat to data security, as it leaves organizations and individuals vulnerable to permanent data loss in the event of system failures, cyberattacks, accidental deletion, or natural disasters. Without reliable and up-to-date backups, it can be impossible to recover important files or restore operations after a disruption. This not only results in lost productivity and potential financial damage, but can also violate data protection regulations. Effective backup strategies—such as automated backups, off-site storage, and routine testing of recovery processes—are essential to ensure data can be restored quickly and accurately when needed.
+A lack of proper backups poses a critical threat to data security, as it leaves organisations and individuals vulnerable to permanent data loss in the event of system failures, cyberattacks, accidental deletion, or natural disasters. Without reliable and up-to-date backups, it can be impossible to recover important files or restore operations after a disruption. This not only results in lost productivity and potential financial damage, but can also violate data protection regulations. Effective backup strategies—such as automated backups, off-site storage, and routine testing of recovery processes—are essential to ensure data can be restored quickly and accurately when needed.
 
 **Lack of Proper Backups Example**
 
@@ -272,7 +272,7 @@ Code Spaces had not maintained offsite backups or a robust backup strategy, lead
 
 ### Environmental Factors
 
-Environmental factors such as temperature extremes, humidity, dust, and electromagnetic interference can pose serious threats to data security by damaging hardware components and disrupting normal system operations. Overheating can lead to hard drive failures, data corruption, or complete system crashes, while high humidity or dust build-up can cause short circuits and physical degradation of devices. Even subtle environmental changes can affect the reliability and longevity of data storage systems. To protect against these risks, organizations should maintain controlled environments for their IT infrastructure, including proper ventilation, air filtration, and environmental monitoring systems to detect and respond to harmful conditions promptly.
+Environmental factors such as temperature extremes, humidity, dust, and electromagnetic interference can pose serious threats to data security by damaging hardware components and disrupting normal system operations. Overheating can lead to hard drive failures, data corruption, or complete system crashes, while high humidity or dust build-up can cause short circuits and physical degradation of devices. Even subtle environmental changes can affect the reliability and longevity of data storage systems. To protect against these risks, organisations should maintain controlled environments for their IT infrastructure, including proper ventilation, air filtration, and environmental monitoring systems to detect and respond to harmful conditions promptly.
 
 **Environmental Factors Example**
 
@@ -292,17 +292,17 @@ Protecting against both malicious and non-malicious attacks involves a multi-lay
 
 - **Install and Maintain Antivirus Software**: Use reputable antivirus and anti-malware programs to detect and remove malicious software. Ensure these programs are updated regularly to protect against the latest threats.
 - **Regular Software Updates**: Keep all software, including operating systems, browsers, and plugins, up to date to patch vulnerabilities that malware could exploit.
-- **Use Firewalls**: Implement network firewalls to block unauthorized access to your systems and monitor incoming and outgoing network traffic for suspicious activity.
+- **Use Firewalls**: Implement network firewalls to block unauthorised access to your systems and monitor incoming and outgoing network traffic for suspicious activity.
 - **Enable Email Filters**: Use email filtering tools to detect and block phishing emails and attachments that may contain malware.
-- **Use Intrusion Detection and Prevention Systems (IDPS): Deploy IDPS to monitor network traffic for suspicious activity and potential intrusions, enabling prompt action to mitigate threats.
+- **Use Intrusion Detection and Prevention Systems (IDPS)**: Deploy IDPS to monitor network traffic for suspicious activity and potential intrusions, enabling prompt action to mitigate threats.
 - **Behavioural Analytics**: Implement tools that use machine learning to analyse user behaviour and detect anomalies that may indicate insider threats
-- **Prepared Statements**: Ensure that SQL queries are parameterized, which separates SQL code from data, making it impossible for an attacker to alter the query structure
-- **Custom Error Messages**: Avoid exposing detailed error messages to users. Customize error messages to prevent attackers from gaining insights into the database structure.
+- **Prepared Statements**: Ensure that SQL queries are parameterised, which separates SQL code from data, making it impossible for an attacker to alter the query structure
+- **Custom Error Messages**: Avoid exposing detailed error messages to users. Customise error messages to prevent attackers from gaining insights into the database structure.
 - **Whitelisting**: Validate input against a list of allowed characters or patterns
-- **Sanitize User Input**: Ensure all user input is sanitized to remove or encode any potentially harmful characters before processing.
+- **Sanitize User Input**: Ensure all user input is sanitised to remove or encode any potentially harmful characters before processing.
 - **Encode Output**: Encode all data before rendering it on the webpage to prevent the browser from interpreting it as executable code.
-- **Use Secure Web Frameworks**: Utilize frameworks that have built-in protections against XSS, such as Ruby on Rails, Django, and Angular.
-- **Encrypt Sensitive Data**: Ensure sensitive data is encrypted both at rest and in transit to protect it from unauthorized access.
+- **Use Secure Web Frameworks**: Utilise frameworks that have built-in protections against XSS, such as Ruby on Rails, Django, and Angular.
+- **Encrypt Sensitive Data**: Ensure sensitive data is encrypted both at rest and in transit to protect it from unauthorised access.
 - **Endpoint Security**: Use advanced EPP/EDR solutions to monitor and respond to suspicious activities on endpoints, leveraging behavioural analysis to identify potential zero-day exploits.
 - **Synchronous Replication**: Use synchronous replication to ensure that data is written to multiple locations simultaneously, reducing the risk of discrepancies.
 - **Automation Tools**: Use automated data synchronization tools and processes to reduce the risk of human error and ensure consistent data updates across systems.
@@ -322,27 +322,27 @@ Protecting against both malicious and non-malicious attacks involves a multi-lay
 - **Email Authentication Protocols**: Use email authentication protocols to prevent email spoofing and ensure the integrity of email communications​.
 - **Cloud-based DDoS Protection**: Services like Cloudflare, Akamai, and AWS Shield can absorb and mitigate DDoS traffic before it reaches your network.
 - **Rate Limiting**: Configure your web server to limit the number of requests a user can make within a certain timeframe, helping to reduce the impact of DDoS attacks.
-- **Redundancy and Load Balancing**: Distribute your infrastructure across multiple data centres and use load balancers to distribute traffic evenly, minimizing the risk of a single point of failure.
+- **Redundancy and Load Balancing**: Distribute your infrastructure across multiple data centres and use load balancers to distribute traffic evenly, minimising the risk of a single point of failure.
 - **Scalable Bandwidth**: Work with your ISP to ensure you have sufficient bandwidth to handle unexpected traffic spikes and consider burstable bandwidth options.
 - **Traffic Analysis**: Continuously monitor your network traffic to detect unusual patterns that may indicate an impending DDoS attack.
 - **Network Segmentation**: Implement network segmentation to limit the spread of an attack. Use firewalls and access controls to restrict access to critical systems and data.
 - **Distributed Data Centres**: Use geographically dispersed data centres to ensure that data and services remain available even if one location experiences a power outage.
-- **Cloud Integration**: Utilize cloud services for data storage and critical applications, leveraging the redundancy and high availability provided by major cloud providers.
+- **Cloud Integration**: Utilise cloud services for data storage and critical applications, leveraging the redundancy and high availability provided by major cloud providers.
 - **Implement Redundancy**: Ensure critical network components have backups. Use multiple ISPs, redundant routers, and switches to provide alternative paths for data if one fails.
 
 ### Policy Measures 📝
 
-- **Educate Users**: Train employees and users to recognize phishing attempts, suspicious links, and unsafe downloads. Encourage the practice of not clicking on unknown or untrusted links and attachments.
-- **Implement Strong Passwords and Multi-Factor Authentication (MFA): Use complex passwords and enable MFA to add an extra layer of security to accounts, making it harder for attackers to gain access.
+- **Educate Users**: Train employees and users to recognise phishing attempts, suspicious links, and unsafe downloads. Encourage the practice of not clicking on unknown or untrusted links and attachments.
+- **Implement Strong Passwords and Multi-Factor Authentication (MFA)**: Use complex passwords and enable MFA to add an extra layer of security to accounts, making it harder for attackers to gain access.
 - **Regular Backups**: Perform regular backups of critical data and store them securely. This ensures data can be restored in case of a ransomware attack or other data loss incidents.
-- **Restrict User Privileges**: Limit user access to only the necessary systems and data required for their roles to minimize the impact of a potential malware infection.
+- **Restrict User Privileges**: Limit user access to only the necessary systems and data required for their roles to minimise the impact of a potential malware infection.
 - **Secure Browsing Practices**: Encourage users to hover over links to check the actual URL before clicking and to directly type URLs into the browser instead of clicking on links in emails​. Ensure websites use HTTPS to provide a secure connection, and educate users to look for the padlock icon in the browser address bar​.
 - **Incident Response Plan**: Prepare a response strategy for dealing with phishing attacks, including steps for containing the breach, notifying affected parties, and recovering compromised accounts​.
 - **Secure Wi-Fi Networks**: Avoid using public Wi-Fi for sensitive transactions. Use VPNs to encrypt traffic when accessing the internet through untrusted networks.
-- **User Activity Monitoring**: Implement systems to monitor user activities and detect unusual or suspicious behaviour, such as excessive data downloads or access to unauthorized areas​.
+- **User Activity Monitoring**: Implement systems to monitor user activities and detect unusual or suspicious behaviour, such as excessive data downloads or access to unauthorised areas​.
 - **Regular Audits**: Conduct regular audits of access logs and employee activities to identify and investigate potential insider threats
 - **Data Protection Policies**: Develop and enforce comprehensive data protection policies that outline acceptable use of company resources and data
-- **Data Loss Prevention (DLP): Use DLP solutions to detect and prevent unauthorized access, transfer, or use of sensitive data
+- **Data Loss Prevention (DLP)**: Use DLP solutions to detect and prevent unauthorised access, transfer, or use of sensitive data
 - **Employee Engagement**: Promote a positive work environment and open communication to reduce grievances that may lead to insider threats
 - **Anonymous Reporting Mechanisms**: Provide channels for employees to report suspicious activities anonymously, encouraging vigilance without fear of retribution
 - **Restrict Database Permissions**: Ensure database accounts have the minimum necessary privileges. Avoid using administrative accounts for application connections.

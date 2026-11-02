@@ -28,6 +28,6 @@ The video below demonstrates how to create a new table using DB Browser for SQLi
 
 ## Manually entering data
 
-For most of our work with database we will be entering data using SQL commands. However, there may be times when you want to manually enter data into a table. The video below demonstrates how to do this using DB Browser for SQLite.
+For most of our work with databases we will be entering data using SQL commands. However, there may be times when you want to manually enter data into a table. The video below demonstrates how to do this using DB Browser for SQLite.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zW-dPR-h2kg?si=Brab5awS3gkE7d42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>&nbsp;</p>

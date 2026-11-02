@@ -3,12 +3,12 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
 - understand the principles of cybersecurity and why it is important
-- understand the the basic principles of encryption and why it is important
+- understand the basic principles of encryption and why it is important
 - understand the process steps of traditional ciphers and  be able to execute them
 - understand how modern symmetric encryption works
 - understand how modern asymmetric encryption works
 - understand the processes of hashing and when it should be used
-- understand the two types of compression ands why they are important
+- understand the two types of compression and why they are important
 :::
 
 > Data has never been more valuable. It is an increasingly important driver of growth in our modern economy. Whether it is data about individuals, businesses or government, data underpins how we communicate, conduct business, and receive services. At the same time it can be stolen, manipulated or used as a weapon by foreign adversaries and criminals `departmentofhomeaffairs_2023_data`.
@@ -17,12 +17,12 @@ By the end of this section you will:
 
 :::{tip} Crash Course Cybersecurity Summary
 :class: dropdown
-**Cybersecurity's Goal:** To minimize crime and harm in the digital world, similar to how physical security works in the real world. Its primary objectives are to protect the **secrecy (confidentiality)**, **integrity**, and **availability** of computer systems and data.
+**Cybersecurity's Goal:** To minimise crime and harm in the digital world, similar to how physical security works in the real world. Its primary objectives are to protect the **secrecy (confidentiality)**, **integrity**, and **availability** of computer systems and data.
 
 - **The CIA Triad:**
-  - **Secrecy (Confidentiality):** Ensuring that only authorized individuals can access specific data (e.g., protecting against credit card data breaches).
-  - **Integrity:** Ensuring that only authorized individuals can modify data (e.g., preventing someone from using your email password to send fake emails).
-  - **Availability:** Ensuring that authorized users can always access their systems and data (e.g., defending against denial-of-service attacks that crash websites).
+  - **Secrecy (Confidentiality):** Ensuring that only authorised individuals can access specific data (e.g., protecting against credit card data breaches).
+  - **Integrity:** Ensuring that only authorised individuals can modify data (e.g., preventing someone from using your email password to send fake emails).
+  - **Availability:** Ensuring that authorised users can always access their systems and data (e.g., defending against denial-of-service attacks that crash websites).
 - **Threat Modeling:** Cybersecurity starts by identifying potential attackers, their capabilities, goals, and methods (attack vectors). This helps focus security efforts on the most likely threats.
 - **Authentication:** The process of verifying a user's identity. There are three main types:
   - **What You Know:** Based on secret knowledge, like a username and password. This is the most common but can be vulnerable to guessing or brute-force attacks.
@@ -34,13 +34,13 @@ By the end of this section you will:
   - **Independent Verification & Validation:** Having external, security-minded developers audit code to find bugs, which is why much security software is open-source.
 :::
 
-Data security is crucial because it safeguards sensitive information from unauthorized access, ensuring that personal, financial, and confidential data remains private and protected. In today's digital age, where vast amounts of data are shared and stored online, the risk of data breaches and cyberattacks is significant. These breaches can result in identity theft, financial loss, reputational damage, and legal consequences.
+Data security is crucial because it safeguards sensitive information from unauthorised access, ensuring that personal, financial, and confidential data remains private and protected. In today's digital age, where vast amounts of data are shared and stored online, the risk of data breaches and cyberattacks is significant. These breaches can result in identity theft, financial loss, reputational damage, and legal consequences.
 
-Data breachers far more common than most people believe. The Office of the Australian Information Commissioner, publishes regular [reports on breaches involving Australian organisations](https://www.oaic.gov.au/privacy/notifiable-data-breaches/notifiable-data-breaches-publications). Check the latest report to see the extent of data breaching occurring. Note that these are only the breaches that Australian Law requires organisations to report.
+Data breaches are far more common than most people believe. The Office of the Australian Information Commissioner publishes regular [reports on breaches involving Australian organisations](https://www.oaic.gov.au/privacy/notifiable-data-breaches/notifiable-data-breaches-publications). Check the latest report to see the extent of data breaches occurring. Note that these are only the breaches that Australian Law requires organisations to report.
 
-Data security measures, including encryption, access controls, and regular security audits, help prevent such incidents and ensure that individuals and organizations can trust that their data is safe and confidential. It's not only about protecting information but also about maintaining trust, compliance with regulations, and upholding the integrity of data in an increasingly interconnected world.
+Data security measures, including encryption, access controls, and regular security audits, help prevent such incidents and ensure that individuals and organisations can trust that their data is safe and confidential. It's not only about protecting information but also about maintaining trust, compliance with regulations, and upholding the integrity of data in an increasingly interconnected world.
 
-The following techniques used to manage data effectively, ensuring it can be stored and transferred securely and efficiently.
+The following techniques are used to manage data effectively, ensuring it can be stored and transferred securely and efficiently.
 
 ## The CIA Triad: Core Principles of Cybersecurity 📝
 
@@ -50,12 +50,12 @@ The **CIA Triad** stands for **Confidentiality**, **Integrity**, and **Availabil
 
 ### Confidentiality – Keeping Information Private
 
-Confidentiality means only **authorized** people can access sensitive data. It prevents data from being read or stolen by people who shouldn’t see it.
+Confidentiality means only **authorised** people can access sensitive data. It prevents data from being read or stolen by people who shouldn’t see it.
 
 **Key Concepts:**
 
 - **Authentication**: Making sure the person accessing the data is who they say they are (e.g. login with username + password).
-- **Authorization**: Making sure the user has permission to access the specific data.
+- **Authorisation**: Making sure the user has permission to access the specific data.
 - **Encryption**: Scrambling the data so that it’s unreadable without a decryption key.
 - **Access control lists (ACLs)** and **permissions**: Rules that say who can access or change files.
 
@@ -66,7 +66,7 @@ Confidentiality means only **authorized** people can access sensitive data. It p
 
 ### Integrity – Keeping Information Accurate and Trustworthy
 
-Integrity means data should stay correct, complete, and unaltered unless changed in an authorized way. It protects against **tampering**, **accidental deletion**, or **corruption**.
+Integrity means data should stay correct, complete, and unaltered unless changed in an authorised way. It protects against **tampering**, **accidental deletion**, or **corruption**.
 
 **Key Concepts:**
 
@@ -109,24 +109,24 @@ If **any** part of the CIA Triad is compromised, security is at risk:
 
 ## Encryption 📝
 
-Encryption is the process of converting data into a coded format to prevent unauthorized access. It ensures that only authorized parties can read the information.
+Encryption is the process of converting data into a coded format to prevent unauthorised access. It ensures that only authorised parties can read the information.
 
 ### How Encryption works
 
 - **Encryption:** Imagine you write a message in English and then translate it into a secret code that only your friend knows how to read. Even if someone else gets hold of the coded message, they can't understand it without the key to decode it.
 - **Decryption:** Your friend uses the key to translate the coded message back into English so they can read it.
 
-### Why Encryption important
+### Why is Encryption Important?
 
 Data encryption is necessary for several important reasons:
 
-- **Data Security**: Encryption helps protect sensitive information from unauthorized access. It ensures that even if someone gains access to the data, they won't be able to read or use it without the encryption key.
+- **Data Security**: Encryption helps protect sensitive information from unauthorised access. It ensures that even if someone gains access to the data, they won't be able to read or use it without the encryption key.
 - **Privacy**: In an era of digital communication, maintaining personal privacy is crucial. Encryption ensures that your personal messages, emails, and data remain private and can't be easily intercepted or eavesdropped upon.
-- **Compliance**: Many regulations and laws require organizations to protect sensitive data, such as personal or financial information. Encryption helps companies meet these compliance requirements and avoid legal issues.
-- **Data Integrity**: Encryption not only secures data from unauthorized access but also ensures that the data hasn't been tampered with during transmission or storage. If encrypted data is altered, it becomes unreadable.
+- **Compliance**: Many regulations and laws require organisations to protect sensitive data, such as personal or financial information. Encryption helps companies meet these compliance requirements and avoid legal issues.
+- **Data Integrity**: Encryption not only secures data from unauthorised access but also ensures that the data hasn't been tampered with during transmission or storage. If encrypted data is altered, it becomes unreadable.
 - **Protection Against Data Breaches**: In the event of a data breach, encrypted data is significantly more challenging for attackers to use. Even if they gain access to encrypted data, it's useless without the encryption key.
 - **Secure Communication**: Encryption is essential for securing online transactions, such as e-commerce purchases and online banking. It prevents hackers from intercepting sensitive financial information.
-- **International Data Transfer**: When data is transferred across borders, encryption can protect it from government surveillance or other forms of unauthorized access.
+- **International Data Transfer**: When data is transferred across borders, encryption can protect it from government surveillance or other forms of unauthorised access.
 
 ### Types of Encryption
 
@@ -265,7 +265,7 @@ The Vigenère cipher is a method of encrypting alphabetic text by using a simple
    - For example, if the plaintext is "ATTACKATDAWN" and the keyword is "KEY", the repeated keyword is "KEYKEYKEYKEY".
 
 3. **Encrypt the Plaintext:** Each letter of the plaintext is shifted according to the corresponding letter of the keyword. The shift is determined by converting the keyword letter into a number (A=0, B=1, ..., Z=25).
-4. **Decrypt the Cyphertext:** To decrypt the message, the same keyword is used. Each letter of the ciphertext is shifted back according to the corresponding letter of the keyword.
+4. **Decrypt the Ciphertext:** To decrypt the message, the same keyword is used. Each letter of the ciphertext is shifted back according to the corresponding letter of the keyword.
 
    **Vigenère Example**
 
@@ -367,7 +367,7 @@ The **Gronsfeld cipher** is a variant of the Vigenère cipher that uses a numeri
 
 ### One-time Pad Encryption 📝
 
-The **one-time pad (OTP)** encryption is a theoretically unbreakable encryption technique that involves a random key that is as long as the message being encrypted. It was first described by Frank Miller in 1882 and later formalized by Gilbert Vernam in 1917.
+The **one-time pad (OTP)** encryption is a theoretically unbreakable encryption technique that involves a random key that is as long as the message being encrypted. It was first described by Frank Miller in 1882 and later formalised by Gilbert Vernam in 1917.
 
 ![one time pad](./assets/04/one_time_pad.png)
 
@@ -461,7 +461,7 @@ OUTPUT "Decrypted text: " & decrypted_text
 
 Symmetric encryption is a type of encryption where only one key (a secret key) is used to both encrypt and decrypt electronic information. The entities communicating via symmetric encryption must exchange the key so that it can be used in the decryption process.
 
-By using symmetric encryption algorithms, data is converted to a form that cannot be understood by anyone who does not possess the secret key to decrypt it. Once the intended recipient who possesses the key has the message, the algorithm reverses its action so that the message is returned to its original and understandable form. The secret key that the sender and recipient both use could be a specific password/code or it can be random string of letters or numbers that have been generated by a secure random number generator.
+By using symmetric encryption algorithms, data is converted to a form that cannot be understood by anyone who does not possess the secret key to decrypt it. Once the intended recipient who possesses the key has the message, the algorithm reverses its action so that the message is returned to its original and understandable form. The secret key that the sender and recipient both use could be a specific password/code or it can be a random string of letters or numbers that have been generated by a secure random number generator.
 
 There are two types of symmetric encryption algorithms:
 
@@ -480,7 +480,7 @@ Some examples of where symmetric cryptography is used are:
 
 ### Block Ciphers
 
-A block cipher takes a block of plaintext bits and generates a block of ciphertext bits, generally of same size. The size of block is fixed in the given scheme. The choice of block size does not directly affect to the strength of encryption scheme. The strength of cipher depends up on the key length.
+A block cipher takes a block of plaintext bits and generates a block of ciphertext bits, generally of the same size. The size of the block is fixed in the given scheme. The choice of block size does not directly affect the strength of the encryption scheme. The strength of the cipher depends upon the key length.
 
 **Feistel Block Cipher**
 
@@ -574,7 +574,7 @@ While secure, Blowfish's 64-bit block size is now considered a limitation for ce
 
 **Twofish**
 
-Twofish is a symmetric key block cipher, also designed by Bruce Schneier as a successor to Blowfish. It operates on **128-bit blocks** and supports key sizes up to **256 bits**. Twofish uses a Feistel network and is optimized for hardware and software performance.
+Twofish is a symmetric key block cipher, also designed by Bruce Schneier as a successor to Blowfish. It operates on **128-bit blocks** and supports key sizes up to **256 bits**. Twofish uses a Feistel network and is optimised for hardware and software performance.
 
 Twofish is known for its flexibility, speed, and security, making it a strong contender in the AES competition.
 
@@ -627,11 +627,11 @@ The **private key** is kept secret and is used to decrypt data that has been enc
 ### How Asymmetric Communication Works
 
 1. The sender (Alice) and the receiver (Bob) agree and communicate the **public parameters** (prime modulus and a generator).  
-2. Alice then chooses a **private key** and calculates a **public key**, which she share publicly with Bob.
+2. Alice then chooses a **private key** and calculates a **public key**, which she shares publicly with Bob.
 3. Bob selects his own **private key**, calculates a **public key**, and shares it publicly with Alice.
 4. Alice takes Bob’s **public key** and raises it to the power of her **private key** to compute a **shared key**.
 5. Bob does the same with Alice’s **public key** and his **private key** to also establish the **shared key**.
-6. Alice and Bob now have a **shared key** they can use for symmetrical encryption.
+6. Alice and Bob now have a **shared key** they can use for symmetric encryption.
 7.  Without knowing Alice's or Bob's **private keys** Eve cannot derive the **shared key**.
 
 ### Advantages of Asymmetric Communication
@@ -684,7 +684,7 @@ shared_key = alice_pub_key ** bob_private_key % prime_modulus
 
 RSA is one of the most widely used asymmetric encryption algorithms, developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It relies on the mathematical difficulty of factoring large prime numbers.  
 
-RSA uses two keys a public key for encryption and a private key for decryption. Key lengths typically range from **2048 to 4096 bits**, providing strong security. It is commonly used in secure data transmission, digital signatures, and key exchange protocols.
+RSA uses two keys: a public key for encryption and a private key for decryption. Key lengths typically range from **2048 to 4096 bits**, providing strong security. It is commonly used in secure data transmission, digital signatures, and key exchange protocols.
 
 RSA is computationally intensive and slower compared to symmetric algorithms, making it less suitable for encrypting large amounts of data directly.
 
@@ -699,7 +699,7 @@ Hashing is the process of converting data into a fixed-size string of characters
 - Think of hashing as creating a unique fingerprint for a set of data. Just like no two people have the same fingerprint, no two sets of data will have the same hash (in theory).
 - Hash functions take an input (or 'message') and return a fixed-size string of bytes. The output is typically a "digest" that represents the input data.
 
-### Why Hashing important
+### Why is Hashing Important?
 
 - **Data Integrity:** Hashes are used to ensure data hasn't been altered. For example, when you download a file, a hash can be created for that file. After downloading, you can check the hash to make sure the file wasn't corrupted or tampered with during transfer.
 - **Password Storage:** Instead of storing actual passwords, systems store hashes of passwords. When you log in, your password is hashed and compared to the stored hash. This way, even if someone accesses the password database, they can't easily recover the actual passwords.
@@ -715,14 +715,14 @@ Data compression is the process of reducing the size of a file or data set. This
 - **Lossless Compression:** This method reduces file size without losing any data. Think of it as packing your clothes tightly into a suitcase without leaving anything behind. When you unpack, everything is still there, just like it was before. Examples include ZIP files and PNG images.
 - **Lossy Compression:** This method reduces file size by removing some data that’s not crucial. It’s like packing your suitcase but deciding to leave behind some items you don't really need. When you unpack, you still have most of your stuff, but some of the less important items are missing. Examples include MP3 audio files and JPEG images.
 
-### Why Data Compression important
+### Why is Data Compression Important?
 
 - **Saves Storage Space:** Smaller files mean you can store more data on your devices.
 - **Faster Transfers:** Smaller files can be sent over the internet or other networks more quickly.
 
 ---
 
-## Check Sums 📝
+## Checksums 📝
 
 A checksum is a value used to check whether data has been altered during storage or transmission.
 

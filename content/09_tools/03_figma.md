@@ -10,7 +10,7 @@ Figma is a web-based design tool used for creating user interfaces, prototypes, 
 :::{attention} Education Accounts
 Education accounts provide access to premium features at no cost.
 
-To access Figma for free as a student, you can sign up for a Figma Education account by choosing to sign-up with Google and then using your school email address. You then need to [verirfy your Education status](https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education).
+To access Figma for free as a student, you can sign up for a Figma Education account by choosing to sign up with Google and then using your school email address. You then need to [verify your Education status](https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education).
 :::
 
 Below are some videos that will help you get started with Figma and learn how to create prototypes.
@@ -23,7 +23,7 @@ Below are some videos that will help you get started with Figma and learn how to
 
 Now that you have learnt the basics, you can check out the rest of the videos in the Flux Academy Figma playlist to learn more advanced features and techniques.
 
-[Flux Accademy Figma Playlist](https://youtube.com/playlist?list=PLXC_gcsKLD6lovcamt6i27q0hbXq6fmwi&si=4cbUjRugnRxpYkGl)
+[Flux Academy Figma Playlist](https://youtube.com/playlist?list=PLXC_gcsKLD6lovcamt6i27q0hbXq6fmwi&si=4cbUjRugnRxpYkGl)
 
 ## Official Figma Tutorials
 

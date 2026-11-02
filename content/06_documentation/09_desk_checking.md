@@ -2,14 +2,14 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- understand the importance of deskchecking
-- know how to deskcheck branching code
-- know how to deskcheck iterative code
+- understand the importance of desk checking
+- know how to desk check branching code
+- know how to desk check iterative code
 :::
 
-Desk checking is a manual (non computerised) technique for checking the logic of an algorithm. The person performing the desk check effectively acts as the computer, using pen and paper to record results. The desk checker carefully follows the algorithm being careful to rigidly adhere to the logic specified. The desk check can expose problems with the algorithm.
+Desk checking is a manual (non-computerised) technique for checking the logic of an algorithm. The person performing the desk check effectively acts as the computer, using pen and paper to record results. The desk checker carefully follows the algorithm being careful to rigidly adhere to the logic specified. The desk check can expose problems with the algorithm.
 
-Desk checks are useful to check an algorithm (before coding) thereby confirming that the algorithm works as expected and reduces the likelihood of creating programs with logic errors. Another benefit of a desk check is that it confirms to the programmer/designer that the algorithm performs as intended.
+Desk checks are useful to check an algorithm (before coding) thereby confirming that the algorithm works as expected and reducing the likelihood of creating programs with logic errors. Another benefit of a desk check is that it confirms to the programmer/designer that the algorithm performs as intended.
 
 :::{hint} Types of programming errors
 :class: dropdown
@@ -19,16 +19,16 @@ There are three categories of computer errors:
     - occur due to violations of language grammar rules, eg. failing to put quotes around a string.
     - typically identified and corrected using development environment feedback
 - **Runtime errors**
-    - arise during program execution due to unexpected conditions, eg. the user entering a string instead of a integer.
+    - arise during program execution due to unexpected conditions, eg. the user entering a string instead of an integer.
     - require condition checks and error handling mechanisms for resolution
 - **Logic errors**: 
     - result in incorrect outcomes due to flaws in the program's design or logic, eg. a condition using `>` instead of `<`.
-    - requires thorough testing and debugging to understand and correct the program's behaviour.
+    - require thorough testing and debugging to understand and correct the program's behaviour.
 :::
 
 A desk check is normally done as a table with columns for:
 
-- Pseudo code line number - Pseudo code doesn't normally have lines numbers, but these are necessary in a desk check to specify the line(s) being executed
+- Pseudocode line number - Pseudocode doesn't normally have line numbers, but these are necessary in a desk check to specify the line(s) being executed
 - One column per variable used.
   - The columns should be in alphabetical order on variable name with the variable name at the top of the column.
   - As the algorithm is executed, the new values of the variables are put in the appropriate column.

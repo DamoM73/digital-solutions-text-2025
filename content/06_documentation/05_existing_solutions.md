@@ -1,4 +1,4 @@
-# Existing Soultions
+# Existing Solutions
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
@@ -37,4 +37,4 @@ To present this information we use the Existing Solutions Analysis Table, as bel
 
 | Solution Name | Plus | Minus | Interesting |
 |---------------|------|-------|-------------|
-| *Name the solutions and provide a image or a link* | *In dot point identify the features positive features of the solution*| *In dot point identify the negative features of the solution* | *In dot point identify any features that are unique or innovative* |
+| *Name the solutions and provide an image or a link* | *In dot points, identify the positive features of the solution*| *In dot points, identify the negative features of the solution* | *In dot points, identify any features that are unique or innovative* |

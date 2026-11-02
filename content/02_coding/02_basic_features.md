@@ -2,7 +2,7 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- remembered the basics of Python that have been covered in previous courses.
+- remember the basics of Python that have been covered in previous courses.
 :::
 
 ## Algorithms
@@ -11,7 +11,7 @@ By the end of this section you will:
 
 Algorithms are the commands that make up our programs.
 
-There are 6 basic building blocks that an algorithm consists of. Each of them serve a particular purpose.
+There are 6 basic building blocks that an algorithm consists of. Each of them serves a particular purpose.
 
 - **Sequence:** a number of instructions that are processed one after the other.
 - **Assignment:** used to store the value of an expression into a **variable**.
@@ -20,10 +20,10 @@ There are 6 basic building blocks that an algorithm consists of. Each of them se
 - **Iteration:** the repetition of a number of instructions. These are generally referred to as loops and refer to a section of code that is repeated.
 - **Modularisation:** refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application.
 
-In designing your algorithm, you will need to decide how to arrange these building block to achieve you outcome. To do this it is wise to follow good programming practices.
+In designing your algorithm, you will need to decide how to arrange these building blocks to achieve your outcome. To do this it is wise to follow good programming practices.
 
 :::{warning} Teacher's marking considerations
-In assessing your code and pseudocode, your teaching will look for examples of these six building blocks. Keep this in mind when selecting which code and pseudocode you will demonstrate in your assessment.
+In assessing your code and pseudocode, your teacher will look for examples of these six building blocks. Keep this in mind when selecting which code and pseudocode you will demonstrate in your assessment.
 :::
 
 :::{seealso} Algorithms Activities
@@ -48,11 +48,11 @@ In assessing your code and pseudocode, your teaching will look for examples of t
 
    ### Variable Types
 
-   Variable can be of different **types**. The type of a variable indicates what kind of data is stored at that memory location.
+   Variables can be of different **types**. The type of a variable indicates what kind of data is stored at that memory location.
 
    :::{hint} Dynamic vs Static Variables
    :class: dropdown
-   In programming languages, there are two different type variable systems:
+   In programming languages, there are two different typing systems:
 
 - **dynamic:** type checking only occurs as the code runs, and the type of a variable is allowed to change over its lifetime.
 - **static:** type checks are performed without running the program. In most statically typed languages this is done as your program is compiled. The type of a variable is not allowed to change over its lifetime.
@@ -83,7 +83,7 @@ The Python data types that we will be using are:
 - **Boolean Type:**
   - objects of Boolean type may have one of two values, `True` or `False`
   - the Boolean type in Python is called `bool`
-  - a value that is true in Boolean context is sometimes said to be "truthy" and one that is false in Boolean context is said to be "falsie"
+  - a value that is true in Boolean context is sometimes said to be "truthy" and one that is false in Boolean context is said to be "falsy"
   - the "truthiness" of an object of Boolean type is self-evident: Boolean objects that are equal to `True` are truthy (true), and those equal to `False` are falsy (false)
   - [Boolean refresher](https://www.w3schools.com/python/python_booleans.asp)
 
@@ -161,7 +161,7 @@ What would happen if you made a function called `print`?
 6. What type in Python is used for whole numbers?
 7. What Python type represents numbers with a decimal point?
 8. What are the two possible values of the Boolean type in Python?
-9. What does "truthy" and "falsy" mean in Python?
+9. What do "truthy" and "falsy" mean in Python?
 10. Name three values in Python that evaluate to `False`.
 11. What will the following code output?
 
@@ -217,7 +217,7 @@ What would happen if you made a function called `print`?
 
    Python has two main types of branching:
 
-   **statements**
+   **`if ... elif ... else` statements**
 
    This type checks conditions in order and chooses one path to run.
 
@@ -229,7 +229,7 @@ What would happen if you made a function called `print`?
 
    [W3Schools: if...elif...else refresher](https://www.w3schools.com/python/python_conditions.asp)
 
-   **statement**
+   **`match ... case` statement**
 
 - Checks a variable against different fixed values
 - Similar to `switch` in other languages
@@ -307,7 +307,7 @@ In Python, we commonly use these four data structures:
 | Lists | Ordered collection of items<br>Created using square brackets `[]` with items separated by commas<br>Example: `[1, 2, 3, 4]`<br>Items can be changed, added, or removed (mutable)<br>Each item has an index, starting at 0<br>[Lists refresher](https://www.w3schools.com/python/python_lists.asp) |
 | Tuples | Ordered collection like lists, but **cannot be changed** (immutable)<br>Created using parentheses `()` with items separated by commas<br>Example: `(1, 2, 3, 4)`<br>Good for fixed data and faster performance<br>Indexing starts at 0<br>[Tuples refresher](https://www.w3schools.com/python/python_tuples.asp) |
 | Sets | Collection of **unique** items with **no specific order**<br>Created using curly braces `{}` with items separated by commas<br>Example: `{1, 2, 3, 4}`<br>Mutable &mdash; you can add or remove items<br>Useful when you care about presence, not order or duplicates<br>[Sets refresher](https://www.w3schools.com/python/python_sets.asp) |
-| Dictionaries | Collection of **key-value pairs**<br>Created using curly braces `{}`, with a colon `:` between each key and value<br>Example: `{"Doh": "Doherty", "Fly": "Flynn"}`Keys must be unique<br>Useful when each value has a unique label or ID<br>Mutable &mdash; values can be added, updated, or deleted<br>[Dictionary refresher](https://www.w3schools.com/python/python_dictionaries.asp) |
+| Dictionaries | Collection of **key-value pairs**<br>Created using curly braces `{}`, with a colon `:` between each key and value<br>Example: `{"Doh": "Doherty", "Fly": "Flynn"}`<br>Keys must be unique<br>Useful when each value has a unique label or ID<br>Mutable &mdash; values can be added, updated, or deleted<br>[Dictionary refresher](https://www.w3schools.com/python/python_dictionaries.asp) |
 
 :::{seealso} Data Structures Activities
 :class: dropdown

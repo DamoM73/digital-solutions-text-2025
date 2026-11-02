@@ -4,7 +4,7 @@
 By the end of this section you will:
 - know how to delete records from a database
 - understand that relational databases require a specific deletion order
-- know how to delete data that is contained in mulitple tables.
+- know how to delete data that is contained in multiple tables.
 :::
 
 The `DELETE` statement is used to delete existing records in a table.
@@ -19,7 +19,7 @@ Key points covered in the video include:
 
 - **`DELETE` Statement Syntax:** The basic syntax is `DELETE FROM table_name WHERE condition;`. The `WHERE` clause is crucial as it specifies which records to delete.
 
-- **Importance of the `WHERE` Clause:** The video strongly emphasizes the importance of the `WHERE` clause. If you omit it, all records in the table will be deleted. This is likened to accidentally deleting all your contacts. 
+- **Importance of the `WHERE` Clause:** The video strongly emphasises the importance of the `WHERE` clause. If you omit it, all records in the table will be deleted. This is likened to accidentally deleting all your contacts.
 
 - **Practical Example:** A demonstration shows how to delete a specific customer, "Alfreds Futterkiste," from a "Customers" table using the `DELETE` statement with a `WHERE` clause. 
 
@@ -34,7 +34,7 @@ Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_delete.asp) on 
 
 ## DELETE order
 
-When deleting data that is stored in multiple tables, the order that entires are deleted is important. You cannot delete an entry where it's primary key is used as a foreign keys in another table, ie. for the one-to-many cardinality, it is on the one side. Therefore, you need to start with the entry that is not associated with a foreign key.
+When deleting data that is stored in multiple tables, the order in which entries are deleted is important. You cannot delete an entry where its primary key is used as a foreign key in another table, ie. for the one-to-many cardinality, it is on the one side. Therefore, you need to start with the entry that is not associated with a foreign key.
 
 Let's look at the Movies database as an example. 
 
@@ -42,9 +42,9 @@ Let's look at the Movies database as an example.
 
 Say we wanted to delete **Mel Gibson** from the director database.
 
-- We cannot delete a **Mel Gibson** straight away since there may be movies that have his `dirnumb` (**118**) as a foreign key, so we have delete all movies with the `dirnumb` **118** first.
+- We cannot delete **Mel Gibson** straight away since there may be movies that have his `dirnumb` (**118**) as a foreign key, so we have to delete all movies with the `dirnumb` **118** first.
 - But we will not be able to delete the movie, if it is currently onhire. That is, the `movienumb` is in the **movies_onhire** table. Therefore, we need to delete any record of **Mel Gibson** movies from the **movies_onhire** table. 
-- We do not need to be worried about member nubmers as the `memberid` is on the many side to the one-to-many relationship.
+- We do not need to be worried about member numbers as the `memberid` is on the many side of the one-to-many relationship.
 
 ### The steps that need to be taken are
 
@@ -78,7 +78,7 @@ Say we wanted to delete **Mel Gibson** from the director database.
 3. Delete all repairs that are already ready on 2010‑06‑03
 4. Delete all repairs done by technicians with the grade apprentice
 
-**Chinoook Database**
+**Chinook Database**
 
 5. Delete all customers and their invoices from Brazil
 6. Delete an artist and all related data (tracks, playlist entries, albums) for 'Queen'

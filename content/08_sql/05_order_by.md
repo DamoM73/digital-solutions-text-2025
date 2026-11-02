@@ -3,7 +3,7 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
 - know how to sort a query's results
-- know how to sort using mulitple fields
+- know how to sort using multiple fields
 :::
 
 ## ORDER BY Clause

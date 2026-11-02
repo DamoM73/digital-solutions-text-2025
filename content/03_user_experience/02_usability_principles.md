@@ -2,7 +2,7 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- understand why useability is important
+- understand why usability is important
 - know the five elements of usability
 :::
 
@@ -75,7 +75,7 @@ To improve safety:
 
 ## Accessibility 📝
 
-Accessibility means making sure your digital solution can be used by as many people as possible, including people with diverse abilities, including those with visual, auditory, motor, and cognitive impairments.
+Accessibility means making sure your digital solution can be used by as many people as possible, including people with diverse abilities and those with visual, auditory, motor, and cognitive impairments.
 
 We use the **POUR** principles to guide accessibility:
 
@@ -149,7 +149,7 @@ To improve effectiveness:
 - Ensure outputs like graphs are accurate and update in real time
 - Test that all features work consistently under normal use conditions
 
-:::{seealso} Useability Activities
+:::{seealso} Usability Activities
 :class: dropdown
 **Activity 1**
 
@@ -183,7 +183,7 @@ Usability Issues:
 
 **Activity 2**
 
-Log into to Student Cafe and identify useability issues:
+Log into Student Cafe and identify usability issues:
 
 For each one:
 

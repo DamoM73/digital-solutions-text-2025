@@ -3,7 +3,7 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
 - understand and be able to identify the seven principles of visual communication.
-- understand and be able to identify the eight elements of visual communication.
+- understand and be able to identify the nine elements of visual communication.
 - know how to manipulate visual communication elements to achieve the visual communication principles.
 :::
 
@@ -14,7 +14,7 @@ We will consider two aspects of Visual Communication:
 - Visual Communication Principles
 - Visual Communication Elements
 
-You use elements of visual communication to achieve the principles of visual communication.  An analogy, if the **principle** is the cake you want to make, then the **elements** are the ingredients you use to make it.
+You use elements of visual communication to achieve the principles of visual communication.  As an analogy, if the **principle** is the cake you want to make, then the **elements** are the ingredients you use to make it.
 
 :::{seealso} Visual Communication Activities
 :class: dropdown
@@ -25,7 +25,7 @@ The website we will analyse is the [Official Lego website](https://www.lego.com/
 
 ## Visual Communication Principles📝
 
-The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve.  
+The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which affects the UI and UX. In other words the principles of visual communication are the **what** that you want to achieve.  
 
 :::{hint} BACHPRaH Mnemonic
 :class: dropdown
@@ -36,7 +36,7 @@ It stands for: Balance – Alignment – Contrast – Hierarchy – Proximity �
 
 ### Alignment
 
-The arrangement of elements along a common axis or edge to create a sense of order, organization, and unity in a design. Alignment can be used to provide unity and proximity to the different elements used in the design. Good alignment aids readability and shows connections between different elements. Objects that are perfectly aligned provide a cleaner aesthetic and more professional appearance which inspires trust and confidence.
+The arrangement of elements along a common axis or edge to create a sense of order, organisation, and unity in a design. Alignment can be used to provide unity and proximity to the different elements used in the design. Good alignment aids readability and shows connections between different elements. Objects that are perfectly aligned provide a cleaner aesthetic and more professional appearance which inspires trust and confidence.
 
 ![alignment](./assets/03/alignment.png)<p>&nbsp;</p>
 
@@ -44,11 +44,11 @@ The arrangement of elements along a common axis or edge to create a sense of ord
 
 | Type | Details |
 | --- | --- |
-| Left Align Text | Aligning the text to the left creates a clean and organized appearance. |
-| Centre Align Headings | Draws attention and create a focal point. |
+| Left Align Text | Aligning the text to the left creates a clean and organised appearance. |
+| Centre Align Headings | Draws attention and creates a focal point. |
 | Grid Layouts | Using a grid system ensures consistent alignment of text and images. |
 | Bullet Points | Use consistent bullet points or numbering for lists to align items neatly. |
-| Align Icons | Aligning icons and buttons helps improves learnability. |
+| Align Icons | Aligning icons and buttons helps improve learnability. |
 | Align Charts and Graphs | Aligning labels, axes, and data points ensures clarity and accuracy. |
 | Text and Image Alignment | Aligning text with related images aids in comprehension and aesthetics. |
 
@@ -73,7 +73,7 @@ Balance occurs when the combination of elements on one side of a design appears 
 | Asymmetrical Balance | Balancing dissimilar elements by adjusting their size, colour, or position. |
 | Radial Balance | Arranging elements radiating outward from a central point. |
 | Colour Balance |  Distributing colours evenly across a design. |
-| Text and Image Balance | Harmonizing the placement of text and images. |
+| Text and Image Balance | Harmonising the placement of text and images. |
 | Whitespace | Use strategically to create balance by separating content. |
 | Visual Weight | Heavier, dominant elements counterbalance lighter, less prominent ones. |
 
@@ -84,7 +84,7 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 
 ### Contrast
 
-The juxtaposition of elements with differences in characteristics to create visual interest and emphasize distinctions.
+The juxtaposition of elements with differences in characteristics to create visual interest and emphasise distinctions.
 
 Contrast is used to emphasise an element of the design by using a markedly different colour, size or other characteristic. Contrast is also an important factor for readability of text. It is important that there is high contrast between the colour used for typeface and its background colour.
 
@@ -94,10 +94,10 @@ Contrast is used to emphasise an element of the design by using a markedly diffe
 
 | Type | Details |
 | --- | --- |
-| Colour Contrast | Using colour schemes that emphasise contrast or complimentary colours. |
+| Colour Contrast | Using colour schemes that emphasise contrast or complementary colours. |
 | Font Contrast | Combine fonts with different characteristics. |
 | Scale Contrast | Vary the scale of elements. |
-| Texture Contrast | Utilize different textures in your design. |
+| Texture Contrast | Utilise different textures in your design. |
 | Shape Contrast | Employ different shapes within your design. |
 | Spacing Contrast | Adjust the spacing between elements. |
 | Directional Contrast | Arrange elements in contrasting directions. |
@@ -134,9 +134,9 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 
 ### Repetition
 
-Involves the consistent use of visual elements, such as colours, fonts, or shapes, to create a cohesive and recognizable design.
+Involves the consistent use of visual elements, such as colours, fonts, or shapes, to create a cohesive and recognisable design.
 
-Repetition of the same element throughout the design brings consistency, unity and cohesion. For example, repetition of the same icon or button shape can reduce cognitive load and improve learnability for the user. However, too much repetition can become monotonous. Small variations in line, tone or colour to a repeated element can restore interest in the design and helps to retain user attention.
+Repetition of the same element throughout the design brings consistency, unity and cohesion. For example, repetition of the same icon or button shape can reduce cognitive load and improve learnability for the user. However, too much repetition can become monotonous. Small variations in line, tone or colour to a repeated element can restore interest in the design and help to retain user attention.
 
 ![repetition](./assets/03/repetition.png)<p>&nbsp;</p>
 
@@ -150,7 +150,7 @@ Repetition of the same element throughout the design brings consistency, unity a
 | Graphic Elements | Use the same icons, buttons, or graphical elements consistently. |
 | Recurring Shapes | Reuse specific shapes or forms consistently. |
 | Consistent Spacing | Maintain uniform spacing between text and objects. |
-| Standardized Iconography | Use a set of standardized icons or symbols to represent concepts. |
+| Standardised Iconography | Use a set of standardised icons or symbols to represent concepts. |
 
 :::{seealso} Repetition Activity
 :class: dropdown
@@ -159,7 +159,7 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 
 ### Hierarchy
 
-The organization and prioritization of elements in a design to guide attention and convey the importance of information.
+The organisation and prioritisation of elements in a design to guide attention and convey the importance of information.
 
 Hierarchy improves readability of the interface by emphasising more important elements with placement or size. Larger elements or those positioned towards the top of the design are considered more important.
 
@@ -174,7 +174,7 @@ Hierarchy improves readability of the interface by emphasising more important el
 | Spacing | Increase the space around important content to draw attention. |
 | Scale | Vary the scale of elements. Larger elements tend to grab more attention. |
 | Positioning | Place key elements in strategic positions. |
-| Contrast | Make use of contrast in to distinguish between levels of importance. |
+| Contrast | Make use of contrast to distinguish between levels of importance. |
 | Visual Cues | Incorporate visual cues like arrows or pointers to direct attention. |
 
 :::{seealso} Hierarchy Activity
@@ -184,9 +184,9 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 
 ### Proximity
 
-Elements placed close together are perceived as related or part of the same group, promoting organization and visual clarity.
+Elements placed close together are perceived as related or part of the same group, promoting organisation and visual clarity.
 
-Proximity is the positioning of elements near other elements. Proximity is an important factor in useability because it is easier to interact with a digital solution if similar functions are in close proximity to each other, such as the navigation links in a webpage.
+Proximity is the positioning of elements near other elements. Proximity is an important factor in usability because it is easier to interact with a digital solution if similar functions are in close proximity to each other, such as the navigation links in a webpage.
 
 ![proximity](./assets/03/proximity.png)<p>&nbsp;</p>
 
@@ -209,7 +209,7 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify whe
 
 ## Visual Communication Elements📝
 
-The **elements** of visual communication are the building block of UI design. By manipulating visual communication elements to implement the principles of visual communication you achieve the desired effect on the UI and, subsequently the UX. In other words, the elements of visual communication are the **how** of what you want top achieve.
+The **elements** of visual communication are the building blocks of UI design. By manipulating visual communication elements to implement the principles of visual communication you achieve the desired effect on the UI and, subsequently the UX. In other words, the elements of visual communication are the **how** of what you want to achieve.
 
 :::{hint} SoFT CLaSSPT Mnemonic
 :class: dropdown
@@ -235,7 +235,7 @@ Colour can provide contrast or emphasis, unify a design, fill a shape or space a
 | Feedback | Use colours to provide immediate feedback to users. |
 | Accessibility | Ensure colour choices are accessible to all users by using colour contrast. |
 | Focus Indicators | Using lines to highlight the focused element. |
-| Themes | Option to select from different colour themes to personalize experience. |
+| Themes | Option to select from different colour themes to personalise experience. |
 | Emotion | Consider the psychological impact of colours. |
 
 :::{seealso} Colour Activity
@@ -255,7 +255,7 @@ Form is the combination of other elements to create solid effects such as the us
 
 | Type | Details |
 | --- | --- |
-| Buttons | Design buttons make them appear clickable. |
+| Buttons | Design buttons to make them appear clickable. |
 | Input Fields | Create the illusion of depth in input fields, making them seem indented. |
 | Icons | Make icons appear as if they have volume and can be interacted with. |
 | Cards | Create card components that appear to be floating above the background. |
@@ -305,7 +305,7 @@ Proportion relates to the size or quantity of elements in the design in comparis
 
 | Type | Details |
 | --- | --- |
-| Typography Hierarchy | Varying font sizes to proportionally emphasize different content. |
+| Typography Hierarchy | Varying font sizes to proportionally emphasise different content. |
 | Icon Size | Ensure icons are proportionate to their importance. |
 | Image Scaling | Maintain consistent image proportions to avoid distortion. |
 | Button Placement | Primary buttons prominent over secondary buttons. |
@@ -322,7 +322,7 @@ Analyse the [Official Lego website](https://www.lego.com/en-au) and identify how
 
 The relative size of elements and how they visually relate to each other.
 
-Scale refers to the size of an element. It can be used consistently to provide order and repetition to a design or contrasted to create a focal point or emphasis the importance of one element over another.
+Scale refers to the size of an element. It can be used consistently to provide order and repetition to a design or contrasted to create a focal point or emphasise the importance of one element over another.
 
 ![scale](./assets/03/scale.png)<p>&nbsp;</p>
 
@@ -330,12 +330,12 @@ Scale refers to the size of an element. It can be used consistently to provide o
 
 | Type | Details |
 | --- | --- |
-| Emphasizing Importance | Use larger scale for headline text compared to body text. |
+| Emphasising Importance | Use larger scale for headline text compared to body text. |
 | Visual Depth | Vary the scale of elements to create a sense of depth and hierarchy. |
 | Visual Balance | Use scale to balance the layout, ensuring that no element dominates. |
 | Consistency | Maintain a consistent scale for similar elements. |
 | Visual Impact | Use scale to create visual impact. |
-| Whitespace | Adjust whitespace scale of to control the spacing between elements. |
+| Whitespace | Adjust whitespace to control the spacing between elements. |
 | Typography Hierarchy | Different font sizes for headings, subheadings, and body text. |
 
 :::{seealso} Scale Activity
@@ -381,8 +381,8 @@ Space is the area you have to work with. It includes space that is empty and spa
 | Type | Details |
 | --- | --- |
 | Margins and Padding |  Leave adequate margins and padding around UI elements. |
-| Whitespace | Whitespace to create a clean and organized layout. |
-| Button Spacing | Space between buttons prevent accidental clicks or taps. |
+| Whitespace | Whitespace to create a clean and organised layout. |
+| Button Spacing | Space between buttons prevents accidental clicks or taps. |
 | Text Line Spacing | Adjust line spacing to enhance text readability. |
 | Icon Spacing | Maintain consistent spacing between icons and labels. |
 | Form Fields | Space form fields and labels appropriately to indicate association. |

@@ -18,7 +18,7 @@ In UI Design it is most important to demonstrate how the user will interact with
 - **Wireframes**
   - Structured, simplified layouts
   - Show placement of UI elements (buttons, menus, images)
-  - Often in black and white or grayscale
+  - Often in black and white or greyscale
   - Help define content hierarchy and functionality
 - **Mock-ups**
   - High-fidelity visual designs

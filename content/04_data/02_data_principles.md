@@ -21,51 +21,54 @@ These issues fall under four main categories:
 
 ### Acquisition 📝
 
-Data acquisition is the process of collecting and capturing data from various sources and converting it into a usable digital format for further analysis and processing. In acquiring the your data you need to consider both the timeliness of the data acquisition and the ownership of the data.
+Data acquisition is the process of collecting and capturing data from various sources and converting it into a usable digital format for further analysis and processing. In acquiring your data you need to consider both the timeliness of the data acquisition and the ownership of the data.
 
 **Timeliness**
 
-Data is a point-in-time measurement, which means there is always a delay between between data creation and data entry. This difference is called data **timeliness**.
+Data **timeliness** describes whether data is sufficiently current and available when needed for its intended purpose.
 
-The impact of data timeliness data depends upon its purpose. A database that records daily temperature has a different timeliness demand than a database that records the core temperature of a nuclear powerplant. Despite both databases recording temperature, a delay of a minute would be of no concern for recording the daily temperature, but could be catastrophic for the nuclear powerplant.
+Timeliness requirements depend on how the data will be used. A school may need attendance records updated each lesson, while a live bus arrival application may need updates every few seconds. A delay that is acceptable for one purpose may make the data unsuitable for another.
 
-In exploring the data needs of your solution, consider what delay there may be in your data acquisition, as well as, how much delay can be tolerated.
+In exploring the data needs of your solution, consider what delay there may be in your data acquisition, as well as how much delay can be tolerated.
 
 **Ownership**
 
-There are three types of data ownership:
-1. **Personal data ownership:** refers to an individual's ownership of their personal data, such as their name, address, and contact information.
-2. **Corporate data ownership:** refers to the ownership of data generated and collected by an organization or company, such as customer data, sales data, and financial data.
-3. **Public data ownership:** refers to data that is owned by the public or government, such as census data, public records, and government statistics.
+When acquiring data, consider the individuals, organisations and governments connected with it. The following categories provide useful examples:
 
-It is possible for the data in a database to contain a mix of ownerships. Each type of data ownership has different handling requirements. It is important to identify the ownership of the data we are working with.
+- **Personal data:** information about individuals, such as names, addresses and contact details.
+- **Corporate data:** data generated or collected by an organisation, such as sales records and financial data. It may also include personal information about customers or employees.
+- **Public data:** data made available for public use, such as published census statistics. Check the licence and conditions of use; government-held data is not necessarily publicly available.
+
+These categories can overlap and do not, by themselves, establish ownership or permission to use data. Identify who provides and controls the data, what permissions or licences apply, and any restrictions on its collection, storage and use.
 
 ### Integrity 📝
 
-Data integrity means keeping data **accurate**, **complete**, and **consistent** at every stage&mdash;from creation and storage to processing and sharing. It ensures that the data remains **trustworthy** and **protected** from unauthorized changes, loss, or damage. This is especially important in fields like healthcare, finance, and research, where reliable data is essential.
+Data integrity means keeping data **accurate**, **complete**, and **consistent** at every stage&mdash;from creation and storage to processing and sharing. It ensures that the data remains **trustworthy** and **protected** from unauthorised changes, loss, or damage. This is especially important in fields like healthcare, finance, and research, where reliable data is essential.
 
-In analysing the data for your solution you should consider both the received data integrity in addition to steps you need to take to ensure the ongoing integrity of that data.
+In analysing the data for your solution you should consider both the integrity of the received data and the steps you need to take to ensure the ongoing integrity of that data.
 
 Data integrity depends on the data being:
 
-- **complete**: all data elements are entered correctly and not elements are missing
-- **accurate**: the data represents the truth and can be relied upon
-- **kept up to date**: all changes to data occurs in a timely manner
-- **consistent**: the manipulation of data is completed in a consistent manner
-- **secure**: the data is protected from others who may intentionally corrupt it
+- **complete**: all required data is present
+- **accurate**: the data correctly represents what it describes
+- **kept up to date**: all changes to data occur in a timely manner
+- **consistent**: the data follows agreed rules and does not contradict related records
+- **secure**: the data is protected from unauthorised access or alteration and accidental loss or damage
 - **relevant**: the data has meaning and use in the context of your solution
 
 ### Anomalies & Redundancy
 
-Data anomalies refer to inconsistencies or errors that arise when storing or manipulating data in a database. These anomalies can occur in various forms, such as:
+**Data redundancy** occurs when the same fact is stored unnecessarily in multiple places. If these copies are not maintained consistently, data anomalies can occur when records are inserted, updated or deleted.
 
-- **Insertion anomalies**: occur when it is not possible to insert data into a database table without also adding additional, unnecessary data.
-- **Deletion anomalies**: occur when deleting data from a table inadvertently causes the loss of other related data that should have been retained.
-- **Update anomalies**: occur when updating data in a table results in inconsistencies between related data items.
+For example, suppose an enrolment table stores each student's name and contact details alongside each course enrolment. A student enrolled in several courses will have their details repeated in several records. This design can cause:
+
+- **Insertion anomalies**: a new student's details cannot be recorded until they enrol in a course, unless incomplete or unnecessary enrolment data is added.
+- **Deletion anomalies**: deleting a student's final enrolment also removes the only record of their contact details.
+- **Update anomalies**: changing a student's contact details in only some enrolment records leaves conflicting copies.
 
 Identifying and resolving these data anomalies is critical for maintaining data integrity in databases and ensuring that the data is accurate, complete, and consistent.
 
-Proper database design, normalization techniques, and data validation processes can help minimize the occurrence of data anomalies. We will learn about these techniques later in this Unit. For the purposes of the Explore phase, the prevention of such anomalies would form a requirement for your digital solution.
+Proper database design, normalisation techniques, and data validation processes can help minimise the occurrence of data anomalies. We will learn about these techniques later in this Unit. For the purposes of the Explore phase, the prevention of such anomalies would form a requirement for your digital solution.
 
 ### Security and Protection
 
@@ -75,35 +78,32 @@ Security is essential to the success of any information system and the valuable 
 The potential threats to your digital solution include:
 
 - **malware:** software with malicious intent that can infect systems that serve a data-driven application. Malware examples include:
-  - **viruses:** replicates itself by infecting other files and programs, causing damage to the system and potentially spreading to other devices.
-  - **worms:** replicates itself and spreads across networks, consuming bandwidth and causing system slowdowns or crashes.
-  - Trojans horses: disguises itself as legitimate software, tricking users into downloading and installing it, and then allowing unauthorized access to the system.
+  - **viruses:** replicate itself by infecting other files and programs, causing damage to the system and potentially spreading to other devices.
+  - **worms:** replicate itself and spread across networks, consuming bandwidth and causing system slowdowns or crashes.
+  - **Trojan horses:** disguise themselves as legitimate software, tricking users into downloading and installing it, and then allowing unauthorised access to the system.
   - **ransomware:** encrypts files and demands payment in exchange for restoring access to them.
   - **spyware:** secretly monitors user activity and collects personal information, such as login credentials, credit card numbers, and browsing history.
   - adware: displays unwanted advertisements, often in the form of pop-ups or banners, and may redirect users to malicious websites.
-  - **rootkits:** allows attackers to gain privileged access to a system, often remaining undetected and persistent even after system reboots or antivirus scans.
-- **data theft and identity theft**: major concerns in relation to information systems and data-driven applications. Systems whose security measures become compromised can be mined for values, sensitive and private data.
-- **invasion of privacy**: the security of data access and transmission can lead to invasion of privacy as information may be leaked, gathered, and used for blackmail or unsolicited marketing.
+  - **rootkits:** allow attackers to gain privileged access to a system, often remaining undetected and persistent even after system reboots or antivirus scans.
+- **data theft and identity theft**: major concerns in relation to information systems and data-driven applications. Systems whose security measures become compromised can be mined for valuable, sensitive and private data.
+- **invasion of privacy**: inadequate protection of data during access, storage or transmission can expose personal information and compromise privacy. Exposed information may be used for blackmail or unsolicited marketing.
 
 **Solutions**
 Steps can be taken to minimise the risks presented by the potential threats. These include:
 
 - **user-level access control**: a security mechanism that limits the access of users to specific resources or functionalities within a database based on their roles or permissions. User-level access control can protect a database in several ways:
-  - **limiting access** to sensitive data or functionalities to only those users who have a legitimate need to access them, thus reducing the risk of unauthorized access or data breaches
+  - **limiting access** to sensitive data or functionalities to only those users who have a legitimate need to access them, thus reducing the risk of unauthorised access or data breaches
   - **enforcing policies** such as password requirements, access restrictions, or data retention policies, which can help to ensure compliance with regulatory requirements or internal guidelines
   - **monitoring and auditing user activities** within the database, such as logins, data queries, or modifications, which can help to detect and investigate potential security breaches or policy violations.
-- **encryption**: a process of changing data from human-readable text into text that is indecipherable, and is an important measure to protect sensitive data such as passwords, financial details, personal information, and intellectual property. There are two methods for encryption:
-  - **encryption:** a two way process where a key is used to scramble and unscramble data. This is used when the data needs to be returned to its original form
-  - **hashing:** a one way process where a key is used to scramble data. The data cannot be unscrambles, but hashing the same data will always produce the same result. This is generally used with passwords where a password is hashed before being stored. When a user logs in, their entered password is also hashed and the two hashed passwords are compared.
-- **backup and disaster recover**: disasters are always made worse by not planning for them. Good database management practices:
-  - regularly backup the database so that it can be restored if it fails.
-  - log data transactions so that committed data changes can be rolled back
+- **encryption**: transforms readable data into ciphertext using a key. Decryption restores the original data using the appropriate key. Encryption helps protect sensitive data during storage and transmission.
+- **hashing**: produces a hash value from input data. Hashing is a one-way process: the hash cannot be decrypted to recover the original data. Ordinary hashing does not require a key. Passwords should be stored using a suitable password hashing algorithm with a unique salt, a value generated for each password. During login, a password verification function uses the stored salt and algorithm settings to check the entered password against the stored hash.
+- **backup and disaster recovery**: maintain backups and, where supported, transaction logs to restore the database to an appropriate recovery point. Regularly test the recovery process.
 
 :::{seealso} Data Management Activities
 :class: dropdown
 
 1. What two key factors should be considered during data acquisition?
-2. What are the three types of data ownership and how do they differ?
+2. How can personal, corporate and public data overlap? What permissions and conditions should be checked before using a dataset?
 3. What does data integrity mean and why is it important for digital solutions?
 4. What six qualities must data have to maintain integrity?
 5. What is a data anomaly and how can it affect a database?
@@ -112,80 +112,58 @@ Steps can be taken to minimise the risks presented by the potential threats. The
 8. What are some threats to the security of a data-driven application?
 9. How does user-level access control help protect a database?
 10. What is the difference between encryption and hashing when protecting data?
+11. A school excursion database repeats each parent's phone number in several booking records. Explain one update anomaly this could cause and suggest how the database design could prevent it.
+12. A bus arrival application receives location updates only once an hour. Explain why this may be unsuitable and suggest a more appropriate update frequency.
+13. Why should a database recovery process be tested rather than relying only on the existence of backups?
 :::
 
 ## Data Representation
 
-When we talk about **representation**, it's about how we turn different things, like numbers or text, into a language that computers understand, which usually involves using combinations of 0s and 1s for numbers and specific codes for letters and symbols. The way we do this is crucial because it affects how fast and accurately computers can work with data.  
+**Data representation** describes how data, such as text and numbers, is encoded for storage and processing by a computer. Computers store data as bits, represented by 0s and 1s. Choices about representation affect storage requirements, processing and the values that can be represented.
 
 ### Text representation
 
-Representing text is a significant issue when considering data. There are two main ways of representing text, ASCII and Unicode.
+**ASCII** represents a limited set of characters using numeric codes. For example, the uppercase letter 'A' has the decimal code 65. ASCII includes English letters, digits, punctuation and control characters.
 
-**ASCII** is like a simple language that computers first used, where each letter, number, or symbol is represented by a specific number. For example, the letter 'A' is represented by the number 65. This made it easy for early computers to work with text, but it had limitations because it could only represent a small set of characters, mainly English letters and symbols.
+**Unicode** assigns code points to characters from a much wider range of writing systems, as well as symbols and emoji. Like ASCII, it uses numeric values to identify characters. Encodings such as **UTF-8** define how Unicode text is stored as bytes.
 
-**Unicode**, on the other hand, is like a more advanced and universal language for computers. It can represent characters from almost all the world's languages, emojis, and special symbols. Instead of just using numbers like ASCII, it assigns a unique number to every single character in all these languages. So, whether you're typing in English, Chinese, Arabic, or even using emojis, Unicode ensures that computers understand and display it correctly.
+Identify the encoding used by your data so that text can be read and exchanged correctly. Correct display also depends on software and font support.
 
-Make sure you know which method you data uses.
+### Other data representations
 
-### Other Data representations
+Distinguish the **stored value** from its **display format**. For example, 100,000 and $10^5$ express the same number. Likewise, a date may be displayed as `13/08/1984` or `1984-08-13` without changing the date it represents.
 
-The storage of data needs to be consistent. That means the way that one data point is stored is the same from record to record. For example 100,000 and $10^5$ are the same number, but they are represented differently. Before designing a database and storing data, the accepted format of this data needs to be decided.
+Before designing a database, choose suitable data types and consistent conventions for storing, exchanging and displaying each field. Phone numbers and postcodes are identifiers rather than quantities: storing them as text preserves leading zeros.
 
 ![dates](./assets/02/historical_dates.png)<p>&nbsp;</p>
 
-Some common data formats that need to be established:
+The following examples describe display formats rather than formatting instructions for a particular programming language. Formatting symbols vary between tools, so check the documentation for the tool you are using.
 
-- **Dates:**
-  - dates have the widest range of accepted range of formats
-  - date formatting is represented by:
-    - d: day
-    - m: month
-    - y: year
-  - common date formats (example is 13th August 1984):
-    - dd/mm/yyyy    13/08/1984
-    - dd/mm/yy      13/08/84
-    - d/m/yy        13/8/84
-    - mm/dd/yyyy    08/13/1984 (US date style)
-    - yyyy-mm-dd      19840813 (this is the [international ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601))
-- **Time:**
-  - time of day also has a range of accepted formats
-  - time of day formatting is represented by:
-    - H: 24hr hour
-    - h: 12hr hour
-    - m: minute
-    - s: second
-    - A: AM or PM
-  - common time of day formats (example is 1:15pm)
-    - HH:mm     13:15
-    - hh:mmA    01:15pm
-    - h:mmA     1:15pm
-- **Numbers:**
-  - numbers and are often formatted in a specific way (eg. phone numbers and currency) or may be expected to have specific number of places after the decimal point.
-  - numbers formatting is represented by:
-    - 0: required digit between 0 and 9
-    - 9: optional number between 0 and 9
-  - common number formats:
-    - mobile number:    0000 000 000
-    - landline number:  (00) 0000 0000
-    - postcode:         0000
-    - currency:         $ 90.00
+| Data | Example display formats | Design consideration |
+| --- | --- | --- |
+| Dates | `13/08/1984`, `13/08/84`, `08/13/1984`, `1984-08-13` | Agree on the order of day, month and year. The ISO 8601 year-month-day format reduces ambiguity when exchanging dates. |
+| Time | `13:15`, `01:15 pm`, `1:15 pm` | Choose a 12-hour or 24-hour display and include the time zone when needed. |
+| Currency | `$12.50`, `AUD 12.50` | Specify the currency and required decimal precision. A dollar symbol alone may be ambiguous. |
+| Identifiers | Mobile: `0412 345 678`; landline: `(07) 3123 4567`; postcode: `0800` | Store identifiers as text. Spaces and brackets can be added for display. |
+
+For example, Python's `strftime` date and time formatting uses `%d` for the day, `%m` for the month, `%Y` for a four-digit year, `%H` for a 24-hour clock hour, `%I` for a 12-hour clock hour, `%M` for minutes, `%S` for seconds and `%p` for AM or PM. The format `%Y-%m-%d` produces a date such as `1984-08-13`. These symbols are specific to this formatting convention.
 
 :::{seealso} Data Representation Activities
 :class: dropdown
 
 1. What does representation mean in the context of computer systems?
 2. How does ASCII represent characters in a computer system?
-3. Why is Unicode preferred over ASCII for modern digital solutions?
+3. Why is Unicode useful for modern digital solutions?
 4. What kinds of characters can Unicode represent that ASCII cannot?
-5. Why is it important to know whether your data uses ASCII or Unicode?
-6. Why must data storage formats be consistent in a database?
-7. What are two different ways the number 100,000 can be represented?
-8. Why must a data format be decided before designing a database?
-9. What is the international standard format for writing dates and what is it called?
-10. How is time formatted differently in 12-hour and 24-hour systems?
-11. What symbols are used to represent hours, minutes, seconds, and AM/PM in time formatting?
-12. What is the difference between 0 and 9 in number formatting rules?
-13. What is a common format for an Australian mobile number?
-14. How are decimal places commonly used in currency formatting?
+5. What is the difference between Unicode and UTF-8?
+6. Why must data storage and exchange conventions be consistent?
+7. What are two different ways the number 100,000 can be displayed?
+8. Why should data types and formats be considered before designing a database?
+9. What is the ISO 8601 year-month-day format for 13 August 1984?
+10. How is time displayed differently in 12-hour and 24-hour systems?
+11. Which Python `strftime` symbols represent months and minutes? Why is it important to distinguish them?
+12. Why should a postcode such as `0800` be stored as text?
+13. What is a common display format for an Australian mobile number?
+14. How do a currency value and its display format differ?
+15. A dataset contains the date `04/05/2025`. Explain why this is ambiguous and suggest a format that avoids the ambiguity.
 :::

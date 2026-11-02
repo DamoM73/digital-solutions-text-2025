@@ -27,18 +27,18 @@ Key advantages:
 In Digital Solutions, pseudocode is the standard way to represent algorithms. Since schools use different programming languages, the syllabus uses pseudocode to ensure consistency. The QCAA has set specific rules for how it must be written.
 
 :::{caution} Do not use Python Code
-Yes Python is easy to read, and many developers joke that it is like writing in Pseudocode, but it is not the pseudocode that is expected from QCAA. Avoid getting so detailed in your pseudocode that you start using Python specific language.
+Yes, Python is easy to read, and many developers joke that it is like writing in Pseudocode, but it is not the pseudocode that is expected from QCAA. Avoid getting so detailed in your pseudocode that you start using Python-specific language.
 :::
 
 ### Keywords
 
-**KEYWORDS** should be written bold and capitalized.
+**KEYWORDS** should be written bold and capitalised.
 
 Keywords do not have to be valid programming language words as long as they clearly convey the intent of the line of pseudocode.
 
 ### Calculations
 
-Pseudocode should clearly indicate what is happening at each step, including formulas of calculations.
+Pseudocode should clearly indicate what is happening at each step, including formulas for calculations.
 
 For example:
 `CALCULATE net` is not as clear as `CALCULATE net = gross − tax`
@@ -47,14 +47,14 @@ For example:
 
 Use snake case naming convention for variable names with multiple words, subroutines, methods and functions.
 
-Snake case is a convention where all words are in lowercase and spaces between words is replaces with an `_`
+Snake case is a convention where all words are in lowercase and spaces between words are replaced with an `_`
 
 For example:
 `VAR file_name`
 
 ### Font
 
-Use a mono-space typeface when writing algorithms on computer:
+Use a mono-space typeface when writing algorithms on a computer:
 
 Windows mono-space fonts:
 - Courier New
@@ -102,7 +102,7 @@ Create an algorithm that reads three student marks from a file called `marks.txt
 
 ### Modularisation
 
-All pseudocode modules start and ends with the `BEGIN` and `END` keywords.
+All pseudocode modules start and end with the `BEGIN` and `END` keywords.
 
 Main algorithm:
 
@@ -323,11 +323,11 @@ The program should:
 
 ### What to Include
 
-Your assignment have limited space, so you will not be able include all your algorithms as pseudocode. That presents the question, what code should you include?
+Your assignment has limited space, so you will not be able to include all your algorithms as pseudocode. That presents the question, what code should you include?
 
 Ultimately, the pseudocode presented in your assignment should demonstrate your coding skill. Choose the algorithms that you are most proud of, or that you found the trickiest.
 
-Also keep in find that you should be demonstrating all six of the algorithm basic building blocks:
+Also keep in mind that you should be demonstrating all six of the basic building blocks of algorithms:
 - sequence
 - assignment
 - conditions
@@ -350,8 +350,8 @@ Pseudocode in your assessments should not stand alone. Annotations — short exp
 **IA2 and IA3**
 
 - **Determining and Synthesising** — annotations that link pseudocode explicitly to success criteria, and that demonstrate how programmed components address the identified problem, support evidence of synthesis at the upper performance level.
-- **Generating** — annotations that indicate the functionality, useability, and efficiency of coded components provide evidence that the generated solution is purposeful and meets the determined success criteria.
-- **Evaluating** — annotations that connect code behaviour to success criteria, and that explain how components interact to address the problem, support critical evaluation judgments.
+- **Generating** — annotations that indicate the functionality, usability, and efficiency of coded components provide evidence that the generated solution is purposeful and meets the determined success criteria.
+- **Evaluating** — annotations that connect code behaviour to success criteria, and that explain how components interact to address the problem, support critical evaluation judgements.
 - **Communicating** — concise, well-organised annotations that use technical language accurately contribute here.
 
 ### What annotations should say
@@ -372,7 +372,7 @@ In IA2, pseudocode and annotated code represent programmed components of your wo
 
 - link code or pseudocode explicitly to the success criteria it addresses
 - demonstrate knowledge and understanding of programming features relevant to the task
-- explain the functionality, useability, and efficiency of coded components to support your evaluation
+- explain the functionality, usability, and efficiency of coded components to support your evaluation
 
 **IA3 — Digital Solution (Data Exchange)**
 
@@ -380,7 +380,7 @@ IA3 has a strong focus on data exchange and security. Annotations should:
 
 - explain how programmed components address the identified security strategy
 - connect algorithms to success criteria relating to data confidentiality, integrity, or availability
-- support your evaluation of the functionality, useability, and efficiency of the solution
+- support your evaluation of the functionality, usability, and efficiency of the solution
 
 ### How to format annotations
 

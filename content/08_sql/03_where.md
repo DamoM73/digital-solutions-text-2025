@@ -4,7 +4,7 @@
 By the end of this section you will:
 - know how to filter `SELECT` results using the `WHERE` clause
 - know how to combine conditions using the `AND` and `OR` operators
-- know how to search for simiiar values using the `LIKE` operator and wildcards
+- know how to search for similar values using the `LIKE` operator and wildcards
 - understand what `NULL` values are
 - know how to handle `NULL` values
 :::
@@ -18,7 +18,7 @@ The SQL `WHERE` clause is used to filter records in a database query to include 
 :::{tip} Summary
 :class: dropdown
 - **Core Function**: The WHERE clause is used to extract only those records that fulfill a specified condition. It acts like a filter, allowing you to narrow down your results from a larger dataset.
-Versatility: The video emphasizes that the WHERE clause is not limited to SELECT statements. It is a fundamental part of other crucial SQL commands like UPDATE and DELETE, enabling you to specify which rows to modify or remove. It's described as a "Swiss Army knife" for SQL queries.
+Versatility: The video emphasises that the WHERE clause is not limited to SELECT statements. It is a fundamental part of other crucial SQL commands like UPDATE and DELETE, enabling you to specify which rows to modify or remove. It's described as a "Swiss Army knife" for SQL queries.
 - **Basic Syntax**: The general structure for using the clause is:
 `SELECT column1, column2, ... FROM table_name WHERE condition;`
 - **Filtering Different Data Types**:
@@ -42,7 +42,7 @@ Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_where.asp) on t
 
 ## AND and OR Operators
 
-The SQL `AND` operator is used to filter records by returning only rows where all specified conditions are true. While the SQL `OR` operator returns rows where at least one of the specified conditions is true.
+The SQL `AND` operator is used to filter records by returning only rows where all specified conditions are true. The SQL `OR` operator returns rows where at least one of the specified conditions is true.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r1V39Iia4j0?si=xls49MU7D0cKXz9X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -81,7 +81,7 @@ AND PostalCode > '12000';
 ```
 
 **Combining AND and OR**
-The video also demonstrates how to combine AND and OR operators. It emphasizes the importance of using parentheses () to group conditions and ensure the logic is evaluated correctly.
+The video also demonstrates how to combine AND and OR operators. It emphasises the importance of using parentheses () to group conditions and ensure the logic is evaluated correctly.
 
 Example with parentheses (correct logic): This query finds customers from Spain whose names start with either 'G' or 'R'.
 
@@ -123,18 +123,18 @@ This video from W3Schools provides a clear and concise explanation of NULL value
 - **Querying for NULL values**: To find records with NULL values, you cannot use standard comparison operators like '=' or '<>'. Instead, you must use the IS NULL operator in your WHERE clause.
 - **Querying for non-NULL values**: Conversely, to find records where a field has a value (i.e., is not NULL), you should use the IS NOT NULL operator.
 - 
-The video emphasizes that mastering the use of IS NULL and IS NOT NULL is crucial for effectively managing and querying data in SQL databases where some information might be incomplete.
+The video emphasises that mastering the use of IS NULL and IS NOT NULL is crucial for effectively managing and querying data in SQL databases where some information might be incomplete.
 :::
 
-Go to the - [W3schools Tutorial](https://www.w3schools.com/sql/sql_null_values.asp) on `NULL` values and complete their exercises.
+Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_null_values.asp) on `NULL` values and complete their exercises.
 
 :::{seealso} WHERE Activities
 :class: dropdown
 **Using the Movies database**
 
-1. Display the name of all the US directors
-2. Display the name of the all non-US directors
-3. Display the name of all the members who owe money
+1. Display the names of all the US directors
+2. Display the names of all non-US directors
+3. Display the names of all the members who owe money
 4. Display all the movies that have 'the' in their title
 5. Display all the movies that start with Z
 

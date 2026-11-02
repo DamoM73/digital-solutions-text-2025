@@ -7,6 +7,6 @@ We will analyse data privacy and data integrity risks associated with transferri
 This focus is broken into four parts:
 
 - **Privacy:** collecting and using personal data ethically
-- **Networks:** how data is transfer between computers
+- **Networks:** how data is transferred between computers
 - **Data security:** methods of ensuring the safe storage and transfer of data
-- **Data Threats:** dangers that data need to be protected against
+- **Data Threats:** dangers that data needs to be protected against

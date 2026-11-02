@@ -21,7 +21,7 @@ In this section we will learn how to parse a CSV file into a SQLite database. We
 (f1-database-structure)=
 ## F1 Database Structure
 
-Before we can start populating our database, you would have needed to both design the database and then created the database by completing:
+Before we can start populating our database, you need to have designed and created the database by completing:
 
 - [ERD from Data Files](../06_documentation/11_erd_rs.md#erd-from-data-files)
 - [DB Browser](../09_tools/02_db_browser.md)
@@ -29,7 +29,7 @@ Before we can start populating our database, you would have needed to both desig
 
 ![f1_driver.bd ERD](./assets/08/03_erd_f1_drivers.png)
 
-When populating a database, we need to be aware of foreign keys. We cannot write to a table if it contains foreign keys which link to an unpopulated table. Looking at the ERD above and we can observe the populate order should be:
+When populating a database, we need to be aware of foreign keys. We cannot write to a table if it contains foreign keys which link to an unpopulated table. Looking at the ERD above, we can observe the population order should be:
 
 1. **Driver table** - there are no foreign keys.
 2. **Season table** - the only foreign key is Champion, which is linked to the populated Driver_ID field.
@@ -38,7 +38,7 @@ When populating a database, we need to be aware of foreign keys. We cannot write
 ## Explore the Dataset
 Whenever you work with a dataset, it is important to explore it first. You need to understand it, in order to ensure the integrity of the data as you parse it into your database structure.
 
-Click on the **F1Drivers_Dataset.csv** to view it's content. You will see the raw data below.
+Click on the **F1Drivers_Dataset.csv** to view its content. You will see the raw data below.
 
 ![f1_csv_raw](./assets/08/01_raw_csv.png)
 
@@ -55,7 +55,7 @@ Scrolling through the data we can make some observations about how we will need 
 ## Initial Processing
 
 :::{danger}Before your start
-You will need to make of copy of the **f1_driver.db** file. Databases do not allow for undos, so we will need a fresh version of **f1_driver.db**.
+You will need to make a copy of the **f1_driver.db** file. Databases do not allow for undos, so we will need a fresh version of **f1_driver.db**.
 
 Select the **f1_driver.db** file and then press **Ctrl/Cmd** + **C** to copy. Then press **Ctrl/Cmd** + **V** to paste it. You should now have a **f1_driver copy.db** file.
 :::
@@ -94,7 +94,7 @@ class Datastore:
 
 :::{important} Explanation of Code
 :class: dropdown
-- lines 3-8 &rarr; create a `Datastore` class which accepts a filenames for the database file and data file.
+- lines 3-8 &rarr; create a `Datastore` class which accepts filenames for the database file and data file.
 - line 12 &rarr; stores the database filename.
 - line 13 &rarr; stores the data filename.
 - line 14 &rarr; connects to the database.
@@ -172,7 +172,7 @@ db = Datastore("f1_driver.db", "data/F1Drivers_Dataset.csv")
 
 Now we can test the initial processing by running **main.py**
 
-Your terminal should stream a list of dictionaries (868 of the to be exact). This is the data that is being read from the CSV file. Lets have a look at one of these dictionaries. I have formatted the last dictionary to make it easier to read.
+Your terminal should stream a list of dictionaries (868 of them to be exact). This is the data that is being read from the CSV file. Let’s have a look at one of these dictionaries. I have formatted the last dictionary to make it easier to read.
 
 ```{code}python
 {
@@ -203,7 +203,7 @@ Your terminal should stream a list of dictionaries (868 of the to be exact). Thi
 
 The first thing we can notice is that there is more data in the dictionary, than can be stored in the database. That's because `Pole_Rate`, `Start_Rate`, `Win_Rate`, `Podium_Rate`, `FastLap_Rate`, `Points_Per_Entry`, `Years_Active`, and `Champion` can all be calculated from the other values. 
 
-The next thing we can notice is that each value is a string, meaning that we need to covert it into the correct data type for the dictionary.
+The next thing we can notice is that each value is a string, meaning that we need to convert it into the correct data type for the dictionary.
 
 Finally the `Seasons` value is a string representing a list. This will need to be converted and then iterated over. For example, processing Ricardo's seasons will require three entries into the database (one for each year).
 
@@ -283,9 +283,9 @@ Return to our **f1_datastore.py** file and replace the `print` statement on **li
 :::{important} Explanation of Code
 :class: dropdown
 - lines 31 & 32 &rarr; taking the string from the record dictionary and assigning it to the variable.
-- lines 33 - 38 &rarr; taking the string from the record dictionary and converts it to a float then to an integer (this is needed as a strait conversion to integer will cause an error because of the decimal value).
-- line 39 &rarr; taking the string from the record dictionary and converts it to a float. The points field actually contains information in the decimal value.
-- lines 42 - 52 &rarr; displays the processed driver data to the terminal.
+- lines 33 - 38 &rarr; taking the string from the record dictionary and converting it to a float then to an integer (this is needed as a direct conversion to integer will cause an error because of the decimal value).
+- line 39 &rarr; taking the string from the record dictionary and converting it to a float. The points field actually contains information in the decimal value.
+- lines 42 - 52 &rarr; display the processed driver data to the terminal.
 :::
 
 Save **f1_datastore.py**.
@@ -355,20 +355,20 @@ Back in **f1_datastore.py** we need to create a method that writes the data to t
 - lines 54 - 65 &rarr; define the method and list all the data that needs to be provided to the method.
 - lines 69 - 85 &rarr; are the parameterised SQL statement that will be run on the database.
   - lines 70 - 73 &rarr; are the SQL statement template without the data.
-  - lines 74 - 84 &rarr; is a dictionary that contains the data to be plugged into the command template.
+  - lines 74 - 84 &rarr; form a dictionary that contains the data to be plugged into the command template.
 :::
 
 :::{hint} Parameterized SQL statements
 :class: dropdown
 A way of safely and efficiently inserting values into SQL queries without building the query as a string. Instead of directly inserting values into a query (which can lead to errors or security issues), placeholders are used, and values are provided separately.
 
-Parameterized SQL statements are used to:
+Parameterised SQL statements are used to:
 - Prevent SQL Injection by separating code from data.
 - Improve performance by allowing databases to cache execution plans.
 - Reduce errors by helping to avoid syntax issues with strings, numbers, dates.
 :::
 
-Now we need to call the `add_driver` method from the `populate_database` method. Go up to the `populate_database` method and change the `print` in line 42, to a `add_driver` call.
+Now we need to call the `add_driver` method from the `populate_database` method. Go up to the `populate_database` method and change the `print` in line 42, to an `add_driver` call.
 
 ```{code}python
 :linenos:
@@ -443,9 +443,9 @@ We will take the data for Seasons table from the **Championship Years** field. I
 If we look at the data in the **Championship Years** column we see that:
 
 - it is most frequently blank &rarr; we need to check that the field is not blank before writing to the database
-- when there is data, it is a list &rarr; when there is data, we will need write to the database for each year in the field.
+- when there is data, it is a list &rarr; when there is data, we will need to write to the database for each year in the field.
 
-The pseudocode for the processing the seasons data is as follows:
+The pseudocode for processing the seasons data is as follows:
 
 ```{code}python
 :linenos:
@@ -512,7 +512,7 @@ We are now returning the **driver_id** now we need to store it somewhere. Go to 
 
 ### Process Seasons Data
 
-Now we need extract the data for the Seasons table. Just like the driver data, we will first display this data to the terminal so we can check it.
+Now we need to extract the data for the Seasons table. Just like the driver data, we will first display this data to the terminal so we can check it.
 
 Go to the bottom of the `populate_database` method. Make sure that our indents place this code inside the `for record in csv_reader` loop. Add the highlighted code below:
 
@@ -544,7 +544,7 @@ Go to the bottom of the `populate_database` method. Make sure that our indents p
 :::{important} Explanation of Code
 :class: dropdown
 - line 56 &rarr; checks if there is a value in the **Championship Years** column
-- line 57 &rarr; converts the string the represents a list of integers into a list of integers and assigns it to `years`
+- line 57 &rarr; converts the string that represents a list of integers into a list of integers and assigns it to `years`
 - line 59 &rarr; iterates through our new `years` list.
 - line 69 &rarr; prints the data that we will write to the Seasons table
 :::
@@ -609,7 +609,7 @@ If you have a keen eye you may have noticed that line 7 looks different to our l
 
 If you look at the [Data Structure ERD] you will notice that the primary key (year) is a value that we are taking from the CSV file, therefore it is not auto-increment.
 
-In SQL, when you INSERT all the values into a table, you don't have to list the field names, they just get written in order. So the first VALUE item get written to the first field of the table, the second VALUE to the second field, and so-on.
+In SQL, when you INSERT all the values into a table, you don't have to list the field names, they just get written in order. So the first VALUE item gets written to the first field of the table, the second VALUE to the second field, and so-on.
 :::
 
 Then go up to the `populate_database` method and replace the print statement on line 61 with a call to the `add_season` method:
@@ -701,7 +701,7 @@ If your code passes your test, we need to return the database file back to blank
 
 ### Writing Raced Data
 
-In **f1_datastore.py** create the `add_raced` method by add the code below:
+In **f1_datastore.py** create the `add_raced` method by adding the code below:
 
 ```{code}python
 :linenos:
@@ -745,7 +745,7 @@ In your Unit 3 repo you will have the **netflix_titles.csv** and **netflix_shows
 
 ![netflix ERD](./assets/08/06_erd_netflix.png)
 
-This is a much larger dataset and more complicated database. Never-the-less, the concepts and processes are the same as the F1 Drivers database. 
+This is a much larger dataset and more complicated database. Nevertheless, the concepts and processes are the same as the F1 Drivers database.
 
 Make sure that you follow the same process:
 

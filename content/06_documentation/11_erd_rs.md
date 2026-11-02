@@ -4,35 +4,35 @@
 By the end of this section you will:
 - be able to develop Entity Relationship Diagrams by:
   - identifying the entities in a data scenario
-  - categorizing attributes under the entities
+  - categorising attributes under the entities
   - establishing the relationships between the entities
   - resolving many-to-many relationships
   - identifying foreign keys
 - be able to develop a Relational Schema from the Entity Relationship Diagram
-- use sample table to check the Relational Schema
+- use sample tables to check the Relational Schema
 :::
 
-The purpose of the ERD and Relational Schemas are to design and represent the database that forms your application's datastore (model).
+The purpose of the ERD and Relational Schemas is to design and represent the database that forms your application's datastore (model).
 
 The first step in designing a database is developing an understanding of the scenario. For learning about designing databases we will use the following scenario:
 
 :::{seealso} Database Design Scenario
 Student Subject Database
 
-- Students can log into to access:
+- Students can log in to access:
   - their current enrolment
   - subject grades when entered
-- Teachers can log into to:
+- Teachers can log in to:
   - Enter student grades
 - Each subject is only offered once, with one teacher
 - Each student can enrol in each subject only once.
 :::
 
-## EDR &mdash; Entity Relationship Diagram
+## ERD &mdash; Entity Relationship Diagram
 
 > An Entity Relationship Diagram (ERD) is a type of flowchart that illustrates how “entities” such as people, objects or concepts relate to each other within a system. `lucidchart_2017_er`
 
-In following the process of creating a ERD, you will create a relational database that complies with [normalisation](../04_data.md/03_structuring_data.md) rules to the level of **3NF**.
+In following the process of creating an ERD, you will create a relational database that complies with [normalisation](../04_data.md/03_structuring_data.md) rules to the level of **3NF**.
 
 Watch the videos below to understand designing an ERD.
 
@@ -87,7 +87,7 @@ Watch the videos below to understand designing an ERD.
 - Useful when no single field is unique (e.g. `Order Number` + `Product ID` for a **Shipment** table).
 - Rules:
   - Use as few attributes as possible.
-  - Avoid changle fields.
+  - Avoid changeable fields.
 
 **Bridge Tables**
 - Used to resolve **many-to-many** relationships.
@@ -136,7 +136,7 @@ For example in the **Student Subject Database**:
   - each teacher can teach **zero to many** subjects (assuming you can have teachers who do not teach for this time period)
   - each subject has **one and only one teacher** who teaches it
 - **student&mdash;subject** relationship
-  - each student can study **zero to many subject** (assuming a student can be enrolled but not studying)
+  - each student can study **zero to many subjects** (assuming a student can be enrolled but not studying)
   - each subject can have **zero to many students** studying it (assuming a subject can exist without students studying it)
 
 You will end up with the following ERD
@@ -161,7 +161,7 @@ To do this:
 For our **Student Subject Database**:
 
 - the **subject&mdash;student** relationship is a **many-to-many**
-- add a **bridging entity** between the two, and named **'Enrolments'**
+- add a **bridging entity** between the two, named **'Enrolments'**
   - if you can't think of an appropriate name, just combine the name of the two original entities
 - connect the relationships from the **Enrolments** entity to the **Subject** entity and the **Student** entity
 - the new cardinalities will be **many** on the **Enrolments** entity end, and **one** on both the **Subject** entity and the **Student** entity
@@ -180,7 +180,7 @@ Steps to establish foreign keys
 
 - select a relationship
 - check the table on the **many** end
-  - look for a **attribute** that logically connects it to the other entity
+  - look for an **attribute** that logically connects it to the other entity
   - ensure that the name of the **foreign key** reflects the **primary key** of the connected entity
   - note: if you can't find one, you should add an **attribute** and name it after the primary key of the connected entity
 - place a **FK** in front of the **foreign key attribute**
@@ -215,7 +215,7 @@ The RS for the **Student Subject Database** will look like:
 
 Sample tables are used to ensure that the database structure that the ERD produced can effectively store the required data adequately.
 
-You should create tables that reflects the entities identified and attributes identified by the ERD. Then fill the table with sample data. This data may be given to you, or you may produce mock data that is representative of data that will be stored in the database. A good resource for creating mock data is <a href="https://www.mockaroo.com/" target="_blank">mockaroo</a>.
+You should create tables that reflect the entities identified and attributes identified by the ERD. Then fill the table with sample data. This data may be given to you, or you may produce mock data that is representative of data that will be stored in the database. A good resource for creating mock data is <a href="https://www.mockaroo.com/" target="_blank">mockaroo</a>.
 
 Below are the sample tables for the **Student Subject Database**.
 
@@ -276,9 +276,9 @@ A company keeps its order records in a spreadsheet where each row lists the cust
 
 For Unit 3 you will need to analyse data files to create a relational schema. We will now look at how to analyse a data file and create a relational schema from it.
 
-We will be using cvs files as our datafile. It is importnat to note that csv file can only represnet flat files, while we will be working with relational databases. Therefore, we will need to decompose the data in the csv file into multiple tables.
+We will be using CSV files as our data files. It is important to note that CSV files can only represent flat files, while we will be working with relational databases. Therefore, we will need to decompose the data in the csv file into multiple tables.
 
-Before we do this it will be useful to remember the rules of [Normalization](../04_data/03_structuring_data.md).
+Before we do this it will be useful to remember the rules of [Normalisation](../04_data/03_structuring_data.md).
 
 A table is in 3NF if:
 1. Each column contains atomic values
@@ -300,7 +300,7 @@ While we can look at the raw csv file as a datafile, it is easier to analyse if 
 
 Navigate to the `data` folder in the unit repository and open the file `F1Driver_Dataset.csv` in Excel.
 
-The first thing Excel will want to do is convert the data in the file. Do want to see the data as it is, so select **Don't Convert**, then get rid of the yellow banner warning of dataloss, by click on the x on the right.
+The first thing Excel will want to do is convert the data in the file. We want to see the data as it is, so select **Don't Convert**, then get rid of the yellow banner warning of data loss, by clicking on the x on the right.
 
 Since the table is almost 900 records long, we want a way to easily look over all the data. Fortunately Excel has a feature called **Filters** that will help us with this.
 
@@ -315,7 +315,7 @@ You should now see little arrows next to each column header. Clicking on these w
 
 The first thing we will do is to check that each column only contains **atomic values**.
 
-You will notice that both the **Seasons** and the **Champioship Years** columns contain multiple values in a single cell, therefore non-atomic values.
+You will notice that both the **Seasons** and the **Championship Years** columns contain multiple values in a single cell, therefore non-atomic values.
 
 ![non-atomic values](./assets/11/non-atomic_columns.png)<p>&nbsp;</p>
 
@@ -352,7 +352,7 @@ Notice the one-to-one relationship between Seasons and Champions. This means tha
 
 ### Partial Dependencies
 
-Next we need to check for partial dependencies. Particial dependencies can only occur in tables with composite primary keys. We only have one table with a composite primary key, the Raced table. Since there are no columns in this table that are not part of the primary key, there are no partial dependencies.
+Next we need to check for partial dependencies. Partial dependencies can only occur in tables with composite primary keys. We only have one table with a composite primary key, the Raced table. Since there are no columns in this table that are not part of the primary key, there are no partial dependencies.
 
 If there were partial dependencies, we would need to create new tables to remove them.
 

@@ -12,7 +12,7 @@ By the end of this section you will:
 
 ### Flat File Databases
 
-A flat file database is a type of database that stores data in a simple, two-dimensional table or spreadsheet-like structure. In a flat file database, information is organized into **rows** and **columns**, where each row represents a single **record** or entry, and each column represents a specific attribute or **field** of that record.
+A flat file database is a type of database that stores data in a simple, two-dimensional table or spreadsheet-like structure. In a flat file database, information is organised into **rows** and **columns**, where each row represents a single **record** or entry, and each column represents a specific attribute or **field** of that record.
 
 Unlike more complex relational databases, flat file databases do not have multiple tables with predefined relationships between them. Instead, all data is stored in a single file, making it easy to create and manage but limited in terms of its ability to handle complex data relationships.  
 
@@ -29,7 +29,7 @@ Flat file databases are often used for relatively small-scale data storage needs
 **What is a Relational Database?**
 
 - It's a collection of data items with predefined relationships between them.
-- Data is organized into **tables**, which consist of **columns** (attributes) and **rows** (records or tuples).
+- Data is organised into **tables**, which consist of **columns** (attributes) and **rows** (records or tuples).
 - Each row in a table is uniquely identified by a **primary key**.
 - Relationships between different tables are established using **foreign keys**, which are primary keys from one table used in another.
 
@@ -57,11 +57,11 @@ The video highlights four main features:
 
 A relational database is a type of database that organizes and stores data in a structured manner, using a collection of tables with predefined relationships between them. It is based on the principles of relational algebra and was introduced by Edgar F. Codd in the 1970s.
 
-In a relational database, data is organized into **tables**, where each table represents a specific **entity** or **concept**, and each **row** in the table represents a unique record or instance of that entity. **Columns** in the table represent attributes or characteristics of the entity.
+In a relational database, data is organised into **tables**, where each table represents a specific **entity** or **concept**, and each **row** in the table represents a unique record or instance of that entity. **Columns** in the table represent attributes or characteristics of the entity.
 
 The key features of relational databases include:
 
-- **Tables**: Data is stored in tables with **rows** and **columns**, providing a clear structure for organizing information.
+- **Tables**: Data is stored in tables with **rows** and **columns**, providing a clear structure for organising information.
 - **Relationships**: Tables can be **related** to each other through common (shared) fields called **keys**, allowing for complex queries and the retrieval of related data.
 - **Integrity**: Relational databases enforce data integrity through **constraints**, ensuring that data remains **accurate** and **consistent**.
 - **SQL (Structured Query Language)**: Relational databases use SQL for **querying** and **manipulating** data, making it a powerful tool for working with databases.
@@ -71,7 +71,8 @@ The key features of relational databases include:
     - It ensures that either the entire transaction is successfully completed, and its changes are applied, or none of it happens.
     - If any part of a transaction fails, the entire transaction is rolled back, ensuring data consistency.
   - **Consistency**:
-    - Consistency ensures that a transaction transforms the database from one valid state to another valid state.- It prevents transactions from violating the integrity rules defined in the database schema.
+    - Consistency ensures that a transaction transforms the database from one valid state to another valid state.
+    - It prevents transactions from violating the integrity rules defined in the database schema.
     - If a transaction would break these rules, it is halted, and the database remains unchanged.
   - **Isolation**:
     - Isolation guarantees that concurrent transactions do not interfere with each other.
@@ -90,7 +91,7 @@ Relational databases are widely used in various applications, from business syst
 1. What is a flat file database and how is its data structured?
 2. Why might a flat file database be unsuitable for complex data relationships?
 3. What are the key differences between flat file databases and relational databases?
-4. How is data organized in a relational database?
+4. How is data organised in a relational database?
 5. What is a primary key and what is its role in a relational database table?
 6. What is a foreign key and how does it create relationships between tables?
 7. What is the purpose of SQL in relational databases?
@@ -113,8 +114,8 @@ Relational databases are widely used in various applications, from business syst
 
 :::{tip} Basic Concept of Database Normalization Summary
 :class: dropdown
-**What is Normalization?**
-Normalization is a database design technique used to organize data into multiple, smaller, related tables. Its primary goal is to **minimize data redundancy**.
+**What is Normalisation?**
+Normalisation is a database design technique used to organise data into multiple, smaller, related tables. Its primary goal is to **minimise data redundancy**.
 
 **The Problem: Data Redundancy**
 Data redundancy is the unnecessary repetition of data in a database. The video illustrates this with an example of a single **STUDENTS TABLE** with the following columns:
@@ -130,8 +131,8 @@ In this table, if there are multiple students from the same branch (e.g., Comput
 - **Deletion Anomaly:** If you were to delete the records of all students from a particular branch, you would also lose all information about that branch itself (who the HOD is, the office phone number), because that data only existed within the student records.
 - **Updation (or Modification) Anomaly:** If the Head of Department (HOD) for the CSE branch changes, you would have to find and update *every single student record* for that branch. If even one record is missed, the database becomes inconsistent, with conflicting information about who the HOD is.
 
-**The Solution: Applying Normalization**
-Normalization solves these problems by following a "Divide and Rule" approach. It breaks down the large, problematic table into smaller, more manageable tables.
+**The Solution: Applying Normalisation**
+Normalisation solves these problems by following a "Divide and Rule" approach. It breaks down the large, problematic table into smaller, more manageable tables.
 
 In the example, the single `STUDENTS TABLE` is split into two separate tables:
 
@@ -159,9 +160,9 @@ In the example, the single `STUDENTS TABLE` is split into two separate tables:
 - Erosion of data integrity through:
   - **Insertion anomalies:** the need to repeat data when entering new values
   - **Deletion anomalies:** the loss of a related dataset when some other dataset is deleted
-  - **Causes update anomalies:** the same entity can have conflicting values after an incorrect update
+  - **Update anomalies:** the same entity can have conflicting values after an incorrect update
 
-The process of **Normalisation** is the the most effective way of removing redundancy.
+The process of **Normalisation** is the most effective way of removing redundancy.
 
 :::{seealso} Normalisation Activities
 :class: dropdown
@@ -185,7 +186,7 @@ The process of **Normalisation** is the the most effective way of removing redun
 :::{tip} First Normal Form Summary
 :class: dropdown
 
-- **Introduction to 1NF:** The First Normal Form is the first and most fundamental step in the normalization process. A table that is not in 1NF is considered to have a poor database design. Achieving 1NF is a prerequisite for moving to higher normal forms like 2NF and 3NF.
+- **Introduction to 1NF:** The First Normal Form is the first and most fundamental step in the normalisation process. A table that is not in 1NF is considered to have a poor database design. Achieving 1NF is a prerequisite for moving to higher normal forms like 2NF and 3NF.
 - **The Four Rules of 1NF:** To be in First Normal Form, a table must adhere to four basic rules:
 
   1. **Atomicity:** Each column must contain only atomic (single, indivisible) values. A single cell cannot hold multiple values.
@@ -198,7 +199,7 @@ The process of **Normalisation** is the the most effective way of removing redun
   - **Solution:** To bring the table into 1NF, the multi-valued `subject` column is broken down. This is done by creating a separate row for each subject a student has taken, which results in the student's `rollno` and `name` being repeated but ensures that every cell contains only a single value.
 :::
 
-A database is in **1st Normal Form** when :
+A database is in **1st Normal Form** when:
 
 - Each column contains **atomic values**
 - Each column contains the **same type of data**
@@ -319,7 +320,7 @@ A table with partial dependency is not in 2NF. To fix this, the dependency must 
 
 - It is in **1NF**
 - There are no **partial dependencies:**
-  - where an attribute is only dependant upon *part* of a composite key
+  - where an attribute is only dependent upon *part* of a composite key
   - this can only happen when you have a composite key
 
 **2NF Example**
@@ -420,9 +421,9 @@ By the end, the database is in 3NF, now consisting of four tables (`Student`, `S
 :::
 
 A database is in **3rd Normal Form** when:
-- Is at 2NF
+- It is in 2NF
 - There are no **transitive dependencies:**
-  - where an attribute is dependant on an attribute other than the primary key.
+  - where an attribute is dependent on an attribute other than the primary key.
 
 **3NF Example**
 
@@ -450,7 +451,7 @@ The tables below represent the same data in 3NF
 
 **Table 2**
 
-| book\id | title | publisher_id | publisher_name |
+| book_id | title | publisher_id | publisher_name |
 | --- | --- | --- | ---- |
 | B01 | Learn SQL | P01 | TechBooks |
 | B02 | Python in Action | P02 | CodeWorks |

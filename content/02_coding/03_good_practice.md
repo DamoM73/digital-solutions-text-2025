@@ -43,7 +43,7 @@ Reducing cognitive load is important for improving focus, learning, and problem-
 
 Maintainability is about writing code that is easy to read, understand, and update. It reduces cognitive load by keeping code clear and predictable, making it easier to identify and safely change the specific parts that need updating, without accidentally breaking other parts of the program.
 
-:::{hint} What are Dependant Modules?
+:::{hint} What are Dependent Modules?
 :class: dropdown
 If your code imports and uses another module, it becomes dependent on that module. This means changes to the way the imported module works *could* break your code. Things get more complex when you consider that the module you imported may itself depend on other modules, which might also rely on additional modules.
 
@@ -58,7 +58,7 @@ Here are some simple ways to improve your code's maintainability:
 
   - Creates consistency across different code files (e.g. always using 4-space indentation)
   - Python’s official guide is called [PEP 8](https://peps.python.org/pep-0008/)
-  - The Python extension in VSCode helps flag style issues
+  - The Python extension in VS Code helps flag style issues
   - We will also use the [Ruff VS Code Extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff) to automatically format our code to follow PEP 8
 
 - **Use naming conventions**
@@ -227,7 +227,7 @@ By combining all three types of testing, you can refine your solution to be more
 
    In **Python**, bugs can happen for many reasons &mdash; such as syntax mistakes, incorrect variable names, bad logic, or unexpected data types. Because Python runs line-by-line, a single error can stop the whole program. That’s why debugging is an important part of development.
 
-   If you're using **Visual Studio Code (VSCode)** to write Python, it has built-in tools that make debugging easier.  
+   If you're using **Visual Studio Code (VS Code)** to write Python, it has built-in tools that make debugging easier.  
 
    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qe1oCJk-DYU?si=gS75xZhxPVo1fhK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -257,7 +257,7 @@ By combining all three types of testing, you can refine your solution to be more
 - The **watch panel** lets you keep track of specific expressions or values as the code runs.
 - You can use the **call stack** to see which functions were called and in what order.
 
-VSCode also supports **print-based debugging**, where you add `print()` statements to show what your code is doing at certain points. This is useful for quick checks or when you’re not sure where the bug is hiding.
+VS Code also supports **print-based debugging**, where you add `print()` statements to show what your code is doing at certain points. This is useful for quick checks or when you’re not sure where the bug is hiding.
 
 By using these tools and strategies, you can quickly find and fix bugs to make your Python programs more reliable.
 
@@ -267,9 +267,9 @@ By using these tools and strategies, you can quickly find and fix bugs to make y
 1. What is debugging and why is it important in Python programming?
 2. What kinds of problems can bugs cause in a Python program?
 3. Why can a single error stop a Python program from running?
-4. What tools does VSCode provide to help with debugging Python code?
-5. How do you start a debug session in VSCode for a simple Python script?
-6. What is a breakpoint and how do you set one in VSCode?
+4. What tools does VS Code provide to help with debugging Python code?
+5. How do you start a debug session in VS Code for a simple Python script?
+6. What is a breakpoint and how do you set one in VS Code?
 7. What does the “Variables” panel show during debugging?
 8. What is the purpose of the “Step Over” control in the debugger?
 9. How does “Step Into” differ from “Step Over” when using the debugger?
@@ -281,7 +281,7 @@ By using these tools and strategies, you can quickly find and fix bugs to make y
 15. What does the call stack display during a paused debug session?
 16. When might you use print-based debugging instead of the debugger?
 17. How do breakpoints and the variables panel work together to help find bugs?
-18. What steps should you take to prepare VSCode for Python debugging?
+18. What steps should you take to prepare VS Code for Python debugging?
 19. Why is it useful to test different values while paused using live editing?
 20. How do these debugging tools help make Python programs more reliable?
 
@@ -473,27 +473,28 @@ Code portability means writing code that works across different platforms and sy
 
    Instructions:
 
-21. Download and Review the Starter Code: [booking code](./assets/03/booking_system.py)
-22. Code Analysis:
+1. Download and Review the Starter Code: [booking code](./assets/03/booking_system.py)
+2. Code Analysis:
 
    - Identify and highlight examples of poor programming practice.
    - Categorise the problems into:
      - Style and naming issues
-     - Maintainability issues (e.g. long functions, poor structure)\
+     - Maintainability issues (e.g. long functions, poor structure)
      - Efficiency problems (e.g. repeated code)
      - Errors (syntax, runtime, or logic)
    - Use the following questions:
      - Where does this code break the [PEP 8 style guide](https://peps.python.org/pep-0008/)?
-     - Are there any unnecessary calculations or repeated code blocks?- Can you find any infinite loops or bugs from invalid input?
+     - Are there any unnecessary calculations or repeated code blocks?
+     - Can you find any infinite loops or bugs from invalid input?
      - What parts would be hard for a teammate to understand?
 
-23. Debugging Challenge:
+3. Debugging Challenge:
 
    - Set **breakpoints** at key lines (e.g. user input, booking confirmation)
    - Use **Step Into**, **Variables panel**, and **Live Variable Editing** to track a logic error (e.g. booking overwrites existing bookings)
    - Write a short summary of how the debugger helped you fix the issue
 
-24. Refactor the Code:
+4. Refactor the Code:
 
    - Apply good programming practices:
      - Rename variables using meaningful names and `snake_case`
@@ -503,7 +504,7 @@ Code portability means writing code that works across different platforms and sy
      - Replace inefficient logic (e.g. repeated ifs &rarr; loop or dictionary)
      - Test edge cases like no input, long names, or double bookings
 
-25. Testing Plan (15 mins)
+5. Testing Plan (15 mins)
 
    - Design and carry out:
      - One **exploratory test**: Try unexpected inputs or misuse

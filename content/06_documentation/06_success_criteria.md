@@ -4,7 +4,7 @@
 By the end of this section you will:
 - understand the importance of clearly establishing your digital solution's success criteria.
 - know how to use the MuSCoW method to prioritise the solution's requirements.
-- know how to create criteria used to measure the whether a requirement has been met.
+- know how to create criteria used to measure whether a requirement has been met.
 :::
 
 ## Introduction
@@ -13,12 +13,12 @@ Establishing success criteria is essential for your digital solutions project be
 
 Success criteria are used to:
 
-- Guide decision-making throughout the **problem-solving process**, especially you are evaluating components and the overall solution.
+- Guide decision-making throughout the **problem-solving process**, especially when you are evaluating components and the overall solution.
 - Ensure solutions meet the **user needs** and **technical requirements** you identified during the exploration phase.
 - Enable **ongoing testing and refinement** by helping you improve your work based on clear expectations.
-- Provides a basis for **justified recommendations** and informed judgments about the solution's performance and impact.
+- Provide a basis for **justified recommendations** and informed judgements about the solution's performance and impact.
 
-Using success criteria means you can determine whether their digital solution is **functional**, **user-friendly**, and has a **positive personal, social, and economic impact**. This helps you stay focused, reflect critically, and communicate their results effectively.
+Using success criteria means you can determine whether your digital solution is **functional**, **user-friendly**, and has a **positive personal, social, and economic impact**. This helps you stay focused, reflect critically, and communicate your results effectively.
 
 ## Requirements table
 
@@ -37,7 +37,7 @@ From the project's stimulus, empathy maps, personas and use case diagram, you sh
 
 ### MuSCoW table
 
-A **MoSCoW table** is a way to prioritise solution requirements by grouping them into four categories:
+A **MuSCoW table** is a way to prioritise solution requirements by grouping them into four categories:
 
 - **Mu**st
 - **S**hould
@@ -49,7 +49,7 @@ It helps you to focus on what’s truly necessary; allows you to manage time and
 | Priority | Meaning | Source |
 | --- | --- | --- |
 | **Must** | Essential features that the client has requested | criteria sheet<br>stimulus<br>empathy maps<br> personas |
-| **Should** | Important features you think should be included | existing solutions<br>useability principles<br>good coding practice<br>data principles |
+| **Should** | Important features you think should be included | existing solutions<br>usability principles<br>good coding practice<br>data principles |
 | **Could** | Good features that you don't have the time, skills or resources to implement. May be implemented in next version | existing solutions |
 | **Won’t** | Feature that you will never implement | existing solutions |
 
@@ -60,7 +60,7 @@ The difference between **Must** and **Should** is that **Must** requirements are
 
 **Layout**
 
-Structure your MuSCoW table with each priority horizontal. Then list the the requirements in the appropriate priority category. See the example below.
+Structure your MuSCoW table with each priority horizontal. Then list the requirements in the appropriate priority category. See the example below.
 
 ![muscow example](./assets/06/muscow_table.png)<p>&nbsp;</p>
 
@@ -78,7 +78,7 @@ You should write criteria for all the requirements with the **Must** and **Shoul
 
 ### Writing Success Criteria
 
-To write a **success criteria** for a requirement, describe how you will know the requirement has been met. It should be **specific, measurable, and testable**.
+To write a **success criterion** for a requirement, describe how you will know the requirement has been met. It should be **specific, measurable, and testable**.
 
 1. **Start with the requirement**
 
@@ -101,7 +101,7 @@ To write a **success criteria** for a requirement, describe how you will know th
 
 **Layout**
 
-Structure your Criteria table with each requirement having it's own row. Then write the corresponding criteria in the right-hand column. See the example table below:
+Structure your Criteria table with each requirement having its own row. Then write the corresponding criteria in the right-hand column. See the example table below:
 
 | Requirement | Code | Success Criteria |
 | --- | --- | --- |

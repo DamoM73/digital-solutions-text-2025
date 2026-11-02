@@ -16,7 +16,7 @@ Its key features include:
 - **Programmed components** that use algorithms, control structures and data processing to perform the required functions.
 - **Data components** such as databases or data stores that collect, validate, manipulate and display information.
 - **Integration** of user, data and program elements into a single functional system.
-- **Useability principles** that ensure accessibility, effectiveness, safety, utility and learnability.
+- **Usability principles** that ensure accessibility, effectiveness, safety, utility and learnability.
 - **Testing and refinement** to evaluate performance against success criteria and improve accuracy, maintainability, efficiency and user experience.
 - **Consideration of personal, social and economic impacts**, including ethics, privacy and security.
 
@@ -24,12 +24,12 @@ Its key features include:
 
 We create a digital solution by following a structured problem-solving process. 
 
-1. We **explore** a need, want or opportunity by analysing users, existing systems and constraints. Next, w
+1. We **explore** a need, want or opportunity by analysing users, existing systems and constraints.
 2. We **develop ideas** using design, systems and computational thinking to plan how the solution will work. 
 3. We then **generate components**, including the user interface, programmed code and data structures, using suitable software and programming tools. 
 4. Finally, we **evaluate and refine** the solution by testing it against success criteria, improving its performance, security and user experience until it meets the identified need.
 
-This process is refered to as the EDGE problem-solving framework.
+This process is referred to as the EDGE problem-solving framework.
 
 ![The EDGE Problem-Solving Framework](./assets/01/EDGE.png)
 

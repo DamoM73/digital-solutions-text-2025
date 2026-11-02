@@ -2,15 +2,15 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- know how use the GROUP BY clause to perform aggregation calculations on subgroup within the results.
+- know how to use the GROUP BY clause to perform aggregation calculations on subgroups within the results.
 - know how to filter the grouped results using the HAVING clause.
 :::
 
 ## GROUP BY Clause 📝
 
-The SQL `GROUP BY` statement is used to group rows that have the same values in specified columns into summary rows, often in conjunction with aggregate functions to perform calculations on each group. While the SQL HAVING statement is used to filter groups of rows created by the `GROUP BY` clause based on specified conditions, typically involving aggregate functions.
+The SQL `GROUP BY` statement is used to group rows that have the same values in specified columns into summary rows, often in conjunction with aggregate functions to perform calculations on each group. The SQL HAVING statement is used to filter groups of rows created by the `GROUP BY` clause based on specified conditions, typically involving aggregate functions.
 
-Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_groupby.asp) on the `GROUP BY` Statement and complete thier exercises.
+Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_groupby.asp) on the `GROUP BY` Statement and complete their exercises.
 
 ## HAVING Clause
 
@@ -40,5 +40,5 @@ Go to the [W3schools Tutorial](https://www.w3schools.com/sql/sql_having.asp) on 
 
 8. How many customers are there from each country with more than one customer?
 9. What are the AlbumIds of all ablums that run for more than an hour (3600 secs)?
-10. Provide an alphabetical list of countries and total sales if their sales where over $100
+10. Provide an alphabetical list of countries and total sales if their sales were over $100
 :::

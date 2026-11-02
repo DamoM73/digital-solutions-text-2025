@@ -29,7 +29,7 @@ Data Connection Diagrams are used to:
 
 **Network Diagram**
 
-A Network Diagram shows how **different parts of a system** (like websites, databases, or devices) are linked and how data moves between them. Each part is shown as a circle box or symbol, and lines or arrows connect them to show the direction of data flow. These diagrams are great for seeing how systems work together and are often used to spot problems, improve performance, or keep data secure.
+A Network Diagram shows how **different parts of a system** (like websites, databases, or devices) are linked and how data moves between them. Each part is shown as a circle, box or symbol, and lines or arrows connect them to show the direction of data flow. These diagrams are great for seeing how systems work together and are often used to spot problems, improve performance, or keep data secure.
 
 ![network diagram](./assets/13/network_diagram.png)<p>&nbsp;</p>
 
@@ -115,7 +115,7 @@ Create a network diagram that shows:
 - The wireless connections
 - External services (e.g. cloud storage, video calls)
 - Security points like VPNs or firewalls
-- The flow of data for file sharing,
+- The flow of data for file sharing
 
 ---
 

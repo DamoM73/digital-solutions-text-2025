@@ -3,7 +3,7 @@
 :::{dropdown} Learning Goals
 By the end of this section you will:
 - understand the importance of gaining user insight
-- understand what a empathy map is and how to create one
+- understand what an empathy map is and how to create one
 - understand what a persona is and how to create one
 :::
 
@@ -22,14 +22,14 @@ By highlighting emotional and practical aspects of user interaction, empathy map
 :::{tip} What is an Empathy Map Summary
 :class: dropdown
 **What is Empathy Mapping?**
-Empathy mapping is a collaborative visualization tool used by product teams to gain a deeper, shared understanding of their users. It helps articulate what is known about a specific user persona, focusing on what they are thinking, feeling, seeing, hearing, saying, and doing. The goal is to make better, user-centred design decisions.
+Empathy mapping is a collaborative visualisation tool used by product teams to gain a deeper, shared understanding of their users. It helps articulate what is known about a specific user persona, focusing on what they are thinking, feeling, seeing, hearing, saying, and doing. The goal is to make better, user-centred design decisions.
 
 **Why Use Empathy Mapping?**
 
 - It helps guide design decisions when extensive research and testing for every scenario isn't feasible.
 - It creates a shared understanding of user needs among team members and stakeholders.
 - It serves as a foundational step for creating detailed UX personas.
-- It helps prioritize user needs and identify areas that require further research.
+- It helps prioritise user needs and identify areas that require further research.
 
 **How to Create an Empathy Map:**
 The process begins with conducting moderated sessions or "empathy interviews," which are one-on-one, open-ended conversations to uncover a user's feelings and motivations.
@@ -55,7 +55,7 @@ The video illustrates the process with a persona named Jill, who needs to order 
 - The process helps resolve internal conflicts and biases by grounding decisions in user insights rather than stakeholder opinions.
 :::
 
-Empathy map are essential in understanding your users, their experiences and their expectations. You should aim to have an empathy map for **each type of user** your digital solution is intended to serve. This helps ensure that different perspectives are considered during the design process, especially when users have diverse needs or goals.
+Empathy maps are essential in understanding your users, their experiences and their expectations. You should aim to have an empathy map for **each type of user** your digital solution is intended to serve. This helps ensure that different perspectives are considered during the design process, especially when users have diverse needs or goals.
 
 ### Creating an Empathy Map
 
@@ -112,7 +112,7 @@ Instructions:
 
 A startup is creating a fitness tracker designed for older adults (60+). You are interviewing “Janet,” a 67-year-old retired nurse who wants to stay active but finds technology overwhelming.
 
-Janet’s Interview Summary:**
+Janet’s Interview Summary:
 
 > “I walk every day, but I don’t know how far or how fast. My daughter gave me a smartwatch, but I couldn’t work it out. I just want something simple. I don’t like lots of buttons or confusing screens. I do like seeing my progress, though—it makes me feel proud. I’m worried I’ll press the wrong thing and break it.”
 
@@ -160,7 +160,7 @@ The video demonstrates how to build a persona profile using a fictional freelanc
 - **Goals:** What the persona wants to achieve.
 - **Pain Points:** The frustrations and challenges the persona faces.
 - **Motivations:** The underlying drivers for their behaviour (e.g., social connection, achievement, pride).
-- **Personality:** Traits, often visualized with scales (e.g., Extrovert vs. Introvert), which can be based on frameworks like Myers-Briggs.
+- **Personality:** Traits, often visualised with scales (e.g., Extrovert vs. Introvert), which can be based on frameworks like Myers-Briggs.
 - **Preferred Brands:** A list of brands the persona uses, which provides context and acts as a mood board for their lifestyle and values.
 
 Finally, the video advises to make the completed persona highly visible by posting it around the office to ensure the entire team consistently refers to it during their work.
@@ -172,7 +172,7 @@ Personas are fictional representations and generalisations of user clusters whic
 - goals
 - behaviours
 
-You should aim to have a person for **each type of user** your digital solution is intended to serve, and ensure that the personas represent the **diversity of your users**. If you do not have access to target users, then the personas can be developed using assumptions, competitor analysis and internal stakeholder interviews.
+You should aim to have a persona for **each type of user** your digital solution is intended to serve, and ensure that the personas represent the **diversity of your users**. If you do not have access to target users, then the personas can be developed using assumptions, competitor analysis and internal stakeholder interviews.
 
 ### Creating Personas
 
@@ -214,8 +214,8 @@ Components of a persona:
 When marking the Personas teachers ask the following questions:
 
 - Are all the types of users represented?
-- Have the provide proto-personas been used?
-- Do the personas cover include people with impairments?
+- Have the provided proto-personas been used?
+- Do the personas include people with impairments?
 :::
 
 :::{seealso} Persona Activities
@@ -278,4 +278,4 @@ Instructions:
   - Pain Points: what makes kiosk use difficult?
   - Accessibility: physical and visual needs
   - Devices used and proficiency
-- Add a quote that captures her experience using
+- Add a quote that captures her experience using the kiosk

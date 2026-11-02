@@ -16,7 +16,7 @@ The following video explains data dictionaries:
 :class: dropdown
 - **What is a Data Dictionary?** The video uses the analogy of a regular dictionary, which provides context and meaning for words. Similarly, a data dictionary provides context and meaning for data elements, especially in a database or spreadsheet.
 
-- **Why is it Needed?** When creating datasets, column names are often abbreviated (e.g., `Publ.` for "Publisher") or use codes to save space and standardize entries. Without a data dictionary, the meaning of these abbreviations and codes can be lost, making the data difficult to understand or use correctly.
+- **Why is it Needed?** When creating datasets, column names are often abbreviated (e.g., `Publ.` for "Publisher") or use codes to save space and standardise entries. Without a data dictionary, the meaning of these abbreviations and codes can be lost, making the data difficult to understand or use correctly.
 
 - **Components of a Good Data Dictionary:** A good data dictionary entry should include several key pieces of information about each data element (or column):
     - **Name:** The name of the field (e.g., `# of pg`).
@@ -30,7 +30,7 @@ The following video explains data dictionaries:
 
 Your data dictionaries should include the following details:
 
-- **Name of Field:** make sure you follow you naming conventions
+- **Name of Field:** make sure you follow your naming conventions
 - **Definition of the Field:** these details should naturally flow from the ERD
 - **Data type:** in SQLite we have Text, Integer, Real, and Blob
 - **Possible values:** taken from sample data
@@ -40,11 +40,11 @@ Your data dictionaries should include the following details:
     - **DEFAULT** Constraint − Provides a default value for a column when none is specified
     - **UNIQUE** Constraint − Ensures that all values in a column are different
     - **PRIMARY KEY** Constraint − Uniquely identifies each row/record in a database table
-    - **CHECK** Constraint − Ensures that all values in a column satisfies certain conditions.
+    - **CHECK** Constraint − Ensures that all values in a column satisfy certain conditions.
   - Data can also be validated in Python before Inserting it into the database.
 - **Formatting:** data can either be stored formatted or can be formatted once retrieved.
 
-Below is an example of a data dictionary. Note that you should create a data dictionary for each table is your database.
+Below is an example of a data dictionary. Note that you should create a data dictionary for each table in your database.
 
 ![Example data dictionary](./assets/12/data_dictionary_example.png)<p>&nbsp;</p>
 

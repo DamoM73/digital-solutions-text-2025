@@ -56,11 +56,11 @@ Parts of the MVC are:
 * **Model (Data):**
   * The model manages the application's data and rules.  
   * It provides the data needed by the view and accepts changes through the controller.
-  * In our projects this will consist of a `.bd` SQLite database file and a `datastore.py` file that provides **getter** and **setter** functions.
+  * In our projects this will consist of a `.db` SQLite database file and a `datastore.py` file that provides **getter** and **setter** functions.
 * **View (User Interface):**
   * The view displays the data and defines how the interface looks to the user.
   * It updates when the model changes.
-  * In our projects this will be a `.ui` file created in QtDesigner which produces a Qt User Interface.
+  * In our projects this will be a `.ui` file created in Qt Designer which produces a Qt User Interface.
 * **Controller (Logic):**
   * The controller handles user input and acts as the bridge between model and view.  
   * It uses **getter** functions to fetch data from the model and update the view

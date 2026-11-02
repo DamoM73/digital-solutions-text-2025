@@ -25,7 +25,7 @@ Download the [world database](../08_sql/assets/world.db)
 
 :::{note} Movies Database
 :class: dropdown
- A movie database that contains information about movies on hire, such as titles, actors, directors hire and members.
+ A movie database that contains information about movies on hire, such as titles, actors, directors, hires and members.
 
 **Relational Schema**
 
@@ -81,7 +81,7 @@ Download the [chinook database](../08_sql/assets/chinook.db)
 
 ## Using MVC Architecture
 
-When we discussed the [MVC Achitecture Pattern](../02_coding/04_paradigms.md#mvc-architecture-pattern) it was noted that the Model component will consist of two files. The `.bd` SQLite file and the `datastore.py` file. All of the SQLite3 code will go into the `datastore.py` file, so we need to create that before we continue.
+When we discussed the [MVC Architecture Pattern](../02_coding/04_paradigms.md#mvc-architecture-pattern) it was noted that the Model component will consist of two files. The `.db` SQLite file and the `datastore.py` file. All of the SQLite3 code will go into the `datastore.py` file, so we need to create that before we continue.
 
 ## Datastore file
 
@@ -107,7 +107,7 @@ class Datastore:
         self.connection.close()
 ```
 
-By now, much of this code and the stucture should be familiar, but there will be three things that might stand out:
+By now, much of this code and the structure should be familiar, but there will be three things that might stand out:
 
 - `sqlite3.connect`
 - `self.connection.cursor()`
@@ -117,17 +117,17 @@ The best way to think of these three is to draw an analogy with using Microsoft 
 
 ### Connect
 
-When you want to write or edit a Word document, you first must open the document, this is the same as `self.connection = sqlite3.connect("data/chinook.db")`. You are telling sqlite3 which database file to open (for our learning purposes we will use `chinook.db`). The creates an object (`self.connection`) which represents the database file you have openned.
+When you want to write or edit a Word document, you first must open the document, this is the same as `self.connection = sqlite3.connect("data/chinook.db")`. You are telling sqlite3 which database file to open (for our learning purposes we will use `chinook.db`). This creates an object (`self.connection`) which represents the database file you have opened.
 
 ### Cursor
 
- Once your Word document is open, there is a little flashing line which indicates where you are access that document. If you type, words appear here. That little flashing line is called a **cursor**. This is the same as `self.cursor = self.connection.cursor()` which creates a cursor tool to access the database. 
+ Once your Word document is open, there is a little flashing line which indicates where you are accessing that document. If you type, words appear here. That little flashing line is called a **cursor**. This is the same as `self.cursor = self.connection.cursor()` which creates a cursor tool to access the database.
  
  Notice that the cursor belongs to `self.connection`, that is it belongs to the opened database. This means that it can only access the `self.connection` database.
 
 ### Close
 
-Finally, once you have finished with your Word document you will want to save and close it. That is exactly what `self.connection.close()` does. Because RAM is faster than driver, SQLite3 might cache information in RAM to prevent holding up the program. This information will get written to drive ASAP, but it is possible there is still some data in the cache when you end your program. `self.connection.close()` ensures that all cache data is written to the drive as part of Python's end of program proceedure.
+Finally, once you have finished with your Word document you will want to save and close it. That is exactly what `self.connection.close()` does. Because RAM is faster than disk storage, SQLite3 might cache information in RAM to prevent holding up the program. This information will get written to drive ASAP, but it is possible there is still some data in the cache when you end your program. `self.connection.close()` ensures that all cache data is written to the drive as part of Python's end of program procedure.
 
 ## Test file
 

@@ -2,7 +2,7 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- the basics of what SQL is
+- understand the basics of what SQL is
 - be ready to start your SQL learning
 :::
 
@@ -13,7 +13,7 @@ By the end of this section you will:
 This video provides a concise introduction to SQL (Structured Query Language), a standard language for interacting with databases. Here's a summary of the key points covered:
 
 **What is SQL?**
-SQL, often pronounced "sequel," stands for Structured Query Language. It is the standard language for accessing and manipulating databases. The video highlights that SQL became a standard of the American National Standards Institute (ANSI) in 1986 and the International Organization for Standardization (ISO) in 1987.
+SQL, often pronounced "sequel," stands for Structured Query Language. It is the standard language for accessing and manipulating databases. The video highlights that SQL became a standard of the American National Standards Institute (ANSI) in 1986 and the International Organisation for Standardisation (ISO) in 1987.
 
 **What can SQL do?**
 The video explains several key functions of SQL, including:
@@ -23,7 +23,7 @@ The video explains several key functions of SQL, including:
 - Setting permissions and more.
 
 **Versions of SQL**
-While SQL is a standardized language, different database systems may use their own versions or "dialects" of SQL. However, to comply with the ANSI standard, they all support major commands like SELECT, UPDATE, DELETE, INSERT, and WHERE.
+While SQL is a standardised language, different database systems may use their own versions or "dialects" of SQL. However, to comply with the ANSI standard, they all support major commands like SELECT, UPDATE, DELETE, INSERT, and WHERE.
 
 **Building a Website with a Database**
 To create a website that displays data from a database, you'll need:
@@ -47,7 +47,7 @@ The video concludes with an example of a SELECT statement (SELECT * FROM Custome
 
 ## Exercise Databases
 
-We will be using the database below for our SQL activities. We will be using [DB Browser for SQLite](../01_introduction/02_technologies_used.md#database-management-system) to execute your SQL, so make sure you have it installed.
+We will be using the databases below for our SQL activities. We will be using [DB Browser for SQLite](../01_introduction/02_technologies_used.md#database-management-system) to execute your SQL, so make sure you have it installed.
 
 :::{note} World Database
 :class: dropdown
@@ -62,7 +62,7 @@ Download the [world database](./assets/world.db)
 
 :::{note} Movies Database
 :class: dropdown
- A movie database that contains information about movies on hire, such as titles, actors, directors hire and members.
+ A movie database that contains information about movies on hire, such as titles, actors, directors, hires and members.
 
 **Relational Schema**
 

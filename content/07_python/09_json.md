@@ -33,7 +33,7 @@ Convert a JSON-formatted string into a Python dictionary.
 
 :::{hint} What is a JSON-formatted string?
 :class: dropdown
-A **JSON-formatted string** is a text-based way to represent structured data using the **JavaScript Object Notation (JSON)** format. It uses **key–value pairs** and **arrays** to organize data, and it is commonly used for data exchange between systems, especially in web applications.
+A **JSON-formatted string** is a text-based way to represent structured data using the **JavaScript Object Notation (JSON)** format. It uses **key–value pairs** and **arrays** to organise data, and it is commonly used for data exchange between systems, especially in web applications.
 
 **JSON Rules:**
 
@@ -73,7 +73,7 @@ print(json_string)
 
 **Reading from a JSON file**
 
-Open a JSON file, reads its JSON content, then convert it into a Python object, depending on the JSON file format:
+Open a JSON file, read its JSON content, then convert it into a Python object, depending on the JSON file format:
 
 - key&ndash;value pair &rarr; dictionary
 - array &rarr; list
@@ -339,7 +339,7 @@ print(root.find('age').text)   # Output: 25
 
 **Parsing XML from a File**
 
-Create an XML element from a string and access its child elements.
+Parse an XML file and access its child elements.
 
 student.xml:
 
@@ -362,7 +362,7 @@ print(root.find('age').text)   # Output: 22
 
 **Looping Through Elements**
 
-Parse an XML string containing multiple students, then loops through each `<student>` element to print their name and age in a formatted sentence.
+Parse an XML string containing multiple students, then loop through each `<student>` element to print their name and age in a formatted sentence.
 
 
 :::{code} python

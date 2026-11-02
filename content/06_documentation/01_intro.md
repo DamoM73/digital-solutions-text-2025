@@ -10,10 +10,10 @@ In this section we will cover:
 - mind maps
 - empathy maps
 - personas
-- usecase diagrams
-- exiting solution analysis
+- use case diagrams
+- existing solution analysis
 - requirements table
-- success criteiria table
+- success criteria table
 - mock-ups
 - pseudocode
 - desk-checking

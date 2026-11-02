@@ -17,12 +17,12 @@ The SQL `IN` operator is used to check if a value matches any value in a list or
    - what fields do you want to display indicates the table
    - this becomes the **outer query**
 2. Determine what data or filtering is needed to get to that result:
-   - the field will appear in the **outer query** `WHERE` clause is your filter
+   - the field that will appear in the **outer query** `WHERE` clause is your filter
    - the **inner query** needs to return a table consisting of this field
 3. The **inner query** provides values for the **outer query**
 4. Write the **inner query** first to ensure it returns the correct data
 5. Place the **inner query** in parentheses and then write it into the `WHERE` clause of the **outer query**.
-   - Make sure the data type and structure of the **inner query** matches what the **outer query** expects
+   - Make sure the data type and structure of the **inner query** match what the **outer query** expects
 6. Test both queries separately if needed, then combine and run the full subquery structure
 :::
 
