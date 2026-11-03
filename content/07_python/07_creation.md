@@ -2,7 +2,9 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- 
+- know how to use a relational schema to work out the order to create tables in
+- know how to use a data dictionary to choose the constraints for each field
+- know how to create a SQLite database and its tables using Python and `sqlite3`
 :::
 
 Our applications will be required to create a database programmatically using SQLite3, but we will be using several tools to assist us in this process.

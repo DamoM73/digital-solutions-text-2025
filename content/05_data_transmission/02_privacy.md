@@ -245,21 +245,21 @@ Consider the short-term and long-term impact of these decisions.
 Here are major open data sources in Australia, covering national, state, and sector-specific datasets:
 
 - National Open Data Portals:
-  - [Data.gov.au](data.gov.au)
-  - [Australian Bureau of Statistics (ABS)](abs.gov.au)
-  - [NationalMap](nationalmap.gov.au)
+  - [Data.gov.au](https://data.gov.au)
+  - [Australian Bureau of Statistics (ABS)](https://abs.gov.au)
+  - [NationalMap](https://nationalmap.gov.au)
 - State and Territory Open Data Portals:
-  - [New South Wales: Data.NSW](data.nsw.gov.au)
-  - [Victoria: Data.VIC](data.vic.gov.au)
-  - [Queensland Government Open Data Portal](data.qld.gov.au)
-  - [South Australia: DataSA](data.sa.gov.au)
-  - [Western Australia: DataWA](data.wa.gov.au)
-  - [Tasmania: Land Information System Tasmania (LIST)](thelist.tas.gov.au)
-  - [Australian Capital Territory: DataACT](data.act.gov.au)
-  - [Northern Territory: NT Government Open Data Portal](data.nt.gov.au)
+  - [New South Wales: Data.NSW](https://data.nsw.gov.au)
+  - [Victoria: Data.VIC](https://data.vic.gov.au)
+  - [Queensland Government Open Data Portal](https://data.qld.gov.au)
+  - [South Australia: DataSA](https://data.sa.gov.au)
+  - [Western Australia: DataWA](https://data.wa.gov.au)
+  - [Tasmania: Land Information System Tasmania (LIST)](https://thelist.tas.gov.au)
+  - [Australian Capital Territory: DataACT](https://data.act.gov.au)
+  - [Northern Territory: NT Government Open Data Portal](https://data.nt.gov.au)
 - Councils Open Data Portals:
-  - [Brisbane City Council Open Data Portal](data.brisbane.qld.gov.au)
-  - [City of Gold Coast Open Data Portal](data-goldcoast.opendata.arcgis.com)
+  - [Brisbane City Council Open Data Portal](https://data.brisbane.qld.gov.au)
+  - [City of Gold Coast Open Data Portal](https://data-goldcoast.opendata.arcgis.com)
   - [Logan City Council Open Data Portal](https://www.logan.qld.gov.au/open-data)
   - [Redland City Council Open Data Portal](https://opendata.redland.qld.gov.au)
 :::

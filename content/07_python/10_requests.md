@@ -346,7 +346,7 @@ Write a Python script that:
 
 :::{seealso} Extension Activities
 :class: dropdown
-Use your knowledge from this section and [Working with JSON and XML](./08_json.md) to make an API request, then process and print the returned JSON file.
+Use your knowledge from this section and [Working with JSON and XML](./09_json.md) to make an API request, then process and print the returned JSON file.
 
 You can find a heap of APIs at [Free APIs](https://free-apis.github.io/#/). It is easiest to use APIs with **No authorisation**
 :::

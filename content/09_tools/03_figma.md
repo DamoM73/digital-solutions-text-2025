@@ -2,7 +2,9 @@
 
 :::{dropdown} Learning Goals
 By the end of this section you will:
-- 
+- know how to set up a free Figma Education account
+- know where to find tutorials for learning Figma
+- be able to create interactive prototypes of applications in Figma
 :::
 
 Figma is a web-based design tool used for creating user interfaces, prototypes, and collaborative design projects. It allows designers to create interactive prototypes that simulate the user experience of a website or application.

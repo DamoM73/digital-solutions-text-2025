@@ -32,7 +32,7 @@ Student Subject Database
 
 > An Entity Relationship Diagram (ERD) is a type of flowchart that illustrates how “entities” such as people, objects or concepts relate to each other within a system. `lucidchart_2017_er`
 
-In following the process of creating an ERD, you will create a relational database that complies with [normalisation](../04_data.md/03_structuring_data.md) rules to the level of **3NF**.
+In following the process of creating an ERD, you will create a relational database that complies with [normalisation](../04_data/03_structuring_data.md) rules to the level of **3NF**.
 
 Watch the videos below to understand designing an ERD.
 
