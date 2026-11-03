@@ -2411,6 +2411,36 @@ Activity 2: the hashes are unsalted and SHA-256 is fast, so an attacker can hash
 
 ### Checksums
 
+:::{seealso} Checksum Solutions
+:class: dropdown
+
+**Activity 1**
+
+```{literalinclude} 07_python/assets/14/Activity_1.py
+:language: python
+```
+
+**Activity 2**
+
+```{literalinclude} 07_python/assets/14/Activity_2.py
+:language: python
+```
+
+**Activity 3**
+
+```{literalinclude} 07_python/assets/14/Activity_3.py
+:language: python
+```
+
+**Activity 4**
+
+```{literalinclude} 07_python/assets/14/Activity_4.py
+:language: python
+```
+
+Activity 1: the third message has 14 and 15 swapped. Addition gives the same total whatever the order, so the sum checksum can't detect values that have swapped places.
+:::
+
 ## SQL Skills
 
 :::{seealso} SELECT Solutions
