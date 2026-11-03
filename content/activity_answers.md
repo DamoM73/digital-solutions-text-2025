@@ -2289,6 +2289,40 @@ END
 
 ### Type Hints
 
+:::{seealso} Type Hint Solutions
+:class: dropdown
+
+**Activity 1**
+
+```{literalinclude} 07_python/assets/04/Activity_1.py
+:language: python
+```
+
+**Activity 2**
+
+```{literalinclude} 07_python/assets/04/Activity_2.py
+:language: python
+```
+
+**Activity 3**
+
+```{literalinclude} 07_python/assets/04/Activity_3.py
+:language: python
+```
+
+**Activity 4**
+
+```{literalinclude} 07_python/assets/04/Activity_4.py
+:language: python
+```
+
+**Activity 5**
+
+```{literalinclude} 07_python/assets/04/Activity_5.py
+:language: python
+```
+:::
+
 ### Querying Databases
 
 ### Creating Databases
