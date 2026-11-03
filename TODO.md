@@ -62,7 +62,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
   - [x] Requests
   - [x] OurAPI
   - [x] Encryption
-  - [ ] Hashing
+  - [x] Hashing
   - [ ] Checksums
 - [x] SQL Skills
   - [x] SQL Introduction
@@ -98,7 +98,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 
 ## Outstanding content
 
-- [ ] Write the Hashing and Checksums pages in `content/07_python/`. These currently contain only headings.
+- [ ] Write the Checksums page in `content/07_python/`. These currently contain only headings.
 - [ ] Add Python SQLite UPDATE and DELETE instruction, worked examples and activities. `content/07_python/07_creation.md` currently covers CREATE only; add any new pages to `myst.yml`.
 - [ ] Write Utilities Introduction, Draw.io and Word Power-use in `content/09_tools/`; these are heading-only pages.
 - [ ] Write Assessments Introduction, FIA1, FIA2, FIA3, IA1 and IA2 in `content/10_assessments/`; these are heading-only pages.
@@ -125,7 +125,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - [ ] Fix the Bibliography page. In the 2 November 2026 build, inline `{cite}` citations resolve and show their references on each page, but `content/bibliography.md` renders empty: the `{bibliography}` directive lists no entries. The bibliography configuration in `myst.yml` is still commented out.
 - [ ] Convert bare citation keys in `content/04_data/01_intro.md`, including `nldigibeter_2019_problem` and `dataliteracy_2020_11`, to the project's working citation syntax.
 - [ ] Check assessment rules and response-limit claims against the applicable syllabus and school assessment instruments, especially `content/06_documentation/18_appendices.md` and the IA3 guidance. Record the source/version used.
-- [ ] Inspect the rendered navigation, callouts, code blocks, citations, images and downloadable resources across all pages. A fresh HTML build with Jupyter Book 2.1.7 (mystmd 1.11.0) on 2 November 2026 built all 80 pages with no errors or warnings; only the Home, Python Introduction, Working with CSV, PyQt, Type Hints and Encryption pages have been inspected in a browser.
+- [ ] Inspect the rendered navigation, callouts, code blocks, citations, images and downloadable resources across all pages. A fresh HTML build with Jupyter Book 2.1.7 (mystmd 1.11.0) on 2 November 2026 built all 80 pages with no errors or warnings; only the Home, Python Introduction, Working with CSV, PyQt, Type Hints, Encryption and Hashing pages have been inspected in a browser.
 - [ ] Check external links, embedded videos and practice-question downloads for availability and usefulness. This review checked local file targets; it did not test remote resources or inspect the contents of linked PDF/DOCX files.
 
 ## Completed 2 November 2026
@@ -145,6 +145,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - Wrote the PyQt page (`content/07_python/02_pyqt.md`): a brief introduction to PyQt, with the PyQt-website logo (`content/07_python/assets/02/pyqt_logo.png`) linking to https://damom73.github.io/PyQt-website/.
 - Wrote Type Hints (`content/07_python/04_type_hints.md`): basics, collections and checking with Pylance, with activity solutions in `content/07_python/assets/04/`.
 - Renamed Ciphers to Encryption (`content/07_python/12_ciphers.md` replaced by `content/07_python/12_encryption.md`; `myst.yml` updated). Covers Caesar, Vigenère, Gronsfeld and one-time pad in Python, Fernet and RSA with the `cryptography` library, and storing keys safely. Activity solutions are in `content/07_python/assets/12/`.
+- Wrote Hashing (`content/07_python/13_hashing.md`): `hashlib` and SHA-256, salted password hashing with `pbkdf2_hmac` (600,000 iterations) and `hmac.compare_digest`, and a SQLite login Datastore. Activity solutions are in `content/07_python/assets/13/`.
 
 ## Review coverage
 

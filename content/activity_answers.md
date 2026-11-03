@@ -2373,6 +2373,42 @@ END
 
 ### Hashing
 
+:::{seealso} Hashing Solutions
+:class: dropdown
+
+**Activity 1**
+
+```{literalinclude} 07_python/assets/13/Activity_1.py
+:language: python
+```
+
+**Activity 2**
+
+```{literalinclude} 07_python/assets/13/Activity_2.py
+:language: python
+```
+
+**Activity 3**
+
+```{literalinclude} 07_python/assets/13/Activity_3.py
+:language: python
+```
+
+**Activity 4 (datastore.py)**
+
+```{literalinclude} 07_python/assets/13/Activity_4_datastore.py
+:language: python
+```
+
+**Activity 4 (main.py)**
+
+```{literalinclude} 07_python/assets/13/Activity_4_main.py
+:language: python
+```
+
+Activity 2: the hashes are unsalted and SHA-256 is fast, so an attacker can hash a list of common passwords and compare the results with the stolen hash. A salt would make the hash different from the hash of the same password anywhere else, and a slow hash like `pbkdf2_hmac` would make checking each guess take much longer.
+:::
+
 ### Checksums
 
 ## SQL Skills
