@@ -2335,7 +2335,41 @@ END
 
 ### OurAPI
 
-### Ciphers
+### Encryption
+
+:::{seealso} Encryption Solutions
+:class: dropdown
+
+**Activity 1**
+
+```{literalinclude} 07_python/assets/12/Activity_1.py
+:language: python
+```
+
+**Activity 2**
+
+```{literalinclude} 07_python/assets/12/Activity_2.py
+:language: python
+```
+
+**Activity 3**
+
+```{literalinclude} 07_python/assets/12/Activity_3.py
+:language: python
+```
+
+**Activity 4**
+
+```{literalinclude} 07_python/assets/12/Activity_4.py
+:language: python
+```
+
+**Activity 5**
+
+```{literalinclude} 07_python/assets/12/Activity_5.py
+:language: python
+```
+:::
 
 ### Hashing
 

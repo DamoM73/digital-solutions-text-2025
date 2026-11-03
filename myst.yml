@@ -75,7 +75,7 @@ project:
         - file: content/07_python/09_json.md
         - file: content/07_python/10_requests.md
         - file: content/07_python/11_ourapi.md
-        - file: content/07_python/12_ciphers.md
+        - file: content/07_python/12_encryption.md
         - file: content/07_python/13_hashing.md
         - file: content/07_python/14_checksums.md
         
