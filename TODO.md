@@ -56,7 +56,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
   - [x] SQLite3
   - [x] SQLite3 - Reading
   - [x] SQLite3 - Creating
-  - [ ] SQLite3 - Updating and Deleting (not covered by the existing creation page)
+  - [x] SQLite3 - Updating and Deleting
   - [x] Populating Databases
   - [x] Working with JSON and XML
   - [x] Requests
@@ -99,7 +99,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 ## Outstanding content
 
 - [x] Write the Checksums page in `content/07_python/`.
-- [ ] Add Python SQLite UPDATE and DELETE instruction, worked examples and activities. `content/07_python/07_creation.md` currently covers CREATE only; add any new pages to `myst.yml`.
+- [x] Add Python SQLite UPDATE and DELETE instruction, worked examples and activities. Added as `content/07_python/06_update_delete.md` after SQLite3 - Reading, using chinook.db.
 - [ ] Write Utilities Introduction, Draw.io and Word Power-use in `content/09_tools/`; these are heading-only pages.
 - [ ] Write Assessments Introduction, FIA1, FIA2, FIA3, IA1 and IA2 in `content/10_assessments/`; these are heading-only pages.
 - [ ] Review the scope of `content/10_assessments/08_ia3.md`: its guidance refers to a specific healthcare dashboard stimulus, including practice manager, clinical staff and administration staff. Identify that task clearly or adapt the guidance for general use.
@@ -125,7 +125,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - [ ] Fix the Bibliography page. In the 2 November 2026 build, inline `{cite}` citations resolve and show their references on each page, but `content/bibliography.md` renders empty: the `{bibliography}` directive lists no entries. The bibliography configuration in `myst.yml` is still commented out.
 - [ ] Convert bare citation keys in `content/04_data/01_intro.md`, including `nldigibeter_2019_problem` and `dataliteracy_2020_11`, to the project's working citation syntax.
 - [ ] Check assessment rules and response-limit claims against the applicable syllabus and school assessment instruments, especially `content/06_documentation/18_appendices.md` and the IA3 guidance. Record the source/version used.
-- [ ] Inspect the rendered navigation, callouts, code blocks, citations, images and downloadable resources across all pages. A fresh HTML build with Jupyter Book 2.1.7 (mystmd 1.11.0) on 2 November 2026 built all 80 pages with no errors or warnings; only the Home, Python Introduction, Working with CSV, PyQt, Type Hints, Encryption, Hashing and Checksums pages have been inspected in a browser.
+- [ ] Inspect the rendered navigation, callouts, code blocks, citations, images and downloadable resources across all pages. A fresh HTML build with Jupyter Book 2.1.7 (mystmd 1.11.0) on 2 November 2026 built all 80 pages with no errors or warnings; only the Home, Python Introduction, Working with CSV, PyQt, Type Hints, Encryption, Hashing, Checksums and SQLite3 - Updating and Deleting pages have been inspected in a browser.
 - [ ] Check external links, embedded videos and practice-question downloads for availability and usefulness. This review checked local file targets; it did not test remote resources or inspect the contents of linked PDF/DOCX files.
 
 ## Completed 2 November 2026
@@ -147,6 +147,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - Renamed Ciphers to Encryption (`content/07_python/12_ciphers.md` replaced by `content/07_python/12_encryption.md`; `myst.yml` updated). Covers Caesar, Vigenère, Gronsfeld and one-time pad in Python, Fernet and RSA with the `cryptography` library, and storing keys safely. Activity solutions are in `content/07_python/assets/12/`.
 - Wrote Hashing (`content/07_python/13_hashing.md`): `hashlib` and SHA-256, salted password hashing with `pbkdf2_hmac` (600,000 iterations) and `hmac.compare_digest`, and a SQLite login Datastore. Activity solutions are in `content/07_python/assets/13/`.
 - Wrote Checksums (`content/07_python/14_checksums.md`): sum checksums, parity bits, the Luhn check digit, and CRC32 and SHA-256 file checksums. Activity solutions are in `content/07_python/assets/14/`.
+- Wrote SQLite3 - Updating and Deleting (`content/07_python/06_update_delete.md`, after SQLite3 - Reading in `myst.yml`): parameterised UPDATE and DELETE on chinook.db, `commit()` and `rowcount`. Activity solutions are in `content/07_python/assets/06u/`.
 - Quick fixes: added Learning Goals to `07_python/07_creation.md` and `09_tools/03_figma.md`; fixed the normalisation link in `06_documentation/11_erd_rs.md` and the JSON/XML link in `07_python/10_requests.md`; added `https://` to the 13 open-data links in `05_data_transmission/02_privacy.md`. The "six basic features" correction, the proofreading fixes and the empty WHERE list item were already done in the repo.
 
 ## Review coverage

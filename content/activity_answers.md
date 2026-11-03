@@ -2325,6 +2325,36 @@ END
 
 ### Querying Databases
 
+### Updating and Deleting
+
+:::{seealso} Updating and Deleting Solutions
+:class: dropdown
+
+**Activity 1**
+
+```{literalinclude} 07_python/assets/06u/Activity_1.py
+:language: python
+```
+
+**Activity 2**
+
+```{literalinclude} 07_python/assets/06u/Activity_2.py
+:language: python
+```
+
+**Activity 3**
+
+```{literalinclude} 07_python/assets/06u/Activity_3.py
+:language: python
+```
+
+**Activity 4**
+
+```{literalinclude} 07_python/assets/06u/Activity_4.py
+:language: python
+```
+:::
+
 ### Creating Databases
 
 ### Populating Databases
