@@ -466,7 +466,6 @@ def clear_screen():
     """Clears the terminal screen in a cross-platform way."""
     os.system("cls" if os.name == "nt" else "clear")
 
-
 def is_valid_seat(seat_number):
     """Returns True if seat number is between 0 and 50."""
     try:
@@ -474,7 +473,6 @@ def is_valid_seat(seat_number):
         return 0 <= seat <= 50
     except ValueError:
         return False
-
 
 def collect_bookings():
     """
@@ -504,13 +502,11 @@ def collect_bookings():
     clear_screen()
     return bookings
 
-
 def show_bookings(bookings):
     """Prints all collected bookings to the screen."""
     print("Your Bookings:")
     for booking in bookings:
         print(f"{booking[0]} - Seat {booking[1]}")
-
 
 def main_menu():
     """Displays the main menu and handles user choices."""
@@ -528,7 +524,6 @@ def main_menu():
             break
         else:
             print("Invalid option. Please try again.")
-
 
 if __name__ == "__main__":
     main_menu()
@@ -915,7 +910,6 @@ Efficiency Problems:
 - **Seasonal and Promotional Themes**:
   Darker or lighter tones may be used in themed promotions (e.g. Halloween, Christmas) to reflect mood while staying within the LEGO aesthetic.
 :::
-
 
 :::{seealso} Texture Activity Solution
 :class: dropdown
@@ -1543,8 +1537,6 @@ Enrolment Table
 | S005 | SUB02 |
 :::
 
-### Managing and Manipulating Data
-
 ## Data Transmission
 
 ### Data Privacy
@@ -2084,25 +2076,427 @@ One of:
 | Data validation missing | Errors and inconsistencies can occur without external validation. |
 :::
 
-### Data Security Management
-
-### Data Security Threats
-
 ## Documentation
-
-### Mind Maps
 
 ### User Insights
 
+:::{seealso} Empathy Map Solutions
+:class: dropdown
+These are sample answers. Other observations and needs are valid if they come from the interview.
+
+**Empathy Map Activity 1: Liam**
+
+| Says | Thinks |
+| --- | --- |
+| "I always feel behind."<br>"I lose my notebook all the time."<br>"I'd like reminders but don't want notifications every five minutes."<br>"I hate clunky apps." | I'm going to miss another due date.<br>Apps make things more complicated, not less.<br>I don't have time to learn something new right now. |
+| **Does** | **Feels** |
+| Writes homework in a paper notebook, then loses it<br>Studies late at night<br>Uses his phone a lot | Stressed about falling behind<br>Overwhelmed by his workload<br>Annoyed by apps that are slow or cluttered |
+
+Needs:
+
+1. to **record** homework somewhere he can't lose it
+2. to **be reminded** of due dates without being interrupted constantly
+3. to **plan** his study quickly, with no complicated set-up
+
+Design challenge: How might we help Liam keep track of his due dates on his phone, with reminders that are useful but not annoying?
+
+---
+
+**Empathy Map Activity 2: Janet**
+
+| Says | Thinks |
+| --- | --- |
+| "I walk every day, but I don't know how far or how fast."<br>"I just want something simple."<br>"I do like seeing my progress." | I'm not good with technology.<br>What if I press the wrong thing and break it?<br>I'd like to know I'm getting healthier. |
+| **Does** | **Feels** |
+| Walks every day<br>Tried the smartwatch her daughter gave her, then gave up<br>Avoids devices with lots of buttons | Overwhelmed by complicated screens<br>Worried about making mistakes<br>Proud when she sees her progress |
+
+Needs:
+
+1. to **see** how far and how fast she walks
+2. to **use** the tracker without learning complicated controls
+3. to **feel confident** she can't break it by pressing the wrong thing
+
+Insight: Janet needs a way to see her walking progress at a glance because seeing her progress makes her feel proud, but complicated screens make her afraid of breaking the device.
+:::
+
+:::{seealso} Persona Solutions
+:class: dropdown
+These are sample answers. Any persona that is consistent with the user snapshot is valid.
+
+**Persona Activity 1: Tyler Nguyen**
+
+![Tyler Nguyen](./assets/tyler_nguyen.png)
+
+> "If the line's too long, I just don't eat."
+
+- **Demographics:** 15 years old, Year 10, lives a 5-minute walk from school
+- **Goals:** get his lunch quickly so he has time to eat before sport; know if his favourite food has sold out before he lines up
+- **Behaviours:** buys lunch from the canteen every day; often skips lunch when the line is too long; heads straight to sport in the afternoons
+- **Pain points:** long lines at lunchtime; popular items selling out; typing on small phone screens
+- **Accessibility:** prefers large buttons and as little typing as possible
+- **Devices and proficiency:** smartphone (high proficiency with apps, but dislikes typing on small screens); school laptop
+
+---
+
+**Persona Activity 2: Amina Rahman**
+
+![Amina Rahman](./assets/amina_rahman.png)
+
+> "I don't mind learning something new, as long as the screen doesn't rush me."
+
+- **Demographics:** 71 years old, lives locally, retired teacher (university educated), low everyday technology use
+- **Goals:** book study rooms for her community reading group; print documents; borrow devices to try new technology
+- **Behaviours:** visits the library 3–4 times a week; currently books by asking staff at the desk; follows printed instructions
+- **Pain points:** small text and buttons on the kiosk; screens that time out before she has finished; instructions that only appear on screen
+- **Accessibility:** wears glasses, so needs large, high-contrast text; mild arthritis in her fingers makes small touch targets and fast gestures hard
+- **Devices and proficiency:** no smartphone; uses a desktop computer at home for email (low to moderate proficiency)
+:::
+
 ### Use Case Diagrams
 
-### Existing Solutions
+:::{seealso} Use Case Diagram Solutions
+:class: dropdown
+**Activity 1: Student Portal Login System**
+
+![Use case diagram activity 1](./assets/ucd_activity_1.png)
+
+**Activity 2: Online Food Delivery App**
+
+![Use case diagram activity 2](./assets/ucd_activity_2.png)
+
+**Activity 3: Library Management System**
+
+![Use case diagram activity 3](./assets/ucd_activity_3.png)
+
+**Activity 4: School Event Booking Platform**
+
+![Use case diagram activity 4](./assets/ucd_activity_4.png)
+:::
 
 ### Success Criteria
 
-### Mock-Ups
+:::{seealso} Requirements and Success Criteria Solutions
+:class: dropdown
+These are sample answers. Other requirements are valid if they fit the scenario.
+
+**Activity 1: Identifying Requirements**
+
+Functional requirements:
+
+1. Users can add and delete tasks.
+2. Users can set a due date and a reminder for each task.
+3. Users can mark a task as completed.
+
+Non-functional requirements:
+
+1. Pages load in under 3 seconds.
+2. Tasks are saved so they are still there when the user returns.
+3. The app works on both phones and laptops (responsive design).
+
+User experience requirements:
+
+1. A new task can be added in no more than three taps or clicks.
+2. The summary shows overdue and upcoming tasks clearly, so students can see what is due at a glance.
+
+Constraints:
+
+1. It must run in a web browser, with no app store download.
+2. It must be finished by the end of term.
+
+---
+
+**Activity 2: Prioritising with a MuSCoW Table**
+
+| Priority | Requirements |
+| --- | --- |
+| Must | Users can view class timetables<br>Users can sign up for a membership online<br>Staff can log in and edit timetable information<br>Include a staff login portal<br>Website is mobile responsive<br>Allow users to cancel or reschedule bookings |
+| Should | Pages load in under 3 seconds<br>Website matches gym's official branding (colours, fonts)<br>Use strong colour contrast for accessibility<br>Users can search for classes by day or trainer<br>Include testimonials from current members<br>Include a downloadable PDF of the class schedule |
+| Could | Provide a live chat feature for talking to staff<br>Offer a blog with fitness tips<br>Include video tours of the gym<br>Allow users to create workout plans<br>Offer push notifications through the browser |
+| Won't | Include an animated logo on page load<br>Sell gym merchandise through an online shop<br>Translate the site into five languages |
+
+Other sortings are valid if they are justified. For example, the gym's three goals (attract new members, keep members informed, make communication easy) justify Must for online sign-up and timetables. An online shop doesn't help any of the goals, so it's a Won't.
+
+---
+
+**Activity 3: Creating Criteria**
+
+Criteria are written for the Must and Should requirements.
+
+| Requirement | Code | Success Criteria |
+| --- | --- | --- |
+| Users can view class timetables | SC1 | The current week's timetable for every class is displayed, showing day, time, class name and trainer |
+| Users can sign up for a membership online | SC2 | A new user can complete the sign-up form and receives a confirmation message and email |
+| Staff can log in and edit timetable information | SC3 | A logged-in staff member can change a class time, and the change appears on the public timetable straight away |
+| Include a staff login portal | SC4 | Only users with a valid staff username and password can open the staff portal |
+| Website is mobile responsive | SC5 | All pages display without horizontal scrolling on screens 360 px wide and wider |
+| Allow users to cancel or reschedule bookings | SC6 | A member can cancel or move a booking, and the class's available places update |
+| Pages load in under 3 seconds | SC7 | All pages load within 3 seconds on a standard internet connection |
+| Website matches gym's official branding | SC8 | All pages use only the gym's brand colours and fonts |
+| Use strong colour contrast for accessibility | SC9 | All text has a contrast ratio of at least 4.5:1 with its background |
+| Users can search for classes by day or trainer | SC10 | Searching by day or trainer shows only the matching classes |
+| Include testimonials from current members | SC11 | The home page displays at least three member testimonials |
+| Include a downloadable PDF of the class schedule | SC12 | The PDF downloads from the timetable page and matches the current timetable |
+:::
 
 ### Pseudocode
+
+:::{seealso} Simple Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+
+```text
+BEGIN
+    INPUT length
+    INPUT width
+    CALCULATE area = length * width
+    DISPLAY "The area is", area
+END
+```
+
+**Activity 2**
+
+```text
+BEGIN
+    INPUT hours_worked
+    INPUT hourly_rate
+    CALCULATE total_pay = hours_worked * hourly_rate
+    DISPLAY "Total pay is", total_pay
+END
+```
+
+**Activity 3**
+
+```text
+BEGIN
+    READ mark_1, mark_2, mark_3 FROM marks.txt
+    CALCULATE average = (mark_1 + mark_2 + mark_3) / 3
+    WRITE average TO average.txt
+END
+```
+:::
+
+:::{seealso} Modularisation Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+
+```text
+BEGIN calculate_perimeter(length, width)
+    CALCULATE perimeter = 2 * (length + width)
+    RETURN perimeter
+END
+
+BEGIN
+    INPUT length
+    INPUT width
+    perimeter = calculate_perimeter(length, width)
+    DISPLAY "The perimeter is", perimeter
+END
+```
+
+**Activity 2**
+
+```text
+BEGIN format_score(name, score)
+    sentence = name + " scored " + score
+    RETURN sentence
+END
+
+BEGIN generate_report
+    READ name, score FROM input.txt
+    sentence = format_score(name, score)
+    WRITE sentence TO report.txt
+END
+
+BEGIN
+    generate_report
+END
+```
+:::
+
+:::{seealso} Iteration Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+
+```text
+BEGIN
+    FOR number = 1 TO 10
+        DISPLAY number
+    NEXT number
+    ENDFOR
+END
+```
+
+**Activity 2**
+
+```text
+BEGIN
+    INPUT password
+    WHILE password != "admin123"
+        DISPLAY "Incorrect password"
+        INPUT password
+    ENDWHILE
+    DISPLAY "Access granted"
+END
+```
+
+**Activity 3**
+
+```text
+BEGIN
+    choice = ""
+    WHILE choice != "exit"
+        DISPLAY "1. Start game"
+        DISPLAY "2. View scores"
+        DISPLAY "Type exit to quit"
+        INPUT choice
+    ENDWHILE
+END
+```
+
+**Activity 4**
+
+```text
+BEGIN
+    total = 0
+    FOR count = 1 TO 5
+        INPUT number
+        total = total + number
+    NEXT count
+    ENDFOR
+    DISPLAY "The total is", total
+END
+```
+:::
+
+:::{seealso} Selection Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+
+```text
+BEGIN
+    INPUT number
+    IF number > 100 THEN
+        DISPLAY "Big number"
+    ENDIF
+END
+```
+
+**Activity 2**
+
+```text
+BEGIN
+    INPUT age
+    IF age >= 18 THEN
+        DISPLAY "Adult"
+    ELSE
+        DISPLAY "Minor"
+    ENDIF
+END
+```
+
+**Activity 3**
+
+```text
+BEGIN
+    INPUT score
+    IF score >= 80 THEN
+        DISPLAY "High"
+    ELSE IF score >= 50 THEN
+        DISPLAY "Medium"
+    ELSE
+        DISPLAY "Low"
+    ENDIF
+END
+```
+
+**Activity 4**
+
+```text
+BEGIN
+    INPUT day
+    SWITCH day
+        CASE "mon"
+            DISPLAY "Monday"
+        CASE "tue"
+            DISPLAY "Tuesday"
+        CASE "wed"
+            DISPLAY "Wednesday"
+        CASE "thu"
+            DISPLAY "Thursday"
+        CASE "fri"
+            DISPLAY "Friday"
+        CASE "sat"
+            DISPLAY "Saturday"
+        CASE "sun"
+            DISPLAY "Sunday"
+    ENDSWITCH
+END
+```
+:::
+
+:::{seealso} Full Pseudocode Solutions
+:class: dropdown
+**Activity 1**
+
+```text
+BEGIN check_result(score)
+    IF score >= 50 THEN
+        RETURN "PASS"
+    ELSE
+        RETURN "FAIL"
+    ENDIF
+END
+
+BEGIN format_message(name, score, result)
+    message = name + " scored " + score + ": " + result
+    RETURN message
+END
+
+BEGIN
+    OPEN scores.txt
+    WHILE NOT end of scores.txt
+        READ name, score FROM scores.txt
+        result = check_result(score)
+        message = format_message(name, score, result)
+        WRITE message TO results.txt
+    ENDWHILE
+    CLOSE scores.txt
+END
+```
+
+**Activity 2**
+
+```text
+BEGIN calculate_share(slices_eaten, total_cost, total_slices)
+    CALCULATE share = slices_eaten / total_slices * total_cost
+    RETURN share
+END
+
+BEGIN
+    INPUT total_cost
+    INPUT total_slices
+    total_collected = 0
+    OPEN pizza_log.txt
+    WHILE NOT end of pizza_log.txt
+        READ person_name, slices_eaten FROM pizza_log.txt
+        share = calculate_share(slices_eaten, total_cost, total_slices)
+        WRITE person_name, share TO pizza_bill.txt
+        total_collected = total_collected + share
+    ENDWHILE
+    CLOSE pizza_log.txt
+    DISPLAY "Total collected:", total_collected
+END
+```
+:::
+
+:::{seealso} General Pseudocode Solutions
+:class: dropdown
+1. Any two of: it is easier to read than real code; it is faster to write and update; it lets us test our logic before coding; it helps technical and non-technical team members work together; it is a bridge between flowcharts and the final code.
+2. Schools use different programming languages, so pseudocode gives everyone the same, language-independent way to represent algorithms.
+3. Snake case: all words in lower case, with an underscore (`_`) instead of each space, e.g. `file_name`.
+4. The algorithms that best demonstrate our coding skill, such as the ones we are most proud of or found the trickiest, making sure that together they show all six building blocks. Each one should be annotated.
+5. Sequence, assignment, conditions, selection, iteration and modularisation.
+:::
 
 ### Desk Checking
 
@@ -2222,7 +2616,92 @@ END
 
 ### Data Flow Diagrams
 
+:::{seealso} Data Flow Diagram Solutions
+:class: dropdown
+**Activity 1: FIA2 program**
+
+Every FIA2 program is different, so there is no single answer. Check our DFD against the step 6 checklist, and compare it to the sample answers below.
+
+**Activity 2: School library system**
+
+![Library DFD](./assets/dfd_activity_2.png)
+
+**Activity 3: Food delivery app**
+
+![Food delivery DFD](./assets/dfd_activity_3.png)
+:::
+
 ### ERDs and RS
+
+:::{seealso} ERD & RS Solutions
+:class: dropdown
+**Activity 1**
+
+![ERD and RS activity 1](./06_documentation/assets/11/erd_activity_1.png)
+
+**Activity 2**
+
+![ERD and RS activity 2](./06_documentation/assets/11/erd_activity_2.png)
+
+**Activity 3**
+
+![ERD and RS activity 3](./06_documentation/assets/11/erd_activity_3.png)
+
+**Activity 4**
+
+![ERD and RS activity 4](./06_documentation/assets/11/erd_activity_4.png)
+
+Sample tables:
+
+Customer
+
+| customer_id | name | address |
+| --- | --- | --- |
+| 1 | Alice Johnson | 123 Park Lane |
+| 2 | Bob Smith | 456 River Rd |
+| 3 | Charlie Lee | 789 Forest Ave |
+| 4 | Diana Prince | 321 Ocean Dr |
+| 5 | Evan Thomas | 654 Mountain Rd |
+| 6 | Fiona Chen | 987 Valley St |
+| 7 | George Hill | 147 Sunset Blvd |
+| 8 | Hannah Black | 369 Seaside Ln |
+| 9 | Ian White | 753 Skyline Ave |
+| 10 | Jessica Green | 159 Pine Way |
+
+Item
+
+| item_id | name | price |
+| --- | --- | --- |
+| 1 | Keyboard | 49.99 |
+| 2 | Mouse | 19.99 |
+| 3 | Monitor | 149.99 |
+| 4 | Webcam | 89.99 |
+
+Order
+
+| customer_id | item_id | date |
+| --- | --- | --- |
+| 1 | 1 | 2024-06-01 |
+| 1 | 2 | 2024-06-01 |
+| 2 | 3 | 2024-06-02 |
+| 2 | 1 | 2024-06-02 |
+| 3 | 2 | 2024-06-03 |
+| 3 | 4 | 2024-06-03 |
+| 1 | 4 | 2024-06-04 |
+| 4 | 3 | 2024-06-04 |
+| 4 | 2 | 2024-06-04 |
+| 5 | 1 | 2024-06-05 |
+| 5 | 4 | 2024-06-05 |
+| 6 | 2 | 2024-06-06 |
+| 6 | 1 | 2024-06-06 |
+| 7 | 3 | 2024-06-07 |
+| 7 | 2 | 2024-06-07 |
+| 8 | 4 | 2024-06-08 |
+| 8 | 1 | 2024-06-08 |
+| 9 | 3 | 2024-06-09 |
+| 9 | 4 | 2024-06-09 |
+| 10 | 2 | 2024-06-10 |
+:::
 
 :::{seealso} ERD from datafiles activities
 :class: dropdown
@@ -2231,19 +2710,259 @@ END
 
 ### Data Dictionaries
 
+:::{seealso} Data Dictionary Solutions
+:class: dropdown
+These are sample data dictionaries for the relational schemas in the ERD & RS solutions. Possible values, validation and formats can vary, as long as they suit the data.
+
+**Activity 1: Manufacturing company**
+
+Product table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| product_id | Product number | INTEGER | 1001 | Primary key, autoincrement | |
+| name | Product name | TEXT | Desk lamp | Not null | |
+| quantity | Quantity on hand | INTEGER | 25 | Not null, >= 0 | |
+
+Component table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| component_id | Component number | INTEGER | 501 | Primary key, autoincrement | |
+| name | Component name | TEXT | LED bulb | Not null | |
+| description | Component description | TEXT | 5 W warm white LED | | |
+
+Supplier table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| supplier_id | Supplier number | INTEGER | 12 | Primary key, autoincrement | |
+| name | Supplier name | TEXT | Bright Parts Pty Ltd | Not null | |
+| email | Supplier email address | TEXT | sales@brightparts.com.au | Not null, like %@% | aaaa@aaaa |
+
+Product Components table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| product_id | Product number | INTEGER | 1001 | Primary key, foreign key to Product | |
+| component_id | Component number | INTEGER | 501 | Primary key, foreign key to Component | |
+| quantity | Components used in one product | INTEGER | 2 | Not null, > 0 | |
+
+Component Suppliers table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| component_id | Component number | INTEGER | 501 | Primary key, foreign key to Component | |
+| supplier_id | Supplier number | INTEGER | 12 | Primary key, foreign key to Supplier | |
+
+**Activity 2: School library**
+
+Book table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| book_id | Book number | INTEGER | 3045 | Primary key, autoincrement | |
+| title | Book title | TEXT | The Hobbit | Not null | |
+| author | Author of the book | INTEGER | 17 | Not null, foreign key to Author | |
+| genre | Genre of the book | INTEGER | 3 | Not null, foreign key to Genre | |
+| year | Year published | INTEGER | 1937 | Not null, <= current year | #### |
+
+Author table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| author_id | Author number | INTEGER | 17 | Primary key, autoincrement | |
+| name | Author's name | TEXT | J.R.R. Tolkien | Not null | |
+| nationality | Author's nationality | INTEGER | 4 | Foreign key to Nationality | |
+
+Genre table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| genre_id | Genre number | INTEGER | 3 | Primary key, autoincrement | |
+| name | Genre name | TEXT | Fantasy | Not null, unique | |
+
+Nationality table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| nationality_id | Nationality number | INTEGER | 4 | Primary key, autoincrement | |
+| name | Nationality | TEXT | British | Not null, unique | |
+
+Students table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| student_id | Student number | INTEGER | 1002 | Primary key, autoincrement | |
+| name | Student's name | TEXT | Liam Nguyen | Not null | |
+| form | Form class | TEXT | 11B | Not null | ##A |
+
+Loan table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| book_id | Book borrowed | INTEGER | 3045 | Primary key, foreign key to Book | |
+| student_id | Student borrowing | INTEGER | 1002 | Primary key, foreign key to Students | |
+| borrow_date | Date borrowed | TEXT | 2026-02-03 | Not null, valid date | YYYY-MM-DD |
+| return_date | Date returned | TEXT | 2026-02-17 | Valid date, >= borrow_date | YYYY-MM-DD |
+
+**Activity 3: Online store**
+
+Customer table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| customer_id | Customer number | INTEGER | 2041 | Primary key, autoincrement | |
+| name | Customer's name | TEXT | Priya Sharma | Not null | |
+| email | Customer's email | TEXT | priya@example.com | Not null, unique, like %@% | aaaa@aaaa |
+| phone | Customer's phone number | TEXT | 0412345678 | Not null, 10 characters | #### ### ### |
+
+Order table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| order_id | Order number | INTEGER | 50013 | Primary key, autoincrement | |
+| customer | Customer who placed the order | INTEGER | 2041 | Not null, foreign key to Customer | |
+| date | Date placed | TEXT | 2026-03-14 | Not null, valid date | YYYY-MM-DD |
+| cost | Total cost of the order | REAL | 129.95 | Not null, >= 0 | ####.## |
+
+Product table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| product_id | Product number | INTEGER | 88 | Primary key, autoincrement | |
+| name | Product name | TEXT | USB-C cable | Not null | |
+| price | Current price | REAL | 14.95 | Not null, > 0 | ####.## |
+| stock | Amount in stock | INTEGER | 120 | Not null, >= 0 | |
+
+Order Products table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| order_id | Order number | INTEGER | 50013 | Primary key, foreign key to Order | |
+| product_id | Product number | INTEGER | 88 | Primary key, foreign key to Product | |
+| quantity | Quantity purchased | INTEGER | 3 | Not null, > 0 | |
+| price | Selling price at time of order | REAL | 14.95 | Not null, > 0 | ####.## |
+
+**Activity 4: Company orders**
+
+Customer table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| customer_id | Customer number | INTEGER | 1 | Primary key, autoincrement | |
+| name | Customer's name | TEXT | Alice Johnson | Not null | |
+| address | Street address | TEXT | 123 Park Lane | Not null | |
+
+Item table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| item_id | Item number | INTEGER | 1 | Primary key, autoincrement | |
+| name | Item name | TEXT | Keyboard | Not null, unique | |
+| price | Unit price | REAL | 49.99 | Not null, > 0 | ####.## |
+
+Order table
+
+| Name | Definition | Data Type | Possible values | Validation | Format |
+| --- | --- | --- | --- | --- | --- |
+| customer_id | Customer who ordered | INTEGER | 1 | Primary key, foreign key to Customer | |
+| item_id | Item ordered | INTEGER | 1 | Primary key, foreign key to Item | |
+| date | Order date | TEXT | 2024-06-01 | Not null, valid date | YYYY-MM-DD |
+:::
+
 ### Data Connection Diagrams
+
+:::{seealso} Data Connection Diagram Solutions
+:class: dropdown
+**Activity 1: Small business office**
+
+![Data connection diagram activity 1](./assets/Data_Connection_1.png)
+
+**Activity 2: School weather dashboard**
+
+![Data connection diagram activity 2](./assets/Data_Connection_2.png)
+:::
 
 ### Testing
 
-### User Feedback
+:::{seealso} Unit Testing Solutions
+:class: dropdown
+**Activity 1: `celsius_to_fahrenheit`**
 
-### Evaluation Table
+| Test case | Input | Expected Outcome | Actual Outcome | Pass/Fail | Action |
+| --- | --- | --- | --- | --- | --- |
+| 1 (normal) | celsius_to_fahrenheit(25.5) | 77.9 | 77.9 | Pass | n/a |
+| 2 (normal) | celsius_to_fahrenheit(100) | 212.0 | 212.0 | Pass | n/a |
+| 3 (boundary) | celsius_to_fahrenheit(0) | 32.0 | 32.0 | Pass | n/a |
+| 4 (edge) | celsius_to_fahrenheit(-40) | -40.0 | -40.0 | Pass | n/a |
+| 5 (invalid) | celsius_to_fahrenheit("20") | Error message | Crash: `TypeError` | Fail | check the input is a number before converting |
 
-### Impacts Table
+The calculation is correct. The only failure is invalid input, which needs validation before the function is called, or a `try`/`except` block.
+
+---
+
+**Activity 2: `average`**
+
+| Test case | Input | Expected Outcome | Actual Outcome | Pass/Fail | Action |
+| --- | --- | --- | --- | --- | --- |
+| 1 (normal) | average(3, 3, 3) | 3.0 | 7.0 | Fail | change to `(a + b + c) / 3` |
+| 2 (normal) | average(1, 2, 3) | 2.0 | 4.0 | Fail | as above |
+| 3 (edge) | average(0, 0, 0) | 0.0 | 0.0 | Pass | n/a |
+| 1 (retest) | average(3, 3, 3) | 3.0 | 3.0 | Pass | n/a |
+| 2 (retest) | average(1, 2, 3) | 2.0 | 2.0 | Pass | n/a |
+| 4 (normal) | average(10, 20, 30) | 20.0 | 20.0 | Pass | n/a |
+| 5 (negative) | average(-3, 0, 3) | 0.0 | 0.0 | Pass | n/a |
+
+Division happens before addition, so the original code only divided `c` by 3. Test 3 passed even with the bug, which shows why we need more than one test case.
+:::
+
+:::{seealso} Integrated Testing Solutions
+:class: dropdown
+These are sample test plans. Other scenarios are valid if they test components working together.
+
+**Activity 1: School event booking form**
+
+Components that work together: web form &rarr; input validation &rarr; database &rarr; confirmation message.
+
+Success criteria:
+
+- valid bookings are saved in the database with the correct details
+- the student sees a confirmation message after a successful booking
+- invalid or incomplete bookings are rejected with an error message and are not saved
+- a booking can't be made for an event that is already full
+
+| Scenario | Input data | Expected Outcome | How to check |
+| --- | --- | --- | --- |
+| Student books a place in an event with spaces | Name: Sam Lee, Student ID: 1043, Event: Athletics Carnival | Booking saved; "Booking confirmed for Athletics Carnival" displayed | Open the bookings table in DB Browser and find the new row; check the message on screen |
+| Student submits the form with the Student ID left blank | Name: Sam Lee, Student ID: (blank), Event: Athletics Carnival | Error "Please enter your student ID"; nothing saved | Check the message; check the number of rows in the bookings table hasn't changed |
+| Student books an event that is full | Name: Ava Patel, Student ID: 1077, Event: Year 11 Formal (0 places left) | Error "Sorry, this event is full"; nothing saved | Check the message; check no new row was added |
+
+Results are recorded in an integrated testing table (Scenario, Expected Outcome, Pass/Fail, Action), with one row for each expected outcome.
+
+---
+
+**Activity 2: Weather dashboard**
+
+Components that work together: staff login &rarr; weather API &rarr; school database &rarr; dashboard display &rarr; report export.
+
+Success criteria:
+
+- only logged-in staff can view the dashboard
+- current weather from the API is displayed and saved in the database
+- the daily report export contains the day's saved data
+- the dashboard handles the API being unavailable without crashing
+
+What could go wrong: the API is down or slow; the API key is invalid; the database is unavailable; duplicate readings are saved; the export is empty or in the wrong format.
+
+| Scenario | Test input | Expected Outcome | How to record |
+| --- | --- | --- | --- |
+| Staff member logs in and views the dashboard | Valid staff username and password | Dashboard shows current temperature and conditions matching the API response; a new reading is saved in the database | Pass/Fail for each outcome in the integrated testing table |
+| Staff member exports today's report | Click Export after three readings have been saved today | CSV file downloads containing exactly today's three readings | Pass/Fail, with the downloaded file added to the appendix |
+| API is unavailable | Disconnect from the internet (or use an invalid API key), then refresh the dashboard | Message "Weather data is currently unavailable"; last saved reading still shown; no crash | Pass/Fail, plus the Action taken if it fails |
+:::
 
 ## Python Skills
-
-### PyQt
 
 ### Working with CSV
 
@@ -2325,6 +3044,23 @@ END
 
 ### Querying Databases
 
+:::{seealso} Querying Solutions
+:class: dropdown
+These are sample answers using the Movies database (**moives.db**) from SQL Skills. Any of our SQL activities can be written up the same way.
+
+**Activity 1: SELECT activities written in Python**
+
+```{literalinclude} 07_python/assets/06/queries_activity_1.py
+:language: python
+```
+
+**Activity 2: four queries made generic with parameters**
+
+```{literalinclude} 07_python/assets/06/queries_activity_2.py
+:language: python
+```
+:::
+
 ### Updating and Deleting
 
 :::{seealso} Updating and Deleting Solutions
@@ -2357,13 +3093,266 @@ END
 
 ### Creating Databases
 
+:::{seealso} Creating Solutions
+:class: dropdown
+This is a sample answer for the manufacturing database from ERD & RS Activity 1. The other relational schemas are written up the same way: tables without foreign keys first, then the tables that refer to them.
+
+```{literalinclude} 07_python/assets/07/creation_activity_1.py
+:language: python
+```
+:::
+
 ### Populating Databases
+
+:::{seealso} Populating Solutions
+:class: dropdown
+This is a sample answer for the Netflix exercise. It follows the Netflix ERD: the table and field names may need changing to match our **netflix_shows.db**.
+
+The Director, Country, Cast and Category values hold several names separated by commas, so each is split into a list. `get_id()` looks up each name in its table, adding it if it isn't there yet, and returns its id for the linking table. Four records have no rating, and three have a duration in the rating column by mistake, so those ratings are left empty.
+
+**netflix_datastore.py**
+
+```{literalinclude} 07_python/assets/08/netflix_datastore.py
+:language: python
+```
+
+**main.py**
+
+```{literalinclude} 07_python/assets/08/netflix_main.py
+:language: python
+```
+:::
 
 ### Working with JSON and XML
 
+:::{seealso} JSON Solutions
+:class: dropdown
+**Activity 1**
+
+```{literalinclude} 07_python/assets/09/json_activity_1.py
+:language: python
+```
+
+**Activity 2**
+
+```{literalinclude} 07_python/assets/09/json_activity_2.py
+:language: python
+```
+
+**Activity 3**
+
+```{literalinclude} 07_python/assets/09/json_activity_3.py
+:language: python
+```
+
+**Activity 4**
+
+```{literalinclude} 07_python/assets/09/json_activity_4.py
+:language: python
+```
+
+**Activity 5**
+
+```{literalinclude} 07_python/assets/09/json_activity_5.py
+:language: python
+```
+
+**Activity 6**
+
+```{literalinclude} 07_python/assets/09/json_activity_6.py
+:language: python
+```
+:::
+
+:::{seealso} XML Solutions
+:class: dropdown
+**Activity 1**
+
+```{literalinclude} 07_python/assets/09/xml_activity_1.py
+:language: python
+```
+
+**Activity 2**
+
+```{literalinclude} 07_python/assets/09/xml_activity_2.py
+:language: python
+```
+
+**Activity 3**
+
+```{literalinclude} 07_python/assets/09/xml_activity_3.py
+:language: python
+```
+
+**Activity 4**
+
+```{literalinclude} 07_python/assets/09/xml_activity_4.py
+:language: python
+```
+
+`ET.indent()` adds the line breaks and spaces that make the XML easy to read.
+:::
+
 ### Requests
 
+These answers send requests to live websites, so the data returned can change. JSONPlaceholder is a fake API: it replies as if POST, PUT, PATCH and DELETE requests worked, but nothing is actually changed.
+
+:::{seealso} GET Requests Solutions
+:class: dropdown
+**Activity 1: Retrieve User Information**
+
+```{literalinclude} 07_python/assets/10/get_activity_1.py
+:language: python
+```
+
+**Activity 2: Filter Posts by User**
+
+```{literalinclude} 07_python/assets/10/get_activity_2.py
+:language: python
+```
+:::
+
+:::{seealso} POST Requests Solutions
+:class: dropdown
+**Activity 1: Submit a New Post**
+
+```{literalinclude} 07_python/assets/10/post_activity_1.py
+:language: python
+```
+
+**Activity 2: Register a New Comment**
+
+```{literalinclude} 07_python/assets/10/post_activity_2.py
+:language: python
+```
+:::
+
+:::{seealso} PUT Requests Solutions
+:class: dropdown
+**Activity 1: Replace a Post**
+
+```{literalinclude} 07_python/assets/10/put_activity_1.py
+:language: python
+```
+
+**Activity 2: Reset a User Profile**
+
+```{literalinclude} 07_python/assets/10/put_activity_2.py
+:language: python
+```
+:::
+
+:::{seealso} PATCH Request Solutions
+:class: dropdown
+**Activity 1: Update a Post Title**
+
+```{literalinclude} 07_python/assets/10/patch_activity_1.py
+:language: python
+```
+
+**Activity 2: Update User Email Only**
+
+```{literalinclude} 07_python/assets/10/patch_activity_2.py
+:language: python
+```
+:::
+
+:::{seealso} DELETE Requests Solutions
+:class: dropdown
+**Activity 1: Delete a Post**
+
+```{literalinclude} 07_python/assets/10/delete_activity_1.py
+:language: python
+```
+
+**Activity 2: Remove a Comment**
+
+```{literalinclude} 07_python/assets/10/delete_activity_2.py
+:language: python
+```
+:::
+
+:::{seealso} Header and Parameters Solutions
+:class: dropdown
+**Use a Fake Authorisation Header**
+
+```{literalinclude} 07_python/assets/10/headers_activity_1.py
+:language: python
+```
+
+**Filter Posts by User ID**
+
+```{literalinclude} 07_python/assets/10/params_activity_1.py
+:language: python
+```
+:::
+
+:::{seealso} Error Handling Solution
+:class: dropdown
+**Handle a 404 Error Gracefully**
+
+```{literalinclude} 07_python/assets/10/error_activity_1.py
+:language: python
+```
+:::
+
+:::{seealso} Timeouts Solution
+:class: dropdown
+**Simulate and Handle a Timeout**
+
+```{literalinclude} 07_python/assets/10/timeout_activity_1.py
+:language: python
+```
+:::
+
+:::{seealso} Extension Solutions
+:class: dropdown
+This activity is open-ended: any API from the Free APIs list that is requested, processed and printed correctly is a valid answer. Use the GET examples above as a starting point.
+:::
+
 ### OurAPI
+
+:::{seealso} List Countries Solution
+:class: dropdown
+```{literalinclude} 07_python/assets/11/list_countries.py
+:language: python
+```
+:::
+
+:::{seealso} Requests Solutions
+:class: dropdown
+This script sends a GET and a POST request to each of OurAPI's built-in functions. GET requests send the arguments in the URL (`params=`), and POST requests send them in the body of the request (`data=`).
+
+```{literalinclude} 07_python/assets/11/all_requests.py
+:language: python
+```
+:::
+
+:::{seealso} New Function Solutions
+:class: dropdown
+Add these functions to **definitions.ini**, with **chinook.db** saved in the OurAPI folder as **api_db.sqlite**.
+
+```{literalinclude} 07_python/assets/11/new_functions.ini
+:language: ini
+```
+:::
+
+:::{seealso} Custom OurAPI Solutions
+:class: dropdown
+**definitions.ini**
+
+```{literalinclude} 07_python/assets/11/custom_functions.ini
+:language: ini
+```
+
+**Python script**
+
+```{literalinclude} 07_python/assets/11/custom_requests.py
+:language: python
+```
+
+For Activity 5, 256 tracks were each sold twice, so `LIMIT 1` returns just one of them.
+:::
 
 ### Encryption
 

@@ -48,7 +48,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
   - [x] Evaluation Table
   - [x] Impacts Table
   - [x] Appendices
-- [ ] Python Skills
+- [x] Python Skills
   - [x] Python Introduction
   - [x] PyQt
   - [x] Working with CSV
@@ -93,7 +93,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
   - [ ] IA2 - Digital Solution
   - [x] IA3 - Digital Solution
   - [x] EA - Exam
-- [ ] Activity Answers (partially populated; see follow-up tasks below)
+- [x] Activity Answers
 - [ ] Bibliography (page contains a bibliography directive; rendering and citation integration still need verification)
 
 ## Outstanding content
@@ -103,10 +103,12 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - [ ] Write Utilities Introduction, Draw.io and Word Power-use in `content/09_tools/`; these are heading-only pages.
 - [ ] Write Assessments Introduction, FIA1, FIA2, FIA3, IA1 and IA2 in `content/10_assessments/`; these are heading-only pages.
 - [ ] Review the scope of `content/10_assessments/08_ia3.md`: its guidance refers to a specific healthcare dashboard stimulus, including practice manager, clinical staff and administration staff. Identify that task clearly or adapt the guidance for general use.
-- [ ] Complete `content/activity_answers.md` for the existing activities whose answer sections are empty: Data Security Management, Data Security Threats, relevant Documentation topics and the remaining Python topics (PyQt, Querying, Creating, Populating, JSON and XML, Requests and OurAPI). Working with CSV, Type Hints, Encryption, Hashing and Checksums are done. Match answers to actual activities; remove unused headings or identify open-ended tasks rather than imply an answer is supplied.
+- [x] Complete `content/activity_answers.md` for the existing activities whose answer sections are empty: Data Security Management, Data Security Threats, relevant Documentation topics and the remaining Python topics (PyQt, Querying, Creating, Populating, JSON and XML, Requests and OurAPI). Working with CSV, Type Hints, Encryption, Hashing and Checksums are done. Match answers to actual activities; remove unused headings or identify open-ended tasks rather than imply an answer is supplied.
 - [ ] Add solutions for activities introduced when the placeholder chapters are written.
 
 ## Corrections and consistency
+
+- [ ] Fix `content/08_sql/assets/CREATE/Activity_1e.sql`: its last line, `FOREIGN KEY("quantity") REFERENCES ""`, refers to a table with no name.
 
 - [x] Fill the empty Learning Goals in `content/07_python/07_creation.md` and `content/09_tools/03_figma.md`.
 - [ ] Align the Home page's statement that every page starts with Learning Goals with the actual page structure. Either add goals consistently or qualify the statement in `content/index.md`.
@@ -114,7 +116,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - [x] Fix the JSON/XML activity link in `content/07_python/10_requests.md`: `./08_json.md` should be `./09_json.md`.
 - [x] Add URL schemes to the 13 open-data links in `content/05_data_transmission/02_privacy.md` (the government portal list). Targets such as `data.gov.au` are currently interpreted as relative file paths.
 - [ ] Review the repeated `verify=False` examples in `content/07_python/10_requests.md`; make certificate verification the normal example and explain any classroom-specific certificate setup separately.
-- [ ] Finish the parameterised-query explanation in `content/07_python/06_queries.md`, where the paragraph ends at "Where we want to place a variable"; proofread the surrounding `sqlite3` explanation.
+- [x] Finish the parameterised-query explanation in `content/07_python/06_queries.md`, where the paragraph ends at "Where we want to place a variable"; proofread the surrounding `sqlite3` explanation.
 - [ ] Review the table-creation explanation in `content/07_python/07_creation.md`, distinguishing table creation from insertion order and foreign-key enforcement. Keep the prose, standalone SQL examples and Python example consistent about Driver, Seasons and Raced.
 - [x] Correct "five basic features" in `content/10_assessments/08_ia3.md`; the following list contains six items.
 - [x] Proofread headings and terminology, including "Existing Soultions" in `content/06_documentation/05_existing_solutions.md`, "EDR" in `content/06_documentation/11_erd_rs.md`, "Existing Soluitions" and "Psuedocode" in `content/activity_answers.md`, and DIWK/DIKW in `content/04_data/01_intro.md`.
@@ -148,6 +150,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - Wrote Hashing (`content/07_python/13_hashing.md`): `hashlib` and SHA-256, salted password hashing with `pbkdf2_hmac` (600,000 iterations) and `hmac.compare_digest`, and a SQLite login Datastore. Activity solutions are in `content/07_python/assets/13/`.
 - Wrote Checksums (`content/07_python/14_checksums.md`): sum checksums, parity bits, the Luhn check digit, and CRC32 and SHA-256 file checksums. Activity solutions are in `content/07_python/assets/14/`.
 - Wrote SQLite3 - Updating and Deleting (`content/07_python/06_update_delete.md`, after SQLite3 - Reading in `myst.yml`): parameterised UPDATE and DELETE on chinook.db, `commit()` and `rowcount`. Activity solutions are in `content/07_python/assets/06u/`.
+- Completed Activity Solutions: added answers for User Insights, Use Case Diagrams, Success Criteria, Pseudocode, Data Flow Diagrams (new draw.io diagrams `content/assets/dfd_activity_2` and `_3`), ERDs and RS, Data Dictionaries, Data Connection Diagrams, Testing, Querying, Creating, Populating (Netflix), JSON and XML, Requests and OurAPI (Python answer files in `content/07_python/assets/06`–`11`). Removed the empty headings for pages with no activities (Managing and Manipulating Data, Data Security Management, Data Security Threats, Mind Maps, Existing Solutions, Mock-Ups, User Feedback, Evaluation Table, Impacts Table, PyQt). Requests answers were checked against simulated responses only, because JSONPlaceholder and httpbin couldn't be reached.
 - Quick fixes: added Learning Goals to `07_python/07_creation.md` and `09_tools/03_figma.md`; fixed the normalisation link in `06_documentation/11_erd_rs.md` and the JSON/XML link in `07_python/10_requests.md`; added `https://` to the 13 open-data links in `05_data_transmission/02_privacy.md`. The "six basic features" correction, the proofreading fixes and the empty WHERE list item were already done in the repo.
 
 ## Review coverage
