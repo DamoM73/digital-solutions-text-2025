@@ -15,6 +15,17 @@ The `requests` library allows Python programs to send HTTP/HTTPS requests easily
 - Downloading web content
 - Submitting forms programmatically
 
+:::{caution} SSL errors on a school network
+:class: dropdown
+Some school networks inspect all HTTPS traffic. This can cause an `SSLError` with the message `CERTIFICATE_VERIFY_FAILED` when we send a request.
+
+Don't fix this by adding `verify=False` to the request. That turns off certificate checking, so our program would trust any server, including a fake one pretending to be the API.
+
+Instead:
+- run the same code on a home network or phone hotspot to confirm the school network is the cause
+- ask the school's IT team for the network's certificate file, then pass its location to the request with `verify="path/to/certificate.pem"`
+:::
+
 ## GET Request
 
 Use **GET** to **retrieve data** from a server.
@@ -22,7 +33,7 @@ Use **GET** to **retrieve data** from a server.
 ```python
 import requests
 
-response = requests.get("https://jsonplaceholder.typicode.com/posts/1", verify=False)
+response = requests.get("https://jsonplaceholder.typicode.com/posts/1")
 print(response.status_code)
 print(response.json())
 ```
@@ -64,7 +75,7 @@ data = {
     "userId": 1
 }
 
-response = requests.post("https://jsonplaceholder.typicode.com/posts", json=data, verify=False)
+response = requests.post("https://jsonplaceholder.typicode.com/posts", json=data)
 print(response.status_code)
 print(response.json())
 ```
@@ -107,7 +118,7 @@ put_data = {
     "userId": 1
 }
 
-response = requests.put("https://jsonplaceholder.typicode.com/posts/1", json=put_data, verify=False)
+response = requests.put("https://jsonplaceholder.typicode.com/posts/1", json=put_data)
 print(response.json())
 ```
 
@@ -143,7 +154,7 @@ Use **PATCH** to update only **specific fields**.
 ```python
 patch_data = {"title": "new title only"}
 
-response = requests.patch("https://jsonplaceholder.typicode.com/posts/1", json=patch_data, verify=False)
+response = requests.patch("https://jsonplaceholder.typicode.com/posts/1", json=patch_data)
 print(response.json())
 ```
 
@@ -181,7 +192,7 @@ Write a script that:
 Sends a **DELETE** request to **remove** a resource. Often used in admin interfaces or APIs with write access.
 
 ```python
-response = requests.delete("https://jsonplaceholder.typicode.com/posts/1", verify=False)
+response = requests.delete("https://jsonplaceholder.typicode.com/posts/1")
 print(response.status_code)
 ```
 
@@ -216,7 +227,7 @@ This shows how to send a `DELETE` request with an API token.
 headers = {
     "Authorization": "Bearer YOUR_TOKEN"
 }
-response = requests.delete("https://api.example.com/posts/42", headers=headers, verify=False)
+response = requests.delete("https://api.example.com/posts/42", headers=headers)
 print(response.status_code)
 ```
 
@@ -251,7 +262,7 @@ params = {
     "userId": 1
 }
 
-response = requests.get("https://jsonplaceholder.typicode.com/posts", headers=headers, params=params, verify=False)
+response = requests.get("https://jsonplaceholder.typicode.com/posts", headers=headers, params=params)
 print(response.url)
 print(response.json())
 ```
@@ -320,7 +331,7 @@ Write a Python script that:
 
 ```python
 try:
-    response = requests.get("https://httpbin.org/delay/3", timeout=2, verify=False)
+    response = requests.get("https://httpbin.org/delay/3", timeout=2)
 except requests.exceptions.Timeout:
     print("Request timed out.")
 ```

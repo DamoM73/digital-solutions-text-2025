@@ -17,6 +17,7 @@ project:
       children:
         - file: content/01_introduction/01_digital_solutions.md
         - file: content/01_introduction/02_technologies_used.md
+        - file: content/01_introduction/03_for_teachers.md
     - title: Coding
       children:
         - file: content/02_coding/01_intro.md

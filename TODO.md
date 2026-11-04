@@ -94,7 +94,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
   - [x] IA3 - Digital Solution
   - [x] EA - Exam
 - [x] Activity Answers
-- [ ] Bibliography (page contains a bibliography directive; rendering and citation integration still need verification)
+- [x] Bibliography
 
 ## Outstanding content
 
@@ -108,14 +108,13 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 
 ## Corrections and consistency
 
-- [ ] Fix `content/08_sql/assets/CREATE/Activity_1e.sql`: its last line, `FOREIGN KEY("quantity") REFERENCES ""`, refers to a table with no name.
-
+- [x] Fix `content/08_sql/assets/CREATE/Activity_1e.sql`: removed the last line, `FOREIGN KEY("quantity") REFERENCES ""`, which referred to a table with no name.
 - [x] Fill the empty Learning Goals in `content/07_python/07_creation.md` and `content/09_tools/03_figma.md`.
 - [ ] Align the Home page's statement that every page starts with Learning Goals with the actual page structure. Either add goals consistently or qualify the statement in `content/index.md`.
 - [x] Fix the normalisation link in `content/06_documentation/11_erd_rs.md`: `../04_data.md/03_structuring_data.md` should be `../04_data/03_structuring_data.md`.
 - [x] Fix the JSON/XML activity link in `content/07_python/10_requests.md`: `./08_json.md` should be `./09_json.md`.
 - [x] Add URL schemes to the 13 open-data links in `content/05_data_transmission/02_privacy.md` (the government portal list). Targets such as `data.gov.au` are currently interpreted as relative file paths.
-- [ ] Review the repeated `verify=False` examples in `content/07_python/10_requests.md`; make certificate verification the normal example and explain any classroom-specific certificate setup separately.
+- [x] Review the repeated `verify=False` examples in `content/07_python/10_requests.md`; make certificate verification the normal example and explain any classroom-specific certificate setup separately. Removed `verify=False` from all eight examples and added a caution explaining how to handle school-network SSL errors without turning off verification.
 - [x] Finish the parameterised-query explanation in `content/07_python/06_queries.md`, where the paragraph ends at "Where we want to place a variable"; proofread the surrounding `sqlite3` explanation.
 - [ ] Review the table-creation explanation in `content/07_python/07_creation.md`, distinguishing table creation from insertion order and foreign-key enforcement. Keep the prose, standalone SQL examples and Python example consistent about Driver, Seasons and Raced.
 - [x] Correct "five basic features" in `content/10_assessments/08_ia3.md`; the following list contains six items.
@@ -124,8 +123,8 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 
 ## References and publication checks
 
-- [ ] Fix the Bibliography page. In the 2 November 2026 build, inline `{cite}` citations resolve and show their references on each page, but `content/bibliography.md` renders empty: the `{bibliography}` directive lists no entries. The bibliography configuration in `myst.yml` is still commented out.
-- [ ] Convert bare citation keys in `content/04_data/01_intro.md`, including `nldigibeter_2019_problem` and `dataliteracy_2020_11`, to the project's working citation syntax.
+- [x] Fix the Bibliography page. mystmd has no directive that lists a whole `.bib` file, so `content/bibliography.md` now cites every key in `references.bib` with `{cite:t}`, which produces the full References list. Corporate authors in `references.bib` are braced (for example `{{NBC News}}`) so they display in full.
+- [ ] Convert bare citation keys in `content/04_data/01_intro.md`, including `nldigibeter_2019_problem` and `dataliteracy_2020_11`, to the project's working citation syntax. Neither key has an entry in `references.bib`, and the sources couldn't be verified; needs the title, author, year and URL of each source.
 - [ ] Check assessment rules and response-limit claims against the applicable syllabus and school assessment instruments, especially `content/06_documentation/18_appendices.md` and the IA3 guidance. Record the source/version used.
 - [ ] Inspect the rendered navigation, callouts, code blocks, citations, images and downloadable resources across all pages. A fresh HTML build with Jupyter Book 2.1.7 (mystmd 1.11.0) on 2 November 2026 built all 80 pages with no errors or warnings; only the Home, Python Introduction, Working with CSV, PyQt, Type Hints, Encryption, Hashing, Checksums and SQLite3 - Updating and Deleting pages have been inspected in a browser.
 - [ ] Check external links, embedded videos and practice-question downloads for availability and usefulness. This review checked local file targets; it did not test remote resources or inspect the contents of linked PDF/DOCX files.
