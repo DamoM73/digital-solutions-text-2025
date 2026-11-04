@@ -77,12 +77,11 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
   - [x] INSERT  
   - [x] UPDATE  
   - [x] DELETE  
-- [ ] Utilities Skills
-  - [ ] Utilities Introduction
+- [x] Utilities Skills
+  - [x] Utilities Introduction
   - [x] DB Browser
   - [x] Figma
-  - [ ] Draw.io
-  - [ ] Word
+  - [x] Draw.io
 - [x] Assessments
   - [x] Assessments Introduction
   - [x] FIA1 - Technical Proposal
@@ -100,7 +99,7 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 
 - [x] Write the Checksums page in `content/07_python/`.
 - [x] Add Python SQLite UPDATE and DELETE instruction, worked examples and activities. Added as `content/07_python/06_update_delete.md` after SQLite3 - Reading, using chinook.db.
-- [ ] Write Utilities Introduction, Draw.io and Word Power-use in `content/09_tools/`; these are heading-only pages.
+- [x] Write the Utilities Introduction in `content/09_tools/`; it is a heading-only page. (Draw.io written 4 November 2026, with screenshots from draw.io desktop 29.0.3 and a downloadable Digital Solutions shape library.) The Word Power-use page was removed from the table of contents; delete `content/09_tools/05_word.md`.
 - [x] Write the Assessments Introduction in `content/10_assessments/`; this is a heading-only page.
 - [x] Review the scope of `content/10_assessments/08_ia3.md`: rewritten as general IA3 guidance from the IA3 folder, with the healthcare-specific references (practice manager, clinical staff, administration staff, dashboard) removed.
 - [x] Complete `content/activity_answers.md` for the existing activities whose answer sections are empty: Data Security Management, Data Security Threats, relevant Documentation topics and the remaining Python topics (PyQt, Querying, Creating, Populating, JSON and XML, Requests and OurAPI). Working with CSV, Type Hints, Encryption, Hashing and Checksums are done. Match answers to actual activities; remove unused headings or identify open-ended tasks rather than imply an answer is supplied.
