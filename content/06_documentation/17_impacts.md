@@ -1,5 +1,11 @@
 # Impacts Table
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- know the two ways impacts can be assessed: feedback and reasoned speculation
+- know how to evaluate impacts, rather than just describe them
+:::
+
 The impacts table outlines the various impacts associated with a project, initiative, or activity. It provides a structured format for assessing and documenting the potential consequences, both positive and negative, that may arise from the implementation of a project.
 
 We will be focusing on the impacts described in [User Experience impacts](../03_user_experience/04_impacts.md).

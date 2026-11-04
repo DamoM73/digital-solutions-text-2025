@@ -1,5 +1,13 @@
 # User Feedback
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand why user feedback matters for the Evaluating criterion
+- know how to design a feedback instrument that is aligned to your success criteria
+- know how to collect user feedback
+- know where raw feedback and your analysis of it belong in your response
+:::
+
 When you present your prototype to real users and ask them what they think, you are collecting **user feedback**. Done well, user feedback is some of the most powerful evidence you can include in your assessment — the ISMG explicitly requires refinements and recommendations to be *justified by user feedback*. Done poorly, it is just a collection of opinions that adds nothing to your response.
 
 This page explains how to design a feedback instrument, how to collect feedback, and — critically — how to split the raw data from your analysis so that your response earns marks.

@@ -103,13 +103,13 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - [x] Write the Assessments Introduction in `content/10_assessments/`; this is a heading-only page.
 - [x] Review the scope of `content/10_assessments/08_ia3.md`: rewritten as general IA3 guidance from the IA3 folder, with the healthcare-specific references (practice manager, clinical staff, administration staff, dashboard) removed.
 - [x] Complete `content/activity_answers.md` for the existing activities whose answer sections are empty: Data Security Management, Data Security Threats, relevant Documentation topics and the remaining Python topics (PyQt, Querying, Creating, Populating, JSON and XML, Requests and OurAPI). Working with CSV, Type Hints, Encryption, Hashing and Checksums are done. Match answers to actual activities; remove unused headings or identify open-ended tasks rather than imply an answer is supplied.
-- [ ] Add solutions for activities introduced when the placeholder chapters are written.
+- [x] Add solutions for activities introduced when the placeholder chapters are written. None of the pages written on 4 November 2026 include activities.
 
 ## Corrections and consistency
 
 - [x] Fix `content/08_sql/assets/CREATE/Activity_1e.sql`: removed the last line, `FOREIGN KEY("quantity") REFERENCES ""`, which referred to a table with no name.
 - [x] Fill the empty Learning Goals in `content/07_python/07_creation.md` and `content/09_tools/03_figma.md`.
-- [ ] Align the Home page's statement that every page starts with Learning Goals with the actual page structure. Either add goals consistently or qualify the statement in `content/index.md`.
+- [x] Align the Home page's statement that every page starts with Learning Goals with the actual page structure. Either add goals consistently or qualify the statement in `content/index.md`. Learning Goals added on 4 November 2026 to every learning page that lacked them; the reference pages (For Teachers, Activity Solutions, Bibliography) have none.
 - [x] Fix the normalisation link in `content/06_documentation/11_erd_rs.md`: `../04_data.md/03_structuring_data.md` should be `../04_data/03_structuring_data.md`.
 - [x] Fix the JSON/XML activity link in `content/07_python/10_requests.md`: `./08_json.md` should be `./09_json.md`.
 - [x] Add URL schemes to the 13 open-data links in `content/05_data_transmission/02_privacy.md` (the government portal list). Targets such as `data.gov.au` are currently interpreted as relative file paths.

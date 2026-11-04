@@ -1,5 +1,12 @@
 # Evaluation Table
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand the purpose of the evaluation table
+- know how to complete each column of the evaluation table
+- know what makes an evaluation critical rather than superficial
+:::
+
 The evaluation table is the core document for demonstrating your evaluation of the solution. It connects your success criteria directly to evidence from testing and user feedback, then uses that evidence to justify refinements you made and recommendations for future improvement.
 
 ## Purpose

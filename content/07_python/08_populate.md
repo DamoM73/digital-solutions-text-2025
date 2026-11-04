@@ -1,10 +1,11 @@
 # SQLite3 - Populating
 
-:::{dropdown} In this section you will...
-- Learn how to populate a database with a dataset in a CSV file
-- Assess a dataset in relation to a data structure and the data it contains
-- Process and display data to the terminal for checking purposes
-- Write checked data to the database
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- know how to populate a database with a dataset in a CSV file
+- be able to assess a dataset in relation to a data structure and the data it contains
+- be able to process and display data in the terminal to check it
+- know how to write checked data to the database
 :::
 
 :::{note} You will need...

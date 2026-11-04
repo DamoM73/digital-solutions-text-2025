@@ -1,5 +1,13 @@
 # Appendices
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand the purpose of appendices
+- know what to include in an appendix for IA2 and IA3
+- know what counts towards your page and word limits
+- know what must stay in the body of your response
+:::
+
 Appendices are sections placed at the end of your assessment response that contain supplementary material. Understanding what belongs in an appendix, and what the rules are around them, is essential for managing your response correctly.
 
 ## Purpose of appendices

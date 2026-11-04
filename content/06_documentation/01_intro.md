@@ -1,5 +1,12 @@
 # Documentation Introduction
 
+:::{dropdown} Learning Goals
+By the end of this section you will:
+- understand why documentation is the evidence of your problem-solving process
+- know which documentation tools are covered in this section
+- know the layout and communication rules that markers look for
+:::
+
 Documentation is the evidence of your problem-solving process. In Digital Solutions, your response to each internal assessment is a document — a record of how you moved from a real-world problem through design decisions to a working solution. The quality of that documentation directly determines your marks.
 
 Each assessment is marked against a set of criteria that reflect the stages of that process: comprehending the problem, analysing it, synthesising and generating a solution, evaluating the outcome, and communicating clearly to a technical audience. Your documentation must make your thinking visible at each of these stages — markers can only award marks for what they can see in your response.
