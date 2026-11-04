@@ -83,14 +83,14 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
   - [x] Figma
   - [ ] Draw.io
   - [ ] Word
-- [ ] Assessments
-  - [ ] Assessments Introduction
-  - [ ] FIA1 - Technical Proposal
-  - [ ] FIA2 - Digital Solution
-  - [ ] FIA3 - Digital Solution
+- [x] Assessments
+  - [x] Assessments Introduction
+  - [x] FIA1 - Technical Proposal
+  - [x] FIA2 - Digital Solution
+  - [x] FIA3 - Digital Solution
   - [x] FIAE - Exam
-  - [ ] IA1 - Technical Proposal
-  - [ ] IA2 - Digital Solution
+  - [x] IA1 - Technical Proposal
+  - [x] IA2 - Digital Solution
   - [x] IA3 - Digital Solution
   - [x] EA - Exam
 - [x] Activity Answers
@@ -101,8 +101,8 @@ Reviewed against all 80 pages in `myst.yml` on 2 November 2026. Checked items in
 - [x] Write the Checksums page in `content/07_python/`.
 - [x] Add Python SQLite UPDATE and DELETE instruction, worked examples and activities. Added as `content/07_python/06_update_delete.md` after SQLite3 - Reading, using chinook.db.
 - [ ] Write Utilities Introduction, Draw.io and Word Power-use in `content/09_tools/`; these are heading-only pages.
-- [ ] Write Assessments Introduction, FIA1, FIA2, FIA3, IA1 and IA2 in `content/10_assessments/`; these are heading-only pages.
-- [ ] Review the scope of `content/10_assessments/08_ia3.md`: its guidance refers to a specific healthcare dashboard stimulus, including practice manager, clinical staff and administration staff. Identify that task clearly or adapt the guidance for general use.
+- [x] Write the Assessments Introduction in `content/10_assessments/`; this is a heading-only page.
+- [x] Review the scope of `content/10_assessments/08_ia3.md`: rewritten as general IA3 guidance from the IA3 folder, with the healthcare-specific references (practice manager, clinical staff, administration staff, dashboard) removed.
 - [x] Complete `content/activity_answers.md` for the existing activities whose answer sections are empty: Data Security Management, Data Security Threats, relevant Documentation topics and the remaining Python topics (PyQt, Querying, Creating, Populating, JSON and XML, Requests and OurAPI). Working with CSV, Type Hints, Encryption, Hashing and Checksums are done. Match answers to actual activities; remove unused headings or identify open-ended tasks rather than imply an answer is supplied.
 - [ ] Add solutions for activities introduced when the placeholder chapters are written.
 
